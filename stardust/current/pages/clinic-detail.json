@@ -1,0 +1,301 @@
+{
+  "url": "https://www.hirslanden.ch/de/klinik-linde/home.html",
+  "template": "clinic-detail",
+  "fetchedAt": "2026-06-24",
+  "title": "Hirslanden Klinik Linde, Biel",
+  "heading": "Klinik Linde",
+  "breadcrumb": [
+    {
+      "text": "Hirslanden Gruppe",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "text": "Klinik Linde",
+      "href": "/de/klinik-linde/home.html"
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "hero-stage",
+      "heading": "Hirslanden Klinik Linde",
+      "summary": "Full-bleed banner image (4:1 on desktop, 1:1 on mobile) with city label 'Biel' and h1 overlaid on bottom-left. Search form integrated in the middle stage below the image. No CTA button in hero.",
+      "hasImage": true,
+      "hasForm": true,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "awareness-banner-slider",
+      "heading": null,
+      "summary": "Horizontal carousel/slider featuring rotating promotional banners. Each slide contains: image (left), category tag, article title, short description text, and a CTA link ('Erfahren Sie hier mehr' / 'Mehr erfahren'). Slides include: Rückgratgeber (Wirbelsäule & Schmerz), Zimmer-Upgrade Maternité (Hirslanden Baby), Orthopädie-Sport, Dialysezentrum Linde (Nephrologie), Beleghebammen an der Klinik Linde, Haben Sie eine Veranlagung für Krebs?",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "intro-with-contact-card",
+      "heading": null,
+      "summary": "Two-column layout (66/33 split). Left column: lead paragraph introducing the clinic's philosophy — 'Wir bieten eine erstklassige Grundversorgung und setzen darauf aufbauend gezielt Schwerpunkte...' Right column: contact card with clinic name, address (Blumenrain 105, 2503 Biel), phone (+41 32 366 41 11), emergency line (+41 32 366 41 12), and email (klinik-linde@hirslanden.ch).",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "callout-text",
+      "heading": "Hygienemassnahmen",
+      "summary": "Callout/highlighted text box with hygiene notice. Short paragraph about respiratory etiquette and visitor restrictions for symptomatic individuals. Includes a PDF link for respiratorische Etikette.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 5,
+      "type": "quicklinks-grid",
+      "heading": null,
+      "summary": "Six quicklink tiles in a 3-column responsive grid (6 items across 2 rows). Each tile: icon + label. Links: Notfallzentrum Linde (icon-emergency), Informationen für Besucher (icon-info), Babygalerie (icon-medical-stroller), Zentren, Institute, Leistungsangebot (icon-clinic), Ihr Feedback an die Klinik Linde (icon-megaphone), Jobs & Karriere (icon-diploma).",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 6,
+      "type": "image-teaser-grid-3col",
+      "heading": null,
+      "summary": "Three equal-width image teasers (33/33/33 grid): 1) Unser Leistungsangebot → /de/klinik-linde/fachgebiete.html, 2) Notfallzentrum Linde with description 'Schnell, kompetent, menschlich / Sieben Tage pro Woche, rund um die Uhr' → /de/klinik-linde/centers/notfallzentrum-biel.html, 3) Ihr Aufenthalt → /de/klinik-linde/ihr-aufenthalt.html. Each tile: background image + h3 title, optionally a short description.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 7,
+      "type": "image-teaser-mixed-2col",
+      "heading": null,
+      "summary": "Two-column layout (50/50). Left: large primary image teaser for Brustzentrum Bern Biel. Right: two stacked secondary (sideway/horizontal) teasers: 'Gemeinsam ins Leben' → Geburtenabteilung, and 'Radiologiezentrum' → Radiologiezentrum. Horizontal teasers have thumbnail left, h3 + paragraph right.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 8,
+      "type": "events-list",
+      "heading": "Kurse und Veranstaltungen",
+      "summary": "Filtered list of upcoming events/courses on a dark blue (background-primary) full-width band. Shows 6 items: date (day + month), location, event title. Includes 'Alle Kurse und Veranstaltungen' link. Events shown: Akupunkturtherapien, Geburtsvorbereitung Wochenendkurs (10. Jul.), Informationsabend Geburt (25. Jun.), Rückbildungskurse (18. Aug.), Stillcafé für Mamis (03. Jul.), Welche Therapien helfen bei Übergewicht?",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 9,
+      "type": "news-list",
+      "heading": "Medienmitteilungen und News",
+      "summary": "Filtered list of latest news/press releases. 4 items shown: release type badge (Medienmitteilung/News), date, headline, clinic name. Items: 'Weniger Durst vor der Operation' (28.05.2026), 'Herzlich willkommen Rose' (03.01.2026), 'Geburten in der Klinik Linde' (29.12.2025), 'Reinhold Karl gibt den Kochlöffel weiter' (16.01.2025). Includes 'Alle Medienmitteilungen und News' link.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 10,
+      "type": "chat-widget",
+      "heading": null,
+      "summary": "AIAIBot chat widget injected via script (b96d4b94-8887-4d90-8622-e3a290084e51). Wrapped in a cookie-consent gate — only shown if functional cookies are accepted.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-linde-header:4-1?wid=1920&hei=480",
+      "alt": "hirslanden-klinik-linde-header",
+      "role": "hero — full-bleed banner image with responsive art-direction (4:1 desktop, 2:1 tablet, 1:1 mobile)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Rueckgratgeber_Teaser",
+      "alt": "Notfallzentrum",
+      "role": "slider slide — Rückgratgeber (Wirbelsäule & Schmerz)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-linde-familienzimmer_3_Slider",
+      "alt": "Zimmer-Upgrade Maternité",
+      "role": "slider slide — Zimmer-Upgrade Maternité"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/18_DerWildeGrossvater-W3840px_72dpi",
+      "alt": "18_DerWildeGrossvater-W3840px_72dpi",
+      "role": "slider slide — Orthopädie-Sport"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-linde-dialysezentrum-team",
+      "alt": "Team Dialysezentrum Linde",
+      "role": "slider slide — Dialysezentrum Linde"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-geburt-hebamme-eltern",
+      "alt": "hirslanden-geburt-hebamme-eltern",
+      "role": "slider slide — Beleghebammen an der Klinik Linde"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Medium-HIR_onko_46837",
+      "alt": "Medium-HIR_onko_46837",
+      "role": "slider slide — genetische Krebsberatung"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-linde-bodymap-teaser",
+      "alt": "Leistungsangebot",
+      "role": "teaser — Unser Leistungsangebot (body map graphic)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/linde_notfallzentrum_keyvisual_02",
+      "alt": "linde_notfallzentrum_keyvisual_02",
+      "role": "teaser — Notfallzentrum Linde"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-begruessung-maennlicher-patient",
+      "alt": "Patient wird von Pflegefachfrau begrüsst",
+      "role": "teaser — Ihr Aufenthalt"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Brustkrebs%20Oktober",
+      "alt": "Eröffnung Brustzentrum Bern Biel",
+      "role": "teaser — Brustzentrum Bern Biel (large primary)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-gemeinsam-ins-leben-teaser",
+      "alt": "hirslanden-gemeinsam-ins-leben-teaser",
+      "role": "secondary teaser — Gemeinsam ins Leben / Geburtenabteilung"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-linde-radiologiezentrum",
+      "alt": "klinik-linde-radiologiezentrum",
+      "role": "secondary teaser — Radiologiezentrum"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Erfahren Sie hier mehr",
+      "href": "/de/klinik-linde/fachgebiete/wirbelsaeule.html"
+    },
+    {
+      "text": "Erfahren Sie hier mehr",
+      "href": "/content/dam/klinik-linde/downloads/de/klinik-linde-zimmerupgrade-baby.pdf"
+    },
+    {
+      "text": "Erfahren Sie hier mehr",
+      "href": "/de/klinik-linde/fachgebiete/orthopaedie-sport.html"
+    },
+    {
+      "text": "Mehr erfahren",
+      "href": "/de/klinik-linde/centers/dialysezentrum-linde.html"
+    },
+    {
+      "text": "Mehr erfahren",
+      "href": "/de/klinik-linde/centers/geburtenabteilung/schwangerschaft/beleghebamme.html"
+    },
+    {
+      "text": "Jetzt lesen",
+      "href": "https://blog.hirslanden.ch/2023/04/17/haben-wir-krebs-in-der-familie-wie-genetische-untersuchungen-die-krebsvorsorge-und-behandlung-revolutionieren/"
+    },
+    {
+      "text": "Alle Kurse und Veranstaltungen",
+      "href": "/de/klinik-linde/kurse-veranstaltungen.html"
+    },
+    {
+      "text": "Alle Medienmitteilungen und News",
+      "href": "/de/klinik-linde/medien-news/news-medienmitteilungen.html"
+    },
+    {
+      "text": "Kontakt",
+      "href": "/de/klinik-linde/kontakt.html"
+    }
+  ],
+  "templateSpecificData": {
+    "clinicName": "Hirslanden Klinik Linde",
+    "city": "Biel",
+    "address": {
+      "street": "Blumenrain 105",
+      "postalCode": "2503",
+      "city": "Biel"
+    },
+    "phone": "+41 32 366 41 11",
+    "emergencyPhone": "+41 32 366 41 12",
+    "email": "klinik-linde@hirslanden.ch",
+    "emergencyHours": "24 Stunden / 7 Tage (Notfallzentrum: Sieben Tage pro Woche, rund um die Uhr)",
+    "languages": [
+      "DE",
+      "FR",
+      "EN"
+    ],
+    "clinicTypes": [
+      "obstetrical-clinic",
+      "emergency-station",
+      "clinic"
+    ],
+    "province": "BE",
+    "specialties": [
+      "Allgemeine Innere Medizin",
+      "Kompetenzbereich Bauch",
+      "Bewegungsapparat / Orthopädie-Sport",
+      "Gynäkologie & Geburtshilfe",
+      "Onkologie",
+      "Nephrologie / Dialyse",
+      "Wirbelsäule & Schmerz"
+    ],
+    "centers": [
+      "Notfallzentrum Biel",
+      "Brustzentrum Bern Biel",
+      "Anästhesiezentrum",
+      "Radiologiezentrum",
+      "Geburtenabteilung",
+      "Dialysezentrum Linde"
+    ],
+    "mainNavSections": [
+      "Aufenthalt & Besuch",
+      "Leistungsangebot",
+      "Veranstaltungen",
+      "Jobs & Karriere",
+      "Über unsere Klinik",
+      "Für Ärzte & Zuweiser"
+    ],
+    "seoDescription": "Die führende Privatklinik in der Region Biel-Seeland-Berner Jura bietet erstklassige Grundversorgung und darauf aufbauend gezielt Schwerpunkte. Zum Wohl unserer Patienten.",
+    "schemaOrg": {
+      "@type": "MedicalOrganization",
+      "hoursAvailable": "24 Stunden / 7 Tage"
+    }
+  },
+  "layoutNotes": "Source URL /de/klinik-linde redirects to canonical /de/klinik-linde/home.html (legacy AEM Sites, not EDS). The page is the clinic homepage (equivalent to a 'clinic detail' landing page in the EDS migration). Key structural patterns: (1) dual-logo header with clinic name overlay + hamburger sidebar nav; (2) full-bleed hero with city badge and h1; (3) search bar integrated below hero as 'middleStage'; (4) awareness banner slider (editorial promotions per specialty); (5) 66/33 intro + contact card; (6) callout hygiene notice; (7) icon quicklinks 3×2 grid; (8) three-column image teaser row; (9) mixed 50/50 layout with one large + two horizontal teasers; (10) events list on dark blue band; (11) news list; (12) footer with SEO text + social links + nav accordion + emergency 144 number. No breadcrumb rendered in HTML (single-level clinic site). Images all served from Mediclinic Scene7 CDN. Contact card (address/phone/emergency/email) is a standalone component in the right sidebar of the intro grid. The dev server at localhost:3000 is proxying stardust.style, not Hirslanden — all content was fetched directly from www.hirslanden.ch.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:40.471Z",
+    "waitMs": 3332,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:40.471Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "clinic-detail",
+  "slots": {
+    "_slotSchema": "detail-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "sections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "cta": {
+      "label": null,
+      "href": "/de/klinik-linde/fachgebiete/wirbelsaeule.html"
+    }
+  }
+}

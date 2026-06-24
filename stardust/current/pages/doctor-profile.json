@@ -1,0 +1,223 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
+  "template": "doctor-profile",
+  "fetchedAt": "2026-06-24",
+  "title": "Dr. med. Christof Abächerli | Hirslanden-Gruppe",
+  "heading": "Dr. med. Christof Abächerli",
+  "breadcrumb": [
+    {
+      "name": "Doctors",
+      "href": "/de/corporate/aerzte.html"
+    },
+    {
+      "name": "3",
+      "href": "/de/corporate/aerzte/3.html"
+    },
+    {
+      "name": "Dr. med. Christof Abächerli",
+      "href": "/de/corporate/aerzte/3/dr-med-christof-abaecherli.html"
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "doctor-lead",
+      "heading": "Dr. med. Christof Abächerli",
+      "summary": "Two-column hero: left column shows a back-link and the doctor portrait photo; right column shows the h1 name, a key-value DL listing specialty (Facharzt für) as a link to fachgebiet, and spoken languages. Layout class: grid-33-66.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "doctor-quicklinks",
+      "heading": null,
+      "summary": "Icon quick-action bar with a single CTA: 'E-Mail senden' (mailto link). Renders as a 3-column grid with icon + label per action. Additional CTAs (phone, appointment) would follow the same pattern.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "two-column-layout",
+      "heading": null,
+      "summary": "50/50 two-column layout. Left column contains: Kontakt card (mobile-only), Kernkompetenzen, Werdegang, Schulen/Studium/Diplome. Right column contains: Kontakt card (desktop), Praktiziert bei, Mitglied- und Partnerschaften, Publikationen & Videos, Veranstaltungen & Vorträge.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 4,
+      "type": "section-box",
+      "heading": "Kontakt",
+      "summary": "Contact card with: practice name (ORTHO AARAU), clinic affiliation (Hirslanden Klinik Aarau), address (Schänisweg, 5001 Aarau), phone, email, website link, 'Arzt direkt' direct contact, opening hours (Mo–Fr 8:00–12:00 / 13:30–17:00). Shown in both left (mobile) and right (desktop) columns.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 5,
+      "type": "section-box",
+      "heading": "Kernkompetenzen",
+      "summary": "Free-text block with core competencies: Knie- und Hüftchirurgie, Sportverletzungen, detailed list of treatments for knee including conservative therapy, osteotomy, partial/total knee replacements, revision surgery.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 6,
+      "type": "section-box",
+      "heading": "Werdegang",
+      "summary": "Career history as a horizontal key-value DL (year range → position/institution). 8 entries spanning 2005–2019.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 7,
+      "type": "section-box",
+      "heading": "Schulen, Studium & Diplome",
+      "summary": "Education and qualifications as a horizontal key-value DL (year → qualification). 5 entries spanning 2004–2019, including FMH specialist title, sports medicine IOC diploma, DKG knee surgeon certification.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 8,
+      "type": "section-box",
+      "heading": "Praktiziert bei",
+      "summary": "Clinic affiliation list (UL). Single entry: Hirslanden Klinik Aarau with role label 'Partnerarzt' (tooltip: accredited specialist primarily working at this clinic).",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 9,
+      "type": "section-box",
+      "heading": "Mitglied- und Partnerschaften",
+      "summary": "Unordered list of professional memberships: FMH, Swiss Orthopaedics, ESSKA, AGA, DKG, Aargauischer Ärzteverband, VSAO. 7 items.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 10,
+      "type": "section-box",
+      "heading": "Publikationen & Videos",
+      "summary": "Filtered list of publications/videos loaded via AJAX (data-url endpoint). Two YouTube video items shown: 'Behandlungsmethoden bei Arthrose an Knie, Hüfte und Schulter' (Sep 2020), 'Rapid Recovery: Schnelle Genesung nach Gelenkersatz' (May 2020). Each item has an icon, title h4, author name, date, and type badge.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 11,
+      "type": "section-box",
+      "heading": "Veranstaltungen & Vorträge",
+      "summary": "Events/talks list (empty for this doctor, but section always rendered). Loaded dynamically.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.hirslanden.ch/renditions/corporate/doctors/original/768/0/3721724-dr-med-christof-abaecherli.jpg",
+      "alt": "3721724-dr-med-christof-abaecherli",
+      "role": "Doctor portrait photo, displayed in the left column of the lead section at full width of the column. Alt text is the filename (not descriptive)."
+    },
+    {
+      "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+      "alt": "Hirslanden",
+      "role": "Site header logo"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "E-Mail senden",
+      "href": "mailto:orthoaarau@hin.ch"
+    },
+    {
+      "text": "Zurück",
+      "href": "#"
+    },
+    {
+      "text": "Hirslanden Klinik Aarau (Praktiziert bei)",
+      "href": "/de/hirslanden-klinik-aarau/home.html"
+    },
+    {
+      "text": "Orthopädische Chirurgie und Traumatologie des Bewegungsapparates (Fachgebiet)",
+      "href": "/de/corporate/fachgebiete/orthopaedische-chirurgieundtraumatologiedesbewegungsapparates.html"
+    },
+    {
+      "text": "Behandlungsmethoden bei Arthrose an Knie, Hüfte und Schulter (Video)",
+      "href": "https://www.youtube.com/watch?v=PEFGZXjxGys&feature=youtu.be"
+    },
+    {
+      "text": "Rapid Recovery: Schnelle Genesung nach Gelenkersatz (Video)",
+      "href": "https://www.youtube.com/watch?v=kCmnT0rT0dg&feature=youtu.be"
+    }
+  ],
+  "templateSpecificData": {
+    "doctorName": "Dr. med. Christof Abächerli",
+    "title": "Dr. med.",
+    "firstName": "Christof",
+    "lastName": "Abächerli",
+    "gender": "Mann",
+    "specialty": "Orthopädische Chirurgie und Traumatologie des Bewegungsapparates",
+    "specialtyUrl": "/de/corporate/fachgebiete/orthopaedische-chirurgieundtraumatologiedesbewegungsapparates.html",
+    "languages": [
+      "Deutsch",
+      "Französisch",
+      "Englisch"
+    ],
+    "clinic": "Hirslanden Klinik Aarau",
+    "clinicRole": "Partnerarzt",
+    "practiceName": "ORTHO AARAU",
+    "practiceAddress": {
+      "street": "Schänisweg",
+      "city": "Aarau",
+      "postalCode": "5001",
+      "country": "CH",
+      "clinic": "Hirslanden Klinik Aarau",
+      "googleMapsUrl": "https://maps.google.com/?q=47.39086,8.04234"
+    },
+    "phone": "+41 62 836 66 10",
+    "email": "orthoaarau@hin.ch",
+    "website": "http://www.orthoaarau.ch",
+    "openingHours": "Montag bis Freitag, 8:00 bis 12:00 Uhr und 13:30 bis 17:00 Uhr. Sprechstunde nur auf Voranmeldung.",
+    "doctorId": "3721724",
+    "pageType": "DOCTORS",
+    "repositoryPath": "/content/corporate/de/doctors/3/3721724",
+    "schemaOrgType": "Physician",
+    "structuredDataImage": "https://www.hirslanden.ch/renditions/corporate/doctors/4x3/768/0/3721724-dr-med-christof-abaecherli.jpg"
+  },
+  "layoutNotes": "ACTUAL PAGE FETCHED — localhost:3000 returned 404 for the given URL (AEM dev server not running for Hirslanden); data was fetched directly from https://www.hirslanden.ch. The doctor profile page uses a legacy AEM monolithic template (not EDS). Key layout observations: (1) Lead section uses a 33/66 grid with portrait left, name + specialty + languages right. (2) Below the lead is an icon quicklinks bar for contact actions. (3) The main body is a 50/50 two-column layout: left column holds mobile Kontakt + substantive content (Kernkompetenzen, Werdegang, Diplome); right column holds desktop Kontakt sidebar + affiliations + publications + events. (4) Responsive: Kontakt card is duplicated — shown in left column on mobile (show-on-small), hidden in right column on mobile (hide-on-small). (5) No appointment booking widget on this particular doctor page — only an email CTA in quicklinks. (6) Publications and events loaded asynchronously via data-url endpoints. (7) Doctor photo alt text is currently just the filename — accessibility issue to fix in EDS migration.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:56.517Z",
+    "waitMs": 3105,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:56.517Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "doctor-profile",
+  "slots": {
+    "_slotSchema": "doctor-profile-v1",
+    "name": null,
+    "specialty": "Page Not Found",
+    "profileImage": null,
+    "biography": null,
+    "qualifications": null,
+    "contact": {
+      "ctaLabel": null,
+      "ctaHref": "mailto:orthoaarau@hin.ch"
+    }
+  }
+}

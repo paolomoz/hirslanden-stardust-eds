@@ -1,0 +1,200 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+  "template": "treatment-detail",
+  "fetchedAt": "2026-06-24",
+  "title": "Hernienoperation – Behandlung & Ablauf | Hirslanden",
+  "heading": "Operationen bei Bauchwandbrüchen (Hernien)",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Behandlungen",
+      "href": "/de/corporate/behandlungen.html"
+    },
+    {
+      "label": "Bruchoperation, Hernienoperation",
+      "href": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "generic-header",
+      "heading": "Operationen bei Bauchwandbrüchen (Hernien)",
+      "summary": "Page header zone containing breadcrumb navigation (3-level) with sibling dropdown for both 'Behandlungen' level and individual treatment level, a back-link ('← Behandlungen'), and the H1 title. No hero image — plain white/light header with title only.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 2,
+      "type": "lead-text",
+      "heading": null,
+      "summary": "Short bold lead paragraph summarising the treatment in 2–3 sentences. States that abdominal wall hernia operations are among the most common operations; inguinal, femoral, umbilical, and incision/scar hernias most often require surgery; the procedure closes the hernia opening and reinforces the muscle wall with a mesh; this is the only effective and permanent treatment.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "rich-text-body",
+      "heading": null,
+      "summary": "Long-form medical editorial content (div.textAndImage > div.text). Structured with inline H3 subheadings covering: (1) anatomy and types of hernias and their symptoms; (2) Wie sieht die Vorbereitung vor der Operation aus? — pre-op routine tests; (3) Wie läuft die Operation ab? — two techniques (suture vs. mesh) and open vs. laparoscopic approach with CO2 detail; (4) Wie hoch ist der Therapieerfolg? — 1–2% recurrence rate; (5) Welche Risiken oder Komplikationen gibt es? — bleeding, nerve damage, infection, adhesions, rare testicular swelling in men; (6) Was passiert nach dem Eingriff? — 1–2 nights hospital stay, sport after 3–4 weeks. Includes one internal link to /de/corporate/behandlungen/reflux-operation.html (Hiatushernie cross-reference). No images.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "related-centers-list",
+      "heading": "Zentren (15)",
+      "summary": "Filterable list of 15 treatment centres offering this procedure. Layout: 2/3 main column. Filter controls: keyword typeahead input + city multiselect dropdown (Aarau, Basel, Bern, Biel, St. Gallen, Zürich) + 'Anwenden' button. Results rendered as badge cards showing: centre name (linked), address (street, postcode, city), phone number (linked tel:), email button, and optionally opening hours. Examples: Chirurgie Aarau, Chirurgie Baden, HernienZentrum Zürich (Kappelistrasse 41, 8027 Zürich), Viszeralchirurgie Beau-Site (Bern). Paginated: 10 initial results + 'Mehr anzeigen' load-more button. SEO-hidden pagination links present.",
+      "hasImage": false,
+      "hasForm": true,
+      "hasList": true
+    },
+    {
+      "order": 5,
+      "type": "related-doctors-list",
+      "heading": null,
+      "summary": "Sidebar column (1/3 width, grid-col-2). Filterable doctor list. For this page: 1 result. Displays a 'trust-card' with doctor portrait image (square, mediclinic.scene7.com CDN, 164×164px base), doctor name linked to profile, and a 'Medizinisch geprüft' (medically reviewed) badge with reviewer's name (Dr. med. Aris D'Ambrogio, linked to /de/corporate/aerzte/2/dr-aris-d-ambrogio.html). Doctor image: mediclinic.scene7.com/is/image/mediclinic/2101614-dr-med-aris-d-ambrogio:1-1 (responsive srcset at 1x/1.3x/1.5x/2x).",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 6,
+      "type": "related-events-list",
+      "heading": null,
+      "summary": "Events section (div.events.list.section) — present in markup but empty/no results for this treatment.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 7,
+      "type": "related-publications-list",
+      "heading": null,
+      "summary": "Medical library / publications section (div.publications.list.section) — present in markup but empty/no results for this treatment.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/2101614-dr-med-aris-d-ambrogio:1-1",
+      "alt": "2101614-dr-med-aris-d-ambrogio",
+      "role": "doctor-portrait — square crop, sidebar trust card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-logo-detailansicht-praxiszentren",
+      "alt": "Hirslanden",
+      "role": "og:image fallback only — not rendered on page"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "← Behandlungen",
+      "href": "/de/corporate/behandlungen.html"
+    },
+    {
+      "text": "E-Mail (Chirurgie Aarau)",
+      "href": "mailto:chirurgieaarau@hin.ch"
+    },
+    {
+      "text": "+41 62 824 21 21",
+      "href": "tel:+41628242121"
+    },
+    {
+      "text": "Mehr anzeigen",
+      "href": null
+    }
+  ],
+  "templateSpecificData": {
+    "pageType": "TREATMENT",
+    "repositoryPath": "/content/corporate/de/treatments/bruchoperationen-hernienoperationen",
+    "schemaType": "MedicalTherapy",
+    "treatmentName": "Bruchoperation, Hernienoperation",
+    "metaDescription": "Wie wird die Operation bei Hernien (Bauchwandbrüchen) durchgeführt? Hirslanden informiert über den Ablauf einer Hernienoperation.",
+    "lastModified": "2025-01-06",
+    "languageAlternates": {
+      "de-CH": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+      "fr-CH": "/fr/corporate/traitements/operation-hernie.html",
+      "en-CH": "/en/corporate/treatments/herniotomy-hernia-surgery.html"
+    },
+    "medicallyReviewedBy": {
+      "name": "Dr. med. Aris D'Ambrogio",
+      "profileUrl": "/de/corporate/aerzte/2/dr-aris-d-ambrogio.html"
+    },
+    "procedure": {
+      "indication": "Hernien (Bauchwandbrüche): Inguinal-, Krural/Femoral-, Nabel- und Narben-/Inzisionshernien",
+      "procedureSteps": [
+        "Pre-op routine tests: blood tests, blood pressure, ECG",
+        "Operation typically outpatient (ambulant)",
+        "Technique 1: suture closure of hernia opening",
+        "Technique 2 (preferred): mesh reinforcement of muscle wall (significantly lower recurrence 1–2%)",
+        "Access: open or laparoscopic (minimally invasive, CO2 insufflation)",
+        "Laparoscopic: camera and instruments via small incisions; mesh placed between peritoneum and abdominal wall, fixed with adhesive or tacks",
+        "CO2 aspirated and skin closed at end"
+      ],
+      "duration": "Ambulant/outpatient procedure; 1–2 nights hospital stay post-op",
+      "recovery": "Sport and physical activity possible after 3–4 weeks; sick leave duration depends on occupation",
+      "successRate": "Excellent; recurrence rate 1–2% with mesh",
+      "risks": "Bleeding, nerve damage, infection, adhesions (rare); temporary testicular swelling in men after inguinal hernia repair (rare); spermatic cord injury in extremely rare cases",
+      "anesthesia": "General (Vollnarkose) mandatory for laparoscopic; open approach allows general or spinal (Teilnarkose/Spinalanästhesie)"
+    },
+    "relatedCentersCount": 15,
+    "relatedCentersFilterCities": [
+      "Aarau",
+      "Basel",
+      "Bern",
+      "Biel",
+      "St. Gallen",
+      "Zürich"
+    ],
+    "relatedDoctorsCount": 1,
+    "crossLinks": [
+      {
+        "text": "Reflux-Operation",
+        "href": "/de/corporate/behandlungen/reflux-operation.html"
+      }
+    ]
+  },
+  "layoutNotes": "Two-column grid layout: main content (grid-col-1, ~66%) left; sidebar (grid-col-2, ~33%) right. The main column stacks: lead paragraph → rich text editorial with H3 subheadings → filterable centres list (with city filter + load-more). The sidebar contains the doctors list with trust card + 'Medizinisch geprüft' reviewer attribution. No hero image on this template — generic header with breadcrumb + H1 only. Empty events and publications list sections are rendered but invisible. The breadcrumb has a three-level structure with sibling dropdown menus at levels 2 and 3, effectively providing in-context navigation to all treatments. Back-link above H1 links back to the listing. Structured data (JSON-LD): MedicalTherapy + BreadcrumbList. Dev server (localhost:3000) 404s for all /de/corporate/behandlungen/* paths — content is not synced/proxied; analysis done directly against www.hirslanden.ch.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:20.104Z",
+    "waitMs": 3268,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:20.104Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "treatment-detail",
+  "slots": {
+    "_slotSchema": "detail-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "sections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "cta": {
+      "label": null,
+      "href": "/de/corporate/behandlungen.html"
+    }
+  }
+}

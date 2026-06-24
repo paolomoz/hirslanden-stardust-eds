@@ -1,0 +1,193 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html",
+  "localUrl": "http://localhost:3000/de/corporate/klinikaufenthalt",
+  "template": "patient-info",
+  "fetchedAt": "2026-06-24",
+  "title": "Klinikaufenthalt | Hirslanden",
+  "heading": "Klinikaufenthalt - Gesundheit ist Vertrauenssache",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Klinikaufenthalt",
+      "href": "/de/corporate/klinikaufenthalt.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "sticky-subnav",
+      "heading": null,
+      "contentSummary": "Horizontal sticky sub-navigation bar with four links to child pages: Aufenthalt und Besuch, Hotellerie und Services, Informationen für internationale Patienten, Rückmeldung Aufenthalt",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 2,
+      "type": "lead-text",
+      "heading": null,
+      "contentSummary": "Lead paragraph: 'Als Patient stehen Sie im Mittelpunkt unseres Handelns. Während Ihres Aufenthalts setzen unsere Ärzte und Mitarbeitenden alles daran, Ihre Erwartungen an die medizinische Behandlung, den Komfort und den Service zu erfüllen.'",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "body-text",
+      "heading": null,
+      "contentSummary": "Short paragraph: 'Angehörige und Besucher sind uns ebenfalls wichtig. Sie beeinflussen den Genesungsprozess und erleichtern den Klinikaufenthalt. Für detaillierte Informationen zu Besuchszeiten, unserem Serviceangebot oder Ihrem Aufenthalt wenden Sie sich bitte direkt an die Klinik Ihrer Wahl.' — contains inline link to /de/corporate/kliniken-und-zentren.html",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "teaser-card-grid",
+      "heading": null,
+      "contentSummary": "2-column responsive grid of 4 image-text teaser cards: (1) Kliniken und Zentren, (2) Geburt und Wochenbett, (3) Internationale Patienten, (4) Weil es um Sie geht (Hirslanden Privé). Each card has an image, h3 heading, short description, and is fully linked.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-institutionen?_ck=1616179871253",
+      "alt": "Hirslanden Institutionen",
+      "context": "Teaser card: Kliniken und Zentren",
+      "lazyLoaded": true
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslandenbaby-baby-teaser?_ck=1616177309928",
+      "alt": "Baby lacht",
+      "context": "Teaser card: Geburt und Wochenbett",
+      "lazyLoaded": true
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-besuch-blumenstrauss?_ck=1616179680105",
+      "alt": "Besucherin mit Blumenstrauss",
+      "context": "Teaser card: Internationale Patienten",
+      "lazyLoaded": true
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Medium-hirslanden3-141_MC_DL?_ck=2023-06-15T07%3A44%3A33.619Z",
+      "alt": "Guest Relations Mitarbeiterin Hirslanden Privé",
+      "context": "Teaser card: Weil es um Sie geht (Hirslanden Privé)",
+      "lazyLoaded": true
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Klinik Ihrer Wahl",
+      "href": "/de/corporate/kliniken-und-zentren.html",
+      "type": "inline-link",
+      "context": "body-text section"
+    },
+    {
+      "text": "Kliniken und Zentren",
+      "href": "/de/corporate/kliniken-und-zentren.html",
+      "type": "teaser-card",
+      "context": "teaser-card-grid"
+    },
+    {
+      "text": "Geburt und Wochenbett",
+      "href": "/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html",
+      "type": "teaser-card",
+      "context": "teaser-card-grid"
+    },
+    {
+      "text": "Internationale Patienten",
+      "href": "https://www.hirslanden.com/de/international/fuer-patienten.html",
+      "type": "teaser-card",
+      "context": "teaser-card-grid",
+      "external": true
+    },
+    {
+      "text": "Weil es um Sie geht (Hirslanden Privé)",
+      "href": "/de/corporate/leistungsuebersicht-stationaer/hirslanden-prive.html",
+      "type": "teaser-card",
+      "context": "teaser-card-grid"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "type": "sticky-subnav",
+      "description": "Horizontal scrollable sub-navigation that persists at the top of the content area as the user scrolls. Contains sibling-page links for the Klinikaufenthalt section. Rendered as a stickyLinksWrapper with prev/next arrow controls for overflow.",
+      "links": [
+        {
+          "label": "Aufenthalt und Besuch",
+          "href": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch.html"
+        },
+        {
+          "label": "Hotellerie und Services",
+          "href": "/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html"
+        },
+        {
+          "label": "Informationen für internationale Patienten",
+          "href": "/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html"
+        },
+        {
+          "label": "Rückmeldung Aufenthalt",
+          "href": "/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt.html"
+        }
+      ]
+    },
+    {
+      "type": "teaser-card",
+      "description": "Linked image-text card component (textImageTeaser). Each card: full-width responsive image (lazy-loaded via data-src from Mediclinic Scene7 CDN), h3 title, short description paragraph. Cards are fully clickable.",
+      "count": 4
+    },
+    {
+      "type": "two-column-layout",
+      "description": "Page uses a 66/33 grid: main content column (left, 2/3 width) and a sidebar column (right, 1/3 width). The sidebar column appears empty on this page — no sidebar widgets present.",
+      "sidebarEmpty": true
+    }
+  ],
+  "layoutNotes": "Page fetched from live site (https://www.hirslanden.ch) as localhost:3000 returned 404 — content not yet previewed in AEM. The page is a hub/landing page for the Klinikaufenthalt (hospital stay) section. Structure is minimal: lead text + body text + 2x2 teaser card grid. A sticky horizontal sub-navigation anchors the section and links to four child pages. No forms present. No sidebar content despite a 66/33 grid wrapper. Images use lazy loading via data-src (Mediclinic Scene7 CDN). Language switcher: DE active, FR/EN/IT available. Meta description: 'Als Patient stehen Sie im Mittelpunkt unseres Handelns. Finden Sie Informationen zur Vorbereitung & Ablauf Ihres Aufenthaltes & Besucherinformationen.'",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:13.790Z",
+    "waitMs": 3130,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:13.790Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "patient-info",
+  "slots": {
+    "_slotSchema": "editorial-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "editorialSections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/de/corporate/kliniken-und-zentren.html"
+      },
+      {
+        "href": "/de/corporate/kliniken-und-zentren.html"
+      },
+      {
+        "href": "/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html"
+      },
+      {
+        "href": "https://www.hirslanden.com/de/international/fuer-patienten.html"
+      }
+    ]
+  }
+}

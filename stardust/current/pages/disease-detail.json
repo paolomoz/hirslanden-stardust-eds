@@ -1,0 +1,273 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/brustkrebs.html",
+  "template": "disease-detail",
+  "fetchedAt": "2026-06-24",
+  "title": "Brustkrebs - Symptome, Diagnose & Behandlung | Hirslanden",
+  "heading": "Brustkrebs",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Krankheitsbilder",
+      "href": "/de/corporate/krankheitsbilder.html"
+    },
+    {
+      "label": "Brustkrebs",
+      "href": "/de/corporate/krankheitsbilder/brustkrebs.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "hero-image",
+      "heading": "",
+      "summary": "Full-width banner/stage image (oncology header). Wide 4:1 aspect ratio at desktop, 2:1 at mobile. No overlay text.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "page-header",
+      "heading": "Brustkrebs",
+      "summary": "H1 title block with breadcrumb trail above it. Breadcrumb has dropdown sibling navigation for both parent category and peer disease pages.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "lead-text",
+      "heading": "",
+      "summary": "Lead paragraph introducing the disease: 'Der Brustkrebs, medizinisch Mammakarzinom, ist die häufigste Krebserkrankung bei Frauen...' Short intro paragraph styled larger.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "in-page-navigation",
+      "heading": "",
+      "summary": "Inline anchor link list for jumping to page sections: 'Entstehung und Ursachen', 'Diagnose', 'Behandlung und Therapie'.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 5,
+      "type": "rich-text-with-image",
+      "heading": "Entstehung und Ursachen",
+      "summary": "H2 section with inline side image (ultrasound patient photo). Text covers causes: familial predisposition, BRCA1/BRCA2 mutations, hormone therapy, obesity. Biological subtypes (Hormonrezeptor-Positive, HER2-Positive) mentioned.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 6,
+      "type": "rich-text",
+      "heading": "Symptome und Diagnose",
+      "summary": "H2 section. Describes self-examination, symptoms (lumps, nipple changes, discharge, shape changes), mammography from age 50, biopsy for confirmation. Inline link to explainer video.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 7,
+      "type": "rich-text",
+      "heading": "Behandlung und Therapie",
+      "summary": "H2 section. Treatment depends on cancer type and stage. Bullet list: hormone-positive → anti-hormone therapy; HER2-positive → anti-HER2 drugs. Surgical removal (usually breast-conserving), followed by radiation therapy. Link to radiation therapy treatment page.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 8,
+      "type": "filterable-centers-list",
+      "heading": "Kliniken & Zentren",
+      "summary": "Dynamically filtered list of 21 clinics and centers treating this disease. Filter by keyword and location (Aarau, Bern, Biel, Cham Zug, Luzern, St. Gallen, Zürich). Each center card shows: name, address, phone, email button, optional opening hours. 'Mehr anzeigen' (load more) button. Paginated.",
+      "hasImage": false,
+      "hasForm": true,
+      "hasList": true
+    },
+    {
+      "order": 9,
+      "type": "teaser-image-download",
+      "heading": "Schönheits- und Pflegetipps für die Frau",
+      "summary": "Right sidebar column. Image teaser linking to a PDF download. Pink flower image, title and short description text. Links to: /content/dam/corporate/downloads/de/oncology/hirslanden-brustkrebs-pflegetipps-patientinnen.pdf",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 10,
+      "type": "video-teaser",
+      "heading": "Die Brust richtig abtasten",
+      "summary": "Right sidebar column. YouTube video teaser (play icon overlay on thumbnail image). Links to YouTube video: https://www.youtube.com/watch?v=dAaFcl2Ysm4",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 11,
+      "type": "infographic-text",
+      "heading": "",
+      "summary": "Right sidebar column. Full-width infographic image (Brustkrebs infographic DE) inside a bordered section. Image is zoomable/enlarge-linked to full size.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 12,
+      "type": "download-list",
+      "heading": "",
+      "summary": "Right sidebar column. Single PDF download: 'Infografik die Brust richtig abtasten' (PDF, 2.00 MB). Icon + file name + size.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 13,
+      "type": "publications-list",
+      "heading": "Publikationen",
+      "summary": "Right sidebar column. Dynamic list of 22 related publications (articles, videos, PDFs). Filtered, paginated (5 per page), load-more button. Each item: icon (video/PDF/article), title, publication series, author, date.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/KHB_Header_Onkologie_1",
+      "alt": "KHB_Header_Onkologie_1",
+      "role": "hero-banner"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-aarau-tumor-zentrum-brustkrebs-ultraschall",
+      "alt": "Brustkrebs-Patientin beim Ultraschall",
+      "role": "inline-content-image"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-brustkrebs-blume-rosa",
+      "alt": "Blume",
+      "role": "sidebar-teaser-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-aarau-brust-richtig-abtasten-teaser",
+      "alt": "Die Brust richtig abtasten",
+      "role": "sidebar-video-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/49486_Hirsl_Infografik_Brustkrebs_DE_web",
+      "alt": "Infografik Brustkrebs Deutsch",
+      "role": "sidebar-infographic"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Erklärvideo «Die Brust richtig abtasten»",
+      "href": "https://www.hirslanden.ch/de/corporate/publications/video/die-brust-richtig-abtasten.html"
+    },
+    {
+      "text": "Strahlentherapie",
+      "href": "https://www.hirslanden.ch/de/corporate/behandlungen/strahlentherapie.html"
+    },
+    {
+      "text": "Die Brust richtig abtasten (YouTube)",
+      "href": "https://www.youtube.com/watch?v=dAaFcl2Ysm4"
+    },
+    {
+      "text": "Schönheits- und Pflegetipps für die Frau (PDF)",
+      "href": "/content/dam/corporate/downloads/de/oncology/hirslanden-brustkrebs-pflegetipps-patientinnen.pdf"
+    },
+    {
+      "text": "Infografik die Brust richtig abtasten (PDF)",
+      "href": "/content/dam/corporate/downloads/de/oncology/hirslanden-brustabtasten-infografik.pdf"
+    }
+  ],
+  "templateSpecificData": {
+    "diseaseNameDE": "Brustkrebs",
+    "medicalName": "Mammakarzinom",
+    "pageType": "DISEASE_PATTERN",
+    "fmhs": "/content/corporate/de/fmhs/senologie-brustmedizin",
+    "medicalSpecialty": "Senologie / Brustmedizin",
+    "relatedOrgans": [
+      "Brust"
+    ],
+    "symptoms": [
+      "Knoten oder Verhärtungen in der Brust",
+      "Veränderungen an den Brustwarzen",
+      "Ausfluss aus der Brustwarze",
+      "Veränderungen an der Brustform"
+    ],
+    "symptomTags": [
+      "hirslanden:symptoms/95",
+      "hirslanden:symptoms/knoteninderbrust",
+      "hirslanden:symptoms/49",
+      "hirslanden:symptoms/4",
+      "hirslanden:symptoms/50",
+      "hirslanden:symptoms/brustausfluss"
+    ],
+    "causes": [
+      "Familiäre Veranlagung / BRCA1 / BRCA2-Genmutation",
+      "Kinderlosigkeit",
+      "Hormonersatztherapie in den Wechseljahren",
+      "Übergewicht"
+    ],
+    "diagnosticProcedures": [
+      "Selbstabtasten",
+      "Mammographie (empfohlen ab 50 Jahren)",
+      "Biopsie (zur Bestätigung)"
+    ],
+    "treatments": [
+      "Antihormon-Therapie (Hormon-Positive Brustkrebsarten)",
+      "Anti-HER2-Medikamente (HER2-Positive Brustkrebsarten)",
+      "Chirurgische Entfernung (meist brusterhaltend)",
+      "Strahlentherapie (post-operativ)"
+    ],
+    "ICD": null,
+    "schemaOrgType": "MedicalCondition",
+    "associatedCentersCount": 21,
+    "publicationsCount": 22,
+    "availableLanguages": [
+      "de",
+      "fr",
+      "en"
+    ]
+  },
+  "layoutNotes": "Note: The AEM dev server (localhost:3000) proxies to main--stardust-site-eds--paolomoz.aem.page which does not yet have disease detail pages migrated — all /de/corporate/krankheitsbilder/* URLs return 404. Data was fetched directly from the live site https://www.hirslanden.ch. The page uses a two-column grid layout (66%/33%): left main column contains lead text, in-page nav anchors, rich text sections (origins/causes, symptoms/diagnosis, treatment), and a filterable Kliniken & Zentren list; right sidebar column contains a PDF teaser card, YouTube video teaser, infographic image (zoomable), PDF download, and a paginated publications list. The hero image is a full-width stage above the header/breadcrumb block. The breadcrumb includes expandable sibling navigation dropdowns. Images are served via Adobe Scene7 CDN (mediclinic.scene7.com) with responsive srcset. The page has Schema.org MedicalCondition structured data and a BreadcrumbList. No ICD code is surfaced in the visible HTML (only symptoms tags in meta itemprop attributes).",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:52.762Z",
+    "waitMs": 3713,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:52.762Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "disease-detail",
+  "slots": {
+    "_slotSchema": "detail-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "sections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "cta": {
+      "label": null,
+      "href": "https://www.hirslanden.ch/de/corporate/publications/video/die-brust-richtig-abtasten.html"
+    }
+  }
+}

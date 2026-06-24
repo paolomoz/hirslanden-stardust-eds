@@ -336,37 +336,44 @@
      DS-FEATURE — Hingabe editorial band (from C)
      CSS adapted to DESIGN-A tokens
   ══════════════════════════════════════════ */
-  .ds-feature { position: relative; background: var(--color-ground-alt); }
-  .ds-feature-figure { margin: 0; }
+  .ds-feature { position: relative; overflow: hidden; background: var(--color-ground-alt); }
+  /* Figure absolutely fills the section — same pattern as hero */
+  .ds-feature-figure { position: absolute; inset: 0; margin: 0; }
   .ds-feature-figure img {
     width: 100%;
-    height: clamp(300px, 48vh, 540px);
+    height: 100%;
     object-fit: cover;
     object-position: 50% 42%;
   }
-  /* Mobile: panel pulled up over image bottom edge */
+  /* Container in flow at mobile; panel pushes down past the image via margin-top */
+  .ds-feature .container { position: relative; z-index: 1; }
   .ds-feature-panel {
     background: var(--color-bg);
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.11);
     padding: var(--spacing-xl);
-    max-width: 480px;
-    margin: -24px var(--spacing-lg) var(--spacing-2xl);
+    max-width: 500px;
+    margin: clamp(280px, 42vh, 500px) var(--spacing-lg) var(--spacing-2xl);
     position: relative;
     z-index: 1;
+    border-top: 3px solid var(--color-accent);
   }
-  .ds-feature-panel .eyebrow { color: var(--color-text-soft); }
+  .ds-feature-panel .eyebrow {
+    color: var(--color-accent-ink);
+    margin-bottom: var(--spacing-xs);
+  }
   .ds-feature-panel h2 {
     font-weight: 500;
-    font-size: var(--heading-lg);
+    font-size: var(--heading-xl);
     line-height: var(--line-height-heading);
     color: var(--color-fg);
-    margin: 0 0 var(--spacing-sm);
+    margin: 0 0 var(--spacing-md);
+    text-wrap: balance;
   }
   .ds-feature-panel p {
     font-size: var(--body);
     line-height: var(--line-height-body);
     color: var(--color-text-soft);
-    margin: 0 0 var(--spacing-md);
+    margin: 0 0 var(--spacing-lg);
   }
 
   /* ══════════════════════════════════════════
@@ -508,13 +515,27 @@
   .blog-band h2 { color: #ffffff; font-size: var(--heading-lg); }
 
   /* ══════════════════════════════════════════
-     PROMO CARDS — live banner-slider as static editorial grid
+     PROMO CARDS — asymmetric bento: 1 featured hero (spans 2 rows) + 2×2 grid
   ══════════════════════════════════════════ */
   .promo-cards { background: var(--color-ground-alt); }
   .promo-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: var(--spacing-md);
+  }
+  /* Tablet: card 1 spans full width as a banner, 2+2 below */
+  @media (min-width: 600px) {
+    .promo-cards-grid { grid-template-columns: 1fr 1fr; }
+    .promo-card:first-child { grid-column: span 2; }
+    .promo-card:first-child .promo-card-media { aspect-ratio: 16/6; }
+  }
+  /* Desktop bento: tall hero left, 2×2 right */
+  @media (min-width: 900px) {
+    .promo-cards-grid { grid-template-columns: 1.2fr 0.9fr 0.9fr; }
+    .promo-card:first-child { grid-column: 1; grid-row: span 2; }
+    .promo-card:first-child .promo-card-media { flex: 1; aspect-ratio: unset; min-height: 220px; }
+    .promo-card:first-child .promo-card-title { font-size: var(--heading-lg); text-wrap: balance; }
+    .promo-card:first-child .promo-card-body { padding: var(--spacing-lg); }
   }
   .promo-card {
     background: var(--color-bg);
@@ -525,7 +546,7 @@
   }
   .promo-card:hover .promo-card-title { color: var(--color-accent-ink); }
   .promo-card-media { aspect-ratio: 3/2; overflow: hidden; }
-  .promo-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 220ms ease; }
+  .promo-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1); }
   .promo-card:hover .promo-card-media img { transform: scale(1.04); }
   .promo-card-body { padding: var(--spacing-md); display: flex; flex-direction: column; gap: var(--spacing-xs); flex: 1; }
   .promo-card-tag {
@@ -535,7 +556,7 @@
   .promo-card-title {
     font-size: var(--heading-md); font-weight: 500; line-height: 1.3;
     transition: color 140ms ease; color: var(--color-fg);
-    margin: 0;
+    margin: 0; text-wrap: balance;
   }
   .promo-card-text { font-size: var(--body-sm); color: var(--color-text-soft); line-height: 1.5; flex: 1; }
   .promo-card-cta { font-size: var(--body-sm); color: var(--color-accent-ink); font-weight: 500; margin-top: var(--spacing-sm); }
@@ -599,9 +620,9 @@
      RESPONSIVE
   ══════════════════════════════════════════ */
 
-  /* Desktop feature: panel overlays image at bottom-left */
+  /* Desktop feature: explicit height; panel overlays image at bottom-left */
   @media (min-width: 900px) {
-    .ds-feature { overflow: hidden; }
+    .ds-feature { height: clamp(380px, 55vh, 640px); }
     .ds-feature .container {
       position: absolute;
       inset: 0;
@@ -656,7 +677,7 @@
     .hero-copy h1 { max-width: none; }
     .search-card { padding: var(--spacing-lg); }
     /* Feature panel: full width on small screens */
-    .ds-feature-panel { max-width: none; margin: -20px var(--spacing-md) var(--spacing-2xl); }
+    .ds-feature-panel { max-width: none; margin-inline: var(--spacing-md); }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -742,7 +763,7 @@
   </section>
 
   <!-- ── promo-cards (live banner-slider: 5 featured slides) ────────── -->
-  <section class="section promo-cards" data-section="promo-cards" data-intent="feature content" data-layout="grid" data-items="5">
+  <section class="section promo-cards" data-section="promo-cards" data-intent="feature content" data-layout="bento" data-items="5">
     <div class="container">
       <div class="promo-cards-grid">
         <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/wochenbett/rsv-immunisierung-bei-neugeborenen.html">

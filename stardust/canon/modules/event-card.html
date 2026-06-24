@@ -1,0 +1,21 @@
+<!-- stardust:canon
+  writtenBy:       stardust:prototype --prep
+  writtenAt:       2026-06-24T00:00:00Z
+  sourceSlug:      home
+  sourcePrototype: stardust/prototypes/home-F-proposed.html
+  region:          module:event-card
+  stardustVersion: 0.10.0
+-->
+<!-- Usage: repeat <li class="event-row"> for each event inside <ul class="event-list"> -->
+<li class="event-row">
+  <a href="[[EVENT_URL]]" data-slot="event-link">
+    <span class="date-chip">
+      <span class="day" data-slot="day">[[DAY]]</span>
+      <span class="mon" data-slot="month">[[MON]]</span>
+    </span>
+    <span class="event-text">
+      <span class="loc" data-slot="location">[[LOCATION]]</span>
+      <h3 data-slot="title">[[TITLE]]</h3>
+    </span>
+  </a>
+</li>

@@ -1,0 +1,61 @@
+<!-- stardust:canon
+  writtenBy:       stardust:prototype --prep
+  writtenAt:       2026-06-24T00:00:00Z
+  sourceSlug:      home
+  sourcePrototype: stardust/prototypes/home-F-proposed.html
+  region:          module:header-nav
+  stardustVersion: 0.10.0
+-->
+<header class="site-header" data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;" data-slot="skip-link-label">Zum Inhalt springen</a>
+
+  <!-- Utility bar: contact, media, language switcher -->
+  <div class="header-utility">
+    <div class="container">
+      <a data-slot="utility-contact" href="[[CONTACT_URL]]">Kontakt</a>
+      <a data-slot="utility-media" href="[[MEDIA_URL]]">Medien</a>
+      <span class="lang" aria-label="Sprache wählen" data-slot="language-switcher">
+        <a href="[[LANG_DE_URL]]" aria-current="true">DE</a>
+        <a href="[[LANG_FR_URL]]">FR</a>
+        <a href="[[LANG_EN_URL]]">EN</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Main nav bar: logo + primary nav + search + hamburger -->
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="[[HOME_URL]]" aria-label="[[SITE_NAME]] Startseite" data-slot="logo">
+        <img src="[[LOGO_PATH]]" alt="[[SITE_NAME]]" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation" data-slot="primary-nav">
+        <!-- inject: <a href="[[URL]]">[[LABEL]]</a> per top-level nav item -->
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>

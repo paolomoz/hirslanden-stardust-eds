@@ -1,0 +1,59 @@
+<!-- stardust:canon
+  writtenBy:       stardust:prototype --prep
+  writtenAt:       2026-06-24T00:00:00Z
+  sourceSlug:      home
+  sourcePrototype: stardust/prototypes/home-F-proposed.html
+  region:          module:site-footer
+  stardustVersion: 0.10.0
+-->
+<footer class="site-footer" data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+
+    <!-- Pre-footer: tagline + social -->
+    <div class="footer-pre">
+      <div>
+        <h2 data-slot="footer-org-name">[[SITE_NAME_FULL]]</h2>
+        <p data-slot="footer-tagline">[[FOOTER_TAGLINE]]</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social" data-slot="social-links">
+          <!-- inject: <a href="[[URL]]" aria-label="[[NETWORK]]">[[ICON_SVG]]</a> per social channel -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav columns + emergency 144 -->
+    <div class="footer-cols">
+      <div class="footer-col" data-slot="footer-col-1">
+        <h3 data-slot="col1-heading">[[COL1_HEADING]]</h3>
+        <ul><!-- inject nav links --></ul>
+      </div>
+      <div class="footer-col" data-slot="footer-col-2">
+        <h3 data-slot="col2-heading">[[COL2_HEADING]]</h3>
+        <ul><!-- inject nav links --></ul>
+      </div>
+      <div class="footer-col" data-slot="footer-col-3">
+        <h3 data-slot="col3-heading">[[COL3_HEADING]]</h3>
+        <ul><!-- inject nav links --></ul>
+      </div>
+      <!-- Emergency 144 — always present, always in emergency red, never elsewhere -->
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Legal bar -->
+    <div class="footer-bar">
+      <span data-slot="copyright">[[COPYRIGHT]]</span>
+      <nav aria-label="Rechtliche Hinweise" data-slot="legal-nav">
+        <!-- inject: <a href="[[URL]]">[[LABEL]]</a> per legal link -->
+      </nav>
+    </div>
+
+  </div>
+</footer>

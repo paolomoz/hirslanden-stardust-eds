@@ -1,82 +1,434 @@
 {
-    "_provenance": {
-        "writtenBy": "stardust:extract",
-        "writtenAt": "2026-06-24T00:00:00Z",
-        "stardustVersion": "0.10.0"
-    },
-    "site": {
-        "originUrl": "https://www.hirslanden.ch",
-        "deployUrl": null,
-        "extractedAt": "2026-06-24T00:00:00Z",
-        "pageCap": 1,
-        "totalDiscovered": 1,
-        "crawled": 1
-    },
-    "direction": {
-        "resolvedAt": "2026-06-24T00:00:00Z",
-        "phrase": "5 different directions, all very professional, modern, pin colors typography and brand dna, do not play with cinematic for now",
-        "directionFile": "stardust/direction.md",
-        "variantMode": "reimagined",
-        "variants": [
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"
-        ]
-    },
-    "pages": [
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-24T00:00:00Z",
+    "updatedAt": "2026-06-24T00:00:00Z",
+    "updatedBy": "manual \u2014 registered all template archetypes, promoted home to approved (variant F)",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://www.hirslanden.ch",
+    "deployUrl": null,
+    "extractedAt": "2026-06-24T00:00:00Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-06-24T00:00:00Z",
+    "phrase": "brand-faithful refresh \u2014 5 variants A-E, canonical F selected",
+    "directionFile": "stardust/direction.md",
+    "variantMode": "reimagined",
+    "variants": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "approvedVariant": "F",
+    "approvedVariantNote": "User-directed merge of best sections from A+B+C: header/hero/proof from A, ds-feature from C, quicklinks from A, group-teasers from A, whats-happening from B, footer from A. Bento promo-card grid replaces auto-fit grid. ds-feature uses absolute-positioned figure for true full-bleed."
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.hirslanden.ch/",
+      "title": "Hirslanden-Gruppe, Schweiz",
+      "type": "landing",
+      "status": "approved",
+      "history": [
         {
-            "slug": "home",
-            "url": "https://www.hirslanden.ch/",
-            "title": "Hirslanden-Gruppe, Schweiz",
-            "type": "landing",
-            "status": "prototyped",
-            "history": [
-                {
-                    "status": "extracted",
-                    "at": "2026-06-24T00:00:00Z"
-                },
-                {
-                    "status": "directed",
-                    "at": "2026-06-24T00:00:00Z"
-                },
-                {
-                    "status": "prototyped",
-                    "at": "2026-06-24T00:00:00Z",
-                    "variant": "A",
-                    "note": "Variant A (faithful + improvements), static. Gates: critique clean; audit AA-clean (P1 contrast fixed via --color-accent-ink); adapt analyzed at 1920/1440/1280/900/640/414/375/360; motion N/A (static)."
-                },
-                {
-                    "status": "prototyped",
-                    "at": "2026-06-24T00:00:00Z",
-                    "variant": "B",
-                    "note": "Variant B (Care-routing first), static. IA bet: five equal-weight need-routing cards (Klinik finden / Arzt finden / Klinikaufenthalt planen / Internationale Patienten / Notfall 144) beside the captured search field lead the page; quicklink grid + map + teasers subsumed; news/events/blog demoted to one lighter band. Gates: critique clean (detector 0 findings); audit AA-clean after 3 P1 contrast fixes (search btn #006894, footer 144 on white chip, footer legal .88); adapt static-analyzed at 1920/1440/1280/1100/900/800/640/414/375/360 (hamburger <640, cards reflow to stacked); motion N/A (static)."
-                },
-                {
-                    "status": "prototyped",
-                    "at": "2026-06-24T00:00:00Z",
-                    "variant": "C",
-                    "note": "Variant C (Photography-led / 'The Warm Editorial Front Door'), static. Bet: captured warm clinician-with-patient photography promoted from thumbnail teasers to full-bleed editorial scale; reassurance voice given editorial room; quieter type (ratio 1.2, heading weight 500, body line-height 1.7). Surprise high (2 cliches replaced + document-shape poster-sequence of full-bleed photo bands). Search stays first-viewport (slim bar under hero). Gates: critique clean (impeccable detector 0 findings; brand image-led canonical); audit AA-computed clean (hero white-on-scrim 6.39:1, CTAs on #006894 6.16:1, large-text-floor pairs pass incl. footer 144 red-on-white-chip 3.85:1; LCP hero eager+fetchpriority high; all alt present); adapt static-analyzed 1920..360 with 1 P1 fixed (mobile header overflow at 360 -> nav gap 16 + icon-only search <640 with aria-label; bar 274<=312); motion N/A (static). 2 [data-placeholder] editorial-image blocks (no captured photo for 'Für alle Folgen des Lebens' + 'Hirslanden Healthline' teasers); all text captured-verbatim, 16/300/3000 captured fact."
-                },
-                {
-                    "status": "prototyped",
-                    "at": "2026-06-24T00:00:00Z",
-                    "variant": "D",
-                    "note": "Variant D (Confident display / 'The Institution, Set in Type'), static. Bet: Metropolis pushed into a confident perfect-fourth display scale (ratio 1.333, Display clamp up to 4.21rem, tight line-height 1.08) on a strict VISIBLE 12-column modular grid (24px gutters, hairline #e2dfdb rules); the captured 16/über 300/über 3000 scale story PROMOTED from footer prose to an upper-page typographic PROOF BLOCK (three Display numerals warm #534c46 with Label captions, flat, hairline-ruled, no count-up). Type leads; photography supports (hero photo a contained right-5-col grid cell, never full-bleed). Search stays first-viewport. Surprise high (2 cliches replaced: ad-hoc disagreeing scale + low-contrast watermark headline -> disciplined 1.333 display scale + high-contrast warm display headline; scale-story-as-footer-prose -> upper-page proof block; + 1 document-shape: flat module stack -> visible 12-col grid). Type-scale yield recorded (captured ad-hoc 42/34/22 ratios 1.235/1.545 -> single modular 1.333). Gates: critique clean (impeccable detector 0 findings; brand-faithful inversions auto-dismissed); audit AA-computed clean (display+proof #534c46-on-white 8.43:1; body >=7.34:1; captions #72665b >=4.85:1; links #0070a0 >=4.78:1; CTA white-on-#006894 6.16:1; blog white H2 on #0094d4 3.39:1 large-floor pass; footer 144 red-on-white-chip 3.85:1 large-floor pass; LCP hero eager+fetchpriority high; all alt present; no JS-hidden-state); adapt Playwright-rendered 1280/640/375 zero overflow, display clamp 67->48px scales down clean, hamburger <640 source-order correct, grid reflows 12->8->1; motion N/A (static). 0 [data-placeholder] — all copy captured-verbatim; two image-less care cards are deliberate type-led cards (Variant D bet), not placeholders; 16/300/3000 captured fact."
-                },
-                {
-                    "status": "prototyped",
-                    "at": "2026-06-24T00:00:00Z",
-                    "variant": "E",
-                    "note": "Variant E (Calm / neutral-forward), static. Rendered via impeccable:craft in the main context (subagent spawn was API-throttled with 529s). Bet: warm #f7f6f5 ground CARRIES the page (white demoted to the single rare lift = the search card); blue #0094d4 RATIONED to true wayfinding actions only — captured full-blue 'Hirslanden Blog' band demoted to warm-alt + a single blue CTA, proof numerals set in warm #534c46 (not blue), quicklink tiles warm with hairline (not blue-tint); the 18px pill EXTENDED into one consistent shape system across chips/cards/tags/inputs/buttons/date-chips/144 box (captured pill-vs-squared contrast resolved toward the pill); quiet type (ratio 1.2, heading weight 500, body line-height 1.7); flat surfaces (shadow only on the white search card). Emergency 144 stays reserved red, reading even louder as the lone saturated accent. Gates: design detector clean (0 findings); audit AA-computed (#534c46 on warm >=7:1, #72665b meta >=4.6:1, links #0070a0 on warm >=4.6:1, white CTA on #006894 6.16:1; P1 pinned-blue <18px fixed via #0070a0/#006894); adapt Playwright-verified 1440/900/375 zero console errors + zero horizontal overflow after fixing a grid-track overflow at 375 (hero-grid 1fr -> minmax(0,1fr) + min-width:0 on children); motion N/A (static). 0 [data-placeholder]; two group-teaser images render as flat warm label panels (no captured asset; no invented imagery); all copy captured-verbatim; 16/300/3000 captured fact."
-                }
-            ],
-            "stale": false,
-            "staleReason": null,
-            "currentStatePath": "stardust/current/pages/home.json",
-            "prototypePath": "stardust/prototypes/home-A-proposed.html",
-            "migratedPath": null
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "A",
+          "note": "Variant A (faithful + improvements), static. Gates: critique clean; audit AA-clean (P1 contrast fixed via --color-accent-ink); adapt analyzed at 1920/1440/1280/900/640/414/375/360; motion N/A (static)."
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "B",
+          "note": "Variant B (Care-routing first), static. IA bet: five equal-weight need-routing cards beside captured search field; news/events/blog demoted."
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "C",
+          "note": "Variant C (Photography-led / 'The Warm Editorial Front Door'), static. Full-bleed editorial photography; ds-feature pattern established."
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "D",
+          "note": "Variant D (Confident display / 'The Institution, Set in Type'), static. Perfect-fourth modular scale; visible 12-col grid."
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "E",
+          "note": "Variant E (Calm / neutral-forward), static. Pill shape system; blue rationed to wayfinding only."
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F",
+          "note": "Variant F \u2014 user-directed merge A+B+C. Bento editorial grid (1.2fr 0.9fr 0.9fr, first card row-span 2). ds-feature: figure position:absolute inset:0 for true full-bleed. Editorial panel: border-top 3px solid --color-accent. Impeccable detector: 0 findings."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F",
+          "note": "User approved variant F as canonical design for the migration."
         }
-    ]
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": "stardust/prototypes/home-F-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "clinic-listing",
+      "url": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html",
+      "title": "Kliniken und Zentren | Hirslanden",
+      "type": "listing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Real clinic card images loaded. Filter bar styled. Hirslanden in Ihrer N\u00e4he CTA strip."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/clinic-listing.json",
+      "prototypePath": "stardust/prototypes/clinic-listing-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "clinic-detail",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/home.html",
+      "title": "Hirslanden Klinik Linde, Biel",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. ds-feature hero, key-facts strip, departments grid, doctor teasers, location section, contact CTA."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/clinic-detail.json",
+      "prototypePath": "stardust/prototypes/clinic-detail-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "doctor-profile",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
+      "title": "Dr. med. Christof Ab\u00e4cherli | Hirslanden-Gruppe",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Split hero (photo + name/specialty), about section, focus areas, clinic affiliation, appointment CTA, related doctors."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/doctor-profile.json",
+      "prototypePath": "stardust/prototypes/doctor-profile-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "specialty-topic",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+      "title": "Herzmedizin (Kardiologie) | Hirslanden",
+      "type": "editorial",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Full-bleed editorial hero, intro with anchor nav, conditions/prevention, diagnosis & treatment, specialist teasers, related topics."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/specialty-topic.json",
+      "prototypePath": "stardust/prototypes/specialty-topic-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "disease-detail",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/brustkrebs.html",
+      "title": "Brustkrebs - Symptome, Diagnose & Behandlung | Hirslanden",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Condition hero, overview, symptoms, diagnosis, treatment options, specialist teasers, related conditions, CTA."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/disease-detail.json",
+      "prototypePath": "stardust/prototypes/disease-detail-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "treatment-detail",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+      "title": "Hernienoperation \u2013 Behandlung & Ablauf | Hirslanden",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Treatment hero, indication, numbered procedure steps, duration/recovery facts, specialist teasers, related treatments, CTA."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/treatment-detail.json",
+      "prototypePath": "stardust/prototypes/treatment-detail-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "news-listing",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+      "title": "News & Medienmitteilungen | Hirslanden",
+      "type": "listing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Tab-pill navigation, styled list rows with hover, newsletter CTA band."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/news-listing.json",
+      "prototypePath": "stardust/prototypes/news-listing-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "news-article",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+      "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Gen\u00e8ve | Hirslanden",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Article hero, body prose, sidebar, related articles 3-up."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/news-article.json",
+      "prototypePath": "stardust/prototypes/news-article-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "event-listing",
+      "url": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html",
+      "title": "Kurse und Veranstaltungen | Hirslanden",
+      "type": "listing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Category filter chips, event card grid with real images, pagination, topic discovery CTA."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/event-listing.json",
+      "prototypePath": "stardust/prototypes/event-listing-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "event-detail",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+      "title": "Informationsabend Geburt",
+      "type": "detail",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Event hero (warm-ground fallback, no 404 image), event meta sidebar, directions, CTA, related events."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/event-detail.json",
+      "prototypePath": "stardust/prototypes/event-detail-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "patient-info",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html",
+      "title": "Klinikaufenthalt | Hirslanden",
+      "type": "editorial",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Split hero, numbered steps with blue circles, services cards, insurance columns as editorial panels."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/patient-info.json",
+      "prototypePath": "stardust/prototypes/patient-info-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "content-page",
+      "url": "https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html",
+      "title": "Hingabe, die man sp\u00fcrt. | Hirslanden",
+      "type": "editorial",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-06-24T00:00:00Z",
+          "variant": "F-aligned",
+          "note": "F-aligned template prototype. Full-bleed editorial hero (ds-feature), photo grid, location section, values section, CTA."
+        },
+        {
+          "status": "approved",
+          "at": "2026-06-24T00:00:00Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/content-page.json",
+      "prototypePath": "stardust/prototypes/content-page-proposed.html",
+      "migratedPath": null
+    }
+  ]
 }

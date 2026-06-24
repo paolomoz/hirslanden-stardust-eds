@@ -1,0 +1,20 @@
+<!-- stardust:canon
+  writtenBy:       stardust:prototype --prep (diff-mode, clinic-listing approval)
+  writtenAt:       2026-06-24T00:00:00Z
+  sourceSlug:      clinic-listing
+  sourcePrototype: stardust/prototypes/clinic-listing-proposed.html
+  region:          module:search-filter
+  stardustVersion: 0.10.0
+-->
+<!-- Usage: place at top of listing section, inside .container, before the results grid -->
+<div class="filter-bar" role="search" aria-label="[[FILTER_LABEL]]" data-slot="filter-bar">
+  <div class="filter-group" data-slot="search-input">
+    <label for="filter-keyword" data-slot="search-label">[[SEARCH_LABEL]]</label>
+    <input type="search" id="filter-keyword" name="q" placeholder="[[SEARCH_PLACEHOLDER]]" autocomplete="off">
+  </div>
+  <!-- inject additional .filter-group blocks per facet (canton, city, specialty, date-range, etc.) -->
+  <!-- each .filter-group contains: <label>, then either <input> or .filter-select-wrap > <select> -->
+  <div class="filter-count" aria-live="polite" data-slot="results-count">
+    <strong>[[COUNT]]</strong> [[RESULTS_LABEL]]
+  </div>
+</div>

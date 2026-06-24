@@ -1,0 +1,494 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html",
+  "localUrl": "http://localhost:3000/de/corporate/kliniken-und-zentren/kliniken",
+  "template": "clinic-listing",
+  "fetchedAt": "2026-06-24",
+  "title": "Kliniken und Zentren | Hirslanden",
+  "heading": "Unsere Kliniken auf einen Blick",
+  "metaDescription": "Erfahren Sie mehr über die Kliniken & Zentren der Privatklinikgruppe Hirslanden. Unsere kompetenten Fachärzte kümmern sich um Ihre Gesundheit.",
+  "breadcrumb": [
+    {
+      "label": "Hirslanden-Gruppe",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Kliniken und Zentren",
+      "href": "/de/corporate/kliniken-und-zentren.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "page-header",
+      "heading": "Unsere Kliniken auf einen Blick",
+      "contentSummary": "Full-width page header with H1 and a backlink 'Hirslanden-Gruppe' pointing to /de/corporate/home.html",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "sticky-subnav",
+      "heading": null,
+      "contentSummary": "Horizontally scrollable sticky sub-navigation bar with 6 sibling-section links: 'Hirslanden in Ihrer Nähe', 'Ambulante Operationszentren', 'Medizinische Zentren', 'Geburtskliniken', 'Kliniken mit Notfall', 'Alle Zentren und Institute'",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false,
+      "navLinks": [
+        {
+          "label": "Hirslanden in Ihrer Nähe",
+          "href": "/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html"
+        },
+        {
+          "label": "Ambulante Operationszentren",
+          "href": "/de/corporate/kliniken-und-zentren/praxiszentren.html"
+        },
+        {
+          "label": "Medizinische Zentren",
+          "href": "/de/corporate/kliniken-und-zentren/medizinische-zentren.html"
+        },
+        {
+          "label": "Geburtskliniken",
+          "href": "/de/corporate/kliniken-und-zentren/geburtskliniken.html"
+        },
+        {
+          "label": "Kliniken mit Notfall",
+          "href": "/de/corporate/kliniken-und-zentren/notfallstationen.html"
+        },
+        {
+          "label": "Alle Zentren und Institute",
+          "href": "/de/corporate/kliniken-und-zentren/institute.html"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "type": "lead-text",
+      "heading": null,
+      "contentSummary": "Single introductory paragraph: 'Ihre Gesundheit steht bei uns im Mittelpunkt. Dafür setzen wir uns täglich in unseren Kliniken, Radiologie- und fünf Radiotherapieinstituten sowie unseren ambulanten Chirurgiezentren und Notfallstationen ein.'",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "clinic-listing",
+      "heading": "Kliniken",
+      "contentSummary": "Filtered grid of 16 clinic cards. Each card shows: clinic photo, name (H3 link), street address, phone number, and a 'Zur Website' CTA button. Filter bar includes a typeahead text search (Stichwort/Name), multi-select canton dropdown (Kanton), and multi-select city dropdown (Stadt).",
+      "hasImage": true,
+      "hasForm": true,
+      "hasList": true,
+      "resultCount": 16,
+      "filterControls": [
+        {
+          "type": "typeahead-text",
+          "placeholder": "Stichwort/Name",
+          "fieldId": "filterKeyword"
+        },
+        {
+          "type": "multiselect-checkbox",
+          "placeholder": "Kanton",
+          "fieldName": "province",
+          "options": [
+            "Aargau",
+            "Basel-Land",
+            "Bern",
+            "Geneva",
+            "Luzern",
+            "St. Gallen",
+            "Vaud",
+            "Zug",
+            "Zürich"
+          ]
+        },
+        {
+          "type": "multiselect-checkbox",
+          "placeholder": "Stadt",
+          "fieldName": "city",
+          "options": [
+            "Aarau",
+            "Bern",
+            "Biel",
+            "Cham",
+            "Chene Bougeries",
+            "Geneva",
+            "Lausanne",
+            "Luzern"
+          ]
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-kliniken-zentren?_ck=1616237500051",
+      "alt": "Kliniken und Zentren OG image",
+      "context": "og:image / page hero"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/AndreasKlinik-Aussenansicht?_ck=1616232285998",
+      "alt": "AndreasKlinik - Aussenansicht",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/clinique-bois-cerf-batiment?_ck=1616207329550",
+      "alt": "clinique-bois-cerf-batiment",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/clinique-cecil-clinique?_ck=1616207484583",
+      "alt": "clinique-cecil-clinique",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-clinique-des-grangettes?_ck=1651735232960",
+      "alt": "Clinique des Grangettes",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Hirslanden%20Clinique%20La%20Colline%20-%20Portrait?_ck=1616184500419",
+      "alt": "clinique-la-colline-passerelle",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-aarau-aussenaufnahme?_ck=1616174893873",
+      "alt": "Haus B der Hirslanden Klinik Aarau",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-birshof-eingang-aussen?_ck=1616177676132",
+      "alt": "Hirslanden Klinik Birshof Eingang aussen",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-im-park-aussenansicht?_ck=1616173315471",
+      "alt": "klinik-im-park-aussenansicht",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-privatklinik-linde?_ck=1616177682803",
+      "alt": "Privatklinik Linde Garten",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-beau-site-berner-viszeral-chirurgie-header?_ck=1673367965212",
+      "alt": "Klinik Beau Site Berner Viszeral Chirurgie Header",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Klinik%20Hirslanden%20aussen?_ck=1616182269269",
+      "alt": "Klinik Hirslanden aussen",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-permanence-aussen?_ck=1673369443401",
+      "alt": "Aussenansicht Klinik Permanence",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stanna-ansicht-1536x1152?_ck=2025-07-04T12%3A07%3A34.689Z",
+      "alt": "klinik-stanna-ansicht-1536x1152",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stephanshorn-klinik?_ck=1616191277095",
+      "alt": "klinik-stephanshorn-klinik",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/salem-spital-aussen?_ck=1616321599838",
+      "alt": "Aussenansicht Salem-Spital",
+      "context": "clinic-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stanna-meggen-ansicht-2021-content?_ck=1632725671642",
+      "alt": "St. Anna in Meggen - Ansicht",
+      "context": "clinic-card"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Zur Website",
+      "href": "/de/andreasklinik-cham-zug/home.html",
+      "context": "clinic-card: AndreasKlinik Cham Zug"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/clinique-bois-cerf/home.html",
+      "context": "clinic-card: Clinique Bois-Cerf"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/clinique-cecil/home.html",
+      "context": "clinic-card: Clinique Cecil"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/clinique-des-grangettes/home.html",
+      "context": "clinic-card: Clinique des Grangettes"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/clinique-la-colline/home.html",
+      "context": "clinic-card: Hirslanden Clinique La Colline"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/hirslanden-klinik-aarau/home.html",
+      "context": "clinic-card: Hirslanden Klinik Aarau"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-birshof/home.html",
+      "context": "clinic-card: Hirslanden Klinik Birshof"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-im-park/home.html",
+      "context": "clinic-card: Hirslanden Klinik Im Park"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-linde/home.html",
+      "context": "clinic-card: Hirslanden Klinik Linde"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-beau-site/home.html",
+      "context": "clinic-card: Klinik Beau-Site"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-hirslanden/home.html",
+      "context": "clinic-card: Klinik Hirslanden"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-permanence/home.html",
+      "context": "clinic-card: Klinik Permanence"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-st--anna/home.html",
+      "context": "clinic-card: Klinik St. Anna"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/klinik-stephanshorn/home.html",
+      "context": "clinic-card: Klinik Stephanshorn"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/salem-spital/home.html",
+      "context": "clinic-card: Salem-Spital"
+    },
+    {
+      "text": "Zur Website",
+      "href": "/de/st-anna-in-meggen/home.html",
+      "context": "clinic-card: St. Anna in Meggen"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "component": "clinic-card",
+      "description": "Card for a single clinic entry in the listing grid",
+      "fields": [
+        {
+          "field": "image",
+          "type": "picture/img",
+          "notes": "Responsive picture element with 3 srcset breakpoints (mobile/tablet/desktop) from Scene7 CDN, 4:3 crop ratio"
+        },
+        {
+          "field": "name",
+          "type": "h3 link",
+          "notes": "Clinic name as a link to the clinic's own homepage"
+        },
+        {
+          "field": "address",
+          "type": "text",
+          "notes": "Street + postcode/city as two contact-block spans; some clinics omit this"
+        },
+        {
+          "field": "phone",
+          "type": "tel link",
+          "notes": "Swiss formatted phone number; some clinics omit this"
+        },
+        {
+          "field": "cta",
+          "type": "button link",
+          "notes": "Single 'Zur Website' button per card"
+        }
+      ],
+      "exampleClinic": {
+        "name": "AndreasKlinik Cham Zug",
+        "href": "/de/andreasklinik-cham-zug/home.html",
+        "address": "Rigistrasse 1, 6330 Cham",
+        "phone": "+41417840784",
+        "image": "https://mediclinic.scene7.com/is/image/mediclinic/AndreasKlinik-Aussenansicht?_ck=1616232285998",
+        "imageAlt": "AndreasKlinik - Aussenansicht"
+      }
+    },
+    {
+      "component": "clinic-filter",
+      "description": "Filter bar above the clinic grid with 3 controls",
+      "fields": [
+        {
+          "field": "keyword-search",
+          "type": "typeahead text input",
+          "placeholder": "Stichwort/Name",
+          "notes": "Live typeahead filtering against AEM search index with CLINIC page-type filter"
+        },
+        {
+          "field": "province-filter",
+          "type": "multiselect checkbox dropdown",
+          "placeholder": "Kanton",
+          "notes": "9 Swiss canton options: Aargau, Basel-Land, Bern, Geneva, Luzern, St. Gallen, Vaud, Zug, Zürich"
+        },
+        {
+          "field": "city-filter",
+          "type": "multiselect checkbox dropdown",
+          "placeholder": "Stadt",
+          "notes": "City options matching available clinics"
+        }
+      ]
+    },
+    {
+      "component": "sticky-subnav",
+      "description": "Horizontally scrollable sticky sub-navigation linking to related listing pages (Kliniken, Ambulante OPs, Medizinische Zentren, Geburtskliniken, Notfall, Institute). Prev/next arrow controls for overflow.",
+      "navItems": 6
+    },
+    {
+      "component": "backlink",
+      "description": "Single text link above the H1 pointing back one level in the hierarchy (Hirslanden-Gruppe -> /de/corporate/home.html), with a back-arrow icon"
+    },
+    {
+      "component": "results-count",
+      "description": "H2 heading showing the category name and live result count as a span: 'Kliniken 16'. Count updates dynamically when filters are applied."
+    }
+  ],
+  "allClinics": [
+    {
+      "name": "AndreasKlinik Cham Zug",
+      "href": "/de/andreasklinik-cham-zug/home.html",
+      "address": "Rigistrasse 1, 6330 Cham",
+      "phone": "+41417840784"
+    },
+    {
+      "name": "Clinique Bois-Cerf",
+      "href": "/de/clinique-bois-cerf/home.html",
+      "address": "Avenue d'Ouchy 31, 1006 Lausanne",
+      "phone": "+41216196969"
+    },
+    {
+      "name": "Clinique Cecil",
+      "href": "/de/clinique-cecil/home.html",
+      "address": "Avenue Ruchonnet 53, 1003 Lausanne",
+      "phone": "+41213105000"
+    },
+    {
+      "name": "Clinique des Grangettes",
+      "href": "/de/clinique-des-grangettes/home.html",
+      "address": "Chemin des Grangettes 7, 1224 Chene-Bougeries",
+      "phone": "+41223050111"
+    },
+    {
+      "name": "Hirslanden Clinique La Colline",
+      "href": "/de/clinique-la-colline/home.html",
+      "address": "Geneva",
+      "phone": "+41227022022"
+    },
+    {
+      "name": "Hirslanden Klinik Aarau",
+      "href": "/de/hirslanden-klinik-aarau/home.html",
+      "address": "Aarau",
+      "phone": "+41628367000"
+    },
+    {
+      "name": "Hirslanden Klinik Birshof",
+      "href": "/de/klinik-birshof/home.html",
+      "address": "Reinacherstrasse 28, 4142 Münchenstein",
+      "phone": "+41613352222"
+    },
+    {
+      "name": "Hirslanden Klinik Im Park",
+      "href": "/de/klinik-im-park/home.html",
+      "address": "Seestrasse 220, 8027 Zürich",
+      "phone": "+41442092111"
+    },
+    {
+      "name": "Hirslanden Klinik Linde",
+      "href": "/de/klinik-linde/home.html",
+      "address": "Blumenrain 105, 2503 Biel",
+      "phone": "+41323664111"
+    },
+    {
+      "name": "Klinik Beau-Site",
+      "href": "/de/klinik-beau-site/home.html",
+      "address": "Schänzlihalde 11, 3013 Bern",
+      "phone": "+41313353333"
+    },
+    {
+      "name": "Klinik Hirslanden",
+      "href": "/de/klinik-hirslanden/home.html",
+      "address": "Witellikerstrasse 40, 8032 Zürich",
+      "phone": "+41443872111"
+    },
+    {
+      "name": "Klinik Permanence",
+      "href": "/de/klinik-permanence/home.html",
+      "address": "Bümplizstrasse 83, 3018 Bern",
+      "phone": "+41319904111"
+    },
+    {
+      "name": "Klinik St. Anna",
+      "href": "/de/klinik-st--anna/home.html",
+      "address": "St. Anna-Strasse 32, 6006 Luzern",
+      "phone": "+41412083232"
+    },
+    {
+      "name": "Klinik Stephanshorn",
+      "href": "/de/klinik-stephanshorn/home.html",
+      "address": "Brauerstrasse 95, 9016 St.Gallen",
+      "phone": "+41712827111"
+    },
+    {
+      "name": "Salem-Spital",
+      "href": "/de/salem-spital/home.html",
+      "address": "Schänzlistrasse 39, 3013 Bern",
+      "phone": null
+    },
+    {
+      "name": "St. Anna in Meggen",
+      "href": "/de/st-anna-in-meggen/home.html",
+      "address": "Huobmattstrasse 9, 6045 Meggen",
+      "phone": null
+    }
+  ],
+  "layoutNotes": "Source: localhost:3000 returned 404 (content not yet previewed in AEM backend). Page fetched directly from www.hirslanden.ch which redirects /de/corporate/kliniken-und-zentren/kliniken.html to /de/corporate/kliniken-und-zentren.html. Page is a filterable listing of 16 Hirslanden clinics. Layout: full-width page header with H1 + backlink, then a sticky horizontal sub-nav (6 items linking to sibling listing pages), then a lead text paragraph, then a filter bar (keyword search + 2 multiselect dropdowns for canton/city), then a responsive grid of 16 clinic cards. Each card has: clinic exterior photo (4:3, Scene7 CDN, responsive picture element), clinic name as H3 link, address, phone, and a 'Zur Website' primary button CTA. No footer CTA or newsletter section. Images are served via Medicinic Scene7 CDN with responsive srcset (1x/1.5x/2x at multiple breakpoints).",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:43.866Z",
+    "waitMs": 3856,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:43.866Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "clinic-listing",
+  "slots": {
+    "_slotSchema": "listing-v1",
+    "indexHeadline": null,
+    "filterControls": null,
+    "cardGrid": {
+      "itemCount": 0,
+      "sampleCards": []
+    }
+  }
+}

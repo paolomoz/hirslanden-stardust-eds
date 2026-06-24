@@ -1,0 +1,461 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+  "localUrl": "http://localhost:3000/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
+  "template": "specialty-topic",
+  "fetchedAt": "2026-06-24",
+  "title": "Herzmedizin (Kardiologie) | Hirslanden",
+  "heading": "Herzmedizin (Kardiologie)",
+  "metaDescription": "Herz- & Gefässerkrankungen gehören in der Schweiz zu den häufigsten Todesursachen. Erfahren Sie mehr über das Herz, die Gefässe und die Krankheiten.",
+  "breadcrumb": [
+    {
+      "label": "Für alle Folgen des Lebens",
+      "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens.html"
+    },
+    {
+      "label": "Herzmedizin (Kardiologie)",
+      "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "hero-image",
+      "heading": null,
+      "contentSummary": "Full-width responsive hero banner image of a running figure (Atemlos). No text overlay. Aspect ratio 4:1 on desktop, 2:1 on tablet/mobile.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "page-header",
+      "heading": "Herzmedizin (Kardiologie)",
+      "contentSummary": "Page H1 title displayed as a generic header component. Includes breadcrumb navigation above the title.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "two-column-intro",
+      "heading": null,
+      "contentSummary": "66/33 grid layout. Left column contains: lead paragraph (heart muscle facts, 100,000 beats/day, circulatory function, full lifecycle care promise) + secondary intro paragraph + in-page anchor navigation list (6 anchors: #herz, #gesundheit, #diagnostik, #rehabilitation, #publikationen, #kontakt). Right column contains: teaser image card linking to 'Für alle Folgen des Lebens' parent section.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true,
+      "anchorLinks": [
+        {
+          "text": "Das Herz kurz erklärt",
+          "href": "#herz"
+        },
+        {
+          "text": "Gesundheit & Prävention",
+          "href": "#gesundheit"
+        },
+        {
+          "text": "Diagnostik & Behandlung",
+          "href": "#diagnostik"
+        },
+        {
+          "text": "Rehabilitation",
+          "href": "#rehabilitation"
+        },
+        {
+          "text": "Publikationen zum Thema Herz",
+          "href": "#publikationen"
+        },
+        {
+          "text": "Wo Sie uns finden",
+          "href": "#kontakt"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "type": "callout-banner",
+      "heading": "Wo Sie uns finden",
+      "contentSummary": "Promotional banner (newsletter-style component). Text: Hirslanden has 7 heart clinics across Switzerland; lists cardiology centres and institutes. CTA button links to #kontakt anchor.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 5,
+      "type": "fullwidth-section",
+      "anchor": "herz",
+      "heading": "Das Herz kurz erklärt",
+      "contentSummary": "White fullwidth callout. Intro paragraph about heart anatomy. Followed by accordion/tab component with 3 tabs: (1) Herz – interactive diagram showing 14 labelled heart parts (Rechter Vorhof, Linker Vorhof, Rechte Kammer, Linke Kammer, Lungenarterie, Aorta, Hohlvene, Lungenvenen, Sinusknoten, AV-Knoten, Trikuspidalklappe, Pulmonalklappe, Aortenklappe, Mitralklappe) with mouseover-triggered image swap; (2) Herzrhythmus & Herzschlag – interactive sinusrhythmus diagram with two ECG wave images (Normale Sinuskurve + EKG-Wellen); (3) Blutgefässe – long rich text listing 7 blood vessel types (Aorta, Arterien, Arteriolen, Kapillaren, Venen, Venolen, Hohlvenen) each with H3 heading and explanation. Section ends with 'Wussten Sie, dass...' callout (light blue box) with 5 bullet facts, and two numbered stats (19,312 km blood travel per day; 300g heart weight).",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true,
+      "interactiveComponents": [
+        "labelled-anatomy-diagram",
+        "ecg-wave-viewer",
+        "accordion-tabs"
+      ],
+      "tabItems": [
+        "Herz",
+        "Herzrhythmus & Herzschlag",
+        "Blutgefässe"
+      ]
+    },
+    {
+      "order": 6,
+      "type": "fullwidth-section",
+      "anchor": "gesundheit",
+      "heading": "Gesundheit & Prävention",
+      "contentSummary": "Grey fullwidth callout. Intro paragraph on prevention importance (diet, exercise, risk factor control). Icon-text row (fitness icon + exercise benefits text). Accordion/tab component with 1 tab 'Sportübungen für die Herzgesundheit' containing 4 exercise cards each with: YouTube video thumbnail + advantages list + training recommendation. Exercise types: Laufband (treadmill), T-Bow, Hanteltraining, Planking. Section ends with article teaser row (3 cards): 'Sport ist für ein gesundes, starkes Herz das Medikament der Wahl', 'Bluthochdruck – ein unterschätztes Gesundheitsrisiko' + one more article.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true,
+      "interactiveComponents": [
+        "accordion-tabs",
+        "video-teasers"
+      ],
+      "tabItems": [
+        "Sportübungen für die Herzgesundheit"
+      ]
+    },
+    {
+      "order": 7,
+      "type": "fullwidth-section",
+      "anchor": "diagnostik",
+      "heading": "Diagnostik & Behandlung",
+      "contentSummary": "White fullwidth callout. Intro paragraph on cardiac/vascular diseases (leading cause of death in Switzerland; lists stroke, arteriosclerosis, heart attack, arrhythmia, congenital defects, varicose veins, thrombophlebitis). Accordion/tab component with 4 tabs: (1) Herzinfarkt – short description + CTA 'Zum Krankheitsbild Herzinfarkt'; (2) Schlaganfall – short description + CTA 'Zum Krankheitsbild Schlaganfall'; (3) Herzrhythmusstörungen – short description + CTA; (4) Krankheitsbilder – linked badge list of 7 conditions (Herzinfarkt, Schlaganfall, Arterienverkalkung, Herzklappenfehler, Herzinsuffizienz, Koronare Herzkrankheit, Krampfadern, Thrombose/Lungenembolie). Fifth tab 'Artikel zum Thema' with 3 article teaser cards (Patientengeschichte Herzklappenfehler, Frauenherzen in Frauenhänden, Herzchirurgie ist Teamarbeit). Additional accordion tab with 'Artikel zum Thema' featuring 'Zurück zu alter Form nach Vorhofflimmern'.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true,
+      "interactiveComponents": [
+        "accordion-tabs",
+        "badge-list"
+      ],
+      "tabItems": [
+        "Herzinfarkt",
+        "Schlaganfall",
+        "Herzrhythmusstörungen",
+        "Krankheitsbilder",
+        "Artikel zum Thema"
+      ]
+    },
+    {
+      "order": 8,
+      "type": "fullwidth-section",
+      "anchor": "rehabilitation",
+      "heading": "Rehabilitation",
+      "contentSummary": "Rehabilitation section. Paragraph explaining cardiac rehab benefits (controlled performance improvement, interdisciplinary approach for multiple conditions). CTA: 'Weitere Informationen zum Thema Herz-Kreislauf-Rehabilitation'.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 9,
+      "type": "fullwidth-section",
+      "anchor": "publikationen",
+      "heading": "Publikationen zum Thema Herz",
+      "contentSummary": "White fullwidth callout. 50/50 grid. Left: paginated publications list (40 results, 4 per page, 10 pages) showing blog posts and PDF articles with icons and dates. Each entry has category tag + date + author. Right: blog feed widget pulling latest posts tagged 'Herz & Gefässe' from blog.hirslanden.ch (3 posts) with 'Alle Blog-Artikel' link.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true,
+      "interactiveComponents": [
+        "paginated-list",
+        "api-driven-blog-feed"
+      ]
+    },
+    {
+      "order": 10,
+      "type": "interactive-map",
+      "anchor": "kontakt",
+      "heading": "Wo Sie uns finden",
+      "contentSummary": "Full-width Switzerland map graphic with 7 numbered hotspot pins. Clicking a pin opens an overlay with clinic name, photo, address, phone numbers, emergency number, fax, email, and a CTA button to the clinic's cardiology centre page. The 7 clinics are: (1) Clinique Cecil – Lausanne; (2) Klinik Aarau – Aarau; (3) Klinik Hirslanden – Zurich; (4) Klinik Im Park – Zurich; (5) Klinik Beau-Site – Bern; (6) Klinik St. Anna – Lucerne; (7) Clinique des Grangettes – Geneva.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": true,
+      "interactiveComponents": [
+        "hotspot-map"
+      ],
+      "clinics": [
+        {
+          "name": "Clinique Cecil",
+          "city": "Lausanne",
+          "address": "Avenue Ruchonnet 53, 1003 Lausanne",
+          "phone": "+41 21 310 50 00",
+          "emergency": "+41 21 310 50 30",
+          "href": "https://www.hirslanden.ch/de/clinique-cecil/zentren-und-institute/zentrum-fuer-kardiologie.html"
+        },
+        {
+          "name": "Klinik Aarau",
+          "city": "Aarau",
+          "href": "https://www.hirslanden.ch/de/hirslanden-klinik-aarau/fachgebiete/herz.html"
+        },
+        {
+          "name": "Klinik Hirslanden",
+          "city": "Zurich",
+          "href": "https://www.hirslanden.ch/de/klinik-hirslanden/fachgebiete/herz.html"
+        },
+        {
+          "name": "Klinik Im Park",
+          "city": "Zurich",
+          "href": "https://www.hirslanden.ch/de/klinik-im-park/fachgebiete/herz.html"
+        },
+        {
+          "name": "Klinik Beau-Site",
+          "city": "Bern",
+          "href": "https://www.hirslanden.ch/de/klinik-beau-site/centers/herzzentrum-bern.html"
+        },
+        {
+          "name": "Klinik St. Anna",
+          "city": "Lucerne",
+          "href": "https://www.hirslanden.ch/de/klinik-st--anna/fachgebiete/kardiologie-und-rhythmologie.html"
+        },
+        {
+          "name": "Clinique des Grangettes",
+          "city": "Geneva",
+          "href": "https://www.hirslanden.ch/en/clinique-des-grangettes/centres-et-instituts/cardiovascular-centre.html"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/11_Atemlos-Variante-W3840px_72dpi?_ck=2023-05-25T14%3A17%3A48.472Z",
+      "alt": "Running figure - Atemlos",
+      "context": "Hero banner image",
+      "role": "hero"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/02_Mitgefühl-1z1_72dpi?_ck=2023-05-26T10%3A25%3A50.010Z",
+      "alt": "Für alle Folgen des Lebens teaser",
+      "context": "Right-column teaser card in intro section",
+      "role": "teaser"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herz-sinusrhythmus?_ck=1616178282615",
+      "alt": "Normale Sinuskurve",
+      "context": "ECG wave image in Herzrhythmus tab",
+      "role": "educational-diagram"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herz-sinusrhythmus-fokus?_ck=1616178284279",
+      "alt": "EKG-Wellen",
+      "context": "ECG wave detail in Herzrhythmus tab",
+      "role": "educational-diagram"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herzpatient-laufband-uebungen?_ck=1616178322229",
+      "alt": "Patient auf Laufband",
+      "context": "Exercise video thumbnail – Übungstipps fürs Laufband",
+      "role": "video-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herzrhythmusstoerungen-physio-patient-sport?_ck=1616178286673",
+      "alt": "Physio patient sport",
+      "context": "Exercise video thumbnail – Übungstipps T-Bow",
+      "role": "video-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herzrhythmusstoerungen-training-kraftuebungen?_ck=1616178286446",
+      "alt": "Kraftübungen",
+      "context": "Exercise video thumbnail – Hanteltraining",
+      "role": "video-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-herzrhythmusstoerungen-training-physio?_ck=1616178291441",
+      "alt": "Training physio",
+      "context": "Exercise video thumbnail – Planking",
+      "role": "video-thumbnail"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/11_Atemlos-Variante-1z1_72dpi?_ck=2023-05-26T09%3A57%3A38.515Z",
+      "alt": "Sport ist für ein gesundes, starkes Herz das Medikament der Wahl",
+      "context": "Article teaser card in Gesundheit section",
+      "role": "article-teaser"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-bluthochdruck-messen?_ck=1616176864115",
+      "alt": "Blutdruck messen",
+      "context": "Article teaser – Bluthochdruck",
+      "role": "article-teaser"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/HIR_Grafikkarte_Schweiz_Kantone_0320_web?fmt=png-alpha&_ck=1616227927110",
+      "alt": "Switzerland map with clinic locations",
+      "context": "Interactive hotspot map in Wo Sie uns finden section",
+      "role": "interactive-map"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/clinique-cecil-clinique?_ck=1616207484583",
+      "alt": "Clinique Cecil",
+      "context": "Clinic photo in hotspot overlay",
+      "role": "clinic-photo"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-aarau-aussenaufnahme?_ck=1616174893873",
+      "alt": "Haus B der Hirslanden Klinik Aarau",
+      "context": "Clinic photo in hotspot overlay",
+      "role": "clinic-photo"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Zu den Zentren",
+      "href": "#kontakt",
+      "context": "Callout banner – scroll to map section"
+    },
+    {
+      "text": "Zum Krankheitsbild Herzinfarkt",
+      "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzinfarkt.html",
+      "context": "Diagnostik tab – Herzinfarkt"
+    },
+    {
+      "text": "Zum Krankheitsbild Schlaganfall",
+      "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/schlaganfall-hirnschlag.html",
+      "context": "Diagnostik tab – Schlaganfall"
+    },
+    {
+      "text": "Zum Krankheitsbild Herzrhythmusstörungen",
+      "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzrhythmusstoerungen.html",
+      "context": "Diagnostik tab – Herzrhythmusstörungen"
+    },
+    {
+      "text": "Weitere Informationen zum Thema Herz-Kreislauf-Rehabilitation",
+      "href": "https://www.hirslanden.ch/de/corporate/behandlungen/herz-kreislauf-rehabilitation.html",
+      "context": "Rehabilitation section"
+    },
+    {
+      "text": "Zur Clinique Cecil",
+      "href": "https://www.hirslanden.ch/de/clinique-cecil/zentren-und-institute/zentrum-fuer-kardiologie.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zur Klinik Aarau",
+      "href": "https://www.hirslanden.ch/de/hirslanden-klinik-aarau/fachgebiete/herz.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zur Klinik Hirslanden",
+      "href": "https://www.hirslanden.ch/de/klinik-hirslanden/fachgebiete/herz.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zur Klinik Im Park",
+      "href": "https://www.hirslanden.ch/de/klinik-im-park/fachgebiete/herz.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zum Herzzentrum Bern",
+      "href": "https://www.hirslanden.ch/de/klinik-beau-site/centers/herzzentrum-bern.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zur Klinik St. Anna",
+      "href": "https://www.hirslanden.ch/de/klinik-st--anna/fachgebiete/kardiologie-und-rhythmologie.html",
+      "context": "Clinic hotspot overlay"
+    },
+    {
+      "text": "Zur Clinique des Grangettes",
+      "href": "https://www.hirslanden.ch/en/clinique-des-grangettes/centres-et-instituts/cardiovascular-centre.html",
+      "context": "Clinic hotspot overlay"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "component": "in-page-anchor-nav",
+      "description": "Bulleted list of anchor links near the top of the page, providing a table-of-contents/jump menu for the 6 main sections below.",
+      "position": "intro-section-left-column"
+    },
+    {
+      "component": "interactive-anatomy-diagram",
+      "description": "JS-driven hover-to-highlight heart diagram. 14 numbered anatomical parts listed in a left-column nav. Hovering a label swaps the main image on the right to show that specific part. Uses legacy inline JavaScript (hirsherzkomp_einblenden).",
+      "position": "Das Herz kurz erklärt tab 1"
+    },
+    {
+      "component": "accordion-tabs",
+      "description": "Reusable accordion/tab group component (data-all-closed=true). Used in three main sections: (1) heart anatomy breakdown, (2) exercise/prevention, (3) diagnostics/conditions. Tab items expand inline with content.",
+      "position": "Sections 5, 6, 7"
+    },
+    {
+      "component": "stat-numbers",
+      "description": "Large display stat component. Two stats with icon + bold number + supporting text. Examples: '19 312 km' (blood travel per day), '300 gr.' (heart weight).",
+      "position": "Das Herz kurz erklärt – end"
+    },
+    {
+      "component": "callout-box-light-blue",
+      "description": "Light-blue background callout box with 'Wussten Sie, dass ...' heading and 5 bullet-point facts. Used as an interstitial within a long section.",
+      "position": "Das Herz kurz erklärt – end"
+    },
+    {
+      "component": "video-teaser",
+      "description": "Image card linking to YouTube. Displays thumbnail image + play icon overlay + title. Used in sets of 3-4 per exercise type.",
+      "position": "Gesundheit & Prävention accordion"
+    },
+    {
+      "component": "badge-link-list",
+      "description": "Minimal badge list linking to disease pages. Each badge shows a disease name with an optional icon and links to the corresponding disease detail page.",
+      "position": "Diagnostik & Behandlung – Krankheitsbilder tab"
+    },
+    {
+      "component": "paginated-publications-list",
+      "description": "AJAX-driven filterable list of 40 publications (blog posts, PDFs, articles). Shows 4 per page with pagination. Each item has: icon (blog/pdf), title H4, category tag, author, date.",
+      "position": "Publikationen section – left column"
+    },
+    {
+      "component": "api-blog-feed",
+      "description": "JavaScript widget fetching latest blog posts from blog.hirslanden.ch WordPress REST API filtered by tag (tag=91 = Herz & Gefässe). Shows 3 most recent posts with link to all posts.",
+      "position": "Publikationen section – right column"
+    },
+    {
+      "component": "hotspot-map",
+      "description": "Interactive Switzerland map PNG with 7 numbered hotspot pins. Each pin opens a modal overlay (Magnific Popup) showing clinic photo, contact info (address, phone, emergency, fax, email), and CTA button linking to the clinic's cardiology specialist page.",
+      "position": "Wo Sie uns finden"
+    },
+    {
+      "component": "clinic-contact-card",
+      "description": "Structured contact information block with: clinic name as H3 link, address (linkable), phone, emergency phone, fax, email. Used inside hotspot overlays.",
+      "position": "Hotspot overlays in Wo Sie uns finden"
+    }
+  ],
+  "layoutNotes": "Page fetched from https://www.hirslanden.ch (live production site) because localhost:3000 returned 404 — the EDS migration project has not yet received content for this path. The live site runs legacy AEM (not Edge Delivery Services). The content structure documented here reflects the source legacy site intended for migration to EDS. Key layout observations: (1) Page uses a 66/33 intro layout then switches to fullwidth callout sections with alternating white/grey backgrounds. (2) All major topic sections are wrapped in div.fullwidth with div.callout sub-variants (white or grey). (3) Accordion/tabs pattern is used heavily — 3 separate accordion groups across the page — and is the primary progressive-disclosure mechanism. (4) Interactive components (anatomy diagram, ECG viewer, hotspot map) rely on inline JS that must be re-implemented as EDS blocks. (5) The publications list and blog feed are AJAX/API-driven and need EDS equivalents. (6) Breadcrumb is rendered inside the generic header component, not as a standalone block. (7) Language switcher offers DE/FR/EN variants. (8) Page has no forms. (9) The 'Wo Sie uns finden' section with interactive map is the unique identifier of this template — no other page type uses a hotspot map of clinic locations.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:16.974Z",
+    "waitMs": 3086,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:16.974Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "specialty-topic",
+  "slots": {
+    "_slotSchema": "editorial-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "editorialSections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "#kontakt"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzinfarkt.html"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/schlaganfall-hirnschlag.html"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzrhythmusstoerungen.html"
+      }
+    ]
+  }
+}

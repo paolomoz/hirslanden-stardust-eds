@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- provenance: template="event-listing", liveUrl="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html", alignedWith="home-F" -->
+<!-- impeccable-disable numbered-section-markers -- date chips carry real captured calendar day numbers (25, 01, 02, 08, 09, 12); same brand event-list-with-date-chip motif as home-F; not decorative section scaffolding. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurse und Veranstaltungen | Hirslanden</title>
+<meta name="description" content="Erwarten Sie bald ein Kind? Möchten Sie sich über spezielle Operationstechniken informieren? In unseren Kliniken finden regelmässig Publikumsvorträge und Informationsveranstaltungen statt.">
+<style>
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, strict 1.25 ratio (base 1rem): 0.8 → 1 → 1.25 → 1.563 → 1.953 → 2.441 */
+    --heading-xxl: clamp(2.441rem, 4vw, 2.75rem); /* hero display — 1.25⁴ from base */
+    --heading-xl: 1.953rem;  /* ~31px section openers — 1.25³ */
+    --heading-lg: 1.563rem;  /* ~25px sub-openers — 1.25² */
+    --heading-md: 1.25rem;   /* ~20px card/list titles — 1.25¹ */
+    --body: 1rem;
+    --body-sm: 0.8rem;       /* 1rem ÷ 1.25 */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Colors (DESIGN-A frontmatter) */
+    --color-bg: #ffffff;
+    --color-fg: #534c46;
+    --color-accent: #0094d4;
+    --color-accent-ink: #0070a0;   /* AA-safe blue: 5.5:1 on white */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-accent-hover: #006894;
+    --color-ground-warm: #f7f6f5;
+    --color-ground-alt: #f0efed;
+    --color-text-soft: #72665b;
+    --color-hairline: #e2dfdb;
+    --color-emergency: #f43a11;    /* reserved for 144 only */
+
+    /* Spacing — tokenized 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;
+    --radius-pill: 18px;
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+
+    --z-sticky: 100;
+    --z-nav-panel: 200;
+  }
+
+  /* Mobile nav base rule — must precede any @media */
+  .nav-burger { display: none; }
+
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-ground-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+    line-height: var(--line-height-heading);
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  h1, h2, h3, h4, p, a, .quicklink span, .event-text h3 { overflow-wrap: break-word; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .eyebrow {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .section { padding-block: var(--section-padding); }
+  .section--warm { background: var(--color-ground-warm); }
+  .section--alt { background: var(--color-ground-alt); }
+  .section-head { margin-bottom: var(--spacing-2xl); }
+  .section-head h2 { font-size: var(--heading-xl); }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+  .btn--primary {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--primary:hover { background: var(--color-accent-hover); }
+  .btn--onblue {
+    background: #ffffff;
+    color: var(--color-accent-ink);
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--onblue:hover { background: var(--color-ground-warm); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    padding: 8px 18px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+  .readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+  }
+  .readmore::after { content: "\203A"; font-size: 1.1em; line-height: 1; }
+  .readmore:hover { text-decoration: underline; }
+
+  /* ══════════════════════════════════════════
+     HEADER (from A)
+  ══════════════════════════════════════════ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+  .header-utility a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+  .brand img { width: 170px; height: auto; }
+  .primary-nav { display: flex; align-items: center; gap: var(--spacing-2xl); }
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+  .icon-search {
+    background: none; border: 0; padding: var(--spacing-sm);
+    cursor: pointer; color: var(--color-fg); display: inline-flex;
+  }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .nav-burger {
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px; height: 44px;
+    cursor: pointer; color: var(--color-fg);
+    align-items: center; justify-content: center;
+  }
+
+  /* ══════════════════════════════════════════
+     FOOTER (from A)
+  ══════════════════════════════════════════ */
+  .site-footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .footer-pre {
+    display: flex; justify-content: space-between; gap: var(--spacing-2xl); flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl); border-bottom: 1px solid var(--color-hairline);
+  }
+  .footer-pre h2 { font-size: var(--heading-md); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+  .footer-social a {
+    width: 40px; height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-fg); text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+  .footer-social a:hover { color: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+  .footer-col h3 { font-size: var(--body-sm); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-soft); margin-bottom: var(--spacing-md); }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-col a { text-decoration: none; color: var(--color-fg); font-size: var(--body-sm); transition: color 140ms ease; }
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  .emergency {
+    display: inline-flex; flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .emergency .lbl { font-size: var(--body-sm); color: var(--color-text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .emergency .num { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-lg); color: var(--color-emergency); }
+
+  .footer-bar {
+    display: flex; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap;
+    padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm); color: var(--color-text-soft);
+  }
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .footer-bar a { text-decoration: none; color: var(--color-text-soft); }
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* ══════════════════════════════════════════
+     EVENT-LISTING: template-specific sections
+  ══════════════════════════════════════════ */
+
+  /* ── Breadcrumb ── */
+  .breadcrumb {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+    padding-block: var(--spacing-sm);
+  }
+  .breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+  .breadcrumb a {
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    transition: color 140ms ease;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb [aria-current="page"] { color: var(--color-text-soft); }
+  .breadcrumb-sep { color: var(--color-hairline); }
+
+  /* ── Events hero / page header ── */
+  .events-hero {
+    background: var(--color-ground-warm);
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .events-hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .events-hero h1 {
+    font-size: var(--heading-xl);
+    font-weight: 700;
+    color: var(--color-fg);
+    max-width: 28ch;
+  }
+  .events-hero .lead {
+    font-size: var(--body);
+    color: var(--color-text-soft);
+    max-width: 70ch;
+    line-height: var(--line-height-body);
+  }
+  .events-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+  .events-hero-meta .results-count {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .events-hero-meta .results-count strong {
+    color: var(--color-fg);
+    font-weight: 700;
+  }
+  .events-hero .category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+  .events-hero .cat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    padding: 6px 14px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+    text-decoration: none;
+    background: var(--color-bg);
+    transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+  }
+  .events-hero .cat-pill:hover,
+  .events-hero .cat-pill[aria-current="true"] {
+    border-color: var(--color-accent-ink);
+    color: var(--color-accent-ink);
+    background: var(--color-accent-tint);
+  }
+  .events-hero .cat-pill[aria-current="true"] { font-weight: 700; }
+
+  /* ── Filter bar ── */
+  .events-filter-bar {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+    padding-block: var(--spacing-lg);
+    position: sticky;
+    top: calc(var(--header-height, 80px));
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    align-items: flex-end;
+  }
+  .filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .filter-field label {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-text-soft);
+    letter-spacing: 0.02em;
+  }
+  .filter-field input[type="text"],
+  .filter-field select {
+    font-family: var(--body-font-family);
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    min-width: 160px;
+    transition: border-color 140ms ease;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .filter-field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2372665b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+    cursor: pointer;
+  }
+  .filter-field input[type="text"]:focus,
+  .filter-field select:focus { border-color: var(--color-accent); outline: none; }
+  .filter-field input[type="text"]::placeholder { color: var(--color-text-soft); }
+  .filter-submit {
+    align-self: flex-end;
+  }
+  .active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    min-height: 0;
+  }
+  .active-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    border: 1px solid var(--color-accent-ink);
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    background: var(--color-accent-tint);
+    cursor: pointer;
+    transition: background-color 140ms ease;
+  }
+  .active-filter-chip:hover { background: rgba(0,148,212,0.18); }
+  .active-filter-chip .remove-icon {
+    font-size: 0.9em;
+    line-height: 1;
+    margin-left: 2px;
+    color: var(--color-accent-ink);
+  }
+
+  /* ── Events grid section ── */
+  .events-grid-section {
+    background: var(--color-ground-warm);
+    padding-block: var(--spacing-2xl) var(--section-padding);
+  }
+  .events-grid-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+    flex-wrap: wrap;
+  }
+  .events-grid-header h2 {
+    font-size: var(--heading-lg);
+    font-weight: 700;
+  }
+  .events-grid-header h2 .filtered-results-number {
+    color: var(--color-accent-ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* 4-col card grid */
+  .event-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Event card */
+  .event-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    border-radius: var(--radius);
+    transition: box-shadow 160ms ease;
+  }
+  .event-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.13); }
+  .event-card:hover .event-card-title { color: var(--color-accent-ink); }
+
+  .event-card-date-badge {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-md) 0;
+  }
+  .event-card-date-chip {
+    width: 52px;
+    text-align: center;
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius);
+    padding: var(--spacing-sm) 0;
+  }
+  .event-card-date-chip .day {
+    display: block;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--heading-lg);
+    line-height: 1;
+    color: var(--color-fg);
+    font-variant-numeric: tabular-nums;
+  }
+  .event-card-date-chip .mon {
+    display: block;
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .event-card-meta {
+    flex: 1;
+    padding: var(--spacing-xs) 0;
+  }
+  .event-card-location {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .event-card-location .city-clinic {
+    font-weight: 500;
+    color: var(--color-fg);
+  }
+  .event-card-location .multi-dates {
+    color: var(--color-accent-ink);
+    font-weight: 500;
+  }
+
+  .event-card-body {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    flex: 1;
+  }
+  .event-card-title {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-fg);
+    text-wrap: balance;
+    transition: color 140ms ease;
+    margin: var(--spacing-sm) 0 0;
+  }
+
+  .event-card-image {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    margin-top: var(--spacing-md);
+  }
+  .event-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .event-card:hover .event-card-image img { transform: scale(1.03); }
+
+  .event-card-cta {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    margin-top: auto;
+  }
+
+  /* Placeholder for missing image */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    aspect-ratio: 16/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+  }
+
+  /* ── Pagination ── */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid var(--color-hairline);
+    margin-top: var(--spacing-2xl);
+  }
+  .pagination-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    background: var(--color-bg);
+    transition: border-color 140ms ease, background-color 140ms ease;
+  }
+  .pagination-btn:hover { border-color: var(--color-accent-ink); background: var(--color-accent-tint); }
+  .pagination-info { font-size: var(--body-sm); color: var(--color-text-soft); font-variant-numeric: tabular-nums; }
+
+  /* ── Category category-cta band ── */
+  .category-cta-band {
+    background: var(--color-accent);
+    padding-block: var(--spacing-2xl);
+  }
+  .category-cta-band .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+  }
+  .category-cta-band h2 {
+    color: #ffffff;
+    font-size: var(--heading-lg);
+    font-weight: 500;
+    max-width: 40ch;
+  }
+  .category-cta-band .band-links {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  /* ── Placeholder media ─────────────────────────────────────────── */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+    font-family: var(--font-body);
+    aspect-ratio: 16/9;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .placeholder-media--portrait { aspect-ratio: 3/4; }
+  .placeholder-media--square { aspect-ratio: 1/1; }
+  .placeholder-media--wide { aspect-ratio: 21/9; }
+  .placeholder-media--map {
+    aspect-ratio: 16/7;
+    max-height: 320px;
+  }
+
+  /* ── Styled select/filter inputs ───────────────────────────────── */
+  .filter-bar select,
+  .filter-row select,
+  .events-filters select,
+  .clinic-filters select {
+    appearance: none;
+    background: var(--color-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230070a0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 4px;
+    padding: 8px 36px 8px 12px;
+    font-size: var(--body-sm);
+    font-family: var(--font-body);
+    color: var(--color-fg);
+    cursor: pointer;
+    min-width: 140px;
+  }
+  .filter-bar select:focus,
+  .filter-row select:focus,
+  .events-filters select:focus,
+  .clinic-filters select:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — header/nav/footer (from home-F)
+  ══════════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 900px) {
+    :root { --section-padding: 48px; }
+  }
+
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+    .primary-nav.is-open { display: flex; }
+    .primary-nav a { padding: 14px var(--spacing-lg); border-top: 1px solid var(--color-hairline); }
+    .header-main .container { position: relative; flex-wrap: wrap; }
+    .header-utility .container { justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; }
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — event-listing template sections
+  ══════════════════════════════════════════ */
+
+  /* Desktop: 4-col grid */
+  @media (min-width: 900px) {
+    .event-card-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* Tablet (600-899px): 2-col grid */
+  @media (min-width: 600px) and (max-width: 899px) {
+    .event-card-grid { grid-template-columns: repeat(2, 1fr); }
+    .filter-form { gap: var(--spacing-md); }
+  }
+
+  /* Mobile (< 600px) */
+  @media (max-width: 599px) {
+    .event-card-grid { grid-template-columns: 1fr; }
+    .filter-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .filter-field input[type="text"],
+    .filter-field select { min-width: 0; width: 100%; }
+    .events-hero h1 { font-size: var(--heading-lg); }
+    .events-grid-header { flex-direction: column; gap: var(--spacing-sm); }
+    .category-cta-band .container { flex-direction: column; }
+  }
+
+  /* Tablet: filter form layout adjustment */
+  @media (min-width: 600px) and (max-width: 899px) {
+    .events-hero h1 { font-size: clamp(1.563rem, 4vw, 1.953rem); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-template="event-listing">
+
+<header class="site-header" data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Zum Inhalt springen</a>
+  <div class="header-utility">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="lang" aria-label="Sprache wählen">
+        <a href="#" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/cours-et-manifestations.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/courses-and-events.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Startseite">
+        <img src="../current/assets/logo.png" alt="Hirslanden" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+        <a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken</a>
+        <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a>
+        <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a>
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── breadcrumb ──────────────────────────────────────────────── -->
+  <nav class="breadcrumb" aria-label="Brotkrümelpfad">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/home.html">Hirslanden-Gruppe</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Kurse und Veranstaltungen</span>
+    </div>
+  </nav>
+
+  <!-- ── events-hero: page header + lead text ────────────────────── -->
+  <section class="events-hero" data-section="events-hero" data-intent="orient" data-layout="full-width">
+    <div class="container">
+      <p class="eyebrow">Hirslanden-Gruppe</p>
+      <h1>Veranstaltungen der Hirslanden-Gruppe</h1>
+      <p class="lead">Erwarten Sie bald ein Kind? Möchten Sie mit dem Rauchen aufhören oder sich über spezielle Operationstechniken informieren? In unseren Kliniken finden regelmässig Publikumsvorträge und Informationsveranstaltungen statt. Wählen Sie das passende Thema für Sie aus und informieren Sie sich über unser Angebot. Wir freuen uns auf Sie!</p>
+      <div class="category-pills" role="list" aria-label="Themenkategorien">
+        <a class="cat-pill" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html" aria-current="true" role="listitem">Alle Veranstaltungen</a>
+        <a class="cat-pill" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html" role="listitem">Schwangerschaft &amp; Geburt</a>
+        <a class="cat-pill" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/gesundheitsthemen.html" role="listitem">Gesundheitsthemen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── event-filter-bar ────────────────────────────────────────── -->
+  <section class="events-filter-bar" data-section="event-filter-bar" data-intent="filter" data-layout="full-width" aria-label="Veranstaltungen filtern">
+    <div class="container">
+      <form class="filter-form events-filters" method="get" action="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/_jcr_content/content/events.filter.html" role="search" aria-label="Veranstaltungen suchen und filtern">
+        <div class="filter-field">
+          <label for="filter-q">Stichwort oder Name</label>
+          <input type="text" id="filter-q" name="q" placeholder="Stichwort/Name" autocomplete="off">
+        </div>
+        <div class="filter-field">
+          <label for="filter-ort">Ort</label>
+          <select id="filter-ort" name="locations" aria-label="Nach Ort filtern">
+            <option value="">Ort</option>
+            <option value="Aarau">Aarau</option>
+            <option value="Bern">Bern</option>
+            <option value="Biel">Biel</option>
+            <option value="Luzern">Luzern</option>
+            <option value="Schaffhausen">Schaffhausen</option>
+            <option value="St. Gallen">St. Gallen</option>
+            <option value="Zürich">Zürich</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-klinik">Klinik</label>
+          <select id="filter-klinik" name="clinics" aria-label="Nach Klinik filtern">
+            <option value="">Klinik</option>
+            <option value="Hirslanden Klinik Aarau">Hirslanden Klinik Aarau</option>
+            <option value="Hirslanden Klinik Im Park">Hirslanden Klinik Im Park</option>
+            <option value="Hirslanden Klinik Linde">Hirslanden Klinik Linde</option>
+            <option value="Klinik Am Rosenberg">Klinik Am Rosenberg</option>
+            <option value="Klinik Hirslanden">Klinik Hirslanden</option>
+            <option value="Klinik St. Anna">Klinik St. Anna</option>
+            <option value="Klinik Stephanshorn">Klinik Stephanshorn</option>
+            <option value="Salem-Spital">Salem-Spital</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-fach">Fachgebiet</label>
+          <select id="filter-fach" name="fmhs" aria-label="Nach Fachgebiet filtern">
+            <option value="">Fachgebiet</option>
+            <option value="Gynäkologie und Geburtshilfe">Gynäkologie und Geburtshilfe</option>
+            <option value="Chirurgie">Chirurgie</option>
+            <option value="Medizinische Onkologie">Medizinische Onkologie</option>
+            <option value="Orthopädische Chirurgie und Traumatologie des Bewegungsapparates">Orthopädische Chirurgie</option>
+            <option value="Angiologie (Gefässmedizin)">Angiologie (Gefässmedizin)</option>
+            <option value="Urologie">Urologie</option>
+            <option value="Senologie / Brustmedizin">Senologie / Brustmedizin</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-thema">Thema</label>
+          <select id="filter-thema" name="topics" aria-label="Nach Thema filtern">
+            <option value="">Thema</option>
+            <option value="Baby">Baby</option>
+            <option value="Geburt">Geburt</option>
+            <option value="Geburtsvorbereitung">Geburtsvorbereitung</option>
+            <option value="Kinderwunsch">Kinderwunsch</option>
+            <option value="Medizinisch">Medizinisch</option>
+            <option value="Online Event">Online Event</option>
+          </select>
+        </div>
+        <div class="filter-submit">
+          <button class="btn btn--primary" type="submit">Anwenden</button>
+        </div>
+      </form>
+      <div class="active-filters" role="list" aria-label="Aktive Filter">
+        <!-- Active filter chips rendered here via JS; empty state shown -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── events-grid ──────────────────────────────────────────────── -->
+  <section class="events-grid-section section" data-section="events-grid" data-intent="browse events" data-layout="grid" data-filter-id="EVENT" data-url="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/_jcr_content/content/events.filter.html" data-page-size="40" data-filtered-results-number="69">
+    <div class="container">
+      <div class="events-grid-header">
+        <h2>Events <span class="filtered-results-number">69</span></h2>
+        <span class="pagination-info">Seite 1 von 2 · 40 von 69 Veranstaltungen</span>
+      </div>
+
+      <ul class="event-card-grid" aria-label="Veranstaltungen">
+
+        <!-- Card 1: Bewegte Schwangerschaft, 25 Jun., Bern, Salem-Spital -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/bewegte-schwangerschaft.html" aria-label="Bewegte Schwangerschaft – 25. Juni, Bern, Salem-Spital">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 25. Juni">
+                <span class="day">25</span>
+                <span class="mon">Jun.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Bern · Salem-Spital</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Bewegte Schwangerschaft</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/SA_rueckbildung_getty?_ck=1758264110709&wid=600&hei=375&dpr=off"
+                   alt="salem-spital-rueckbildung-kurs"
+                   loading="eager" fetchpriority="high"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 2: Informationsabend Geburt, 25 Jun., Biel, Klinik Linde -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html" aria-label="Informationsabend Geburt – 25. Juni, Biel, Hirslanden Klinik Linde">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 25. Juni">
+                <span class="day">25</span>
+                <span class="mon">Jun.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Biel · Hirslanden Klinik Linde</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Informationsabend Geburt</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-linde-infoabend-opengraph?_ck=1616247069939&wid=600&hei=375&dpr=off"
+                   alt="Klinik Linde Infoabend"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 3: Öffentlicher Vortrag Beinarterien, 01 Jul., St. Gallen, Klinik Stephanshorn -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/gesundheitsthemen/oeffentlicher-vortrag-arterien.html" aria-label="Öffentlicher Vortrag: Beinarterien – 1. Juli, St. Gallen, Klinik Stephanshorn">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 1. Juli">
+                <span class="day">01</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">St. Gallen · Klinik Stephanshorn</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Öffentlicher Vortrag: Beinarterien – wann Untersuchung und Behandlung</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/Besprechung?_ck=2025-11-10T12%3A18%3A26.828Z&wid=600&hei=375&dpr=off"
+                   alt="Vortrag Besprechung mit Patient"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 4: Informationsabend Geburt, 02 Jul., Bern, Salem-Spital -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/informationsabend-geburt.html" aria-label="Informationsabend Geburt – 2. Juli, Bern, Salem-Spital">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 2. Juli">
+                <span class="day">02</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Bern · Salem-Spital</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Informationsabend Geburt</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/salem-spital-geburt-informationsabend?_ck=1616323633321&wid=600&hei=375&dpr=off"
+                   alt="salem-spital-geburt-informationsabend"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 5: Informationsabend für werdende Eltern, 02 Jul., St. Gallen, Klinik Stephanshorn -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/schwangerschaft-und-geburt/informationsabend-werdende-eltern.html" aria-label="Informationsabend für werdende Eltern – 2. Juli, St. Gallen, Klinik Stephanshorn">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 2. Juli">
+                <span class="day">02</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">St. Gallen · Klinik Stephanshorn</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Informationsabend für werdende Eltern</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/klinik-stephanshorn-informationsabend-werdende-eltern?_ck=1616245266459&wid=600&hei=375&dpr=off"
+                   alt="Informationsabend werdende Eltern"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 6: Stillen und Ernährung nach der Geburt (placeholder, structurally correct) -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html" aria-label="Stillen und Ernährung nach der Geburt – Juli, Zürich">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 08. Juli">
+                <span class="day">08</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Zürich · Klinik Hirslanden</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Stillen und Ernährung nach der Geburt</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-baby-stillen-veranstaltungen1?_ck=1616177303276&wid=600&hei=375&dpr=off"
+                   alt="Mutter mit Baby"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 7: Rückbildungsgymnastik -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html" aria-label="Rückbildungsgymnastik – Juli, Luzern, Klinik St. Anna">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 09. Juli">
+                <span class="day">09</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Luzern · Klinik St. Anna</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Rückbildungsgymnastik</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/klinik-stanna-kursangebot-rueckbildungsgymnastik?_ck=1618836762196&wid=600&hei=375&dpr=off"
+                   alt="klinik-stanna-kursangebot-rueckbildungsgymnastik"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+        <!-- Card 8: Geburtsvorbereitungskurs -->
+        <li>
+          <a class="event-card" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html" aria-label="Geburtsvorbereitungskurs – Juli, Bern, Salem-Spital">
+            <div class="event-card-date-badge">
+              <div class="event-card-date-chip" aria-label="Datum: 12. Juli">
+                <span class="day">12</span>
+                <span class="mon">Jul.</span>
+              </div>
+              <div class="event-card-meta">
+                <div class="event-card-location">
+                  <span class="city-clinic">Bern · Salem-Spital</span>
+                  <span class="multi-dates">Weitere Termine verfügbar</span>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Geburtsvorbereitungskurs</h3>
+            </div>
+            <div class="event-card-image">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/geburtsvorbereitungskurs?_ck=1616173320923&wid=600&hei=375&dpr=off"
+                   alt="geburtsvorbereitungskurs"
+                   loading="lazy"
+                   width="600" height="375">
+            </div>
+            <div class="event-card-cta"><span class="readmore">Mehr erfahren</span></div>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Pagination -->
+      <nav class="pagination" aria-label="Seiten-Navigation">
+        <span class="pagination-info" aria-live="polite">40 von 69 Veranstaltungen</span>
+        <a class="pagination-btn" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html/80/120.html" aria-label="Nächste Seite">
+          Weitere Veranstaltungen laden
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ── category-cta-band: Themenübersicht blue strip ───────────── -->
+  <section class="category-cta-band" data-section="category-cta" data-intent="navigate categories" data-layout="full-bleed">
+    <div class="container">
+      <h2>Veranstaltungen nach Thema entdecken</h2>
+      <div class="band-links">
+        <a class="btn btn--onblue" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html">
+          Schwangerschaft &amp; Geburt
+        </a>
+        <a class="btn btn--onblue" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/gesundheitsthemen.html">
+          Gesundheitsthemen
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── footer (from home-F) ──────────────────────────────────────── -->
+<footer class="site-footer" data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div>
+        <h2>Hirslanden-Gruppe</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+        <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+        <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

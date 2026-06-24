@@ -1,0 +1,218 @@
+{
+  "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+  "localUrl": "http://localhost:3000/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
+  "template": "event-detail",
+  "fetchedAt": "2026-06-24",
+  "title": "Informationsabend Geburt",
+  "heading": "Informationsabend Geburt",
+  "breadcrumb": [],
+  "sections": [
+    {
+      "order": 1,
+      "type": "banner",
+      "heading": null,
+      "contentSummary": "Full-width banner image with event title overlay",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "event-body",
+      "heading": "Informationsabend Geburt",
+      "contentSummary": "Two-column layout: main content (left 2/3) with rich text description plus transport/map info; sidebar (right 1/3) with event date/time/location instances and registration CTA",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2.1,
+      "type": "event-description",
+      "heading": "Machen Sie sich mit dem Team und den Räumlichkeiten vertraut",
+      "contentSummary": "Rich text body: introduction paragraph, Ort/Dauer section, Wichtige Hinweise section (free event, registration required, no symptoms)",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2.2,
+      "type": "transport",
+      "heading": "Anfahrt",
+      "contentSummary": "Directions by car (paid parking in underground garage) and public transport (Bus Nr. 8 from Biel-Bienne station to Klinik Linde, every 15 min)",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2.3,
+      "type": "map",
+      "heading": null,
+      "contentSummary": "Embedded Google Maps iframe showing Klinik Linde, Blumenrain 105, 2503 Biel (blocked by cookie consent by default)",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2.4,
+      "type": "event-sidebar",
+      "heading": null,
+      "contentSummary": "Aside with multiple upcoming event date instances, each showing date (icon-calendar), time (icon-clock) and venue (icon-location), separated by horizontal rules. Followed by registration button.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 3,
+      "type": "cta-section",
+      "heading": "Haben Sie Fragen zum Informationsabend?",
+      "contentSummary": "Contact prompt pointing to midwives team via email kurswesen.linde@hirslanden.ch",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.hirslanden.ch/images/events/f4b9ec30ad9f68f89b29639786cb62ef/template/Linde_Kombi_4f_RGB_S.jpg",
+      "alt": "Logo",
+      "context": "header logo"
+    },
+    {
+      "src": "https://www.hirslanden.ch/images/events/f4b9ec30ad9f68f89b29639786cb62ef/template/hirslandenbaby_129_MC_DL.png",
+      "alt": "Informationsabend Geburt",
+      "context": "hero/banner image"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Anmelden",
+      "href": "https://event.hirslanden.ch/events/informationsabend_geburt/?page=registration&language=de",
+      "style": "primary button",
+      "location": "sidebar"
+    },
+    {
+      "text": "kurswesen.linde@hirslanden.ch",
+      "href": "mailto:kurswesen.linde@hirslanden.ch",
+      "style": "inline link",
+      "location": "cta-section"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "type": "event-series-sidebar",
+      "description": "Repeating event date block in sidebar. Each occurrence shows: event title (e.g. 'Informationsabend Geburt 25.6.'), date (25.06.2026), time (18:30 - 19:30 Uhr), venue (Klinik Linde). Multiple occurrences stacked with <hr> separators.",
+      "occurrences": [
+        {
+          "title": "Informationsabend Geburt 25.6.",
+          "date": "25.06.2026",
+          "time": "18:30 - 19:30 Uhr",
+          "venue": "Klinik Linde"
+        },
+        {
+          "title": "Informationsabend Geburt 6.8.",
+          "date": "06.08.2026",
+          "time": "18:30 - 19:30 Uhr",
+          "venue": "Klinik Linde"
+        },
+        {
+          "title": "Informationsabend Geburt 3.9.",
+          "date": "03.09.2026",
+          "time": "18:30 - 19:30 Uhr",
+          "venue": "Klinik Linde"
+        },
+        {
+          "title": "Informationsabend Geburt 15.10.",
+          "date": "15.10.2026",
+          "time": "18:30 - 19:30 Uhr",
+          "venue": "Klinik Linde"
+        },
+        {
+          "title": "Informationsabend Geburt 12.11.",
+          "date": "12.11.2026",
+          "time": "18:30 - 19:30 Uhr",
+          "venue": "Klinik Linde"
+        },
+        {
+          "title": "Informationsabend Geburt 08.12.",
+          "date": "08.12.2026",
+          "time": "18:30 - 00:00 Uhr",
+          "venue": "Klinik Linde"
+        }
+      ]
+    },
+    {
+      "type": "google-map-embed",
+      "description": "iframe embed of Google Maps for clinic address: Klinik Linde, Blumenrain 105, 2503 Biel. Blocked by cookie consent wall with fallback link to open directly on Google Maps.",
+      "address": "Klinik Linde, Blumenrain 105, 2503 Biel",
+      "mapUrl": "https://maps.google.de/maps?hl=de&q=Klinik%20Linde,Blumenrain%20105,%202503,Biel&ie=UTF8&t=&z=15&iwloc=B&output=embed"
+    },
+    {
+      "type": "clinic-address-footer",
+      "description": "Footer contact block showing clinic name and address: Hirslanden KLINIK LINDE, Blumenrain 105, 2503 Biel",
+      "clinicName": "Hirslanden KLINIK LINDE",
+      "address": "Blumenrain 105, 2503 Biel"
+    },
+    {
+      "type": "social-links",
+      "description": "Footer social media icon links: Facebook, Instagram, Twitter/X, TikTok, LinkedIn, YouTube, Blog",
+      "platforms": [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "TikTok",
+        "LinkedIn",
+        "YouTube",
+        "Blog"
+      ]
+    },
+    {
+      "type": "registration-link",
+      "description": "Prominent 'Anmelden' (Register) CTA button in sidebar linking to external event registration system at event.hirslanden.ch",
+      "href": "https://event.hirslanden.ch/events/informationsabend_geburt/?page=registration&language=de"
+    },
+    {
+      "type": "event-nav",
+      "description": "Minimal header navigation with two items: Programm (active, links to program page) and Anmeldung (links to registration page). Includes hamburger menu for mobile.",
+      "items": [
+        {
+          "label": "Programm",
+          "href": "index.php?page=program&key=&language=de",
+          "active": true
+        },
+        {
+          "label": "Anmeldung",
+          "href": "index.php?page=registration&key=&language=de",
+          "active": false
+        }
+      ]
+    }
+  ],
+  "layoutNotes": "This page is served from a standalone event management system (eyeframe/eyevip) separate from the main Hirslanden CMS — not the standard AEM EDS page template. The URL resolves to a dedicated event microsite. The local dev server (localhost:3000) returns 404 for this path because the content has not been migrated to AEM EDS yet; data was fetched directly from the live origin (www.hirslanden.ch). Layout is a two-column design: 1/3 sidebar (right) with event date list and registration button, 2/3 main column (left) with rich text description, transport info, and embedded map. The event is a recurring series (Veranstaltungsserie) with 6 upcoming occurrences all at the same venue. Cookie consent banner blocks Google Maps iframe by default. Page language is German (de).",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:59.666Z",
+    "waitMs": 3031,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:59.666Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "event-detail",
+  "slots": {
+    "_slotSchema": "event-detail-v1",
+    "title": null,
+    "date": null,
+    "location": null,
+    "description": null,
+    "registerCta": {
+      "label": null,
+      "href": "https://event.hirslanden.ch/events/informationsabend_geburt/?page=registration&language=de"
+    }
+  }
+}

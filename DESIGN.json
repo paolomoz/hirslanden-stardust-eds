@@ -1,0 +1,823 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "canonicalVariant": "F",
+  "canonicalPatterns": [
+    "ds-feature-absolute",
+    "editorial-panel-blue-border",
+    "bento-grid"
+  ],
+  "title": "Design System: Hirslanden — Variant A (Faithful + improvements)",
+  "variant": {
+    "id": "A",
+    "role": "Faithful + improvements",
+    "bet": "Same IA, every improvements-list item applied, no creative reach — the risk-averse green-light.",
+    "primaryAxis": "baseline-fix",
+    "amplifies": "none (faithful)",
+    "differentiatingToken": "type-scale ratio 1.25, sectionPadding 64px (balanced baseline)",
+    "motion": "static — gentle hover/focus micro-interactions only; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": {
+        "role": "primary",
+        "displayName": "Hirslanden Blue",
+        "canonical": "#0094d4",
+        "note": "--brandColor; action only, ~10% max coverage"
+      },
+      "ground-warm": {
+        "role": "neutral",
+        "displayName": "Warm Ground",
+        "canonical": "#f7f6f5"
+      },
+      "text-warm-dark": {
+        "role": "neutral",
+        "displayName": "Text Warm Dark",
+        "canonical": "#534c46"
+      },
+      "emergency-red": {
+        "role": "reserved",
+        "displayName": "Emergency Red",
+        "canonical": "#f43a11",
+        "note": "144 affordance only"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; replaces the low-contrast taupe watermark."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 2px 12px rgba(0,0,0,0.08)",
+        "purpose": "The single soft shadow on elevated white cards over the warm ground."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "600px"
+      },
+      {
+        "name": "desktop",
+        "value": "900px"
+      },
+      {
+        "name": "wide",
+        "value": "1200px"
+      }
+    ],
+    "componentStyle": {
+      "buttons": {
+        "primary": {
+          "background": "#0094d4",
+          "color": "#ffffff",
+          "borderRadius": "0px",
+          "fontWeight": 500
+        },
+        "secondary": {
+          "background": "#f7f6f5",
+          "color": "#534c46",
+          "borderRadius": "18px",
+          "fontWeight": 400
+        }
+      },
+      "cards": {
+        "background": "#ffffff",
+        "borderRadius": "0px",
+        "shadow": "0 2px 12px rgba(0,0,0,0.08)"
+      },
+      "inputs": {
+        "borderRadius": "0px",
+        "border": "1px solid #e2dfdb"
+      },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": {
+        "purpose": "Wordmark + primary nav (Kliniken/Ärzte/Fachgebiete) + search + utility bar; reachable emergency path.",
+        "positionClass": "sticky-top"
+      },
+      "footer": {
+        "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.",
+        "positionClass": "page-end"
+      },
+      "find-care": {
+        "purpose": "Search-first wayfinding affordance.",
+        "positionClass": "first-viewport"
+      },
+      "emergency-144": {
+        "purpose": "Unmistakable emergency wayfinding (red 144).",
+        "positionClass": "footer-and-chrome"
+      },
+      "cta-band": {
+        "purpose": "Full-width brand-blue editorial band (Hirslanden Blog).",
+        "positionClass": "mid-page"
+      }
+    },
+    "motifs": {
+      "signaturePill": {
+        "radius": "18px",
+        "usage": "quick-link chips; secondary actions; badges"
+      },
+      "squaredControls": {
+        "radius": "0px",
+        "usage": "primary buttons, cards, inputs — deliberate contrast with the pill"
+      },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "warmPhotography": "clinician-with-patient human imagery; reused at captured semantic positions",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; reassurance-forward; scale stated as fact",
+      "dos": [
+        "Do address the reader as Sie; reassure before persuading.",
+        "Do state scale (16/300/3000) plainly as proof.",
+        "Do use sentence-case headings; uppercase only for short eyebrows."
+      ],
+      "donts": [
+        "Don't write in all-caps body copy.",
+        "Don't use high-pressure conversion verbs ('Jetzt buchen').",
+        "Don't fragment CTA vocabulary across five disagreeing labels."
+      ]
+    },
+    "iaPriorities": [
+      {
+        "signal": "crisis-affordance",
+        "evidence": "_brand-extraction.json#palette[accent-danger] + systemComponents[site-footer].ctaLabels contains 'Notfallnummer 144' in #f43a11",
+        "preserveAs": "unmistakable-emergency-path",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "search-led-IA",
+        "evidence": "pages/home.json#landmarks hero is a search box ('Stichwort...') + quicklink pill row; motifs.patterns includes 'search-first-hero'",
+        "preserveAs": "first-viewport",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "warmth-not-sterile",
+        "evidence": "palette warm grounds #f7f6f5/#f0efed + warm text #534c46 + clinician-with-patient hero photography",
+        "preserveAs": "warm-neutral-ground-and-human-photography",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "restraint-one-accent-one-family",
+        "evidence": "single family Metropolis; single accent #0094d4; rationed saturation",
+        "preserveAs": "one-accent-one-family",
+        "scope": "site-wide",
+        "mutability": "movable"
+      }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": {
+        "decade": "2025-now",
+        "register": "brand (inherited)",
+        "ground_family": {
+          "value": "warm-neutral",
+          "override": "brand-faithful"
+        }
+      },
+      "inheritedDimensions": {
+        "font_deck": "brand-inherited (Metropolis 400/500/700)",
+        "palette": "inherited from _brand-extraction.json"
+      },
+      "brand_faithful_inversions": [
+        "#ffffff retained as elevated card ground (existing brand decision; canonical for Hirslanden). The 'no pure white' impeccable rule is inverted per brand-faithful direction.",
+        "Color tokens retained in hex format (matches captured surface and Stitch frontmatter convention). OKLCH applies to new authoring; this is inheritance.",
+        "Sharp 0px corners retained on cards/inputs/primary buttons (existing brand uses squared corners as a deliberate counterpoint to the 18px pill). The 'modern means rounded' reflex is inverted.",
+        "Saturated #0094d4 retained as the primary brand color (canonical voice, --brandColor). The reflex toward tinted-neutral primaries is inverted.",
+        "#f43a11 retained as a reserved color for the emergency-144 affordance only. The reflex to spread accent colors across the system is inverted."
+      ],
+      "antiToolboxAudit": "1 hit (sticky top navigation) — justified by inherited site convention.",
+      "motionRegister": "none — static variant; presales scope is static-only"
+    },
+    "modules": [
+      {
+        "id": "header-nav",
+        "label": "Site Header / Navigation",
+        "kind": "chrome",
+        "slots": [
+          {
+            "name": "logo",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "nav-links",
+            "type": "link[]",
+            "required": true
+          },
+          {
+            "name": "cta",
+            "type": "link",
+            "required": false
+          },
+          {
+            "name": "search",
+            "type": "widget",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "clinic-listing",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "clinic-detail",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "doctor-profile",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "specialty-topic",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "disease-detail",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "treatment-detail",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "news-listing",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "news-article",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "event-listing",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "event-detail",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "patient-info",
+            "selector": "header, nav, .nav-wrapper"
+          },
+          {
+            "slug": "content-page",
+            "selector": "header, nav, .nav-wrapper"
+          }
+        ],
+        "instanceCount": 13,
+        "status": "confirmed",
+        "signals": [
+          "cross-page-chrome"
+        ],
+        "confidence": "high",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/header-nav.html",
+          "sha": "b47455b60b78"
+        }
+      },
+      {
+        "id": "site-footer",
+        "label": "Site Footer",
+        "kind": "chrome",
+        "slots": [
+          {
+            "name": "logo",
+            "type": "image",
+            "required": false
+          },
+          {
+            "name": "nav-columns",
+            "type": "link[]",
+            "required": true
+          },
+          {
+            "name": "legal",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "social-links",
+            "type": "link[]",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": "footer"
+          },
+          {
+            "slug": "clinic-listing",
+            "selector": "footer"
+          },
+          {
+            "slug": "clinic-detail",
+            "selector": "footer"
+          },
+          {
+            "slug": "doctor-profile",
+            "selector": "footer"
+          },
+          {
+            "slug": "specialty-topic",
+            "selector": "footer"
+          },
+          {
+            "slug": "disease-detail",
+            "selector": "footer"
+          },
+          {
+            "slug": "treatment-detail",
+            "selector": "footer"
+          },
+          {
+            "slug": "news-listing",
+            "selector": "footer"
+          },
+          {
+            "slug": "news-article",
+            "selector": "footer"
+          },
+          {
+            "slug": "event-listing",
+            "selector": "footer"
+          },
+          {
+            "slug": "event-detail",
+            "selector": "footer"
+          },
+          {
+            "slug": "patient-info",
+            "selector": "footer"
+          },
+          {
+            "slug": "content-page",
+            "selector": "footer"
+          }
+        ],
+        "instanceCount": 13,
+        "status": "confirmed",
+        "signals": [
+          "cross-page-chrome"
+        ],
+        "confidence": "high",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/site-footer.html",
+          "sha": "5d998f3aeeca"
+        }
+      },
+      {
+        "id": "breadcrumb",
+        "label": "Breadcrumb Navigation",
+        "kind": "module",
+        "slots": [
+          {
+            "name": "crumbs",
+            "type": "link[]",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "clinic-listing",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "clinic-detail",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "doctor-profile",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "specialty-topic",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "disease-detail",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "treatment-detail",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "news-listing",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "news-article",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "event-listing",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "event-detail",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "patient-info",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          },
+          {
+            "slug": "content-page",
+            "selector": "nav[aria-label*=\"breadcrumb\"], .breadcrumb, ol.breadcrumb"
+          }
+        ],
+        "instanceCount": 12,
+        "status": "confirmed",
+        "signals": [
+          "cross-page-interior"
+        ],
+        "confidence": "high",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/breadcrumb.html",
+          "sha": "116aee236da8"
+        }
+      },
+      {
+        "id": "search-filter",
+        "label": "Search & Filter Widget",
+        "kind": "module",
+        "slots": [
+          {
+            "name": "search-input",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "filter-controls",
+            "type": "widget",
+            "required": false
+          },
+          {
+            "name": "results-count",
+            "type": "text",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "clinic-listing",
+            "selector": "input[type=search], .filter, .search-form"
+          },
+          {
+            "slug": "news-listing",
+            "selector": "input[type=search], .filter, .search-form"
+          },
+          {
+            "slug": "event-listing",
+            "selector": "input[type=search], .filter, .search-form"
+          }
+        ],
+        "instanceCount": 3,
+        "status": "confirmed",
+        "signals": [
+          "listing-type-pattern"
+        ],
+        "confidence": "medium",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/search-filter.html",
+          "sha": "94b73de2ca63"
+        }
+      },
+      {
+        "id": "doctor-card",
+        "label": "Doctor / Team Member Card",
+        "kind": "module",
+        "slots": [
+          {
+            "name": "photo",
+            "type": "image",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "specialty",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "profile-link",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "clinic-detail",
+            "selector": ".doctor-card, .team-card, .person-card, [class*=\"arzt\"]"
+          },
+          {
+            "slug": "clinic-listing",
+            "selector": ".doctor-card, .team-card, .person-card, [class*=\"arzt\"]"
+          },
+          {
+            "slug": "specialty-topic",
+            "selector": ".doctor-card, .team-card, .person-card, [class*=\"arzt\"]"
+          }
+        ],
+        "instanceCount": 3,
+        "status": "confirmed",
+        "signals": [
+          "content-type-colocation"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "event-card",
+        "label": "Event / Course Card",
+        "kind": "module",
+        "slots": [
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "date",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "register-link",
+            "type": "link",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "event-listing",
+            "selector": ".event-card, .course-card, [class*=\"event\"]"
+          },
+          {
+            "slug": "event-detail",
+            "selector": ".event-card, .course-card, [class*=\"event\"]"
+          },
+          {
+            "slug": "home",
+            "selector": ".event-card, .course-card, [class*=\"event\"]"
+          }
+        ],
+        "instanceCount": 3,
+        "status": "confirmed",
+        "signals": [
+          "content-type-colocation"
+        ],
+        "confidence": "medium",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/event-card.html",
+          "sha": "1dcf0e02c461"
+        }
+      },
+      {
+        "id": "news-card",
+        "label": "News / Media Card",
+        "kind": "module",
+        "slots": [
+          {
+            "name": "image",
+            "type": "image",
+            "required": false
+          },
+          {
+            "name": "headline",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "teaser",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "read-more",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "news-listing",
+            "selector": ".news-card, .media-card, .article-card"
+          },
+          {
+            "slug": "home",
+            "selector": ".news-card, .media-card, .article-card"
+          }
+        ],
+        "instanceCount": 2,
+        "status": "confirmed",
+        "signals": [
+          "content-type-colocation"
+        ],
+        "confidence": "medium",
+        "canonicalRendering": {
+          "path": "stardust/canon/modules/news-card.html",
+          "sha": "a5c123b4e26a"
+        }
+      }
+    ],
+    "colorReservations": [
+      {
+        "color": "#f43a11",
+        "reservedFor": [
+          "module:emergency-144"
+        ],
+        "note": "Emergency 144 hotline only. Never use on decorative elements or CTAs."
+      }
+    ],
+    "metadata": {
+      "siteName": "Hirslanden",
+      "siteNameFull": "Hirslanden-Gruppe",
+      "defaultOgImage": "https://mediclinic.scene7.com/is/image/mediclinic/icon-hirslanden-mediclinic-web-3?fmt=png-alpha&_ck=1616254705285",
+      "themeColor": "#0094d4",
+      "locale": "de-CH",
+      "organization": {
+        "@type": "Organization",
+        "name": "Hirslanden-Gruppe",
+        "url": "https://www.hirslanden.ch",
+        "logo": "stardust/current/assets/logo.svg",
+        "sameAs": [
+          "https://www.linkedin.com/company/hirslanden"
+        ],
+        "description": "16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!"
+      },
+      "hreflang": [
+        {
+          "lang": "de",
+          "href": "https://www.hirslanden.ch/de/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://www.hirslanden.ch/fr/"
+        },
+        {
+          "lang": "en",
+          "href": "https://www.hirslanden.ch/en/"
+        }
+      ]
+    },
+    "canon": {
+      "sourceSlug": "home",
+      "approvedAt": "2026-06-24T00:00:00Z",
+      "files": {
+        "header": {
+          "path": "stardust/canon/header.html",
+          "sha": "d3cce8e5763d"
+        },
+        "footer": {
+          "path": "stardust/canon/footer.html",
+          "sha": "805a27930dd4"
+        },
+        "css": {
+          "path": "stardust/canon/canon.css",
+          "sha": "cdf01c2e7081"
+        }
+      },
+      "pinned": {
+        "sectionPadding.desktop": "64px",
+        "sectionPadding.tablet": "48px",
+        "sectionPadding.mobile": "32px",
+        "densityTier": "balanced",
+        "typeScale": 1.25,
+        "lineHeights.display": 1.18,
+        "lineHeights.heading": 1.2,
+        "lineHeights.body": 1.6,
+        "maxWidth": "1200px",
+        "radius": "0px",
+        "radiusPill": "18px"
+      },
+      "compositionalMoves": [
+        "Two-ground page rhythm: --color-ground-warm (#f7f6f5) as default body substrate, --color-ground-alt (#f0efed) for section alternation — never more than these two neutrals plus white.",
+        "Hero is always a split left/right composition: copy and interactive widget on the left column, full-bleed photography on the right under a left-edge scrim gradient; never a centered overlay.",
+        "One full-bleed editorial moment (ds-feature) allowed per page — the panel floats over the image at bottom-left on desktop; never stack two ds-feature sections.",
+        "The 144 emergency affordance lives exclusively in the footer right column, always in --color-emergency (#f43a11), never used decoratively or elsewhere on the page.",
+        "Sticky white header carries a dual-bar structure: utility bar (contact / media / language) above a main nav bar (logo + primary-nav + search); no scroll-triggered color change.",
+        "Proof or trust metrics appear as a hairline-bordered strip directly below the hero — tabular-num figures in accent-ink, plain-text labels in body weight; one strip per page maximum.",
+        "Interactive search floats as a card widget inside the hero column — never a dedicated search page linked from the header."
+      ],
+      "history": [
+        {
+          "at": "2026-06-24T00:00:00Z",
+          "from": "home",
+          "kind": "first-approval"
+        },
+        {
+          "at": "2026-06-24T00:00:00Z",
+          "from": "clinic-detail",
+          "kind": "extension",
+          "added": [
+            "module:breadcrumb",
+            "css:breadcrumb"
+          ]
+        },
+        {
+          "at": "2026-06-24T00:00:00Z",
+          "from": "clinic-listing",
+          "kind": "extension",
+          "added": [
+            "module:search-filter",
+            "css:filter-bar"
+          ]
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action color, squared corners.",
+      "html": "<button class=\"ds-btn-primary\">Zu den Standorten</button>",
+      "css": ".ds-btn-primary { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 0; font-family: Metropolis, sans-serif; font-weight: 500; letter-spacing: 0.02em; transition: background 0.18s ease; } .ds-btn-primary:hover { background: #0083bd; } .ds-btn-primary:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Quick-link Pill",
+      "kind": "chip",
+      "refersTo": "button-secondary",
+      "description": "The 18px signature pill chip.",
+      "html": "<a class=\"ds-pill\" href=\"#\">Ärztesuche</a>",
+      "css": ".ds-pill { display: inline-block; background: #f7f6f5; color: #534c46; padding: 8px 18px; border-radius: 18px; font-family: Metropolis, sans-serif; font-weight: 400; text-decoration: none; transition: background 0.18s ease; } .ds-pill:hover { background: #f0efed; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card, soft single shadow, squared corners.",
+      "html": "<article class=\"ds-card\"><h3>Babygalerie</h3><p>Entdecken Sie die neuesten Ankömmlinge.</p></article>",
+      "css": ".ds-card { background: #fff; color: #534c46; padding: 24px; border-radius: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); font-family: Metropolis, sans-serif; } .ds-card h3 { font-weight: 500; font-size: 1.375rem; line-height: 1.3; margin: 0 0 8px; } .ds-card p { font-weight: 400; line-height: 1.6; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calm Front Door, Corrected",
+    "overview": "Variant A is the brand exactly as it is today, with the obvious fixes applied. It keeps the captured IA and visual DNA and changes only execution quality: a legible hero headline, a real modular type scale, tokenized spacing, consolidated CTA vocabulary.",
+    "keyCharacteristics": [
+      "Same IA and section sequence",
+      "Legible controlled-contrast hero headline",
+      "Modular type scale ratio 1.25",
+      "Tokenized 4pt spacing, 64px section rhythm",
+      "One accent, one family, gentle micro-interactions only"
+    ],
+    "rules": [
+      {
+        "name": "The One Voice Rule",
+        "body": "A single brand blue carries every action; ≤ 10% of any viewport.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reserved-Red Rule",
+        "body": "#f43a11 is permitted on the 144 emergency affordance and nowhere else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Modular-Scale Rule",
+        "body": "Heading sizes follow a single 1.25 ratio; the ad-hoc 42/34/22 set is replaced.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single-Shadow Rule",
+        "body": "One shadow value site-wide; no stacked shadows, glow, or inset.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the captured IA and section sequence intact.",
+      "Do set the hero headline in legible #534c46 or white over a controlled scrim.",
+      "Do reserve #0094d4 for action and #f43a11 for 144 only."
+    ],
+    "donts": [
+      "Don't build the Generic-2026-SaaS silhouette.",
+      "Don't use gradients, glassmorphism, neon, or stacked shadows.",
+      "Don't add scroll choreography, parallax, or any cinematic motion register."
+    ]
+  }
+}

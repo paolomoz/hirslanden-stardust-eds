@@ -2165,5 +2165,33 @@
     "internalLinkCount": 125,
     "externalLinkCount": 14,
     "imageCount": 24
+  },
+  "slots": {
+    "_slotSchema": "landing-v1",
+    "hero": {
+      "headline": "KOMPETENZ, DIE VERTRAUEN SCHAFFT",
+      "subheadline": "Hirslanden-Gruppe",
+      "ctaLabel": "Suche",
+      "ctaHref": null,
+      "backgroundImage": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png"
+    },
+    "features": [
+      {
+        "heading": "Hirslanden-Gruppe",
+        "body": null
+      },
+      {
+        "heading": "News & Mitteilungen",
+        "body": null
+      },
+      {
+        "heading": "Veranstaltungen",
+        "body": null
+      }
+    ],
+    "ctaBand": {
+      "label": "Jobs",
+      "href": "https://careers.hirslanden.ch/?locale=de_DE"
+    }
   }
 }

@@ -1,0 +1,300 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+  "localUrl": "http://localhost:3000/de/corporate/medien-und-news/medienmitteilungen-und-news",
+  "template": "news-listing",
+  "fetchedAt": "2026-06-24",
+  "title": "News & Medienmitteilungen | Hirslanden",
+  "heading": "News & Medienmitteilungen",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Medien & News",
+      "href": "/de/corporate/medien-und-news.html"
+    },
+    {
+      "label": "Medienmitteilungen",
+      "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "generic-header",
+      "heading": "News & Medienmitteilungen",
+      "contentSummary": "Page header with breadcrumb navigation and back link to 'Medien & News'. Contains H1 with page title.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false,
+      "details": {
+        "backLink": {
+          "label": "Medien & News",
+          "href": "/de/corporate/medien-und-news.html"
+        },
+        "breadcrumbSiblings": [
+          {
+            "label": "Über Hirslanden",
+            "href": "/de/corporate/medien-und-news/ueber-uns.html"
+          },
+          {
+            "label": "Fakten & Zahlen",
+            "href": "/de/corporate/medien-und-news/zahlen-fakten.html"
+          },
+          {
+            "label": "Medienmitteilungen",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+            "active": true
+          },
+          {
+            "label": "Downloads",
+            "href": "/de/corporate/medien-und-news/bildmaterial-und-logos.html"
+          }
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "type": "lead-text",
+      "heading": null,
+      "contentSummary": "Short introductory paragraph: 'Untenstehend finden Sie alle Medienmitteilungen der Hirslanden-Gruppe chronologisch geordnet.'",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "spacer",
+      "heading": null,
+      "contentSummary": "Small visual spacer between lead text and news list.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "news-list",
+      "heading": null,
+      "contentSummary": "Dynamically filtered/paginated list of news items and press releases. 28 total results, loaded 10 at a time with a 'Mehr anzeigen' (load more) button. Items ordered chronologically descending. Each item shows: release type badge (Medienmitteilung / News), date, headline (H4), forward-arrow icon, clinic/source name.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true,
+      "details": {
+        "dataFilterId": "NEWS",
+        "dataUrl": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/_jcr_content/content/news.filter.html",
+        "hideInitial": false,
+        "pageSize": 10,
+        "totalResults": 28,
+        "itemFields": [
+          "releaseType",
+          "date",
+          "title",
+          "clinicName"
+        ],
+        "releaseTypes": [
+          "Medienmitteilung",
+          "News"
+        ],
+        "loadMoreButton": true,
+        "seoPagination": true,
+        "sampleItems": [
+          {
+            "releaseType": "Medienmitteilung",
+            "date": "2026-05-28",
+            "title": "Centre de Chirurgie Ambulatoire de Genève",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html"
+          },
+          {
+            "releaseType": "News",
+            "date": "2026-03-06",
+            "title": "Erstes Symposium der Hirslanden Research Foundation",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/symposium-hirslanden-research-foundation.html"
+          },
+          {
+            "releaseType": "News",
+            "date": "2025-11-26",
+            "title": "LUCERNE TOOLBOX 3 - Ein digitaler Kompass bei Brustkrebs",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/lucerne-toolbox-3.html"
+          },
+          {
+            "releaseType": "Medienmitteilung",
+            "date": "2025-10-24",
+            "title": "Official Medical Partner von Corinne Suter",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/corinne-suter-medical-partner.html"
+          },
+          {
+            "releaseType": "Medienmitteilung",
+            "date": "2025-08-19",
+            "title": "Mehdi Bensouda wird neuer Direktor der Hirslanden-Kliniken in Lausanne",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/direktion-lausanne-mehdi-bensouda.html"
+          },
+          {
+            "releaseType": "News",
+            "date": "2025-06-18",
+            "title": "Swiss-LGBTI-Label",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/swiss-lgbti-label.html"
+          },
+          {
+            "releaseType": "News",
+            "date": "2025-06-10",
+            "title": "Gilles Rufenacht zum neuen CEO der Hirslanden-Gruppe ernannt",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gilles-rufenacht-zum-ceo-ernannt.html"
+          },
+          {
+            "releaseType": "News",
+            "date": "2025-05-20",
+            "title": "Gemeinsam für mehr Qualität im Gesundheitswesen: Neues Pilotprojekt zur Erhebung von Patientenergebnissen gestartet",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/pilotprojekt-patientenergebnisse.html"
+          },
+          {
+            "releaseType": "Medienmitteilung",
+            "date": "2025-04-30",
+            "title": "Personelle Veränderung in der Konzernleitung von Hirslanden",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung-stephan-studer.html"
+          },
+          {
+            "releaseType": "Medienmitteilung",
+            "date": "2025-03-27",
+            "title": "Hirslanden konzentriert Versorgung an der Klinik Stephanshorn",
+            "clinicName": "Hirslanden-Gruppe",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gesundheitscampus-st-gallen.html"
+          }
+        ]
+      }
+    },
+    {
+      "order": 5,
+      "type": "spacer",
+      "heading": null,
+      "contentSummary": "Large visual spacer below news list.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 6,
+      "type": "column-container",
+      "heading": null,
+      "contentSummary": "Two-column grid (50/50) containing a quicklink in the left column. Right column is empty. Left column contains a single quicklink tile with bookmark icon linking to the press release archive.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false,
+      "details": {
+        "layout": "grid-50-50",
+        "columns": [
+          {
+            "position": 1,
+            "type": "quicklink",
+            "icon": "icon-bookmark",
+            "label": "Medienmitteilungen Archiv",
+            "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv.html"
+          },
+          {
+            "position": 2,
+            "type": "empty"
+          }
+        ]
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+      "alt": "Hirslanden",
+      "context": "header logo (desktop)"
+    },
+    {
+      "src": "https://www.hirslanden.ch/content/dam/mc-sa-corporate/logos/icon-hirslanden-mediclinic-web.png",
+      "alt": "Hirslanden",
+      "context": "header logo (mobile / small)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-logo-detailansicht-praxiszentren?_ck=1616179864108",
+      "alt": "",
+      "context": "OG / Twitter social share image"
+    },
+    {
+      "src": "/etc.clientlibs/hirslanden/clientlibs/frontend/resources/img/24-px-more-white.svg",
+      "alt": "Mehr anzeigen",
+      "context": "Load-more button icon in news list"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Mehr anzeigen",
+      "href": null,
+      "type": "load-more-button",
+      "note": "JavaScript-driven pagination; loads next 10 items from data-url endpoint"
+    },
+    {
+      "text": "Medienmitteilungen Archiv",
+      "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv.html",
+      "type": "quicklink"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "name": "filtered-content / news-list",
+      "description": "Dynamic client-side filtered and paginated list of news items. Fetches results from a JSON/HTML endpoint (data-url). Supports page-size, hide-initial, and filter-id attributes. Each item is a linked card showing: release-type badge, date (datetime ISO attribute), H4 title, forward-arrow icon, clinic/source name. No images on list items.",
+      "dataAttributes": {
+        "data-filter-id": "NEWS",
+        "data-url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/_jcr_content/content/news.filter.html",
+        "data-hide-initial": "false",
+        "data-page-size": "10"
+      }
+    },
+    {
+      "name": "generic-header with breadcrumb + back-link",
+      "description": "Page header component that renders a multi-level breadcrumb (with expandable siblings dropdown), a back-link arrow pointing to the parent section, and the main H1 title."
+    },
+    {
+      "name": "lead-text",
+      "description": "Single short introductory paragraph displayed below the header, above the main content list."
+    },
+    {
+      "name": "quicklink",
+      "description": "Icon + text CTA tile. Used here to link to the press release archive. Rendered inside a 50/50 column grid."
+    },
+    {
+      "name": "seo-hidden-pagination",
+      "description": "Screen-reader-only <nav> with prev/next page links for search engine crawling of paginated content. Not visible to regular users."
+    }
+  ],
+  "layoutNotes": "Note: localhost:3000 returned 404 for this path (content not yet previewed in AEM). Analysis was performed against the live production site at https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html. The page is a classic news-listing template with: (1) a generic page header with breadcrumb and back-link, (2) a short lead paragraph, (3) a dynamically loaded and paginated news list (10 items per page, 28 total at time of fetch), and (4) a bottom CTA linking to the archive. News items have NO images in the list view — only release-type badge, date, title, arrow icon, and source. The page uses a two-column grid at the bottom with only one quicklink populated. No search/filter controls are visible in the rendered HTML — filtering appears to be purely by the data-filter-id='NEWS' attribute. Language switcher offers DE/FR/EN variants.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:10.650Z",
+    "waitMs": 3100,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:10.650Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "news-listing",
+  "slots": {
+    "_slotSchema": "listing-v1",
+    "indexHeadline": null,
+    "filterControls": null,
+    "cardGrid": {
+      "itemCount": 0,
+      "sampleCards": []
+    }
+  }
+}

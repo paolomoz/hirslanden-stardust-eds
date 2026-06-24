@@ -1,0 +1,246 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+  "localUrl": "http://localhost:3000/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
+  "template": "news-article",
+  "fetchedAt": "2026-06-24",
+  "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève | Hirslanden",
+  "heading": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève",
+  "breadcrumb": [
+    {
+      "label": "Home",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Medien & News",
+      "href": "/de/corporate/medien-und-news.html"
+    },
+    {
+      "label": "Medienmitteilungen",
+      "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html"
+    },
+    {
+      "label": "Centre de Chirurgie Ambulatoire de Genève",
+      "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "header",
+      "heading": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève",
+      "contentSummary": "Page header with breadcrumb navigation, back-link to 'Medienmitteilungen' listing, and H1 title. Rendered inside a .genericHeader component.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "article-metadata",
+      "heading": null,
+      "contentSummary": "Publication date stamp: 'Medienmitteilung vom 28.05.2026'. Displayed as a <time datetime=\"2026-05-28\"> element inside .article-caption. Page type meta is NEWS.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "lead-paragraph",
+      "heading": null,
+      "contentSummary": "Lead / intro paragraph inside .lead. Summarises the article: CCAG is a public-private partnership between HUG and Hirslanden, the largest outpatient surgery centre in Switzerland, serving ~10,000 patients per year from year one.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "body-text",
+      "heading": null,
+      "contentSummary": "Main article body text in grid column 1 (66%). Multiple paragraphs covering: CCAG mission, partnership rationale, building location (Plateau-de-Champel), facility specs (2 800 m², 10 operating theatres), quotes from Robert Mardini (HUG CEO) and Gilles Rufenacht (Hirslanden CEO), standardised processes, OAAT tariff context, surgical specialties served. Includes two bold sub-headings: 'Standardisierte Prozesse' and 'Über das Centre de Chirurgie Ambulatoire de Genève (CCAG)'. Section ends with 'Über die Hirslanden-Gruppe' boilerplate paragraph.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 5,
+      "type": "sidebar-pdf-download",
+      "heading": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève",
+      "contentSummary": "Sidebar column 2 (33%). Download list (.download section) with a single PDF item: press release PDF (270.36 KB). Icon-driven list item with H4 title and file-size metadata.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": true
+    },
+    {
+      "order": 6,
+      "type": "sidebar-image",
+      "heading": null,
+      "contentSummary": "First sidebar image: group photo of Pierre Maudet, Gilles Rufenacht, Juliette Lemaignen, Robert Mardini at the CCAG opening. Full-width inside sidebar column. Linkable to full-resolution version on scene7 CDN.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 7,
+      "type": "sidebar-image",
+      "heading": null,
+      "contentSummary": "Second sidebar image: exterior/interior view of Centre de Chirurgie Ambulatoire de Genève building. Full-width inside sidebar column.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 8,
+      "type": "sidebar-contact",
+      "heading": "Kontakt Centre de Chirurgie Ambulatoire de Genève",
+      "contentSummary": "Contact block for CCAG: Juliette Lemaignen (directrice), email presse@cca-geneve.ch, phone +41 22 522 25 45.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 9,
+      "type": "sidebar-contact",
+      "heading": "Kontakt HUG",
+      "contentSummary": "Contact block for HUG press service: email presse-hug@hcuge.ch, phone +41 22 372 37 37.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 10,
+      "type": "sidebar-contact",
+      "heading": "Kontakt Hirslanden",
+      "contentSummary": "Contact block for Hirslanden: Oriane Perrin (responsable Marketing et Communication), email medias.geneve@hirslanden.ch, phone +41 22 545 28 48.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC06651?_ck=2026-05-29T07%3A26%3A43.025Z",
+      "fullResSrc": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC06651?wid=1920&_ck=2026-05-29T07%3A26%3A43.025Z",
+      "alt": "Pierre Maudet, Gilles Rufenacht, Juliette Lemaignen, Robert Mardini",
+      "caption": "Pierre Maudet, Gilles Rufenacht, Juliette Lemaignen, Robert Mardini",
+      "location": "sidebar",
+      "position": 1
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC07282?_ck=2026-05-29T07%3A26%3A43.025Z",
+      "fullResSrc": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC07282?wid=1920&_ck=2026-05-29T07%3A26%3A43.025Z",
+      "alt": "Centre de chirurgie ambulatoire de Genève",
+      "caption": "Centre de chirurgie ambulatoire de Genève",
+      "location": "sidebar",
+      "position": 2
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Medienmitteilungen",
+      "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+      "type": "backlink",
+      "location": "header"
+    },
+    {
+      "text": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève (PDF)",
+      "href": "/content/dam/corporate/downloads/de/media/260528_Medienmitteilung_CCAG.pdf",
+      "type": "download",
+      "location": "sidebar"
+    },
+    {
+      "text": "www.cca-geneve.ch",
+      "href": "http://www.cca-geneve.ch/",
+      "type": "external-link",
+      "location": "body"
+    },
+    {
+      "text": "www.hug.ch",
+      "href": "http://www.hug.ch/",
+      "type": "external-link",
+      "location": "body"
+    },
+    {
+      "text": "https://panorama.hug.ch/",
+      "href": "https://panorama.hug.ch/",
+      "type": "external-link",
+      "location": "body"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "component": "article-date-stamp",
+      "description": "Publication date shown as 'Medienmitteilung vom DD.MM.YYYY' above the lead paragraph. Uses <time> element with datetime attribute.",
+      "exampleValue": "Medienmitteilung vom 28.05.2026"
+    },
+    {
+      "component": "lead-paragraph",
+      "description": "Visually distinct lead / intro paragraph in a .lead wrapper, displayed at larger/bolder weight above the body text. Single paragraph summarising the news.",
+      "exampleValue": "Das aus einer Partnerschaft..."
+    },
+    {
+      "component": "two-column-layout",
+      "description": "CSS class .grid-66-33 splits content into a 66% main article column and a 33% sidebar column. Main column: article body. Sidebar: PDF download, images, contact blocks.",
+      "exampleValue": "grid-66-33 / grid-col-1 / grid-col-2"
+    },
+    {
+      "component": "pdf-download-list",
+      "description": "Sidebar widget listing downloadable press release PDFs. Each item has a PDF icon, H4 title, and file size label. Links open in a new tab.",
+      "exampleValue": "260528_Medienmitteilung_CCAG.pdf | 270.36 KB"
+    },
+    {
+      "component": "sidebar-image-with-caption",
+      "description": "Full-width images in sidebar rendered inside a <figure> with <figcaption>. Images are lazy-loaded via Scene7/Dynamic Media CDN with responsive src. Each image is clickable to open full resolution.",
+      "exampleValue": "NR_DSC06651 / NR_DSC07282"
+    },
+    {
+      "component": "press-contact-block",
+      "description": "Repeating sidebar blocks with bold heading 'Kontakt [Organisation]', contact person name, email (obfuscated in source), and phone number. Three contacts: CCAG, HUG, Hirslanden.",
+      "exampleValue": "Juliette Lemaignen, directrice / presse@cca-geneve.ch / +41 22 522 25 45"
+    },
+    {
+      "component": "breadcrumb",
+      "description": "Multi-level breadcrumb <ol> with expandable sub-items per level (sibling pages shown on hover/click). Active item is non-linked. Rendered inside .genericHeader.",
+      "exampleValue": "Home > Medien & News > Medienmitteilungen > Centre de Chirurgie Ambulatoire de Genève"
+    },
+    {
+      "component": "backlink",
+      "description": "Above H1, a back arrow link returning to the parent listing page (Medienmitteilungen). Uses icon-arrow-back icon.",
+      "exampleValue": "← Medienmitteilungen"
+    }
+  ],
+  "layoutNotes": "Local dev server (localhost:3000) returned 404 for this path — content was fetched directly from the live site (hirslanden.ch). The page uses a two-column layout: 66% main article column + 33% sidebar. The sidebar always appears to the right on desktop. There is no hero image — the article header is text-only (H1 inside .genericHeader). Images appear only in the sidebar. The article body uses multiple .text.section > .textAndImage blocks even for text-only content. Body text includes inline bold headings (<b> tags inside <p>) rather than semantic heading elements (H2/H3). The page type is 'NEWS' (from meta itemprop). The page has structured data: NewsArticle and BreadcrumbList JSON-LD. Language switcher offers DE/FR/EN variants of the same article.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:07.429Z",
+    "waitMs": 3180,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:07.429Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "news-article",
+  "slots": {
+    "_slotSchema": "news-article-v1",
+    "headline": null,
+    "deck": null,
+    "leadImage": null,
+    "body": [],
+    "relatedCtas": [
+      {
+        "href": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html"
+      },
+      {
+        "href": "/content/dam/corporate/downloads/de/media/260528_Medienmitteilung_CCAG.pdf"
+      },
+      {
+        "href": "http://www.cca-geneve.ch/"
+      }
+    ]
+  }
+}

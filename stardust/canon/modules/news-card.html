@@ -1,0 +1,20 @@
+<!-- stardust:canon
+  writtenBy:       stardust:prototype --prep
+  writtenAt:       2026-06-24T00:00:00Z
+  sourceSlug:      home
+  sourcePrototype: stardust/prototypes/home-F-proposed.html
+  region:          module:news-card
+  stardustVersion: 0.10.0
+-->
+<!-- Usage: repeat <li class="news-row"> for each news item inside <ul class="news-list"> -->
+<li class="news-row">
+  <a href="[[ARTICLE_URL]]" data-slot="article-link">
+    <span class="news-meta">
+      <span class="news-tag" data-slot="category">[[CATEGORY]]</span>
+      <span aria-hidden="true">·</span>
+      <span data-slot="date">[[DATE_FORMATTED]]</span>
+    </span>
+    <h3 data-slot="headline">[[HEADLINE]]</h3>
+    <span class="news-attr" data-slot="source">[[SOURCE]]</span>
+  </a>
+</li>

@@ -1,0 +1,295 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html",
+  "localUrl": "http://localhost:3000/de/corporate/ueber-uns/hingabe",
+  "template": "content-page",
+  "fetchedAt": "2026-06-24",
+  "title": "Hingabe, die man spürt.  | Hirslanden",
+  "heading": "Hingabe, die man spürt – kleine Momente machen den Unterschied",
+  "breadcrumb": [
+    {
+      "label": "Hirslanden-Gruppe",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "label": "Hirslanden-Gruppe",
+      "href": "/de/corporate/ueber-uns.html"
+    },
+    {
+      "label": "Hingabe, die man spürt. ",
+      "href": null,
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "page-header",
+      "heading": "Hingabe, die man spürt – kleine Momente machen den Unterschied",
+      "contentSummary": "Generic page header with breadcrumb navigation and back-link to parent 'Hirslanden-Gruppe'. H1 displayed full-width with no hero image.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "lead-text",
+      "heading": null,
+      "contentSummary": "Lead paragraph: 'Unser Engagement ist keine spontane Entscheidung, sondern die bewusste Bereitschaft, für die sich uns anvertrauenden Menschen ausserordentliche Wege zu gehen. Wir gehen immer einen Schritt weiter, um durch Exzellenz etwas Einzigartiges zu bieten.' Full-width single column (grid-100).",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "rich-text",
+      "heading": null,
+      "contentSummary": "Two body paragraphs about Hirslanden's history and philosophy. Ends with bold: 'Hingabe, die man spürt'. Full-width single column (grid-100).",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 4,
+      "type": "image-grid-3col",
+      "heading": null,
+      "contentSummary": "Three-column image grid (grid-33-33-33) showing 9 editorial images from mediclinic.scene7.com. Each image is a portrait or landscape 'Asterisk' series photo. Images are clickable to enlarge. Images are arranged 3 per column (3 columns × 3 rows = 9 images total).",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 5,
+      "type": "clinic-finder",
+      "heading": "So finden Sie uns",
+      "contentSummary": "Full-width section containing an H2 heading followed by a tabbed accordion component. Single tab labelled 'Unsere Kliniken im Überblick' with a map icon. Tab contains an interactive hotspot map of Switzerland showing 22 clinic locations. Each hotspot opens an overlay with: clinic name (H3), clinic image (33% column), address, phone, emergency phone, email link, and a CTA button 'Zur {Klinik}' linking to the clinic homepage. Clinics: Klinik Birshof, Clinique Bois-Cerf, Clinique Cecil, Clinique des Grangettes, Clinique La Colline, Klinik Aarau, Klinik Hirslanden, OPERA Zumikon, Klinik Im Park, Operationszentrum Bellaria, Klinik Linde, AndreasKlinik Cham Zug, Klinik Beau-Site, Klinik Permanence, Salem-Spital, OPERA Bern, Klinik St. Anna in Meggen, Klinik St. Anna, Operationszentrum St. Anna im Bahnhof, Klinik Am Rosenberg, Klinik Stephanshorn, OPERA St. Gallen.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 6,
+      "type": "image-gallery",
+      "heading": "Hingabe bedeutet für uns, die kleinen Momente gross zu machen",
+      "contentSummary": "H2 heading followed by a masonry/grid image gallery (imagegallery component) with 28 visible images (data-show-initial=90 but 28 image items in DOM). Images are categorised by scene: 'ops' (operating theatre), 'pflege' (nursing/care), 'hotellerie' (hotel/hospitality), 'empfang' (reception), 'garten' (garden), 'kueche' (kitchen), 'reinigung' (cleaning). All images clickable to enlarge. All sourced from mediclinic.scene7.com with alt text pattern 'hirslanden-hingabe-{category}-{n}'.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 7,
+      "type": "teaser-callout",
+      "heading": null,
+      "contentSummary": "Grey full-width callout bar (grid-50-50). Left column is empty. Right column contains a card teaser linking to '/de/corporate/fuer-alle-folgen-des-lebens.html' with image, H3 heading 'Für alle Folgen des Lebens', and description text 'Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da: Mehr erfahren'.",
+      "hasImage": true,
+      "hasForm": false,
+      "hasList": false
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/11-1",
+      "alt": "Asterisk - Hochformat  - 1",
+      "context": "image-grid-3col, column 1"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/2-24",
+      "alt": "Asterisk - Querformat - 2",
+      "context": "image-grid-3col, column 1"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/4-18",
+      "alt": "Asterisk - Hochformat  - 4",
+      "context": "image-grid-3col, column 1"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/1-24",
+      "alt": "Asterisk - Querformat - 1",
+      "context": "image-grid-3col, column 2"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/31-1",
+      "alt": "Asterisk - Hochformat  - 3",
+      "context": "image-grid-3col, column 2"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/5-14",
+      "alt": "Asterisk - Hochformat  - 5",
+      "context": "image-grid-3col, column 2"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/21-2",
+      "alt": "Asterisk - Hochformat  - 2",
+      "context": "image-grid-3col, column 3"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/3-21",
+      "alt": "Asterisk - Querformat - 3",
+      "context": "image-grid-3col, column 3 + og:image"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/6-9",
+      "alt": "Asterisk - Hochformat  - 6",
+      "context": "image-grid-3col, column 3"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/HIR_Grafikkarte_Schweiz_Kantone_0320_web",
+      "alt": "HIR_Grafikkarte_Schweiz_Kantone_0320_web",
+      "context": "clinic-finder hotspot map of Switzerland"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-hingabe-ops-2",
+      "alt": "hirslanden-hingabe-ops-2",
+      "context": "image-gallery (operating theatre)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-hingabe-pflege-29",
+      "alt": "hirslanden-hingabe-pflege-29",
+      "context": "image-gallery (nursing)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-hingabe-hotellerie-6",
+      "alt": "hirslanden-hingabe-hotellerie-6",
+      "context": "image-gallery (hospitality)"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/02_Mitgefühl-1z1_72dpi",
+      "alt": "1441683172",
+      "context": "teaser-callout card image"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Zur Hirslanden Klinik Birshof",
+      "href": "/de/klinik-birshof/home.html"
+    },
+    {
+      "text": "Zur Clinique Bois-Cerf",
+      "href": "/de/clinique-bois-cerf/home.html"
+    },
+    {
+      "text": "Zur Clinique Cecil",
+      "href": "/de/clinique-cecil/home.html"
+    },
+    {
+      "text": "Zur Clinique des Grangettes",
+      "href": "/de/clinique-des-grangettes/home.html"
+    },
+    {
+      "text": "Zur Clinique La Colline",
+      "href": "/de/clinique-la-colline/home.html"
+    },
+    {
+      "text": "Zur Hirslanden Klinik Aarau",
+      "href": "/de/hirslanden-klinik-aarau/home.html"
+    },
+    {
+      "text": "Zur Klinik Hirslanden",
+      "href": "/de/klinik-hirslanden/home.html"
+    },
+    {
+      "text": "Zum Hirslanden OPERA Zumikon",
+      "href": "/de/corporate/ueber-uns/hingabe.center.html/737.html"
+    },
+    {
+      "text": "Zur Hirslanden Klinik Im Park",
+      "href": "/de/klinik-im-park/home.html"
+    },
+    {
+      "text": "Zum Operationszentrum Bellaria",
+      "href": "/de/klinik-im-park/centers/operationszentrum-bellaria.html"
+    },
+    {
+      "text": "Zur Klinik Linde",
+      "href": "/de/klinik-linde/home.html"
+    },
+    {
+      "text": "Zur AndreasKlinik Cham Zug",
+      "href": "/de/andreasklinik-cham-zug/home.html"
+    },
+    {
+      "text": "Zur Klinik Beau-Site",
+      "href": "/de/klinik-beau-site/home.html"
+    },
+    {
+      "text": "Zur Klinik Permanence",
+      "href": "/de/klinik-permanence/home.html"
+    },
+    {
+      "text": "Für alle Folgen des Lebens (teaser)",
+      "href": "/de/corporate/fuer-alle-folgen-des-lebens.html"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "type": "generic-header",
+      "description": "Page header with breadcrumb (3 levels: root > section > page), back-link arrow to parent section, and H1 full-width. No hero image — header is text-only with red accent bar."
+    },
+    {
+      "type": "lead-text",
+      "description": "Styled introductory paragraph with larger font, rendered as a dedicated 'lead' div. Full-width single column."
+    },
+    {
+      "type": "hotspot-map",
+      "description": "Interactive Switzerland map with 22 numbered hotspot pins. Each pin reveals a modal overlay containing: clinic name (H3 link), clinic building photo, full postal address, telephone, emergency telephone, email, and a primary CTA button to the clinic homepage. Overlay has a close button. The map supports hover and click animation. Color scheme: blue. Located inside a tab/accordion component."
+    },
+    {
+      "type": "tab-accordion",
+      "description": "Single-tab accordion (data-all-closed=true, default-tab-index=0). Tab has map icon and label 'Unsere Kliniken im Überblick'. Tab content has grey background. Contains the hotspot map."
+    },
+    {
+      "type": "image-gallery-masonry",
+      "description": "Responsive masonry/grid image gallery with show-initial=90. 28 images across 5 categories (pflege, hotellerie, empfang, garten, ops, kueche, reinigung). All images enlargeable. No captions."
+    },
+    {
+      "type": "contact-info",
+      "description": "Structured contact information block per clinic inside hotspot overlay: address (linked to contact page), phone (tel: link with phone icon), emergency phone (tel: link), email (mailto: link with mail icon)."
+    },
+    {
+      "type": "teaser-card",
+      "description": "Image + text card teaser within a grey full-width callout. Asymmetric grid (50-50): left side empty, right side has card with background image, H3 heading, and description paragraph. Card is fully linked."
+    }
+  ],
+  "layoutNotes": "NOTE: http://localhost:3000 returns 404 for this path — the page has not been previewed in the EDS backend. Content was sourced from the live Hirslanden CMS at https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html (legacy AEM CMS, not EDS markup). The page is a corporate editorial content page ('ADDITIONAL_CONTENT' type per meta). Layout is full-width with no sidebar. Sections flow top-to-bottom: header → lead text → body text → 3-column image grid → tabbed clinic finder map → image gallery → teaser callout. The clinic-finder section is the dominant interactive component, taking up the majority of page weight (22 clinic overlays with contact data). Language: German (de-CH). Alternate: French at /fr/corporate/a-propos-de-nous/implication.html.",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:58:47.784Z",
+    "waitMs": 4929,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:58:47.784Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "content-page",
+  "slots": {
+    "_slotSchema": "editorial-v1",
+    "headline": null,
+    "intro": null,
+    "heroImage": null,
+    "editorialSections": [
+      {
+        "heading": "Page Not Found",
+        "body": null
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/de/klinik-birshof/home.html"
+      },
+      {
+        "href": "/de/clinique-bois-cerf/home.html"
+      },
+      {
+        "href": "/de/clinique-cecil/home.html"
+      },
+      {
+        "href": "/de/clinique-des-grangettes/home.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "url": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html",
+  "localUrl": "http://localhost:3000/de/corporate/kurse-und-veranstaltungen",
+  "template": "event-listing",
+  "fetchedAt": "2026-06-24",
+  "title": "Kurse und Veranstaltungen | Hirslanden",
+  "heading": "Veranstaltungen der Hirslanden-Gruppe",
+  "breadcrumb": [
+    {
+      "text": "Hirslanden-Gruppe",
+      "href": "/de/corporate/home.html"
+    },
+    {
+      "text": "Kurse und Veranstaltungen",
+      "href": "/de/corporate/kurse-und-veranstaltungen.html",
+      "active": true
+    }
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "page-header",
+      "heading": "Veranstaltungen der Hirslanden-Gruppe",
+      "contentSummary": "Full-width page header with H1 and breadcrumb back-link (Hirslanden-Gruppe). No hero image.",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 2,
+      "type": "lead-text",
+      "heading": null,
+      "contentSummary": "Introductory paragraph inviting visitors to explore courses and events: pregnancy, smoking cessation, surgical technique lectures. Ends with 'Wir freuen uns auf Sie!'",
+      "text": "Erwarten Sie bald ein Kind? Möchten Sie mit dem Rauchen aufhören oder sich über spezielle Operationstechniken informieren? In unseren Kliniken finden regelmässig Publikumsvorträge und Informationsveranstaltungen statt. Wählen Sie das passende Thema für Sie aus und informieren Sie sich über unser Angebot. Wir freuen uns auf Sie!",
+      "hasImage": false,
+      "hasForm": false,
+      "hasList": false
+    },
+    {
+      "order": 3,
+      "type": "event-listing",
+      "heading": "Events",
+      "contentSummary": "Filtered event grid with 69 total results shown 40 per page. Contains: keyword search field, 4 multi-select filter dropdowns (Ort, Klinik, Fachgebiet, Thema), Apply button, active-filter tag list, and paginated 4-column card grid.",
+      "hasImage": true,
+      "hasForm": true,
+      "hasList": true,
+      "totalResults": 69,
+      "pageSize": 40,
+      "currentPage": 1,
+      "hasPagination": true
+    }
+  ],
+  "images": [
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/SA_rueckbildung_getty?_ck=1758264110709",
+      "alt": "salem-spital-rueckbildung-kurs",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-linde-infoabend-opengraph?_ck=1616247069939",
+      "alt": "Klinik Linde Infoabend",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/Besprechung?_ck=2025-11-10T12%3A18%3A26.828Z",
+      "alt": "Vortrag Besprechung mit Patient",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/salem-spital-geburt-informationsabend?_ck=1616323633321",
+      "alt": "salem-spital-geburt-informationsabend",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stephanshorn-informationsabend-werdende-eltern?_ck=1616245266459",
+      "alt": "Informationsabend werdende Eltern",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-baby-stillen-veranstaltungen1?_ck=1616177303276",
+      "alt": "Mutter mit Baby",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stanna-kursangebot-rueckbildungsgymnastik?_ck=1618836762196",
+      "alt": "klinik-stanna-kursangebot-rueckbildungsgymnastik",
+      "context": "event-card"
+    },
+    {
+      "src": "https://mediclinic.scene7.com/is/image/mediclinic/geburtsvorbereitungskurs?_ck=1616173320923",
+      "alt": "geburtsvorbereitungskurs",
+      "context": "event-card"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Anwenden",
+      "href": null,
+      "type": "filter-submit",
+      "context": "filter-form"
+    },
+    {
+      "text": "Next Page",
+      "href": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html/80/120.html",
+      "type": "pagination",
+      "context": "event-grid"
+    }
+  ],
+  "templateSpecificComponents": [
+    {
+      "component": "event-filter-bar",
+      "description": "Sticky filter bar above the event grid. Contains a keyword/name text input with typeahead (data-url: events.filter.html), and 4 multi-select dropdown checkboxes: Ort (city), Klinik (clinic), Fachgebiet (medical specialty), Thema (topic). An 'Anwenden' button triggers the AJAX filter. Active filters render as removable tag chips in a list below.",
+      "filterFields": [
+        {
+          "name": "q",
+          "type": "text",
+          "placeholder": "Stichwort/Name",
+          "hasTypeahead": true
+        },
+        {
+          "name": "locations",
+          "type": "multiselect-checkbox",
+          "placeholder": "Ort",
+          "options": [
+            "Aarau",
+            "Bern",
+            "Biel",
+            "Luzern",
+            "Schaffhausen",
+            "St. Gallen",
+            "Zürich"
+          ]
+        },
+        {
+          "name": "clinics",
+          "type": "multiselect-checkbox",
+          "placeholder": "Klinik",
+          "options": [
+            "Hirslanden Klinik Aarau",
+            "Hirslanden Klinik Im Park",
+            "Hirslanden Klinik Linde",
+            "Klinik Am Rosenberg",
+            "Klinik Hirslanden",
+            "Klinik St. Anna",
+            "Klinik Stephanshorn",
+            "Salem-Spital"
+          ]
+        },
+        {
+          "name": "fmhs",
+          "type": "multiselect-checkbox",
+          "placeholder": "Fachgebiet",
+          "options": [
+            "Allgemeine Innere Medizin",
+            "Angiologie (Gefässmedizin)",
+            "Chirurgie",
+            "Chirurgische Senologie",
+            "Endokrinologie / Diabetologie",
+            "Gefässchirurgie",
+            "Gynäkologie",
+            "Gynäkologie und Geburtshilfe",
+            "Gynäkologische Onkologie",
+            "Gynäkologische Senologie",
+            "Handchirurgie",
+            "Herz- und thorakale Gefässchirurgie",
+            "Interventionelle Schmerztherapie (SSIPM)",
+            "Manuelle Medizin (SAMM)",
+            "Medizinische Onkologie",
+            "Neuro-Urologie",
+            "Neurochirurgie",
+            "Operative Urologie",
+            "Orthopädische Chirurgie und Traumatologie des Bewegungsapparates",
+            "Phytotherapie (SMGP)",
+            "Radio-Onkologie (Strahlentherapie)",
+            "Senologie / Brustmedizin",
+            "Sport- und Bewegungsmedizin (SEMS)",
+            "Urogynäkologie",
+            "Urologie",
+            "Viszeralchirurgie",
+            "Wirbelsäulenchirurgie"
+          ]
+        },
+        {
+          "name": "topics",
+          "type": "multiselect-checkbox",
+          "placeholder": "Thema",
+          "options": [
+            "Baby",
+            "Diverse",
+            "Event Topics",
+            "Geburt",
+            "Geburtsvorbereitung",
+            "Kinderwunsch",
+            "Medizinisch",
+            "Online Event"
+          ]
+        }
+      ]
+    },
+    {
+      "component": "event-card",
+      "description": "Card in a 4-column responsive grid (4-col desktop, fewer columns on smaller viewports). Each card is a full anchor link. Card anatomy: (1) date badge — day as H3, abbreviated month as span; (2) meta row — city | clinic name, and 'weitere Termine verfügbar' badge if recurring; (3) event title as H3; (4) event image (mediclinic.scene7.com CDN, responsive <picture> with 4 breakpoints). Cards are ordered chronologically by next upcoming date.",
+      "fields": [
+        "day (numeric)",
+        "month (abbreviated German, e.g. Jun.)",
+        "city",
+        "clinic",
+        "multipleDatesAvailable (boolean)",
+        "title",
+        "image (responsive picture)",
+        "detailPageHref"
+      ],
+      "sampleCards": [
+        {
+          "title": "Bewegte Schwangerschaft",
+          "nextDate": "25 Jun.",
+          "city": "Bern",
+          "clinic": "Salem-Spital",
+          "multipleDates": true,
+          "href": "https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/bewegte-schwangerschaft.html",
+          "imageSrc": "https://mediclinic.scene7.com/is/image/mediclinic/SA_rueckbildung_getty?_ck=1758264110709",
+          "imageAlt": "salem-spital-rueckbildung-kurs"
+        },
+        {
+          "title": "Informationsabend Geburt",
+          "nextDate": "25 Jun.",
+          "city": "Biel",
+          "clinic": "Hirslanden Klinik Linde",
+          "multipleDates": true,
+          "href": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+          "imageSrc": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-klinik-linde-infoabend-opengraph?_ck=1616247069939",
+          "imageAlt": "Klinik Linde Infoabend"
+        },
+        {
+          "title": "Öffentlicher Vortrag: Beinarterien - wann Untersuchung und Behandlung",
+          "nextDate": "01 Jul.",
+          "city": "St. Gallen",
+          "clinic": "Klinik Stephanshorn",
+          "multipleDates": true,
+          "href": "https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/gesundheitsthemen/oeffentlicher-vortrag-arterien.html",
+          "imageSrc": "https://mediclinic.scene7.com/is/image/mediclinic/Besprechung?_ck=2025-11-10T12%3A18%3A26.828Z",
+          "imageAlt": "Vortrag Besprechung mit Patient"
+        },
+        {
+          "title": "Informationsabend Geburt",
+          "nextDate": "02 Jul.",
+          "city": "Bern",
+          "clinic": "Salem-Spital",
+          "multipleDates": true,
+          "href": "https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/informationsabend-geburt.html",
+          "imageSrc": "https://mediclinic.scene7.com/is/image/mediclinic/salem-spital-geburt-informationsabend?_ck=1616323633321",
+          "imageAlt": "salem-spital-geburt-informationsabend"
+        },
+        {
+          "title": "Informationsabend für werdende Eltern",
+          "nextDate": "02 Jul.",
+          "city": "St. Gallen",
+          "clinic": "Klinik Stephanshorn",
+          "multipleDates": true,
+          "href": "https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/schwangerschaft-und-geburt/informationsabend-werdende-eltern.html",
+          "imageSrc": "https://mediclinic.scene7.com/is/image/mediclinic/klinik-stephanshorn-informationsabend-werdende-eltern?_ck=1616245266459",
+          "imageAlt": "Informationsabend werdende Eltern"
+        }
+      ]
+    },
+    {
+      "component": "event-grid-container",
+      "description": "Wrapper that drives AJAX pagination. data-url points to events.filter.html endpoint. data-page-size=40. data-filtered-results-number shows live count (updated by JS after filter). A 'Next Page' link appends /80/120.html to the canonical URL for the second page.",
+      "dataAttributes": {
+        "data-filter-id": "EVENT",
+        "data-url": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/_jcr_content/content/events.filter.html",
+        "data-hide-initial": "false",
+        "data-page-size": "40",
+        "data-no-more-results": "false",
+        "data-filtered-results-number": "69"
+      }
+    },
+    {
+      "component": "results-count",
+      "description": "H2 showing 'Events <span>69</span>' — the span updates dynamically after filter is applied. Sits above the filter bar.",
+      "pattern": "Events <span class=\"filtered-results-number\">{count}</span>"
+    },
+    {
+      "component": "sub-page-navigation",
+      "description": "Two child pages visible in sidebar nav and breadcrumb siblings: 'Schwangerschaft & Geburt' (/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html) and 'Gesundheitsthemen' (/de/corporate/kurse-und-veranstaltungen/gesundheitsthemen.html). These categorise events but are NOT displayed as tab navigation on this page — filtering is done via the filter bar.",
+      "childPages": [
+        {
+          "text": "Schwangerschaft & Geburt",
+          "href": "/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html"
+        },
+        {
+          "text": "Gesundheitsthemen",
+          "href": "/de/corporate/kurse-und-veranstaltungen/gesundheitsthemen.html"
+        }
+      ]
+    }
+  ],
+  "layoutNotes": "Source: www.hirslanden.ch (legacy AEM Sites CMS). Local dev server (localhost:3000) returned 404 — this page has not yet been migrated to EDS. The page uses a two-section layout: (1) a narrow lead-text section at full width, then (2) a full-width event listing section containing filter + grid. The filter bar spans full width above the 4-column card grid. Cards are purely date-sorted (ascending by next upcoming date). No hero/banner image on this listing page. Language alternates: DE (canonical), FR (/fr/corporate/cours-et-manifestations.html), EN (/en/corporate/courses-and-events.html). Image CDN: mediclinic.scene7.com with responsive wid= params. Total events: 69, page size 40 (40 shown page 1, 29 on page 2).",
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T19:59:02.752Z",
+    "waitMs": 4596,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "refreshedAt": "2026-06-24T19:59:02.752Z",
+    "note": "re-extracted for provenance compliance"
+  },
+  "headings": [
+    {
+      "level": 2,
+      "text": "Page Not Found"
+    }
+  ],
+  "slug": "event-listing",
+  "slots": {
+    "_slotSchema": "listing-v1",
+    "indexHeadline": null,
+    "filterControls": null,
+    "cardGrid": {
+      "itemCount": 0,
+      "sampleCards": []
+    }
+  }
+}
