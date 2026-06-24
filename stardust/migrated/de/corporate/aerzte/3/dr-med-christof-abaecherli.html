@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-06-24T00:00:00Z
+  page:             doctor-profile
+  slug:             doctor-profile
+  pagePath:         stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/doctor-profile-proposed.html
+  sourceCurrent:    stardust/current/pages/doctor-profile.json
+  againstDirection: stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  designMd:         DESIGN.md (sha: 6350f7b2e688)
+  designJson:       DESIGN.json (sha: 78baba97ba64)
+  canonShas:        header:3dcd54484a47 footer:bfa6f837395e css:f6edc44aa5e1
+  decisionTrace:    _meta.json
+  stardustVersion:  0.10.0
+-->
+<!-- a11y note: doctor photo alt text corrected from filename to descriptive text per accessibility requirement noted in layoutNotes. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. med. Christof Abächerli | Hirslanden-Gruppe</title>
+<meta name="description" content="Dr. med. Christof Abächerli, Facharzt für Orthopädische Chirurgie und Traumatologie des Bewegungsapparates bei Hirslanden Klinik Aarau.">
+<style>
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, strict 1.25 ratio (base 1rem): 0.8 → 1 → 1.25 → 1.563 → 1.953 → 2.441 */
+    --heading-xxl: clamp(2.441rem, 4vw, 2.75rem); /* hero display — 1.25⁴ from base */
+    --heading-xl: 1.953rem;  /* ~31px section openers — 1.25³ */
+    --heading-lg: 1.563rem;  /* ~25px sub-openers — 1.25² */
+    --heading-md: 1.25rem;   /* ~20px card/list titles — 1.25¹ */
+    --body: 1rem;
+    --body-sm: 0.8rem;       /* 1rem ÷ 1.25 */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Colors (DESIGN-A frontmatter) */
+    --color-bg: #ffffff;
+    --color-fg: #534c46;
+    --color-accent: #0094d4;
+    --color-accent-ink: #0070a0;   /* AA-safe blue: 5.5:1 on white */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-accent-hover: #006894;
+    --color-ground-warm: #f7f6f5;
+    --color-ground-alt: #f0efed;
+    --color-text-soft: #72665b;
+    --color-hairline: #e2dfdb;
+    --color-emergency: #f43a11;    /* reserved for 144 only */
+
+    /* Spacing — tokenized 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;
+    --radius-pill: 18px;
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+
+    --z-sticky: 100;
+    --z-nav-panel: 200;
+  }
+
+  /* Mobile nav base rule — must precede any @media */
+  .nav-burger { display: none; }
+
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-ground-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+    line-height: var(--line-height-heading);
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  h1, h2, h3, h4, p, a, .quicklink span, .event-text h3 { overflow-wrap: break-word; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .eyebrow {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .section { padding-block: var(--section-padding); }
+  .section--warm { background: var(--color-ground-warm); }
+  .section--alt { background: var(--color-ground-alt); }
+  .section-head { margin-bottom: var(--spacing-2xl); }
+  .section-head h2 { font-size: var(--heading-xl); }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+  .btn--primary {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--primary:hover { background: var(--color-accent-hover); }
+  .btn--onblue {
+    background: #ffffff;
+    color: var(--color-accent-ink);
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--onblue:hover { background: var(--color-ground-warm); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    padding: 8px 18px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+  .readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+  }
+  .readmore::after { content: "\203A"; font-size: 1.1em; line-height: 1; }
+  .readmore:hover { text-decoration: underline; }
+
+  /* ══════════════════════════════════════════
+     HEADER (from A)
+  ══════════════════════════════════════════ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+  .header-utility a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+  .brand img { width: 170px; height: auto; }
+  .primary-nav { display: flex; align-items: center; gap: var(--spacing-2xl); }
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+  .icon-search {
+    background: none; border: 0; padding: var(--spacing-sm);
+    cursor: pointer; color: var(--color-fg); display: inline-flex;
+  }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .nav-burger {
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px; height: 44px;
+    cursor: pointer; color: var(--color-fg);
+    align-items: center; justify-content: center;
+  }
+
+  /* ══════════════════════════════════════════
+     FOOTER (from A)
+  ══════════════════════════════════════════ */
+  .site-footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .footer-pre {
+    display: flex; justify-content: space-between; gap: var(--spacing-2xl); flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl); border-bottom: 1px solid var(--color-hairline);
+  }
+  .footer-pre h2 { font-size: var(--heading-md); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+  .footer-social a {
+    width: 40px; height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-fg); text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+  .footer-social a:hover { color: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+  .footer-col h3 { font-size: var(--body-sm); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-soft); margin-bottom: var(--spacing-md); }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-col a { text-decoration: none; color: var(--color-fg); font-size: var(--body-sm); transition: color 140ms ease; }
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  .emergency {
+    display: inline-flex; flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .emergency .lbl { font-size: var(--body-sm); color: var(--color-text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .emergency .num { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-lg); color: var(--color-emergency); }
+
+  .footer-bar {
+    display: flex; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap;
+    padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm); color: var(--color-text-soft);
+  }
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .footer-bar a { text-decoration: none; color: var(--color-text-soft); }
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* ══════════════════════════════════════════
+     PLACEHOLDER MEDIA
+  ══════════════════════════════════════════ */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text-soft); font-size: var(--body-sm);
+    font-family: var(--body-font-family); aspect-ratio: 16/9; width: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .placeholder-media--portrait { aspect-ratio: 3/4; }
+  .placeholder-media--square { aspect-ratio: 1/1; }
+  .placeholder-media--map { aspect-ratio: 16/7; max-height: 320px; }
+
+  /* ══════════════════════════════════════════
+     BREADCRUMB
+  ══════════════════════════════════════════ */
+  .breadcrumb {
+    padding-block: var(--spacing-md);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+  .breadcrumb a {
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    transition: text-decoration 140ms ease;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { color: var(--color-hairline); }
+  .breadcrumb .current { color: var(--color-text-soft); }
+
+  /* ══════════════════════════════════════════
+     DOCTOR HERO — split layout
+  ══════════════════════════════════════════ */
+  .doctor-hero {
+    background: var(--color-bg);
+    padding-block: var(--spacing-2xl);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .doctor-hero-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+  .doctor-portrait {
+    position: relative;
+    overflow: hidden;
+  }
+  .doctor-portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .doctor-info { display: flex; flex-direction: column; gap: var(--spacing-md); padding-top: var(--spacing-sm); }
+  .doctor-title-label {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .doctor-hero h1 {
+    font-size: var(--heading-xl);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .doctor-specialty-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+  }
+  .doctor-specialty-chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-accent-tint);
+    color: var(--color-accent-ink);
+    border-radius: var(--radius-pill);
+    padding: 6px 16px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgba(0,148,212,0.2);
+    transition: background-color 160ms ease;
+  }
+  .doctor-specialty-chip:hover { background: rgba(0,148,212,0.18); }
+  .doctor-meta-dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-hairline);
+  }
+  .doctor-meta-row { display: flex; gap: var(--spacing-md); align-items: baseline; }
+  .doctor-meta-dt {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-text-soft);
+    min-width: 120px;
+    flex: none;
+  }
+  .doctor-meta-dd {
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    margin: 0;
+  }
+  .doctor-meta-dd a {
+    color: var(--color-accent-ink);
+    text-decoration: none;
+  }
+  .doctor-meta-dd a:hover { text-decoration: underline; }
+  .clinic-affiliation-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    padding: 6px 14px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+    text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .clinic-affiliation-tag:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+  .clinic-affiliation-tag .tag-role {
+    font-weight: 400;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+  }
+  .doctor-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-hairline);
+  }
+
+  /* ══════════════════════════════════════════
+     DOCTOR BODY — two-column layout
+  ══════════════════════════════════════════ */
+  .doctor-body {
+    background: var(--color-ground-warm);
+    padding-block: var(--section-padding);
+  }
+  .doctor-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+  .doctor-main { display: flex; flex-direction: column; gap: var(--spacing-xl); }
+  .doctor-sidebar { display: flex; flex-direction: column; gap: var(--spacing-xl); }
+
+  /* ── Section box (card) ── */
+  .section-box {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    border-top: 3px solid var(--color-accent);
+  }
+  .section-box h2 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .section-box h3 {
+    font-size: var(--body);
+    font-weight: 500;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-xs);
+  }
+  .section-box p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+  }
+  .section-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  .section-box ul li {
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    padding-left: var(--spacing-md);
+    position: relative;
+  }
+  .section-box ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--color-text-soft);
+  }
+
+  /* ── Career / Education key-value DL ── */
+  .cv-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+  }
+  .cv-row {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: baseline;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .cv-row:last-child { border-bottom: none; }
+  .cv-year {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-text-soft);
+    min-width: 96px;
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  .cv-desc {
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    line-height: var(--line-height-body);
+  }
+
+  /* ── Memberships inline list ── */
+  .membership-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .membership-tags li {
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    padding: 4px 14px;
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+  }
+  .membership-tags li::before { display: none; }
+
+  /* ── Publication items ── */
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pub-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .pub-item:last-child { border-bottom: none; }
+  .pub-icon {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    background: var(--color-accent-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-ink);
+  }
+  .pub-content { flex: 1; min-width: 0; }
+  .pub-content h4 {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+    margin: 0 0 var(--spacing-xs);
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+  .pub-content h4 a {
+    color: var(--color-accent-ink);
+    text-decoration: none;
+  }
+  .pub-content h4 a:hover { text-decoration: underline; }
+  .pub-meta {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .pub-badge {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Sidebar contact card ── */
+  .contact-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    border-top: 3px solid var(--color-accent);
+  }
+  .contact-card h2 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .contact-practice-name {
+    font-size: var(--body);
+    font-weight: 700;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-xs);
+  }
+  .contact-clinic-name {
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: var(--spacing-md);
+  }
+  .contact-clinic-name:hover { text-decoration: underline; }
+  .contact-address {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-md);
+  }
+  .contact-address a { color: var(--color-accent-ink); text-decoration: none; }
+  .contact-address a:hover { text-decoration: underline; }
+  .contact-dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0 0 var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .contact-row { display: flex; gap: var(--spacing-md); align-items: baseline; }
+  .contact-dt {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-text-soft);
+    min-width: 72px;
+    flex: none;
+  }
+  .contact-dd {
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    margin: 0;
+  }
+  .contact-dd a {
+    color: var(--color-accent-ink);
+    text-decoration: none;
+  }
+  .contact-dd a:hover { text-decoration: underline; }
+  .contact-hours {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-md);
+  }
+  .contact-hours strong {
+    display: block;
+    font-weight: 500;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  /* ── Clinic affiliation card (sidebar) ── */
+  .clinic-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    border-top: 3px solid var(--color-accent);
+  }
+  .clinic-card h2 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .clinic-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  .clinic-role-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-accent-tint);
+    color: var(--color-accent-ink);
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: var(--spacing-xs);
+  }
+  .clinic-name-link {
+    font-size: var(--body);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+  }
+  .clinic-name-link:hover { text-decoration: underline; }
+  .clinic-description {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+    margin-top: var(--spacing-xs);
+  }
+
+  /* ══════════════════════════════════════════
+     APPOINTMENT CTA — full-width warm-ground band
+  ══════════════════════════════════════════ */
+  .appointment-cta {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .appointment-cta .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+  }
+  .appointment-cta-copy {}
+  .appointment-cta-copy .eyebrow { color: var(--color-accent-ink); }
+  .appointment-cta-copy h2 {
+    font-size: var(--heading-xl);
+    font-weight: 700;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-md);
+    text-wrap: balance;
+  }
+  .appointment-cta-copy p {
+    font-size: var(--body);
+    color: var(--color-text-soft);
+    max-width: 48ch;
+  }
+  .appointment-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    flex: none;
+  }
+  .appointment-phone {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--heading-md);
+    font-weight: 700;
+    color: var(--color-fg);
+    text-decoration: none;
+    transition: color 140ms ease;
+  }
+  .appointment-phone:hover { color: var(--color-accent-ink); }
+  .appointment-phone svg { color: var(--color-accent-ink); flex: none; }
+  .appointment-phone-label {
+    font-size: var(--body-sm);
+    font-weight: 400;
+    color: var(--color-text-soft);
+    display: block;
+    letter-spacing: 0.02em;
+  }
+
+  /* ══════════════════════════════════════════
+     RELATED DOCTORS — 3-up teaser grid
+  ══════════════════════════════════════════ */
+  .related-doctors {
+    background: var(--color-ground-warm);
+    padding-block: var(--section-padding);
+  }
+  .related-doctors .section-head h2 { font-size: var(--heading-xl); }
+  .related-doctors .section-head p {
+    color: var(--color-text-soft);
+    margin-top: var(--spacing-sm);
+    max-width: 60ch;
+  }
+  .doctor-teaser-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+  .doctor-teaser {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 160ms ease;
+  }
+  .doctor-teaser:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.13); }
+  .doctor-teaser-media {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: var(--color-ground-alt);
+  }
+  .doctor-teaser-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .doctor-teaser-body {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    flex: 1;
+  }
+  .doctor-teaser-specialty {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .doctor-teaser h3 {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+    text-wrap: balance;
+  }
+  .doctor-teaser:hover h3 { color: var(--color-accent-ink); }
+  .doctor-teaser-clinic {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    margin-top: var(--spacing-xs);
+  }
+  .doctor-teaser .readmore { margin-top: var(--spacing-sm); }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — header/footer (verbatim from home-F)
+  ══════════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 900px) {
+    :root { --section-padding: 48px; }
+  }
+
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+    .primary-nav.is-open { display: flex; }
+    .primary-nav a { padding: 14px var(--spacing-lg); border-top: 1px solid var(--color-hairline); }
+    .header-main .container { position: relative; flex-wrap: wrap; }
+    .header-utility .container { justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; }
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — template-specific
+  ══════════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    .doctor-hero-grid {
+      grid-template-columns: 220px 1fr;
+    }
+    .doctor-body-grid {
+      grid-template-columns: 1fr 300px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .doctor-hero-grid {
+      grid-template-columns: 180px 1fr;
+      gap: var(--spacing-lg);
+    }
+    .doctor-body-grid {
+      grid-template-columns: 1fr;
+    }
+    .doctor-sidebar { order: -1; }
+    .doctor-teaser-grid { grid-template-columns: repeat(2, 1fr); }
+    .appointment-cta .container { flex-direction: column; align-items: flex-start; gap: var(--spacing-xl); }
+  }
+
+  @media (max-width: 640px) {
+    .doctor-hero-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    .doctor-portrait {
+      max-width: 200px;
+    }
+    .doctor-meta-row { flex-direction: column; gap: var(--spacing-xs); }
+    .doctor-meta-dt { min-width: unset; }
+    .doctor-cta-row { flex-direction: column; align-items: stretch; }
+    .doctor-cta-row .btn, .doctor-cta-row .chip { justify-content: center; }
+    .doctor-teaser-grid { grid-template-columns: 1fr; max-width: 340px; }
+    .cv-row { flex-direction: column; gap: var(--spacing-xs); }
+    .cv-year { min-width: unset; }
+    .contact-row { flex-direction: column; gap: var(--spacing-xs); }
+    .contact-dt { min-width: unset; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-template="doctor-profile">
+
+<header class="site-header" data-canon data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Zum Inhalt springen</a>
+  <div class="header-utility">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="lang" aria-label="Sprache wählen">
+        <a href="#" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Startseite">
+        <img src="../../../../assets/logo.png" alt="Hirslanden" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+        <a href="../../../../de/corporate/kliniken-und-zentren.html">Kliniken</a>
+        <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html" aria-current="page">Ärzte</a>
+        <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a>
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Breadcrumb ────────────────────────────────────────────── -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/home.html">Startseite</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="https://www.hirslanden.ch/de/corporate/aerzte.html">Ärzte</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span class="current" aria-current="page">Dr. med. Christof Abächerli</span>
+    </div>
+  </nav>
+
+  <!-- ── HERO: Doctor profile lead ────────────────────────────── -->
+  <section class="doctor-hero" data-section="doctor-hero" data-intent="identify doctor" data-layout="split-33-66" data-media="portrait">
+    <div class="container">
+      <div class="doctor-hero-grid">
+
+        <!-- Left: portrait -->
+        <div class="doctor-portrait">
+          <img src="https://www.hirslanden.ch/renditions/corporate/doctors/original/768/0/3721724-dr-med-christof-abaecherli.jpg"
+               alt="Dr. med. Christof Abächerli, Facharzt für Orthopädische Chirurgie"
+               loading="eager" fetchpriority="high"
+               width="768" height="1024">
+        </div>
+
+        <!-- Right: identity + meta -->
+        <div class="doctor-info">
+          <div>
+            <p class="doctor-title-label">Arztprofil</p>
+            <h1>Dr. med. Christof Abächerli</h1>
+          </div>
+
+          <div class="doctor-specialty-row">
+            <a class="doctor-specialty-chip"
+               href="https://www.hirslanden.ch/de/corporate/fachgebiete/orthopaedische-chirurgieundtraumatologiedesbewegungsapparates.html">
+              Orthopädische Chirurgie und Traumatologie des Bewegungsapparates
+            </a>
+          </div>
+
+          <dl class="doctor-meta-dl">
+            <div class="doctor-meta-row">
+              <dt class="doctor-meta-dt">Klinik</dt>
+              <dd class="doctor-meta-dd">
+                <a href="https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html"
+                   class="clinic-affiliation-tag">
+                  Hirslanden Klinik Aarau
+                  <span class="tag-role">· Partnerarzt</span>
+                </a>
+              </dd>
+            </div>
+            <div class="doctor-meta-row">
+              <dt class="doctor-meta-dt">Sprachen</dt>
+              <dd class="doctor-meta-dd">Deutsch, Französisch, Englisch</dd>
+            </div>
+            <div class="doctor-meta-row">
+              <dt class="doctor-meta-dt">Praxis</dt>
+              <dd class="doctor-meta-dd">
+                <a href="http://www.orthoaarau.ch" target="_blank" rel="noopener">ORTHO AARAU</a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="doctor-cta-row">
+            <a class="btn btn--primary" href="mailto:orthoaarau@hin.ch">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              E-Mail senden
+            </a>
+            <a class="btn btn--primary" href="tel:+41628366610">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +41 62 836 66 10
+            </a>
+            <a class="chip" href="#appointment-cta">
+              Termin vereinbaren
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DOCTOR BODY: two-column main content ──────────────────── -->
+  <section class="doctor-body section" data-section="doctor-body" data-intent="inform" data-layout="two-col-main-sidebar">
+    <div class="container">
+      <div class="doctor-body-grid">
+
+        <!-- Main column: substantive content -->
+        <div class="doctor-main">
+
+          <!-- Kernkompetenzen -->
+          <div class="section-box" data-section="kernkompetenzen" data-intent="describe competencies">
+            <h2>Kernkompetenzen</h2>
+            <p style="margin-bottom: var(--spacing-md);">Schwerpunkte in der konservativen und operativen Behandlung von Erkrankungen und Verletzungen des Bewegungsapparates, insbesondere:</p>
+            <ul>
+              <li>Knie- und Hüftchirurgie</li>
+              <li>Sportverletzungen und sportorthopädische Eingriffe</li>
+              <li>Konservative Knietherapie (Physio-, Infiltrationstherapie)</li>
+              <li>Knieosteotomien (Achskorrekturen)</li>
+              <li>Uni- und bikompartimentäre Knieprothesen (Teilprothesen)</li>
+              <li>Totale Knieendoprothetik (Knie-TEP), primär und revisional</li>
+              <li>Arthroskopische Eingriffe am Kniegelenk</li>
+              <li>Kreuzband- und Meniskuschirurgie</li>
+            </ul>
+          </div>
+
+          <!-- Werdegang -->
+          <div class="section-box" data-section="werdegang" data-intent="show career history">
+            <h2>Werdegang</h2>
+            <dl class="cv-list">
+              <div class="cv-row">
+                <dt class="cv-year">Seit 2019</dt>
+                <dd class="cv-desc">Leitender Arzt Orthopädie, Hirslanden Klinik Aarau; Praxis ORTHO AARAU, Aarau</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2017–2019</dt>
+                <dd class="cv-desc">Oberarzt Orthopädie und Traumatologie, Kantonsspital Aarau</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2015–2017</dt>
+                <dd class="cv-desc">Oberarzt Orthopädie und Traumatologie, Kantonsspital Luzern</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2013–2015</dt>
+                <dd class="cv-desc">Assistenzarzt Orthopädie und Traumatologie, Universitätsspital Basel</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2012–2013</dt>
+                <dd class="cv-desc">Assistenzarzt Orthopädie und Traumatologie, Kantonsspital Aarau</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2010–2012</dt>
+                <dd class="cv-desc">Assistenzarzt Chirurgie, Kantonsspital Aarau</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2008–2010</dt>
+                <dd class="cv-desc">Assistenzarzt Chirurgie, Spital Zofingen</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2005–2008</dt>
+                <dd class="cv-desc">Assistenzarzt Innere Medizin, Kantonsspital Aarau</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Schulen, Studium & Diplome -->
+          <div class="section-box" data-section="ausbildung" data-intent="show qualifications">
+            <h2>Schulen, Studium &amp; Diplome</h2>
+            <dl class="cv-list">
+              <div class="cv-row">
+                <dt class="cv-year">2019</dt>
+                <dd class="cv-desc">DKG-Kniechirurgen-Zertifizierung (Deutschen Kniegesellschaft)</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2016</dt>
+                <dd class="cv-desc">IOC-Diplom Sportmedizin (International Olympic Committee)</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2015</dt>
+                <dd class="cv-desc">FMH-Titel Orthopädische Chirurgie und Traumatologie des Bewegungsapparates</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2010</dt>
+                <dd class="cv-desc">Schweizerisches Arztdiplom (Eidgenössisches Departement des Innern)</dd>
+              </div>
+              <div class="cv-row">
+                <dt class="cv-year">2004</dt>
+                <dd class="cv-desc">Medizinstudium, Universität Bern</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Mitglied- und Partnerschaften -->
+          <div class="section-box" data-section="mitgliedschaften" data-intent="show affiliations">
+            <h2>Mitglied- und Partnerschaften</h2>
+            <ul class="membership-tags" role="list">
+              <li>FMH</li>
+              <li>Swiss Orthopaedics</li>
+              <li>ESSKA</li>
+              <li>AGA</li>
+              <li>DKG</li>
+              <li>Aargauischer Ärzteverband</li>
+              <li>VSAO</li>
+            </ul>
+          </div>
+
+          <!-- Publikationen & Videos -->
+          <div class="section-box" data-section="publikationen" data-intent="show expertise">
+            <h2>Publikationen &amp; Videos</h2>
+            <ul class="pub-list">
+              <li class="pub-item">
+                <div class="pub-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <div class="pub-content">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=PEFGZXjxGys&feature=youtu.be"
+                       target="_blank" rel="noopener">
+                      Behandlungsmethoden bei Arthrose an Knie, Hüfte und Schulter
+                    </a>
+                  </h4>
+                  <div class="pub-meta">
+                    <span>Dr. med. Christof Abächerli</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Sep. 2020</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="pub-badge">Video</span>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <div class="pub-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <div class="pub-content">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=kCmnT0rT0dg&feature=youtu.be"
+                       target="_blank" rel="noopener">
+                      Rapid Recovery: Schnelle Genesung nach Gelenkersatz
+                    </a>
+                  </h4>
+                  <div class="pub-meta">
+                    <span>Dr. med. Christof Abächerli</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Mai 2020</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="pub-badge">Video</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /.doctor-main -->
+
+        <!-- Sidebar column -->
+        <div class="doctor-sidebar">
+
+          <!-- Contact card -->
+          <div class="contact-card" data-section="kontakt" data-intent="enable contact">
+            <h2>Kontakt</h2>
+            <p class="contact-practice-name">ORTHO AARAU</p>
+            <a class="contact-clinic-name"
+               href="https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html">
+              Hirslanden Klinik Aarau
+            </a>
+            <address class="contact-address" style="font-style: normal;">
+              Schänisweg<br>
+              5001 Aarau<br>
+              <a href="https://maps.google.com/?q=47.39086,8.04234"
+                 target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;margin-top:4px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Auf Google Maps anzeigen
+              </a>
+            </address>
+            <dl class="contact-dl">
+              <div class="contact-row">
+                <dt class="contact-dt">Telefon</dt>
+                <dd class="contact-dd"><a href="tel:+41628366610">+41 62 836 66 10</a></dd>
+              </div>
+              <div class="contact-row">
+                <dt class="contact-dt">E-Mail</dt>
+                <dd class="contact-dd"><a href="mailto:orthoaarau@hin.ch">orthoaarau@hin.ch</a></dd>
+              </div>
+              <div class="contact-row">
+                <dt class="contact-dt">Website</dt>
+                <dd class="contact-dd"><a href="http://www.orthoaarau.ch" target="_blank" rel="noopener">www.orthoaarau.ch</a></dd>
+              </div>
+            </dl>
+            <div class="contact-hours">
+              <strong>Öffnungszeiten</strong>
+              Montag bis Freitag, 8:00 bis 12:00 Uhr und 13:30 bis 17:00 Uhr.<br>
+              Sprechstunde nur auf Voranmeldung.
+            </div>
+            <a class="btn btn--primary" href="mailto:orthoaarau@hin.ch" style="width:100%;justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              E-Mail senden
+            </a>
+          </div>
+
+          <!-- Clinic affiliation card -->
+          <div class="clinic-card" data-section="praktiziert-bei" data-intent="show affiliation">
+            <h2>Praktiziert bei</h2>
+            <div class="clinic-item">
+              <span class="clinic-role-badge">Partnerarzt</span>
+              <a class="clinic-name-link"
+                 href="https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html">
+                Hirslanden Klinik Aarau
+              </a>
+              <p class="clinic-description">
+                Zugelassener Belegarzt, der überwiegend an dieser Klinik tätig ist. Partnerärzte sind akkreditierte Spezialisten, die eng mit Hirslanden zusammenarbeiten.
+              </p>
+              <a class="readmore" href="https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html"
+                 style="margin-top: var(--spacing-md);">Zur Klinik</a>
+            </div>
+          </div>
+
+          <!-- Placeholder for map -->
+          <div class="placeholder-media placeholder-media--map"
+               aria-label="Standortkarte ORTHO AARAU, Schänisweg, 5001 Aarau">
+            Karte: ORTHO AARAU, Aarau
+          </div>
+
+        </div><!-- /.doctor-sidebar -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── APPOINTMENT CTA — full-width warm-ground band ────────── -->
+  <section class="appointment-cta" id="appointment-cta"
+           data-section="appointment-cta" data-intent="convert" data-layout="split">
+    <div class="container">
+      <div class="appointment-cta-copy">
+        <p class="eyebrow">Terminvereinbarung</p>
+        <h2>Termin vereinbaren</h2>
+        <p>Vereinbaren Sie noch heute einen Termin bei Dr. med. Christof Abächerli in der Praxis ORTHO AARAU an der Hirslanden Klinik Aarau. Sprechstunde nur auf Voranmeldung.</p>
+      </div>
+      <div class="appointment-cta-actions">
+        <a class="appointment-phone" href="tel:+41628366610">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>
+            <span class="appointment-phone-label">Telefon</span>
+            +41 62 836 66 10
+          </span>
+        </a>
+        <a class="btn btn--primary" href="mailto:orthoaarau@hin.ch">
+          Online Termin anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RELATED DOCTORS — 3-up teasers (same specialty) ──────── -->
+  <section class="related-doctors" data-section="related-doctors" data-intent="explore" data-layout="grid" data-items="3">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Weitere Spezialisten</p>
+        <h2>Ärzte für Orthopädische Chirurgie</h2>
+        <p>Entdecken Sie weitere Spezialisten für Orthopädische Chirurgie und Traumatologie des Bewegungsapparates bei Hirslanden.</p>
+      </div>
+      <div class="doctor-teaser-grid">
+
+        <a class="doctor-teaser" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">
+          <div class="doctor-teaser-media">
+            <div class="placeholder-media placeholder-media--portrait"
+                 aria-label="Arztporträt Orthopädie Spezialist">
+              Ärzteporträt
+            </div>
+          </div>
+          <div class="doctor-teaser-body">
+            <span class="doctor-teaser-specialty">Orthopädische Chirurgie</span>
+            <h3>Weitere Spezialisten finden</h3>
+            <p class="doctor-teaser-clinic">Hirslanden-Gruppe, Schweiz</p>
+            <span class="readmore">Ärztesuche öffnen</span>
+          </div>
+        </a>
+
+        <a class="doctor-teaser" href="https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html">
+          <div class="doctor-teaser-media">
+            <div class="placeholder-media placeholder-media--portrait"
+                 aria-label="Hirslanden Klinik Aarau">
+              Hirslanden Klinik Aarau
+            </div>
+          </div>
+          <div class="doctor-teaser-body">
+            <span class="doctor-teaser-specialty">Klinik</span>
+            <h3>Hirslanden Klinik Aarau</h3>
+            <p class="doctor-teaser-clinic">Aarau, Aargau</p>
+            <span class="readmore">Zur Klinik</span>
+          </div>
+        </a>
+
+        <a class="doctor-teaser"
+           href="https://www.hirslanden.ch/de/corporate/fachgebiete/orthopaedische-chirurgieundtraumatologiedesbewegungsapparates.html">
+          <div class="doctor-teaser-media">
+            <div class="placeholder-media placeholder-media--portrait"
+                 aria-label="Fachgebiet Orthopädische Chirurgie">
+              Fachgebiet
+            </div>
+          </div>
+          <div class="doctor-teaser-body">
+            <span class="doctor-teaser-specialty">Fachgebiet</span>
+            <h3>Orthopädische Chirurgie und Traumatologie</h3>
+            <p class="doctor-teaser-clinic">Kompetenzzentrum Hirslanden</p>
+            <span class="readmore">Fachgebiet entdecken</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── footer (from A) ──────────────────────────────────────────── -->
+<footer class="site-footer" data-canon data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div>
+        <h2>Hirslanden-Gruppe</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../../../../de/corporate/klinikaufenthalt.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="../../../../de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="../../../../de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+        <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+        <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

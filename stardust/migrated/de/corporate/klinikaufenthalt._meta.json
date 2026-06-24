@@ -1,0 +1,33 @@
+{
+  "slug": "patient-info",
+  "type": "editorial",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "header-nav",
+    "site-footer"
+  ],
+  "slotsFilled": [],
+  "canonShas": {
+    "header": "3dcd54484a47",
+    "footer": "bfa6f837395e",
+    "css": "f6edc44aa5e1"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Klinikaufenthalt | Hirslanden",
+    "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html"
+  },
+  "migratedAt": "2026-06-24T00:00:00Z",
+  "designMdSha": "6350f7b2e688",
+  "designJsonSha": "78baba97ba64",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": null,
+  "outputPath": "de/corporate/klinikaufenthalt.html",
+  "assetsBundled": 0,
+  "brokenInternalLinks": 32,
+  "audit": {
+    "adapt": "pass"
+  }
+}

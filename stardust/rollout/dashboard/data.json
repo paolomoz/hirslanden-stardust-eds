@@ -1,0 +1,181 @@
+{
+  "generatedAt": "2026-06-24T20:50:31.589Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.hirslanden.ch",
+    "liveHost": "https://main--hirslanden-stardust-eds--paolomoz.aem.live"
+  },
+  "stageCount": {
+    "identified": 13,
+    "prototyped": 13,
+    "deployed": 0,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 13,
+    "deployed": 0,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "path": "/",
+      "stage": "prototyped",
+      "templateId": "landing",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "doctor-profile",
+      "path": "/de/corporate/aerzte/3/dr-med-christof-abaecherli",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "treatment-detail",
+      "path": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "specialty-topic",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
+      "stage": "prototyped",
+      "templateId": "editorial",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "patient-info",
+      "path": "/de/corporate/klinikaufenthalt",
+      "stage": "prototyped",
+      "templateId": "editorial",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "clinic-listing",
+      "path": "/de/corporate/kliniken-und-zentren",
+      "stage": "prototyped",
+      "templateId": "listing",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "disease-detail",
+      "path": "/de/corporate/krankheitsbilder/brustkrebs",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "event-listing",
+      "path": "/de/corporate/kurse-und-veranstaltungen",
+      "stage": "prototyped",
+      "templateId": "listing",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "news-listing",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
+      "stage": "prototyped",
+      "templateId": "listing",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "news-article",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "content-page",
+      "path": "/de/corporate/ueber-uns/hingabe",
+      "stage": "prototyped",
+      "templateId": "editorial",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "clinic-detail",
+      "path": "/de/klinik-linde/home",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "event-detail",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
+      "stage": "prototyped",
+      "templateId": "detail",
+      "isTemplate": false,
+      "openFindings": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": "detail",
+      "archetype": "clinic-detail",
+      "pageCount": 6,
+      "stages": {
+        "identified": 0,
+        "prototyped": 6,
+        "deployed": 0,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "editorial",
+      "archetype": "content-page",
+      "pageCount": 3,
+      "stages": {
+        "identified": 0,
+        "prototyped": 3,
+        "deployed": 0,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "landing",
+      "archetype": "home",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 1,
+        "deployed": 0,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "listing",
+      "archetype": "clinic-listing",
+      "pageCount": 3,
+      "stages": {
+        "identified": 0,
+        "prototyped": 3,
+        "deployed": 0,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 2,
+    "converted": 0
+  },
+  "quality": null,
+  "findings": {
+    "byFixability": {},
+    "byAutofix": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "treatment-detail",
+  "type": "detail",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "header-nav",
+    "site-footer"
+  ],
+  "slotsFilled": [],
+  "canonShas": {
+    "header": "3dcd54484a47",
+    "footer": "bfa6f837395e",
+    "css": "f6edc44aa5e1"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Hernienoperation – Behandlung & Ablauf | Hirslanden",
+    "url": "https://www.hirslanden.ch/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html"
+  },
+  "migratedAt": "2026-06-24T00:00:00Z",
+  "designMdSha": "6350f7b2e688",
+  "designJsonSha": "78baba97ba64",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": null,
+  "outputPath": "de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+  "assetsBundled": 0,
+  "brokenInternalLinks": 31,
+  "audit": {
+    "adapt": "pass"
+  }
+}

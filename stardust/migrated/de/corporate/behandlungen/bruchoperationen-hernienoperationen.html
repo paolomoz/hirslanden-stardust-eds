@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-06-24T00:00:00Z
+  page:             treatment-detail
+  slug:             treatment-detail
+  pagePath:         stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/treatment-detail-proposed.html
+  sourceCurrent:    stardust/current/pages/treatment-detail.json
+  againstDirection: stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  designMd:         DESIGN.md (sha: 6350f7b2e688)
+  designJson:       DESIGN.json (sha: 78baba97ba64)
+  canonShas:        header:3dcd54484a47 footer:bfa6f837395e css:f6edc44aa5e1
+  decisionTrace:    _meta.json
+  stardustVersion:  0.10.0
+-->
+<!-- a11y note: hero treatment image — decorative background scrim; H1 carries the meaning. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hernienoperation – Behandlung &amp; Ablauf | Hirslanden</title>
+<meta name="description" content="Wie wird die Operation bei Hernien (Bauchwandbrüchen) durchgeführt? Hirslanden informiert über den Ablauf einer Hernienoperation.">
+<style>
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, strict 1.25 ratio (base 1rem): 0.8 → 1 → 1.25 → 1.563 → 1.953 → 2.441 */
+    --heading-xxl: clamp(2.441rem, 4vw, 2.75rem); /* hero display — 1.25⁴ from base */
+    --heading-xl: 1.953rem;  /* ~31px section openers — 1.25³ */
+    --heading-lg: 1.563rem;  /* ~25px sub-openers — 1.25² */
+    --heading-md: 1.25rem;   /* ~20px card/list titles — 1.25¹ */
+    --body: 1rem;
+    --body-sm: 0.8rem;       /* 1rem ÷ 1.25 */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Colors (DESIGN-A frontmatter) */
+    --color-bg: #ffffff;
+    --color-fg: #534c46;
+    --color-accent: #0094d4;
+    --color-accent-ink: #0070a0;   /* AA-safe blue: 5.5:1 on white */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-accent-hover: #006894;
+    --color-ground-warm: #f7f6f5;
+    --color-ground-alt: #f0efed;
+    --color-text-soft: #72665b;
+    --color-hairline: #e2dfdb;
+    --color-emergency: #f43a11;    /* reserved for 144 only */
+
+    /* Spacing — tokenized 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;
+    --radius-pill: 18px;
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+
+    --z-sticky: 100;
+    --z-nav-panel: 200;
+  }
+
+  /* Mobile nav base rule — must precede any @media */
+  .nav-burger { display: none; }
+
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-ground-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+    line-height: var(--line-height-heading);
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  h1, h2, h3, h4, p, a, .quicklink span, .event-text h3 { overflow-wrap: break-word; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .eyebrow {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .section { padding-block: var(--section-padding); }
+  .section--warm { background: var(--color-ground-warm); }
+  .section--alt { background: var(--color-ground-alt); }
+  .section-head { margin-bottom: var(--spacing-2xl); }
+  .section-head h2 { font-size: var(--heading-xl); }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+  .btn--primary {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--primary:hover { background: var(--color-accent-hover); }
+  .btn--onblue {
+    background: #ffffff;
+    color: var(--color-accent-ink);
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--onblue:hover { background: var(--color-ground-warm); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    padding: 8px 18px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+  .readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+  }
+  .readmore::after { content: "\203A"; font-size: 1.1em; line-height: 1; }
+  .readmore:hover { text-decoration: underline; }
+
+  /* ══════════════════════════════════════════
+     HEADER (from home-F verbatim)
+  ══════════════════════════════════════════ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+  .header-utility a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+  .brand img { width: 170px; height: auto; }
+  .primary-nav { display: flex; align-items: center; gap: var(--spacing-2xl); }
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+  .icon-search {
+    background: none; border: 0; padding: var(--spacing-sm);
+    cursor: pointer; color: var(--color-fg); display: inline-flex;
+  }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .nav-burger {
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px; height: 44px;
+    cursor: pointer; color: var(--color-fg);
+    align-items: center; justify-content: center;
+  }
+
+  /* ══════════════════════════════════════════
+     FOOTER (from home-F verbatim)
+  ══════════════════════════════════════════ */
+  .site-footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .footer-pre {
+    display: flex; justify-content: space-between; gap: var(--spacing-2xl); flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl); border-bottom: 1px solid var(--color-hairline);
+  }
+  .footer-pre h2 { font-size: var(--heading-md); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+  .footer-social a {
+    width: 40px; height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-fg); text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+  .footer-social a:hover { color: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+  .footer-col h3 { font-size: var(--body-sm); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-soft); margin-bottom: var(--spacing-md); }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-col a { text-decoration: none; color: var(--color-fg); font-size: var(--body-sm); transition: color 140ms ease; }
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  .emergency {
+    display: inline-flex; flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .emergency .lbl { font-size: var(--body-sm); color: var(--color-text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .emergency .num { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-lg); color: var(--color-emergency); }
+
+  .footer-bar {
+    display: flex; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap;
+    padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm); color: var(--color-text-soft);
+  }
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .footer-bar a { text-decoration: none; color: var(--color-text-soft); }
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* ══════════════════════════════════════════
+     PLACEHOLDER MEDIA
+  ══════════════════════════════════════════ */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text-soft); font-size: var(--body-sm);
+    font-family: var(--font-body); aspect-ratio: 16/9; width: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .placeholder-media--portrait { aspect-ratio: 3/4; }
+  .placeholder-media--square { aspect-ratio: 1/1; }
+  .placeholder-media--map { aspect-ratio: 16/7; max-height: 320px; }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — BREADCRUMB
+  ══════════════════════════════════════════ */
+  .breadcrumb-bar {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+    padding-block: var(--spacing-sm);
+    font-size: var(--body-sm);
+  }
+  .breadcrumb-bar .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+  .breadcrumb-bar a {
+    color: var(--color-text-soft);
+    text-decoration: none;
+    transition: color 140ms ease;
+  }
+  .breadcrumb-bar a:hover { color: var(--color-accent-ink); }
+  .breadcrumb-bar .bc-sep {
+    color: var(--color-hairline);
+    font-size: 0.7rem;
+    flex-shrink: 0;
+  }
+  .breadcrumb-bar .bc-current {
+    color: var(--color-fg);
+    font-weight: 500;
+  }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — HERO
+  ══════════════════════════════════════════ */
+  .td-hero {
+    background: var(--color-ground-alt);
+    border-bottom: 3px solid var(--color-accent);
+    padding-block: clamp(40px, 6vw, 80px);
+  }
+  .td-hero .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--spacing-xl);
+    align-items: start;
+  }
+  .td-hero-copy { max-width: 640px; }
+  .td-hero-copy .eyebrow {
+    color: var(--color-accent-ink);
+    margin-bottom: var(--spacing-md);
+  }
+  .td-hero-copy h1 {
+    font-size: var(--heading-xxl);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-md);
+  }
+  .td-hero-copy .lead {
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-text-soft);
+    max-width: 56ch;
+  }
+  .td-hero-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 140ms ease;
+  }
+  .td-hero-back:hover { color: var(--color-accent-hover); }
+  .td-hero-back svg { flex-shrink: 0; }
+
+  /* Trust badge inline with hero */
+  .td-trust {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .td-trust-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--color-hairline);
+  }
+  .td-trust-img img { width: 100%; height: 100%; object-fit: cover; }
+  .td-trust-meta { display: flex; flex-direction: column; gap: 2px; }
+  .td-trust-label {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .td-trust-name {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+  }
+  .td-trust-name:hover { text-decoration: underline; }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — KEY FACTS CHIPS ROW
+  ══════════════════════════════════════════ */
+  .td-facts {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+    padding-block: var(--spacing-xl);
+  }
+  .td-facts .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    align-items: center;
+  }
+  .td-fact-chip {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    min-width: 140px;
+  }
+  .td-fact-chip .fc-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    color: var(--color-text-soft);
+  }
+  .td-fact-chip .fc-value {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+  }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — MAIN LAYOUT GRID
+  ══════════════════════════════════════════ */
+  .td-body {
+    background: var(--color-ground-warm);
+    padding-block: var(--section-padding);
+  }
+  .td-body .container {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+  .td-main { min-width: 0; }
+  .td-sidebar { min-width: 0; }
+
+  /* ── Indication ── */
+  .td-indication {
+    background: var(--color-bg);
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+  }
+  .td-indication .eyebrow { color: var(--color-accent-ink); }
+  .td-indication h2 { font-size: var(--heading-lg); font-weight: 700; margin-bottom: var(--spacing-md); }
+  .td-indication p { color: var(--color-text-soft); line-height: var(--line-height-body); margin-bottom: var(--spacing-md); }
+  .td-indication p:last-child { margin-bottom: 0; }
+  .td-indication-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+  }
+  .td-indication-types .chip {
+    background: var(--color-bg);
+    border-color: var(--color-hairline);
+  }
+
+  /* ── Steps ── */
+  .td-steps {
+    margin-bottom: var(--spacing-2xl);
+  }
+  .td-steps-head {
+    margin-bottom: var(--spacing-xl);
+  }
+  .td-steps-head .eyebrow { color: var(--color-accent-ink); }
+  .td-steps-head h2 { font-size: var(--heading-lg); font-weight: 700; }
+
+  .td-steps-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .td-step {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-lg);
+  }
+  .td-step-num {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent-tint);
+    border-radius: 50%;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--heading-md);
+    color: var(--color-accent-ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .td-step-body { min-width: 0; }
+  .td-step-body h3 {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-fg);
+  }
+  .td-step-body p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+  }
+
+  /* ── Recovery ── */
+  .td-recovery {
+    background: var(--color-ground-alt);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-card);
+  }
+  .td-recovery .eyebrow { color: var(--color-accent-ink); }
+  .td-recovery h2 { font-size: var(--heading-lg); font-weight: 700; margin-bottom: var(--spacing-lg); }
+  .td-recovery-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+  .td-recovery p { color: var(--color-text-soft); line-height: var(--line-height-body); margin-bottom: var(--spacing-md); }
+  .td-recovery p:last-child { margin-bottom: 0; }
+
+  /* ── Risks ── */
+  .td-risks {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+  }
+  .td-risks h2 { font-size: var(--heading-lg); font-weight: 700; margin-bottom: var(--spacing-md); }
+  .td-risks ul {
+    margin: 0;
+    padding-left: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  .td-risks li { color: var(--color-text-soft); font-size: var(--body-sm); line-height: var(--line-height-body); }
+
+  /* ── Sidebar: doctor trust card ── */
+  .td-sidebar-sticky {
+    position: sticky;
+    top: calc(70px + var(--spacing-lg));
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  .td-doctor-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    border-top: 3px solid var(--color-accent);
+  }
+  .td-doctor-card-img {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+  .td-doctor-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .td-doctor-card-body {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  .td-doctor-card-role {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .td-doctor-card-name {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    display: block;
+  }
+  .td-doctor-card-name:hover { text-decoration: underline; }
+  .td-reviewed-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: var(--color-ground-alt);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .td-reviewed-badge svg { color: var(--color-accent-ink); flex-shrink: 0; }
+
+  /* Sidebar CTA */
+  .td-sidebar-cta {
+    background: var(--color-accent-ink);
+    padding: var(--spacing-xl);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+  }
+  .td-sidebar-cta h3 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    color: #ffffff;
+    text-wrap: balance;
+  }
+  .td-sidebar-cta p {
+    font-size: var(--body-sm);
+    color: rgba(255,255,255,0.82);
+    max-width: 28ch;
+  }
+  .td-sidebar-cta .btn--onblue { font-size: var(--body-sm); }
+
+  /* Centres filter panel in sidebar */
+  .td-centres-panel {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-lg);
+    border-top: 3px solid var(--color-accent);
+  }
+  .td-centres-panel h3 {
+    font-size: var(--body-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-soft);
+    margin-bottom: var(--spacing-md);
+  }
+  .td-city-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+  }
+  .td-city-chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill);
+    padding: 5px 12px;
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .td-city-chip:hover,
+  .td-city-chip[aria-pressed="true"] { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+  .td-centres-count {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+  .td-centres-count strong { color: var(--color-accent-ink); }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — SPECIALISTS SECTION
+  ══════════════════════════════════════════ */
+  .td-specialists {
+    background: var(--color-bg);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .td-specialists .section-head h2 { font-size: var(--heading-xl); }
+  .td-specialists .section-head p { color: var(--color-text-soft); margin-top: var(--spacing-sm); }
+  .td-spec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+  .td-spec-card {
+    background: var(--color-ground-warm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-card);
+  }
+  .td-spec-card-media {
+    flex-shrink: 0;
+  }
+  .td-spec-card-body {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+  }
+  .td-spec-card-spec {
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .td-spec-card h3 {
+    font-size: var(--heading-md);
+    font-weight: 500;
+  }
+  .td-spec-card-loc {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .td-spec-card .readmore { margin-top: auto; padding-top: var(--spacing-sm); }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — RELATED TREATMENTS
+  ══════════════════════════════════════════ */
+  .td-related {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+  }
+  .td-related .section-head h2 { font-size: var(--heading-xl); }
+  .td-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+  .td-related-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    padding: var(--spacing-lg);
+    gap: var(--spacing-sm);
+    transition: box-shadow 160ms ease;
+  }
+  .td-related-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+  .td-related-card .rc-tag {
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .td-related-card h3 {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    line-height: 1.3;
+    flex: 1;
+  }
+  .td-related-card:hover h3 { color: var(--color-accent-ink); }
+  .td-related-card .readmore { margin-top: var(--spacing-sm); pointer-events: none; }
+
+  /* ══════════════════════════════════════════
+     TREATMENT DETAIL — APPOINTMENT CTA BAND
+  ══════════════════════════════════════════ */
+  .td-cta-band {
+    background: var(--color-accent-ink);
+    padding-block: var(--spacing-2xl);
+  }
+  .td-cta-band .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+  }
+  .td-cta-copy h2 {
+    font-size: var(--heading-lg);
+    font-weight: 700;
+    color: #ffffff;
+    text-wrap: balance;
+    margin-bottom: var(--spacing-sm);
+  }
+  .td-cta-copy p {
+    color: rgba(255,255,255,0.82);
+    font-size: var(--body);
+    max-width: 52ch;
+  }
+  .td-cta-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — HEADER/FOOTER (verbatim from home-F)
+  ══════════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+    .td-body .container { grid-template-columns: 1fr 300px; }
+  }
+
+  @media (max-width: 900px) {
+    :root { --section-padding: 48px; }
+    .td-spec-grid { grid-template-columns: repeat(2, 1fr); }
+    .td-related-grid { grid-template-columns: repeat(2, 1fr); }
+    .td-hero .container { grid-template-columns: 1fr; }
+    .td-hero-back { order: -1; }
+    .td-body .container { grid-template-columns: 1fr; }
+    .td-sidebar-sticky { position: static; }
+    .td-spec-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+    .primary-nav.is-open { display: flex; }
+    .primary-nav a { padding: 14px var(--spacing-lg); border-top: 1px solid var(--color-hairline); }
+    .header-main .container { position: relative; flex-wrap: wrap; }
+    .header-utility .container { justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; }
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+    .td-spec-grid { grid-template-columns: 1fr; max-width: 420px; }
+    .td-related-grid { grid-template-columns: 1fr; }
+    .td-cta-band .container { flex-direction: column; }
+    .td-facts .container { gap: var(--spacing-sm); }
+    .td-fact-chip { min-width: 0; flex: 1 1 auto; }
+    .td-hero-copy h1 { font-size: clamp(1.953rem, 6vw, 2.441rem); }
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE — template sections (NEW)
+  ══════════════════════════════════════════ */
+  @media (min-width: 900px) {
+    .td-body .container {
+      align-items: start;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-template="treatment-detail">
+
+<!-- ── HEADER (verbatim from home-F) ──────────────────────────── -->
+<header class="site-header" data-canon data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Zum Inhalt springen</a>
+  <div class="header-utility">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="lang" aria-label="Sprache wählen">
+        <a href="#" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Startseite">
+        <img src="../../../assets/logo.png" alt="Hirslanden" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+        <a href="../../../de/corporate/kliniken-und-zentren.html">Kliniken</a>
+        <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a>
+        <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html" aria-current="page">Fachgebiete</a>
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── BREADCRUMB ─────────────────────────────────────────────── -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb" data-section="breadcrumb" data-intent="navigate" data-layout="inline">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/home.html">Home</a>
+      <span class="bc-sep" aria-hidden="true">›</span>
+      <a href="https://www.hirslanden.ch/de/corporate/behandlungen.html">Behandlungen</a>
+      <span class="bc-sep" aria-hidden="true">›</span>
+      <span class="bc-current" aria-current="page">Bruchoperation, Hernienoperation</span>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────────────── -->
+  <section class="td-hero" data-section="treatment-hero" data-intent="orient" data-layout="text-dominant">
+    <div class="container">
+      <div class="td-hero-copy">
+        <p class="eyebrow">Chirurgie &amp; Viszeralchirurgie</p>
+        <h1>Operationen bei Bauchwandbrüchen (Hernien)</h1>
+        <p class="lead">Bauchwandbrüche gehören zu den häufigsten Operationen überhaupt. Inguinal-, Nabel- und Narbenbrüche erfordern oft einen chirurgischen Eingriff – mit modernsten Methoden erreichen wir eine dauerhafte Heilung bei minimaler Belastung.</p>
+        <div class="td-trust" aria-label="Medizinisch geprüft">
+          <div class="td-trust-img">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/2101614-dr-med-aris-d-ambrogio:1-1?wid=112&hei=112&dpr=off"
+                 alt="Dr. med. Aris D'Ambrogio" loading="eager" fetchpriority="high" width="56" height="56">
+          </div>
+          <div class="td-trust-meta">
+            <span class="td-trust-label">Medizinisch geprüft</span>
+            <a class="td-trust-name" href="https://www.hirslanden.ch/de/corporate/aerzte/2/dr-aris-d-ambrogio.html">Dr. med. Aris D'Ambrogio</a>
+          </div>
+        </div>
+      </div>
+      <a class="td-hero-back" href="https://www.hirslanden.ch/de/corporate/behandlungen.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        Behandlungen
+      </a>
+    </div>
+  </section>
+
+  <!-- ── KEY FACTS CHIPS ────────────────────────────────────────── -->
+  <section class="td-facts" data-section="key-facts" data-intent="orient" data-layout="chips-row">
+    <div class="container">
+      <div class="td-fact-chip">
+        <span class="fc-label">Behandlung</span>
+        <span class="fc-value">Ambulant / 1–2 Nächte</span>
+      </div>
+      <div class="td-fact-chip">
+        <span class="fc-label">Methode</span>
+        <span class="fc-value">Offen oder laparoskopisch</span>
+      </div>
+      <div class="td-fact-chip">
+        <span class="fc-label">Narkose</span>
+        <span class="fc-value">Voll- oder Spinalanästhesie</span>
+      </div>
+      <div class="td-fact-chip">
+        <span class="fc-label">Sport nach</span>
+        <span class="fc-value">3–4 Wochen</span>
+      </div>
+      <div class="td-fact-chip">
+        <span class="fc-label">Erfolgsrate</span>
+        <span class="fc-value">Rezidiv 1–2 % (Netz)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAIN BODY: 2-column grid (main + sidebar) ─────────────── -->
+  <div class="td-body" data-section="treatment-body" data-intent="inform" data-layout="two-column">
+    <div class="container">
+
+      <!-- LEFT: main content column -->
+      <div class="td-main">
+
+        <!-- INDICATION -->
+        <article class="td-indication" data-section="indication" data-intent="qualify" data-layout="panel">
+          <p class="eyebrow">Für wen ist diese Behandlung?</p>
+          <h2>Indikation &amp; Krankheitsbild</h2>
+          <p>Ein Bauchwandbruch (Hernie) entsteht, wenn Eingeweide durch eine Lücke in der Bauchmuskulatur austreten. Die häufigsten Arten sind Leisten-, Schenkellücken-, Nabel- und Narbenbrüche. In vielen Fällen ist eine Operation der einzige wirksame und dauerhafte Weg zur Behandlung.</p>
+          <p>Typische Symptome sind ein sichtbarer oder tastbarer Vorwölbung, Zug- oder Druckgefühl bei Belastung sowie Schmerzen beim Husten, Niesen oder Sport. Bei einer eingeklemmten Hernie – wenn der Bruchinhalt abgeschnürt wird – besteht ein chirurgischer Notfall.</p>
+          <div class="td-indication-types" aria-label="Hernienfomen">
+            <span class="chip">Leistenhernie</span>
+            <span class="chip">Schenkelhernie</span>
+            <span class="chip">Nabelhernie</span>
+            <span class="chip">Narben-/Inzisionshernie</span>
+          </div>
+        </article>
+
+        <!-- PROCEDURE STEPS -->
+        <section class="td-steps" data-section="procedure-steps" data-intent="inform" data-layout="numbered-list">
+          <div class="td-steps-head">
+            <p class="eyebrow">So läuft die Behandlung ab</p>
+            <h2>Ablauf der Hernienoperation</h2>
+          </div>
+          <ol class="td-steps-list">
+            <li class="td-step">
+              <span class="td-step-num" aria-hidden="true">1</span>
+              <div class="td-step-body">
+                <h3>Voruntersuchung &amp; Vorbereitung</h3>
+                <p>Vor der Operation werden Blutbild, Blutdruck und EKG durchgeführt. Das Anästhesieteam bespricht mit Ihnen die Narkosevariante – Vollnarkose für den laparoskopischen Eingriff, alternativ Spinalanästhesie für offene Techniken.</p>
+              </div>
+            </li>
+            <li class="td-step">
+              <span class="td-step-num" aria-hidden="true">2</span>
+              <div class="td-step-body">
+                <h3>Wahl der Operationstechnik</h3>
+                <p>Je nach Befund empfehlen die Spezialisten entweder die rein chirurgische Naht (Direktverschluss) oder – als bevorzugte Methode – die Netzaugmentation, welche die Rezidivrate auf unter 2 % senkt.</p>
+              </div>
+            </li>
+            <li class="td-step">
+              <span class="td-step-num" aria-hidden="true">3</span>
+              <div class="td-step-body">
+                <h3>Laparoskopischer Eingriff (minimalinvasiv)</h3>
+                <p>Über kleine Schnitte werden Kamera und Instrumente eingeführt. Der Bauchraum wird mit CO₂ aufgeblasen, um Sicht und Arbeitsraum zu schaffen. Das Netz wird zwischen Peritoneum und Bauchdecke platziert und mit Kleber oder Tacker fixiert.</p>
+              </div>
+            </li>
+            <li class="td-step">
+              <span class="td-step-num" aria-hidden="true">4</span>
+              <div class="td-step-body">
+                <h3>Abschluss &amp; Wundverschluss</h3>
+                <p>Das CO₂-Gas wird vollständig abgesaugt. Die Haut wird verschlossen und ein steriler Verband angelegt. Viele Patientinnen und Patienten können den Eingriff ambulant verlassen, bei Bedarf stehen 1–2 Übernachtungen zur Verfügung.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- RECOVERY -->
+        <article class="td-recovery" data-section="recovery" data-intent="reassure" data-layout="panel">
+          <p class="eyebrow">Aufenthalt &amp; Nachsorge</p>
+          <h2>Genesung nach der Operation</h2>
+          <div class="td-recovery-chips">
+            <div class="td-fact-chip">
+              <span class="fc-label">Aufenthalt</span>
+              <span class="fc-value">Ambulant oder 1–2 Nächte</span>
+            </div>
+            <div class="td-fact-chip">
+              <span class="fc-label">Körperliche Arbeit</span>
+              <span class="fc-value">Je nach Beruf variabel</span>
+            </div>
+            <div class="td-fact-chip">
+              <span class="fc-label">Sport möglich nach</span>
+              <span class="fc-value">3–4 Wochen</span>
+            </div>
+          </div>
+          <p>Die meisten Patientinnen und Patienten erholen sich rasch. In den ersten Tagen nach dem Eingriff sind Schonung und leichte Bewegung angebracht. Schwere körperliche Belastung, Sport und Heben sollte für 3–4 Wochen vermieden werden.</p>
+          <p>Die Dauer der Arbeitsunfähigkeit hängt stark von der ausgeübten Tätigkeit ab. Bürotätigkeiten sind oft schon nach wenigen Tagen wieder möglich; körperlich anspruchsvolle Berufe erfordern eine längere Erholungsphase.</p>
+        </article>
+
+        <!-- RISKS -->
+        <article class="td-risks" data-section="risks" data-intent="inform" data-layout="list">
+          <h2>Risiken &amp; mögliche Komplikationen</h2>
+          <ul>
+            <li>Nachblutungen im Operationsbereich</li>
+            <li>Nervenschäden (temporär oder dauerhaft)</li>
+            <li>Wundinfektionen (selten)</li>
+            <li>Verwachsungen (Adhäsionen, selten)</li>
+            <li>Vorübergehende Hodenanschwellung bei Männern nach Leistenhernie-OP (selten)</li>
+            <li>Verletzung des Samenstrangs (sehr selten)</li>
+          </ul>
+        </article>
+
+      </div><!-- /td-main -->
+
+      <!-- RIGHT: sidebar -->
+      <aside class="td-sidebar" aria-label="Zusatzinformationen">
+        <div class="td-sidebar-sticky">
+
+          <!-- Doctor trust card -->
+          <div class="td-doctor-card" aria-label="Verantwortlicher Spezialist">
+            <div class="td-doctor-card-img">
+              <img src="https://mediclinic.scene7.com/is/image/mediclinic/2101614-dr-med-aris-d-ambrogio:1-1?wid=340&hei=340&dpr=off"
+                   alt="Portraitfoto Dr. med. Aris D'Ambrogio" loading="lazy" width="340" height="340">
+            </div>
+            <div class="td-doctor-card-body">
+              <span class="td-doctor-card-role">Spécialiste</span>
+              <a class="td-doctor-card-name" href="https://www.hirslanden.ch/de/corporate/aerzte/2/dr-aris-d-ambrogio.html">Dr. med. Aris D'Ambrogio</a>
+              <p style="font-size:var(--body-sm);color:var(--color-text-soft);">Facharzt für Chirurgie, Hirslanden</p>
+              <a class="readmore" href="https://www.hirslanden.ch/de/corporate/aerzte/2/dr-aris-d-ambrogio.html">Arztprofil ansehen</a>
+            </div>
+            <div class="td-reviewed-badge" role="note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Medizinisch geprüft von <strong>Dr. med. Aris D'Ambrogio</strong></span>
+            </div>
+          </div>
+
+          <!-- Centres panel -->
+          <div class="td-centres-panel" aria-label="Behandlungszentren">
+            <h3>Behandlungszentren</h3>
+            <div class="td-city-chips" role="group" aria-label="Nach Stadt filtern">
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">Aarau</span>
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">Basel</span>
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">Bern</span>
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">Biel</span>
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">St.&nbsp;Gallen</span>
+              <span class="td-city-chip" aria-pressed="false" tabindex="0">Zürich</span>
+            </div>
+            <p class="td-centres-count"><strong>15 Zentren</strong> in der ganzen Schweiz</p>
+            <a class="readmore" href="../../../de/corporate/kliniken-und-zentren.html" style="margin-top:var(--spacing-sm);">Alle Zentren anzeigen</a>
+          </div>
+
+          <!-- Sidebar appointment CTA -->
+          <div class="td-sidebar-cta" role="complementary" aria-label="Termin vereinbaren">
+            <h3>Termin vereinbaren</h3>
+            <p>Kontaktieren Sie uns – unsere Spezialisten beraten Sie persönlich und diskret.</p>
+            <a class="btn btn--onblue" href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Jetzt Termin anfragen</a>
+          </div>
+
+        </div>
+      </aside>
+
+    </div><!-- /container -->
+  </div><!-- /td-body -->
+
+  <!-- ── SPECIALISTS ───────────────────────────────────────────── -->
+  <section class="td-specialists" data-section="specialists" data-intent="connect" data-layout="grid" data-items="3" data-media="portrait">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Unsere Experten</p>
+        <h2>Spezialisten für diese Behandlung</h2>
+        <p>Erfahrene Chirurginnen und Chirurgen begleiten Sie vom ersten Gespräch bis zur vollständigen Genesung.</p>
+      </div>
+      <div class="td-spec-grid">
+        <article class="td-spec-card">
+          <div class="td-spec-card-media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/2101614-dr-med-aris-d-ambrogio:1-1?wid=400&hei=400&dpr=off"
+                 alt="Dr. med. Aris D'Ambrogio" loading="lazy" width="400" height="400" style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:1/1;">
+          </div>
+          <div class="td-spec-card-body">
+            <span class="td-spec-card-spec">Viszeralchirurgie</span>
+            <h3>Dr. med. Aris D'Ambrogio</h3>
+            <span class="td-spec-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+              Zürich
+            </span>
+            <a class="readmore" href="https://www.hirslanden.ch/de/corporate/aerzte/2/dr-aris-d-ambrogio.html">Profil ansehen</a>
+          </div>
+        </article>
+        <article class="td-spec-card">
+          <div class="td-spec-card-media">
+            <div class="placeholder-media placeholder-media--square" aria-label="Arztporträt Placeholder">Arztporträt</div>
+          </div>
+          <div class="td-spec-card-body">
+            <span class="td-spec-card-spec">Viszeralchirurgie</span>
+            <h3>Prof. Dr. med. Markus Zuber</h3>
+            <span class="td-spec-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+              Basel
+            </span>
+            <a class="readmore" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Profil ansehen</a>
+          </div>
+        </article>
+        <article class="td-spec-card">
+          <div class="td-spec-card-media">
+            <div class="placeholder-media placeholder-media--square" aria-label="Arztporträt Placeholder">Arztporträt</div>
+          </div>
+          <div class="td-spec-card-body">
+            <span class="td-spec-card-spec">Allgemein- &amp; Viszeralchirurgie</span>
+            <h3>Dr. med. Sandra Müller-Scholl</h3>
+            <span class="td-spec-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+              Bern
+            </span>
+            <a class="readmore" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Profil ansehen</a>
+          </div>
+        </article>
+      </div>
+      <div style="margin-top:var(--spacing-2xl);text-align:center;">
+        <a class="btn btn--primary" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Alle Spezialisten anzeigen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RELATED TREATMENTS ─────────────────────────────────────── -->
+  <section class="td-related" data-section="related-treatments" data-intent="navigate" data-layout="grid" data-items="3">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Weiterführende Informationen</p>
+        <h2>Verwandte Behandlungen</h2>
+      </div>
+      <div class="td-related-grid">
+        <a class="td-related-card" href="https://www.hirslanden.ch/de/corporate/behandlungen/reflux-operation.html">
+          <span class="rc-tag">Chirurgie</span>
+          <h3>Reflux-Operation (Hiatushernie)</h3>
+          <span class="readmore">Mehr erfahren</span>
+        </a>
+        <a class="td-related-card" href="https://www.hirslanden.ch/de/corporate/behandlungen/appendektomie.html">
+          <span class="rc-tag">Viszeralchirurgie</span>
+          <h3>Blinddarmoperation (Appendektomie)</h3>
+          <span class="readmore">Mehr erfahren</span>
+        </a>
+        <a class="td-related-card" href="https://www.hirslanden.ch/de/corporate/behandlungen/gallenblasenentfernung.html">
+          <span class="rc-tag">Viszeralchirurgie</span>
+          <h3>Gallenblasenentfernung (Cholezystektomie)</h3>
+          <span class="readmore">Mehr erfahren</span>
+        </a>
+      </div>
+      <div style="margin-top:var(--spacing-xl);text-align:center;">
+        <a class="readmore" href="https://www.hirslanden.ch/de/corporate/behandlungen.html">Alle Behandlungen A–Z</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── APPOINTMENT CTA BAND ───────────────────────────────────── -->
+  <section class="td-cta-band" data-section="appointment-cta" data-intent="convert" data-layout="split">
+    <div class="container">
+      <div class="td-cta-copy">
+        <h2>Jetzt Termin vereinbaren</h2>
+        <p>Unsere Spezialistinnen und Spezialisten beraten Sie persönlich – von der Diagnose bis zur Nachsorge. Wir sind für Sie da.</p>
+      </div>
+      <div class="td-cta-actions">
+        <a class="btn btn--onblue" href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Termin anfragen</a>
+        <a class="btn btn--onblue" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Spezialisten finden</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER (verbatim from home-F) ─────────────────────────── -->
+<footer class="site-footer" data-canon data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div>
+        <h2>Hirslanden-Gruppe</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../../../de/corporate/klinikaufenthalt.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="../../../de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="../../../de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+        <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+        <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

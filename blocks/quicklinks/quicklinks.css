@@ -1,0 +1,48 @@
+.quicklinks {
+  background: var(--color-ground-alt);
+  padding-block: var(--section-padding);
+}
+
+.quicklinks .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.quicklinks .ql-tile {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  text-decoration: none;
+  color: var(--color-fg);
+  font-weight: 500;
+  font-size: var(--body);
+  transition: box-shadow 160ms ease, color 160ms ease;
+}
+
+.quicklinks .ql-tile:hover {
+  color: var(--color-accent-ink);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+}
+
+.quicklinks .ql-tile::after {
+  content: "\203A";
+  margin-left: auto;
+  color: var(--color-accent-ink);
+  font-size: 1.2em;
+  flex: none;
+}
+
+@media (width <= 900px) {
+  .quicklinks .container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (width <= 640px) {
+  .quicklinks .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}

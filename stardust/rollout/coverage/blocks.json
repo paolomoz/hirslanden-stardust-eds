@@ -1,0 +1,83 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-06-24T20:50:10.559Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.13.0"
+  },
+  "generatedAt": "2026-06-24T20:50:10.559Z",
+  "blocks": [
+    {
+      "id": "header-nav",
+      "label": "header-nav",
+      "kind": "module",
+      "signature": "module:header-nav",
+      "source": null,
+      "usedByTemplates": [
+        "detail",
+        "editorial",
+        "landing",
+        "listing"
+      ],
+      "usedByPages": [
+        "clinic-detail",
+        "clinic-listing",
+        "content-page",
+        "disease-detail",
+        "doctor-profile",
+        "event-detail",
+        "event-listing",
+        "home",
+        "news-article",
+        "news-listing",
+        "patient-info",
+        "specialty-topic",
+        "treatment-detail"
+      ],
+      "instanceCount": 13,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "header-nav",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "site-footer",
+      "label": "site-footer",
+      "kind": "module",
+      "signature": "module:site-footer",
+      "source": null,
+      "usedByTemplates": [
+        "detail",
+        "editorial",
+        "landing",
+        "listing"
+      ],
+      "usedByPages": [
+        "clinic-detail",
+        "clinic-listing",
+        "content-page",
+        "disease-detail",
+        "doctor-profile",
+        "event-detail",
+        "event-listing",
+        "home",
+        "news-article",
+        "news-listing",
+        "patient-info",
+        "specialty-topic",
+        "treatment-detail"
+      ],
+      "instanceCount": 13,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "site-footer",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
     "writtenBy": "stardust:extract",
     "writtenAt": "2026-06-24T00:00:00Z",
     "updatedAt": "2026-06-24T00:00:00Z",
-    "updatedBy": "manual \u2014 registered all template archetypes, promoted home to approved (variant F)",
+    "updatedBy": "manual — registered all template archetypes, promoted home to approved (variant F)",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -16,7 +16,7 @@
   },
   "direction": {
     "resolvedAt": "2026-06-24T00:00:00Z",
-    "phrase": "brand-faithful refresh \u2014 5 variants A-E, canonical F selected",
+    "phrase": "brand-faithful refresh — 5 variants A-E, canonical F selected",
     "directionFile": "stardust/direction.md",
     "variantMode": "reimagined",
     "variants": [
@@ -35,7 +35,7 @@
       "url": "https://www.hirslanden.ch/",
       "title": "Hirslanden-Gruppe, Schweiz",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -79,27 +79,33 @@
           "status": "prototyped",
           "at": "2026-06-24T00:00:00Z",
           "variant": "F",
-          "note": "Variant F \u2014 user-directed merge A+B+C. Bento editorial grid (1.2fr 0.9fr 0.9fr, first card row-span 2). ds-feature: figure position:absolute inset:0 for true full-bleed. Editorial panel: border-top 3px solid --color-accent. Impeccable detector: 0 findings."
+          "note": "Variant F — user-directed merge A+B+C. Bento editorial grid (1.2fr 0.9fr 0.9fr, first card row-span 2). ds-feature: figure position:absolute inset:0 for true full-bleed. Editorial panel: border-top 3px solid --color-accent. Impeccable detector: 0 findings."
         },
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z",
           "variant": "F",
           "note": "User approved variant F as canonical design for the migration."
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "index.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/home.json",
       "prototypePath": "stardust/prototypes/home-F-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/index.html"
     },
     {
       "slug": "clinic-listing",
       "url": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html",
       "title": "Kliniken und Zentren | Hirslanden",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -109,25 +115,31 @@
           "status": "prototyped",
           "at": "2026-06-24T00:00:00Z",
           "variant": "F-aligned",
-          "note": "F-aligned template prototype. Real clinic card images loaded. Filter bar styled. Hirslanden in Ihrer N\u00e4he CTA strip."
+          "note": "F-aligned template prototype. Real clinic card images loaded. Filter bar styled. Hirslanden in Ihrer Nähe CTA strip."
         },
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/kliniken-und-zentren.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/clinic-listing.json",
       "prototypePath": "stardust/prototypes/clinic-listing-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/kliniken-und-zentren.html"
     },
     {
       "slug": "clinic-detail",
       "url": "https://www.hirslanden.ch/de/klinik-linde/home.html",
       "title": "Hirslanden Klinik Linde, Biel",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -142,20 +154,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/klinik-linde/home.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/clinic-detail.json",
       "prototypePath": "stardust/prototypes/clinic-detail-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/klinik-linde/home.html"
     },
     {
       "slug": "doctor-profile",
       "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
-      "title": "Dr. med. Christof Ab\u00e4cherli | Hirslanden-Gruppe",
+      "title": "Dr. med. Christof Abächerli | Hirslanden-Gruppe",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -170,20 +188,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/aerzte/3/dr-med-christof-abaecherli.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/doctor-profile.json",
       "prototypePath": "stardust/prototypes/doctor-profile-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli.html"
     },
     {
       "slug": "specialty-topic",
       "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
       "title": "Herzmedizin (Kardiologie) | Hirslanden",
       "type": "editorial",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -198,20 +222,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/specialty-topic.json",
       "prototypePath": "stardust/prototypes/specialty-topic-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html"
     },
     {
       "slug": "disease-detail",
       "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/brustkrebs.html",
       "title": "Brustkrebs - Symptome, Diagnose & Behandlung | Hirslanden",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -226,20 +256,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/krankheitsbilder/brustkrebs.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/disease-detail.json",
       "prototypePath": "stardust/prototypes/disease-detail-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/krankheitsbilder/brustkrebs.html"
     },
     {
       "slug": "treatment-detail",
       "url": "https://www.hirslanden.ch/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
-      "title": "Hernienoperation \u2013 Behandlung & Ablauf | Hirslanden",
+      "title": "Hernienoperation – Behandlung & Ablauf | Hirslanden",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -254,20 +290,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/behandlungen/bruchoperationen-hernienoperationen.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/treatment-detail.json",
       "prototypePath": "stardust/prototypes/treatment-detail-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html"
     },
     {
       "slug": "news-listing",
       "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
       "title": "News & Medienmitteilungen | Hirslanden",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -282,20 +324,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/medien-und-news/medienmitteilungen-und-news.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/news-listing.json",
       "prototypePath": "stardust/prototypes/news-listing-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news.html"
     },
     {
       "slug": "news-article",
       "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
-      "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Gen\u00e8ve | Hirslanden",
+      "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève | Hirslanden",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -310,20 +358,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/news-article.json",
       "prototypePath": "stardust/prototypes/news-article-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html"
     },
     {
       "slug": "event-listing",
       "url": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html",
       "title": "Kurse und Veranstaltungen | Hirslanden",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -338,20 +392,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/kurse-und-veranstaltungen.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/event-listing.json",
       "prototypePath": "stardust/prototypes/event-listing-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/kurse-und-veranstaltungen.html"
     },
     {
       "slug": "event-detail",
       "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
       "title": "Informationsabend Geburt",
       "type": "detail",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -366,20 +426,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/event-detail.json",
       "prototypePath": "stardust/prototypes/event-detail-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html"
     },
     {
       "slug": "patient-info",
       "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html",
       "title": "Klinikaufenthalt | Hirslanden",
       "type": "editorial",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -394,20 +460,26 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/klinikaufenthalt.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/patient-info.json",
       "prototypePath": "stardust/prototypes/patient-info-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/klinikaufenthalt.html"
     },
     {
       "slug": "content-page",
       "url": "https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html",
-      "title": "Hingabe, die man sp\u00fcrt. | Hirslanden",
+      "title": "Hingabe, die man spürt. | Hirslanden",
       "type": "editorial",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -422,13 +494,114 @@
         {
           "status": "approved",
           "at": "2026-06-24T00:00:00Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-06-24T00:00:00Z",
+          "renderBranch": "A",
+          "outputPath": "de/corporate/ueber-uns/hingabe.html"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/content-page.json",
       "prototypePath": "stardust/prototypes/content-page-proposed.html",
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/de/corporate/ueber-uns/hingabe.html"
     }
-  ]
+  ],
+  "migrate": {
+    "selfContained": true,
+    "outputDir": "stardust/migrated",
+    "totalAssetsBundled": 12,
+    "bundledAssets": [
+      "apple-touch-icon.png",
+      "favicon-512.png",
+      "fonts/Metropolis-Bold-3c10b2e7.woff",
+      "fonts/Metropolis-Regular-15de18d5.woff",
+      "fonts/Metropolis-SemiBold-269a2bc8.woff",
+      "fonts/icons-a388d00e.woff",
+      "icon-192.png",
+      "icon-512.png",
+      "logo.png",
+      "media/hero-onkologie-133e374f.webp",
+      "media/nr-dsc07282-b9625f14.jpg",
+      "media/pflege-hingabe-6e8ca022.jpg"
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "home"
+      },
+      {
+        "sourceUrl": "/de/corporate/kliniken-und-zentren.html",
+        "outputPath": "de/corporate/kliniken-und-zentren.html",
+        "slug": "clinic-listing"
+      },
+      {
+        "sourceUrl": "/de/klinik-linde/home.html",
+        "outputPath": "de/klinik-linde/home.html",
+        "slug": "clinic-detail"
+      },
+      {
+        "sourceUrl": "/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
+        "outputPath": "de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
+        "slug": "doctor-profile"
+      },
+      {
+        "sourceUrl": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+        "outputPath": "de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+        "slug": "specialty-topic"
+      },
+      {
+        "sourceUrl": "/de/corporate/krankheitsbilder/brustkrebs.html",
+        "outputPath": "de/corporate/krankheitsbilder/brustkrebs.html",
+        "slug": "disease-detail"
+      },
+      {
+        "sourceUrl": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+        "outputPath": "de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+        "slug": "treatment-detail"
+      },
+      {
+        "sourceUrl": "/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+        "outputPath": "de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+        "slug": "news-listing"
+      },
+      {
+        "sourceUrl": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+        "outputPath": "de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+        "slug": "news-article"
+      },
+      {
+        "sourceUrl": "/de/corporate/kurse-und-veranstaltungen.html",
+        "outputPath": "de/corporate/kurse-und-veranstaltungen.html",
+        "slug": "event-listing"
+      },
+      {
+        "sourceUrl": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+        "outputPath": "de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+        "slug": "event-detail"
+      },
+      {
+        "sourceUrl": "/de/corporate/klinikaufenthalt.html",
+        "outputPath": "de/corporate/klinikaufenthalt.html",
+        "slug": "patient-info"
+      },
+      {
+        "sourceUrl": "/de/corporate/ueber-uns/hingabe.html",
+        "outputPath": "de/corporate/ueber-uns/hingabe.html",
+        "slug": "content-page"
+      }
+    ],
+    "lastRun": {
+      "at": "2026-06-24T00:00:00Z",
+      "migrated": 13,
+      "unchanged": 0,
+      "failed": 0,
+      "failures": []
+    }
+  }
 }

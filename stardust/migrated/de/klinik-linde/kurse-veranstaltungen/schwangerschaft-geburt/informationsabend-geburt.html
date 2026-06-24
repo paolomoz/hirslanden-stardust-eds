@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- provenance: template="event-detail", liveUrl="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html", alignedWith="home-F" -->
+<!-- a11y note: hero image alt="Informationsabend Geburt" is the captured alt from the live event image. -->
+<!-- impeccable-disable numbered-section-markers -- date-chip .day values (25, 06, 03, …) are real captured calendar day numbers from the live event series, not decorative section scaffolding. Same motif as home-F. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informationsabend Geburt</title>
+<meta name="description" content="Lernen Sie das Geburts-Team und die Räumlichkeiten der Klinik Linde in Biel kennen. Kostenloser Informationsabend für werdende Eltern – Anmeldung erforderlich.">
+<style>
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, strict 1.25 ratio (base 1rem): 0.8 → 1 → 1.25 → 1.563 → 1.953 → 2.441 */
+    --heading-xxl: clamp(2.441rem, 4vw, 2.75rem); /* hero display — 1.25⁴ from base */
+    --heading-xl: 1.953rem;  /* ~31px section openers — 1.25³ */
+    --heading-lg: 1.563rem;  /* ~25px sub-openers — 1.25² */
+    --heading-md: 1.25rem;   /* ~20px card/list titles — 1.25¹ */
+    --body: 1rem;
+    --body-sm: 0.8rem;       /* 1rem ÷ 1.25 */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Colors (DESIGN-A frontmatter) */
+    --color-bg: #ffffff;
+    --color-fg: #534c46;
+    --color-accent: #0094d4;
+    --color-accent-ink: #0070a0;   /* AA-safe blue: 5.5:1 on white */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-accent-hover: #006894;
+    --color-ground-warm: #f7f6f5;
+    --color-ground-alt: #f0efed;
+    --color-text-soft: #72665b;
+    --color-hairline: #e2dfdb;
+    --color-emergency: #f43a11;    /* reserved for 144 only */
+
+    /* Spacing — tokenized 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;
+    --radius-pill: 18px;
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+
+    --z-sticky: 100;
+    --z-nav-panel: 200;
+  }
+
+  /* Mobile nav base rule — must precede any @media */
+  .nav-burger { display: none; }
+
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../../../../assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-ground-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+    line-height: var(--line-height-heading);
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  h1, h2, h3, h4, p, a, .quicklink span, .event-text h3 { overflow-wrap: break-word; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .eyebrow {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .section { padding-block: var(--section-padding); }
+  .section--warm { background: var(--color-ground-warm); }
+  .section--alt { background: var(--color-ground-alt); }
+  .section-head { margin-bottom: var(--spacing-2xl); }
+  .section-head h2 { font-size: var(--heading-xl); }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+  .btn--primary {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--primary:hover { background: var(--color-accent-hover); }
+  .btn--onblue {
+    background: #ffffff;
+    color: var(--color-accent-ink);
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--onblue:hover { background: var(--color-ground-warm); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    padding: 8px 18px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+  .readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+  }
+  .readmore::after { content: "\203A"; font-size: 1.1em; line-height: 1; }
+  .readmore:hover { text-decoration: underline; }
+
+  /* ══════════════════════════════════════════
+     HEADER (from A)
+  ══════════════════════════════════════════ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+  .header-utility a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+  .brand img { width: 170px; height: auto; }
+  .primary-nav { display: flex; align-items: center; gap: var(--spacing-2xl); }
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+  .icon-search {
+    background: none; border: 0; padding: var(--spacing-sm);
+    cursor: pointer; color: var(--color-fg); display: inline-flex;
+  }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .nav-burger {
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px; height: 44px;
+    cursor: pointer; color: var(--color-fg);
+    align-items: center; justify-content: center;
+  }
+
+  /* ══════════════════════════════════════════
+     FOOTER (from A)
+  ══════════════════════════════════════════ */
+  .site-footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .footer-pre {
+    display: flex; justify-content: space-between; gap: var(--spacing-2xl); flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl); border-bottom: 1px solid var(--color-hairline);
+  }
+  .footer-pre h2 { font-size: var(--heading-md); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+  .footer-social a {
+    width: 40px; height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-fg); text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+  .footer-social a:hover { color: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+  .footer-col h3 { font-size: var(--body-sm); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-soft); margin-bottom: var(--spacing-md); }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-col a { text-decoration: none; color: var(--color-fg); font-size: var(--body-sm); transition: color 140ms ease; }
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  .emergency {
+    display: inline-flex; flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .emergency .lbl { font-size: var(--body-sm); color: var(--color-text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .emergency .num { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-lg); color: var(--color-emergency); }
+
+  .footer-bar {
+    display: flex; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap;
+    padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm); color: var(--color-text-soft);
+  }
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .footer-bar a { text-decoration: none; color: var(--color-text-soft); }
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* ══════════════════════════════════════════
+     EVENT-DETAIL: template-specific sections
+  ══════════════════════════════════════════ */
+
+  /* ── 1. Breadcrumb ── */
+  .breadcrumb {
+    background: var(--color-ground-warm);
+    border-bottom: 1px solid var(--color-hairline);
+    padding-block: var(--spacing-sm);
+    font-size: var(--body-sm);
+  }
+  .breadcrumb .container { display: flex; gap: var(--spacing-xs); align-items: center; flex-wrap: wrap; }
+  .breadcrumb a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .breadcrumb a:hover { color: var(--color-accent-ink); }
+  .breadcrumb .sep { color: var(--color-hairline); }
+  .breadcrumb [aria-current="page"] { color: var(--color-fg); font-weight: 500; }
+
+  /* ── 2. Event hero banner ── */
+  .event-hero {
+    position: relative;
+    background: var(--color-ground-alt);
+    overflow: hidden;
+  }
+  .event-hero-media {
+    position: absolute;
+    inset: 0;
+  }
+  .event-hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+  }
+  .event-hero-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(83,76,70,0.15) 0%,
+      rgba(83,76,70,0.55) 55%,
+      rgba(83,76,70,0.82) 100%
+    );
+  }
+  .event-hero .container {
+    position: relative;
+    z-index: 1;
+    padding-block: clamp(160px, 28vw, 360px) var(--spacing-2xl);
+  }
+  .event-hero-category {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius-pill);
+    padding: 6px 16px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+  }
+  .event-hero h1 {
+    font-size: var(--heading-xxl);
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 18ch;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .event-hero-clinic {
+    margin-top: var(--spacing-md);
+    font-size: var(--body);
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+  }
+
+  /* ── 3. Event body: 2-col layout ── */
+  .event-body-section {
+    padding-block: var(--section-padding);
+    background: var(--color-bg);
+  }
+  .event-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  /* Main column */
+  .event-main { min-width: 0; }
+  .event-main h2 {
+    font-size: var(--heading-xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .event-main h3 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-fg);
+  }
+  .event-main p {
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-md);
+  }
+  .event-main p:last-of-type { margin-bottom: 0; }
+
+  .event-info-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  .event-info-list li {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    font-size: var(--body);
+    color: var(--color-fg);
+  }
+  .event-info-list .info-label {
+    font-weight: 500;
+    min-width: 80px;
+    flex: none;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+    padding-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .event-notice {
+    background: var(--color-ground-alt);
+    border-top: 3px solid var(--color-accent);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+  }
+  .event-notice h3 {
+    margin-top: 0;
+    font-size: var(--heading-md);
+    color: var(--color-accent-ink);
+    margin-bottom: var(--spacing-sm);
+  }
+  .event-notice ul {
+    margin: 0;
+    padding-left: var(--spacing-lg);
+    color: var(--color-text-soft);
+    line-height: var(--line-height-body);
+  }
+  .event-notice li { margin-bottom: var(--spacing-xs); }
+
+  /* Transport sub-section */
+  .transport-section { margin-top: var(--spacing-2xl); }
+  .transport-section h3 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .transport-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    align-items: stretch;
+  }
+  .transport-item {
+    background: var(--color-ground-warm);
+    padding: var(--spacing-lg);
+  }
+  .transport-item h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--body);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-fg);
+  }
+  .transport-item p { font-size: var(--body-sm); color: var(--color-text-soft); margin-bottom: 0; }
+
+  /* Map placeholder */
+  .map-area {
+    margin-top: var(--spacing-xl);
+    position: relative;
+  }
+  .map-area a.map-link {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .map-placeholder {
+    background: var(--color-ground-alt);
+    aspect-ratio: 16/7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    border: 1px solid var(--color-hairline);
+  }
+  .map-placeholder svg { color: var(--color-accent-ink); opacity: 0.6; }
+  .map-placeholder p {
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+    text-align: center;
+    margin: 0;
+  }
+  .map-placeholder .map-cta {
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+    border: 1px solid var(--color-accent-ink);
+    padding: 10px 20px;
+    transition: background-color 160ms ease, color 160ms ease;
+    position: relative;
+    z-index: 2;
+  }
+  .map-placeholder .map-cta:hover {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+  }
+
+  /* Sidebar (right column) */
+  .event-sidebar {
+    position: sticky;
+    top: calc(var(--spacing-lg) + 73px); /* header height offset */
+  }
+  .event-sidebar-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    border-top: 3px solid var(--color-accent);
+  }
+  .event-sidebar-head {
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .event-sidebar-head h2 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    color: var(--color-fg);
+  }
+  .event-sidebar-head p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    margin-top: var(--spacing-xs);
+  }
+  .event-dates { list-style: none; margin: 0; padding: 0; }
+  .event-date-item {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-hairline);
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+  .event-date-item:last-child { border-bottom: 0; }
+  .event-date-chip {
+    flex: none;
+    width: 52px;
+    text-align: center;
+    background: var(--color-ground-warm);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius);
+    padding: var(--spacing-sm) 0;
+  }
+  .event-date-chip .day {
+    display: block;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--heading-lg);
+    line-height: 1;
+    color: var(--color-fg);
+    font-variant-numeric: tabular-nums;
+  }
+  .event-date-chip .mon {
+    display: block;
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .event-date-info { min-width: 0; }
+  .event-date-title {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-xs);
+  }
+  .event-date-meta {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .event-date-meta span { display: flex; align-items: center; gap: 6px; }
+  .event-date-meta svg { flex: none; }
+  .event-sidebar-cta {
+    padding: var(--spacing-lg);
+    background: var(--color-ground-warm);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .event-sidebar-cta .btn--primary { width: 100%; justify-content: center; font-size: var(--body); padding: 14px; }
+
+  /* ── 4. Contact CTA section ── */
+  .event-contact-section {
+    padding-block: var(--section-padding);
+    background: var(--color-accent);
+  }
+  .event-contact-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+  }
+  .event-contact-copy h2 {
+    font-size: var(--heading-lg);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: var(--spacing-sm);
+  }
+  .event-contact-copy p {
+    color: rgba(255,255,255,0.85);
+    max-width: 52ch;
+  }
+
+  /* ── 5. Related events section ── */
+  .related-events {
+    padding-block: var(--section-padding);
+    background: var(--color-ground-warm);
+  }
+  .related-events .section-head { margin-bottom: var(--spacing-2xl); }
+  .related-events .section-head h2 { font-size: var(--heading-xl); }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+  .related-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+  .related-card:hover .related-card-title { color: var(--color-accent-ink); }
+  .related-card-head {
+    background: var(--color-accent-tint);
+    padding: var(--spacing-lg);
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .related-date-chip {
+    flex: none;
+    width: 52px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius);
+    padding: var(--spacing-sm) 0;
+  }
+  .related-date-chip .day {
+    display: block;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--heading-lg);
+    line-height: 1;
+    color: var(--color-fg);
+    font-variant-numeric: tabular-nums;
+  }
+  .related-date-chip .mon {
+    display: block;
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .related-card-date-info { min-width: 0; }
+  .related-card-cat {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-xs);
+  }
+  .related-card-time {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .related-card-body {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  .related-card-title {
+    font-size: var(--heading-md);
+    font-weight: 500;
+    transition: color 140ms ease;
+    text-wrap: balance;
+    color: var(--color-fg);
+    margin: 0;
+  }
+  .related-card-loc {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding-top: var(--spacing-sm);
+  }
+
+  /* ── Placeholder media ─────────────────────────────────────────── */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+    font-family: var(--font-body);
+    aspect-ratio: 16/9;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .placeholder-media--portrait { aspect-ratio: 3/4; }
+  .placeholder-media--square { aspect-ratio: 1/1; }
+  .placeholder-media--wide { aspect-ratio: 21/9; }
+  .placeholder-media--map {
+    aspect-ratio: 16/7;
+    max-height: 320px;
+  }
+
+  /* ── Styled select/filter inputs ───────────────────────────────── */
+  .filter-bar select,
+  .filter-row select,
+  .events-filters select,
+  .clinic-filters select {
+    appearance: none;
+    background: var(--color-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230070a0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 4px;
+    padding: 8px 36px 8px 12px;
+    font-size: var(--body-sm);
+    font-family: var(--font-body);
+    color: var(--color-fg);
+    cursor: pointer;
+    min-width: 140px;
+  }
+  .filter-bar select:focus,
+  .filter-row select:focus,
+  .events-filters select:focus,
+  .clinic-filters select:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════════════════ */
+
+  @media (max-width: 1024px) {
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+    .event-body-grid { grid-template-columns: 1fr 300px; }
+  }
+
+  @media (max-width: 900px) {
+    :root { --section-padding: 48px; }
+    .transport-grid { grid-template-columns: 1fr; }
+    .related-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .event-body-grid {
+      grid-template-columns: 1fr;
+    }
+    .event-sidebar {
+      position: static;
+      top: auto;
+    }
+    /* Sidebar appears first on mobile for registration prominence */
+    .event-sidebar { order: -1; }
+    .event-main { order: 0; }
+  }
+
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+    .primary-nav.is-open { display: flex; }
+    .primary-nav a { padding: 14px var(--spacing-lg); border-top: 1px solid var(--color-hairline); }
+    .header-main .container { position: relative; flex-wrap: wrap; }
+    .header-utility .container { justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; }
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+    .related-grid { grid-template-columns: 1fr; }
+    .event-contact-section .container { flex-direction: column; align-items: flex-start; }
+    .event-hero h1 { font-size: var(--heading-xl); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-template="event-detail">
+
+<header class="site-header" data-canon data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Zum Inhalt springen</a>
+  <div class="header-utility">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="lang" aria-label="Sprache wählen">
+        <a href="#" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Startseite">
+        <img src="../../../../assets/logo.png" alt="Hirslanden" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+        <a href="../../../../de/corporate/kliniken-und-zentren.html">Kliniken</a>
+        <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a>
+        <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a>
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── breadcrumb ──────────────────────────────────────────────── -->
+  <nav class="breadcrumb" aria-label="Seitennavigation" data-section="breadcrumb" data-intent="orient" data-layout="inline">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/home.html">Startseite</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="https://www.hirslanden.ch/de/klinik-linde.html">Klinik Linde</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen.html">Kurse &amp; Veranstaltungen</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt.html">Schwangerschaft &amp; Geburt</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page">Informationsabend Geburt</span>
+    </div>
+  </nav>
+
+  <!-- ── 1. Event hero: title + category chip ───────────────────── -->
+  <section class="event-hero" data-section="event-hero" data-intent="orient" data-layout="full-bleed" data-media="image">
+    <div class="event-hero-media" role="img" aria-label="Informationsabend Geburt"></div>
+    <div class="event-hero-scrim" aria-hidden="true"></div>
+    <div class="container">
+      <span class="event-hero-category">Schwangerschaft &amp; Geburt</span>
+      <h1>Informationsabend Geburt</h1>
+      <p class="event-hero-clinic">Hirslanden Klinik Linde, Biel</p>
+    </div>
+  </section>
+
+  <!-- ── 2. Event body: main description + sidebar ─────────────── -->
+  <section class="event-body-section" data-section="event-body" data-intent="inform" data-layout="two-col-sidebar">
+    <div class="container">
+      <div class="event-body-grid">
+
+        <!-- Main content column -->
+        <div class="event-main">
+          <h2>Informationsabend Geburt</h2>
+
+          <h3>Machen Sie sich mit dem Team und den Räumlichkeiten vertraut</h3>
+
+          <p>
+            Wir laden Sie herzlich ein, unser Geburts-Team und die Räumlichkeiten der Klinik Linde kennenzulernen. Im Rahmen des Informationsabends erhalten Sie einen umfassenden Einblick in unsere Geburtshilfe – von der Ankunft in der Klinik bis hin zur individuellen Betreuung während der Geburt und im Wochenbett.
+          </p>
+          <p>
+            Unsere Hebammen und Pflegefachpersonen beantworten Ihre Fragen und begleiten Sie durch die Räume, in denen Sie und Ihr Kind bestmöglich versorgt werden. Der Abend richtet sich an werdende Mütter und ihre Begleitpersonen.
+          </p>
+
+          <ul class="event-info-list">
+            <li>
+              <span class="info-label">Ort</span>
+              <span>Hirslanden Klinik Linde, Blumenrain 105, 2503 Biel</span>
+            </li>
+            <li>
+              <span class="info-label">Dauer</span>
+              <span>Ca. 60 Minuten (18:30 – 19:30 Uhr)</span>
+            </li>
+            <li>
+              <span class="info-label">Sprache</span>
+              <span>Deutsch</span>
+            </li>
+          </ul>
+
+          <div class="event-notice">
+            <h3>Wichtige Hinweise</h3>
+            <ul>
+              <li>Die Teilnahme ist kostenlos.</li>
+              <li>Eine Anmeldung ist zwingend erforderlich.</li>
+              <li>Bitte erscheinen Sie nicht, falls Sie Erkältungssymptome haben.</li>
+              <li>Begleitpersonen sind herzlich willkommen.</li>
+            </ul>
+          </div>
+
+          <!-- Anfahrt -->
+          <div class="transport-section" id="anfahrt">
+            <h3>Anfahrt</h3>
+            <div class="transport-grid">
+              <div class="transport-item">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Mit dem Auto
+                </h4>
+                <p>Kostenpflichtiges Parken in der Tiefgarage der Klinik Linde direkt vor Ort. Die Einfahrt befindet sich am Blumenrain.</p>
+              </div>
+              <div class="transport-item">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M8 15h.01"/><path d="M16 15h.01"/></svg>
+                  Mit dem öffentlichen Verkehr
+                </h4>
+                <p>Bus Nr. 8 ab Bahnhof Biel/Bienne bis Haltestelle «Klinik Linde» — Fahrt ca. 10 Minuten, Takt alle 15 Minuten.</p>
+              </div>
+            </div>
+
+            <!-- Map placeholder (cookie consent wall replaces live iframe) -->
+            <div class="map-area" aria-label="Standort Klinik Linde auf Google Maps">
+              <div class="placeholder-media placeholder-media--map" role="img" aria-label="Karte – Hirslanden Klinik Linde, Biel">Karte – Hirslanden Klinik Linde, Biel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar: date list + registration CTA -->
+        <aside class="event-sidebar" aria-label="Terminübersicht und Anmeldung">
+          <div class="event-sidebar-card">
+            <div class="event-sidebar-head">
+              <h2>Nächste Termine</h2>
+              <p>Veranstaltungsserie — 6 Termine</p>
+            </div>
+            <ul class="event-dates">
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">25</span>
+                  <span class="mon">Jun.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 25.6.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 – 19:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">06</span>
+                  <span class="mon">Aug.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 6.8.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 – 19:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">03</span>
+                  <span class="mon">Sep.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 3.9.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 – 19:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">15</span>
+                  <span class="mon">Okt.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 15.10.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 – 19:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">12</span>
+                  <span class="mon">Nov.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 12.11.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 – 19:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="event-date-item">
+                <div class="event-date-chip" aria-hidden="true">
+                  <span class="day">08</span>
+                  <span class="mon">Dez.</span>
+                </div>
+                <div class="event-date-info">
+                  <p class="event-date-title">Informationsabend Geburt 8.12.</p>
+                  <div class="event-date-meta">
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Uhrzeit"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      18:30 Uhr
+                    </span>
+                    <span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Klinik Linde
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="event-sidebar-cta">
+              <a class="btn btn--primary"
+                 href="https://event.hirslanden.ch/events/informationsabend_geburt/?page=registration&language=de"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Anmelden
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. Contact CTA ─────────────────────────────────────────── -->
+  <section class="event-contact-section" data-section="contact-cta" data-intent="convert" data-layout="full-bleed">
+    <div class="container">
+      <div class="event-contact-copy">
+        <h2>Haben Sie Fragen zum Informationsabend?</h2>
+        <p>Unser Kurswesen-Team der Klinik Linde beantwortet Ihre Anfragen gerne und hilft Ihnen bei der Anmeldung.</p>
+      </div>
+      <a class="btn btn--onblue"
+         href="mailto:kurswesen.linde@hirslanden.ch">
+        kurswesen.linde@hirslanden.ch
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 4. Related events: 3-up cards ─────────────────────────── -->
+  <section class="related-events" data-section="related-events" data-intent="discover" data-layout="grid" data-items="3">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Weitere Veranstaltungen</p>
+        <h2>Weitere Kurse &amp; Veranstaltungen der Klinik Linde</h2>
+      </div>
+      <div class="related-grid">
+
+        <a class="related-card"
+           href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt.html">
+          <div class="related-card-head">
+            <div class="related-date-chip">
+              <span class="day">25</span>
+              <span class="mon">Jun.</span>
+            </div>
+            <div class="related-card-date-info">
+              <p class="related-card-cat">Schwangerschaft</p>
+              <p class="related-card-time">18:30 – 20:00 Uhr</p>
+            </div>
+          </div>
+          <div class="related-card-body">
+            <h3 class="related-card-title">Geburtsvorbereitungskurs Intensiv</h3>
+            <p class="related-card-loc">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Klinik Linde, Biel
+            </p>
+          </div>
+        </a>
+
+        <a class="related-card"
+           href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt.html">
+          <div class="related-card-head">
+            <div class="related-date-chip">
+              <span class="day">01</span>
+              <span class="mon">Jul.</span>
+            </div>
+            <div class="related-card-date-info">
+              <p class="related-card-cat">Wochenbett</p>
+              <p class="related-card-time">09:00 – 11:00 Uhr</p>
+            </div>
+          </div>
+          <div class="related-card-body">
+            <h3 class="related-card-title">Informationsabend Wochenbett und Stillberatung</h3>
+            <p class="related-card-loc">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Klinik Linde, Biel
+            </p>
+          </div>
+        </a>
+
+        <a class="related-card"
+           href="../../../../de/corporate/kurse-und-veranstaltungen.html">
+          <div class="related-card-head">
+            <div class="related-date-chip">
+              <span class="day">06</span>
+              <span class="mon">Aug.</span>
+            </div>
+            <div class="related-card-date-info">
+              <p class="related-card-cat">Babymassage</p>
+              <p class="related-card-time">14:00 – 15:30 Uhr</p>
+            </div>
+          </div>
+          <div class="related-card-body">
+            <h3 class="related-card-title">Babymassage für Eltern</h3>
+            <p class="related-card-loc">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Ort"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Klinik Linde, Biel
+            </p>
+          </div>
+        </a>
+
+      </div>
+      <div style="margin-top:var(--spacing-2xl);text-align:center;">
+        <a class="readmore" href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen.html">
+          Alle Veranstaltungen der Klinik Linde
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── footer (from A) ──────────────────────────────────────────── -->
+<footer class="site-footer" data-canon data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div>
+        <h2>Hirslanden-Gruppe</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../../../../de/corporate/klinikaufenthalt.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="../../../../de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="../../../../de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+        <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+        <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.clinic-intro {
+  background: var(--color-bg);
+  padding-block: var(--section-padding);
+}
+
+.clinic-intro .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.clinic-intro-lead p {
+  font-size: var(--heading-md);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-fg);
+  max-width: 52ch;
+}
+
+.clinic-intro-lead p + p { margin-top: var(--spacing-md); }
+
+.contact-card {
+  background: var(--color-bg);
+  border-top: 3px solid var(--color-accent);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-xl);
+}
+
+.contact-card h3 {
+  font-size: var(--heading-md);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  font-size: var(--body-sm);
+  color: var(--color-fg);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.contact-line svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--color-accent-ink);
+}
+
+.contact-emergency a {
+  color: var(--color-emergency);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-line a {
+  color: var(--color-accent-ink);
+  text-decoration: none;
+}
+
+.contact-line a:hover { text-decoration: underline; }
+
+.contact-emergency a:hover { text-decoration: underline; }
+
+.contact-emergency {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  font-size: var(--body-sm);
+  color: var(--color-fg);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-hairline);
+  line-height: 1.4;
+}
+
+.contact-emergency svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--color-emergency);
+}
+
+.contact-card .btn { margin-top: var(--spacing-lg); }
+
+@media (width <= 900px) {
+  .clinic-intro .container { grid-template-columns: 1fr; }
+}

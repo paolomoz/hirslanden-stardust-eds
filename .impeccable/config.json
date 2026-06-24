@@ -4,6 +4,13 @@
     "ignoreFiles": [
       "stardust/prototypes/specialty-topic-proposed.html"
     ],
-    "ignoreValues": []
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "reason": "Arial is the metric-matched CLS fallback override (stardust:deploy #11), not a brand design choice",
+        "createdAt": "2026-06-24T21:04:06.351Z"
+      }
+    ]
   }
 }

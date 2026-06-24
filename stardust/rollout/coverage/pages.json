@@ -1,0 +1,299 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-06-24T20:49:57.875Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.13.0"
+  },
+  "generatedAt": "2026-06-24T20:49:57.875Z",
+  "pages": [
+    {
+      "slug": "clinic-detail",
+      "path": "/de/klinik-linde/home",
+      "title": "Hirslanden Klinik Linde, Biel",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/klinik-linde/home.html",
+        "metaJson": "stardust/migrated/de/klinik-linde/home._meta.json",
+        "sourceHash": "sha256:b87724ab3a82a76567e1f13feb716b5c163b98c2c9e97c8d1b85417fecd1c459"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "clinic-listing",
+      "path": "/de/corporate/kliniken-und-zentren",
+      "title": "Kliniken und Zentren | Hirslanden",
+      "templateId": "listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/kliniken-und-zentren.html",
+        "metaJson": "stardust/migrated/de/corporate/kliniken-und-zentren._meta.json",
+        "sourceHash": "sha256:37c41e502a4d1ec24193a947597a3447ba5dde893de9a69583d579e17832fc18"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "content-page",
+      "path": "/de/corporate/ueber-uns/hingabe",
+      "title": "Hingabe, die man spürt. | Hirslanden",
+      "templateId": "editorial",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/ueber-uns/hingabe.html",
+        "metaJson": "stardust/migrated/de/corporate/ueber-uns/hingabe._meta.json",
+        "sourceHash": "sha256:12139bd411631588477af7719b63a3655b7b414ab802ca002d881dce12b76b32"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "disease-detail",
+      "path": "/de/corporate/krankheitsbilder/brustkrebs",
+      "title": "Brustkrebs - Symptome, Diagnose & Behandlung | Hirslanden",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/krankheitsbilder/brustkrebs.html",
+        "metaJson": "stardust/migrated/de/corporate/krankheitsbilder/brustkrebs._meta.json",
+        "sourceHash": "sha256:5fa04529d6cfab4e911d01790842a16ba4af56b252f532a65cb4c85c99b91c42"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "doctor-profile",
+      "path": "/de/corporate/aerzte/3/dr-med-christof-abaecherli",
+      "title": "Dr. med. Christof Abächerli | Hirslanden-Gruppe",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
+        "metaJson": "stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli._meta.json",
+        "sourceHash": "sha256:ac83ce5dabcc879093fe7c34617c2c5942c9c6889b2ac2ea8f71bb77756ee43b"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "event-detail",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
+      "title": "Informationsabend Geburt",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+        "metaJson": "stardust/migrated/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt._meta.json",
+        "sourceHash": "sha256:1a8cd364095714ee35376d4152f7628b4c2cdfeea578267e199d7deafa3d7d51"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "event-listing",
+      "path": "/de/corporate/kurse-und-veranstaltungen",
+      "title": "Kurse und Veranstaltungen | Hirslanden",
+      "templateId": "listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/kurse-und-veranstaltungen.html",
+        "metaJson": "stardust/migrated/de/corporate/kurse-und-veranstaltungen._meta.json",
+        "sourceHash": "sha256:bfe6f7c1d629539f5d0e0a575b946c6585f130b0bb3c253063f22e865e02e28b"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "home",
+      "path": "/",
+      "title": "Hirslanden-Gruppe, Schweiz",
+      "templateId": "landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:cf5f8fcd65276f534c2f16b998ba9a2bbc0bd6a5b8dac2a157951c44a2d8f799"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "news-article",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
+      "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève | Hirslanden",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+        "metaJson": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve._meta.json",
+        "sourceHash": "sha256:be23b2f52156545a267190bb31ec3f305b2a021369c03758627e62d37ecfd3e1"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "news-listing",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
+      "title": "News & Medienmitteilungen | Hirslanden",
+      "templateId": "listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+        "metaJson": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news._meta.json",
+        "sourceHash": "sha256:3eca4c9bf404bfcdccf2445caceaf52ac0e59af032fd3ba2f96bf4823b3ff175"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "patient-info",
+      "path": "/de/corporate/klinikaufenthalt",
+      "title": "Klinikaufenthalt | Hirslanden",
+      "templateId": "editorial",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/klinikaufenthalt.html",
+        "metaJson": "stardust/migrated/de/corporate/klinikaufenthalt._meta.json",
+        "sourceHash": "sha256:09e1ca1b60c84dd970dc28789e5296e405aa29d4bfc494e57c6c159541202e04"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "specialty-topic",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
+      "title": "Herzmedizin (Kardiologie) | Hirslanden",
+      "templateId": "editorial",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+        "metaJson": "stardust/migrated/de/corporate/fuer-alle-folgen-des-lebens/kardiologie._meta.json",
+        "sourceHash": "sha256:2a7a831fbb056bc64f54c1d98fc66e0cbcc8a7782d673bda041a9d15f1379fda"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "treatment-detail",
+      "path": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen",
+      "title": "Hernienoperation – Behandlung & Ablauf | Hirslanden",
+      "templateId": "detail",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
+        "metaJson": "stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen._meta.json",
+        "sourceHash": "sha256:7fd63169af8a52a30533997787aa21df73a21c9a3ba70f41821ca8e16945a73a"
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    }
+  ]
+}

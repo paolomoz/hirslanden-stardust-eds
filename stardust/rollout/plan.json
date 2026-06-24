@@ -1,0 +1,287 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-06-24T20:50:10.597Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.13.0"
+  },
+  "generatedAt": "2026-06-24T20:50:10.597Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "clinic-detail",
+    "disease-detail",
+    "doctor-profile",
+    "event-detail",
+    "news-article",
+    "treatment-detail",
+    "content-page",
+    "patient-info",
+    "specialty-topic",
+    "clinic-listing",
+    "event-listing",
+    "news-listing",
+    "home"
+  ],
+  "steps": [
+    {
+      "slug": "clinic-detail",
+      "path": "/de/klinik-linde/home",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "disease-detail",
+      "path": "/de/corporate/krankheitsbilder/brustkrebs",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "doctor-profile",
+      "path": "/de/corporate/aerzte/3/dr-med-christof-abaecherli",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "event-detail",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "news-article",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "treatment-detail",
+      "path": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen",
+      "templateId": "detail",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "content-page",
+      "path": "/de/corporate/ueber-uns/hingabe",
+      "templateId": "editorial",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "patient-info",
+      "path": "/de/corporate/klinikaufenthalt",
+      "templateId": "editorial",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "specialty-topic",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
+      "templateId": "editorial",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "clinic-listing",
+      "path": "/de/corporate/kliniken-und-zentren",
+      "templateId": "listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "event-listing",
+      "path": "/de/corporate/kurse-und-veranstaltungen",
+      "templateId": "listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "news-listing",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
+      "templateId": "listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "path": "/",
+      "templateId": "landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "clinic-detail"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "clinic-detail"
+        }
+      ]
+    }
+  ]
+}

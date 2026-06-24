@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-06-24T20:49:57.875Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.13.0"
+  },
+  "generatedAt": "2026-06-24T20:49:57.875Z",
+  "templates": [
+    {
+      "id": "detail",
+      "representativeSlug": "clinic-detail",
+      "pages": [
+        "clinic-detail",
+        "disease-detail",
+        "doctor-profile",
+        "event-detail",
+        "news-article",
+        "treatment-detail"
+      ],
+      "pageCount": 6,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "pending": 6
+      }
+    },
+    {
+      "id": "editorial",
+      "representativeSlug": "content-page",
+      "pages": [
+        "content-page",
+        "patient-info",
+        "specialty-topic"
+      ],
+      "pageCount": 3,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "pending": 3
+      }
+    },
+    {
+      "id": "landing",
+      "representativeSlug": "home",
+      "pages": [
+        "home"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "pending": 1
+      }
+    },
+    {
+      "id": "listing",
+      "representativeSlug": "clinic-listing",
+      "pages": [
+        "clinic-listing",
+        "event-listing",
+        "news-listing"
+      ],
+      "pageCount": 3,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "pending": 3
+      }
+    }
+  ]
+}

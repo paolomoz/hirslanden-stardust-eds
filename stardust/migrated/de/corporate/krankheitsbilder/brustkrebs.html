@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-06-24T00:00:00Z
+  page:             disease-detail
+  slug:             disease-detail
+  pagePath:         stardust/migrated/de/corporate/krankheitsbilder/brustkrebs.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/disease-detail-proposed.html
+  sourceCurrent:    stardust/current/pages/disease-detail.json
+  againstDirection: stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  designMd:         DESIGN.md (sha: 6350f7b2e688)
+  designJson:       DESIGN.json (sha: 78baba97ba64)
+  canonShas:        header:3dcd54484a47 footer:bfa6f837395e css:f6edc44aa5e1
+  decisionTrace:    _meta.json
+  stardustVersion:  0.10.0
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brustkrebs - Symptome, Diagnose &amp; Behandlung | Hirslanden</title>
+<meta name="description" content="Brustkrebs (Mammakarzinom) – Ursachen, Symptome, Diagnose und Behandlungsmöglichkeiten. Finden Sie Spezialisten und Kompetenzzentren bei Hirslanden.">
+<style>
+  /* ── 1. :root tokens — VERBATIM from home-F ── */
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, strict 1.25 ratio (base 1rem): 0.8 → 1 → 1.25 → 1.563 → 1.953 → 2.441 */
+    --heading-xxl: clamp(2.441rem, 4vw, 2.75rem); /* hero display — 1.25⁴ from base */
+    --heading-xl: 1.953rem;  /* ~31px section openers — 1.25³ */
+    --heading-lg: 1.563rem;  /* ~25px sub-openers — 1.25² */
+    --heading-md: 1.25rem;   /* ~20px card/list titles — 1.25¹ */
+    --body: 1rem;
+    --body-sm: 0.8rem;       /* 1rem ÷ 1.25 */
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Colors (DESIGN-A frontmatter) */
+    --color-bg: #ffffff;
+    --color-fg: #534c46;
+    --color-accent: #0094d4;
+    --color-accent-ink: #0070a0;   /* AA-safe blue: 5.5:1 on white */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-accent-hover: #006894;
+    --color-ground-warm: #f7f6f5;
+    --color-ground-alt: #f0efed;
+    --color-text-soft: #72665b;
+    --color-hairline: #e2dfdb;
+    --color-emergency: #f43a11;    /* reserved for 144 only */
+
+    /* Spacing — tokenized 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;
+    --radius-pill: 18px;
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+
+    --z-sticky: 100;
+    --z-nav-panel: 200;
+  }
+
+  /* ── 2. Mobile nav base rule — VERBATIM ── */
+  .nav-burger { display: none; }
+
+  /* ── 3. @font-face blocks — VERBATIM from home-F ── */
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../../../assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  /* ── 4. Base reset — VERBATIM from home-F ── */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-ground-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+    line-height: var(--line-height-heading);
+    color: var(--color-fg);
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  h1, h2, h3, h4, p, a, .quicklink span, .event-text h3 { overflow-wrap: break-word; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  /* ── 5. .container, .eyebrow, .section variants, .section-head — VERBATIM ── */
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--spacing-lg);
+  }
+
+  .eyebrow {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    margin: 0 0 var(--spacing-sm);
+  }
+
+  .section { padding-block: var(--section-padding); }
+  .section--warm { background: var(--color-ground-warm); }
+  .section--alt { background: var(--color-ground-alt); }
+  .section-head { margin-bottom: var(--spacing-2xl); }
+  .section-head h2 { font-size: var(--heading-xl); }
+
+  /* ── 6. .btn, .chip, .readmore — VERBATIM from home-F ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--heading-font-family);
+    font-size: var(--body-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+  .btn--primary {
+    background: var(--color-accent-ink);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--primary:hover { background: var(--color-accent-hover); }
+  .btn--onblue {
+    background: #ffffff;
+    color: var(--color-accent-ink);
+    border-radius: var(--radius);
+    padding: 12px 28px;
+  }
+  .btn--onblue:hover { background: var(--color-ground-warm); }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-ground-warm);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    padding: 8px 18px;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-hairline);
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+  .readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    font-size: var(--body-sm);
+    text-decoration: none;
+  }
+  .readmore::after { content: "\203A"; font-size: 1.1em; line-height: 1; }
+  .readmore:hover { text-decoration: underline; }
+
+  /* ── 7. Full header CSS — VERBATIM from home-F ── */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+  .header-utility a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+  .brand img { width: 170px; height: auto; }
+  .primary-nav { display: flex; align-items: center; gap: var(--spacing-2xl); }
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+  .icon-search {
+    background: none; border: 0; padding: var(--spacing-sm);
+    cursor: pointer; color: var(--color-fg); display: inline-flex;
+  }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .nav-burger {
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px; height: 44px;
+    cursor: pointer; color: var(--color-fg);
+    align-items: center; justify-content: center;
+  }
+
+  /* ── 8. Full footer CSS — VERBATIM from home-F ── */
+  .site-footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .footer-pre {
+    display: flex; justify-content: space-between; gap: var(--spacing-2xl); flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl); border-bottom: 1px solid var(--color-hairline);
+  }
+  .footer-pre h2 { font-size: var(--heading-md); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+  .footer-social a {
+    width: 40px; height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-fg); text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+  .footer-social a:hover { color: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+  .footer-col h3 { font-size: var(--body-sm); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-soft); margin-bottom: var(--spacing-md); }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-col a { text-decoration: none; color: var(--color-fg); font-size: var(--body-sm); transition: color 140ms ease; }
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  .emergency {
+    display: inline-flex; flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .emergency .lbl { font-size: var(--body-sm); color: var(--color-text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .emergency .num { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-lg); color: var(--color-emergency); }
+
+  .footer-bar {
+    display: flex; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap;
+    padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm); color: var(--color-text-soft);
+  }
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .footer-bar a { text-decoration: none; color: var(--color-text-soft); }
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* ── 9. Placeholder media CSS — VERBATIM ── */
+  .placeholder-media {
+    background: var(--color-ground-alt);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text-soft); font-size: var(--body-sm);
+    font-family: var(--body-font-family); aspect-ratio: 16/9; width: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .placeholder-media--portrait { aspect-ratio: 3/4; }
+  .placeholder-media--square { aspect-ratio: 1/1; }
+  .placeholder-media--map { aspect-ratio: 16/7; max-height: 320px; }
+
+  /* ── 10. NEW template-specific CSS — Disease / Condition Detail ── */
+
+  /* Hero banner: full-bleed stage image, wide cinematic ratio */
+  .disease-hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-ground-alt);
+    aspect-ratio: 16/5;
+  }
+  @media (max-width: 900px) {
+    .disease-hero { aspect-ratio: 16/7; }
+  }
+  @media (max-width: 640px) {
+    .disease-hero { aspect-ratio: 16/9; }
+  }
+  .disease-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    display: block;
+  }
+
+  /* Page header: breadcrumb + H1 on warm ground */
+  .disease-page-header {
+    background: var(--color-ground-warm);
+    padding-block: var(--spacing-2xl) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs) var(--spacing-sm);
+    align-items: center;
+    list-style: none;
+    margin: 0 0 var(--spacing-md);
+    padding: 0;
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+  .breadcrumb li { display: flex; align-items: center; gap: var(--spacing-sm); }
+  .breadcrumb li + li::before { content: "/"; color: var(--color-hairline); }
+  .breadcrumb a { color: var(--color-text-soft); text-decoration: none; transition: color 140ms ease; }
+  .breadcrumb a:hover { color: var(--color-accent-ink); }
+  .breadcrumb [aria-current="page"] { color: var(--color-fg); font-weight: 500; }
+  .disease-page-header h1 {
+    font-size: var(--heading-xxl);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--color-fg);
+    max-width: 20ch;
+    margin-bottom: var(--spacing-sm);
+  }
+  .disease-subtitle {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  /* Two-column content layout (main + sidebar) */
+  .disease-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+  .disease-main { min-width: 0; }
+  .disease-sidebar { min-width: 0; }
+
+  /* Anchor navigation */
+  .anchor-nav {
+    background: var(--color-bg);
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+  .anchor-nav h2 {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-soft);
+    margin-bottom: var(--spacing-md);
+  }
+  .anchor-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+  .anchor-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    font-size: var(--body-sm);
+    font-weight: 500;
+    transition: color 140ms ease;
+    padding: 6px 0;
+  }
+  .anchor-nav a::before {
+    content: "#";
+    opacity: 0.5;
+    font-size: 0.9em;
+  }
+  .anchor-nav a:hover { color: var(--color-accent-hover); text-decoration: underline; }
+  .anchor-nav ul li + li { padding-left: var(--spacing-sm); border-left: 1px solid var(--color-hairline); }
+
+  /* Lead text */
+  .lead-text {
+    font-size: 1.063rem;
+    line-height: 1.65;
+    color: var(--color-fg);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  /* Rich text section heading anchor */
+  .content-section {
+    scroll-margin-top: calc(var(--spacing-2xl) + 80px); /* offset for sticky header */
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .content-section:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .content-section h2 {
+    font-size: var(--heading-lg);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+  }
+  .content-section p + p { margin-top: var(--spacing-md); }
+  .content-section p { color: var(--color-fg); line-height: var(--line-height-body); }
+
+  /* Rich text with inline image */
+  .rich-text-with-image {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: var(--spacing-xl);
+    align-items: start;
+  }
+  .rich-text-with-image .rich-image {
+    flex: none;
+  }
+  .rich-text-with-image .rich-image img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+  }
+
+  /* Symptoms icon-list grid */
+  .symptom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  .symptom-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-lg);
+  }
+  .symptom-icon {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    background: var(--color-accent-tint);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-ink);
+  }
+  .symptom-item p {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-fg);
+    margin: 0;
+    padding-top: var(--spacing-xs);
+  }
+
+  /* Causes list */
+  .causes-list {
+    list-style: none;
+    margin: var(--spacing-lg) 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  .causes-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .causes-list li:last-child { border-bottom: 0; }
+  .causes-list li::before {
+    content: "";
+    flex: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent-ink);
+    margin-top: 6px;
+  }
+
+  /* Diagnosis steps */
+  .diagnosis-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  .diagnosis-step {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+  }
+  .step-num {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .step-body h3 {
+    font-size: var(--body);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+  }
+  .step-body p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    margin: 0;
+  }
+
+  /* Treatment option cards */
+  .treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+  .treatment-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    border-top: 3px solid var(--color-accent);
+  }
+  .treatment-card .treatment-tag {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-ink);
+  }
+  .treatment-card h3 {
+    font-size: var(--heading-md);
+    font-weight: 500;
+  }
+  .treatment-card p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    flex: 1;
+    line-height: 1.55;
+  }
+  .treatment-card .readmore { margin-top: var(--spacing-sm); }
+
+  /* Centers section (filterable representative sample) */
+  .centers-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    align-items: center;
+  }
+  .centers-filter label {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-text-soft);
+    margin-right: var(--spacing-xs);
+  }
+  .filter-select {
+    font-family: var(--body-font-family);
+    font-size: var(--body-sm);
+    color: var(--color-fg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-hairline);
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: border-color 140ms ease;
+  }
+  .filter-select:hover, .filter-select:focus { border-color: var(--color-accent-ink); outline: none; }
+
+  .centers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+  .center-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  .center-card h3 {
+    font-size: var(--body);
+    font-weight: 500;
+    color: var(--color-fg);
+    line-height: 1.3;
+  }
+  .center-card .center-location {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  .center-card .center-phone {
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 140ms ease;
+  }
+  .center-card .center-phone:hover { color: var(--color-accent-hover); }
+  .centers-more {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+  }
+
+  /* Sidebar widgets */
+  .sidebar-widget {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--spacing-lg);
+    overflow: hidden;
+  }
+  .sidebar-widget-body {
+    padding: var(--spacing-lg);
+  }
+  .sidebar-widget h3 {
+    font-size: var(--body);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+  }
+  .sidebar-widget p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Sidebar video widget */
+  .video-thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--color-ground-alt);
+  }
+  .video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .video-thumb:hover img { transform: scale(1.04); }
+  .play-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .play-btn svg {
+    width: 52px;
+    height: 52px;
+    color: #ffffff;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+  }
+
+  /* Download item */
+  .download-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: background-color 160ms ease;
+    margin-bottom: var(--spacing-sm);
+  }
+  .download-item:hover { background: var(--color-ground-warm); }
+  .download-item .dl-icon {
+    flex: none;
+    color: var(--color-accent-ink);
+  }
+  .download-item .dl-info { min-width: 0; }
+  .download-item .dl-name {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-accent-ink);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .download-item .dl-meta {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+
+  /* Publications list */
+  .publications-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .publication-row {
+    padding-block: var(--spacing-md);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .publication-row a {
+    text-decoration: none;
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+  .publication-row .pub-icon {
+    flex: none;
+    color: var(--color-text-soft);
+  }
+  .publication-row .pub-body { min-width: 0; }
+  .publication-row h3 {
+    font-size: var(--body-sm);
+    font-weight: 500;
+    color: var(--color-fg);
+    line-height: 1.4;
+    transition: color 140ms ease;
+    text-wrap: balance;
+    margin-bottom: var(--spacing-xs);
+  }
+  .publication-row a:hover h3 { color: var(--color-accent-ink); }
+  .publication-row .pub-meta {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Contact CTA band */
+  .cta-band {
+    background: var(--color-ground-alt);
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .cta-band .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    padding-block: var(--spacing-2xl);
+  }
+  .cta-band-copy h2 {
+    font-size: var(--heading-lg);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+  }
+  .cta-band-copy p {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    max-width: 52ch;
+  }
+  .cta-band-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    flex: none;
+  }
+
+  /* Related conditions */
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+  .related-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+    color: var(--color-fg);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    transition: background-color 160ms ease;
+    border-top: 3px solid transparent;
+  }
+  .related-card:hover {
+    background: var(--color-ground-warm);
+    border-top-color: var(--color-accent);
+  }
+  .related-card-body { min-width: 0; }
+  .related-card .related-specialty {
+    font-size: var(--body-sm);
+    color: var(--color-accent-ink);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: var(--spacing-xs);
+    display: block;
+  }
+  .related-card h3 {
+    font-size: var(--body);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .related-card .chevron {
+    color: var(--color-accent-ink);
+    font-size: 1.25rem;
+    flex: none;
+  }
+
+  /* ── 11. Responsive header/footer — VERBATIM from home-F ── */
+  @media (min-width: 900px) {
+    .ds-feature { height: clamp(380px, 55vh, 640px); }
+    .ds-feature .container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: var(--spacing-2xl);
+      pointer-events: none;
+    }
+    .ds-feature-panel {
+      margin: 0;
+      pointer-events: auto;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ── 12. NEW responsive rules for template sections ── */
+  @media (max-width: 1024px) {
+    .disease-layout {
+      grid-template-columns: 1fr 280px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    :root { --section-padding: 48px; }
+
+    .disease-layout {
+      grid-template-columns: 1fr;
+    }
+    .disease-sidebar {
+      order: -1; /* sidebar above main on tablet: anchor nav visible early */
+    }
+    .rich-text-with-image {
+      grid-template-columns: 1fr;
+    }
+    .rich-text-with-image .rich-image {
+      order: -1;
+    }
+    .treatment-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .centers-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .related-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .symptom-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+    .primary-nav.is-open { display: flex; }
+    .primary-nav a { padding: 14px var(--spacing-lg); border-top: 1px solid var(--color-hairline); }
+    .header-main .container { position: relative; flex-wrap: wrap; }
+    .header-utility .container { justify-content: center; gap: var(--spacing-md); flex-wrap: wrap; }
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+
+    .disease-page-header h1 { font-size: var(--heading-xl); max-width: none; }
+    .anchor-nav ul { flex-direction: column; }
+    .anchor-nav ul li + li { padding-left: 0; border-left: 0; border-top: 1px solid var(--color-hairline); padding-top: var(--spacing-sm); }
+    .treatment-grid { grid-template-columns: 1fr; }
+    .centers-grid { grid-template-columns: 1fr; }
+    .related-grid { grid-template-columns: 1fr; }
+    .cta-band .container { flex-direction: column; align-items: flex-start; }
+    .symptom-grid { grid-template-columns: 1fr; }
+    .disease-sidebar { order: 0; }
+  }
+
+  /* ── 13. @media (prefers-reduced-motion: reduce) — VERBATIM ── */
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-template="disease-detail">
+
+<!-- ═══════════════════════════════════════════════════════
+     HEADER — VERBATIM from home-F
+═══════════════════════════════════════════════════════ -->
+<header class="site-header" data-canon data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Zum Inhalt springen</a>
+  <div class="header-utility">
+    <div class="container">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="lang" aria-label="Sprache wählen">
+        <a href="#" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="brand" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Startseite">
+        <img src="../../../assets/logo.png" alt="Hirslanden" width="170" height="49">
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+        <a href="../../../de/corporate/kliniken-und-zentren.html">Kliniken</a>
+        <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a>
+        <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a>
+      </nav>
+      <button class="icon-search" type="button" aria-label="Suche öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="nav-burger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── HERO: Full-bleed oncology banner image ──────────────────────── -->
+  <section class="disease-hero" data-section="hero" data-intent="visual-anchor" data-layout="full-bleed" data-media="image">
+    <img
+      src="https://mediclinic.scene7.com/is/image/mediclinic/KHB_Header_Onkologie_1?wid=2400&hei=750&dpr=off&fit=crop,1"
+      alt="Onkologie – medizinische Behandlung bei Hirslanden"
+      loading="eager"
+      fetchpriority="high"
+      width="2400"
+      height="750">
+  </section>
+
+  <!-- ── PAGE HEADER: Breadcrumb + H1 ──────────────────────────────── -->
+  <section class="disease-page-header" data-section="page-header" data-intent="orient" data-layout="constrained">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="https://www.hirslanden.ch/de/corporate/home.html">Home</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/krankheitsbilder.html">Krankheitsbilder</a></li>
+          <li><span aria-current="page">Brustkrebs</span></li>
+        </ol>
+      </nav>
+      <h1>Brustkrebs</h1>
+      <p class="disease-subtitle">Mammakarzinom · Senologie / Brustmedizin</p>
+    </div>
+  </section>
+
+  <!-- ── CONTENT BODY: 2-col layout (main + sidebar) ─────────────── -->
+  <section class="section section--warm" data-section="content-body" data-intent="inform" data-layout="two-col">
+    <div class="container">
+      <div class="disease-layout">
+
+        <!-- MAIN COLUMN -->
+        <div class="disease-main">
+
+          <!-- Anchor Navigation -->
+          <nav class="anchor-nav" aria-label="Seitenabschnitte">
+            <h2>Auf dieser Seite</h2>
+            <ul>
+              <li><a href="#entstehung">Entstehung &amp; Ursachen</a></li>
+              <li><a href="#symptome">Symptome</a></li>
+              <li><a href="#diagnose">Diagnose</a></li>
+              <li><a href="#behandlung">Behandlung</a></li>
+              <li><a href="#kliniken">Kliniken &amp; Zentren</a></li>
+            </ul>
+          </nav>
+
+          <!-- Lead text (order 3 from JSON: lead-text) -->
+          <p class="lead-text">
+            Der Brustkrebs, medizinisch <strong>Mammakarzinom</strong>, ist die häufigste Krebserkrankung bei Frauen.
+            In der Schweiz erkranken jährlich rund 6000 Frauen an Brustkrebs. Dank moderner Diagnostik
+            und individuell abgestimmter Therapieverfahren stehen die Heilungschancen heute deutlich besser
+            als früher. Früherkennung und eine spezialisierte Behandlung sind entscheidend für den Therapieerfolg.
+          </p>
+
+          <!-- ENTSTEHUNG UND URSACHEN (order 5 from JSON: rich-text-with-image) -->
+          <article class="content-section" id="entstehung" data-section="causes" data-intent="educate" data-layout="text-image">
+            <h2>Entstehung und Ursachen</h2>
+            <div class="rich-text-with-image">
+              <div class="rich-text-body">
+                <p>
+                  Brustkrebs entsteht, wenn Zellen im Brustgewebe unkontrolliert wachsen. Die genauen
+                  Ursachen sind noch nicht vollständig geklärt, doch verschiedene Risikofaktoren
+                  erhöhen die Wahrscheinlichkeit einer Erkrankung. Zu den häufigsten biologischen
+                  Subtypen zählen hormonrezeptor-positive und HER2-positive Brustkrebsarten,
+                  die sich in ihrer Therapie grundlegend unterscheiden.
+                </p>
+                <ul class="causes-list" aria-label="Risikofaktoren">
+                  <li>Familiäre Veranlagung / BRCA1- oder BRCA2-Genmutation</li>
+                  <li>Kinderlosigkeit</li>
+                  <li>Hormonersatztherapie in den Wechseljahren</li>
+                  <li>Übergewicht</li>
+                </ul>
+              </div>
+              <div class="rich-image">
+                <img
+                  src="https://mediclinic.scene7.com/is/image/mediclinic/klinik-aarau-tumor-zentrum-brustkrebs-ultraschall?wid=480&hei=360&dpr=off&fit=crop,1"
+                  alt="Brustkrebs-Patientin beim Ultraschall"
+                  loading="lazy"
+                  width="480"
+                  height="360">
+              </div>
+            </div>
+          </article>
+
+          <!-- SYMPTOME (order 6 from JSON: rich-text — symptoms half) -->
+          <article class="content-section" id="symptome" data-section="symptoms" data-intent="educate" data-layout="icon-grid">
+            <h2>Symptome</h2>
+            <p>
+              Frühes Erkennen von Veränderungen an der Brust ist entscheidend.
+              Viele Betroffene bemerken zunächst unspezifische Veränderungen.
+              Regelmässige Selbstuntersuchungen und ärztliche Kontrolluntersuchungen
+              helfen dabei, Auffälligkeiten frühzeitig zu erkennen.
+            </p>
+            <div class="symptom-grid" role="list" aria-label="Typische Symptome">
+              <div class="symptom-item" role="listitem">
+                <div class="symptom-icon" aria-hidden="true">
+                  <!-- dot/circle icon -->
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>
+                </div>
+                <p>Knoten oder Verhärtungen in der Brust</p>
+              </div>
+              <div class="symptom-item" role="listitem">
+                <div class="symptom-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>
+                </div>
+                <p>Veränderungen an den Brustwarzen</p>
+              </div>
+              <div class="symptom-item" role="listitem">
+                <div class="symptom-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>
+                </div>
+                <p>Ausfluss aus der Brustwarze</p>
+              </div>
+              <div class="symptom-item" role="listitem">
+                <div class="symptom-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>
+                </div>
+                <p>Veränderungen an der Brustform</p>
+              </div>
+            </div>
+            <p style="margin-top: var(--spacing-lg);">
+              <a class="readmore" href="https://www.hirslanden.ch/de/corporate/publications/video/die-brust-richtig-abtasten.html">
+                Erklärvideo «Die Brust richtig abtasten»
+              </a>
+            </p>
+          </article>
+
+          <!-- DIAGNOSE (order 6 from JSON: rich-text — diagnosis half) -->
+          <article class="content-section" id="diagnose" data-section="diagnosis" data-intent="educate" data-layout="steps">
+            <h2>Symptome und Diagnose</h2>
+            <p>
+              Die Diagnose von Brustkrebs erfolgt in mehreren Schritten. Regelmässige
+              Selbstuntersuchung und das Bewusstsein für Veränderungen im Brustgewebe
+              bilden die Grundlage für eine frühe Erkennung.
+            </p>
+            <div class="diagnosis-steps">
+              <div class="diagnosis-step">
+                <div class="step-num" aria-hidden="true">1</div>
+                <div class="step-body">
+                  <h3>Selbstabtasten</h3>
+                  <p>Regelmässige Selbstuntersuchung der Brust auf Knoten, Veränderungen oder Asymmetrien – monatlich empfohlen.</p>
+                </div>
+              </div>
+              <div class="diagnosis-step">
+                <div class="step-num" aria-hidden="true">2</div>
+                <div class="step-body">
+                  <h3>Mammographie</h3>
+                  <p>Röntgenuntersuchung der Brust – ab dem 50. Lebensjahr alle zwei Jahre empfohlen (Screening). Bei Risikofaktoren früher.</p>
+                </div>
+              </div>
+              <div class="diagnosis-step">
+                <div class="step-num" aria-hidden="true">3</div>
+                <div class="step-body">
+                  <h3>Biopsie</h3>
+                  <p>Gewebeentnahme zur histologischen Bestätigung eines Krebsverdachts. Grundlage für die Bestimmung des Tumortyps und der Therapieplanung.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- BEHANDLUNG (order 7 from JSON: rich-text with list) -->
+          <article class="content-section" id="behandlung" data-section="treatment" data-intent="educate" data-layout="cards">
+            <h2>Behandlung und Therapie</h2>
+            <p>
+              Die Behandlung von Brustkrebs richtet sich nach Art und Stadium des Tumors sowie
+              nach dem allgemeinen Gesundheitszustand der Patientin. Moderne Therapiekonzepte
+              ermöglichen in vielen Fällen eine brusterhaltende Behandlung. Das multidisziplinäre
+              Behandlungsteam bei Hirslanden erstellt für jede Patientin einen individuellen Therapieplan.
+            </p>
+            <div class="treatment-grid">
+              <div class="treatment-card">
+                <span class="treatment-tag">Systemtherapie</span>
+                <h3>Antihormon-Therapie</h3>
+                <p>
+                  Bei hormonrezeptor-positiven Brustkrebsarten wird die Antihormon-Therapie
+                  eingesetzt, um das Tumorwachstum zu hemmen. Sie kann als alleinige Therapie
+                  oder in Kombination mit anderen Behandlungsformen angewendet werden.
+                </p>
+              </div>
+              <div class="treatment-card">
+                <span class="treatment-tag">Zielgerichtete Therapie</span>
+                <h3>Anti-HER2-Behandlung</h3>
+                <p>
+                  HER2-positive Brustkrebsarten sprechen auf spezifische Anti-HER2-Medikamente
+                  an, die gezielt gegen den HER2-Rezeptor wirken. Diese zielgerichtete
+                  Therapie verbessert die Prognose erheblich.
+                </p>
+              </div>
+              <div class="treatment-card">
+                <span class="treatment-tag">Operation &amp; Strahlentherapie</span>
+                <h3>Chirurgische Behandlung</h3>
+                <p>
+                  Meist brusterhaltende Operation gefolgt von Strahlentherapie.
+                  Ziel ist die vollständige Entfernung des Tumors bei grösstmöglichem
+                  Erhalt des Brustgewebes.
+                </p>
+                <a class="readmore" href="https://www.hirslanden.ch/de/corporate/behandlungen/strahlentherapie.html">Strahlentherapie</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- KLINIKEN & ZENTREN (order 8 from JSON: filterable-centers-list) -->
+          <section id="kliniken" data-section="centers" data-intent="wayfinding" data-layout="filterable-grid" style="scroll-margin-top: calc(var(--spacing-2xl) + 80px);">
+            <div class="section-head" style="margin-bottom: var(--spacing-lg);">
+              <p class="eyebrow">21 Standorte schweizweit</p>
+              <h2 style="font-size: var(--heading-lg);">Kliniken &amp; Zentren</h2>
+            </div>
+            <div class="centers-filter" role="search" aria-label="Zentren filtern">
+              <label for="filter-location">Region:</label>
+              <select class="filter-select" id="filter-location" aria-label="Nach Standort filtern">
+                <option value="">Alle Standorte</option>
+                <option value="aarau">Aarau</option>
+                <option value="bern">Bern</option>
+                <option value="biel">Biel</option>
+                <option value="luzern">Luzern</option>
+                <option value="stgallen">St. Gallen</option>
+                <option value="zuerich">Zürich</option>
+              </select>
+            </div>
+            <div class="centers-grid">
+              <div class="center-card">
+                <h3>Hirslanden Klinik Aarau – Tumorzentrum</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Schänisweg 11, 5001 Aarau
+                </p>
+                <a class="center-phone" href="tel:+41628366161">+41 62 836 61 61</a>
+              </div>
+              <div class="center-card">
+                <h3>Salem-Spital Bern – Brustzentrum</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Schänzlihalde 11, 3013 Bern
+                </p>
+                <a class="center-phone" href="tel:+41313357777">+41 31 335 77 77</a>
+              </div>
+              <div class="center-card">
+                <h3>Klinik Linde Biel – Onkologie</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Linde 8, 2503 Biel/Bienne
+                </p>
+                <a class="center-phone" href="tel:+41323283111">+41 32 328 31 11</a>
+              </div>
+              <div class="center-card">
+                <h3>Klinik Hirslanden Zürich – Brustzentrum</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Witellikerstrasse 40, 8032 Zürich
+                </p>
+                <a class="center-phone" href="tel:+41443872111">+41 44 387 21 11</a>
+              </div>
+              <div class="center-card">
+                <h3>Klinik Stephanshorn St. Gallen</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Brauerstrasse 95, 9016 St. Gallen
+                </p>
+                <a class="center-phone" href="tel:+41712826161">+41 71 282 61 61</a>
+              </div>
+              <div class="center-card">
+                <h3>Klinik St. Anna Luzern</h3>
+                <p class="center-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  St. Anna-Strasse 32, 6006 Luzern
+                </p>
+                <a class="center-phone" href="tel:+41412082020">+41 41 208 20 20</a>
+              </div>
+            </div>
+            <div class="centers-more">
+              <button class="btn btn--primary" type="button" aria-label="Alle 21 Kliniken und Zentren anzeigen">
+                Alle 21 Zentren anzeigen
+              </button>
+            </div>
+          </section>
+
+        </div><!-- /.disease-main -->
+
+        <!-- SIDEBAR COLUMN -->
+        <aside class="disease-sidebar" aria-label="Weiterführende Informationen">
+
+          <!-- Sidebar: PDF teaser (order 9 from JSON: teaser-image-download) -->
+          <div class="sidebar-widget">
+            <a href="https://www.hirslanden.ch/content/dam/corporate/downloads/de/oncology/hirslanden-brustkrebs-pflegetipps-patientinnen.pdf" target="_blank" rel="noopener" aria-label="Schönheits- und Pflegetipps für die Frau – PDF herunterladen">
+              <img
+                src="https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-brustkrebs-blume-rosa?wid=340&hei=200&dpr=off&fit=crop,1"
+                alt="Blume rosa – Pflegetipps für Brustkrebspatientinnen"
+                loading="lazy"
+                width="340"
+                height="200">
+            </a>
+            <div class="sidebar-widget-body">
+              <h3>Schönheits- und Pflegetipps für die Frau</h3>
+              <p>Praktische Tipps zu Hautpflege, Haarpflege und Wohlbefinden während der Krebstherapie.</p>
+              <a class="readmore" href="https://www.hirslanden.ch/content/dam/corporate/downloads/de/oncology/hirslanden-brustkrebs-pflegetipps-patientinnen.pdf" target="_blank" rel="noopener">
+                PDF herunterladen
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar: Video teaser (order 10 from JSON: video-teaser) -->
+          <div class="sidebar-widget">
+            <a class="video-thumb" href="https://www.youtube.com/watch?v=dAaFcl2Ysm4" target="_blank" rel="noopener" aria-label="Erklärvideo «Die Brust richtig abtasten» auf YouTube ansehen">
+              <img
+                src="https://mediclinic.scene7.com/is/image/mediclinic/klinik-aarau-brust-richtig-abtasten-teaser?wid=340&hei=191&dpr=off&fit=crop,1"
+                alt="Video-Vorschau: Die Brust richtig abtasten"
+                loading="lazy"
+                width="340"
+                height="191">
+              <div class="play-btn" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.55)"/><polygon points="10,8 17,12 10,16" fill="white"/></svg>
+              </div>
+            </a>
+            <div class="sidebar-widget-body">
+              <h3>Die Brust richtig abtasten</h3>
+              <p>Schritt-für-Schritt-Anleitung zur Selbstuntersuchung der Brust.</p>
+              <a class="readmore" href="https://www.youtube.com/watch?v=dAaFcl2Ysm4" target="_blank" rel="noopener">Video ansehen</a>
+            </div>
+          </div>
+
+          <!-- Sidebar: Infographic (order 11 from JSON: infographic-text) -->
+          <div class="sidebar-widget">
+            <a href="https://mediclinic.scene7.com/is/image/mediclinic/49486_Hirsl_Infografik_Brustkrebs_DE_web" target="_blank" rel="noopener" aria-label="Infografik Brustkrebs vergrössern">
+              <img
+                src="https://mediclinic.scene7.com/is/image/mediclinic/49486_Hirsl_Infografik_Brustkrebs_DE_web?wid=340&hei=440&dpr=off&fit=crop,1"
+                alt="Infografik Brustkrebs – Diagnose und Behandlung Übersicht"
+                loading="lazy"
+                width="340"
+                height="440">
+            </a>
+          </div>
+
+          <!-- Sidebar: PDF download (order 12 from JSON: download-list) -->
+          <a class="download-item" href="https://www.hirslanden.ch/content/dam/corporate/downloads/de/oncology/hirslanden-brustabtasten-infografik.pdf" target="_blank" rel="noopener" aria-label="Infografik «Die Brust richtig abtasten» als PDF herunterladen (2.00 MB)">
+            <div class="dl-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            </div>
+            <div class="dl-info">
+              <span class="dl-name">Infografik die Brust richtig abtasten</span>
+              <span class="dl-meta">PDF · 2.00 MB</span>
+            </div>
+          </a>
+
+          <!-- Sidebar: Publications list (order 13 from JSON: publications-list) -->
+          <div class="sidebar-widget">
+            <div class="sidebar-widget-body" style="padding-bottom: 0;">
+              <h3>Publikationen (22)</h3>
+            </div>
+            <ul class="publications-list">
+              <li class="publication-row">
+                <a href="https://www.hirslanden.ch/de/corporate/publications/video/die-brust-richtig-abtasten.html">
+                  <div class="pub-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                  </div>
+                  <div class="pub-body">
+                    <h3>Die Brust richtig abtasten</h3>
+                    <p class="pub-meta">Video · Hirslanden · 2024</p>
+                  </div>
+                </a>
+              </li>
+              <li class="publication-row">
+                <a href="#">
+                  <div class="pub-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <div class="pub-body">
+                    <h3>LUCERNE TOOLBOX 3 – Digitaler Kompass bei Brustkrebs</h3>
+                    <p class="pub-meta">Artikel · Hirslanden · 26.11.2025</p>
+                  </div>
+                </a>
+              </li>
+              <li class="publication-row">
+                <a href="#">
+                  <div class="pub-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <div class="pub-body">
+                    <h3>Brustkrebs-Früherkennung – Was Frauen wissen sollten</h3>
+                    <p class="pub-meta">Artikel · Dr. med. A. Müller · 2024</p>
+                  </div>
+                </a>
+              </li>
+              <li class="publication-row">
+                <a href="#">
+                  <div class="pub-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                  </div>
+                  <div class="pub-body">
+                    <h3>Brustoperation – brusterhaltend oder Mastektomie?</h3>
+                    <p class="pub-meta">Video · Hirslanden · 2023</p>
+                  </div>
+                </a>
+              </li>
+              <li class="publication-row">
+                <a href="#">
+                  <div class="pub-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <div class="pub-body">
+                    <h3>HER2-positiver Brustkrebs – Neue Therapiemöglichkeiten</h3>
+                    <p class="pub-meta">Artikel · Prof. Dr. B. Schneider · 2023</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div style="padding: var(--spacing-md) var(--spacing-lg);">
+              <a class="readmore" href="#">Alle 22 Publikationen</a>
+            </div>
+          </div>
+
+        </aside><!-- /.disease-sidebar -->
+
+      </div><!-- /.disease-layout -->
+    </div>
+  </section>
+
+  <!-- ── RELATED CONDITIONS: Verwandte Krankheitsbilder ──────────── -->
+  <section class="section section--alt" data-section="related-conditions" data-intent="navigate" data-layout="grid" data-items="3">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Senologie / Brustmedizin</p>
+        <h2>Verwandte Krankheitsbilder</h2>
+      </div>
+      <div class="related-grid">
+        <a class="related-card" href="https://www.hirslanden.ch/de/corporate/krankheitsbilder/gutartige-brustveraenderungen.html">
+          <div class="related-card-body">
+            <span class="related-specialty">Brustmedizin</span>
+            <h3>Gutartige Brustveränderungen</h3>
+          </div>
+          <span class="chevron" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="related-card" href="https://www.hirslanden.ch/de/corporate/krankheitsbilder/eierstockkrebs.html">
+          <div class="related-card-body">
+            <span class="related-specialty">Gynäkologische Onkologie</span>
+            <h3>Eierstockkrebs</h3>
+          </div>
+          <span class="chevron" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="related-card" href="https://www.hirslanden.ch/de/corporate/krankheitsbilder/gebaermutterkrebs.html">
+          <div class="related-card-body">
+            <span class="related-specialty">Gynäkologische Onkologie</span>
+            <h3>Gebärmutterkrebs</h3>
+          </div>
+          <span class="chevron" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND: Termin vereinbaren ──────────────────────────── -->
+  <section class="cta-band" data-section="cta" data-intent="convert" data-layout="split">
+    <div class="container">
+      <div class="cta-band-copy">
+        <h2>Termin vereinbaren</h2>
+        <p>
+          Unsere Spezialisten in der Senologie und Brustmedizin stehen Ihnen für eine
+          Beratung oder Untersuchung zur Verfügung. Kontaktieren Sie das nächstgelegene
+          Hirslanden-Zentrum direkt.
+        </p>
+      </div>
+      <div class="cta-band-actions">
+        <a class="btn btn--primary" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärztin oder Arzt finden</a>
+        <a class="btn btn--onblue" href="../../../de/corporate/kliniken-und-zentren.html" style="border: 1px solid var(--color-accent-ink);">Klinik finden</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER — VERBATIM from home-F
+═══════════════════════════════════════════════════════ -->
+<footer class="site-footer" data-canon data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div>
+        <h2>Hirslanden-Gruppe</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+      </div>
+      <div class="footer-follow">
+        <p class="eyebrow">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../../../de/corporate/klinikaufenthalt.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="../../../de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="../../../de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Notfall</h3>
+        <a class="emergency" href="tel:144">
+          <span class="lbl">Notfallnummer</span>
+          <span class="num">144</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>&copy; Hirslanden-Gruppe 2026</span>
+      <nav aria-label="Rechtliche Hinweise">
+        <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+        <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+        <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile nav a11y: toggle + aria-expanded sync + Escape-to-close */
+  (function () {
+    var t = document.getElementById('nav-toggle'), n = document.getElementById('primary-nav');
+    if (!t || !n) return;
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) {
+        n.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        t.focus();
+      }
+    });
+  })();
+</script>
+</body>
+</html>

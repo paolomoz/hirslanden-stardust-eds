@@ -1,0 +1,197 @@
+<style>
+  /* footer.footer is set by postlcp.js before injecting this fragment */
+  footer.footer {
+    background: var(--color-ground-alt);
+    padding-block: var(--section-padding);
+    border-top: 1px solid var(--color-hairline);
+    margin-top: 0;
+  }
+
+  .footer-pre {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+    padding-bottom: var(--spacing-2xl);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  .footer-pre h2 {
+    font-size: var(--heading-md);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .footer-pre p { max-width: 60ch; color: var(--color-text-soft); }
+
+  .footer-follow .eyebrow { margin-bottom: var(--spacing-sm); }
+
+  .footer-social { display: flex; gap: var(--spacing-sm); }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-hairline);
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-fg);
+    text-decoration: none;
+    transition: color 140ms ease, border-color 140ms ease;
+  }
+
+  .footer-social a:hover {
+    color: var(--color-accent-ink);
+    border-color: var(--color-accent-ink);
+  }
+
+  /* Link columns */
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+
+  .footer-col h3 {
+    font-size: var(--body-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-soft);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .footer-col a {
+    text-decoration: none;
+    color: var(--color-fg);
+    font-size: var(--body-sm);
+    transition: color 140ms ease;
+  }
+
+  .footer-col a:hover { color: var(--color-accent-ink); }
+
+  /* Emergency number */
+  .emergency {
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    border: 2px solid var(--color-emergency);
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .emergency .lbl {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .emergency .num {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: var(--heading-lg);
+    color: var(--color-emergency);
+  }
+
+  /* Legal bar */
+  .footer-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+
+  .footer-bar nav { display: flex; gap: var(--spacing-lg); flex-wrap: wrap; }
+
+  .footer-bar a {
+    text-decoration: none;
+    color: var(--color-text-soft);
+  }
+
+  .footer-bar a:hover { color: var(--color-accent-ink); }
+
+  /* Responsive */
+  @media (width <= 640px) {
+    .footer-cols { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+    .footer-pre, .footer-bar { flex-direction: column; }
+  }
+</style>
+
+<div class="container">
+  <div class="footer-pre">
+    <div>
+      <h2>Hirslanden</h2>
+      <p>Die f&uuml;hrende Privatklinikgruppe der Schweiz &ndash; mit 17 Kliniken und &uuml;ber 11&thinsp;000 Mitarbeitenden bieten wir erstklassige medizinische Versorgung f&uuml;r alle Patienten.</p>
+    </div>
+    <div class="footer-follow">
+      <p class="eyebrow">Folgen Sie uns</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+        <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h3>Kliniken</h3>
+      <ul>
+        <li><a href="/de/corporate/kliniken-und-zentren">Alle Kliniken</a></li>
+        <li><a href="https://www.hirslanden.ch/de/klinik-linde/home.html">Klinik Linde, Biel</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">&Auml;rztesuche</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Patienten</h3>
+      <ul>
+        <li><a href="/de/corporate/klinikaufenthalt">Klinikaufenthalt</a></li>
+        <li><a href="/de/corporate/kurse-und-veranstaltungen">Kurse &amp; Veranstaltungen</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/behandlungen.html">Behandlungen</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Hirslanden</h3>
+      <ul>
+        <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">&Uuml;ber Hirslanden</a></li>
+        <li><a href="/de/corporate/medien-und-news/medienmitteilungen-und-news">Medien &amp; News</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Notfall</h3>
+      <a class="emergency" href="tel:144">
+        <span class="lbl">Notfallnummer</span>
+        <span class="num">144</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <span>&copy; Hirslanden-Gruppe 2026</span>
+    <nav aria-label="Rechtliche Hinweise">
+      <a href="https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html">Nutzungsbedingungen</a>
+      <a href="https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html">Datenschutz Website</a>
+      <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Cookie Richtlinie</a>
+      <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+    </nav>
+  </div>
+</div>

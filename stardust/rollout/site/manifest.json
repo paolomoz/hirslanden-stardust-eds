@@ -1,0 +1,12 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/assemble",
+    "writtenAt": "2026-06-24T20:50:31.559Z",
+    "stardustVersion": "0.13.0"
+  },
+  "generatedAt": "2026-06-24T20:50:31.559Z",
+  "host": "https://https://main--hirslanden-stardust-eds--paolomoz.aem.live",
+  "sitemap": "stardust/rollout/site/sitemap.xml",
+  "robots": "stardust/rollout/site/robots.txt",
+  "fragments": []
+}
