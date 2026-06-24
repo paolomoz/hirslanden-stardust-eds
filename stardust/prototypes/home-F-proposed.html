@@ -508,6 +508,39 @@
   .blog-band h2 { color: #ffffff; font-size: var(--heading-lg); }
 
   /* ══════════════════════════════════════════
+     PROMO CARDS — live banner-slider as static editorial grid
+  ══════════════════════════════════════════ */
+  .promo-cards { background: var(--color-ground-alt); }
+  .promo-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+  }
+  .promo-card {
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+    display: flex; flex-direction: column;
+    text-decoration: none; color: inherit;
+    overflow: hidden;
+  }
+  .promo-card:hover .promo-card-title { color: var(--color-accent-ink); }
+  .promo-card-media { aspect-ratio: 3/2; overflow: hidden; }
+  .promo-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 220ms ease; }
+  .promo-card:hover .promo-card-media img { transform: scale(1.04); }
+  .promo-card-body { padding: var(--spacing-md); display: flex; flex-direction: column; gap: var(--spacing-xs); flex: 1; }
+  .promo-card-tag {
+    font-size: var(--body-sm); font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--color-accent-ink);
+  }
+  .promo-card-title {
+    font-size: var(--heading-md); font-weight: 500; line-height: 1.3;
+    transition: color 140ms ease; color: var(--color-fg);
+    margin: 0;
+  }
+  .promo-card-text { font-size: var(--body-sm); color: var(--color-text-soft); line-height: 1.5; flex: 1; }
+  .promo-card-cta { font-size: var(--body-sm); color: var(--color-accent-ink); font-weight: 500; margin-top: var(--spacing-sm); }
+
+  /* ══════════════════════════════════════════
      FOOTER (from A)
   ══════════════════════════════════════════ */
   .site-footer {
@@ -708,30 +741,100 @@
     </div>
   </section>
 
+  <!-- ── promo-cards (live banner-slider: 5 featured slides) ────────── -->
+  <section class="section promo-cards" data-section="promo-cards" data-intent="feature content" data-layout="grid" data-items="5">
+    <div class="container">
+      <div class="promo-cards-grid">
+        <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/wochenbett/rsv-immunisierung-bei-neugeborenen.html">
+          <div class="promo-card-media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/gettyimages-1455280026-170667a?_ck=2024-11-14T06%3A58%3A18.364Z&wid=1100&hei=738&dpr=off"
+                 alt="Mutter hält ihr Neugeborenes im Arm nach der Geburt" loading="lazy" width="1100" height="738">
+          </div>
+          <div class="promo-card-body">
+            <span class="promo-card-tag">Hirslanden Baby</span>
+            <h3 class="promo-card-title">RSV-Immunisierung bei Neugeborenen</h3>
+            <p class="promo-card-text">Das Respiratorische Synzytial-Virus (RSV) kann bei Neugeborenen zu schweren Atemwegsinfektionen führen. Eine neue Immunisierung schützt Neugeborene vor Spitalaufenthalten und reduziert schwere Krankheitsverläufe.</p>
+            <span class="promo-card-cta">Mehr erfahren ›</span>
+          </div>
+        </a>
+        <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html">
+          <div class="promo-card-media">
+            <img src="../current/assets/media/nr-dsc07282-b9625f14.jpg"
+                 alt="Chirurgisches Team im Operationssaal des Centre de Chirurgie Ambulatoire" loading="lazy" width="1100" height="734">
+          </div>
+          <div class="promo-card-body">
+            <span class="promo-card-tag">News</span>
+            <h3 class="promo-card-title">Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire</h3>
+            <p class="promo-card-text">Das aus einer Partnerschaft zwischen den Hôpitaux Universitaires de Genève (HUG) und der Hirslanden-Gruppe hervorgegangene Centre de Chirurgie Ambulatoire de Genève empfängt seine ersten Patientinnen und Patienten.</p>
+            <span class="promo-card-cta">Mehr erfahren ›</span>
+          </div>
+        </a>
+        <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html">
+          <div class="promo-card-media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-in-ihrer-naehe-karte?_ck=2024-07-29T11%3A09%3A09.888Z&wid=1100&hei=634&dpr=off"
+                 alt="Karte der Hirslanden-Standorte in der Schweiz" loading="lazy" width="1100" height="634">
+          </div>
+          <div class="promo-card-body">
+            <span class="promo-card-tag">Standorte</span>
+            <h3 class="promo-card-title">Hirslanden in Ihrer Nähe</h3>
+            <p class="promo-card-text">Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.</p>
+            <span class="promo-card-cta">Zu den Standorten ›</span>
+          </div>
+        </a>
+        <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html">
+          <div class="promo-card-media">
+            <img src="../current/assets/media/pflege-hingabe-6e8ca022.jpg"
+                 alt="Pflegerin kämmt der Patientin die Haare" loading="lazy" width="1024" height="683">
+          </div>
+          <div class="promo-card-body">
+            <span class="promo-card-tag">Hingabe, die man spürt</span>
+            <h3 class="promo-card-title">Gelebte Hingabe für Ihre Gesundheit</h3>
+            <p class="promo-card-text">Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht.</p>
+            <span class="promo-card-cta">Mehr erfahren ›</span>
+          </div>
+        </a>
+        <a class="promo-card" href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/healthline.html">
+          <div class="promo-card-media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/Healthline?_ck=2023-10-25T14%3A09%3A24.043Z&wid=1100&hei=807&dpr=off"
+                 alt="Wanderin am Smartphone in den Bergen" loading="lazy" width="1100" height="807">
+          </div>
+          <div class="promo-card-body">
+            <span class="promo-card-tag">Hirslanden Healthline</span>
+            <h3 class="promo-card-title">Ihre Mitgliedschaft für persönliche Unterstützung</h3>
+            <p class="promo-card-text">Als Mitglied der Hirslanden Healthline erhalten Sie persönliche Unterstützung und Orientierung rund um Ihre Gesundheit.</p>
+            <span class="promo-card-cta">Mehr erfahren ›</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ── hingabe-feature (from C — ds-feature) ───────────────────── -->
   <section class="ds-feature" data-section="hingabe-feature" data-intent="emotional hook" data-layout="full-bleed" data-media="image">
     <figure class="ds-feature-figure">
       <img src="../current/assets/media/pflege-hingabe-6e8ca022.jpg"
-           alt="Pflegefachperson bei der persönlichen Betreuung einer Patientin"
-           loading="lazy" width="1100" height="734">
+           alt="Pflegerin kämmt der Patientin die Haare"
+           loading="lazy" width="1024" height="683">
     </figure>
     <div class="container">
       <div class="ds-feature-panel">
         <p class="eyebrow">Hingabe, die man spürt</p>
         <h2>Gelebte Hingabe für Ihre Gesundheit</h2>
-        <p>Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht.</p>
-        <a class="readmore" href="https://www.hirslanden.ch/de/corporate/ueber-uns/hirslanden-gruppe.html">Mehr erfahren</a>
+        <p>Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht. Seit der Gründung gehen wir die Extrameile, um Menschen eine spürbar hochwertige Gesundheitsversorgung zu bieten – individuell, integriert und mit einem Blick für das, was wirklich zählt.</p>
+        <a class="readmore" href="https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html">Mehr erfahren</a>
       </div>
     </div>
   </section>
 
   <!-- ── quicklinks (from A) ─────────────────────────────────────── -->
-  <section class="section section--alt" data-section="quicklinks" data-intent="navigate" data-layout="grid" data-items="7">
+  <section class="section section--alt" data-section="quicklinks" data-intent="navigate" data-layout="grid" data-items="9">
     <div class="container">
       <div class="quicklink-grid">
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/kliniken.html"><span>Kliniksuche</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html"><span>Ärztesuche</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
+        <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt.html"><span>Rückmeldung Klinikaufenthalt</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html"><span>Jobs und Karriere</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
+        <a class="quicklink" href="https://www.hirslanden.com/de/international/home.html"><span>Internationale Patienten</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer.html"><span>Leistungsübersicht pro Versicherungsklasse</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/krankheitsbilder.html"><span>Krankheitsbilder von A–Z</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
         <a class="quicklink" href="https://www.hirslanden.ch/de/corporate/behandlungen.html"><span>Behandlungen von A–Z</span><span class="chevron" aria-hidden="true">&rsaquo;</span></a>
@@ -747,8 +850,8 @@
       <div class="teaser-grid">
         <article class="teaser-card">
           <div class="media">
-            <img src="../current/assets/media/nr-dsc07282-b9625f14.jpg"
-                 alt="Neugeborenes in einer Hirslanden-Geburtsklinik" loading="lazy" width="1100" height="734">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/hirslandenbaby-baby-schlafend:1-1?fmt=png-alpha&_ck=2023-06-27T14%253A18%253A50.387Z&wid=600&hei=600&dpr=off"
+                 alt="Baby liegt schlafend auf einem Tuch" loading="lazy" width="600" height="600">
           </div>
           <div class="teaser-body">
             <h3>Babygalerie</h3>
@@ -757,7 +860,10 @@
           </div>
         </article>
         <article class="teaser-card">
-          <div class="media--flat"><span>Für alle Folgen des Lebens</span></div>
+          <div class="media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/02_Mitgefu%CC%88hl-1z1_72dpi:1-1?_ck=2023-05-26T10%253A25%253A50.010Z&wid=800&hei=800&dpr=off"
+                 alt="Pflegeperson hält einfühlsam die Hand einer Patientin" loading="lazy" width="800" height="800">
+          </div>
           <div class="teaser-body">
             <h3>Für alle Folgen des Lebens</h3>
             <p>Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da.</p>
@@ -765,7 +871,10 @@
           </div>
         </article>
         <article class="teaser-card">
-          <div class="media--flat"><span>Hirslanden Healthline</span></div>
+          <div class="media">
+            <img src="https://mediclinic.scene7.com/is/image/mediclinic/03_NeueWege-1z1_72dpi:1-1?_ck=2023-05-26T10%253A25%253A50.010Z&wid=800&hei=800&dpr=off"
+                 alt="Person geht neue Wege in der Natur" loading="lazy" width="800" height="800">
+          </div>
           <div class="teaser-body">
             <h3>Hirslanden Healthline</h3>
             <p>Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen.</p>
@@ -853,9 +962,12 @@
       <div class="footer-follow">
         <p class="eyebrow">Folgen Sie uns</p>
         <div class="footer-social">
-          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://www.facebook.com/Hirslanden" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hirslanden/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@hirslanden" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+          <a href="https://ch.linkedin.com/company/hirslanden" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.youtube.com/user/Privatklinikgruppe" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+          <a href="https://blog.hirslanden.ch/" aria-label="Hirslanden Blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
         </div>
       </div>
     </div>
