@@ -88,7 +88,7 @@ export default function decorate(block) {
   let newsMoreLink = null;
 
   const firstRowCells = rows[0]?.querySelectorAll(':scope > div');
-  if (firstRowCells?.length >= 2) {
+  if (firstRowCells?.length === 2 && rows[0]?.querySelector(':scope > div > h2, :scope > div > ul')) {
     // Single row, two cells: events column | news column
     const [evCol, newsCol] = firstRowCells;
     eventsTitle = evCol?.querySelector('h2')?.textContent || eventsTitle;
