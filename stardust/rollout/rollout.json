@@ -15,12 +15,12 @@
     "liveHost": "https://main--hirslanden-stardust-eds--paolomoz.aem.live"
   },
   "lastRun": {
-    "at": "2026-06-24T20:49:57.875Z",
+    "at": "2026-06-24T21:32:53.362Z",
     "pages": {
       "total": 13,
       "verified": 0,
-      "deployed": 0,
-      "pending": 13,
+      "deployed": 1,
+      "pending": 12,
       "stale": 0,
       "failed": 0
     },

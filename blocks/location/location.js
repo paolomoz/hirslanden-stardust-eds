@@ -9,7 +9,7 @@ const ADDRESS_ICONS = {
 function iconFor(label) {
   const lower = label.toLowerCase();
   const key = Object.keys(ADDRESS_ICONS).find((k) => lower.includes(k)) || 'default';
-  return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="${ADDRESS_ICONS[key]}"/></svg>`;
+  return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">${ADDRESS_ICONS[key]}</svg>`;
 }
 
 export default function decorate(block) {
