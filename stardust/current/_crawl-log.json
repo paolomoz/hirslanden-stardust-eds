@@ -1,0 +1,56 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-24T00:00:00Z",
+    "stardustVersion": "0.10.0"
+  },
+  "discovery": {
+    "source": "single-url",
+    "sourceUrl": "https://www.hirslanden.ch/",
+    "fetchedAt": "2026-06-24T00:00:00Z",
+    "discoveredCount": 1,
+    "filteredCount": 0,
+    "filteredAsJunk": [],
+    "waitMode": "medium",
+    "waitModeAutoDetect": null,
+    "cappedAt": 1,
+    "cap": 1,
+    "capSource": "--single",
+    "userChoice": null,
+    "kept": [
+      { "url": "https://www.hirslanden.ch/", "slug": "home", "priority": 1.0, "lastmod": null, "score": 10 }
+    ],
+    "cut": [],
+    "scores": {
+      "rules": ["home"],
+      "sample": { "url": "https://www.hirslanden.ch/", "total": 10, "breakdown": { "home": 10 } }
+    },
+    "malformed": [],
+    "requiresAuth": [],
+    "fetchTechnique": "headed-chrome",
+    "notes": "SINGLE-PAGE mode (--single / --cap 1). No sitemap fetch or BFS performed — only the homepage was in scope. Final URL redirected from https://www.hirslanden.ch/ to https://www.hirslanden.ch/de/corporate/home.html (default German locale). fetchTechnique 'headed-chrome' (headless: false, channel: 'chrome') chosen up-front per the run brief's bot-management guidance for a Swiss commercial origin; the first navigation succeeded (HTTP 200) so no escalation was needed."
+  },
+  "consent": {
+    "method": "selector:#onetrust-accept-btn-handler",
+    "vendor": "OneTrust",
+    "notes": "OneTrust banner present. Reject-all handler was not clickable within the timeout on this load; accept-all (#onetrust-accept-btn-handler) dismissed the visible banner. The OneTrust Preference Center (div#onetrust-pc-sdk / #ot-pc-lst) remained in the DOM as a hidden region after dismissal and its headings/CTAs/paragraphs leaked into the raw capture; they were filtered out of pages/home.json, _brand-extraction.json palette, and the CTA/heading aggregations. Side-effect caveat per playwright-recipe.md applies (accept-all may have activated analytics/marketing scripts)."
+  },
+  "crawl": {
+    "startedAt": "2026-06-24T00:00:00Z",
+    "finishedAt": "2026-06-24T00:00:00Z",
+    "successes": 1,
+    "failures": []
+  },
+  "runs": [
+    {
+      "mode": "single-page presales extract",
+      "fetchTechnique": "headed-chrome (chromium channel=chrome, headless=false)",
+      "viewport": "1440x900 @2x DPR",
+      "waitMode": "medium",
+      "waitMs": 4475,
+      "scrollPass": "4 viewport steps @300ms + bottom + return to top",
+      "consentMethod": "selector:#onetrust-accept-btn-handler",
+      "pagesExtracted": ["home"]
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- stardust:provenance
+  writtenBy:         stardust:prototype (rendered via impeccable:craft)
+  writtenAt:         2026-06-24T00:00:00Z
+  page:              home
+  variant:           B
+  pageUrl:           https://www.hirslanden.ch/
+  againstDirection:  stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  readArtifacts:
+    - stardust/current/pages/home.json
+    - stardust/current/_brand-extraction.json
+    - DESIGN-B.md
+    - DESIGN-B.json
+    - PRODUCT.md
+    - stardust/prototypes/home-B-shape.md
+  renderedVia:       impeccable:impeccable craft
+  fidelity:          refined
+  mode:              A (brand-faithful; palette + Metropolis pinned)
+  divergenceVersion: v1.0 (stardust v0.10.0)
+  fontDeck:          pinned-captured (Metropolis 400/500/700, local woff)
+  paletteSource:     captured brand surface (DESIGN-B frontmatter, hex)
+  surprise:          medium
+  dominantDimension: ia/intent-routing-spine
+  iaBet:             "audience-routing reframe — five equal-weight need-cards beside the captured search field lead the page; quicklink grid + map + teasers subsumed; news/events/blog demoted to one lighter band below"
+  reflexRejectAudit:
+    bypassed: true
+    reason: "Mode A — captured display + body family Metropolis pinned per direct/SKILL.md Mode A; inherited families are not a reflex choice."
+  unsourcedContent: []   # every literal traces to current/pages/home.json, _brand-extraction.json voice samples, or direction-authorized routing-card label rewrites; 16/300/3000 are captured fact
+  divergence:
+    notes: "Pure #ffffff ground and white-on-blue preserved as a brand decision (captured palette includes them), not an agent reflex; per proposed-file-shell.md brand-faithful pure-color inversion. --color-accent-ink #0070a0 is a Mode-A-faithful contrast token: a faithful darkening of the pinned Hirslanden blue #0094d4 used for all small/interactive blue text (<18px) to meet WCAG AA (5.5:1 on white); the pinned #0094d4 is kept for large fills/headlines and the focus ring (non-text UI 3:1)."
+    anti_toolbox_hits:
+      - hit: "five equal-weight cards as the routing layer"
+        justification: "Brand-faithful + the amplified IA move (direction.md Variant B). NOT the banned identical-icon-card grid: these are functional wayfinding routes (whole-card link targets, monochrome utility glyphs, no marketing blurbs), composed from captured nav + footer taxonomy + the captured Notfall 144. The single-shadow / one-voice rules make the layer read as one organized choice, not a SaaS feature triplet."
+  voiceClassification:
+    - { section: header, classification: captured-verbatim, source: "pages/home.json nav + utility labels" }
+    - { section: hero-routing, classification: direction-authorized rewrite, copy: "Was brauchen Sie heute? + five card labels (Klinik finden / Arzt oder Aerztin finden / Klinikaufenthalt planen / Internationale Patienten / Notfall 144)", source: "routing question + card labels composed from captured nav + footer taxonomy + captured Notfall 144 per direction.md Variant B; reassurance line + search field + 'Suche' captured-verbatim" }
+    - { section: proof-strip, classification: captured-verbatim, source: "metaDescription + footer blurb; 16/300/3000 captured fact" }
+    - { section: whats-happening, classification: captured-verbatim, source: "pages/home.json#headings news/event titles + #links; rendered verbatim" }
+    - { section: footer, classification: captured-verbatim, source: "_brand-extraction.json#systemComponents[kind=footer] + pages/home.json#landmarks[footer]" }
+  critique:
+    - { ranAt: "2026-06-24T00:00:00Z", source: critique, result: "deterministic detector clean (0 findings, exit 0). Design review: NOT AI-slop — brand-faithful Mode A (pinned Metropolis + captured Hirslanden blue + warm grounds). The five-card routing layer is the deliberate IA bet (audience-routing), equal-weight functional wayfinding utilities (whole-card link targets, monochrome glyphs, one captured-grounded sentence each), not a marketing feature triplet. Single 'Wegweiser' eyebrow is deliberate, not per-section scaffolding. One-voice blue + single shadow honored. No gradients/glass/side-stripes. Heuristics est. ~33/40. No P0/P1 design findings." }
+    - { priority: dismissed, category: anti-pattern, note: "numbered-section-markers (144, event date chips 25/01/02) — dismissedAsBrandFaithful: true. 144 is the Swiss medical emergency number (reserved-red, direction IA invariant #1); 25/01/02 are real captured calendar dates from the event-list-with-date-chip motif. No 01/02/03 section labels exist. Inline impeccable-disable carries the waiver (standalone document)." }
+  audit:
+    - { ranAt: "2026-06-24T00:00:00Z", source: audit, result: "WCAG AA computed clean after 3 fixes. All 14 text/substrate pairs verified: body/small text >=4.5 on its ground; large text (proof numbers 40px+, blog h2 28px, 144 22px bold / 32px) >=3.0. LCP hero img eager + fetchpriority=high (not lazy). Skip-link first focusable. focus-visible rings. Reduced-motion gates scroll-behavior. Alt text on logo + hero. Single inline script is mobile-nav a11y only." }
+    - { priority: P1, category: contrast, status: fixed, finding: "search 'Suche' button white-on-#0094d4 = 3.39 (fails AA for 16px non-large text).", fix: "button fill darkened to #006894 (white = 6.16:1); a Mode-A-faithful darkening of the pinned blue, same logic as --color-accent-ink. Brand #0094d4 kept for large fills (proof numbers, blog-band headline) + focus ring." }
+    - { priority: P1, category: contrast, status: fixed, finding: "footer Notfallnummer 144 red #f43a11 on dark footer #534c46 = 2.19 (fails even large).", fix: "144 placed on a white chip — red-on-white = 3.85:1 (passes large 3:1). Reserved red preserved." }
+    - { priority: P1, category: contrast, status: fixed, finding: "footer legal text white@.72 (~3.71) on #534c46 (fails small).", fix: "raised to white@.88 (~5.23:1)." }
+    - { priority: P2, category: responsive, status: fixed, finding: "long event title in flex row could push width at 360px (flex child min-width:auto).", fix: "min-width:0 on .event-text + overflow-wrap:break-word on news/event h3." }
+  adapt:
+    - { ranAt: "2026-06-24T00:00:00Z", breakpoints: [1920,1440,1280,1100,900,800,640,414,375,360], mediaRulesAdded: 5, result: "static analysis (no headless browser available, same path as variant A): no fixed element width >170px (1200/1100/900/640/560/380 are max-width or breakpoints; logo 170px, date-chip 56px, burger 44px). Search box max-width 560 with input min-width:0 + flex:1 1 auto shrinks at 360 without overflow. Routing cards 3-col -> 2-col <900 -> 1-col (stacked) <640; 5-across >=1440. Hero split -> stacked <1100 (photo drops below). News/events 2col -> 1col <900. Footer 3->2->1col. Proof 3->1col <640. Mobile-nav hamburger collapse <640 (data-nav-collapse=hamburger; base .ds-nav-burger{display:none} at line 115 before first max-640 media at 308, source-order OK). Header utility font 13px (>=11px) gap 16px (>=10px) at 360. Touch targets: burger 44x44, mobile nav links ~48px, buttons 12x28. No horizontal overflow expected at 360." }
+  stardustVersion:   0.10.0
+-->
+<!-- impeccable-disable numbered-section-markers -- the only numerals flagged are real captured data, not section scaffolding: "144" is the Swiss medical emergency number (reserved-red Notfall card + footer, direction-mandated IA invariant #1), and the event date chips (25 Jun, 01 Jul, 02 Jul) carry real captured calendar dates from the brand's event-list-with-date-chip motif. No 01/02/03 section labels exist. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hirslanden-Gruppe, Schweiz</title>
+<meta name="description" content="16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!">
+<style>
+  :root {
+    /* Type families — Metropolis only (captured open-licence geometric sans) */
+    --heading-font-family: "Metropolis", system-ui, sans-serif;
+    --body-font-family: "Metropolis", system-ui, sans-serif;
+
+    /* Modular type scale, ratio 1.25 (base 1rem = 16px) */
+    --heading-xxl: clamp(2.25rem, 4vw, 2.75rem); /* routing question / display */
+    --heading-xl: 1.75rem;   /* section openers (Headline) */
+    --heading-lg: 1.375rem;  /* card titles (Title) */
+    --heading-md: 1.125rem;  /* list-row titles */
+    --body: 1rem;
+    --body-sm: 0.8125rem;    /* labels / meta */
+
+    --line-height-heading: 1.22;
+    --line-height-body: 1.6;
+
+    /* Colors (hex per DESIGN-B frontmatter) */
+    --color-bg: #ffffff;            /* Ground White */
+    --color-bg-warm: #f7f6f5;       /* Warm Ground */
+    --color-bg-warm-alt: #f0efed;   /* Warm Ground Alt */
+    --color-fg: #534c46;            /* Text Warm Dark */
+    --color-text-soft: #72665b;     /* Text Warm Soft */
+    --color-hairline: #e2dfdb;      /* Hairline */
+    --color-accent: #0094d4;        /* Hirslanden Blue — brand fill (large surfaces, headlines, focus ring) */
+    --color-accent-ink: #0070a0;    /* Mode-A-faithful AA blue for small text / interactive labels (5.5:1 on white) */
+    --color-accent-hover: #006894;  /* darker blue for primary-button hover */
+    --color-accent-tint: rgba(0,148,212,0.1);
+    --color-emergency: #f43a11;     /* Emergency Red — RESERVED: Notfall 144 card + footer only */
+
+    /* Spacing — 4pt scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    --section-padding: 64px;
+    --max-width: 1200px;
+    --radius: 0px;          /* squared CTAs / cards / inputs */
+    --radius-pill: 18px;    /* pill chips + search-box container */
+    --shadow-card: 0 2px 12px rgba(0,0,0,.08);  /* single soft shadow, shared */
+
+    /* z-index scale */
+    --z-sticky: 100;
+    --z-mobilenav: 200;
+  }
+
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 500; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Metropolis"; font-style: normal; font-weight: 700; font-display: swap;
+    src: url("../current/assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff");
+  }
+
+  /* --- mobile nav base (source-order load-bearing: before any @media) --- */
+  .ds-nav-burger { display: none; }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    color: var(--color-fg);
+    background: var(--color-bg-warm);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3 { font-family: var(--heading-font-family); line-height: var(--line-height-heading); text-wrap: balance; margin: 0; }
+  p { text-wrap: pretty; margin: 0; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; border-radius: 1px; }
+
+  .container { max-width: var(--max-width); margin: 0 auto; padding-inline: var(--spacing-lg); }
+
+  .label {
+    font-size: var(--body-sm); font-weight: 500; letter-spacing: 0.02em;
+    text-transform: uppercase; color: var(--color-text-soft);
+  }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute; left: var(--spacing-md); top: -60px; z-index: 999;
+    background: var(--color-bg); color: var(--color-accent-ink);
+    padding: 10px 18px; font-weight: 500; box-shadow: var(--shadow-card);
+    transition: top .15s ease;
+  }
+  .skip-link:focus { top: var(--spacing-md); }
+
+  /* ============ HEADER ============ */
+  .site-header { background: var(--color-bg); border-bottom: 1px solid var(--color-hairline); position: sticky; top: 0; z-index: var(--z-sticky); }
+  .header-utility { background: var(--color-bg-warm-alt); font-size: var(--body-sm); }
+  .header-utility .container { display: flex; justify-content: flex-end; gap: var(--spacing-lg); align-items: center; min-height: 38px; }
+  .header-utility ul { list-style: none; display: flex; gap: var(--spacing-md); margin: 0; padding: 0; }
+  .header-utility a { color: var(--color-text-soft); padding: 4px 0; }
+  .header-utility a:hover { color: var(--color-accent-ink); }
+  .header-utility .lang [aria-current="true"] { color: var(--color-accent-ink); font-weight: 500; }
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+
+  .header-main .container { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: var(--spacing-lg); }
+  .header-logo img { width: 170px; height: auto; }
+  .header-nav { display: flex; align-items: center; gap: var(--spacing-xl); }
+  .primary-nav { display: flex; gap: var(--spacing-xl); list-style: none; margin: 0; padding: 0; }
+  .primary-nav a { font-weight: 500; padding: 6px 0; border-bottom: 2px solid transparent; }
+  .primary-nav a:hover { color: var(--color-accent-ink); border-bottom-color: var(--color-accent-ink); }
+  .icon-search { display: inline-flex; align-items: center; gap: 6px; color: var(--color-fg); font-weight: 500; }
+  .icon-search:hover { color: var(--color-accent-ink); }
+  .icon-search svg { width: 20px; height: 20px; }
+
+  /* ============ HERO ROUTING ============ */
+  .hero { background: var(--color-bg-warm); padding-block: var(--section-padding); }
+  .hero-top { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--spacing-2xl); align-items: center; margin-bottom: var(--spacing-2xl); }
+  .hero-intro .label { display: block; margin-bottom: var(--spacing-md); }
+  .hero h1 { font-size: var(--heading-xxl); font-weight: 700; letter-spacing: -0.01em; color: var(--color-fg); }
+  .hero-lead { font-size: 1.25rem; color: var(--color-fg); margin-top: var(--spacing-md); max-width: 28ch; }
+
+  .search-box {
+    margin-top: var(--spacing-xl); display: flex; align-items: stretch;
+    background: var(--color-bg); border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-pill); padding: 6px; box-shadow: var(--shadow-card); max-width: 560px;
+  }
+  .search-box input {
+    flex: 1 1 auto; min-width: 0; border: 0; background: transparent;
+    font-family: inherit; font-size: var(--body); color: var(--color-fg);
+    padding: 12px 16px;
+  }
+  .search-box input::placeholder { color: var(--color-text-soft); }
+  .search-box input:focus { outline: none; }
+  .search-box button {
+    flex: 0 0 auto; border: 0; cursor: pointer; font-family: inherit;
+    /* AA fix: white on #0094d4 is 3.39 (fails for 16px non-large); use the faithful
+       darkening #006894 (white = 6.16:1). Mode-A-faithful contrast token, same logic as --color-accent-ink. */
+    background: var(--color-accent-hover); color: #fff; font-weight: 700; font-size: var(--body);
+    padding: 12px 28px; border-radius: var(--radius);
+  }
+  .search-box button:hover { background: #00567a; }
+  .search-box:focus-within { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  .hero-photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16 / 11; }
+
+  /* routing cards */
+  .routing-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg);
+  }
+  .route-card {
+    grid-column: span 1; background: var(--color-bg); box-shadow: var(--shadow-card);
+    border-radius: var(--radius); padding: 24px 24px 28px;
+    display: flex; flex-direction: column; gap: var(--spacing-sm);
+    transition: transform .18s cubic-bezier(0.16,1,0.3,1), box-shadow .18s ease, background .18s ease;
+  }
+  .route-card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,.12); background: #fff; }
+  .route-card .route-icon { width: 32px; height: 32px; color: var(--color-accent-ink); margin-bottom: var(--spacing-xs); }
+  .route-card .route-icon svg { width: 100%; height: 100%; }
+  .route-card h2 { font-size: var(--heading-lg); font-weight: 500; color: var(--color-fg); }
+  .route-card p { font-size: var(--body); color: var(--color-text-soft); flex: 1 0 auto; }
+  .route-card .route-arrow { color: var(--color-accent-ink); font-weight: 700; font-size: 1.25rem; margin-top: var(--spacing-sm); }
+  .route-card:hover .route-arrow { transform: translateX(3px); }
+  .route-card .route-arrow { display: inline-block; transition: transform .18s ease; }
+
+  /* emergency card — reserved red label only */
+  .route-card--emergency h2 { color: var(--color-fg); }
+  .route-card--emergency h2 .num { color: var(--color-emergency); font-weight: 700; }
+  .route-card--emergency .route-icon { color: var(--color-emergency); }
+  .route-card--emergency .route-arrow { color: var(--color-emergency); }
+
+  @media (min-width: 1440px) {
+    .routing-grid { grid-template-columns: repeat(5, 1fr); }
+  }
+
+  /* ============ PROOF STRIP ============ */
+  .proof { background: var(--color-bg-warm); padding-block: var(--section-padding); border-top: 1px solid var(--color-hairline); }
+  .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl); text-align: center; }
+  .proof-cell .proof-num { font-family: var(--heading-font-family); font-size: clamp(2.5rem, 5vw, 3.25rem); font-weight: 700; color: var(--color-accent); line-height: 1; font-variant-numeric: tabular-nums; }
+  .proof-cell .proof-label { display: block; margin-top: var(--spacing-sm); font-size: 1.125rem; color: var(--color-fg); }
+
+  /* ============ WHAT'S HAPPENING ============ */
+  .happening { background: var(--color-bg-warm-alt); padding-block: var(--section-padding); }
+  .happening-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-2xl); }
+  .happening-col h2 { font-size: var(--heading-xl); font-weight: 700; color: var(--color-fg); margin-bottom: var(--spacing-lg); }
+  .news-list, .event-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .news-row a, .event-row a { display: block; padding: var(--spacing-md) 0; border-top: 1px solid var(--color-hairline); }
+  .news-row:last-child a, .event-row:last-child a { border-bottom: 1px solid var(--color-hairline); }
+  .news-meta { display: flex; gap: var(--spacing-sm); align-items: center; font-size: var(--body-sm); color: var(--color-text-soft); font-variant-numeric: tabular-nums; }
+  .news-tag { font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; color: var(--color-accent-ink); }
+  .news-row h3 { font-size: var(--heading-md); font-weight: 500; color: var(--color-fg); margin: 6px 0 4px; }
+  .news-row a:hover h3 { color: var(--color-accent-ink); }
+  .news-attr { font-size: var(--body-sm); color: var(--color-text-soft); }
+
+  .event-row a { display: flex; gap: var(--spacing-md); align-items: flex-start; }
+  .event-text { min-width: 0; }
+  .event-text h3, .news-row h3 { overflow-wrap: break-word; }
+  .date-chip { flex: 0 0 auto; width: 56px; text-align: center; background: var(--color-bg); border: 1px solid var(--color-hairline); border-radius: var(--radius); padding: 8px 0; }
+  .date-chip .day { display: block; font-family: var(--heading-font-family); font-weight: 700; font-size: 1.375rem; color: var(--color-fg); line-height: 1; font-variant-numeric: tabular-nums; }
+  .date-chip .mon { display: block; font-size: var(--body-sm); color: var(--color-text-soft); margin-top: 2px; }
+  .event-text .loc { display: block; font-size: var(--body-sm); color: var(--color-text-soft); }
+  .event-text h3 { font-size: var(--heading-md); font-weight: 500; color: var(--color-fg); margin-top: 4px; }
+  .event-row a:hover h3 { color: var(--color-accent-ink); }
+
+  .col-more { margin-top: var(--spacing-lg); }
+  .readmore { color: var(--color-accent-ink); font-weight: 500; display: inline-flex; gap: 6px; }
+  .readmore::after { content: "→"; }
+  .readmore:hover { text-decoration: underline; }
+
+  .blog-band { background: var(--color-accent); margin-top: var(--section-padding); }
+  .blog-band .container { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-lg); flex-wrap: wrap; padding-block: var(--spacing-2xl); }
+  .blog-band h2 { color: #fff; font-size: 1.75rem; font-weight: 700; }
+  .btn--onblue { background: #fff; color: var(--color-accent-ink); font-weight: 700; padding: 12px 28px; border-radius: var(--radius); }
+  .btn--onblue:hover { background: var(--color-bg-warm); }
+
+  /* ============ FOOTER ============ */
+  .site-footer { background: var(--color-fg); color: #fff; padding-block: var(--section-padding) var(--spacing-2xl); }
+  .footer-pre { display: flex; gap: var(--spacing-2xl); flex-wrap: wrap; align-items: flex-start; justify-content: space-between; padding-bottom: var(--spacing-2xl); border-bottom: 1px solid rgba(255,255,255,.18); }
+  .footer-blurb { max-width: 52ch; }
+  .footer-blurb .label { color: #fff; display: block; margin-bottom: var(--spacing-sm); }
+  .footer-blurb p { color: rgba(255,255,255,.86); }
+  .footer-emergency { flex: 0 0 auto; }
+  .footer-emergency .label { color: rgba(255,255,255,.86); }
+  /* 144 sits on a white chip: red-on-dark is only 2.19 (fails even large); red-on-white is 3.85 (passes large 3:1). Reserved red preserved. */
+  .footer-144 { display: inline-flex; align-items: baseline; gap: 10px; background: #fff; padding: 10px 16px; border-radius: var(--radius); font-family: var(--heading-font-family); font-weight: 700; font-size: 2rem; color: var(--color-emergency); margin-top: var(--spacing-xs); }
+  .footer-144 .word { font-size: 1rem; font-weight: 500; color: var(--color-fg); }
+  .footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-2xl); padding-block: var(--spacing-2xl); }
+  .footer-cols h3 { font-size: var(--body); font-weight: 700; margin-bottom: var(--spacing-md); }
+  .footer-cols ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-sm); }
+  .footer-cols a { color: rgba(255,255,255,.86); font-size: var(--body); }
+  .footer-cols a:hover { color: #fff; text-decoration: underline; }
+  /* legal text bumped from .72 (3.71, fails small) to .88 (~5:1) for AA on 13px */
+  .footer-legal { display: flex; flex-wrap: wrap; gap: var(--spacing-md) var(--spacing-lg); align-items: center; justify-content: space-between; padding-top: var(--spacing-lg); font-size: var(--body-sm); color: rgba(255,255,255,.88); }
+  .footer-legal ul { list-style: none; display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin: 0; padding: 0; }
+  .footer-legal a:hover { color: #fff; text-decoration: underline; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1100px) {
+    .hero-top { grid-template-columns: 1fr; }
+    .hero-photo { order: 2; }
+    .hero-intro { order: 1; }
+  }
+  @media (max-width: 900px) {
+    .routing-grid { grid-template-columns: repeat(2, 1fr); }
+    .happening-grid { grid-template-columns: 1fr; gap: var(--spacing-2xl); }
+    .footer-cols { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    :root { --section-padding: 32px; }
+    .header-nav { gap: var(--spacing-md); }
+    /* mobile nav collapse */
+    .primary-nav { display: none; }
+    .primary-nav.is-open {
+      display: flex; flex-direction: column; gap: 0;
+      position: absolute; left: 0; right: 0; top: 100%;
+      background: var(--color-bg); border-top: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card); padding: var(--spacing-sm) var(--spacing-lg); z-index: var(--z-mobilenav);
+    }
+    .primary-nav.is-open li { border-bottom: 1px solid var(--color-hairline); }
+    .primary-nav.is-open a { display: block; padding: 14px 0; }
+    .ds-nav-burger {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border: 1px solid var(--color-hairline); background: var(--color-bg);
+      cursor: pointer; border-radius: var(--radius); color: var(--color-fg);
+    }
+    .header-main .container { position: relative; }
+    .routing-grid { grid-template-columns: 1fr; }
+    .proof-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+    .footer-cols { grid-template-columns: 1fr; }
+    .footer-pre { gap: var(--spacing-lg); }
+    .hero-lead { max-width: none; }
+  }
+  @media (max-width: 380px) {
+    .header-utility .container { gap: var(--spacing-md); }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header" data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <div class="header-utility">
+    <div class="container">
+      <ul>
+        <li><a href="https://careers.hirslanden.ch/?locale=de_DE">Jobs</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a></li>
+      </ul>
+      <ul class="lang" aria-label="Sprache">
+        <li><a href="https://www.hirslanden.ch/de/corporate/home.html" aria-current="true">DE</a></li>
+        <li><a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a></li>
+        <li><a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a class="header-logo" href="https://www.hirslanden.ch/de/corporate/home.html">
+        <img src="../current/assets/media/hirslanden-logo-93694b3d.png" width="188" height="54" alt="Hirslanden">
+      </a>
+      <nav class="header-nav" aria-label="Hauptnavigation">
+        <button class="ds-nav-burger" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <ul class="primary-nav" id="primary-nav">
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a></li>
+        </ul>
+        <a class="icon-search" href="https://www.hirslanden.ch/de/corporate/search.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <span>Suche</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" data-section="hero-routing" data-intent="route by patient intent" data-layout="split-media" data-media="image" data-interactive="form" data-items="5">
+    <div class="container">
+      <div class="hero-top">
+        <div class="hero-intro">
+          <span class="label">Wegweiser</span>
+          <h1>Was brauchen Sie heute?</h1>
+          <p class="hero-lead">Kompetenz, die Vertrauen schafft.</p>
+          <form class="search-box" role="search" action="https://www.hirslanden.ch/de/corporate/search.html">
+            <label for="q" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Suche</label>
+            <input id="q" type="search" name="q" placeholder="Stichwort, Klinik oder Fachgebiet …" autocomplete="off">
+            <button type="submit">Suche</button>
+          </form>
+        </div>
+        <div class="hero-photo">
+          <img src="../current/assets/media/hero-onkologie-133e374f.webp" width="2900" height="1419"
+               alt="Behandlung in der Onkologie bei Hirslanden" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+
+      <div class="routing-grid">
+        <a class="route-card" href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html" data-intent="find clinic">
+          <span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-4 7 4v13M10 21v-5h4v5"/><path d="M12 8v4M10 10h4"/></svg></span>
+          <h2>Klinik finden</h2>
+          <p>16 Privatkliniken in der ganzen Schweiz — finden Sie eine Klinik in Ihrer Nähe.</p>
+          <span class="route-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="route-card" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html" data-intent="find doctor">
+          <span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21v-1a6 6 0 0 1 12 0v1"/><circle cx="19" cy="16" r="3"/></svg></span>
+          <h2>Arzt oder Ärztin finden</h2>
+          <p>Über 3000 Ärztinnen und Ärzte — suchen Sie nach Fachgebiet oder Name.</p>
+          <span class="route-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="route-card" href="https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html" data-intent="plan stay">
+          <span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v12H3z"/><path d="M3 11h18M7 7V5h10v2"/></svg></span>
+          <h2>Klinikaufenthalt planen</h2>
+          <p>Besucher-Informationen, Versicherungsfragen und alles für Ihren Aufenthalt.</p>
+          <span class="route-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="route-card" href="https://www.hirslanden.ch/de/corporate/patienten-und-besucher/internationale-patienten.html" data-intent="international patients">
+          <span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+          <h2>Internationale Patienten</h2>
+          <p>Persönliche Betreuung und Koordination für Patientinnen und Patienten aus dem Ausland.</p>
+          <span class="route-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="route-card route-card--emergency" href="https://www.hirslanden.ch/de/corporate/notfall.html" data-intent="emergency">
+          <span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/><path d="M12 8v6M9 11h6"/></svg></span>
+          <h2>Notfall <span class="num">144</span></h2>
+          <p>Im medizinischen Notfall wählen Sie 144.</p>
+          <span class="route-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" data-section="proof-strip" data-intent="build trust" data-layout="stack" data-items="3">
+    <div class="container">
+      <div class="proof-grid">
+        <div class="proof-cell"><span class="proof-num">16</span><span class="proof-label">Privatkliniken</span></div>
+        <div class="proof-cell"><span class="proof-num">300+</span><span class="proof-label">Kompetenzzentren</span></div>
+        <div class="proof-cell"><span class="proof-num">3000+</span><span class="proof-label">Ärztinnen und Ärzte</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="happening" data-section="whats-happening" data-intent="show activity" data-layout="grid" data-items="8">
+    <div class="container">
+      <div class="happening-grid">
+        <div class="happening-col">
+          <h2>News &amp; Mitteilungen</h2>
+          <ul class="news-list">
+            <li class="news-row"><a href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html">
+              <span class="news-meta"><span class="news-tag">Medienmitteilung</span><span>·</span><span>28.05.2026</span></span>
+              <h3>Centre de Chirurgie Ambulatoire de Genève</h3>
+              <span class="news-attr">Hirslanden-Gruppe</span>
+            </a></li>
+            <li class="news-row"><a href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/symposium-hirslanden-research-foundation.html">
+              <span class="news-meta"><span class="news-tag">News</span><span>·</span><span>06.03.2026</span></span>
+              <h3>Erstes Symposium der Hirslanden Research Foundation</h3>
+              <span class="news-attr">Hirslanden-Gruppe</span>
+            </a></li>
+            <li class="news-row"><a href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/lucerne-toolbox-3.html">
+              <span class="news-meta"><span class="news-tag">News</span><span>·</span><span>26.11.2025</span></span>
+              <h3>LUCERNE TOOLBOX 3 – Ein digitaler Kompass bei Brustkrebs</h3>
+              <span class="news-attr">Hirslanden-Gruppe</span>
+            </a></li>
+            <li class="news-row"><a href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/corinne-suter-medical-partner.html">
+              <span class="news-meta"><span class="news-tag">Medienmitteilung</span><span>·</span><span>24.10.2025</span></span>
+              <h3>Official Medical Partner von Corinne Suter</h3>
+              <span class="news-attr">Hirslanden-Gruppe</span>
+            </a></li>
+          </ul>
+          <div class="col-more"><a class="readmore" href="https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html">Alle News und Mitteilungen</a></div>
+        </div>
+
+        <div class="happening-col">
+          <h2>Veranstaltungen</h2>
+          <ul class="event-list">
+            <li class="event-row"><a href="https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/bewegte-schwangerschaft.html">
+              <span class="date-chip"><span class="day">25</span><span class="mon">Jun.</span></span>
+              <span class="event-text"><span class="loc">Bern, weitere Termine verfügbar</span><h3>Bewegte Schwangerschaft</h3></span>
+            </a></li>
+            <li class="event-row"><a href="https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html">
+              <span class="date-chip"><span class="day">25</span><span class="mon">Jun.</span></span>
+              <span class="event-text"><span class="loc">Biel, weitere Termine verfügbar</span><h3>Informationsabend Geburt</h3></span>
+            </a></li>
+            <li class="event-row"><a href="https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/gesundheitsthemen/oeffentlicher-vortrag-arterien.html">
+              <span class="date-chip"><span class="day">01</span><span class="mon">Jul.</span></span>
+              <span class="event-text"><span class="loc">St. Gallen, verfügbar</span><h3>Öffentlicher Vortrag: Beinarterien – wann Untersuchung und Behandlung</h3></span>
+            </a></li>
+            <li class="event-row"><a href="https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/informationsabend-geburt.html">
+              <span class="date-chip"><span class="day">02</span><span class="mon">Jul.</span></span>
+              <span class="event-text"><span class="loc">Bern, weitere Termine verfügbar</span><h3>Informationsabend Geburt</h3></span>
+            </a></li>
+          </ul>
+          <div class="col-more"><a class="readmore" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Alle Veranstaltungen</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-band">
+      <div class="container">
+        <h2>Hirslanden Blog</h2>
+        <a class="btn--onblue" href="https://blog.hirslanden.ch/">Weiterlesen</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="container">
+    <div class="footer-pre">
+      <div class="footer-blurb">
+        <span class="label">Hirslanden-Gruppe</span>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3 000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+        <span class="label" style="margin-top:var(--spacing-lg)">Folgen Sie uns</span>
+      </div>
+      <div class="footer-emergency">
+        <span class="label">Notfallnummer</span>
+        <a class="footer-144" href="https://www.hirslanden.ch/de/corporate/notfall.html">144 <span class="word">Notfall</span></a>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-besucher.html">Besucher-Informationen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-besucher/versicherung.html">Versicherungsfragen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-besucher/internationale-patienten.html">Internationale Patienten</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/gesundheitsvideos.html">Gesundheitsvideos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Leistungsangebot</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Hirslanden in Ihrer Region</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-besucher/hotellerie.html">Hotellerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Über uns</h3>
+        <ul>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+          <li><a href="https://careers.hirslanden.ch/?locale=de_DE">Jobs &amp; Karriere</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <ul>
+        <li><a href="https://www.hirslanden.ch/de/corporate/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Website Cookie Richtlinie</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile-nav a11y: toggle aria-expanded + Escape-to-close (only inline script; per proposed-file-shell.md exception)
+  (function () {
+    var b = document.querySelector('.ds-nav-burger'), n = document.getElementById('primary-nav');
+    if (!b || !n) return;
+    b.addEventListener('click', function () {
+      var open = n.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && n.classList.contains('is-open')) { n.classList.remove('is-open'); b.setAttribute('aria-expanded', 'false'); b.focus(); }
+    });
+  })();
+</script>
+</body>
+</html>

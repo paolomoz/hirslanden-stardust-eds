@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden — Variant B (Care-routing first)",
+  "variant": {
+    "id": "B",
+    "role": "One captured trait amplified — audience-routing",
+    "bet": "The home opens with 'What do you need today?' intent cards beside search; the flat module stack collapses into one intent-organized layer.",
+    "primaryAxis": "information-architecture",
+    "amplifies": "Audience-routing reframe (what-if #7) + search-as-tool (#3), in service of Design Principle 2 (search-first wayfinding).",
+    "differentiatingToken": "intent-card component as page-lead layer; collapsed module stack; sectionPadding 64px",
+    "motion": "static — gentle hover/focus on intent cards only; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "note": "marks the four wayfinding intent cards + search" },
+      "ground-warm": { "role": "neutral", "displayName": "Warm Ground", "canonical": "#f7f6f5" },
+      "text-warm-dark": { "role": "neutral", "displayName": "Text Warm Dark", "canonical": "#534c46" },
+      "emergency-red": { "role": "reserved", "displayName": "Emergency Red", "canonical": "#f43a11", "note": "Emergency 144 intent card label only" }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Title", "purpose": "Intent-card titles — the routing labels." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "Shared across the five intent cards so the routing layer reads as one organized choice." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#0094d4", "color": "#ffffff", "borderRadius": "0px", "fontWeight": 500 }, "secondary": { "background": "#f7f6f5", "color": "#534c46", "borderRadius": "18px", "fontWeight": 400 } },
+      "cards": { "background": "#ffffff", "borderRadius": "0px", "shadow": "0 2px 12px rgba(0,0,0,0.08)" },
+      "inputs": { "borderRadius": "0px", "border": "1px solid #e2dfdb" },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Wordmark + primary nav + search + utility bar; reachable emergency path.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.", "positionClass": "page-end" },
+      "intent-routing-layer": { "purpose": "Page-lead affordance: five patient-intent routes (find clinic / find doctor / plan stay / international / emergency) paired with search.", "positionClass": "first-viewport", "siteWideConstraint": "Emergency 144 is always one of the routes; search is always present in the layer." },
+      "find-care": { "purpose": "Search-as-tool inside the routing layer.", "positionClass": "first-viewport" },
+      "emergency-144": { "purpose": "Unmistakable emergency wayfinding as the fifth intent route (red).", "positionClass": "first-viewport-and-footer" },
+      "whats-happening": { "purpose": "Collapsed secondary band (news/events/blog consolidated).", "positionClass": "mid-page" }
+    },
+    "motifs": {
+      "signaturePill": { "radius": "18px", "usage": "secondary chips and badges" },
+      "squaredControls": { "radius": "0px", "usage": "primary buttons, cards, intent cards, inputs" },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "warmPhotography": "human imagery retained at captured semantic positions; intent cards may use small line icons rather than photos",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; reassurance-forward; routing copy is calm and direct",
+      "dos": [
+        "Do phrase the routing question warmly ('Was brauchen Sie heute?').",
+        "Do keep each intent-card description to one calm sentence.",
+        "Do label the emergency route plainly (Notfall 144)."
+      ],
+      "donts": [
+        "Don't use urgency/sales verbs on the routes.",
+        "Don't make the emergency route alarming for emphasis.",
+        "Don't fragment route labels across synonyms."
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "audience-routing", "evidence": "PRODUCT.md Users lists parallel JTBD (find care / prepare stay / reassure / reach group); current IA is a flat module stack", "preserveAs": "first-viewport-intent-layer", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "crisis-affordance", "evidence": "_brand-extraction.json#palette[accent-danger] + footer 'Notfallnummer 144' in #f43a11", "preserveAs": "fifth-intent-route-and-footer", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "search-led-IA", "evidence": "pages/home.json hero search box; motifs.patterns 'search-first-hero'", "preserveAs": "first-viewport (tool inside routing layer)", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "warmth-not-sterile", "evidence": "warm grounds + warm text + human photography", "preserveAs": "warm-neutral-ground-and-human-photography", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "restraint-one-accent-one-family", "evidence": "single family Metropolis; single accent #0094d4", "preserveAs": "one-accent-one-family", "scope": "site-wide", "mutability": "movable" }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": { "decade": "2025-now", "register": "brand (inherited)", "ground_family": { "value": "warm-neutral", "override": "brand-faithful" } },
+      "inheritedDimensions": { "font_deck": "brand-inherited (Metropolis)", "palette": "inherited" },
+      "brand_faithful_inversions": [
+        "#ffffff retained as intent-card / card ground (brand decision). 'No pure white' inverted per brand-faithful direction.",
+        "Hex token format retained (matches captured surface). OKLCH applies to new authoring only.",
+        "Sharp 0px corners retained on intent cards/cards/inputs/primary buttons (brand counterpoint to the 18px pill). 'Modern means rounded' reflex inverted.",
+        "Saturated #0094d4 retained as primary action color. Tinted-neutral-primary reflex inverted.",
+        "#f43a11 retained as a reserved color for the emergency route only. Spread-accent reflex inverted."
+      ],
+      "antiToolboxAudit": "intent-card layer audited against the SaaS feature-card-triplet anti-pattern — distinguished by being wayfinding routes (five, intent-led, one is emergency) not marketing features; passes.",
+      "motionRegister": "none — static variant"
+    }
+  },
+  "components": [
+    {
+      "name": "Intent Card",
+      "kind": "custom",
+      "refersTo": "intent-card",
+      "description": "The page-lead patient-intent route. One of five.",
+      "html": "<a class=\"ds-intent\" href=\"#\"><span class=\"ds-intent-icon\" aria-hidden=\"true\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0094d4\" stroke-width=\"2\"><path d=\"M3 11l9-8 9 8M5 10v10h14V10\"/></svg></span><span class=\"ds-intent-title\">Klinik finden</span><span class=\"ds-intent-desc\">Finden Sie eine Klinik in Ihrer Nähe.</span></a>",
+      "css": ".ds-intent { display: flex; flex-direction: column; gap: 8px; background: #fff; color: #534c46; padding: 24px 24px 28px; border-radius: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-decoration: none; font-family: Metropolis, sans-serif; transition: background 0.18s ease, box-shadow 0.18s ease; } .ds-intent:hover { background: #fcfbfa; box-shadow: 0 4px 16px rgba(0,0,0,0.1); } .ds-intent:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; } .ds-intent-title { font-weight: 500; font-size: 1.375rem; line-height: 1.3; } .ds-intent-desc { font-weight: 400; font-size: 1rem; line-height: 1.6; color: #72665b; }"
+    },
+    {
+      "name": "Emergency Intent Card",
+      "kind": "custom",
+      "refersTo": "intent-card",
+      "description": "The fifth route — emergency, in reserved red.",
+      "html": "<a class=\"ds-intent ds-intent--emergency\" href=\"tel:144\"><span class=\"ds-intent-title\">Notfall</span><span class=\"ds-intent-number\">144</span></a>",
+      "css": ".ds-intent--emergency .ds-intent-number { font-family: Metropolis, sans-serif; font-weight: 700; font-size: 2rem; line-height: 1.1; color: #f43a11; } .ds-intent--emergency:focus-visible { outline: 2px solid #f43a11; outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Affordance",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Search-as-tool inside the routing layer.",
+      "html": "<form class=\"ds-search\"><input class=\"ds-search-input\" type=\"search\" placeholder=\"Stichwort, Klinik oder Arzt…\"><button class=\"ds-search-btn\">Suche</button></form>",
+      "css": ".ds-search { display: flex; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); } .ds-search-input { flex: 1; border: 1px solid #e2dfdb; border-right: none; padding: 14px 16px; font-family: Metropolis, sans-serif; color: #534c46; } .ds-search-btn { background: #0094d4; color: #fff; border: none; padding: 14px 28px; font-weight: 500; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "What do you need today?",
+    "overview": "Variant B amplifies audience-routing: the first viewport reframes around explicit patient intent — five need-cards (find clinic / find doctor / plan stay / international / emergency 144) paired with search — collapsing the captured flat module stack into one intent-organized layer.",
+    "keyCharacteristics": ["Intent-routing layer leads the page", "Module stack collapses into one organized layer", "Emergency 144 is one of five routes, in red", "Same pinned brand DNA; IA moves not surface", "Balanced 64px density"],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "Blue marks the four wayfinding actions; it does not decorate card grounds.", "section": "colors" },
+      { "name": "The Reserved-Red Rule", "body": "The Emergency 144 card is the only place #f43a11 appears.", "section": "colors" },
+      { "name": "The Single-Shadow Rule", "body": "The five intent cards share one shadow so the layer reads as one choice.", "section": "elevation" }
+    ],
+    "dos": ["Do lead with the intent-routing layer.", "Do keep search first-viewport inside the layer.", "Do make Emergency 144 one of the five routes."],
+    "donts": ["Don't turn routes into a marketing feature-card triplet.", "Don't spread blue across card grounds.", "Don't add scroll choreography or any cinematic motion register."]
+  }
+}

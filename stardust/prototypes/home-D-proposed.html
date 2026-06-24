@@ -1,0 +1,578 @@
+<!-- stardust:provenance
+  writtenBy:         stardust:prototype
+  writtenAt:         2026-06-24T00:00:00Z
+  page:              home
+  variant:           D
+  pageUrl:           https://www.hirslanden.ch/
+  againstDirection:  stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  readArtifacts:
+    - stardust/current/pages/home.json
+    - stardust/current/_brand-extraction.json
+    - DESIGN-D.md
+    - DESIGN-D.json
+    - PRODUCT.md
+    - stardust/prototypes/home-D-shape.md
+  fontDeck:          brand-inherited (Metropolis 400/500/700 — Mode A pinned)
+  paletteSource:     captured brand surface (Hirslanden, Mode A pinned)
+  divergenceVersion: v1.0 (stardust v2)
+  unsourcedContent: []
+  fidelity:          quick
+  critique:          impeccable detector clean (0 deterministic design-quality findings; brand-faithful inversions auto-dismissed: Arial fallback, #ffffff ground, 0px corners, #0094d4 primary, single-family Metropolis, warm #534c46 large display headings, uppercase Label captions/eyebrow as captured convention).
+  audit:             AA-computed clean. Display headings + proof numerals #534c46 on #ffffff 8.43:1; body #534c46 ≥7.34:1 on all grounds; captions #72665b ≥4.85:1 (passes 4.5 body floor); links #0070a0 ≥4.78:1; white-on-#006894 CTA 6.16:1 (hover 7.57:1); blog-strip white H2 on #0094d4 3.39:1 (large-text 3:1 floor, passes); footer 144 red #f43a11 on white chip 3.85:1 (1.5rem/700 large-text, passes); all footer text ≥5.14:1. LCP hero img loading=eager+fetchpriority=high; all imgs have German alt; no JS-dependent-hidden-state (no opacity:0/clip-path/translate hide gates).
+  adapt:             Playwright-rendered at 1280/640/375 — zero horizontal overflow (docW===cliW); display+proof clamp 67px→48px scales down without overflow; nav ≥16px (>11px floor); hamburger display:flex at ≤640px, hidden desktop; base .ds-nav-burger rule precedes first @media(max-width:640px) (source order correct). 12-col grid reflows 12→8(@≤900)→1(@≤640).
+  motionValidation:  N/A (static variant; no choreography, no animation-timeline/IO/rAF; only ≤10-line mobile-nav a11y script).
+  stardustVersion:   0.10.0
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hirslanden-Gruppe, Schweiz</title>
+  <meta name="description" content="16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!">
+  <style>
+    /* ── :root token contract (skills/stardust/reference/token-contract.md) ───
+       HEX format per DESIGN-D.md frontmatter (Mode A brand-faithful). */
+    :root {
+      /* role: Metropolis (heading + body, single family — Mode A pinned) */
+      --heading-font-family: 'Metropolis', Arial, sans-serif;
+      --body-font-family:    'Metropolis', Arial, sans-serif;
+
+      /* type scale — perfect fourth (1.333) off 1rem base (DESIGN-D Perfect-Fourth Rule) */
+      --display:     clamp(3rem, 6vw, 4.21rem); /* Display 700, the institution set in type */
+      --heading-xxl: clamp(3rem, 6vw, 4.21rem);
+      --heading-xl:  2.369rem;                  /* Headline 700 */
+      --heading-lg:  1.777rem;                  /* Title 500 */
+      --heading-md:  1.333rem;                  /* Subtitle 500 */
+      --body:        1rem;                       /* Body 400 */
+      --body-sm:     0.8125rem;                  /* Label 500 */
+
+      --line-height-heading: 1.08;
+      --line-height-body:    1.6;
+
+      /* color — pinned warm Hirslanden palette */
+      --color-bg:        #ffffff; /* ground-white */
+      --color-ground:    #f7f6f5; /* warm ground */
+      --color-ground-alt:#f0efed; /* warm ground alt */
+      --color-fg:        #534c46; /* text warm dark — display headings stay warm, not black */
+      --color-fg-soft:   #72665b; /* text warm soft */
+      --color-accent:    #0094d4; /* Hirslanden blue — LARGE fills/headlines only */
+      --color-accent-ink:#0070a0; /* derived: small/interactive blue, WCAG AA */
+      --color-accent-cta:#006894; /* derived: white-text CTA fill, WCAG AA */
+      --color-hairline:  #e2dfdb; /* visible grid rules */
+      --color-emergency: #f43a11; /* reserved — footer 144 only */
+
+      /* spacing */
+      --spacing-xs:  4px;
+      --spacing-sm:  8px;
+      --spacing-md:  16px;
+      --spacing-lg:  24px;
+      --spacing-xl:  32px;
+      --spacing-2xl: 64px;
+
+      --section-padding: 64px; /* multi-audience floor; confidence from type + grid */
+      --max-width:       1200px;
+      --radius:          0px;   /* squared primary controls/cards/inputs */
+      --radius-pill:     18px;  /* signature pill — secondary chips */
+      --gutter:          24px;  /* 12-col grid gutter */
+      --shadow-card:     0 2px 12px rgba(0,0,0,0.08);
+
+      /* z-index scale */
+      --z-nav: 100;
+    }
+
+    @font-face { font-family:'Metropolis'; font-weight:400; font-style:normal; font-display:swap;
+      src:url('../current/assets/fonts/Metropolis-Regular-15de18d5.woff') format('woff'); }
+    @font-face { font-family:'Metropolis'; font-weight:500; font-style:normal; font-display:swap;
+      src:url('../current/assets/fonts/Metropolis-SemiBold-269a2bc8.woff') format('woff'); }
+    @font-face { font-family:'Metropolis'; font-weight:700; font-style:normal; font-display:swap;
+      src:url('../current/assets/fonts/Metropolis-Bold-3c10b2e7.woff') format('woff'); }
+
+    *,*::before,*::after { box-sizing:border-box; }
+    html { -webkit-text-size-adjust:100%; hanging-punctuation:first; }
+    body {
+      margin:0; background:var(--color-bg); color:var(--color-fg);
+      font-family:var(--body-font-family); font-size:var(--body);
+      line-height:var(--line-height-body); font-kerning:normal;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    img { max-width:100%; display:block; }
+    a { color:var(--color-accent-ink); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    :focus-visible { outline:2px solid var(--color-accent-ink); outline-offset:2px; }
+    h1,h2,h3,h4 { margin:0; font-family:var(--heading-font-family); color:var(--color-fg);
+      text-wrap:balance; overflow-wrap:break-word; }
+    p { margin:0; text-wrap:pretty; overflow-wrap:break-word; }
+    .grid12 > * { min-width:0; }
+
+    /* ── grid container ─────────────────────────────────────────── */
+    .container { max-width:var(--max-width); margin-inline:auto; padding-inline:clamp(20px,5vw,40px); }
+    .grid12 { display:grid; grid-template-columns:repeat(12,1fr); column-gap:var(--gutter); }
+
+    .skip-links { position:absolute; left:-9999px; top:0; z-index:1000; }
+    .skip-links a { position:absolute; left:-9999px; background:var(--color-fg); color:#fff;
+      padding:10px 16px; }
+    .skip-links a:focus { left:8px; top:8px; }
+
+    .eyebrow { font-size:var(--body-sm); font-weight:500; letter-spacing:0.04em;
+      text-transform:uppercase; color:var(--color-fg-soft); margin:0 0 var(--spacing-md); }
+
+    .btn-primary {
+      display:inline-block; background:var(--color-accent-cta); color:#fff;
+      font-family:var(--heading-font-family); font-weight:500; font-size:var(--body);
+      border:none; border-radius:var(--radius); padding:13px 28px; cursor:pointer;
+      transition:background .18s ease;
+    }
+    .btn-primary:hover { background:#005a80; text-decoration:none; }
+
+    .pill {
+      display:inline-block; background:var(--color-ground); color:var(--color-fg);
+      border-radius:var(--radius-pill); padding:8px 18px; font-size:var(--body-sm);
+      font-weight:500; box-shadow:var(--shadow-card); transition:background .15s ease;
+    }
+    .pill:hover { background:var(--color-ground-alt); text-decoration:none; color:var(--color-fg); }
+
+    .more-link { font-weight:500; color:var(--color-accent-ink); }
+    .more-link::after { content:' →'; }
+
+    /* ── header ─────────────────────────────────────────────────── */
+    .site-header { position:sticky; top:0; z-index:var(--z-nav); background:var(--color-bg);
+      border-bottom:1px solid var(--color-hairline); }
+    .header-utility { border-bottom:1px solid var(--color-hairline); }
+    .header-utility .container { display:flex; justify-content:flex-end; gap:var(--spacing-lg);
+      align-items:center; min-height:38px; }
+    .header-utility a { font-size:var(--body-sm); color:var(--color-fg-soft); }
+    .header-utility a:hover { color:var(--color-accent-ink); }
+    .lang-switch { display:flex; gap:var(--spacing-sm); }
+    .lang-switch a[aria-current="true"] { color:var(--color-fg); font-weight:500; }
+    .header-main .container { display:flex; align-items:center; justify-content:space-between;
+      min-height:70px; gap:var(--spacing-lg); }
+    .logo img { width:188px; height:54px; }
+    .primary-nav { display:flex; gap:var(--spacing-xl); align-items:center; }
+    .primary-nav a { color:var(--color-fg); font-weight:500; }
+    .primary-nav a:hover { color:var(--color-accent-ink); }
+    .ds-nav-burger { display:none; }
+
+    /* ── hero ───────────────────────────────────────────────────── */
+    .hero { padding:clamp(40px,6vw,72px) 0 var(--section-padding); }
+    .hero .grid12 { align-items:center; row-gap:var(--spacing-2xl); }
+    .hero-copy { grid-column:1 / 8; }
+    .hero h1 { font-size:var(--display); font-weight:700; line-height:var(--line-height-heading);
+      letter-spacing:-0.02em; max-width:14ch; }
+    .hero-media { grid-column:8 / 13; }
+    .hero-media img { width:100%; height:auto; aspect-ratio:5/4; object-fit:cover; }
+    .hero-search { margin-top:var(--spacing-xl); }
+    .search-field { display:flex; max-width:560px; border:1px solid var(--color-hairline);
+      background:#fff; }
+    .search-field input { flex:1; border:none; padding:14px 16px; font-family:var(--body-font-family);
+      font-size:var(--body); color:var(--color-fg); background:transparent; }
+    .search-field input::placeholder { color:var(--color-fg-soft); }
+    .search-field input:focus-visible { outline:none; }
+    .search-field button { border-radius:0; padding:13px 28px; }
+    .quick-pills { display:flex; flex-wrap:wrap; gap:var(--spacing-sm); margin-top:var(--spacing-md); }
+
+    /* ── proof block (signature) ────────────────────────────────── */
+    .proof { padding:var(--section-padding) 0; }
+    .proof-rule { border-top:1px solid var(--color-hairline);
+      border-bottom:1px solid var(--color-hairline); }
+    .proof .grid12 { padding:clamp(32px,4vw,48px) 0; }
+    .proof-item { grid-column:span 4; padding-inline:var(--spacing-lg);
+      border-left:1px solid var(--color-hairline); }
+    .proof-item:first-child { border-left:none; padding-left:0; }
+    .proof-num { display:block; font-weight:700; font-size:var(--display);
+      line-height:var(--line-height-heading); letter-spacing:-0.02em; color:var(--color-fg); }
+    .proof-cap { display:block; margin-top:var(--spacing-md); font-size:var(--body-sm);
+      font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--color-fg-soft); }
+
+    /* ── locate ─────────────────────────────────────────────────── */
+    .locate { background:var(--color-ground); padding:var(--section-padding) 0; }
+    .locate-head { grid-column:1 / 7; }
+    .locate-head h2 { font-size:var(--heading-xl); font-weight:700; line-height:1.12;
+      letter-spacing:-0.01em; }
+    .locate-body { grid-column:7 / 13; align-self:center; }
+    .locate-body p { max-width:64ch; margin-bottom:var(--spacing-lg); }
+
+    /* ── care teasers ───────────────────────────────────────────── */
+    .care { padding:var(--section-padding) 0; }
+    .care h2 { font-size:var(--heading-xl); font-weight:700; line-height:1.12; letter-spacing:-0.01em;
+      grid-column:1 / 13; margin-bottom:var(--spacing-xl); }
+    .care-grid { grid-column:1 / 13; display:grid; grid-template-columns:repeat(12,1fr);
+      column-gap:var(--gutter); row-gap:var(--gutter); }
+    .care-card { grid-column:span 4; background:#fff; border-radius:var(--radius);
+      box-shadow:var(--shadow-card); display:flex; flex-direction:column;
+      border:1px solid var(--color-hairline); }
+    .care-card img { width:100%; height:200px; object-fit:cover; }
+    .care-card-body { padding:var(--spacing-lg); display:flex; flex-direction:column; flex:1; gap:var(--spacing-md); }
+    .care-card h3 { font-size:var(--heading-lg); font-weight:500; line-height:1.2; }
+    .care-card p { color:var(--color-fg); flex:1; }
+
+    /* ── what's happening ───────────────────────────────────────── */
+    .happening { background:var(--color-ground-alt); padding:var(--section-padding) 0 0; }
+    .happening-cols { row-gap:var(--spacing-2xl); }
+    .col-news { grid-column:1 / 7; padding-right:var(--gutter); }
+    .col-events { grid-column:7 / 13; padding-left:var(--gutter);
+      border-left:1px solid var(--color-hairline); }
+    .happening h2 { font-size:var(--heading-lg); font-weight:700; line-height:1.2;
+      margin-bottom:var(--spacing-lg); }
+    .news-row { padding:var(--spacing-lg) 0; border-top:1px solid var(--color-hairline); }
+    .news-row:first-of-type { border-top:none; padding-top:0; }
+    .news-tag { font-size:0.6875rem; font-weight:500; letter-spacing:0.06em; text-transform:uppercase;
+      color:var(--color-accent-ink); }
+    .news-row h3 { font-size:1.125rem; font-weight:500; line-height:1.3; margin:6px 0 4px; }
+    .news-row h3 a { color:var(--color-fg); }
+    .news-row .attr { font-size:var(--body-sm); color:var(--color-fg-soft); }
+    .event-row { display:flex; gap:var(--spacing-lg); padding:var(--spacing-lg) 0;
+      border-top:1px solid var(--color-hairline); align-items:baseline; }
+    .event-row:first-of-type { border-top:none; padding-top:0; }
+    .event-day { font-size:var(--heading-lg); font-weight:700; line-height:1; color:var(--color-fg);
+      flex:0 0 auto; min-width:2ch; }
+    .event-row h3 { font-size:1.125rem; font-weight:500; line-height:1.3; }
+    .event-row h3 a { color:var(--color-fg); }
+    .section-more { display:inline-block; margin-top:var(--spacing-md); }
+    .blog-strip { background:var(--color-accent); margin-top:var(--section-padding); }
+    .blog-strip .container { display:flex; align-items:center; justify-content:space-between;
+      gap:var(--spacing-lg); padding-block:clamp(28px,4vw,40px); flex-wrap:wrap; }
+    .blog-strip h2 { color:#fff; font-size:var(--heading-xl); font-weight:700; letter-spacing:-0.01em; }
+    .blog-strip .btn-primary { background:var(--color-accent-cta); }
+    .blog-strip .btn-primary:hover { background:#005a80; }
+
+    /* ── footer ─────────────────────────────────────────────────── */
+    .site-footer { background:var(--color-fg); color:#fff; padding:var(--section-padding) 0 var(--spacing-2xl); }
+    .site-footer a { color:#e9e6e2; }
+    .site-footer a:hover { color:#fff; }
+    .footer-top { display:flex; justify-content:space-between; flex-wrap:wrap; gap:var(--spacing-xl);
+      padding-bottom:var(--spacing-2xl); border-bottom:1px solid rgba(255,255,255,0.18); }
+    .footer-brand { max-width:42ch; }
+    .footer-brand h2 { color:#fff; font-size:var(--heading-lg); font-weight:700; margin-bottom:var(--spacing-md); }
+    .footer-brand p { color:#d9d4ce; }
+    .footer-emergency { background:#fff; border-radius:0; padding:14px 20px; display:inline-flex;
+      flex-direction:column; gap:2px; }
+    .footer-emergency .lbl { font-size:var(--body-sm); font-weight:500; letter-spacing:0.04em;
+      text-transform:uppercase; color:var(--color-fg-soft); }
+    .footer-emergency a { color:var(--color-emergency); font-size:1.5rem; font-weight:700; line-height:1; }
+    .footer-emergency a:hover { color:var(--color-emergency); }
+    .footer-cols { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--spacing-xl);
+      padding-block:var(--spacing-2xl); }
+    .footer-cols h3 { color:#fff; font-size:var(--body); font-weight:500; letter-spacing:0.02em;
+      margin-bottom:var(--spacing-md); }
+    .footer-cols ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+    .footer-cols a { font-size:0.9375rem; }
+    .footer-bottom { display:flex; justify-content:space-between; flex-wrap:wrap; gap:var(--spacing-md);
+      padding-top:var(--spacing-lg); border-top:1px solid rgba(255,255,255,0.18);
+      font-size:var(--body-sm); color:#cfc9c3; }
+    .footer-legal { display:flex; flex-wrap:wrap; gap:var(--spacing-lg); }
+    .footer-legal a { color:#cfc9c3; }
+    .to-top { color:#cfc9c3; }
+
+    /* ── responsive: 12-col → 8-col (≥600) → single (<600) ──────── */
+    @media (max-width:900px) {
+      .hero-copy { grid-column:1 / 8; }
+      .hero-media { grid-column:8 / 13; }
+      .locate-head, .locate-body { grid-column:1 / 13; }
+      .care-card { grid-column:span 6; }
+      .col-news { grid-column:1 / 13; padding-right:0; }
+      .col-events { grid-column:1 / 13; padding-left:0; border-left:none;
+        border-top:1px solid var(--color-hairline); padding-top:var(--spacing-2xl); }
+    }
+    @media (max-width:640px) {
+      :root { --section-padding:32px; }
+      .ds-nav-burger { display:inline-flex; align-items:center; justify-content:center;
+        background:none; border:1px solid var(--color-hairline); border-radius:0;
+        width:44px; height:44px; cursor:pointer; color:var(--color-fg); }
+      .ds-nav-burger svg { width:22px; height:22px; }
+      .primary-nav {
+        display:none; position:absolute; left:0; right:0; top:100%; flex-direction:column;
+        gap:0; background:#fff; border-bottom:1px solid var(--color-hairline);
+        padding:var(--spacing-sm) clamp(20px,5vw,40px) var(--spacing-md);
+      }
+      .header-main .container { position:relative; }
+      .primary-nav.is-open { display:flex; }
+      .primary-nav a { padding:12px 0; border-bottom:1px solid var(--color-hairline);
+        font-size:1.0625rem; }
+      .primary-nav a:last-child { border-bottom:none; }
+      .header-utility { display:none; }
+      .hero .grid12 { display:block; }
+      .hero-copy, .hero-media { width:100%; }
+      .hero-media { margin-top:var(--spacing-xl); }
+      .hero h1 { max-width:none; }
+      .proof .grid12 { display:block; }
+      .proof-item { padding:var(--spacing-lg) 0; border-left:none;
+        border-top:1px solid var(--color-hairline); }
+      .proof-item:first-child { border-top:none; padding-top:0; }
+      .care-card { grid-column:span 12; }
+      .footer-cols { grid-template-columns:1fr; }
+      .footer-top { flex-direction:column; align-items:flex-start; }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      * { transition:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="skip-links">
+    <a href="#nav">Zur Navigation springen</a>
+    <a href="#main">Zum Inhalt springen</a>
+  </div>
+
+  <header class="site-header" data-section="header" data-intent="navigate" data-layout="contained" data-nav-collapse="hamburger">
+    <div class="header-utility">
+      <div class="container">
+        <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+        <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+        <span class="lang-switch">
+          <a href="https://www.hirslanden.ch/de/corporate/home.html" aria-current="true">DE</a>
+          <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+          <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+        </span>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a class="logo" href="https://www.hirslanden.ch/de/corporate/home.html">
+          <img src="../current/assets/media/hirslanden-logo-93694b3d.png" alt="Hirslanden" width="188" height="54">
+        </a>
+        <button class="ds-nav-burger" id="navToggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <nav class="primary-nav" id="nav" aria-label="Hauptnavigation">
+          <a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken</a>
+          <a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a>
+          <a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a>
+          <a href="https://www.hirslanden.ch/de/corporate/search.html">Suche</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- hero: type-led 12-col grid -->
+    <section class="hero" data-section="hero" data-intent="emotional hook" data-layout="grid" data-media="image" data-interactive="form">
+      <div class="container">
+        <div class="grid12">
+          <div class="hero-copy">
+            <p class="eyebrow">Hirslanden-Gruppe</p>
+            <h1>Kompetenz, die Vertrauen schafft</h1>
+            <form class="hero-search" action="https://www.hirslanden.ch/de/corporate/search.html" method="get" role="search">
+              <div class="search-field">
+                <label for="q" class="skip-links">Suche</label>
+                <input id="q" name="q" type="search" placeholder="Stichwort…" autocomplete="off">
+                <button class="btn-primary" type="submit">Suche</button>
+              </div>
+              <div class="quick-pills">
+                <a class="pill" href="https://careers.hirslanden.ch/?locale=de_DE">Jobs</a>
+                <a class="pill" href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärztesuche</a>
+                <a class="pill" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html">Baby-Galerie</a>
+                <a class="pill" href="https://sponsoring.hirslanden.ch/de/">Sponsoring-Anfragen</a>
+              </div>
+            </form>
+          </div>
+          <div class="hero-media">
+            <img src="../current/assets/media/hero-onkologie-133e374f.webp"
+                 alt="Ärztin im Gespräch mit einer Patientin in einem hellen Raum mit Seesicht"
+                 loading="eager" fetchpriority="high" width="1450" height="1160">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- proof block: institution set in type -->
+    <section class="proof" data-section="proof-block" data-intent="build trust" data-layout="grid" data-items="3">
+      <div class="container">
+        <div class="proof-rule">
+          <div class="grid12">
+            <div class="proof-item">
+              <span class="proof-num">16</span>
+              <span class="proof-cap">Privatkliniken</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-num">über 300</span>
+              <span class="proof-cap">Kompetenzzentren</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-num">über 3000</span>
+              <span class="proof-cap">Ärztinnen und Ärzte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- locate -->
+    <section class="locate" data-section="locate" data-intent="drive action" data-layout="contained">
+      <div class="container">
+        <div class="grid12">
+          <div class="locate-head">
+            <h2>Hirslanden in Ihrer Nähe</h2>
+          </div>
+          <div class="locate-body">
+            <p>Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.</p>
+            <a class="btn-primary" href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Zu den Standorten</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- care teasers: type-led grid cards -->
+    <section class="care" data-section="care-teasers" data-intent="reassure" data-layout="grid" data-items="3">
+      <div class="container">
+        <div class="grid12">
+          <h2>Hirslanden-Gruppe</h2>
+          <div class="care-grid">
+            <article class="care-card">
+              <img src="../current/assets/media/nr-dsc07282-b9625f14.jpg" alt="Neugeborenes in einer Hirslanden-Geburtsklinik" loading="lazy" width="800" height="533">
+              <div class="care-card-body">
+                <h3>Babygalerie</h3>
+                <p>Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz.</p>
+                <a class="more-link" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html">Mehr erfahren</a>
+              </div>
+            </article>
+            <article class="care-card">
+              <div class="care-card-body">
+                <h3>Für alle Folgen des Lebens</h3>
+                <p>Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da.</p>
+                <a class="more-link" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens.html">Mehr erfahren</a>
+              </div>
+            </article>
+            <article class="care-card">
+              <div class="care-card-body">
+                <h3>Hirslanden Healthline</h3>
+                <p>Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen.</p>
+                <a class="more-link" href="https://www.hirslanden.ch/de/corporate/healthline.html">Mehr erfahren</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- what's happening -->
+    <section class="happening" data-section="whats-happening" data-intent="show activity" data-layout="grid" data-items="8">
+      <div class="container">
+        <div class="grid12 happening-cols">
+          <div class="col-news">
+            <h2>News &amp; Mitteilungen</h2>
+            <div class="news-row">
+              <span class="news-tag">News</span>
+              <h3><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Centre de Chirurgie Ambulatoire de Genève</a></h3>
+              <span class="attr">Hirslanden-Gruppe</span>
+            </div>
+            <div class="news-row">
+              <span class="news-tag">News</span>
+              <h3><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Erstes Symposium der Hirslanden Research Foundation</a></h3>
+              <span class="attr">Hirslanden Research Foundation</span>
+            </div>
+            <div class="news-row">
+              <span class="news-tag">News</span>
+              <h3><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">LUCERNE TOOLBOX 3 - Ein digitaler Kompass bei Brustkrebs</a></h3>
+              <span class="attr">Klinik St. Anna, Luzern</span>
+            </div>
+            <div class="news-row">
+              <span class="news-tag">News</span>
+              <h3><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Official Medical Partner von Corinne Suter</a></h3>
+              <span class="attr">Hirslanden-Gruppe</span>
+            </div>
+            <a class="section-more more-link" href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Alle News und Mitteilungen</a>
+          </div>
+          <div class="col-events">
+            <h2>Veranstaltungen</h2>
+            <div class="event-row">
+              <span class="event-day">25</span>
+              <div><h3><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Bewegte Schwangerschaft</a></h3></div>
+            </div>
+            <div class="event-row">
+              <span class="event-day">25</span>
+              <div><h3><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Informationsabend Geburt</a></h3></div>
+            </div>
+            <div class="event-row">
+              <span class="event-day">01</span>
+              <div><h3><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Öffentlicher Vortrag: Beinarterien - wann Untersuchung und Behandlung</a></h3></div>
+            </div>
+            <div class="event-row">
+              <span class="event-day">02</span>
+              <div><h3><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Informationsabend Geburt</a></h3></div>
+            </div>
+            <a class="section-more more-link" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Alle Veranstaltungen</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-strip">
+        <div class="container">
+          <h2>Hirslanden Blog</h2>
+          <a class="btn-primary" href="https://www.hirslanden.ch/de/corporate/blog.html">Weiterlesen</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-section="footer" data-intent="navigate" data-layout="grid">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>HIRSLANDEN-GRUPPE</h2>
+          <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3 000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+        </div>
+        <div class="footer-emergency">
+          <span class="lbl">Notfallnummer</span>
+          <a href="tel:144">144</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-angehoerige/besucher-informationen.html">Besucher-Informationen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-angehoerige/versicherungsfragen.html">Versicherungsfragen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/internationale-patienten.html">Internationale Patienten</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/gesundheitsvideos.html">Gesundheitsvideos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Leistungsangebot</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Hirslanden in Ihrer Region</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/hotellerie.html">Hotellerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns.html">Hirslanden-Gruppe</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+            <li><a href="https://careers.hirslanden.ch/?locale=de_DE">Jobs &amp; Karriere</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Hirslanden-Gruppe 2026</span>
+        <div class="footer-legal">
+          <a href="https://www.hirslanden.ch/de/corporate/nutzungsbedingungen.html">Nutzungsbedingungen</a>
+          <a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a>
+          <a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Website Cookie Richtlinie</a>
+          <a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a>
+        </div>
+        <a class="to-top" href="#main">Zurück zum Seitenanfang ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var b=document.getElementById('navToggle'),n=document.getElementById('nav');
+      if(!b||!n)return;
+      b.addEventListener('click',function(){var o=n.classList.toggle('is-open');b.setAttribute('aria-expanded',o);});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('is-open')){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.focus();}});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- stardust:provenance
+  writtenBy:         stardust:prototype
+  writtenAt:         2026-06-24T00:00:00Z
+  page:              home
+  variant:           C
+  pageUrl:           https://www.hirslanden.ch/
+  againstDirection:  stardust/direction.md (Active 2026-06-24T00:00:00Z)
+  readArtifacts:
+    - stardust/current/pages/home.json
+    - stardust/current/_brand-extraction.json
+    - DESIGN-C.md
+    - DESIGN-C.json
+    - PRODUCT.md
+    - stardust/direction.md
+  divergenceMode:    brand-faithful (Mode A)
+  surprise:          high
+  dominantDimension: composition/editorial-photo-sequence
+  fontDeck:          brand-inherited (Metropolis 400/500/700, static-only family — Discipline 7 exempts the display family; @font-face relative paths)
+  paletteSource:     brand-inherited (Hirslanden #0094d4; small/interactive blue darkened to #0070a0 and CTA-on-blue to #006894 for WCAG AA — documented in DESIGN-C brand_faithful_inversions)
+  unsourcedContent:
+    - selector: "section[data-section=\"care-moments\"] .care-moment:nth-child(2) [data-placeholder]"
+      type: other
+      reason: "design demands a full-scale editorial image for the 'Für alle Folgen des Lebens' moment; current/pages/home.json provides no captured photo for this teaser"
+    - selector: "section[data-section=\"care-moments\"] .care-moment:nth-child(3) [data-placeholder]"
+      type: other
+      reason: "design demands a full-scale editorial image for the 'Hirslanden Healthline' moment; current/pages/home.json provides no captured photo for this teaser"
+  critique:          "impeccable detector 0 deterministic findings; brand register reviewed (image-led full-bleed photography is the canonical brand move; identity-preserved Metropolis + Hirslanden blue; eyebrows kept sparse — hero 'Für Sie da' + 'Hingabe' only, NEWS tags are captured content tags not section scaffolding). No P0/P1 design findings."
+  audit:             "WCAG AA computed clean on all text-on-substrate pairs: body/links/nav/footer ≥4.5:1; hero white-on-scrim 6.39:1 worst case (scrim is the AA mechanism, not a whole-image dim); search/blog CTA white-on-#006894 6.16:1; large-text 3:1 floor pairs pass (blog headline 1.5rem/500 on #0094d4 3.39:1; day-number 700/1.5rem #0094d4-on-white 3.39:1; footer 144 700/1.25rem red-on-white-chip 3.85:1). LCP hero img eager+fetchpriority=high (not lazy); below-fold images lazy. All images have descriptive alt. No JS-gated hidden state. No P0/P1."
+  adapt:             "Static-analyzed at 1920/1440/1280/900/800/640/414/375/360. viewport meta present; body overflow-x:hidden; global img max-width:100%; full-bleed images width:100% (no overflow). Breakpoints min-width 600/900/1200 + 640 hamburger boundary (narrowest mobile rule correct). Mobile-nav P1 fixed: header bar overflowed at 360px (logo+full nav 332>312) — reduced .ds-nav gap to 16px on mobile and made search button icon-only (<640) with aria-label + label restored at >=640; bar now 274<=312. Touch targets burger 44x44, search submit 49px. data-nav-collapse=hamburger applied."
+  stardustVersion:   0.10.0
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hirslanden-Gruppe, Schweiz</title>
+<meta name="description" content="16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!">
+<style>
+  /* ── :root token contract (hex, matching DESIGN-C.md frontmatter) ───────── */
+  :root {
+    --heading-font-family: 'Metropolis', Arial, sans-serif;
+    --body-font-family:    'Metropolis', Arial, sans-serif;
+
+    /* quiet 1.2 modular scale */
+    --heading-xxl: clamp(2rem, 3.5vw, 2.5rem);  /* hero Display only */
+    --heading-xl:  1.5rem;    /* Headline */
+    --heading-lg:  1.5rem;    /* Headline (section leads) */
+    --heading-md:  1.25rem;   /* Title */
+    --body:        1.0625rem;
+    --body-sm:     0.9375rem;
+    --label:       0.8125rem;
+
+    --line-height-heading: 1.3;
+    --line-height-body:    1.7;
+
+    /* warm grounds + warm text */
+    --color-bg:         #f7f6f5;
+    --ground-white:     #ffffff;
+    --ground-alt:       #f0efed;
+    --color-fg:         #534c46;
+    --text-soft:        #72665b;
+    --hairline:         #e2dfdb;
+
+    /* blue: large fills = #0094d4; small/interactive = #0070a0; CTA-on-blue fill = #006894 */
+    --color-accent:     #0094d4;
+    --color-accent-ink: #0070a0;
+    --color-accent-cta: #006894;
+
+    --color-emergency:  #f43a11;   /* reserved: footer 144 only */
+
+    --spacing-xs:  4px;
+    --spacing-sm:  8px;
+    --spacing-md:  16px;
+    --spacing-lg:  24px;
+    --spacing-xl:  40px;
+    --spacing-2xl: 56px;
+
+    --section-padding: 40px;       /* mobile; scales up at breakpoints */
+    --max-width:       1200px;
+    --max-width-text:  1100px;
+    --radius:          0px;        /* squared controls/cards */
+    --radius-pill:     18px;       /* secondary chips/badges */
+    --shadow-card:     0 2px 12px rgba(0,0,0,.08);
+
+    --z-sticky: 100;
+  }
+
+  /* ── mobile-nav burger base (source-order load-bearing: after :root, before @media) ── */
+  .ds-nav-burger { display: inline-flex; }
+  .ds-nav-primary--collapsible { display: none; }
+
+  /* ── fonts (relative @font-face, self-contained) ───────────────────────── */
+  @font-face {
+    font-family: 'Metropolis'; font-style: normal; font-weight: 400; font-display: swap;
+    src: url('../current/assets/fonts/Metropolis-Regular-15de18d5.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Metropolis'; font-style: normal; font-weight: 500; font-display: swap;
+    src: url('../current/assets/fonts/Metropolis-SemiBold-269a2bc8.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Metropolis'; font-style: normal; font-weight: 700; font-display: swap;
+    src: url('../current/assets/fonts/Metropolis-Bold-3c10b2e7.woff') format('woff');
+  }
+
+  /* ── reset / base ──────────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body);
+    line-height: var(--line-height-body);
+    font-weight: 400;
+    color: var(--color-fg);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: var(--color-accent-ink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3 { text-wrap: balance; margin: 0; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid var(--color-accent-ink); outline-offset: 3px; }
+
+  .ds-wrap { width: 100%; max-width: var(--max-width); margin-inline: auto; padding-inline: var(--spacing-lg); }
+  .ds-eyebrow {
+    font-size: var(--label); font-weight: 500; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--text-soft); margin: 0 0 var(--spacing-sm);
+  }
+  .ds-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--color-accent-ink); font-weight: 500; font-size: var(--body);
+  }
+  .ds-link::after { content: '→'; transition: transform .18s ease; }
+  .ds-link:hover::after { transform: translateX(3px); }
+
+  /* ── header ────────────────────────────────────────────────────────────── */
+  .ds-header {
+    position: sticky; top: 0; z-index: var(--z-sticky);
+    background: var(--ground-white);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .ds-utility {
+    border-bottom: 1px solid var(--hairline);
+    background: var(--ground-white);
+  }
+  .ds-utility .ds-wrap {
+    display: flex; justify-content: flex-end; align-items: center; gap: var(--spacing-lg);
+    min-height: 38px; font-size: var(--body-sm);
+  }
+  .ds-utility a { color: var(--text-soft); }
+  .ds-utility a:hover { color: var(--color-accent-ink); }
+  .ds-lang { display: inline-flex; gap: 8px; color: var(--text-soft); }
+  .ds-lang a[aria-current="true"] { color: var(--color-fg); font-weight: 500; }
+  .ds-utility-sep { color: var(--hairline); }
+
+  .ds-bar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: var(--spacing-lg); }
+  .ds-logo img { width: 158px; height: auto; }
+  .ds-nav { display: flex; align-items: center; gap: var(--spacing-md); }
+  .ds-search-label { display: none; }
+  .ds-nav-primary { display: flex; gap: var(--spacing-lg); list-style: none; margin: 0; padding: 0; }
+  .ds-nav-primary a { color: var(--color-fg); font-weight: 500; font-size: var(--body); padding: 6px 0; position: relative; }
+  .ds-nav-primary a::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
+    background: var(--color-accent-ink); transform: scaleX(0); transform-origin: left; transition: transform .2s ease;
+  }
+  .ds-nav-primary a:hover { color: var(--color-accent-ink); text-decoration: none; }
+  .ds-nav-primary a:hover::after { transform: scaleX(1); }
+  .ds-search-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: none; border: 1px solid var(--hairline); border-radius: var(--radius-pill);
+    color: var(--color-fg); font: inherit; font-size: var(--body-sm); font-weight: 500;
+    padding: 8px 16px; cursor: pointer;
+  }
+  .ds-search-btn:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+  .ds-search-btn svg { width: 16px; height: 16px; }
+  .ds-nav-burger {
+    align-items: center; justify-content: center;
+    width: 44px; height: 44px; background: none; border: 1px solid var(--hairline);
+    border-radius: var(--radius-pill); cursor: pointer; color: var(--color-fg);
+  }
+  .ds-nav-burger svg { width: 22px; height: 22px; }
+
+  /* ── editorial hero (full-bleed photograph) ────────────────────────────── */
+  .ds-hero { background: var(--color-bg); }
+  .ds-hero-figure { position: relative; margin: 0; width: 100%; }
+  .ds-hero-figure img {
+    width: 100%; height: clamp(380px, 58vh, 660px); object-fit: cover; object-position: 50% 38%;
+  }
+  .ds-hero-scrim {
+    position: absolute; left: 0; bottom: 0;
+    max-width: 640px; width: clamp(280px, 90%, 640px);
+    margin: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: rgba(40, 35, 30, 0.66);
+    color: #ffffff;
+  }
+  .ds-hero-scrim .ds-eyebrow { color: rgba(255,255,255,0.92); margin-bottom: 6px; }
+  .ds-hero-title {
+    font-family: var(--heading-font-family);
+    font-weight: 700; font-size: var(--heading-xxl); line-height: 1.2;
+    letter-spacing: -0.005em; color: #ffffff; margin: 0;
+  }
+  .ds-hero-search { background: var(--ground-white); border-bottom: 1px solid var(--hairline); }
+  .ds-hero-search form {
+    display: flex; gap: 0; max-width: 720px;
+    padding-block: var(--spacing-lg);
+  }
+  .ds-hero-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .ds-hero-search input {
+    flex: 1 1 auto; min-width: 0;
+    font: inherit; font-size: var(--body);
+    padding: 13px var(--spacing-md); border: 1px solid var(--hairline); border-right: none;
+    border-radius: 0; background: var(--ground-white); color: var(--color-fg);
+  }
+  .ds-hero-search input::placeholder { color: var(--text-soft); }
+  .ds-hero-search button {
+    flex: 0 0 auto; font: inherit; font-weight: 500; letter-spacing: 0.02em;
+    background: var(--color-accent-cta); color: #ffffff; border: none; border-radius: 0;
+    padding: 0 var(--spacing-xl); cursor: pointer; min-height: 49px;
+  }
+  .ds-hero-search button:hover { background: #005a80; }
+
+  /* ── editorial lead ────────────────────────────────────────────────────── */
+  .ds-section { padding-block: var(--section-padding); }
+  .ds-lead { background: var(--color-bg); }
+  .ds-lead .ds-wrap { max-width: var(--max-width-text); }
+  .ds-lead h2 {
+    font-family: var(--heading-font-family); font-weight: 500;
+    font-size: var(--heading-lg); line-height: var(--line-height-heading);
+    color: var(--color-fg); max-width: 24ch; margin: 0 0 var(--spacing-md);
+  }
+  .ds-lead p.ds-prose {
+    font-size: var(--body); line-height: var(--line-height-body);
+    max-width: 65ch; color: var(--color-fg); margin: 0 0 var(--spacing-xl);
+  }
+  .ds-proof {
+    font-size: var(--heading-md); font-weight: 500; line-height: 1.5;
+    color: var(--color-fg); max-width: 30ch; margin: 0 0 var(--spacing-lg);
+  }
+  .ds-proof b { font-weight: 700; color: var(--color-fg); }
+
+  /* ── full-bleed feature band (Hingabe) ─────────────────────────────────── */
+  .ds-feature { position: relative; }
+  .ds-feature-figure { margin: 0; width: 100%; }
+  .ds-feature-figure img {
+    width: 100%; height: clamp(340px, 50vh, 560px); object-fit: cover; object-position: 50% 42%;
+  }
+  .ds-feature-panel {
+    background: var(--ground-white); box-shadow: var(--shadow-card);
+    padding: var(--spacing-xl); max-width: 460px;
+  }
+  .ds-feature-panel h2 {
+    font-family: var(--heading-font-family); font-weight: 500;
+    font-size: var(--heading-lg); line-height: var(--line-height-heading);
+    color: var(--color-fg); margin: 0 0 var(--spacing-sm);
+  }
+  .ds-feature-panel p { font-size: var(--body); line-height: var(--line-height-body); margin: 0 0 var(--spacing-md); }
+  /* mobile: image then panel stacked */
+  .ds-feature .ds-wrap { padding-block: 0; }
+  .ds-feature-panel { margin: calc(var(--spacing-lg) * -1) var(--spacing-lg) var(--spacing-xl); position: relative; }
+
+  /* ── care moments (stacked editorial) ──────────────────────────────────── */
+  .ds-moments { background: var(--ground-alt); }
+  .ds-moment { display: grid; gap: 0; margin-bottom: var(--spacing-xl); background: var(--ground-white); box-shadow: var(--shadow-card); }
+  .ds-moment:last-child { margin-bottom: 0; }
+  .ds-moment-media { margin: 0; min-height: 240px; }
+  .ds-moment-media img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; }
+  .ds-moment-body { padding: var(--spacing-xl); display: flex; flex-direction: column; justify-content: center; }
+  .ds-moment-body h3 {
+    font-family: var(--heading-font-family); font-weight: 500;
+    font-size: var(--heading-md); line-height: 1.35; color: var(--color-fg);
+    margin: 0 0 var(--spacing-sm);
+  }
+  .ds-moment-body p { font-size: var(--body); line-height: var(--line-height-body); margin: 0 0 var(--spacing-md); }
+
+  /* placeholder editorial image signature */
+  .ds-placeholder {
+    margin: 0; min-height: 260px; display: flex; flex-direction: column; gap: 8px;
+    align-items: center; justify-content: center; text-align: center;
+    padding: var(--spacing-lg);
+    outline: 2px dashed var(--color-accent); outline-offset: -10px;
+    background: var(--ground-alt);
+    position: relative;
+  }
+  .ds-placeholder::before {
+    content: ''; position: absolute; inset: 0; background: var(--ground-alt); opacity: 0.7; z-index: 0;
+  }
+  .ds-placeholder > * { position: relative; z-index: 1; }
+  .ds-ph-eyebrow {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    font-size: 0.75rem; letter-spacing: 0.05em; color: var(--color-accent-ink); font-weight: 600;
+  }
+  .ds-ph-shape { font-size: var(--body-sm); color: var(--text-soft); max-width: 30ch; }
+
+  /* ── what's happening (quiet activity band) ────────────────────────────── */
+  .ds-activity { background: var(--color-bg); }
+  .ds-activity-grid { display: grid; gap: var(--spacing-2xl); }
+  .ds-col h2 {
+    font-family: var(--heading-font-family); font-weight: 500;
+    font-size: var(--heading-lg); line-height: var(--line-height-heading);
+    color: var(--color-fg); margin: 0 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--hairline);
+  }
+  .ds-news-item { padding: var(--spacing-md) 0; border-bottom: 1px solid var(--hairline); }
+  .ds-news-item a { color: var(--color-fg); display: block; }
+  .ds-news-item a:hover h3 { color: var(--color-accent-ink); }
+  .ds-news-item .ds-tag {
+    display: inline-block; font-size: var(--label); font-weight: 500; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--text-soft); margin-bottom: 4px;
+  }
+  .ds-news-item h3 { font-size: var(--body); font-weight: 500; line-height: 1.4; color: var(--color-fg); margin: 0; }
+  .ds-event-item { display: flex; gap: var(--spacing-md); align-items: baseline; padding: var(--spacing-md) 0; border-bottom: 1px solid var(--hairline); }
+  .ds-event-item a { display: flex; gap: var(--spacing-md); align-items: baseline; color: var(--color-fg); width: 100%; }
+  .ds-event-item a:hover h3 { color: var(--color-accent-ink); }
+  .ds-day {
+    flex: 0 0 auto; font-family: var(--heading-font-family); font-weight: 700;
+    font-size: 1.5rem; line-height: 1; color: var(--color-accent); min-width: 1.6em; text-align: center;
+  }
+  .ds-event-item h3 { font-size: var(--body); font-weight: 500; line-height: 1.4; color: var(--color-fg); margin: 0; }
+  .ds-col .ds-link { margin-top: var(--spacing-lg); }
+
+  .ds-blog {
+    margin-top: var(--spacing-2xl);
+    background: var(--color-accent); color: #ffffff;
+    padding: var(--spacing-xl);
+    display: flex; flex-wrap: wrap; gap: var(--spacing-lg); align-items: center; justify-content: space-between;
+  }
+  .ds-blog h2 { font-family: var(--heading-font-family); color: #ffffff; font-weight: 500; font-size: var(--heading-lg); margin: 0; }
+  .ds-blog a.ds-btn {
+    background: var(--color-accent-cta); color: #ffffff; font-weight: 500; font-size: var(--body);
+    padding: 12px 28px; border-radius: 0; display: inline-block;
+  }
+  .ds-blog a.ds-btn:hover { background: #005a80; text-decoration: none; }
+
+  /* ── footer ────────────────────────────────────────────────────────────── */
+  .ds-footer { background: var(--color-fg); color: #ffffff; padding-block: var(--section-padding); }
+  .ds-footer a { color: rgba(255,255,255,0.84); }
+  .ds-footer a:hover { color: #ffffff; }
+  .ds-footer-top { display: grid; gap: var(--spacing-xl); padding-bottom: var(--spacing-xl); border-bottom: 1px solid rgba(255,255,255,0.16); }
+  .ds-footer-brand h2 { font-family: var(--heading-font-family); font-weight: 700; font-size: var(--heading-md); letter-spacing: 0.02em; margin: 0 0 var(--spacing-md); color: #ffffff; }
+  .ds-footer-brand p { color: rgba(255,255,255,0.84); font-size: var(--body-sm); line-height: 1.6; margin: 0 0 var(--spacing-lg); max-width: 42ch; }
+  .ds-footer-brand .ds-social { font-size: var(--label); letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+  .ds-emergency {
+    display: inline-flex; align-items: center; gap: 10px; margin-top: var(--spacing-md);
+    background: #ffffff; border-radius: var(--radius-pill); padding: 8px 16px; color: var(--color-fg); font-weight: 500;
+  }
+  .ds-emergency .ds-144 { color: var(--color-emergency); font-weight: 700; font-size: 1.25rem; letter-spacing: 0.02em; }
+  .ds-footer-cols { display: grid; gap: var(--spacing-xl); }
+  .ds-footer-col h3 { font-size: var(--label); letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin: 0 0 var(--spacing-md); font-weight: 500; }
+  .ds-footer-col ul { list-style: none; margin: 0; padding: 0; }
+  .ds-footer-col li { margin-bottom: 10px; }
+  .ds-footer-col a { font-size: var(--body-sm); }
+  .ds-footer-bottom { display: flex; flex-wrap: wrap; gap: var(--spacing-md) var(--spacing-lg); justify-content: space-between; padding-top: var(--spacing-lg); font-size: var(--body-sm); color: rgba(255,255,255,0.7); }
+  .ds-footer-bottom ul { display: flex; flex-wrap: wrap; gap: var(--spacing-md); list-style: none; margin: 0; padding: 0; }
+
+  /* ════════════ responsive ════════════ */
+  @media (min-width: 600px) {
+    :root { --section-padding: 56px; }
+    .ds-hero-search form { padding-inline: 0; }
+    .ds-feature-panel { max-width: 520px; }
+    .ds-activity-grid { grid-template-columns: 1fr 1fr; }
+    .ds-footer-cols { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 640px) {
+    .ds-nav { gap: var(--spacing-xl); }
+    .ds-search-label { display: inline; }
+    .ds-nav-burger { display: none; }
+    .ds-nav-primary--collapsible { display: flex; }
+  }
+
+  @media (min-width: 900px) {
+    :root { --section-padding: 64px; }
+    .ds-hero-figure img { height: clamp(460px, 60vh, 680px); }
+
+    /* Hingabe feature: image full-bleed, panel overlaid bottom-left */
+    .ds-feature { position: relative; }
+    .ds-feature .ds-wrap {
+      position: absolute; inset: 0; display: flex; align-items: flex-end;
+      max-width: var(--max-width); padding-block: var(--spacing-xl);
+      pointer-events: none;
+    }
+    .ds-feature-panel { margin: 0; pointer-events: auto; }
+
+    /* care moments: alternating split */
+    .ds-moment { grid-template-columns: 1.15fr 1fr; align-items: stretch; }
+    .ds-moment--flip .ds-moment-media { order: 2; }
+    .ds-moment--flip .ds-moment-body { order: 1; }
+    .ds-moment-media, .ds-placeholder { min-height: 360px; }
+
+    .ds-footer-top { grid-template-columns: 1.2fr 2fr; }
+    .ds-footer-cols { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 1200px) {
+    .ds-moment-body { padding: var(--spacing-2xl); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="ds-header" data-section="header" data-intent="navigate" data-layout="full-bleed" data-nav-collapse="hamburger">
+  <div class="ds-utility">
+    <div class="ds-wrap">
+      <a href="https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html">Kontakt</a>
+      <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien</a>
+      <span class="ds-utility-sep" aria-hidden="true">|</span>
+      <span class="ds-lang">
+        <a href="https://www.hirslanden.ch/de/corporate/home.html" aria-current="true">DE</a>
+        <a href="https://www.hirslanden.ch/fr/corporate/home.html">FR</a>
+        <a href="https://www.hirslanden.ch/en/corporate/home.html">EN</a>
+      </span>
+    </div>
+  </div>
+  <div class="ds-wrap">
+    <div class="ds-bar">
+      <a class="ds-logo" href="https://www.hirslanden.ch/de/corporate/home.html" aria-label="Hirslanden Home">
+        <img src="../current/assets/media/hirslanden-logo-93694b3d.png" alt="Hirslanden" width="188" height="54">
+      </a>
+      <nav class="ds-nav" aria-label="Hauptnavigation">
+        <ul class="ds-nav-primary ds-nav-primary--collapsible" id="primary-nav">
+          <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte</a></li>
+          <li><a href="https://www.hirslanden.ch/de/corporate/fachgebiete.html">Fachgebiete</a></li>
+        </ul>
+        <a class="ds-search-btn" href="https://www.hirslanden.ch/de/corporate/search.html" aria-label="Suche">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="ds-search-label">Suche</span>
+        </a>
+        <button class="ds-nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="primary-nav" aria-label="Navigation öffnen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── editorial hero ── -->
+  <section class="ds-hero" data-section="editorial-hero" data-intent="emotional hook" data-layout="full-bleed" data-media="image" data-interactive="form">
+    <figure class="ds-hero-figure">
+      <img src="../current/assets/media/hero-onkologie-133e374f.webp"
+           alt="Ärztin im Gespräch mit einer Patientin in einem hellen Raum mit Seesicht"
+           loading="eager" fetchpriority="high" width="2900" height="1419">
+      <figcaption class="ds-hero-scrim">
+        <p class="ds-eyebrow">Für Sie da</p>
+        <h1 class="ds-hero-title">Kompetenz, die Vertrauen schafft</h1>
+      </figcaption>
+    </figure>
+    <div class="ds-hero-search">
+      <div class="ds-wrap">
+        <form action="https://www.hirslanden.ch/de/corporate/search.html" method="get" role="search">
+          <label for="hero-search">Suche</label>
+          <input id="hero-search" type="search" name="q" placeholder="Stichwort…" autocomplete="off">
+          <button type="submit">Suche</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── editorial lead ── -->
+  <section class="ds-section ds-lead" data-section="editorial-lead" data-intent="build trust" data-layout="contained">
+    <div class="ds-wrap">
+      <h2>Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause.</h2>
+      <p class="ds-prose">Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.</p>
+      <p class="ds-proof"><b>16</b> Privatkliniken · <b>über 300</b> Kompetenzzentren · <b>über 3000</b> Ärztinnen und Ärzte</p>
+      <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Zu den Standorten</a>
+    </div>
+  </section>
+
+  <!-- ── full-bleed feature band (Hingabe) ── -->
+  <section class="ds-feature" data-section="hingabe-feature" data-intent="emotional hook" data-layout="full-bleed" data-media="image">
+    <figure class="ds-feature-figure">
+      <img src="../current/assets/media/pflege-hingabe-6e8ca022.jpg"
+           alt="Pflegefachperson bei der persönlichen Betreuung einer Patientin"
+           loading="lazy" width="1100" height="734">
+    </figure>
+    <div class="ds-wrap">
+      <div class="ds-feature-panel">
+        <p class="ds-eyebrow">Hingabe, die man spürt</p>
+        <h2>Gelebte Hingabe für Ihre Gesundheit</h2>
+        <p>Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht.</p>
+        <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/ueber-uns/hirslanden-gruppe.html">Mehr erfahren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── care moments ── -->
+  <section class="ds-section ds-moments" data-section="care-moments" data-intent="reassure" data-layout="stack" data-media="image" data-items="3">
+    <div class="ds-wrap">
+
+      <article class="ds-moment care-moment">
+        <figure class="ds-moment-media">
+          <img src="../current/assets/media/nr-dsc07282-b9625f14.jpg"
+               alt="Neugeborenes in einer Hirslanden-Geburtsklinik" loading="lazy" width="1100" height="734">
+        </figure>
+        <div class="ds-moment-body">
+          <h3>Babygalerie</h3>
+          <p>Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz.</p>
+          <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html">Mehr erfahren</a>
+        </div>
+      </article>
+
+      <article class="ds-moment ds-moment--flip care-moment">
+        <figure class="ds-moment-media ds-placeholder"
+                data-placeholder="true" data-placeholder-type="other"
+                data-placeholder-source="design demanded full-scale editorial image; no captured photo for 'Für alle Folgen des Lebens' teaser in current/pages/home.json">
+          <span class="ds-ph-eyebrow">PLACEHOLDER · other</span>
+          <span class="ds-ph-shape">z. B. redaktionelles Bild — Familie / Lebensbegleitung</span>
+        </figure>
+        <div class="ds-moment-body">
+          <h3>Für alle Folgen des Lebens</h3>
+          <p>Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da.</p>
+          <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens.html">Mehr erfahren</a>
+        </div>
+      </article>
+
+      <article class="ds-moment care-moment">
+        <figure class="ds-moment-media ds-placeholder"
+                data-placeholder="true" data-placeholder-type="other"
+                data-placeholder-source="design demanded full-scale editorial image; no captured photo for 'Hirslanden Healthline' teaser in current/pages/home.json">
+          <span class="ds-ph-eyebrow">PLACEHOLDER · other</span>
+          <span class="ds-ph-shape">z. B. redaktionelles Bild — persönliche Begleitung</span>
+        </figure>
+        <div class="ds-moment-body">
+          <h3>Hirslanden Healthline</h3>
+          <p>Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen.</p>
+          <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/healthline.html">Mehr erfahren</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── what's happening (quiet activity band) ── -->
+  <section class="ds-section ds-activity" data-section="whats-happening" data-intent="show activity" data-layout="grid" data-items="8">
+    <div class="ds-wrap">
+      <div class="ds-activity-grid">
+
+        <div class="ds-col">
+          <h2>News &amp; Mitteilungen</h2>
+          <div class="ds-news-item">
+            <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">
+              <span class="ds-tag">News</span>
+              <h3>Centre de Chirurgie Ambulatoire de Genève</h3>
+            </a>
+          </div>
+          <div class="ds-news-item">
+            <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">
+              <span class="ds-tag">News</span>
+              <h3>Erstes Symposium der Hirslanden Research Foundation</h3>
+            </a>
+          </div>
+          <div class="ds-news-item">
+            <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">
+              <span class="ds-tag">News</span>
+              <h3>LUCERNE TOOLBOX 3 – Ein digitaler Kompass bei Brustkrebs</h3>
+            </a>
+          </div>
+          <div class="ds-news-item">
+            <a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">
+              <span class="ds-tag">News</span>
+              <h3>Official Medical Partner von Corinne Suter</h3>
+            </a>
+          </div>
+          <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Alle News und Mitteilungen</a>
+        </div>
+
+        <div class="ds-col">
+          <h2>Veranstaltungen</h2>
+          <div class="ds-event-item">
+            <a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">
+              <span class="ds-day">25</span>
+              <h3>Bewegte Schwangerschaft</h3>
+            </a>
+          </div>
+          <div class="ds-event-item">
+            <a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">
+              <span class="ds-day">25</span>
+              <h3>Informationsabend Geburt</h3>
+            </a>
+          </div>
+          <div class="ds-event-item">
+            <a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">
+              <span class="ds-day">01</span>
+              <h3>Öffentlicher Vortrag: Beinarterien – wann Untersuchung und Behandlung</h3>
+            </a>
+          </div>
+          <div class="ds-event-item">
+            <a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">
+              <span class="ds-day">02</span>
+              <h3>Informationsabend Geburt</h3>
+            </a>
+          </div>
+          <a class="ds-link" href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Alle Veranstaltungen</a>
+        </div>
+
+      </div>
+
+      <div class="ds-blog">
+        <h2>Hirslanden Blog</h2>
+        <a class="ds-btn" href="https://blog.hirslanden.ch/">Weiterlesen</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ds-footer" data-section="footer" data-intent="navigate" data-layout="grid">
+  <div class="ds-wrap">
+    <div class="ds-footer-top">
+      <div class="ds-footer-brand">
+        <h2>HIRSLANDEN-GRUPPE</h2>
+        <p>16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3 000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+        <p class="ds-social">Folgen Sie uns</p>
+        <a class="ds-emergency" href="https://www.hirslanden.ch/de/corporate/notfall.html">
+          Notfallnummer <span class="ds-144">144</span>
+        </a>
+      </div>
+      <div class="ds-footer-cols">
+        <div class="ds-footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-angehoerige.html">Besucher-Informationen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html">Hirslanden Baby</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/patienten-und-angehoerige/versicherung.html">Versicherungsfragen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/internationale-patienten.html">Internationale Patienten</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html">Kurse &amp; Veranstaltungen</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/gesundheitsvideos.html">Gesundheitsvideos</a></li>
+          </ul>
+        </div>
+        <div class="ds-footer-col">
+          <h3>Leistungsangebot</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Kliniken &amp; Zentren</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html">Hirslanden in Ihrer Region</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html">Ärzte und Ärztinnen finden</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/hotellerie.html">Hotellerie</a></li>
+          </ul>
+        </div>
+        <div class="ds-footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/hirslanden-gruppe.html">Hirslanden-Gruppe</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html">Qualität</a></li>
+            <li><a href="https://careers.hirslanden.ch/?locale=de_DE">Jobs &amp; Karriere</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/medien-und-news.html">Medien &amp; News</a></li>
+            <li><a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ds-footer-bottom">
+      <span>© Hirslanden-Gruppe 2026</span>
+      <ul>
+        <li><a href="https://www.hirslanden.ch/de/corporate/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html">Website Cookie Richtlinie</a></li>
+        <li><a href="https://www.hirslanden.ch/de/corporate/impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile-nav a11y sync (≤10 lines): toggle aria-expanded + collapsible nav, Escape-to-close
+  (function () {
+    var b = document.getElementById('nav-burger'), n = document.getElementById('primary-nav');
+    if (!b || !n) return;
+    b.addEventListener('click', function () {
+      var open = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', String(!open));
+      n.style.display = open ? '' : 'flex';
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && b.getAttribute('aria-expanded') === 'true') { b.setAttribute('aria-expanded', 'false'); n.style.display = ''; b.focus(); } });
+  })();
+</script>
+
+</body>
+</html>

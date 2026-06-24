@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden — Variant A (Faithful + improvements)",
+  "variant": {
+    "id": "A",
+    "role": "Faithful + improvements",
+    "bet": "Same IA, every improvements-list item applied, no creative reach — the risk-averse green-light.",
+    "primaryAxis": "baseline-fix",
+    "amplifies": "none (faithful)",
+    "differentiatingToken": "type-scale ratio 1.25, sectionPadding 64px (balanced baseline)",
+    "motion": "static — gentle hover/focus micro-interactions only; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "note": "--brandColor; action only, ~10% max coverage" },
+      "ground-warm": { "role": "neutral", "displayName": "Warm Ground", "canonical": "#f7f6f5" },
+      "text-warm-dark": { "role": "neutral", "displayName": "Text Warm Dark", "canonical": "#534c46" },
+      "emergency-red": { "role": "reserved", "displayName": "Emergency Red", "canonical": "#f43a11", "note": "144 affordance only" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only; replaces the low-contrast taupe watermark." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "The single soft shadow on elevated white cards over the warm ground." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#0094d4", "color": "#ffffff", "borderRadius": "0px", "fontWeight": 500 }, "secondary": { "background": "#f7f6f5", "color": "#534c46", "borderRadius": "18px", "fontWeight": 400 } },
+      "cards": { "background": "#ffffff", "borderRadius": "0px", "shadow": "0 2px 12px rgba(0,0,0,0.08)" },
+      "inputs": { "borderRadius": "0px", "border": "1px solid #e2dfdb" },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Wordmark + primary nav (Kliniken/Ärzte/Fachgebiete) + search + utility bar; reachable emergency path.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.", "positionClass": "page-end" },
+      "find-care": { "purpose": "Search-first wayfinding affordance.", "positionClass": "first-viewport" },
+      "emergency-144": { "purpose": "Unmistakable emergency wayfinding (red 144).", "positionClass": "footer-and-chrome" },
+      "cta-band": { "purpose": "Full-width brand-blue editorial band (Hirslanden Blog).", "positionClass": "mid-page" }
+    },
+    "motifs": {
+      "signaturePill": { "radius": "18px", "usage": "quick-link chips; secondary actions; badges" },
+      "squaredControls": { "radius": "0px", "usage": "primary buttons, cards, inputs — deliberate contrast with the pill" },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "warmPhotography": "clinician-with-patient human imagery; reused at captured semantic positions",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; reassurance-forward; scale stated as fact",
+      "dos": [
+        "Do address the reader as Sie; reassure before persuading.",
+        "Do state scale (16/300/3000) plainly as proof.",
+        "Do use sentence-case headings; uppercase only for short eyebrows."
+      ],
+      "donts": [
+        "Don't write in all-caps body copy.",
+        "Don't use high-pressure conversion verbs ('Jetzt buchen').",
+        "Don't fragment CTA vocabulary across five disagreeing labels."
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "crisis-affordance", "evidence": "_brand-extraction.json#palette[accent-danger] + systemComponents[site-footer].ctaLabels contains 'Notfallnummer 144' in #f43a11", "preserveAs": "unmistakable-emergency-path", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "search-led-IA", "evidence": "pages/home.json#landmarks hero is a search box ('Stichwort...') + quicklink pill row; motifs.patterns includes 'search-first-hero'", "preserveAs": "first-viewport", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "warmth-not-sterile", "evidence": "palette warm grounds #f7f6f5/#f0efed + warm text #534c46 + clinician-with-patient hero photography", "preserveAs": "warm-neutral-ground-and-human-photography", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "restraint-one-accent-one-family", "evidence": "single family Metropolis; single accent #0094d4; rationed saturation", "preserveAs": "one-accent-one-family", "scope": "site-wide", "mutability": "movable" }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": { "decade": "2025-now", "register": "brand (inherited)", "ground_family": { "value": "warm-neutral", "override": "brand-faithful" } },
+      "inheritedDimensions": { "font_deck": "brand-inherited (Metropolis 400/500/700)", "palette": "inherited from _brand-extraction.json" },
+      "brand_faithful_inversions": [
+        "#ffffff retained as elevated card ground (existing brand decision; canonical for Hirslanden). The 'no pure white' impeccable rule is inverted per brand-faithful direction.",
+        "Color tokens retained in hex format (matches captured surface and Stitch frontmatter convention). OKLCH applies to new authoring; this is inheritance.",
+        "Sharp 0px corners retained on cards/inputs/primary buttons (existing brand uses squared corners as a deliberate counterpoint to the 18px pill). The 'modern means rounded' reflex is inverted.",
+        "Saturated #0094d4 retained as the primary brand color (canonical voice, --brandColor). The reflex toward tinted-neutral primaries is inverted.",
+        "#f43a11 retained as a reserved color for the emergency-144 affordance only. The reflex to spread accent colors across the system is inverted."
+      ],
+      "antiToolboxAudit": "1 hit (sticky top navigation) — justified by inherited site convention.",
+      "motionRegister": "none — static variant; presales scope is static-only"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action color, squared corners.",
+      "html": "<button class=\"ds-btn-primary\">Zu den Standorten</button>",
+      "css": ".ds-btn-primary { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 0; font-family: Metropolis, sans-serif; font-weight: 500; letter-spacing: 0.02em; transition: background 0.18s ease; } .ds-btn-primary:hover { background: #0083bd; } .ds-btn-primary:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Quick-link Pill",
+      "kind": "chip",
+      "refersTo": "button-secondary",
+      "description": "The 18px signature pill chip.",
+      "html": "<a class=\"ds-pill\" href=\"#\">Ärztesuche</a>",
+      "css": ".ds-pill { display: inline-block; background: #f7f6f5; color: #534c46; padding: 8px 18px; border-radius: 18px; font-family: Metropolis, sans-serif; font-weight: 400; text-decoration: none; transition: background 0.18s ease; } .ds-pill:hover { background: #f0efed; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card, soft single shadow, squared corners.",
+      "html": "<article class=\"ds-card\"><h3>Babygalerie</h3><p>Entdecken Sie die neuesten Ankömmlinge.</p></article>",
+      "css": ".ds-card { background: #fff; color: #534c46; padding: 24px; border-radius: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); font-family: Metropolis, sans-serif; } .ds-card h3 { font-weight: 500; font-size: 1.375rem; line-height: 1.3; margin: 0 0 8px; } .ds-card p { font-weight: 400; line-height: 1.6; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calm Front Door, Corrected",
+    "overview": "Variant A is the brand exactly as it is today, with the obvious fixes applied. It keeps the captured IA and visual DNA and changes only execution quality: a legible hero headline, a real modular type scale, tokenized spacing, consolidated CTA vocabulary.",
+    "keyCharacteristics": ["Same IA and section sequence", "Legible controlled-contrast hero headline", "Modular type scale ratio 1.25", "Tokenized 4pt spacing, 64px section rhythm", "One accent, one family, gentle micro-interactions only"],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "A single brand blue carries every action; ≤ 10% of any viewport.", "section": "colors" },
+      { "name": "The Reserved-Red Rule", "body": "#f43a11 is permitted on the 144 emergency affordance and nowhere else.", "section": "colors" },
+      { "name": "The Modular-Scale Rule", "body": "Heading sizes follow a single 1.25 ratio; the ad-hoc 42/34/22 set is replaced.", "section": "typography" },
+      { "name": "The Single-Shadow Rule", "body": "One shadow value site-wide; no stacked shadows, glow, or inset.", "section": "elevation" }
+    ],
+    "dos": ["Do keep the captured IA and section sequence intact.", "Do set the hero headline in legible #534c46 or white over a controlled scrim.", "Do reserve #0094d4 for action and #f43a11 for 144 only."],
+    "donts": ["Don't build the Generic-2026-SaaS silhouette.", "Don't use gradients, glassmorphism, neon, or stacked shadows.", "Don't add scroll choreography, parallax, or any cinematic motion register."]
+  }
+}

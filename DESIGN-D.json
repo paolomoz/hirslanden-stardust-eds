@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden — Variant D (Confident display)",
+  "variant": {
+    "id": "D",
+    "role": "Different captured trait amplified — display typography",
+    "bet": "Metropolis pushed into a confident editorial display scale on a strict modular grid; the 16/300/3000 scale story rendered as a typographic proof block.",
+    "primaryAxis": "typography + grid",
+    "amplifies": "Display-typography amplification (what-if #1), in service of Design Principles 4 (one quiet voice, one accent) and 5 (institutional proof, plainly stated).",
+    "differentiatingToken": "type-scale ratio 1.333 (perfect fourth), Display clamp up to 4.21rem, tight display line-height 1.08, strict 12-col grid with 24px gutters, proof block",
+    "motion": "static — no count-up/reveal; scale and grid carry confidence at rest; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "note": "action + sparing single-numeral emphasis; never the whole proof block" },
+      "ground-warm": { "role": "neutral", "displayName": "Warm Ground", "canonical": "#f7f6f5" },
+      "text-warm-dark": { "role": "neutral", "displayName": "Text Warm Dark", "canonical": "#534c46", "note": "display headings and proof numerals — warm even at large size" },
+      "hairline": { "role": "neutral", "displayName": "Grid Hairline", "canonical": "#e2dfdb", "note": "visible grid rules" },
+      "emergency-red": { "role": "reserved", "displayName": "Emergency Red", "canonical": "#f43a11", "note": "144 only" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero line and proof numerals — Metropolis 700, perfect-fourth scale." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "Content cards only; the proof block stays flat with hairline grid rules." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "grid": { "columns": 12, "gutter": "24px", "note": "Strict modular grid; nav, proof block, cards, and search all snap to columns." },
+    "typeScale": { "ratio": 1.333, "base": "1rem", "note": "Perfect fourth; replaces captured ad-hoc 42/34/22 (1.235/1.545 disagreeing)." },
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#0094d4", "color": "#ffffff", "borderRadius": "0px", "fontWeight": 500 }, "secondary": { "background": "#f7f6f5", "color": "#534c46", "borderRadius": "18px", "fontWeight": 400 } },
+      "cards": { "background": "#ffffff", "borderRadius": "0px", "shadow": "0 2px 12px rgba(0,0,0,0.08)" },
+      "inputs": { "borderRadius": "0px", "border": "1px solid #e2dfdb" },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Wordmark + nav + search + utility bar, grid-aligned; reachable emergency path.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.", "positionClass": "page-end" },
+      "proof-block": { "purpose": "Institutional scale story (16/300+/3000+) as a large typographic statement on the grid.", "positionClass": "upper-page", "siteWideConstraint": "Set as Display numerals with Label captions; never animated; never recolored across all three." },
+      "find-care": { "purpose": "Search-first wayfinding affordance, grid-snapped.", "positionClass": "first-viewport" },
+      "emergency-144": { "purpose": "Unmistakable emergency wayfinding (red 144).", "positionClass": "footer-and-chrome" }
+    },
+    "motifs": {
+      "signaturePill": { "radius": "18px", "usage": "secondary chips and badges" },
+      "squaredControls": { "radius": "0px", "usage": "primary buttons, cards, inputs" },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "visibleGrid": "hairline #e2dfdb rules expressing the 12-column modular grid",
+      "warmPhotography": "supporting role — photography sits within grid cells, not full-bleed",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; institutional scale stated plainly — amplified as typographic proof",
+      "dos": [
+        "Do state scale as numerals, captioned plainly (Privatkliniken / Kompetenzzentren / Ärztinnen und Ärzte).",
+        "Do keep headings declarative and confident.",
+        "Do let the grid express the institution's order."
+      ],
+      "donts": [
+        "Don't boast — the numbers are proof, not a brag.",
+        "Don't decorate the proof block with color or motion.",
+        "Don't add a second typeface for contrast."
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "institutional-proof", "evidence": "PRODUCT.md Product Purpose + footer recite '16 Privatkliniken, über 300 Kompetenzzentren, über 3000 Ärztinnen und Ärzte'; currently footer prose", "preserveAs": "upper-page-typographic-proof-block", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "search-led-IA", "evidence": "pages/home.json hero search box; 'search-first-hero'", "preserveAs": "first-viewport", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "crisis-affordance", "evidence": "footer 'Notfallnummer 144' in #f43a11", "preserveAs": "footer-and-chrome", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "warmth-not-sterile", "evidence": "warm grounds + warm text + human photography (supporting role here)", "preserveAs": "warm-neutral-ground-and-human-photography", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "restraint-one-accent-one-family", "evidence": "single family Metropolis — the protagonist of this variant; single accent #0094d4", "preserveAs": "one-accent-one-family", "scope": "site-wide", "mutability": "movable" }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": { "decade": "2025-now", "register": "brand (inherited)", "ground_family": { "value": "warm-neutral", "override": "brand-faithful" } },
+      "inheritedDimensions": { "font_deck": "brand-inherited (Metropolis 400/500/700)", "palette": "inherited" },
+      "cCliffCheck": "Display amplification is anchored to a captured trait (the single geometric sans currently rendered ad-hoc), NOT to size-as-personality. The 1.333 ratio is a disciplined modular scale, not a 120pt vanity slider. sectionPadding held at 64px floor — confidence comes from type scale + grid, not from padding-as-personality. Passes C-cliff.",
+      "brand_faithful_inversions": [
+        "#ffffff retained as card / proof-block ground (brand decision). 'No pure white' inverted per brand-faithful direction.",
+        "Hex token format retained. OKLCH applies to new authoring only.",
+        "Sharp 0px corners retained on cards/inputs/primary buttons. 'Modern means rounded' reflex inverted.",
+        "Saturated #0094d4 retained as primary action color. Tinted-neutral-primary reflex inverted.",
+        "#f43a11 retained as reserved color for the 144 affordance only. Spread-accent reflex inverted.",
+        "Warm #534c46 retained for large display headings (agent-default would reach for near-black at display size for 'punch'); warm-faithful inverted."
+      ],
+      "antiToolboxAudit": "0 unjustified hits. The visible grid is justified by the display-typography bet (grid is structure for the type), not decoration.",
+      "motionRegister": "none — static variant; explicitly no count-up on proof numerals"
+    }
+  },
+  "components": [
+    {
+      "name": "Proof Block",
+      "kind": "custom",
+      "refersTo": "proof-block",
+      "description": "The institutional scale story as large typographic numerals on the grid.",
+      "html": "<section class=\"ds-proof\"><div class=\"ds-proof-item\"><span class=\"ds-proof-num\">16</span><span class=\"ds-proof-cap\">Privatkliniken</span></div><div class=\"ds-proof-item\"><span class=\"ds-proof-num\">300+</span><span class=\"ds-proof-cap\">Kompetenzzentren</span></div><div class=\"ds-proof-item\"><span class=\"ds-proof-num\">3000+</span><span class=\"ds-proof-cap\">Ärztinnen und Ärzte</span></div></section>",
+      "css": ".ds-proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; border-top: 1px solid #e2dfdb; border-bottom: 1px solid #e2dfdb; padding: 40px 0; font-family: Metropolis, sans-serif; } .ds-proof-item { display: flex; flex-direction: column; gap: 8px; } .ds-proof-num { font-weight: 700; font-size: clamp(3rem, 6vw, 4.21rem); line-height: 1.08; letter-spacing: -0.02em; color: #534c46; } .ds-proof-cap { font-weight: 500; font-size: 0.8125rem; letter-spacing: 0.04em; text-transform: uppercase; color: #72665b; }"
+    },
+    {
+      "name": "Display Headline",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Confident perfect-fourth display heading.",
+      "html": "<h1 class=\"ds-display\">Kompetenz, die Vertrauen schafft</h1>",
+      "css": ".ds-display { font-family: Metropolis, sans-serif; font-weight: 700; font-size: clamp(3rem, 6vw, 4.21rem); line-height: 1.08; letter-spacing: -0.02em; color: #534c46; max-width: 16ch; margin: 0; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Action, grid-aligned.",
+      "html": "<button class=\"ds-btn-primary\">Zu den Standorten</button>",
+      "css": ".ds-btn-primary { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 0; font-family: Metropolis, sans-serif; font-weight: 500; transition: background 0.18s ease; } .ds-btn-primary:hover { background: #0083bd; } .ds-btn-primary:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Institution, Set in Type",
+    "overview": "Variant D amplifies Metropolis itself: a confident perfect-fourth display scale (1.333) on a strict 12-column grid, with the 16/300/3000 scale story rendered as a large typographic proof block instead of footer prose. Type carries the institutional authority; color and photography stay pinned and supporting.",
+    "keyCharacteristics": ["Confident display scale, ratio 1.333 on Metropolis 700", "Strict 12-column grid, 24px gutters", "16/300/3000 as a typographic proof block", "Tight display line-heights 1.08–1.2", "Pinned palette stays quiet; type is the protagonist"],
+    "rules": [
+      { "name": "The Type-Carries-It Rule", "body": "Authority is built with display type on a grid, not with more color. Blue stays at action coverage.", "section": "colors" },
+      { "name": "The Reserved-Red Rule", "body": "#f43a11 is the 144 number only — never to emphasize a proof numeral.", "section": "colors" },
+      { "name": "The Perfect-Fourth Rule", "body": "All sizes derive from a single 1.333 ratio; the ad-hoc 42/34/22 set is retired.", "section": "typography" },
+      { "name": "The Proof-Block Rule", "body": "16/300/3000 are Display numerals with Label captions on the grid — read as type, not buried prose.", "section": "typography" },
+      { "name": "The Grid-Is-Structure Rule", "body": "Hierarchy comes from grid position and type scale, not shadows.", "section": "elevation" }
+    ],
+    "dos": ["Do set headings in a confident 1.333 display scale on Metropolis 700.", "Do render 16/300/3000 as a typographic proof block on the grid.", "Do keep color pinned and quiet."],
+    "donts": ["Don't treat size-as-personality (no 120pt vanity display).", "Don't introduce a second typeface.", "Don't add count-up animation or any cinematic motion register."]
+  }
+}

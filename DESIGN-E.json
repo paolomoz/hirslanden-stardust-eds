@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden — Variant E (Calm / neutral-forward)",
+  "variant": {
+    "id": "E",
+    "role": "Different captured trait amplified — color re-weighting + signature-pill extension",
+    "bet": "The warm-neutral ground carries the page; blue is rarer but deliberate; the 18px pill extends into one consistent shape system. Maximal calm.",
+    "primaryAxis": "color weighting + motif",
+    "amplifies": "Color-ladder re-weighting (what-if #6) + signature-pill extension (#4), in service of Design Principles 1 (reassurance) and 3 (warm not sterile).",
+    "differentiatingToken": "warm-ground #f7f6f5 as default surface (white demoted); blue rationed to wayfinding only; 18px radius unified across chips/cards/tags/inputs/buttons; type ratio 1.2, weight 500",
+    "motion": "static — calm is structural in soft shapes and rationed color; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "note": "rationed to true wayfinding actions only — rarest in the family; scarcity is the point" },
+      "ground-warm": { "role": "neutral", "displayName": "Warm Ground", "canonical": "#f7f6f5", "note": "the DOMINANT surface; carries the page" },
+      "ground-warm-alt": { "role": "neutral", "displayName": "Warm Ground Alt", "canonical": "#f0efed", "note": "nested panels and chips" },
+      "ground-white": { "role": "neutral", "displayName": "Ground White", "canonical": "#ffffff", "note": "demoted to the exception — used only to lift" },
+      "text-warm-dark": { "role": "neutral", "displayName": "Text Warm Dark", "canonical": "#534c46" },
+      "emergency-red": { "role": "reserved", "displayName": "Emergency Red", "canonical": "#f43a11", "note": "144 only; reads even clearer as blue recedes" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display (soft)", "purpose": "Hero line at weight 500 on warm ground — softer than the rest of the family." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "Rare — only the white elements that must lift (e.g. the search box). Most panels sit flat on warm ground." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "shapeSystem": { "radius": "18px", "appliesTo": ["chips", "cards", "tags", "inputs", "buttons"], "note": "The captured pill-vs-squared contrast is resolved toward the pill — one consistent soft shape language." },
+    "typeScale": { "ratio": 1.2, "base": "1.0625rem", "note": "Quiet minor-third scale; heading weight 500." },
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#0094d4", "color": "#ffffff", "borderRadius": "18px", "fontWeight": 500 }, "secondary": { "background": "#f7f6f5", "color": "#534c46", "borderRadius": "18px", "fontWeight": 400 } },
+      "cards": { "background": "#f7f6f5", "borderRadius": "18px", "shadow": "none-by-default", "padding": "28px" },
+      "inputs": { "borderRadius": "18px", "border": "1px solid #e2dfdb" },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Wordmark + nav + search + utility bar on warm ground; blue reserved for active state; reachable emergency path.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.", "positionClass": "page-end" },
+      "find-care": { "purpose": "Search-first wayfinding affordance — one of the rare blue actions.", "positionClass": "first-viewport" },
+      "emergency-144": { "purpose": "Unmistakable emergency wayfinding (red 144) — clearer as blue recedes.", "positionClass": "footer-and-chrome" }
+    },
+    "motifs": {
+      "signaturePill": { "radius": "18px", "usage": "AMPLIFIED — extended into a single shape system across chips, cards, tags, inputs, and buttons" },
+      "squaredControls": { "radius": "resolved toward 18px", "note": "the deliberate captured pill-vs-squared contrast is intentionally collapsed toward the pill in this variant" },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08) — used rarely",
+      "warmGroundDominant": "#f7f6f5 is the default surface; white is the exception",
+      "warmPhotography": "human imagery retained at captured semantic positions, framed with the 18px radius",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; reassurance-forward; the calmest reading in the family",
+      "dos": [
+        "Do keep copy unhurried and reassuring.",
+        "Do let the warm ground and soft shapes set a spa-like calm while staying institutional.",
+        "Do keep the emergency label plain and unmistakable."
+      ],
+      "donts": [
+        "Don't introduce urgency or sales pressure.",
+        "Don't let the calm tip into vague or generic — it stays a hospital group.",
+        "Don't shout with weight 700 headings."
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "color-weighting", "evidence": "_brand-extraction.json palette — blue #0094d4 already rationed; warm #f7f6f5/#534c46 system; this variant re-weights further toward neutral", "preserveAs": "warm-ground-dominant-blue-rationed", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "signature-motif", "evidence": "motifs.borderRadius primary 18px pill chips vs 0px squared CTAs — deliberate contrast; this variant extends the pill into a shape system", "preserveAs": "unified-18px-shape-system", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "crisis-affordance", "evidence": "footer 'Notfallnummer 144' in #f43a11 — reads even clearer as blue recedes", "preserveAs": "footer-and-chrome-unmistakable", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "search-led-IA", "evidence": "pages/home.json hero search box; 'search-first-hero'", "preserveAs": "first-viewport (a rare blue action)", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "warmth-not-sterile", "evidence": "warm grounds + warm text + human photography — central bet of this variant", "preserveAs": "warm-neutral-ground-and-human-photography", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "restraint-one-accent-one-family", "evidence": "single family Metropolis; single accent #0094d4 (rarer here)", "preserveAs": "one-accent-one-family", "scope": "site-wide", "mutability": "movable" }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": { "decade": "2025-now", "register": "brand (inherited)", "ground_family": { "value": "warm-neutral (amplified to dominant)", "override": "brand-faithful" } },
+      "inheritedDimensions": { "font_deck": "brand-inherited (Metropolis)", "palette": "inherited and re-weighted (no new colors)" },
+      "cCliffCheck": "Calm is anchored to captured traits (the already-rationed blue and the 18px pill), NOT to 'extreme airy' slider abuse. sectionPadding held at 64px floor; air comes from warm ground + soft shapes + long line-height, not from padding-as-personality. No new color introduced — palette re-weighted only. Passes C-cliff.",
+      "brand_faithful_inversions": [
+        "#ffffff retained but demoted to the lifting exception (brand decision; warm ground is brand-native). 'No pure white' inverted per brand-faithful direction; here white is also deliberately rarer.",
+        "Hex token format retained. OKLCH applies to new authoring only.",
+        "18px radius extended across all containers — the captured pill is brand-native; this variant resolves the squared-vs-pill contrast toward the pill deliberately (a documented amplification, not a default reflex).",
+        "Saturated #0094d4 retained as the primary action color but rationed harder. Tinted-neutral-primary reflex inverted; scarcity is the chosen expression.",
+        "#f43a11 retained as reserved color for the 144 affordance only. Spread-accent reflex inverted."
+      ],
+      "antiToolboxAudit": "0 unjustified hits. Resolving corners toward 18px is justified by the signature-pill-extension bet, not a generic 'rounded = modern' reflex.",
+      "motionRegister": "none — static variant"
+    }
+  },
+  "components": [
+    {
+      "name": "Soft Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Warm-ground panel in the 18px shape system, flat by default.",
+      "html": "<article class=\"ds-soft-card\"><span class=\"ds-tag\">Wissen</span><h3>Ihr Klinikaufenthalt</h3><p>Alles, was Sie für einen ruhigen Aufenthalt wissen müssen.</p></article>",
+      "css": ".ds-soft-card { background: #f7f6f5; color: #534c46; padding: 28px; border-radius: 18px; font-family: Metropolis, sans-serif; } .ds-soft-card h3 { font-weight: 500; font-size: 1.25rem; line-height: 1.35; margin: 12px 0 8px; } .ds-soft-card p { font-weight: 400; font-size: 1.0625rem; line-height: 1.7; color: #72665b; margin: 0; } .ds-tag { display: inline-block; background: #f0efed; color: #72665b; padding: 4px 12px; border-radius: 18px; font-size: 0.8125rem; font-weight: 500; }"
+    },
+    {
+      "name": "Primary Button (pill)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Wayfinding action in the unified 18px shape; blue used sparingly.",
+      "html": "<button class=\"ds-btn-pill\">Klinik finden</button>",
+      "css": ".ds-btn-pill { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 18px; font-family: Metropolis, sans-serif; font-weight: 500; transition: background 0.18s ease; } .ds-btn-pill:hover { background: #0083bd; } .ds-btn-pill:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Box (lifted)",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "One of the rare white lifts; 18px shape; blue search button is a true wayfinding action.",
+      "html": "<form class=\"ds-search-soft\"><input type=\"search\" placeholder=\"Stichwort, Klinik oder Arzt…\"><button>Suche</button></form>",
+      "css": ".ds-search-soft { display: flex; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); } .ds-search-soft input { flex: 1; border: 1px solid #e2dfdb; border-right: none; padding: 14px 16px; font-family: Metropolis, sans-serif; color: #534c46; background: #fff; } .ds-search-soft button { background: #0094d4; color: #fff; border: none; padding: 14px 28px; font-weight: 500; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Maximal Calm",
+    "overview": "Variant E amplifies the warm-neutral color ladder and the 18px signature pill together: warm #f7f6f5 carries the page, blue is rationed to true wayfinding actions only, and the pill extends into one consistent shape system across chips, cards, tags, inputs, and buttons. The calmest, most reassurance-forward reading in the family while staying institutional.",
+    "keyCharacteristics": ["Warm-neutral ground carries the page; white demoted to the exception", "Blue rationed to wayfinding only — scarcity is the point", "18px pill extended into one shape system", "Quiet type: ratio 1.2, weight 500, line-height 1.7", "Maximal calm within the density floor"],
+    "rules": [
+      { "name": "The Blue-Is-Rare Rule", "body": "#0094d4 appears only on true wayfinding actions; otherwise warm-neutral.", "section": "colors" },
+      { "name": "The Ground-Carries-It Rule", "body": "The default surface is warm #f7f6f5; white is the exception, used only to lift.", "section": "colors" },
+      { "name": "The Soft-Weight Rule", "body": "Even the hero prefers weight 500; nothing shouts.", "section": "typography" },
+      { "name": "The Flat-Calm Rule", "body": "Most surfaces are flat warm-ground panels distinguished by their 18px shape, not by shadow.", "section": "elevation" }
+    ],
+    "dos": ["Do let warm #f7f6f5 carry the page.", "Do reserve blue for true wayfinding actions only.", "Do extend the 18px pill into one consistent shape system."],
+    "donts": ["Don't default surfaces to white.", "Don't mix squared and pill shapes — resolve toward the pill.", "Don't add scroll choreography or any cinematic motion register."]
+  }
+}

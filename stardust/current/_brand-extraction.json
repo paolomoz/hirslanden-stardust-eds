@@ -1,0 +1,329 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-24T00:00:00Z",
+    "readArtifacts": [
+      "https://www.hirslanden.ch/",
+      "stardust/current/pages/home.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0",
+    "notes": "Single-page (home) extraction; cross-page aggregation scope is the home page only. Palette/type/motif modes therefore carry home-page bias by construction (the --single contract). OneTrust consent-center colors (#0094d3 banner buttons, #3860be filter, #efefef) and headings were filtered before aggregation. Type scale measured at 1440x900: 42/34/22px headings, all Metropolis 700. CSS var --brandColor:#0094d4 confirms the role-primary cluster."
+  },
+  "site": {
+    "name": "Hirslanden",
+    "tagline": "Kompetenz, die Vertrauen schafft",
+    "originUrl": "https://www.hirslanden.ch"
+  },
+  "logo": {
+    "source": "img",
+    "sourceSelector": "div#nav > div.logoWrapper > a > img.logo[alt=\"Hirslanden\"]",
+    "localPath": "stardust/current/assets/logo.png",
+    "format": "png",
+    "intrinsicWidth": 188,
+    "intrinsicHeight": 54,
+    "synthesized": false,
+    "synthesizedBasis": null,
+    "_provenance": {
+      "notes": "Wordmark img renders at 0x0 in the desktop header slot at measurement time (CSS-driven responsive swap with the small mediclinic icon-logo); failed the locator's height>=32/width>=40 rendered-size gate. Resolved via locator chain step 2 by identity (src contains 'logo', alt='Hirslanden', inside div#nav) and fetched directly from https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png. Intrinsic 188x54 (aspect 3.48 wordmark). A combined mark 'icon-hirslanden-mediclinic-web.png' (60x50) also present (group identity with Mediclinic). Only one logo variant captured."
+    }
+  },
+  "palette": [
+    {
+      "role": "background",
+      "value": "#ffffff",
+      "occurrences": 6582858,
+      "usedAs": ["background", "text"],
+      "sourceSelectors": ["nav.nav-down", "div.middleStage", "div.search-box"],
+      "sources": ["home"]
+    },
+    {
+      "role": "surface",
+      "value": "#f7f6f5",
+      "occurrences": 1944511,
+      "usedAs": ["background"],
+      "sourceSelectors": ["div.header-with-awareness-banner", "a.hir-ext-link", "a"],
+      "sources": ["home"],
+      "_provenance": "warm off-white; the page ground beneath the white cards. Pill chips (Jobs/Aerztesuche) use the near-identical rgb(247,247,246)."
+    },
+    {
+      "role": "surface-alt",
+      "value": "#f0efed",
+      "occurrences": 1679085,
+      "usedAs": ["background"],
+      "sourceSelectors": ["div.callout", "div"],
+      "sources": ["home"]
+    },
+    {
+      "role": "primary",
+      "value": "#0094d4",
+      "occurrences": 739604,
+      "usedAs": ["background", "text", "fill"],
+      "sourceSelectors": ["a.accessible", "div.search-box", ".search button", ".cta a"],
+      "sources": ["home"],
+      "_provenance": "Hirslanden blue. Confirmed by CSS custom property --brandColor:#0094d4. Primary action color: search button, 'Zu den Standorten' CTA, the Hirslanden Blog band, carousel active dot, eyebrow badges."
+    },
+    {
+      "role": "primary-tint",
+      "value": "rgba(0,148,212,0.1)",
+      "occurrences": 248832,
+      "usedAs": ["background"],
+      "sourceSelectors": ["a.quicklinkContentWrapper"],
+      "sources": ["home"],
+      "_provenance": "10% tint of primary; quick-link tile backgrounds. Confirmed by CSS var --brandColorOpacity:rgba(0,148,212,0.1)."
+    },
+    {
+      "role": "text-primary",
+      "value": "#534c46",
+      "occurrences": 214300,
+      "usedAs": ["text"],
+      "sourceSelectors": ["span", "a", "h2", "h3", "p"],
+      "sources": ["home"],
+      "_provenance": "warm dark taupe-grey; body and most heading text. Not pure black — a deliberate warm neutral."
+    },
+    {
+      "role": "text-secondary",
+      "value": "#72665b",
+      "occurrences": 20500,
+      "usedAs": ["text"],
+      "sourceSelectors": ["div.clinic-name", "div.event-location"],
+      "sources": ["home"]
+    },
+    {
+      "role": "accent-danger",
+      "value": "#f43a11",
+      "occurrences": 800,
+      "usedAs": ["text"],
+      "sourceSelectors": ["div.footer_emergency-label", "a"],
+      "sources": ["home"],
+      "_provenance": "emergency red, footer 'Notfallnummer 144' label only. The single saturated warm accent in an otherwise blue/neutral system; reserved for emergency wayfinding."
+    }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Metropolis",
+      "stack": "\"Metropolis\", sans-serif",
+      "weights": [700],
+      "sizes": ["42px", "34px", "22px"],
+      "lineHeights": [1.43, 1.41, 1.36],
+      "letterSpacing": ["normal"],
+      "sourceSelectors": ["h1", "h2", "h3", "h4"],
+      "_provenance": "All headings Metropolis 700. h1 42px (rendered uppercase via CSS as hero watermark, color #938880 lighter-title); h2 34px #534c46; h3 22px #534c46. Line-heights ~1.4 (loose for a display register)."
+    },
+    "bodyFamily": {
+      "name": "Metropolis",
+      "stack": "\"Metropolis\", sans-serif",
+      "weights": [400, 500],
+      "sizes": ["16px", "13px"],
+      "lineHeights": [1.63, 1.08],
+      "letterSpacing": ["normal"],
+      "sourceSelectors": ["p", "li", "label"],
+      "_provenance": "Body Metropolis 400/500. 16px/1.63 for prose, 13px for dense meta (clinic names, dates). Single-family system — Metropolis carries headings, body, labels, and UI chrome."
+    },
+    "monoFamily": null,
+    "scaleRatio": null,
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "ratios": [1.235, 1.545],
+      "matchedScale": null,
+      "_provenance": "Heading sizes 42 -> 34 -> 22px. 42/34 = 1.235 (~major-third) but 34/22 = 1.545 (~perfect-fifth). Ratios disagree by more than 0.025, so the scale is ad-hoc, not modular."
+    },
+    "loadStrategy": "swap",
+    "files": [
+      {
+        "url": "https://www.hirslanden.ch/etc.clientlibs/hirslanden/clientlibs/frontend-min/resources/font/Metropolis-Regular.woff",
+        "family": "Metropolis",
+        "weight": 400,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/Metropolis-Regular-15de18d5.woff",
+        "sourceCssRule": "@font-face { font-family: 'Metropolis'; font-weight: 400; font-style: normal; font-display: swap; src: url('frontend-min/resources/font/Metropolis-Regular.woff') format('woff'); }",
+        "licensingFlag": "open"
+      },
+      {
+        "url": "https://www.hirslanden.ch/etc.clientlibs/hirslanden/clientlibs/frontend-min/resources/font/Metropolis-SemiBold.woff",
+        "family": "Metropolis",
+        "weight": 500,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/Metropolis-SemiBold-269a2bc8.woff",
+        "sourceCssRule": "@font-face { font-family: 'Metropolis'; font-weight: 500; font-style: normal; font-display: swap; src: url('frontend-min/resources/font/Metropolis-SemiBold.woff') format('woff'); }",
+        "licensingFlag": "open"
+      },
+      {
+        "url": "https://www.hirslanden.ch/etc.clientlibs/hirslanden/clientlibs/frontend-min/resources/font/Metropolis-Bold.woff",
+        "family": "Metropolis",
+        "weight": 700,
+        "style": "normal",
+        "unicodeRange": "",
+        "localPath": "stardust/current/assets/fonts/Metropolis-Bold-3c10b2e7.woff",
+        "sourceCssRule": "@font-face { font-family: 'Metropolis'; font-weight: 700; font-style: normal; font-display: swap; src: url('frontend-min/resources/font/Metropolis-Bold.woff') format('woff'); }",
+        "licensingFlag": "open"
+      }
+    ],
+    "_provenance": "licensingFlag 'open': Metropolis is a free/open-source geometric sans (Chris Simpson, SIL OFL). Italic cuts (Regular/SemiBold/Bold Italic) also declared in @font-face but not fetched on this load."
+  },
+  "spacing": {
+    "baseUnit": null,
+    "scale": [],
+    "sectionPadding": "0px",
+    "containerMaxWidth": null,
+    "gridGap": null,
+    "_provenance": "No coherent spacing scale exposed at :root (only --brandColor and --brandColorOpacity are defined). Section paddings are component-driven (legacy AEM), not tokenized. baseUnit null and scale empty are themselves a signal: the migration target will introduce a spacing system."
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": "18px",
+      "secondary": "50%",
+      "pill": "18px",
+      "primarySources": ["home"],
+      "occurrences": { "18px": "dominant (page wrapper, pill chips, search box)", "50%": "carousel dots", "17px": "filter button" },
+      "_provenance": "18px is the signature radius: pill chips (Jobs/Aerztesuche/Baby-Galerie), the search box, the page wrapper. Circular (50%) used for carousel pagination dots. Primary-action buttons (search 'Suche', 'Zu den Standorten') render with squared/0px corners, creating a deliberate contrast between rounded chips and rectangular CTAs."
+    },
+    "shadows": [
+      {
+        "value": "0 2px 12px rgba(0,0,0,0.08)",
+        "uses": "elevated white cards (search card, teaser cards, news/event cards) over the warm-grey ground",
+        "_provenance": "approximate; observed on the floating search card and content cards. Soft, low, diffuse."
+      }
+    ],
+    "gradients": [],
+    "patterns": [
+      { "name": "hero-with-image", "evidence": "full-bleed scene7 photo (1440x868) with an uppercase watermark headline and an overlapping white search card" },
+      { "name": "search-first-hero", "evidence": "primary hero affordance is a search box ('Stichwort...') + quick-link pill row, not a marketing CTA" },
+      { "name": "map-locator", "evidence": "'Hirslanden in Ihrer Naehe' Switzerland map with location pins + copy + 'Zu den Standorten' CTA" },
+      { "name": "quicklink-tile-grid", "evidence": "icon tiles on primary-tint background (Kliniksuche, Jobs und Karriere, Internationale Patienten, Behandlungen ABC...)" },
+      { "name": "teaser-card-3up", "evidence": "'Hirslanden-Gruppe' three image+headline+blurb cards (Babygalerie, Fuer alle Folgen des Lebens, Hirslanden Healthline)" },
+      { "name": "news-list", "evidence": "'News & Mitteilungen' eyebrow-tagged article rows with clinic attribution" },
+      { "name": "event-list-with-date-chip", "evidence": "'Veranstaltungen' rows with a large day-number date chip (25, 01, 02)" },
+      { "name": "cta-band", "evidence": "full-width Hirslanden-blue 'Hirslanden Blog' band with white headline + 'Weiterlesen' button" },
+      { "name": "footer-mega", "evidence": "multi-column footer (Quick Links, Leistungsangebot, Ueber uns) + emergency number 144 in red" },
+      { "name": "carousel", "evidence": "5-dot pagination beneath the map/hero region (slick slider)" }
+    ]
+  },
+  "componentStyle": {
+    "buttons": {
+      "primary": {
+        "background": "#0094d4",
+        "color": "#ffffff",
+        "borderRadius": "0px",
+        "padding": "approx 12px 28px",
+        "fontWeight": 500,
+        "shadow": null,
+        "hoverDelta": "darken (unmeasured; reducedMotion)",
+        "_provenance": "search 'Suche' button, 'Zu den Standorten', 'Weiterlesen'. Squared corners — sits in deliberate contrast to the 18px pill chips."
+      },
+      "secondary": {
+        "background": "#f7f7f6",
+        "color": "#534c46",
+        "borderRadius": "18px",
+        "padding": "approx 8px 18px",
+        "fontWeight": 400,
+        "shadow": null,
+        "_provenance": "the quick-link pill chips under the search box (Jobs, Aerztesuche, Baby-Galerie, Sponsoring-Anfragen)."
+      },
+      "ghost": null
+    },
+    "dualCTAPattern": null,
+    "cards": {
+      "background": "#ffffff",
+      "borderRadius": "0px",
+      "padding": "approx 24px",
+      "shadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "border": null,
+      "_provenance": "white content cards (teaser/news/event) and the floating search card, elevated over the warm-grey ground with a soft shadow. Corners read as square/near-square on cards."
+    },
+    "inputs": {
+      "borderRadius": "0px",
+      "padding": "approx 14px 16px",
+      "border": "1px solid #e2dfdb",
+      "focusRing": null,
+      "_provenance": "the hero search input ('Stichwort...') paired with the blue search button inside an 18px-radius white search-box container."
+    }
+  },
+  "systemComponents": [
+    {
+      "name": "site-header",
+      "kind": "header",
+      "occurrences": 1,
+      "headingSequence": ["Kliniken", "Ärzte", "Fachgebiete", "Suche"],
+      "ctaLabels": ["Suche", "FR", "EN", "Kontakt", "Medien"],
+      "domFingerprintHash": null,
+      "exampleSlug": "home",
+      "exampleSelector": "header",
+      "examplePages": ["home"],
+      "_provenance": "Header: Hirslanden wordmark (left) + primary nav (Kliniken, Aerzte, Fachgebiete) + a search affordance and a hamburger/menu toggle (right) + a utility bar (Kontakt, Medien, FR/EN language switch). Single-page crawl, so detection is home-only (the >=3-page threshold cannot apply under --single)."
+    },
+    {
+      "name": "site-footer",
+      "kind": "footer",
+      "occurrences": 1,
+      "headingSequence": ["HIRSLANDEN-GRUPPE", "FOLGEN SIE UNS", "Quick Links", "Leistungsangebot", "Über uns"],
+      "ctaLabels": ["Zurück zum Seitenanfang", "Notfallnummer 144"],
+      "domFingerprintHash": null,
+      "exampleSlug": "home",
+      "exampleSelector": "footer",
+      "examplePages": ["home"],
+      "_provenance": "Footer: group blurb (16 Kliniken, ueber 300 Zentren, ueber 3000 Aerzte), social row, multi-column link mega-menu (Quick Links / Leistungsangebot / Ueber uns), copyright (c) Hirslanden-Gruppe 2026, legal links, and a prominent red emergency number (Notfallnummer 144)."
+    }
+  ],
+  "iconFont": {
+    "family": "Icons",
+    "localPath": "stardust/current/assets/fonts/icons-a388d00e.woff",
+    "sourceCss": "@font-face { font-family: 'Icons'; font-weight: 400; font-style: normal; font-display: swap; src: url('frontend-min/resources/font/icons.woff?v=1.0.0') format('woff'); }",
+    "glyphCount": 0,
+    "glyphs": [],
+    "_provenance": "An icon font named 'Icons' is declared in @font-face and fetched (saved to assets/fonts/icons-a388d00e.woff). The site has many inline SVGs too, so it is a hybrid icon strategy. The iconClass -> codepoint table could not be reliably enumerated under --single (no [class^=\"icon-\"] elements surfaced non-default ::before content at capture time); glyph table left empty rather than fabricated."
+  },
+  "voice": {
+    "heroHeadline": "Kompetenz, die Vertrauen schafft",
+    "heroSubcopy": null,
+    "heroImage": {
+      "url": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-her-onkologie?wid=2900",
+      "alt": "hirslanden-her-onkologie",
+      "source": "img",
+      "domPath": "div#stage > div.topStage > div.image-container > img",
+      "localPath": "stardust/current/assets/media/hero-onkologie-133e374f.webp",
+      "rect": { "x": 0, "y": -297, "width": 1440, "height": 868 },
+      "_provenance": "Full-bleed hero photo (warm interior, a clinician and a patient in conversation in a bright lounge with a lake/mountain view). Intrinsic 2900x1419, served WebP from the Mediclinic/Scene7 DAM. Selected as the largest visible above-the-fold <img>; downloaded directly via curl (in-page fetch to the cross-origin scene7 CDN was blocked)."
+    },
+    "primaryCTALabel": "Suche",
+    "ctaSamples": ["Suche", "Zu den Standorten", "Weiterlesen", "Mehr erfahren", "Jobs"],
+    "navItems": ["Kliniken", "Ärzte", "Fachgebiete", "Suche", "Kontakt", "Medien"],
+    "footerHeadings": ["Quick Links", "Leistungsangebot", "Über uns"],
+    "firstParagraph": "Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.",
+    "tone": {
+      "guess": "professional-warm",
+      "evidence": "Formal Swiss-German Sie-address, reassurance vocabulary ('Vertrauen', 'wir sind für Sie da', 'Ihre Gesundheit steht bei uns im Mittelpunkt'), institutional scale claims (16 Kliniken, 300 Zentren, 3000 Aerzte). Warm but authoritative — a private hospital group reassuring patients."
+    }
+  },
+  "voiceTable": {
+    "ctaFrequency": [
+      { "label": "Mehr erfahren", "total": 3, "pageCount": 1, "pages": ["home"] },
+      { "label": "Suche", "total": 2, "pageCount": 1, "pages": ["home"] },
+      { "label": "Alle News und Mitteilungen", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Zu den Standorten", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Weiterlesen", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Jobs", "total": 1, "pageCount": 1, "pages": ["home"] },
+      { "label": "Ärztesuche", "total": 1, "pageCount": 1, "pages": ["home"] }
+    ],
+    "headingFrequency": [],
+    "toneMetrics": {
+      "headingsTotal": 20,
+      "headingsUppercasePercent": 5,
+      "distinctHeadings": 18,
+      "distinctCtaLabels": 7,
+      "_provenance": "headingsUppercasePercent low (5%): only the h1 hero watermark and a few eyebrow labels render uppercase via CSS; the underlying heading text is mixed-case. headingFrequency empty: single-page crawl cannot satisfy the >=3-page filter."
+    }
+  },
+  "crossPromo": {
+    "detected": false,
+    "anchorHeading": null,
+    "cluster": [],
+    "pages": [],
+    "pageCount": 0,
+    "totalPages": 1,
+    "_provenance": "Cross-promo detection requires multi-page heading-frequency aggregation; under --single (1 page) it cannot run."
+  },
+  "register": "brand"
+}

@@ -1,0 +1,2169 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-06-24T11:56:49.010Z",
+    "readArtifacts": [
+      "https://www.hirslanden.ch/"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0",
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-06-24T11:53:50.642Z",
+    "waitMode": "medium",
+    "waitMs": 4475,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "notes": "Site uses a legacy AEM template with no <main> landmark; primary content lives under div#stage / div.middleStage. OneTrust consent center remained in the DOM as a hidden region after dismissal; its headings/CTAs/paragraphs were filtered from this record. Logo img renders at 0x0 in the desktop wordmark slot at measurement time; the canonical hirslanden-logo.png (188x54, alt=\"Hirslanden\") was fetched directly via the logo locator chain step 2."
+  },
+  "slug": "home",
+  "url": "https://www.hirslanden.ch/",
+  "finalUrl": "https://www.hirslanden.ch/de/corporate/home.html",
+  "title": "Hirslanden-Gruppe, Schweiz",
+  "metaDescription": "16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!",
+  "og": {
+    "title": "Hirslanden-Gruppe, Schweiz",
+    "description": "16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte - Ihre Gesundheit steht bei uns im Mittelpunkt!",
+    "image": "https://mediclinic.scene7.com/is/image/mediclinic/icon-hirslanden-mediclinic-web-3?fmt=png-alpha&_ck=1616254705285",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {
+    "light": null
+  },
+  "language": "de",
+  "headings": [
+    {
+      "level": 1,
+      "text": "KOMPETENZ, DIE VERTRAUEN SCHAFFT",
+      "id": null,
+      "domPath": "div#stage > div.topStage:nth-of-type(1) > div.stageWrapper:nth-of-type(2) > div.stageTitle:nth-of-type(1) > h1.claim:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "42px",
+        "lineHeight": "60.06px",
+        "letterSpacing": "normal",
+        "color": "rgb(147, 136, 128)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hirslanden-Gruppe",
+      "id": null,
+      "domPath": "div:nth-of-type(1) > div.text.section:nth-of-type(7) > div.textAndImage:nth-of-type(1) > div.wrapper.text:nth-of-type(1) > div.obfuscate-email-content-wrapper.text-no-image:nth-of-type(1) > h2:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "34px",
+        "lineHeight": "47.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Babygalerie",
+      "id": null,
+      "domPath": "div.teaser:nth-of-type(1) > a:nth-of-type(1) > div.textImageTeaser:nth-of-type(1) > div.wrapper.has-description:nth-of-type(1) > div.title:nth-of-type(1) > h3:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Für alle Folgen des Lebens",
+      "id": null,
+      "domPath": "div.teaser:nth-of-type(1) > a:nth-of-type(1) > div.textImageTeaser:nth-of-type(1) > div.wrapper.has-description:nth-of-type(1) > div.title:nth-of-type(1) > h3:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Hirslanden Healthline",
+      "id": null,
+      "domPath": "div.teaser:nth-of-type(1) > a:nth-of-type(1) > div.textImageTeaser:nth-of-type(1) > div.wrapper.has-description:nth-of-type(1) > div.title:nth-of-type(1) > h3:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "News & Mitteilungen",
+      "id": null,
+      "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.search-result-wrapper:nth-of-type(1) > div.search-results-title:nth-of-type(1) > h2:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "34px",
+        "lineHeight": "47.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Centre de Chirurgie Ambulatoire de Genève",
+      "id": null,
+      "domPath": "li.odd:nth-of-type(1) > div.wrapper:nth-of-type(1) > a:nth-of-type(1) > div.row:nth-of-type(1) > div.text:nth-of-type(1) > h4:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Erstes Symposium der Hirslanden Research Foundation",
+      "id": null,
+      "domPath": "li.even:nth-of-type(2) > div.wrapper:nth-of-type(1) > a:nth-of-type(1) > div.row:nth-of-type(1) > div.text:nth-of-type(1) > h4:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "LUCERNE TOOLBOX 3 - Ein digitaler Kompass bei Brustkrebs",
+      "id": null,
+      "domPath": "li.odd:nth-of-type(3) > div.wrapper:nth-of-type(1) > a:nth-of-type(1) > div.row:nth-of-type(1) > div.text:nth-of-type(1) > h4:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Official Medical Partner von Corinne Suter",
+      "id": null,
+      "domPath": "li.even:nth-of-type(4) > div.wrapper:nth-of-type(1) > a:nth-of-type(1) > div.row:nth-of-type(1) > div.text:nth-of-type(1) > h4:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Veranstaltungen",
+      "id": null,
+      "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.search-result-wrapper:nth-of-type(1) > div.search-results-title:nth-of-type(1) > h2:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "34px",
+        "lineHeight": "47.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "25",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.odd:nth-of-type(1) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.date:nth-of-type(1) > h3.day:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Bewegte Schwangerschaft",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.odd:nth-of-type(1) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.text:nth-of-type(2) > h4.event-title:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "25",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.even:nth-of-type(2) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.date:nth-of-type(1) > h3.day:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Informationsabend Geburt",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.even:nth-of-type(2) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.text:nth-of-type(2) > h4.event-title:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "01",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.odd:nth-of-type(3) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.date:nth-of-type(1) > h3.day:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Öffentlicher Vortrag: Beinarterien - wann Untersuchung und Behandlung",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.odd:nth-of-type(3) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.text:nth-of-type(2) > h4.event-title:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 3,
+      "text": "02",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.even:nth-of-type(4) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.date:nth-of-type(1) > h3.day:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Informationsabend Geburt",
+      "id": null,
+      "domPath": "ul.list-items:nth-of-type(1) > li.even:nth-of-type(4) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1) > div.text:nth-of-type(2) > h4.event-title:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "23.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(83, 76, 70)"
+      }
+    },
+    {
+      "level": 4,
+      "text": "Hirslanden Blog",
+      "id": null,
+      "domPath": "div:nth-of-type(1) > div.newsletter.section:nth-of-type(10) > div.newsletter-wrapper:nth-of-type(1) > div.newsletter-section:nth-of-type(1) > div.newsletter_content:nth-of-type(1) > h4.newsletter_title:nth-of-type(1)",
+      "style": {
+        "fontFamily": "Metropolis, Arial, Helvetica, sans-serif",
+        "fontWeight": "700",
+        "fontSize": "34px",
+        "lineHeight": "47.94px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "tag": "header",
+      "role": null,
+      "id": null,
+      "classes": [],
+      "childCount": 3,
+      "innerText": "Zur Navigation springen Zum Inhalt springen Kliniken Ärzte Fachgebiete Suche KOMPETENZ, DIE VERTRAUEN SCHAFFT Suche Jobs Ärztesuche Baby-Galerie Sponsoring-Anfragen HIRSLANDEN BABY RSV-Immunisierung bei Neugeborenen Das Respiratorische Synzytial-Virus (RSV) kann bei Neugeborenen zu schweren Atemwegsinfektionen führen. Eine neue Immunisierung schützt Neugeborene vor Spitalaufenthalten und reduziert schwere Krankheitsverläufe. Mehr erfahren NEWS Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire Das aus einer Partnerschaft zwischen den Hôpitaux Universitaires de Genève (HUG) und der Hirslanden-Gruppe hervorgegangene Centre de Chirurgie Ambulatoire de Genève empfängt seine ersten Patientinnen und Patienten. Mehr erfahren STANDORTE Hirslanden in Ihrer Nähe Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee. Zu den Standorten Hingabe, die man spürt Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht. Seit der Gründung gehen wir die Extrameile, um Menschen eine spürbar hochwertige Gesundheitsversorgung zu bieten – individuell, integriert und mit einem Blick für das, was wirklich zählt. Mehr erfahren HIRSLANDEN HEALTHLINE Ihre Mitgliedschaft für persönliche Unterstützung Als Mitglied der Hirslanden Healthline erhalten Sie persönliche Unterstützung und Orientierung rund um Ihre Gesundheit. Mehr erfahren HIRSLANDEN BABY RSV-Immunisierung bei Neugeborenen Das Respiratorische Synzytial-Virus (RSV) kann bei Neugeborenen zu schweren Atemwegsinfektionen führen. Eine neue Immunisierung schützt Neugeborene vor Spitalaufenthalten und reduziert schwere Krankheitsverläufe. Mehr erfahren NEWS Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire Das aus einer Partnerschaft zwischen den Hôpitaux Universitaires de Genève (HUG) und der Hirslanden-Gruppe hervorgegangene Centre de Chirurgie Ambulatoire de Genève empfängt seine ersten Patientinnen und Patienten. Mehr erfahren STANDORTE Hirslanden in Ihrer Nähe Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee. Zu den Standorten Hingabe, die man spürt Hirslanden steht für gelebte Hingabe – mit medizinischer Exzellenz, persönlicher Betreuung und einem Engagement, das über den Standard hinausgeht. Seit der Gründung gehen wir die Extrameile, um Menschen eine spürbar hochwertige Gesundheitsversorgung zu bieten – individuell, integriert und mit einem Blick für das, was wirklich zählt. Mehr erfahren HIRSLANDEN HEALTHLINE Ihre Mitgliedschaft für persönliche Unterstützung Als Mitglied der Hirslanden Healthline erhalten Sie persönliche Unterstützung und Orientierung rund um Ihre Gesundheit. Mehr erfahren HIRSLANDEN BABY RSV-Immunisierung bei Neugeborenen Das Respiratorische Synzytial-Virus (RSV) kann bei Neugeborenen zu schweren Atemwegsinfektionen führen. Eine neue Immunisierung schützt Neugeborene vor Spitalaufenthalten und reduziert schwere Krankheitsverläufe. Mehr erfahren 1 2 3 4 5",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "innerTextSummary": "Zur Navigation springen Zum Inhalt springen Kliniken Ärzte Fachgebiete Suche",
+          "wordCount": 10,
+          "headings": [],
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Jobs",
+                "Kontakt",
+                "Medien"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "DE",
+                "FR",
+                "EN"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kliniken",
+                "Ärzte",
+                "Fachgebiete"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kliniken",
+                "Ärzte",
+                "Fachgebiete"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Notfall",
+                "Kliniken",
+                "Ärzte",
+                "Fachgebiete"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Patienten & Angehörige",
+                "Leistungsangebot",
+                "Jobs & Karriere",
+                "Über uns",
+                "Für Ärzte & Zuweiser"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Jobs",
+                "Kontakt",
+                "Medien"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "DE",
+                "FR",
+                "EN"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "stage",
+            "section"
+          ],
+          "purpose": "hero",
+          "innerTextSummary": "KOMPETENZ, DIE VERTRAUEN SCHAFFT Suche Jobs Ärztesuche Baby-Galerie Sponsoring-Anfragen",
+          "wordCount": 9,
+          "headings": [
+            "KOMPETENZ, DIE VERTRAUEN SCHAFFT"
+          ],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "banner-slider",
+            "section"
+          ],
+          "purpose": "hero",
+          "innerTextSummary": "HIRSLANDEN BABY RSV-Immunisierung bei Neugeborenen Das Respiratorische Synzytial-Virus (RSV) kann bei Neugeborenen zu schweren Atemwegsinfektionen führen. Eine neue Immunisierung schützt Neugeborene vor Spitalaufenthalten und reduziert schw",
+          "wordCount": 400,
+          "headings": [],
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 1,
+      "innerText": "Kliniken Ärzte Fachgebiete Suche",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": "nav",
+          "classes": [
+            "navWrapper"
+          ],
+          "purpose": "unknown",
+          "innerTextSummary": "Kliniken Ärzte Fachgebiete Suche",
+          "wordCount": 4,
+          "headings": [],
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Jobs",
+                "Kontakt",
+                "Medien"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "DE",
+                "FR",
+                "EN"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kliniken",
+                "Ärzte",
+                "Fachgebiete"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kliniken",
+                "Ärzte",
+                "Fachgebiete"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 1,
+      "innerText": "Patienten & Angehörige Leistungsangebot Jobs & Karriere Über uns Für Ärzte & Zuweiser",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sidebar_nav"
+          ],
+          "purpose": "unknown",
+          "innerTextSummary": "Patienten & Angehörige Leistungsangebot Jobs & Karriere Über uns Für Ärzte & Zuweiser",
+          "wordCount": 13,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 3,
+      "innerText": "Jobs Kontakt Medien DE FR EN",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [
+            "top-links",
+            "sidebar_nav"
+          ],
+          "purpose": "unknown",
+          "innerTextSummary": "Jobs Kontakt Medien",
+          "wordCount": 3,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sidebar_divider"
+          ],
+          "purpose": "unknown",
+          "innerTextSummary": "",
+          "wordCount": 0,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sidebar_languages"
+          ],
+          "purpose": "unknown",
+          "innerTextSummary": "DE FR EN",
+          "wordCount": 3,
+          "headings": [],
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "DE",
+                "FR",
+                "EN"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 6,
+      "innerText": "Seite 3 Seite 4 Seite 5 Seite 6 Seite 7 Next Page",
+      "children": []
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 17,
+      "innerText": "Seite 3 Seite 4 Seite 5 Seite 6 Seite 7 Seite 8 Seite 9 Seite 10 Seite 11 Seite 12 Seite 13 Seite 14 Seite 15 Seite 16 Seite 17 Seite 18 Next Page",
+      "children": []
+    },
+    {
+      "tag": "footer",
+      "role": null,
+      "id": null,
+      "classes": [],
+      "childCount": 5,
+      "innerText": "HIRSLANDEN-GRUPPE 16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3 000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt! FOLGEN SIE UNS Zurück zum Seitenanfang Hirslanden Home Notfallnummer 144 Quick Links Besucher-Informationen Hirslanden Baby Versicherungsfragen Internationale Patienten Kurse & Veranstaltungen Gesundheitsvideos Leistungsangebot Kliniken & Zentren Hirslanden in Ihrer Region Ärzte und Ärztinnen finden Hotellerie Über uns Hirslanden-Gruppe Qualität Jobs & Karriere Medien & News Datenschutz Kontakt © Hirslanden-Gruppe 2026 Nutzungsbedingungen Datenschutz Website Cookie Richtlinie Impressum",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer_pre"
+          ],
+          "purpose": "footer-nav",
+          "innerTextSummary": "HIRSLANDEN-GRUPPE 16 Kliniken, über 300 medizinische Zentren und Institute sowie über 3 000 Ärztinnen und Ärzte – Ihre Gesundheit steht bei uns im Mittelpunkt! FOLGEN SIE UNS",
+          "wordCount": 27,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": "footer_nav",
+          "classes": [],
+          "purpose": "footer-nav",
+          "innerTextSummary": "Zurück zum Seitenanfang Hirslanden Home Notfallnummer 144 Quick Links Besucher-Informationen Hirslanden Baby Versicherungsfragen Internationale Patienten Kurse & Veranstaltungen Gesundheitsvideos Leistungsangebot Kliniken & Zentren Hirsland",
+          "wordCount": 43,
+          "headings": [],
+          "body": [],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Besucher-Informationen",
+                "Hirslanden Baby",
+                "Versicherungsfragen",
+                "Internationale Patienten",
+                "Kurse & Veranstaltungen",
+                "Gesundheitsvideos"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kliniken & Zentren",
+                "Hirslanden in Ihrer Region",
+                "Ärzte und Ärztinnen finden",
+                "Hotellerie"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Hirslanden-Gruppe",
+                "Qualität",
+                "Jobs & Karriere",
+                "Medien & News",
+                "Datenschutz"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "innerTextSummary": "",
+          "wordCount": 0,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 1,
+      "innerText": "",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "innerTextSummary": "",
+          "wordCount": 0,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 2,
+      "innerText": "Quick Links Besucher-Informationen Hirslanden Baby Versicherungsfragen Internationale Patienten Kurse & Veranstaltungen Gesundheitsvideos",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer_accordion-content"
+          ],
+          "purpose": "footer-nav",
+          "innerTextSummary": "Besucher-Informationen Hirslanden Baby Versicherungsfragen Internationale Patienten Kurse & Veranstaltungen Gesundheitsvideos",
+          "wordCount": 10,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 2,
+      "innerText": "Leistungsangebot Kliniken & Zentren Hirslanden in Ihrer Region Ärzte und Ärztinnen finden Hotellerie",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer_accordion-content"
+          ],
+          "purpose": "footer-nav",
+          "innerTextSummary": "Kliniken & Zentren Hirslanden in Ihrer Region Ärzte und Ärztinnen finden Hotellerie",
+          "wordCount": 12,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": null,
+      "id": null,
+      "classes": [
+        "nav-down"
+      ],
+      "childCount": 2,
+      "innerText": "Über uns Hirslanden-Gruppe Qualität Jobs & Karriere Medien & News Datenschutz",
+      "children": [
+        {
+          "tag": "ul",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer_accordion-content"
+          ],
+          "purpose": "footer-nav",
+          "innerTextSummary": "Hirslanden-Gruppe Qualität Jobs & Karriere Medien & News Datenschutz",
+          "wordCount": 9,
+          "headings": [],
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "contentSections": [
+    {
+      "name": "hero",
+      "selector": "#stage",
+      "heading": "Kompetenz, die Vertrauen schafft",
+      "body": [],
+      "cta": []
+    },
+    {
+      "name": "teaser",
+      "selector": "div.teaser",
+      "headings": [
+        "Babygalerie"
+      ],
+      "body": [
+        "Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz."
+      ],
+      "links": [
+        "Babygalerie Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz."
+      ]
+    },
+    {
+      "name": "teaser",
+      "selector": "div.teaser",
+      "headings": [
+        "Für alle Folgen des Lebens"
+      ],
+      "body": [
+        "Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da: Mehr erfahren"
+      ],
+      "links": [
+        "Für alle Folgen des Lebens Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da: Mehr erfahren"
+      ]
+    },
+    {
+      "name": "teaser",
+      "selector": "div.teaser",
+      "headings": [
+        "Hirslanden Healthline"
+      ],
+      "body": [
+        "Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen."
+      ],
+      "links": [
+        "Hirslanden Healthline Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen."
+      ]
+    }
+  ],
+  "quicklinks": [
+    "Kliniksuche",
+    "Ärztesuche",
+    "Rückmeldung Klinikaufenthalt",
+    "Jobs und Karriere",
+    "Internationale Patienten"
+  ],
+  "ctas": [
+    {
+      "label": "Suche",
+      "href": null,
+      "tag": "button",
+      "domPath": "form#header-search-form > div.typeahead__container:nth-of-type(1) > div.search-field.typeahead__field:nth-of-type(1) > span.typeahead__button.hide-on-mobile:nth-of-type(2) > button.button.button-search:nth-of-type(1)",
+      "style": {
+        "backgroundColor": "rgb(0, 148, 212)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Metropolis",
+        "fontWeight": "700",
+        "borderRadius": "0px",
+        "padding": "18px 24px 18px 24px",
+        "boxShadow": null
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://careers.hirslanden.ch/?locale=de_DE",
+      "tag": "a",
+      "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(1)",
+      "style": {
+        "backgroundColor": "rgb(247, 247, 246)",
+        "color": "rgb(83, 76, 70)",
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "18px",
+        "padding": "6px 16px 6px 16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 5px 10px -10px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Ärztesuche",
+      "href": "https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html",
+      "tag": "a",
+      "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(2)",
+      "style": {
+        "backgroundColor": "rgb(247, 247, 246)",
+        "color": "rgb(83, 76, 70)",
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "18px",
+        "padding": "6px 16px 6px 16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 5px 10px -10px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Baby-Galerie",
+      "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html",
+      "tag": "a",
+      "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(3)",
+      "style": {
+        "backgroundColor": "rgb(247, 247, 246)",
+        "color": "rgb(83, 76, 70)",
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "18px",
+        "padding": "6px 16px 6px 16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 5px 10px -10px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px"
+      },
+      "appearsAbove": "fold"
+    },
+    {
+      "label": "Sponsoring-Anfragen",
+      "href": "https://sponsoring.hirslanden.ch/de/",
+      "tag": "a",
+      "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(4)",
+      "style": {
+        "backgroundColor": "rgb(247, 247, 246)",
+        "color": "rgb(83, 76, 70)",
+        "fontFamily": "Metropolis, Arial, sans-serif",
+        "fontWeight": "400",
+        "borderRadius": "18px",
+        "padding": "6px 16px 6px 16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 5px 10px -10px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px"
+      },
+      "appearsAbove": "fold"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html",
+        "text": "",
+        "domPath": "div#nav > div.logoWrapper:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt.html",
+        "text": "Kontakt",
+        "domPath": "div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > div.topLinksWrapper:nth-of-type(1) > ul.customLinksWrapper:nth-of-type(1) > li.customLink:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news.html",
+        "text": "Medien",
+        "domPath": "div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > div.topLinksWrapper:nth-of-type(1) > ul.customLinksWrapper:nth-of-type(1) > li.customLink:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/fr/corporate/home.html",
+        "text": "FR",
+        "domPath": "div.links:nth-of-type(1) > div.topLinksWrapper:nth-of-type(1) > div.languageSwitch:nth-of-type(1) > ul.lang-switch:nth-of-type(1) > li:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/en/corporate/home.html",
+        "text": "EN",
+        "domPath": "div.links:nth-of-type(1) > div.topLinksWrapper:nth-of-type(1) > div.languageSwitch:nth-of-type(1) > ul.lang-switch:nth-of-type(1) > li:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html",
+        "text": "Kliniken",
+        "domPath": "div#nav > div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > ul.bottomLinksWrapper:nth-of-type(1) > li.sidebar_link:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html",
+        "text": "Ärzte",
+        "domPath": "div#nav > div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > ul.bottomLinksWrapper:nth-of-type(1) > li.sidebar_link:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fachgebiete.html",
+        "text": "Fachgebiete",
+        "domPath": "div#nav > div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > ul.bottomLinksWrapper:nth-of-type(1) > li.sidebar_link:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/search.html",
+        "text": "Suche",
+        "domPath": "div#nav > div.linksWrapper:nth-of-type(2) > div.iconsWrapper:nth-of-type(2) > div.search-box.search:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html",
+        "text": "Hirslanden Home",
+        "domPath": "div#sidebar > div.sidebar_background:nth-of-type(1) > div.sidebar_holder:nth-of-type(1) > div.sidebar_left-column:nth-of-type(1) > a.hir-logo.logo-override:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/notfall.html",
+        "text": "Notfall",
+        "domPath": "div.sidebar_background:nth-of-type(1) > div.sidebar_holder:nth-of-type(1) > div.sidebar_left-column:nth-of-type(1) > ul.sidebar_links:nth-of-type(1) > li.emergency.sidebar_link:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html",
+        "text": "Ärztesuche",
+        "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html",
+        "text": "Baby-Galerie",
+        "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html",
+        "text": "Ihr Klinikaufenthalt",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch.html",
+        "text": "Aufenthalt & Besuch",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html",
+        "text": "Hotellerie & Services",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(4)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt.html",
+        "text": "Rückmeldung Klinikaufenthalt",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html",
+        "text": "Informationen für Internationale Patienten",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/versicherung.html",
+        "text": "Versicherung",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer.html",
+        "text": "Stationärer Aufenthalt",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(8)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer/hirslanden-prive.html",
+        "text": "Leistungen für Privatversicherte",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(9)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer/hirslanden-preference.html",
+        "text": "Leistungen für Halbprivatversicherte",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(10)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer/leistungen-grundversicherung.html",
+        "text": "Leistungen für Grundversicherte",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(11)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ambulante-patienten/ambulanter-aufenthalt.html",
+        "text": "Ambulanter Aufenthalt",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(12)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ambulante-patienten/ambulanter-aufenthalt.html",
+        "text": "Ablauf des Aufenthalts",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(13)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ambulante-patienten/ambulante-behandlung-zusatzversicherung.html",
+        "text": "Ambulante Behandlung mit Zusatzversicherung",
+        "domPath": "div#tab1 > a.sidebar_nav-item-sublink:nth-of-type(14)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/gesundheitswissen.html",
+        "text": "Gesundheitswissen",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder.html",
+        "text": "Krankheitsbilder",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/behandlungen.html",
+        "text": "Behandlungen",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(4)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/publications.html",
+        "text": "Medizinische Bibliothek",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/publications/patientengeschichten.html",
+        "text": "Patientengeschichten",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens.html",
+        "text": "Fachgebiete",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
+        "text": "Herz & Gefässe",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(8)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html",
+        "text": "Schwangerschaft & Geburt",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(9)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/genetische-medizin.html",
+        "text": "Genetische Medizin",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(10)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin.html",
+        "text": "Orthopädie & Sportmedizin",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(11)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/krebs.html",
+        "text": "Krebs",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(12)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/radiologie-hirslanden.html",
+        "text": "Radiologie",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(13)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren.html",
+        "text": "Kliniken & Zentren",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(14)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html",
+        "text": "Hirslanden in Ihrer Nähe",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(15)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/praxiszentren.html",
+        "text": "Ambulante Zentren",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(16)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/notfallstationen.html",
+        "text": "Kliniken mit Notfall",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(17)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/geburtskliniken.html",
+        "text": "Geburtskliniken",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(18)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/aerzte-und-pflege.html",
+        "text": "Ärzte und Pflege",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(19)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html",
+        "text": "Kurse & Veranstaltungen",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(20)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/schwangerschaft-und-geburt.html",
+        "text": "Schwangerschaft & Geburt",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(21)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen/gesundheitsthemen.html",
+        "text": "Gesundheitsthemen",
+        "domPath": "div#tab2 > a.sidebar_nav-item-sublink:nth-of-type(22)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html",
+        "text": "Jobs & Karriere",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kampagnen/arbeiten.html",
+        "text": "Hirslanden als Arbeitgeberin",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere/arbeitgeberin.html",
+        "text": "Arbeitgeberversprechen",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere/karrierepfade.html",
+        "text": "Karrierepfade",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere/aus-und-weiterbildung.html",
+        "text": "Aus- & Weiterbildung",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(8)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere/pensionskasse.html",
+        "text": "Pensionskasse",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(9)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/kontakt-fuer-jobsuchende.html",
+        "text": "Kontakt",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(10)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns.html",
+        "text": "Hirslanden-Gruppe",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/unternehmensportrait.html",
+        "text": "Unternehmensporträt",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/together-we-care.html",
+        "text": "Together We Care",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(4)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/qualitaet.html",
+        "text": "Qualität",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/nachhaltigkeit.html",
+        "text": "Nachhaltigkeit",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/forschung-lehre.html",
+        "text": "Forschung und Lehre",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/gesundheitspolitik.html",
+        "text": "Gesundheitspolitik",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(8)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/sponsoring-engagements.html",
+        "text": "Sponsoring & Engagements",
+        "domPath": "div#tab4 > a.sidebar_nav-item-sublink:nth-of-type(9)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/partneraerzte.html",
+        "text": "Für Partnerärzte",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-interessierte-aerzte.html",
+        "text": "Für interessierte Ärzte",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-interessierte-aerzte/belegarztsystem.html",
+        "text": "Partnerarztsystem",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink:nth-of-type(4)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-interessierte-aerzte/vorteile-als-partnerarzt.html",
+        "text": "Vorteile als Partnerarzt",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/zuweiser.html",
+        "text": "Für Zuweiser",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fort-und-weiterbildungsangebot.html",
+        "text": "Fort- & Weiterbildungsangebot",
+        "domPath": "div#tab5 > a.sidebar_nav-item-sublink.sidebar_nav-item-sublink-main:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/wochenbett/rsv-immunisierung-bei-neugeborenen.html",
+        "text": "Mehr erfahren",
+        "domPath": "div.corporate.awareness-banner-slider:nth-of-type(1) > div.awarenessBanner:nth-of-type(1) > div.awarenessBannerWrapper:nth-of-type(1) > div.articleWrapper:nth-of-type(1) > div.article:nth-of-type(2) > a.articleButton:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+        "text": "Mehr erfahren",
+        "domPath": "div#slick-slide00 > div.awarenessBanner:nth-of-type(1) > div.awarenessBannerWrapper:nth-of-type(1) > div.articleWrapper:nth-of-type(1) > div.article:nth-of-type(2) > a.articleButton.microsite-mediclinic-blue-2:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html",
+        "text": "Zu den Standorten",
+        "domPath": "div#slick-slide01 > div.awarenessBanner:nth-of-type(1) > div.awarenessBannerWrapper:nth-of-type(1) > div.articleWrapper:nth-of-type(1) > div.article:nth-of-type(2) > a.articleButton:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/hingabe.html",
+        "text": "Mehr erfahren",
+        "domPath": "div#slick-slide02 > div.awarenessBanner:nth-of-type(1) > div.awarenessBannerWrapper:nth-of-type(1) > div.articleWrapper:nth-of-type(1) > div.article:nth-of-type(2) > a.articleButton.microsite-mediclinic-blue-2:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/healthline.html",
+        "text": "Mehr erfahren",
+        "domPath": "div#slick-slide03 > div.awarenessBanner:nth-of-type(1) > div.awarenessBannerWrapper:nth-of-type(1) > div.articleWrapper:nth-of-type(1) > div.article:nth-of-type(2) > a.articleButton.microsite-mediclinic-blue-2:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/kliniken.html",
+        "text": "Kliniksuche",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/jobs-und-karriere.html",
+        "text": "Jobs und Karriere",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-4:nth-of-type(4) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/leistungsuebersicht-stationaer.html",
+        "text": "Leistungsübersicht pro Versicherungsklasse",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-6:nth-of-type(6) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/krankheitsbilder.html",
+        "text": "Krankheitsbilder von A-Z",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-1:nth-of-type(7) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/behandlungen.html",
+        "text": "Behandlungen von A-Z",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-2:nth-of-type(8) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin/bmi-rechner.html",
+        "text": "BMI berechnen",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-3:nth-of-type(9) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby/babygalerie.html",
+        "text": "Babygalerie Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz.",
+        "domPath": "div:nth-of-type(1) > div.reference.section:nth-of-type(1) > div:nth-of-type(1) > div.primary-image.section:nth-of-type(1) > div.teaser:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens.html",
+        "text": "Für alle Folgen des Lebens Alle unsere Entscheidungen im Leben haben Folgen – und bei allen Folgen des Lebens sind wir für Sie da: Mehr erfahren",
+        "domPath": "div:nth-of-type(1) > div.reference.section:nth-of-type(1) > div:nth-of-type(1) > div.primary-image.section:nth-of-type(1) > div.teaser:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/healthline.html",
+        "text": "Hirslanden Healthline Ihre Mitgliedschaft für persönliche Begleitung und Orientierung – wann immer Sie Unterstützung benötigen.",
+        "domPath": "div:nth-of-type(1) > div.reference.section:nth-of-type(1) > div:nth-of-type(1) > div.primary-image.section:nth-of-type(1) > div.teaser:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+        "text": "Medienmitteilung 28.05.2026 Centre de Chirurgie Ambulatoire de Genève Hirslanden-Gruppe",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers.calendar:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.odd:nth-of-type(1) > div.wrapper:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/symposium-hirslanden-research-foundation.html",
+        "text": "News 06.03.2026 Erstes Symposium der Hirslanden Research Foundation Hirslanden-Gruppe",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers.calendar:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.even:nth-of-type(2) > div.wrapper:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/lucerne-toolbox-3.html",
+        "text": "News 26.11.2025 LUCERNE TOOLBOX 3 - Ein digitaler Kompass bei Brustkrebs Hirslanden-Gruppe",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers.calendar:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.odd:nth-of-type(3) > div.wrapper:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/corinne-suter-medical-partner.html",
+        "text": "Medienmitteilung 24.10.2025 Official Medical Partner von Corinne Suter Hirslanden-Gruppe",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers.calendar:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.even:nth-of-type(4) > div.wrapper:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
+        "text": "Alle News und Mitteilungen",
+        "domPath": "div.news.list:nth-of-type(1) > div.filtered-content.NEWS:nth-of-type(2) > div.wrap-filtered-content:nth-of-type(1) > div.teasers.calendar:nth-of-type(1) > div.more:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/12/16.html",
+        "text": "Seite 3",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/16/20.html",
+        "text": "Seite 4",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(2)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/20/24.html",
+        "text": "Seite 5",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(3)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/24/28.html",
+        "text": "Seite 6",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(4)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/28/32.html",
+        "text": "Seite 7",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(5)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/8/12.html",
+        "text": "Next Page",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.news.list:nth-of-type(1) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/bewegte-schwangerschaft.html",
+        "text": "25 Jun. Bern, weitere Termine verfügbar Bewegte Schwangerschaft",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.odd:nth-of-type(1) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+        "text": "25 Jun. Biel, weitere Termine verfügbar Informationsabend Geburt",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.even:nth-of-type(2) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/klinik-stephanshorn/kurse-und-veranstaltungen/gesundheitsthemen/oeffentlicher-vortrag-arterien.html",
+        "text": "01 Jul. St. Gallen verfügbar Öffentlicher Vortrag: Beinarterien - wann Untersuchung und Behandlung",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.odd:nth-of-type(3) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/salem-spital/kurse-veranstaltungen/schwangerschaft-und-geburt/informationsabend-geburt.html",
+        "text": "02 Jul. Bern, weitere Termine verfügbar Informationsabend Geburt",
+        "domPath": "div.wrap-filtered-content:nth-of-type(1) > div.teasers:nth-of-type(1) > ul.list-items:nth-of-type(1) > li.even:nth-of-type(4) > div.wrapper:nth-of-type(1) > a.events:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kurse-und-veranstaltungen.html",
+        "text": "Alle Veranstaltungen",
+        "domPath": "div.events.list:nth-of-type(2) > div.filtered-content.EVENT:nth-of-type(2) > div.wrap-filtered-content:nth-of-type(1) > div.teasers:nth-of-type(1) > div.more:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/32/36.html",
+        "text": "Seite 8",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(6)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/36/40.html",
+        "text": "Seite 9",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(7)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/40/44.html",
+        "text": "Seite 10",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(8)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/44/48.html",
+        "text": "Seite 11",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(9)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/48/52.html",
+        "text": "Seite 12",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(10)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/52/56.html",
+        "text": "Seite 13",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(11)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/56/60.html",
+        "text": "Seite 14",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(12)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/60/64.html",
+        "text": "Seite 15",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(13)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/64/68.html",
+        "text": "Seite 16",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(14)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/68/72.html",
+        "text": "Seite 17",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(15)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/home.html/72/76.html",
+        "text": "Seite 18",
+        "domPath": "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.events.list:nth-of-type(2) > div.sr-only.seo-hidden-pagination:nth-of-type(3) > nav.nav-down:nth-of-type(1) > a:nth-of-type(16)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/",
+        "text": "Hirslanden Home",
+        "domPath": "div#footer_nav > div.footer_nav:nth-of-type(1) > div.footer_logos:nth-of-type(1) > a.footer_logo:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt.html",
+        "text": "Besucher-Informationen",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(1) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html",
+        "text": "Hirslanden Baby",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(1) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/versicherung.html",
+        "text": "Versicherungsfragen",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(1) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html",
+        "text": "Internationale Patienten",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(1) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(4) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/publications/gesundheitssendungcheckuptelezueri.html",
+        "text": "Gesundheitsvideos",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(1) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(6) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/kliniken-und-zentren/hirslanden-in-ihrer-naehe.html",
+        "text": "Hirslanden in Ihrer Region",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/aerzte-und-pflege/aerztesuche.html",
+        "text": "Ärzte und Ärztinnen finden",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html",
+        "text": "Hotellerie",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(4) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/medien-und-news.html",
+        "text": "Medien & News",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(3) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(4) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/ueber-uns/kontakt/datenschutz.html",
+        "text": "Datenschutz",
+        "domPath": "div.footer_nav-links.accordion:nth-of-type(2) > div.footer_nav-links-group.tab-item-footer:nth-of-type(3) > nav.nav-down:nth-of-type(1) > ul.footer_accordion-content:nth-of-type(1) > li:nth-of-type(5) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/allgemeine-nutzungsbedingungen.html",
+        "text": "Nutzungsbedingungen",
+        "domPath": "div#footer_bar > div.footer_bar:nth-of-type(1) > div.footer_links:nth-of-type(2) > div.footer_link:nth-of-type(2) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/datenschutzerklaerung.html",
+        "text": "Datenschutz Website",
+        "domPath": "div#footer_bar > div.footer_bar:nth-of-type(1) > div.footer_links:nth-of-type(2) > div.footer_link:nth-of-type(3) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/cookie-richtlinie.html",
+        "text": "Cookie Richtlinie",
+        "domPath": "div#footer_bar > div.footer_bar:nth-of-type(1) > div.footer_links:nth-of-type(2) > div.footer_link:nth-of-type(4) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/de/corporate/impressum.html",
+        "text": "Impressum",
+        "domPath": "div#footer_bar > div.footer_bar:nth-of-type(1) > div.footer_links:nth-of-type(2) > div.footer_link:nth-of-type(5) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.hirslanden.ch/en/corporate/cookie-notice.html",
+        "text": "More information",
+        "domPath": "div#ot-pc-desc > a.privacy-notice-link:nth-of-type(1)"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://careers.hirslanden.ch/",
+        "text": "Jobs",
+        "domPath": "div.linksWrapper:nth-of-type(2) > div.links:nth-of-type(1) > div.topLinksWrapper:nth-of-type(1) > ul.customLinksWrapper:nth-of-type(1) > li.customLink:nth-of-type(1) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://sponsoring.hirslanden.ch/de/",
+        "text": "Sponsoring-Anfragen",
+        "domPath": "div.sidebar_right-column:nth-of-type(2) > div.sidebar_right-column-content:nth-of-type(1) > div.sidebar_search:nth-of-type(1) > div.white-popup.search-popup:nth-of-type(1) > div.header_search-links:nth-of-type(1) > a:nth-of-type(4)"
+      },
+      {
+        "href": "https://careers.hirslanden.ch/",
+        "text": "Offene Stellen",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(3)"
+      },
+      {
+        "href": "https://careers.hirslanden.ch/Hirslanden/content/How-to-Apply/",
+        "text": "Ihre Bewerbung",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(4)"
+      },
+      {
+        "href": "https://blog.hirslanden.ch/category/karriere/",
+        "text": "Hirslanden Blog",
+        "domPath": "div#tab3 > a.sidebar_nav-item-sublink:nth-of-type(11)"
+      },
+      {
+        "href": "https://www.hirslanden.com/de/international/home.html",
+        "text": "Internationale Patienten",
+        "domPath": "div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-5:nth-of-type(5) > div:nth-of-type(1) > div.quicklink.section:nth-of-type(1) > a.quicklinkContentWrapper:nth-of-type(1)"
+      },
+      {
+        "href": "https://blog.hirslanden.ch/",
+        "text": "Weiterlesen",
+        "domPath": "div:nth-of-type(1) > div.newsletter.section:nth-of-type(10) > div.newsletter-wrapper:nth-of-type(1) > div.newsletter-section:nth-of-type(1) > div.newsletter_content:nth-of-type(1) > a.newsletter_button:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.facebook.com/Hirslanden",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a.hir-ext-link:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.instagram.com/hirslanden/",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > a.hir-ext-link:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.tiktok.com/@hirslanden",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(3) > a.hir-ext-link:nth-of-type(1)"
+      },
+      {
+        "href": "https://ch.linkedin.com/company/hirslanden",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(4) > a.hir-ext-link:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.youtube.com/user/Privatklinikgruppe",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(5) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://blog.hirslanden.ch/",
+        "text": "",
+        "domPath": "div.footer_social:nth-of-type(2) > div.footer_social-links:nth-of-type(2) > nav.nav-down:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(6) > a:nth-of-type(1)"
+      },
+      {
+        "href": "https://www.onetrust.com/products/cookie-consent/",
+        "text": "Powered by OneTrust Wird in neuer Registerkarte geöffnet",
+        "domPath": "div#onetrust-pc-sdk > div:nth-of-type(1) > div.ot-pc-footer.ot-pc-scrollbar:nth-of-type(3) > div.ot-pc-footer-logo:nth-of-type(2) > a:nth-of-type(1)"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+        "srcset": null,
+        "alt": "Hirslanden",
+        "naturalWidth": 188,
+        "naturalHeight": 54,
+        "localPath": "stardust/current/assets/media/hirslanden-logo-93694b3d.png"
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/mc-sa-corporate/logos/icon-hirslanden-mediclinic-web.png",
+        "srcset": null,
+        "alt": "Hirslanden",
+        "naturalWidth": 60,
+        "naturalHeight": 50,
+        "localPath": null
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 188,
+        "naturalHeight": 54,
+        "localPath": "stardust/current/assets/media/hirslanden-logo-93694b3d.png"
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 188,
+        "naturalHeight": 54,
+        "localPath": "stardust/current/assets/media/hirslanden-logo-93694b3d.png"
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/mc-sa-corporate/logos/icon-hirslanden-mediclinic-web.png",
+        "srcset": null,
+        "alt": "Hirslanden",
+        "naturalWidth": 60,
+        "naturalHeight": 50,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-her-onkologie?_ck=2024-10-31T14%3A14%3A16.938Z&wid=2900&dpr=off",
+        "srcset": null,
+        "alt": "hirslanden-her-onkologie",
+        "naturalWidth": 2900,
+        "naturalHeight": 1419,
+        "localPath": "stardust/current/assets/media/hero-onkologie-133e374f.webp"
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/mc-sa-corporate/logos/icon-hirslanden-mediclinic-web.png",
+        "srcset": null,
+        "alt": "Hirslanden",
+        "naturalWidth": 60,
+        "naturalHeight": 50,
+        "localPath": null
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/mc-sa-corporate/logos/icon-hirslanden-mediclinic-web.png",
+        "srcset": null,
+        "alt": "Hirslanden",
+        "naturalWidth": 60,
+        "naturalHeight": 50,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/gettyimages-1455280026-170667a?_ck=2024-11-14T06%3A58%3A18.364Z&wid=1100&hei=738&dpr=off",
+        "srcset": null,
+        "alt": "1455280026",
+        "naturalWidth": 1100,
+        "naturalHeight": 738,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC07282?_ck=2026-05-29T07%3A26%3A43.025Z&wid=1100&hei=734&dpr=off",
+        "srcset": null,
+        "alt": "NR_DSC07282",
+        "naturalWidth": 1100,
+        "naturalHeight": 734,
+        "localPath": "stardust/current/assets/media/nr-dsc07282-b9625f14.jpg"
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-in-ihrer-naehe-karte?_ck=2024-07-29T11%3A09%3A09.888Z&wid=1100&hei=634&dpr=off",
+        "srcset": null,
+        "alt": "hirslanden-in-ihrer-naehe-karte",
+        "naturalWidth": 1100,
+        "naturalHeight": 634,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-hingabe-pflege-3?_ck=2025-06-19T15%3A00%3A15.889Z&wid=1024&hei=683&dpr=off",
+        "srcset": null,
+        "alt": "Pflegerin kämmt der Patientin die Haare",
+        "naturalWidth": 1024,
+        "naturalHeight": 683,
+        "localPath": "stardust/current/assets/media/pflege-hingabe-6e8ca022.jpg"
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/Healthline?_ck=2023-10-25T14%3A09%3A24.043Z&wid=1100&hei=807&dpr=off",
+        "srcset": null,
+        "alt": "Wanderin am Smartphone in den Bergen",
+        "naturalWidth": 1100,
+        "naturalHeight": 807,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/gettyimages-1455280026-170667a?_ck=2024-11-14T06%3A58%3A18.364Z&wid=1100&hei=738&dpr=off",
+        "srcset": null,
+        "alt": "1455280026",
+        "naturalWidth": 1100,
+        "naturalHeight": 738,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/NR_DSC07282?_ck=2026-05-29T07%3A26%3A43.025Z&wid=1100&hei=734&dpr=off",
+        "srcset": null,
+        "alt": "NR_DSC07282",
+        "naturalWidth": 1100,
+        "naturalHeight": 734,
+        "localPath": "stardust/current/assets/media/nr-dsc07282-b9625f14.jpg"
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-in-ihrer-naehe-karte?_ck=2024-07-29T11%3A09%3A09.888Z&wid=1100&hei=634&dpr=off",
+        "srcset": null,
+        "alt": "hirslanden-in-ihrer-naehe-karte",
+        "naturalWidth": 1100,
+        "naturalHeight": 634,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslanden-hingabe-pflege-3?_ck=2025-06-19T15%3A00%3A15.889Z&wid=1024&hei=683&dpr=off",
+        "srcset": null,
+        "alt": "Pflegerin kämmt der Patientin die Haare",
+        "naturalWidth": 1024,
+        "naturalHeight": 683,
+        "localPath": "stardust/current/assets/media/pflege-hingabe-6e8ca022.jpg"
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/Healthline?_ck=2023-10-25T14%3A09%3A24.043Z&wid=1100&hei=807&dpr=off",
+        "srcset": null,
+        "alt": "Wanderin am Smartphone in den Bergen",
+        "naturalWidth": 1100,
+        "naturalHeight": 807,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/gettyimages-1455280026-170667a?_ck=2024-11-14T06%3A58%3A18.364Z&wid=1100&hei=738&dpr=off",
+        "srcset": null,
+        "alt": "1455280026",
+        "naturalWidth": 1100,
+        "naturalHeight": 738,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/hirslandenbaby-baby-schlafend:1-1?fmt=png-alpha&_ck=2023-06-27T14%253A18%253A50.387Z&wid=600&hei=600&dpr=off",
+        "srcset": null,
+        "alt": "Baby liegt schlafend auf einem Tuch",
+        "naturalWidth": 600,
+        "naturalHeight": 600,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/02_Mitgefu%CC%88hl-1z1_72dpi:1-1?_ck=2023-05-26T10%253A25%253A50.010Z&wid=800&hei=800&dpr=off",
+        "srcset": null,
+        "alt": "1441683172",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "localPath": null
+      },
+      {
+        "src": "https://mediclinic.scene7.com/is/image/mediclinic/03_NeueWege-1z1_72dpi:1-1?_ck=2023-05-26T10%253A25%253A50.010Z&wid=800&hei=800&dpr=off",
+        "srcset": null,
+        "alt": "03_NeueWege-1z1_72dpi",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "localPath": null
+      },
+      {
+        "src": "https://www.hirslanden.ch/etc.clientlibs/hirslanden/clientlibs/frontend/resources/img/icon-cookie-png.png",
+        "srcset": null,
+        "alt": null,
+        "naturalWidth": 214,
+        "naturalHeight": 214,
+        "localPath": "stardust/current/assets/media/icon-cookie-png-abad30b7.png"
+      },
+      {
+        "src": "https://www.hirslanden.ch/content/dam/corporate/logos/hirslanden/hirslanden-logo.png",
+        "srcset": null,
+        "alt": "Hirslanden Home",
+        "naturalWidth": 188,
+        "naturalHeight": 54,
+        "localPath": "stardust/current/assets/media/hirslanden-logo-93694b3d.png"
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": null,
+        "domPath": "div#ot-pc-content > div.ot-optout-signal.ot-hide:nth-of-type(1) > div.ot-optout-icon:nth-of-type(1) > svg:nth-of-type(1)",
+        "markupLen": 503
+      },
+      {
+        "viewBox": "0 0 444.531 444.531",
+        "domPath": "svg#ot-back-arw",
+        "markupLen": 773
+      },
+      {
+        "viewBox": "0 -30 110 110",
+        "domPath": "div#ot-pc-hdr > div.ot-lst-subhdr:nth-of-type(2) > div.ot-search-cntr:nth-of-type(1) > svg:nth-of-type(1)",
+        "markupLen": 607
+      },
+      {
+        "viewBox": "0 0 402.577 402.577",
+        "domPath": "button#filter-btn-handler > svg:nth-of-type(1)",
+        "markupLen": 657
+      },
+      {
+        "viewBox": "0 0 24 24",
+        "domPath": "div#ot-sdk-btn-floating > div.ot-floating-button__back.custom-persistent-icon:nth-of-type(2) > button.ot-floating-button__close:nth-of-type(1) > svg:nth-of-type(1)",
+        "markupLen": 784
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "about:blank",
+        "title": "Chatbot",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "src": "https://hirslandenag.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.hirslanden.ch",
+        "title": "Adobe ID Syncing iFrame",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "src": "https://9522065.fls.doubleclick.net/activityi;src=9522065;type=viewhirs;cat=hirsl0;rcb=11;ord=167334540503;npa=0;auiddc=436843033.1782302027;u1=%2Fde%2Fcorporate%2Fhome.html;uaa=arm;uab=64;uafvl=Google%2520Chrome%3B149.0.7827.156%7CChromium%3B149.0.7827.156%7CNot)A%253BBrand%3B24.0.0.0;uamb=0;uam=;uap=macOS;uapv=14.4.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe66h0v9190635341z871385837za20gzb71385837zd71385837xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115616986~115938466~115938469~119027224~119392696~119392704;epver=2;dc_random=1782302031_2SpQdZJhkxsy8MwScsNpf_ioImTS1cuMDA;_dc_test=1;~oref=https%3A%2F%2Fwww.hirslanden.ch%2Fde%2Fcorporate%2Fhome.html?",
+        "title": null,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "src": "https://10467157.fls.doubleclick.net/activityi;src=10467157;type=pagev0;cat=pagev0;rcb=1;ord=9197636395538;npa=0;auiddc=436843033.1782302027;u1=https%3A%2F%2Fwww.hirslanden.ch%2Fde%2Fcorporate%2Fhome.html;uaa=arm;uab=64;uafvl=Google%2520Chrome%3B149.0.7827.156%7CChromium%3B149.0.7827.156%7CNot)A%253BBrand%3B24.0.0.0;uamb=0;uam=;uap=macOS;uapv=14.4.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe66h0v9190998721z871385837za20gzb71385837zd71385837xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115616985~115938466~115938468~118395334~119027224~119392696~119392704~119534188~119576886~119576890;epver=2;dc_random=1782302031_AnLcGXFRTdnXIhvhEfa8CYQT7FRGKd3Dcw;_dc_test=1;~oref=https%3A%2F%2Fwww.hirslanden.ch%2Fde%2Fcorporate%2Fhome.html?",
+        "title": null,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "src": null,
+        "title": "onetrust-text-resize",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "src": null,
+        "title": "CrazyEgg Tracking iframe",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "forms": [
+    {
+      "action": "https://www.hirslanden.ch/de/corporate/search.html",
+      "method": "get",
+      "fields": [
+        {
+          "type": "text",
+          "name": "q",
+          "label": "Stichwort...",
+          "required": false
+        }
+      ],
+      "thirdParty": null
+    },
+    {
+      "action": "https://www.hirslanden.ch/de/corporate/search.html",
+      "method": "get",
+      "fields": [
+        {
+          "type": "text",
+          "name": "q",
+          "label": "Stichwort...",
+          "required": false
+        }
+      ],
+      "thirdParty": null
+    },
+    {
+      "action": "https://www.hirslanden.ch/de/corporate/search.html",
+      "method": "get",
+      "fields": [
+        {
+          "type": "text",
+          "name": "q",
+          "label": "Stichwort...",
+          "required": false
+        }
+      ],
+      "thirdParty": null
+    }
+  ],
+  "widgets": {
+    "modals": [
+      {
+        "trigger": null,
+        "domPath": "div#onetrust-pc-sdk > div:nth-of-type(1)"
+      }
+    ],
+    "accordions": [],
+    "tabs": [
+      {
+        "domPath": "div#header > header:nth-of-type(1) > div.banner-slider.section:nth-of-type(3) > div.banner-slider-wrapper.slider-home-coporate:nth-of-type(1) > div.banner-slider.slick-initialized:nth-of-type(1) > ul.slick-dots:nth-of-type(1)",
+        "tabCount": 5
+      }
+    ]
+  },
+  "components": {
+    "cards": {
+      "count": 8,
+      "examples": [
+        "div.grid-col-1:nth-of-type(1) > div:nth-of-type(1) > div.reference.section:nth-of-type(1) > div:nth-of-type(1) > div.primary-image.section:nth-of-type(1) > div.teaser:nth-of-type(1)",
+        "div.reference.section:nth-of-type(1) > div:nth-of-type(1) > div.primary-image.section:nth-of-type(1) > div.teaser:nth-of-type(1) > a:nth-of-type(1) > div.textImageTeaser:nth-of-type(1)"
+      ]
+    },
+    "grids": {
+      "count": 39,
+      "examples": [
+        "div#content > div:nth-of-type(1) > div.columncontainer.section:nth-of-type(4) > div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1)",
+        "div#content > div:nth-of-type(1) > div.columncontainer.section:nth-of-type(4) > div.columncontainerWrapper:nth-of-type(1) > div.grid-33-33-33:nth-of-type(1) > div.grid-col-1:nth-of-type(1)"
+      ]
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 1,
+      "examples": [
+        "div#header > header:nth-of-type(1) > div.banner-slider.section:nth-of-type(3) > div.banner-slider-wrapper.slider-home-coporate:nth-of-type(1) > div.banner-slider.slick-initialized:nth-of-type(1) > ul.slick-dots:nth-of-type(1)"
+      ]
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 1,
+      "examples": [
+        "div#onetrust-pc-sdk > div:nth-of-type(1)"
+      ]
+    },
+    "carousels": {
+      "count": 18,
+      "examples": [
+        "div#header > header:nth-of-type(1) > div.banner-slider.section:nth-of-type(3)",
+        "div#header > header:nth-of-type(1) > div.banner-slider.section:nth-of-type(3) > div.banner-slider-wrapper.slider-home-coporate:nth-of-type(1)"
+      ]
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 6,
+      "examples": [
+        "div#aiaibot-mountpoint > iframe.aiaibot-chat.aiaibot-chat--hidden:nth-of-type(1)",
+        "iframe#destination_publishing_iframe_hirslandenag_0"
+      ]
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 4,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 4,
+      "examples": [
+        "div#ot-fltr-cnt > div.ot-fltr-scrlcnt.ot-pc-scrollbar:nth-of-type(1) > div.ot-fltr-opts:nth-of-type(1) > div.ot-fltr-opt:nth-of-type(1) > div.ot-chkbox:nth-of-type(1) > span.ot-label-status:nth-of-type(1)",
+        "div#ot-selall-hostcntr > span.ot-label-status:nth-of-type(1)"
+      ]
+    },
+    "ctaBand": {
+      "count": 0,
+      "examples": []
+    },
+    "formFields": {
+      "count": 3,
+      "examples": [
+        "input#search",
+        "input#search"
+      ]
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "div#page",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(83, 76, 70)"
+      },
+      "spacing": {
+        "paddingBlock": "0px",
+        "paddingInline": "0px",
+        "gap": "normal"
+      },
+      "borderRadius": "18px",
+      "fontFamilies": [
+        "Metropolis",
+        "sans-serif"
+      ],
+      "shadowsUsed": [
+        "rgba(0, 0, 0, 0.25) 0px 1px 4px 0px",
+        "rgba(0, 0, 0, 0.2) 0px 1px 10px 0px",
+        "rgba(0, 0, 0, 0.4) 0px 5px 10px -10px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px"
+      ]
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null,
+    "screenshot": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--brandColor",
+      "value": "#0094d4"
+    },
+    {
+      "name": "--brandColorOpacity",
+      "value": "rgba(0,148,212,0.1)"
+    }
+  ],
+  "screenshot": "stardust/current/assets/screenshots/home.png",
+  "stats": {
+    "wordCount": 779,
+    "ctaCount": 5,
+    "internalLinkCount": 125,
+    "externalLinkCount": 14,
+    "imageCount": 24
+  }
+}

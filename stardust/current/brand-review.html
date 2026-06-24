@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hirslanden · Current-state brand review</title>
+<style>
+  @font-face { font-family: "Metropolis"; font-weight: 400; src: url("assets/fonts/Metropolis-Regular-15de18d5.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "Metropolis"; font-weight: 500; src: url("assets/fonts/Metropolis-SemiBold-269a2bc8.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "Metropolis"; font-weight: 700; src: url("assets/fonts/Metropolis-Bold-3c10b2e7.woff") format("woff"); font-display: swap; }
+
+  :root{
+    --primary:#0094d4;
+    --primary-dark:#007bb3;
+    --accent:#f43a11;
+    --secondary:#72665b;
+    --text:#534c46;
+    --text-muted:#72665b;
+    --surface:#ffffff;
+    --surface-alt:#f7f6f5;
+    --surface-alt2:#f0efed;
+    --border:#e2dfdb;
+    --display:"Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --body:"Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:var(--body);color:var(--text);background:var(--surface-alt);line-height:1.63;font-size:16px;}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:700;color:var(--text);line-height:1.2;}
+  a{color:var(--primary);}
+  code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;}
+
+  nav.top{position:sticky;top:0;z-index:50;background:var(--primary-dark);display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding:10px 24px;}
+  nav.top .brand{font-family:var(--display);color:#fff;font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;margin-right:18px;}
+  nav.top a{color:#fff;text-decoration:none;font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;padding:6px 10px;border-radius:150px;}
+  nav.top a:hover{background:rgba(255,255,255,0.18);}
+
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px;}
+  section.block{padding:56px 0;border-bottom:1px solid var(--border);}
+  .block > .wrap > h2{font-size:30px;margin:0 0 6px;}
+  .badge{display:inline-block;font-family:var(--display);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:150px;margin-left:8px;vertical-align:middle;}
+  .badge.observed{background:#dff0f8;color:var(--primary-dark);}
+  .badge.home-only{background:#f0efed;color:var(--secondary);}
+  .badge.cross-page{background:#dff0f8;color:var(--primary-dark);}
+  .badge.inferred{background:#fbe3dc;color:#a3220a;}
+  .badge.synthesized{background:#efe9e3;color:var(--text);}
+  .cite{font-family:ui-monospace,monospace;font-size:12px;color:var(--secondary);margin-top:6px;}
+
+  /* masthead */
+  .masthead{background:var(--surface);padding:56px 0;border-bottom:4px solid var(--primary);}
+  .masthead .logo{height:54px;margin-bottom:20px;}
+  .masthead h1{font-size:40px;margin:0 0 8px;}
+  .masthead .hero-line{color:var(--accent);font-size:22px;font-weight:700;font-family:var(--display);margin:0 0 8px;}
+  .masthead .tag{color:var(--text-muted);max-width:70ch;}
+  .masthead .origin{margin-top:14px;}
+
+  .stats{display:flex;flex-wrap:wrap;gap:16px;}
+  .stat{flex:1;min-width:220px;background:var(--surface);border-radius:0;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,0.08);}
+  .stat .n{font-family:var(--display);font-size:28px;font-weight:700;color:var(--primary-dark);}
+  .stat .l{color:var(--text-muted);font-size:14px;}
+
+  .pages-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;}
+  .thumb{background:var(--surface);box-shadow:0 2px 12px rgba(0,0,0,0.08);}
+  .thumb img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top;}
+  .thumb .cap{padding:10px 12px;font-size:13px;}
+  .thumb .cap .slug{font-family:ui-monospace,monospace;color:var(--secondary);}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+  .swatch{background:var(--surface);box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+  .swatch .chip{height:96px;}
+  .swatch .meta{padding:12px;}
+  .swatch .role{font-family:var(--display);text-transform:uppercase;font-size:12px;letter-spacing:1px;font-weight:700;}
+  .swatch .hex{font-family:ui-monospace,monospace;font-size:13px;}
+  .usedas{display:inline-block;font-size:10px;background:var(--surface-alt2);color:var(--secondary);padding:2px 7px;border-radius:150px;margin:3px 3px 0 0;}
+
+  .specimen{background:var(--surface);box-shadow:0 2px 12px rgba(0,0,0,0.06);padding:24px;margin-bottom:14px;}
+  .specimen .label{font-family:ui-monospace,monospace;font-size:12px;color:var(--secondary);margin-bottom:8px;}
+
+  .voice-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:24px;}
+  .voice-card{background:var(--surface-alt);padding:22px;border-left:4px solid var(--primary);}
+  .voice-card .k{font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--secondary);}
+  .pill{display:inline-block;background:var(--surface-alt);color:var(--text);padding:8px 18px;border-radius:18px;margin:4px 6px 0 0;font-size:14px;}
+
+  .tensions{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;}
+  .tension{background:var(--surface);border-left:4px solid var(--accent);padding:18px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+  .tension .tag{font-family:ui-monospace,monospace;font-size:11px;color:var(--accent);font-weight:700;}
+  .tension h4{margin:6px 0 8px;font-size:18px;}
+  .tension p{margin:0 0 8px;font-size:15px;}
+
+  .motif-grid{display:flex;flex-wrap:wrap;gap:18px;}
+  .motif{background:var(--surface);padding:18px;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-align:center;min-width:160px;}
+  .motif .demo{width:90px;height:90px;background:var(--primary);margin:0 auto 10px;}
+  .motif .lbl{font-family:ui-monospace,monospace;font-size:13px;}
+
+  .complist{list-style:none;padding:0;margin:0;}
+  .complist li{border-left:3px solid var(--primary);padding:8px 14px;margin-bottom:8px;background:var(--surface);}
+  .complist .ct{font-family:ui-monospace,monospace;color:var(--secondary);font-size:13px;}
+
+  .syscomp{background:var(--surface);padding:18px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);margin-bottom:14px;}
+  .kindtag{display:inline-block;background:var(--primary);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:1px;padding:2px 9px;border-radius:150px;}
+
+  .logo-row{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;background:var(--surface);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+  .logo-row img{max-width:240px;background:var(--surface-alt);padding:12px;}
+  dl.meta{margin:0;}
+  dl.meta dt{font-family:var(--display);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.5px;margin-top:10px;}
+  dl.meta dd{margin:0;color:var(--text-muted);}
+
+  .radii{display:flex;flex-wrap:wrap;gap:10px;}
+  .radii .r{background:var(--primary);color:#fff;padding:12px 18px;font-family:ui-monospace,monospace;font-size:13px;}
+
+  footer.rev{padding:48px 24px;background:var(--surface-alt2);color:var(--text-muted);font-size:14px;}
+  footer.rev .legend span{display:inline-block;margin-right:14px;}
+  @media print{ nav.top{position:static;} section.block{break-inside:avoid;} }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <span class="brand">Hirslanden · Current state</span>
+  <a href="#coverage">Coverage</a>
+  <a href="#pages">Pages</a>
+  <a href="#palette">Palette</a>
+  <a href="#type">Typography</a>
+  <a href="#voice">Voice</a>
+  <a href="#tensions">Tensions</a>
+  <a href="#motifs">Motifs</a>
+  <a href="#components">Components</a>
+  <a href="#system">System</a>
+  <a href="#logo">Logo</a>
+  <a href="#shape">Spacing &amp; shape</a>
+</nav>
+
+<header class="masthead">
+  <div class="wrap">
+    <img class="logo" src="assets/logo.png" alt="Hirslanden">
+    <p class="hero-line">Kompetenz, die Vertrauen schafft</p>
+    <h1>Hirslanden</h1>
+    <p class="tag">16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte — Ihre Gesundheit steht bei uns im Mittelpunkt!</p>
+    <p class="origin mono"><a href="https://www.hirslanden.ch/">https://www.hirslanden.ch/</a> → https://www.hirslanden.ch/de/corporate/home.html</p>
+  </div>
+</header>
+
+<section class="block" id="coverage">
+  <div class="wrap">
+    <h2>Coverage <span class="badge synthesized">single-page</span></h2>
+    <p class="cite">_crawl-log.json</p>
+    <div class="stats">
+      <div class="stat"><div class="n">1 / 1</div><div class="l">Pages extracted (—single mode). Live Playwright render, HTTP 200.</div></div>
+      <div class="stat"><div class="n">medium · 4.5s</div><div class="l">Wait strategy + wait time. Headed real Chrome; consent dismissed via OneTrust selector.</div></div>
+      <div class="stat"><div class="n">1 family · 8 colors</div><div class="l">Metropolis (4 weights, open-licence) + Hirslanden Blue palette.</div></div>
+    </div>
+    <p style="margin-top:14px;color:var(--text-muted);font-size:14px;">No crawl failures. Cross-page aggregations (heading frequency, cross-promo, system-component ≥3-page threshold) are unavailable under single-page scope. Single-page bias is noted on every aggregated value.</p>
+  </div>
+</section>
+
+<section class="block" id="pages">
+  <div class="wrap">
+    <h2>Pages <span class="badge home-only">home-only</span></h2>
+    <p class="cite">assets/screenshots/home.png · home-full.png</p>
+    <div class="pages-grid">
+      <div class="thumb"><img src="assets/screenshots/home.png" alt="Home viewport"><div class="cap">Hirslanden-Gruppe, Schweiz<br><span class="slug">/de/corporate/home.html</span></div></div>
+      <div class="thumb"><img src="assets/screenshots/home-full.png" alt="Home full page"><div class="cap">Home — full page<br><span class="slug">/ (full scroll)</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="palette">
+  <div class="wrap">
+    <h2>Color palette <span class="badge home-only">home-only</span></h2>
+    <p class="cite">_brand-extraction.json § palette</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#ffffff;border-bottom:1px solid var(--border)"></div><div class="meta"><div class="role">background</div><div class="hex">#ffffff</div><span class="usedas">background</span><span class="usedas">text</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#f7f6f5"></div><div class="meta"><div class="role">surface</div><div class="hex">#f7f6f5</div><span class="usedas">background</span><div class="cite">warm off-white ground · chips</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#f0efed"></div><div class="meta"><div class="role">surface-alt</div><div class="hex">#f0efed</div><span class="usedas">background</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#0094d4"></div><div class="meta"><div class="role">primary</div><div class="hex">#0094d4</div><span class="usedas">background</span><span class="usedas">text</span><span class="usedas">fill</span><div class="cite">= --brandColor</div></div></div>
+      <div class="swatch"><div class="chip" style="background:rgba(0,148,212,0.1)"></div><div class="meta"><div class="role">primary-tint</div><div class="hex">rgba(0,148,212,.1)</div><span class="usedas">background</span><div class="cite">= --brandColorOpacity · quicklink tiles</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#534c46"></div><div class="meta"><div class="role">text-primary</div><div class="hex">#534c46</div><span class="usedas">text</span><div class="cite">warm taupe-grey, not black</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#72665b"></div><div class="meta"><div class="role">text-secondary</div><div class="hex">#72665b</div><span class="usedas">text</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#f43a11"></div><div class="meta"><div class="role">accent-danger</div><div class="hex">#f43a11</div><span class="usedas">text</span><div class="cite">emergency · "Notfallnummer 144" only</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="type">
+  <div class="wrap">
+    <h2>Typography <span class="badge home-only">home-only</span> <span class="badge synthesized">No modular scale</span></h2>
+    <p class="cite">_brand-extraction.json § type · scaleAudit</p>
+    <div class="specimen"><div class="label">Display · Metropolis 700 / 42px / lh 1.43 (rendered uppercase watermark)</div><div style="font-family:var(--display);font-weight:700;font-size:42px;line-height:1.43;text-transform:uppercase;color:#938880;">Kompetenz, die Vertrauen schafft</div></div>
+    <div class="specimen"><div class="label">Headline · Metropolis 700 / 34px / lh 1.41</div><div style="font-family:var(--display);font-weight:700;font-size:34px;line-height:1.41;">Hirslanden-Gruppe</div></div>
+    <div class="specimen"><div class="label">Title · Metropolis 700 / 22px / lh 1.36</div><div style="font-family:var(--display);font-weight:700;font-size:22px;line-height:1.36;">Hirslanden Healthline</div></div>
+    <div class="specimen"><div class="label">Body · Metropolis 400 / 16px / lh 1.63</div><div style="font-family:var(--body);font-weight:400;font-size:16px;line-height:1.63;max-width:70ch;">Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.</div></div>
+    <div class="specimen"><div class="label">Label · Metropolis 500 / 13px</div><div style="font-family:var(--body);font-weight:500;font-size:13px;">CHIRURGIE · ZÜRICH · 25. JUNI</div></div>
+  </div>
+</section>
+
+<section class="block" id="voice">
+  <div class="wrap">
+    <h2>Voice <span class="badge home-only">home-only</span> <span class="badge inferred">tone: professional-warm</span></h2>
+    <p class="cite">_brand-extraction.json § voice · voiceTable</p>
+    <div class="voice-cards">
+      <div class="voice-card"><div class="k">Hero headline</div><p style="font-size:20px;font-weight:700;font-family:var(--display);">Kompetenz, die Vertrauen schafft</p></div>
+      <div class="voice-card"><div class="k">Tagline</div><p>16 Privatkliniken, über 300 Kompetenzzentren sowie über 3000 Ärztinnen und Ärzte — Ihre Gesundheit steht bei uns im Mittelpunkt!</p></div>
+      <div class="voice-card"><div class="k">First paragraph</div><p>Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.</p></div>
+    </div>
+    <h3 style="font-size:18px;">CTA frequency (top labels)</h3>
+    <div>
+      <span class="pill">Mehr erfahren · 3</span><span class="pill">Suche · 2</span><span class="pill">Zu den Standorten · 1</span><span class="pill">Weiterlesen · 1</span><span class="pill">Alle News und Mitteilungen · 1</span><span class="pill">Jobs · 1</span><span class="pill">Ärztesuche · 1</span>
+    </div>
+    <div class="stats" style="margin-top:24px;">
+      <div class="stat"><div class="n">5%</div><div class="l">Headings uppercase (mixed-case site; only the hero watermark + eyebrows upper)</div></div>
+      <div class="stat"><div class="n">18</div><div class="l">Distinct headings (home)</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">Distinct CTA labels (home)</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="tensions">
+  <div class="wrap">
+    <h2>Tensions <span class="badge synthesized">decisions for direct</span></h2>
+    <p class="cite">Mechanical detectors per brand-review-template.md § Detectors, run over home-only data.</p>
+    <div class="tensions">
+      <div class="tension">
+        <div class="tag">T-scale</div>
+        <h4>Type scale is ad-hoc</h4>
+        <p>42 → 34 → 22px, ratios 1.235 then 1.545 — no consistent ratio. Direct will need to decide whether the target adopts a modular scale.</p>
+        <div class="cite">Source: _brand-extraction.json § type.scaleAudit</div>
+      </div>
+      <div class="tension">
+        <div class="tag">T-cta-vocab</div>
+        <h4>CTA voice fragmented (see-more bucket)</h4>
+        <p>Both "Mehr erfahren" (×3) and "Weiterlesen" (×1) appear for the same read-on affordance. Direct will need to pick a canonical voice for learn-more / read-more.</p>
+        <div class="cite">Source: aggregated pages/home.json § ctas[].label</div>
+      </div>
+      <div class="tension">
+        <div class="tag">T-color-imbalance</div>
+        <h4>Emergency red appears as text only</h4>
+        <p>#f43a11 (accent-danger) appears only as text — never as background / border / fill. By design (the 144 emergency label), but Direct must decide: drop, expand to a real semantic-danger token, or keep as a single reserved mark.</p>
+        <div class="cite">Source: _brand-extraction.json § palette[].usedAs</div>
+      </div>
+      <div class="tension">
+        <div class="tag">T-logo-variants</div>
+        <h4>Only one logo variant captured</h4>
+        <p>Captured source: img wordmark (188×54 PNG). The redesign will need a monochrome / inverted / SVG variant set (and the wordmark renders 0×0 in the live desktop header due to a responsive swap with the Mediclinic combined-mark icon). Direct should plan that.</p>
+        <div class="cite">Source: _brand-extraction.json § logo</div>
+      </div>
+      <div class="tension">
+        <div class="tag">T-img-alt-filename (nuanced)</div>
+        <h4>Filename-style alt text on content images</h4>
+        <p>Several hero/content images carry DAM filenames as alt text ("hirslanden-her-onkologie", "NR_DSC07282", "1455280026", "03_NeueWege-1z1_72dpi"). Not the exact stock strings the mechanical rule catches, but content-free for screen readers. 13% of images have empty alt (below the 30% T-img-alt-empty threshold).</p>
+        <div class="cite">Source: aggregated pages/home.json § media.images[].alt</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="motifs">
+  <div class="wrap">
+    <h2>Motifs <span class="badge home-only">home-only</span></h2>
+    <p class="cite">_brand-extraction.json § motifs</p>
+    <div class="motif-grid">
+      <div class="motif"><div class="demo" style="border-radius:18px;"></div><div class="lbl">18px · pill chips</div></div>
+      <div class="motif"><div class="demo" style="border-radius:0;"></div><div class="lbl">0px · buttons &amp; cards</div></div>
+      <div class="motif"><div class="demo" style="border-radius:50%;"></div><div class="lbl">50% · carousel dots</div></div>
+      <div class="motif"><div class="demo" style="border-radius:0;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div><div class="lbl">card-float shadow<br>0 2px 12px rgba(0,0,0,.08)</div></div>
+    </div>
+    <p style="margin-top:18px;color:var(--text-muted);">Patterns: search-first hero · map-locator · quicklink-tile-grid · teaser-card-3up · news-list · event-list-with-date-chip · cta-band · footer-mega · carousel. No gradients.</p>
+  </div>
+</section>
+
+<section class="block" id="components">
+  <div class="wrap">
+    <h2>Components <span class="badge home-only">home-only</span></h2>
+    <p class="cite">pages/home.json § components</p>
+    <ul class="complist">
+      <li>Cards / teasers <span class="ct">— teaser-card-3up, news rows, event rows</span></li>
+      <li>Quick-link tiles <span class="ct">— icon tiles on primary-tint background</span></li>
+      <li>Search box <span class="ct">— hero search-first affordance</span></li>
+      <li>Carousel <span class="ct">— slick slider, 5-dot pagination</span></li>
+      <li>Map locator <span class="ct">— Switzerland clinic map "in Ihrer Nähe"</span></li>
+      <li>CTA band <span class="ct">— full-width Hirslanden-blue "Hirslanden Blog"</span></li>
+      <li>Footer mega-menu <span class="ct">— Quick Links / Leistungsangebot / Über uns + emergency 144</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="system">
+  <div class="wrap">
+    <h2>System components <span class="badge home-only">home-only</span></h2>
+    <p class="cite">_brand-extraction.json § systemComponents (home-only; ≥3-page threshold N/A under —single)</p>
+    <div class="syscomp">
+      <span class="kindtag">header</span> <strong>site-header</strong>
+      <p>Nav: Kliniken · Ärzte · Fachgebiete · Suche. Utility: Kontakt · Medien · FR/EN. Wordmark left, search + menu toggle right.</p>
+    </div>
+    <div class="syscomp">
+      <span class="kindtag">footer</span> <strong>site-footer</strong>
+      <p>HIRSLANDEN-GRUPPE blurb · FOLGEN SIE UNS · Quick Links · Leistungsangebot · Über uns · © 2026 · Notfallnummer <strong style="color:var(--accent)">144</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="logo">
+  <div class="wrap">
+    <h2>Logo &amp; favicons <span class="badge home-only">home-only</span></h2>
+    <p class="cite">_brand-extraction.json § logo · assets/logo.png</p>
+    <div class="logo-row">
+      <img src="assets/logo.png" alt="Hirslanden wordmark">
+      <dl class="meta">
+        <dt>Source</dt><dd>img wordmark — div#nav .logoWrapper img.logo[alt="Hirslanden"] (locator chain step 2)</dd>
+        <dt>File</dt><dd>PNG · 188 × 54 (aspect 3.48 wordmark)</dd>
+        <dt>Variants captured</dt><dd>1 (full-colour wordmark)</dd>
+        <dt>Variants not captured</dt><dd>monochrome / inverted / SVG. Also present but uncaptured: combined Hirslanden+Mediclinic mark (60×50).</dd>
+        <dt>Note</dt><dd>Renders 0×0 in the desktop header at capture time (responsive swap); fetched directly from the DAM.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="shape">
+  <div class="wrap">
+    <h2>Spacing &amp; shape <span class="badge home-only">home-only</span></h2>
+    <p class="cite">_brand-extraction.json § spacing · motifs.borderRadius</p>
+    <p style="color:var(--text-muted);">No coherent spacing scale is exposed at <code>:root</code> — only <code>--brandColor</code> and <code>--brandColorOpacity</code> are defined. Section paddings are component-driven (legacy AEM), not tokenized. The migration target will introduce a spacing system.</p>
+    <h3 style="font-size:18px;margin-top:18px;">Radii revisited</h3>
+    <div class="radii">
+      <span class="r" style="border-radius:18px;">18px · pill</span>
+      <span class="r" style="border-radius:0;">0px · square</span>
+      <span class="r" style="border-radius:50%;">50% · circle</span>
+    </div>
+  </div>
+</section>
+
+<footer class="rev">
+  <div class="wrap">
+    <p>This review read: <code>_brand-extraction.json</code>, <code>pages/home.json</code>, <code>_crawl-log.json</code>, <code>assets/screenshots/*</code>, <code>assets/logo.png</code>, <code>assets/fonts/Metropolis-*.woff</code>. Rendered in Hirslanden's own captured colours (#0094d4 primary, warm-neutral grounds, #f43a11 accent) and font (Metropolis).</p>
+    <p><strong>What's next:</strong> run <code>/stardust:direct</code> to resolve a redesign direction. The Tensions above are the decision agenda.</p>
+    <p class="legend"><span><span class="badge observed">observed</span> ≥3-page CSS count</span><span><span class="badge home-only">home-only</span> single page</span><span><span class="badge cross-page">cross-page</span> all pages</span><span><span class="badge inferred">inferred</span> judgment</span><span><span class="badge synthesized">synthesized</span> higher-level claim</span></p>
+    <p style="font-size:13px;">Single-page (—single / —cap 1) presales extraction. Cross-page badges are absent by construction.</p>
+  </div>
+</footer>
+
+</body>
+</html>

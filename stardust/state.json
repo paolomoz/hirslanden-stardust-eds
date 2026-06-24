@@ -1,0 +1,82 @@
+{
+    "_provenance": {
+        "writtenBy": "stardust:extract",
+        "writtenAt": "2026-06-24T00:00:00Z",
+        "stardustVersion": "0.10.0"
+    },
+    "site": {
+        "originUrl": "https://www.hirslanden.ch",
+        "deployUrl": null,
+        "extractedAt": "2026-06-24T00:00:00Z",
+        "pageCap": 1,
+        "totalDiscovered": 1,
+        "crawled": 1
+    },
+    "direction": {
+        "resolvedAt": "2026-06-24T00:00:00Z",
+        "phrase": "5 different directions, all very professional, modern, pin colors typography and brand dna, do not play with cinematic for now",
+        "directionFile": "stardust/direction.md",
+        "variantMode": "reimagined",
+        "variants": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ]
+    },
+    "pages": [
+        {
+            "slug": "home",
+            "url": "https://www.hirslanden.ch/",
+            "title": "Hirslanden-Gruppe, Schweiz",
+            "type": "landing",
+            "status": "prototyped",
+            "history": [
+                {
+                    "status": "extracted",
+                    "at": "2026-06-24T00:00:00Z"
+                },
+                {
+                    "status": "directed",
+                    "at": "2026-06-24T00:00:00Z"
+                },
+                {
+                    "status": "prototyped",
+                    "at": "2026-06-24T00:00:00Z",
+                    "variant": "A",
+                    "note": "Variant A (faithful + improvements), static. Gates: critique clean; audit AA-clean (P1 contrast fixed via --color-accent-ink); adapt analyzed at 1920/1440/1280/900/640/414/375/360; motion N/A (static)."
+                },
+                {
+                    "status": "prototyped",
+                    "at": "2026-06-24T00:00:00Z",
+                    "variant": "B",
+                    "note": "Variant B (Care-routing first), static. IA bet: five equal-weight need-routing cards (Klinik finden / Arzt finden / Klinikaufenthalt planen / Internationale Patienten / Notfall 144) beside the captured search field lead the page; quicklink grid + map + teasers subsumed; news/events/blog demoted to one lighter band. Gates: critique clean (detector 0 findings); audit AA-clean after 3 P1 contrast fixes (search btn #006894, footer 144 on white chip, footer legal .88); adapt static-analyzed at 1920/1440/1280/1100/900/800/640/414/375/360 (hamburger <640, cards reflow to stacked); motion N/A (static)."
+                },
+                {
+                    "status": "prototyped",
+                    "at": "2026-06-24T00:00:00Z",
+                    "variant": "C",
+                    "note": "Variant C (Photography-led / 'The Warm Editorial Front Door'), static. Bet: captured warm clinician-with-patient photography promoted from thumbnail teasers to full-bleed editorial scale; reassurance voice given editorial room; quieter type (ratio 1.2, heading weight 500, body line-height 1.7). Surprise high (2 cliches replaced + document-shape poster-sequence of full-bleed photo bands). Search stays first-viewport (slim bar under hero). Gates: critique clean (impeccable detector 0 findings; brand image-led canonical); audit AA-computed clean (hero white-on-scrim 6.39:1, CTAs on #006894 6.16:1, large-text-floor pairs pass incl. footer 144 red-on-white-chip 3.85:1; LCP hero eager+fetchpriority high; all alt present); adapt static-analyzed 1920..360 with 1 P1 fixed (mobile header overflow at 360 -> nav gap 16 + icon-only search <640 with aria-label; bar 274<=312); motion N/A (static). 2 [data-placeholder] editorial-image blocks (no captured photo for 'Für alle Folgen des Lebens' + 'Hirslanden Healthline' teasers); all text captured-verbatim, 16/300/3000 captured fact."
+                },
+                {
+                    "status": "prototyped",
+                    "at": "2026-06-24T00:00:00Z",
+                    "variant": "D",
+                    "note": "Variant D (Confident display / 'The Institution, Set in Type'), static. Bet: Metropolis pushed into a confident perfect-fourth display scale (ratio 1.333, Display clamp up to 4.21rem, tight line-height 1.08) on a strict VISIBLE 12-column modular grid (24px gutters, hairline #e2dfdb rules); the captured 16/über 300/über 3000 scale story PROMOTED from footer prose to an upper-page typographic PROOF BLOCK (three Display numerals warm #534c46 with Label captions, flat, hairline-ruled, no count-up). Type leads; photography supports (hero photo a contained right-5-col grid cell, never full-bleed). Search stays first-viewport. Surprise high (2 cliches replaced: ad-hoc disagreeing scale + low-contrast watermark headline -> disciplined 1.333 display scale + high-contrast warm display headline; scale-story-as-footer-prose -> upper-page proof block; + 1 document-shape: flat module stack -> visible 12-col grid). Type-scale yield recorded (captured ad-hoc 42/34/22 ratios 1.235/1.545 -> single modular 1.333). Gates: critique clean (impeccable detector 0 findings; brand-faithful inversions auto-dismissed); audit AA-computed clean (display+proof #534c46-on-white 8.43:1; body >=7.34:1; captions #72665b >=4.85:1; links #0070a0 >=4.78:1; CTA white-on-#006894 6.16:1; blog white H2 on #0094d4 3.39:1 large-floor pass; footer 144 red-on-white-chip 3.85:1 large-floor pass; LCP hero eager+fetchpriority high; all alt present; no JS-hidden-state); adapt Playwright-rendered 1280/640/375 zero overflow, display clamp 67->48px scales down clean, hamburger <640 source-order correct, grid reflows 12->8->1; motion N/A (static). 0 [data-placeholder] — all copy captured-verbatim; two image-less care cards are deliberate type-led cards (Variant D bet), not placeholders; 16/300/3000 captured fact."
+                },
+                {
+                    "status": "prototyped",
+                    "at": "2026-06-24T00:00:00Z",
+                    "variant": "E",
+                    "note": "Variant E (Calm / neutral-forward), static. Rendered via impeccable:craft in the main context (subagent spawn was API-throttled with 529s). Bet: warm #f7f6f5 ground CARRIES the page (white demoted to the single rare lift = the search card); blue #0094d4 RATIONED to true wayfinding actions only — captured full-blue 'Hirslanden Blog' band demoted to warm-alt + a single blue CTA, proof numerals set in warm #534c46 (not blue), quicklink tiles warm with hairline (not blue-tint); the 18px pill EXTENDED into one consistent shape system across chips/cards/tags/inputs/buttons/date-chips/144 box (captured pill-vs-squared contrast resolved toward the pill); quiet type (ratio 1.2, heading weight 500, body line-height 1.7); flat surfaces (shadow only on the white search card). Emergency 144 stays reserved red, reading even louder as the lone saturated accent. Gates: design detector clean (0 findings); audit AA-computed (#534c46 on warm >=7:1, #72665b meta >=4.6:1, links #0070a0 on warm >=4.6:1, white CTA on #006894 6.16:1; P1 pinned-blue <18px fixed via #0070a0/#006894); adapt Playwright-verified 1440/900/375 zero console errors + zero horizontal overflow after fixing a grid-track overflow at 375 (hero-grid 1fr -> minmax(0,1fr) + min-width:0 on children); motion N/A (static). 0 [data-placeholder]; two group-teaser images render as flat warm label panels (no captured asset; no invented imagery); all copy captured-verbatim; 16/300/3000 captured fact."
+                }
+            ],
+            "stale": false,
+            "staleReason": null,
+            "currentStatePath": "stardust/current/pages/home.json",
+            "prototypePath": "stardust/prototypes/home-A-proposed.html",
+            "migratedPath": null
+        }
+    ]
+}

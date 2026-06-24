@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden — Variant C (Photography-led)",
+  "variant": {
+    "id": "C",
+    "role": "Different captured trait amplified — photography + voice",
+    "bet": "The warm clinician-with-patient photography runs at full editorial scale; reassurance voice given room; quieter type, magazine whitespace.",
+    "primaryAxis": "photography + voice",
+    "amplifies": "Photography re-foregrounding (what-if #2) + voice-register (#5), in service of Design Principles 1 (reassurance) and 3 (warm not sterile).",
+    "differentiatingToken": "type-scale ratio 1.2, heading weight 500, body line-height 1.7; full-bleed editorial image block; 32px card padding",
+    "motion": "static — no parallax/Ken-Burns; imagery carries warmth at rest; NO motion register"
+  },
+  "extensions": {
+    "colorMeta": {
+      "hirslanden-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "note": "rarer here — imagery does the emotional work" },
+      "ground-warm": { "role": "neutral", "displayName": "Warm Ground", "canonical": "#f7f6f5" },
+      "text-warm-dark": { "role": "neutral", "displayName": "Text Warm Dark", "canonical": "#534c46" },
+      "emergency-red": { "role": "reserved", "displayName": "Emergency Red", "canonical": "#f43a11", "note": "144 only" }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline (quiet)", "purpose": "Editorial lead-ins at weight 500 — never a shout." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "Caption panels and content cards only; full-bleed images stay flat." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "600px" },
+      { "name": "desktop", "value": "900px" },
+      { "name": "wide", "value": "1200px" }
+    ],
+    "componentStyle": {
+      "buttons": { "primary": { "background": "#0094d4", "color": "#ffffff", "borderRadius": "0px", "fontWeight": 500 }, "secondary": { "background": "#f7f6f5", "color": "#534c46", "borderRadius": "18px", "fontWeight": 400 } },
+      "cards": { "background": "#ffffff", "borderRadius": "0px", "shadow": "0 2px 12px rgba(0,0,0,0.08)", "padding": "32px" },
+      "inputs": { "borderRadius": "0px", "border": "1px solid #e2dfdb" },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": { "purpose": "Wordmark + nav + search + utility bar; reachable emergency path.", "positionClass": "sticky-top" },
+      "footer": { "purpose": "Group blurb, social, link mega-menu, prominent emergency 144.", "positionClass": "page-end" },
+      "editorial-image-block": { "purpose": "Page-lead pattern: captured photograph at full-bleed / edge-to-edge with quiet lead-in and caption.", "positionClass": "full-bleed-bands", "siteWideConstraint": "Images reused at captured semantic position; untreated; never thumbnail-cropped." },
+      "find-care": { "purpose": "Search-first wayfinding affordance.", "positionClass": "first-viewport" },
+      "emergency-144": { "purpose": "Unmistakable emergency wayfinding (red 144).", "positionClass": "footer-and-chrome" }
+    },
+    "motifs": {
+      "signaturePill": { "radius": "18px", "usage": "secondary chips and badges" },
+      "squaredControls": { "radius": "0px", "usage": "primary buttons, cards, inputs" },
+      "softShadow": "0 2px 12px rgba(0,0,0,0.08)",
+      "warmPhotography": "AMPLIFIED — clinician-with-patient imagery at full editorial scale, untreated, reused at captured semantic positions",
+      "gradients": "none"
+    },
+    "voice": {
+      "register": "formal Swiss-German Sie; reassurance-forward — GIVEN EDITORIAL ROOM as lead-ins and captions",
+      "dos": [
+        "Do let the reassurance line read as editorial copy, not a watermark.",
+        "Do caption photography warmly and specifically.",
+        "Do keep lead-ins unhurried; one idea per editorial block."
+      ],
+      "donts": [
+        "Don't reduce voice to UI microcopy.",
+        "Don't let type out-shout the image.",
+        "Don't use sales-funnel urgency."
+      ]
+    },
+    "iaPriorities": [
+      { "signal": "photography-foregrounding", "evidence": "voice.heroImage hirslanden-her-onkologie 2900x1419 + warm human content imagery, currently cropped to teaser thumbnails", "preserveAs": "full-editorial-scale-at-captured-position", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "search-led-IA", "evidence": "pages/home.json hero search box; 'search-first-hero'", "preserveAs": "first-viewport", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "crisis-affordance", "evidence": "footer 'Notfallnummer 144' in #f43a11", "preserveAs": "footer-and-chrome", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "warmth-not-sterile", "evidence": "warm grounds + warm text + human photography — the central bet of this variant", "preserveAs": "warm-neutral-ground-and-human-photography", "scope": "site-wide", "mutability": "movable" },
+      { "signal": "restraint-one-accent-one-family", "evidence": "single family Metropolis; single accent #0094d4", "preserveAs": "one-accent-one-family", "scope": "site-wide", "mutability": "movable" }
+    ],
+    "divergence": {
+      "mode": "brand-faithful (Mode A)",
+      "signalClass": "signal-strong",
+      "rolledDimensions": { "decade": "2025-now", "register": "brand (inherited, editorial-leaning)", "ground_family": { "value": "warm-neutral", "override": "brand-faithful" } },
+      "inheritedDimensions": { "font_deck": "brand-inherited (Metropolis)", "palette": "inherited" },
+      "densityNote": "sectionPadding desktop held at 64px — the multi-audience hard floor ceiling (>5 sections / >2 audience tracks). 'Generous magazine whitespace' is achieved via large media, wide gutters, and long line-height (1.7), NOT via >64px padding. Floor respected.",
+      "brand_faithful_inversions": [
+        "#ffffff retained as caption-panel / card ground (brand decision). 'No pure white' inverted per brand-faithful direction.",
+        "Hex token format retained. OKLCH applies to new authoring only.",
+        "Sharp 0px corners retained on cards/inputs/primary buttons. 'Modern means rounded' reflex inverted.",
+        "Saturated #0094d4 retained as primary action color. Tinted-neutral-primary reflex inverted.",
+        "#f43a11 retained as reserved color for the 144 affordance only. Spread-accent reflex inverted.",
+        "Captured photography reused untreated at semantic position — the agent-default 'add a duotone/overlay treatment' reflex is inverted; warmth is the captured image's own."
+      ],
+      "antiToolboxAudit": "editorial-register vocabulary check: brand register is direct-services healthcare, not a publication — 'editorial' here means photography-led layout, NOT atelier/journal/studio voice. No editorial-vocabulary slop introduced. Passes.",
+      "motionRegister": "none — static variant; explicitly no Ken-Burns/parallax on the imagery"
+    }
+  },
+  "components": [
+    {
+      "name": "Editorial Image Block",
+      "kind": "custom",
+      "refersTo": "editorial-image-block",
+      "description": "Full-bleed captured photograph with a quiet warm-ground caption panel.",
+      "html": "<figure class=\"ds-editorial\"><img class=\"ds-editorial-img\" src=\"stardust/current/assets/media/hero-onkologie-133e374f.webp\" alt=\"Ärztin im Gespräch mit einer Patientin\"><figcaption class=\"ds-editorial-cap\"><span class=\"ds-eyebrow\">Für Sie da</span><h2 class=\"ds-editorial-lead\">Kompetenz, die Vertrauen schafft</h2><p>Bei allen Folgen des Lebens sind wir für Sie da.</p></figcaption></figure>",
+      "css": ".ds-editorial { margin: 0; } .ds-editorial-img { display: block; width: 100%; height: auto; object-fit: cover; } .ds-editorial-cap { background: #f7f6f5; padding: 32px; font-family: Metropolis, sans-serif; color: #534c46; } .ds-eyebrow { font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.04em; color: #72665b; text-transform: uppercase; } .ds-editorial-lead { font-weight: 700; font-size: clamp(2rem, 3.5vw, 2.5rem); line-height: 1.2; margin: 8px 0 12px; } .ds-editorial-cap p { font-weight: 400; font-size: 1.0625rem; line-height: 1.7; margin: 0; }"
+    },
+    {
+      "name": "Quiet Section Lead-in",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Lighter-weight editorial section opener.",
+      "html": "<h2 class=\"ds-leadin\">Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause.</h2>",
+      "css": ".ds-leadin { font-family: Metropolis, sans-serif; font-weight: 500; font-size: 1.5rem; line-height: 1.3; color: #534c46; max-width: 28ch; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "One per editorial section.",
+      "html": "<button class=\"ds-btn-primary\">Mehr erfahren</button>",
+      "css": ".ds-btn-primary { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 0; font-family: Metropolis, sans-serif; font-weight: 500; transition: background 0.18s ease; } .ds-btn-primary:hover { background: #0083bd; } .ds-btn-primary:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Warm Editorial Front Door",
+    "overview": "Variant C amplifies the captured photography — clinician-with-patient imagery run at full editorial scale instead of thumbnail teasers — and gives the reassurance voice editorial room. Type goes quieter (ratio 1.2, weight 500, line-height 1.7) so the imagery leads.",
+    "keyCharacteristics": ["Full-bleed editorial photography, untreated, at captured position", "Quieter type: ratio 1.2, heading weight 500, body 1.7", "Generous magazine whitespace within the density floor", "Reassurance voice as editorial lead-ins and captions", "Search stays first-viewport"],
+    "rules": [
+      { "name": "The Photography-Leads Rule", "body": "On image-led sections the photograph is the largest element; type and color are quiet partners.", "section": "colors" },
+      { "name": "The Reserved-Red Rule", "body": "#f43a11 is the 144 number only.", "section": "colors" },
+      { "name": "The Quiet-Type Rule", "body": "Headings prefer weight 500; weight 700 is reserved for the single hero line.", "section": "typography" },
+      { "name": "The Image-Is-Flat Rule", "body": "Editorial photography is never shadowed or framed.", "section": "elevation" }
+    ],
+    "dos": ["Do run captured photography at full editorial scale at its captured position.", "Do keep type quiet so imagery leads.", "Do give the reassurance voice editorial room."],
+    "donts": ["Don't crop strong photography back to thumbnails.", "Don't apply filters/duotone/overlays to brand photography.", "Don't add Ken-Burns, parallax, or any cinematic motion register."]
+  }
+}

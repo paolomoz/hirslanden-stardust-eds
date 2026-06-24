@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "title": "Design System: Hirslanden (current state)",
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "readArtifacts": ["stardust/current/_brand-extraction.json", "stardust/current/pages/home.json"],
+    "synthesizedInputs": [],
+    "notes": "Descriptive sidecar for the current state of https://www.hirslanden.ch/ (home only). extensions block carries componentStyle, motifs, voice, systemComponents, scaleAudit that the Stitch frontmatter cannot hold."
+  },
+  "extensions": {
+    "colorMeta": {
+      "brand-blue": { "role": "primary", "displayName": "Hirslanden Blue", "canonical": "#0094d4", "tonalRamp": ["#002a3d", "#003f5c", "#00567b", "#006e9c", "#0094d4", "#46b1e0", "#8acef0", "#c4e7f8"] },
+      "warm-white": { "role": "neutral", "displayName": "Warm White", "canonical": "#f7f6f5", "tonalRamp": ["#2a2724", "#3f3a35", "#534c46", "#72665b", "#938880", "#cbc3bb", "#e2dfdb", "#f7f6f5"] },
+      "text-taupe": { "role": "neutral", "displayName": "Text Taupe", "canonical": "#534c46", "tonalRamp": ["#211e1b", "#332e2a", "#453e38", "#534c46", "#72665b", "#938880", "#b8aea5", "#dfd9d3"] },
+      "emergency-red": { "role": "tertiary", "displayName": "Emergency Red", "canonical": "#f43a11", "tonalRamp": ["#5c1305", "#7d1a07", "#a3220a", "#cc2b0d", "#f43a11", "#f76a4b", "#fa9c87", "#fdcdc3"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero watermark headline only (uppercase, light taupe over photo)." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings." },
+      "title": { "displayName": "Title", "purpose": "Card and teaser headings." },
+      "body": { "displayName": "Body", "purpose": "Prose, generous 1.63 line-height." },
+      "label": { "displayName": "Label", "purpose": "Dense meta — clinic names, dates, eyebrow tags." }
+    },
+    "shadows": [
+      { "name": "card-float", "value": "0 2px 12px rgba(0,0,0,0.08)", "purpose": "The single elevation: white cards floated over the warm-white ground. Value approximate." }
+    ],
+    "motion": [],
+    "breakpoints": [
+      { "name": "tablet", "value": "768px" },
+      { "name": "desktop", "value": "1024px" }
+    ],
+    "motifs": {
+      "borderRadius": { "pill": "18px", "square": "0px", "circle": "50%", "note": "18px pill chips contrast deliberately with squared (0px) primary buttons and cards; 50% circles for carousel dots." },
+      "patterns": ["hero-with-image", "search-first-hero", "map-locator", "quicklink-tile-grid", "teaser-card-3up", "news-list", "event-list-with-date-chip", "cta-band", "footer-mega", "carousel"],
+      "gradients": [],
+      "photography": "Human, in-conversation clinician-and-patient imagery in bright Swiss interiors with lake/mountain views; served WebP/JPG from the Mediclinic Scene7 DAM."
+    },
+    "iconFont": {
+      "family": "Icons",
+      "localPath": "stardust/current/assets/fonts/icons-a388d00e.woff",
+      "note": "Declared @font-face icon font, fetched. Glyph->codepoint table not enumerable under single-page capture; hybrid with inline SVG."
+    },
+    "voice": {
+      "heroHeadline": "Kompetenz, die Vertrauen schafft",
+      "firstParagraph": "Die Hirslanden-Gruppe ist in der ganzen Schweiz zu Hause. Sie finden eine unserer Kliniken vom Bodensee im Osten über Zürich, die Zentralschweiz, Basel und Bern bis ganz im Westen am Genfersee.",
+      "ctaSamples": ["Suche", "Zu den Standorten", "Weiterlesen", "Mehr erfahren", "Jobs"],
+      "navItems": ["Kliniken", "Ärzte", "Fachgebiete", "Suche", "Kontakt", "Medien"],
+      "tone": "professional-warm",
+      "language": "de"
+    },
+    "systemComponents": [
+      { "name": "site-header", "kind": "header", "headingSequence": ["Kliniken", "Ärzte", "Fachgebiete", "Suche"], "ctaLabels": ["Suche", "FR", "EN", "Kontakt", "Medien"] },
+      { "name": "site-footer", "kind": "footer", "headingSequence": ["HIRSLANDEN-GRUPPE", "FOLGEN SIE UNS", "Quick Links", "Leistungsangebot", "Über uns"], "ctaLabels": ["Zurück zum Seitenanfang", "Notfallnummer 144"] }
+    ],
+    "scaleAudit": { "kind": "ad-hoc", "ratios": [1.235, 1.545], "matchedScale": null, "note": "42/34=1.235, 34/22=1.545 — ratios disagree; not a single modular scale." }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square blue action button — search, locate, read-on.",
+      "html": "<button class=\"ds-btn-primary\">Suche</button>",
+      "css": ".ds-btn-primary { background: #0094d4; color: #fff; padding: 12px 28px; border: none; border-radius: 0; font-family: 'Metropolis', sans-serif; font-weight: 500; font-size: 15px; cursor: pointer; transition: background 0.18s; } .ds-btn-primary:hover { background: #007bb3; } .ds-btn-primary:focus-visible { outline: 2px solid #0094d4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Quick-link Chip",
+      "kind": "chip",
+      "refersTo": "chip-secondary",
+      "description": "Warm-white pill wayfinding chip under the search box.",
+      "html": "<a class=\"ds-chip\" href=\"#\">Ärztesuche</a>",
+      "css": ".ds-chip { display: inline-block; background: #f7f7f6; color: #534c46; padding: 8px 18px; border-radius: 18px; font-family: 'Metropolis', sans-serif; font-size: 14px; text-decoration: none; transition: background 0.18s; } .ds-chip:hover { background: #efeeec; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White teaser/news card floated over the warm ground.",
+      "html": "<article class=\"ds-card\"><h3>Babygalerie</h3><p>Begrüssen Sie die Neugeborenen aus unseren Geburtskliniken in der Schweiz.</p></article>",
+      "css": ".ds-card { background: #fff; border-radius: 0; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); font-family: 'Metropolis', sans-serif; color: #534c46; } .ds-card h3 { font-weight: 700; font-size: 22px; line-height: 1.36; margin: 0 0 8px; } .ds-card p { font-size: 16px; line-height: 1.63; margin: 0; } .ds-card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.12); }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Hero search field paired with the blue search button.",
+      "html": "<div class=\"ds-search\"><input class=\"ds-search-input\" placeholder=\"Stichwort...\"/><button class=\"ds-search-btn\">Suche</button></div>",
+      "css": ".ds-search { display: flex; background: #fff; border-radius: 18px; padding: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); } .ds-search-input { flex: 1; border: 1px solid #e2dfdb; border-radius: 0; padding: 14px 16px; font-family: 'Metropolis', sans-serif; font-size: 16px; color: #534c46; } .ds-search-input:focus { outline: 2px solid #0094d4; } .ds-search-btn { background: #0094d4; color: #fff; border: none; padding: 14px 28px; font-family: 'Metropolis', sans-serif; font-weight: 500; cursor: pointer; }"
+    },
+    {
+      "name": "CTA Band",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Full-width Hirslanden-blue band (e.g. Hirslanden Blog).",
+      "html": "<section class=\"ds-cta-band\"><h2>Hirslanden Blog</h2><button class=\"ds-cta-band-btn\">Weiterlesen</button></section>",
+      "css": ".ds-cta-band { background: #0094d4; color: #fff; padding: 48px 24px; text-align: center; font-family: 'Metropolis', sans-serif; } .ds-cta-band h2 { font-weight: 700; font-size: 34px; margin: 0 0 16px; } .ds-cta-band-btn { background: #fff; color: #0094d4; border: none; padding: 12px 28px; font-weight: 500; cursor: pointer; } .ds-cta-band-btn:hover { background: #f0efed; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Calm Swiss Clinic",
+    "overview": "The visual system of a private-hospital group that wants a worried visitor to exhale: restrained, warm, institutional — the opposite of cold clinical-tech. A warm off-white ground and warm taupe-grey text (never pure black on sterile white), a single calm Hirslanden Blue for all action, one geometric sans (Metropolis) for everything, and human clinician-and-patient photography. It rejects the marketing funnel (the hero is a search box, not a shouty CTA) and rejects decoration (no gradients, no glassmorphism, one soft shadow). Color is rationed so the emergency red on '144' is unmissable.",
+    "keyCharacteristics": [
+      "Warm-neutral foundation (warm-white grounds, taupe-grey text), never cold black-on-white.",
+      "One accent (Hirslanden blue) for all action; one type family (Metropolis) for everything.",
+      "Search-first, wayfinding hero.",
+      "Soft single-elevation cards over a warm ground; no decorative effects.",
+      "Rationed saturation: emergency red is the only competing color, reserved for the 144 number."
+    ],
+    "rules": [
+      { "name": "The One Blue Rule", "body": "There is exactly one accent: Hirslanden Blue. It carries all action and emphasis; nothing else reads as clickable-important except the emergency number.", "section": "colors" },
+      { "name": "The Warm Neutral Rule", "body": "Never pure black on pure white for content. Text is warm taupe-grey (#534c46); grounds are warm off-white (#f7f6f5).", "section": "colors" },
+      { "name": "The One Family Rule", "body": "Metropolis carries every register. No display/body pairing, no second typeface; distinction comes from weight and size.", "section": "typography" },
+      { "name": "The Single-Shadow Rule", "body": "There is one elevation: white cards floated on a single soft shadow over the warm ground. No second, deeper tier.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the warm neutral foundation: warm-white grounds (#f7f6f5), warm taupe-grey text (#534c46).",
+      "Do use exactly one accent — Hirslanden Blue (#0094d4) — for all action and emphasis.",
+      "Do set everything in Metropolis; vary weight (400/500/700) and size, not family.",
+      "Do lead the hero with a search affordance and quick-link pills.",
+      "Do reserve emergency red (#f43a11) for the 144 emergency number and nothing else.",
+      "Do float white cards over the warm ground with the single soft shadow (0 2px 12px rgba(0,0,0,0.08)).",
+      "Do use human, in-conversation clinician-and-patient photography in bright Swiss interiors."
+    ],
+    "donts": [
+      "Don't use pure black on sterile pure white for content — that is the cold clinical-tech look this brand rejects.",
+      "Don't add gradients, glassmorphism, neon, or heavy/layered drop shadows.",
+      "Don't introduce a second typeface or display font for flavour.",
+      "Don't turn the hero into an aggressive marketing funnel (countdowns, popups, single shouty CTA).",
+      "Don't spend the accent blue on decoration; if everything is blue, nothing is the action.",
+      "Don't let the emergency-red leak onto non-emergency elements."
+    ]
+  }
+}
