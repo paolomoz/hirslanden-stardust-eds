@@ -98,6 +98,78 @@
   margin-bottom: var(--spacing-xs);
 }
 
+/* Anfahrt / transport sub-section (main column) */
+.event-body .transport-section {
+  margin-top: var(--spacing-2xl);
+}
+
+.event-body .transport-section h3 {
+  font-size: var(--heading-md);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.event-body .transport-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  align-items: stretch;
+}
+
+.event-body .transport-item {
+  background: var(--color-ground-warm);
+  padding: var(--spacing-lg);
+}
+
+.event-body .transport-item h4 {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--body);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-fg);
+}
+
+.event-body .transport-item p {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  margin-bottom: 0;
+}
+
+/* Map placeholder (gray box, local asset — no live map) */
+.event-body .map-area {
+  margin-top: var(--spacing-xl);
+  position: relative;
+}
+
+.event-body .placeholder-media {
+  background: var(--color-ground-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-soft);
+  font-size: var(--body-sm);
+  font-family: var(--font-body);
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: 1px solid rgb(0 0 0 / 6%);
+}
+
+.event-body .placeholder-media--map {
+  aspect-ratio: 16 / 7;
+  max-height: 320px;
+}
+
+@media (width <= 767px) {
+  .event-body .transport-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Sidebar (right column) */
 .event-body .event-sidebar {
   position: sticky;

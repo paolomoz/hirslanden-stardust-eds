@@ -20,7 +20,74 @@
 const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
 const SIDEBAR_RE = /(termine|anmeldung|daten|registrier)/i;
 const NOTICE_RE = /(hinweis|wichtig|gut zu wissen)/i;
+const ANFAHRT_RE = /(anfahrt|anreise)/i;
+const MAP_RE = /^karte\b/i;
 const DATE_PREFIX_RE = /^(\d{1,2})\.?\s*([A-Za-zÄÖÜäöü]{2,}\.?)/; // "25 Jun." / "06 Aug."
+
+// Inline transport icons, lifted verbatim from the event-detail prototype.
+const ICON_CAR = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>';
+const ICON_TRAM = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M8 15h.01"/><path d="M16 15h.01"/></svg>';
+const AUTO_RE = /(auto|park)/i;
+
+// Build the Anfahrt sub-section (transport columns + map placeholder) from the
+// nodes following an "Anfahrt" h3. Returns the section element and the index of
+// the last consumed node so the caller can skip those nodes.
+function buildAnfahrt(heading, body, startIdx) {
+  const section = document.createElement('div');
+  section.className = 'transport-section';
+  const h3 = document.createElement('h3');
+  h3.innerHTML = heading.innerHTML;
+  section.append(h3);
+
+  const grid = document.createElement('div');
+  grid.className = 'transport-grid';
+  let mapText = null;
+  let lastIdx = startIdx;
+
+  for (let i = startIdx; i < body.length; i += 1) {
+    const node = body[i];
+    const tag = node.tagName.toLowerCase();
+    if (tag === 'h2' || (tag === 'h3' && !ANFAHRT_RE.test(node.textContent))) break;
+    if (tag === 'h4') {
+      const item = document.createElement('div');
+      item.className = 'transport-item';
+      const h4 = document.createElement('h4');
+      const label = node.textContent.trim();
+      h4.innerHTML = `${AUTO_RE.test(label) ? ICON_CAR : ICON_TRAM}<span>${node.innerHTML}</span>`;
+      item.append(h4);
+      const next = body[i + 1];
+      if (next && next.tagName.toLowerCase() === 'p' && !MAP_RE.test(next.textContent.trim())) {
+        const p = document.createElement('p');
+        p.innerHTML = next.innerHTML;
+        item.append(p);
+        i += 1;
+      }
+      grid.append(item);
+      lastIdx = i;
+    } else if (tag === 'p' && MAP_RE.test(node.textContent.trim())) {
+      mapText = node.textContent.trim();
+      lastIdx = i;
+    } else {
+      break;
+    }
+  }
+
+  if (grid.children.length) section.append(grid);
+  if (mapText) {
+    const mapArea = document.createElement('div');
+    mapArea.className = 'map-area';
+    mapArea.setAttribute('aria-label', 'Standort auf der Karte');
+    const media = document.createElement('div');
+    media.className = 'placeholder-media placeholder-media--map';
+    media.setAttribute('role', 'img');
+    media.setAttribute('aria-label', mapText);
+    media.textContent = mapText;
+    mapArea.append(media);
+    section.append(mapArea);
+  }
+
+  return { section, lastIdx };
+}
 
 function collectNodes(block) {
   const nodes = [];
@@ -174,8 +241,17 @@ export default async function decorate(block) {
     }
     const noticeHeading = section.body.find((n) => n.tagName.toLowerCase() === 'h3'
       && NOTICE_RE.test(n.textContent));
-    section.body.forEach((node) => {
+    section.body.forEach((node, idx) => {
+      if (node.dataset && node.dataset.consumed) return;
       const tag = node.tagName.toLowerCase();
+      if (tag === 'h3' && ANFAHRT_RE.test(node.textContent)) {
+        const { section: anfahrt, lastIdx } = buildAnfahrt(node, section.body, idx + 1);
+        main.append(anfahrt);
+        for (let i = idx + 1; i <= lastIdx; i += 1) {
+          if (section.body[i].dataset) section.body[i].dataset.consumed = '1';
+        }
+        return;
+      }
       if (tag === 'ul') {
         const items = [...node.querySelectorAll(':scope > li')];
         const looksMeta = items.length
@@ -197,7 +273,6 @@ export default async function decorate(block) {
         const h3 = document.createElement('h3');
         h3.innerHTML = node.innerHTML;
         box.append(h3);
-        const idx = section.body.indexOf(node);
         const nextUl = section.body.slice(idx + 1)
           .find((n) => n.tagName.toLowerCase() === 'ul');
         if (nextUl) { box.append(nextUl); nextUl.dataset.consumed = '1'; }
