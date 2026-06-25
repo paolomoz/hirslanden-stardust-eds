@@ -1,57 +1,241 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-06-24T21:51:44.752Z",
+    "writtenAt": "2026-06-25T11:44:52.968Z",
     "readArtifacts": [
-      "stardust/migrated"
+      "stardust/migrated",
+      "stardust/state.json"
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-25T05:19:43.591Z",
+  "generatedAt": "2026-06-25T11:44:52.968Z",
   "templates": [
     {
-      "id": "detail",
+      "id": "clinic-detail",
       "representativeSlug": "clinic-detail",
       "pages": [
         "clinic-detail",
-        "disease-detail",
-        "doctor-profile",
-        "event-detail",
-        "news-article",
-        "treatment-detail"
+        "de-ambulantes-operationszentrum-st-gallen-home",
+        "de-ambulantes-operieren-home",
+        "de-andreasklinik-cham-zug-home",
+        "de-clinique-bois-cerf-home",
+        "de-clinique-cecil-home",
+        "de-clinique-la-colline-home",
+        "de-hirslanden-klinik-aarau-home",
+        "de-hirslandenblog-home",
+        "de-international-home",
+        "de-klinik-beau-site-home",
+        "de-klinik-birshof-home",
+        "de-klinik-hirslanden-home",
+        "de-klinik-im-park-home",
+        "de-klinik-permanence-home",
+        "de-klinik-st--anna-home",
+        "de-klinik-stephanshorn-home",
+        "de-medical-center-wankdorf-home",
+        "de-salem-spital-home",
+        "de-st-anna-in-meggen-home"
       ],
-      "pageCount": 6,
+      "pageCount": 20,
       "blocks": [
         "header-nav",
         "site-footer"
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 6,
+        "deployed": 1,
+        "contentPending": 19,
         "pending": 0
       }
     },
     {
-      "id": "editorial",
+      "id": "clinic-listing",
+      "representativeSlug": "clinic-listing",
+      "pages": [
+        "clinic-listing"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "content-page",
       "representativeSlug": "content-page",
       "pages": [
         "content-page",
-        "patient-info",
-        "specialty-topic"
+        "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
+        "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
+        "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
+        "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
+        "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+        "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
+        "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
+        "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
+        "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
+        "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+        "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+        "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+        "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+        "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
+        "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
+        "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+        "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
+        "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
+        "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
+        "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-"
       ],
-      "pageCount": 3,
+      "pageCount": 21,
       "blocks": [
         "header-nav",
         "site-footer"
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 3,
+        "deployed": 1,
+        "contentPending": 20,
         "pending": 0
       }
     },
     {
-      "id": "landing",
+      "id": "disease-detail",
+      "representativeSlug": "disease-detail",
+      "pages": [
+        "de-corporate-krankheitsbilder-angina-pectoris",
+        "de-corporate-krankheitsbilder-aortenaneurysma",
+        "de-corporate-krankheitsbilder-arterienverkalkung",
+        "de-corporate-krankheitsbilder-endokarditis",
+        "de-corporate-krankheitsbilder-herzinfarkt",
+        "de-corporate-krankheitsbilder-herzklappenfehler",
+        "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
+        "de-corporate-krankheitsbilder-hoher-blutdruck",
+        "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
+        "de-corporate-krankheitsbilder-koronare-herzkrankheit",
+        "de-corporate-krankheitsbilder-krampfadern",
+        "de-corporate-krankheitsbilder-lungenoedem",
+        "de-corporate-krankheitsbilder-metabolisches-syndrom",
+        "de-corporate-krankheitsbilder-perikarditis",
+        "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
+        "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
+        "de-corporate-krankheitsbilder-tiefer-blutdruck",
+        "de-corporate-krankheitsbilder-venenentzuendung",
+        "de-corporate-krankheitsbilder-vorhofflimmern",
+        "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
+        "disease-detail"
+      ],
+      "pageCount": 21,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 20,
+        "pending": 0
+      }
+    },
+    {
+      "id": "doctor-profile",
+      "representativeSlug": "doctor-profile",
+      "pages": [
+        "de-corporate-aerzte-3-docteur-antoine-stockhammer",
+        "de-corporate-aerzte-3-docteur-luan-tran",
+        "de-corporate-aerzte-3-docteur-michel-grobety",
+        "de-corporate-aerzte-3-docteur-milos-savcic",
+        "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
+        "de-corporate-aerzte-3-docteur-thierry-d-pache",
+        "de-corporate-aerzte-3-dr-med-basil-a-baettig",
+        "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
+        "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
+        "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
+        "de-corporate-aerzte-3-dr-med-markus-gerber",
+        "de-corporate-aerzte-3-dr-med-markus-wiesli",
+        "de-corporate-aerzte-3-dr-med-michael-rabner",
+        "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
+        "de-corporate-aerzte-3-dr-med-sabine-steimann",
+        "de-corporate-aerzte-3-dr-med-stephan-buergin",
+        "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
+        "de-corporate-aerzte-3-dr-norman-david-schmidt",
+        "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
+        "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
+        "doctor-profile"
+      ],
+      "pageCount": 21,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 20,
+        "pending": 0
+      }
+    },
+    {
+      "id": "event-detail",
+      "representativeSlug": "event-detail",
+      "pages": [
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
+        "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
+        "event-detail"
+      ],
+      "pageCount": 20,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 19,
+        "pending": 0
+      }
+    },
+    {
+      "id": "event-listing",
+      "representativeSlug": "event-listing",
+      "pages": [
+        "event-listing"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "home",
       "representativeSlug": "home",
       "pages": [
         "home"
@@ -64,25 +248,152 @@
       "delivery": {
         "verified": 0,
         "deployed": 1,
+        "contentPending": 0,
         "pending": 0
       }
     },
     {
-      "id": "listing",
-      "representativeSlug": "clinic-listing",
+      "id": "news-article",
+      "representativeSlug": "news-article",
       "pages": [
-        "clinic-listing",
-        "event-listing",
-        "news-listing"
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
+        "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
+        "news-article"
       ],
-      "pageCount": 3,
+      "pageCount": 21,
       "blocks": [
         "header-nav",
         "site-footer"
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 3,
+        "deployed": 1,
+        "contentPending": 20,
+        "pending": 0
+      }
+    },
+    {
+      "id": "news-listing",
+      "representativeSlug": "news-listing",
+      "pages": [
+        "news-listing"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "patient-info",
+      "representativeSlug": "patient-info",
+      "pages": [
+        "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
+        "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
+        "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
+        "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
+        "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
+        "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
+        "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
+        "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
+        "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
+        "patient-info"
+      ],
+      "pageCount": 10,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 9,
+        "pending": 0
+      }
+    },
+    {
+      "id": "specialty-topic",
+      "representativeSlug": "specialty-topic",
+      "pages": [
+        "de-corporate-fuer-alle-folgen-des-lebens-app",
+        "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
+        "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
+        "de-corporate-fuer-alle-folgen-des-lebens-krebs",
+        "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
+        "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
+        "specialty-topic"
+      ],
+      "pageCount": 7,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 6,
+        "pending": 0
+      }
+    },
+    {
+      "id": "treatment-detail",
+      "representativeSlug": "treatment-detail",
+      "pages": [
+        "de-corporate-behandlungen-aorta-operation",
+        "de-corporate-behandlungen-aortographie",
+        "de-corporate-behandlungen-ballondilatation",
+        "de-corporate-behandlungen-beckenbodenschwaeche-operation",
+        "de-corporate-behandlungen-dialyse",
+        "de-corporate-behandlungen-dialysefistel",
+        "de-corporate-behandlungen-douglas-raum-operation",
+        "de-corporate-behandlungen-echokardiographie",
+        "de-corporate-behandlungen-eierstockoperationen",
+        "de-corporate-behandlungen-endarterektomie",
+        "de-corporate-behandlungen-gebaermutter-operationen",
+        "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
+        "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
+        "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
+        "de-corporate-behandlungen-herzmissbildungen",
+        "de-corporate-behandlungen-herzrhythmusstoerungen",
+        "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
+        "de-corporate-behandlungen-krampfaderoperationen",
+        "de-corporate-behandlungen-scheidenoperationen",
+        "de-corporate-behandlungen-scheidenspiegelung",
+        "treatment-detail"
+      ],
+      "pageCount": 21,
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 1,
+        "contentPending": 20,
         "pending": 0
       }
     }

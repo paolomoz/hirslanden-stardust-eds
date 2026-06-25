@@ -1,19 +1,20 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-06-24T21:51:44.752Z",
+    "writtenAt": "2026-06-25T11:44:52.968Z",
     "readArtifacts": [
-      "stardust/migrated"
+      "stardust/migrated",
+      "stardust/state.json"
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-25T05:19:43.591Z",
+  "generatedAt": "2026-06-25T11:44:52.968Z",
   "pages": [
     {
       "slug": "clinic-detail",
       "path": "/de/klinik-linde/home",
       "title": "Hirslanden Klinik Linde, Biel",
-      "templateId": "detail",
+      "templateId": "clinic-detail",
       "source": {
         "migratedHtml": "stardust/migrated/de/klinik-linde/home.html",
         "metaJson": "stardust/migrated/de/klinik-linde/home._meta.json",
@@ -35,7 +36,7 @@
       "slug": "clinic-listing",
       "path": "/de/corporate/kliniken-und-zentren",
       "title": "Kliniken und Zentren | Hirslanden",
-      "templateId": "listing",
+      "templateId": "clinic-listing",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/kliniken-und-zentren.html",
         "metaJson": "stardust/migrated/de/corporate/kliniken-und-zentren._meta.json",
@@ -57,7 +58,7 @@
       "slug": "content-page",
       "path": "/de/corporate/ueber-uns/hingabe",
       "title": "Hingabe, die man spürt. | Hirslanden",
-      "templateId": "editorial",
+      "templateId": "content-page",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/ueber-uns/hingabe.html",
         "metaJson": "stardust/migrated/de/corporate/ueber-uns/hingabe._meta.json",
@@ -76,10 +77,3682 @@
       }
     },
     {
+      "slug": "de-ambulantes-operationszentrum-st-gallen-home",
+      "path": "/de/ambulantes-operationszentrum-st-gallen/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:1991a0df0a6904531e3fc79934dc1291ab4abe7522f037bfc8f2598669659d3f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-ambulantes-operieren-home",
+      "path": "/de/ambulantes-operieren/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:bf4d9007aad556acc68d3bab6f5bb48eefa7c4b3b8c3e546c79938c74fa1e237",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-andreasklinik-cham-zug-home",
+      "path": "/de/andreasklinik-cham-zug/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:6e3d784e0c24e54acfce45ed076eb5985ed004574e7c23128e3daad70b534778",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-clinique-bois-cerf-home",
+      "path": "/de/clinique-bois-cerf/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5a611cdcd2660ad136999ad5bd867b7bc53c92b8f0f3b7812dab806975683914",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-clinique-cecil-home",
+      "path": "/de/clinique-cecil/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:749562077443d098d343471d563ec99b3774a29144df4d7785358b60d0aed1f3",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-clinique-la-colline-home",
+      "path": "/de/clinique-la-colline/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:e83b2ef90136fee55705a80201d6a2d4fb58b2c562cc3c6ace2bf32ae413a092",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
+      "path": "/de/corporate/aerzte/3/docteur-antoine-stockhammer",
+      "title": "docteur antoine stockhammer",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:e65798dec5180a12c64fc57ff3e277b72e2f9f89b0566dd781aa0af8ee381457",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-luan-tran",
+      "path": "/de/corporate/aerzte/3/docteur-luan-tran",
+      "title": "docteur luan tran",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:3e4c74115be7bafd5922ed3f853208b985f28ab5308392737409feaa7237115d",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-michel-grobety",
+      "path": "/de/corporate/aerzte/3/docteur-michel-grobety",
+      "title": "docteur michel grobety",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:f1051e95a399d28eb6e5065d4ddfc5e8e9534882583c30d6d5cda0c0ff03550f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-milos-savcic",
+      "path": "/de/corporate/aerzte/3/docteur-milos-savcic",
+      "title": "docteur milos savcic",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:19101732f8fd33aef4e510b996f84aa1874f46e3fb41b1694e283b4958a176a0",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
+      "path": "/de/corporate/aerzte/3/docteur-philippe-mavrocordatos",
+      "title": "docteur philippe mavrocordatos",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:9fa6716d86ad96400c37b06f646a36891c02b19f4c35eafe7c620452f8576ba2",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-thierry-d-pache",
+      "path": "/de/corporate/aerzte/3/docteur-thierry-d-pache",
+      "title": "docteur thierry d pache",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b41dd841f367b201ba4986853e3561365974fdaf2d23042c938c17e7d21f7e25",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-basil-a-baettig",
+      "path": "/de/corporate/aerzte/3/dr-med-basil-a-baettig",
+      "title": "dr med basil a baettig",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:fa6275fb2459cb8123ba5c164b12dcabf8c7a725fc96e59d5ea0fafbb18681c9",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
+      "path": "/de/corporate/aerzte/3/dr-med-bruno-wuethrich",
+      "title": "dr med bruno wuethrich",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:41675d0f66575f871a998c18e44ea7f6de71cc7ec4384843e492e69b03405853",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
+      "path": "/de/corporate/aerzte/3/dr-med-jean-pierre-elsig",
+      "title": "dr med jean pierre elsig",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:edfd52a95b2c4481d1a382424586841d764f7c1c74027f375e38f3d60f171b0f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
+      "path": "/de/corporate/aerzte/3/dr-med-magdalena-neter-blaettler",
+      "title": "dr med magdalena neter blaettler",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:a6393e5b0300d2d67a7cf8781f24bf5889dae36497e23aeff43e32086d3883fb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-gerber",
+      "path": "/de/corporate/aerzte/3/dr-med-markus-gerber",
+      "title": "dr med markus gerber",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:cc51b1e7e01ffd8014c90e99612bbad8c538eddade4945000f7cc1e19e510151",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-wiesli",
+      "path": "/de/corporate/aerzte/3/dr-med-markus-wiesli",
+      "title": "dr med markus wiesli",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ed37694f1e9f7e5857f13f3a2453e2d0c91b532e2487bc6b836f32c43742a1c2",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michael-rabner",
+      "path": "/de/corporate/aerzte/3/dr-med-michael-rabner",
+      "title": "dr med michael rabner",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b4e9162b0541deab4e5d2e9cc2b4dc3b761ff6566f1014f1e55bcc766a096610",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
+      "path": "/de/corporate/aerzte/3/dr-med-michele-krayenbuehl-huber",
+      "title": "dr med michele krayenbuehl huber",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:61119b3273b181acc783918a1c15ac097aa870d05b60e72083430690eaf4f94e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-sabine-steimann",
+      "path": "/de/corporate/aerzte/3/dr-med-sabine-steimann",
+      "title": "dr med sabine steimann",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:7154a33812d0033b2c8fa6bcf2c02846bd6264c3046cded5813c0c25675bf749",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-stephan-buergin",
+      "path": "/de/corporate/aerzte/3/dr-med-stephan-buergin",
+      "title": "dr med stephan buergin",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d35c8d4b105f44a632379759381a29d8b0ad6af3ccf64bc8befc86e10c56454f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
+      "path": "/de/corporate/aerzte/3/dr-med-zeno-supersaxo",
+      "title": "dr med zeno supersaxo",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:dd8562497809b28c5ab5c7d38c712acaf4b6ee9c9a4a89cbc89493078dd3882b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-norman-david-schmidt",
+      "path": "/de/corporate/aerzte/3/dr-norman-david-schmidt",
+      "title": "dr norman david schmidt",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:2c93abba057cf16276cbd46c289f7da94c03e09fc9621f3abec018724ca9be88",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
+      "path": "/de/corporate/aerzte/3/prof-dr-med-daniel-simmen",
+      "title": "prof dr med daniel simmen",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d2f931da3b85736ce4da380a434f1555f3cb8d3ca1f1e1518aea12a3af1ee02b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
+      "path": "/de/corporate/aerzte/3/prof-dr-med-wolfgang-franz-amann",
+      "title": "prof dr med wolfgang franz amann",
+      "templateId": "doctor-profile",
+      "representative": "doctor-profile",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:06dae2bdc7f93b1ee9a153621585f767f5bbad70cbc807a1487caf5ca927a550",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-aorta-operation",
+      "path": "/de/corporate/behandlungen/aorta-operation",
+      "title": "aorta operation",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:9fa76e2f28d2cb9c1347239e495693e81af48a362581e62e737f700cef47b8d6",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-aortographie",
+      "path": "/de/corporate/behandlungen/aortographie",
+      "title": "aortographie",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:f651effc8b32a8192ff1c664453d37d5d2aa215d04f5d8be9dcd08bbab764594",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-ballondilatation",
+      "path": "/de/corporate/behandlungen/ballondilatation",
+      "title": "ballondilatation",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ef610ff72f7059b4fed670171c036e51efe49faf48395039ca333c5df6cca988",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-beckenbodenschwaeche-operation",
+      "path": "/de/corporate/behandlungen/beckenbodenschwaeche-operation",
+      "title": "beckenbodenschwaeche operation",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:24bf91609a2d2a5a8536ef0d5cda7729eed4236061c9b106b105e2a5e471cf87",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialyse",
+      "path": "/de/corporate/behandlungen/dialyse",
+      "title": "dialyse",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d4e0cf3e15daceea00a0c5e6da553b1c57ac915976434f70d12502a6a2737b13",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialysefistel",
+      "path": "/de/corporate/behandlungen/dialysefistel",
+      "title": "dialysefistel",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:994907f4d05fb4ed1dc1308dfcee940c933b65462794bca081a9a52f0955abc5",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-douglas-raum-operation",
+      "path": "/de/corporate/behandlungen/douglas-raum-operation",
+      "title": "douglas raum operation",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:fb3a3aa46ed4b24cdc96e8263b8d3a46a55b02a8750cdba6790a5c2ee450c488",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-echokardiographie",
+      "path": "/de/corporate/behandlungen/echokardiographie",
+      "title": "echokardiographie",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c1dd5f35e07614d7aca424a3ff1813597c9ce9d098b088725ff08c23d3752dde",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-eierstockoperationen",
+      "path": "/de/corporate/behandlungen/eierstockoperationen",
+      "title": "eierstockoperationen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:8b8309b41d0c7d8f9528cd7bf0ccc02dced3b04816044ddeae4b669291ea9d09",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-endarterektomie",
+      "path": "/de/corporate/behandlungen/endarterektomie",
+      "title": "endarterektomie",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:64007b227e8ca734c6cf39032415c58b63d946adf06a70d551200ddbe5580a02",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-gebaermutter-operationen",
+      "path": "/de/corporate/behandlungen/gebaermutter-operationen",
+      "title": "gebaermutter operationen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c87e38c3b4199d4927dd0673f6892fd7e5f96daec93f736259c07bad8c50e55b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzbeutel-operationen-eingriffe",
+      "title": "herzbeutel operationen eingriffe",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5ec071e49f09bb3380737e29c117fc3d8096ccdd638f08b3b3ab45e0183e593a",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzklappen-operationen-eingriffe",
+      "title": "herzklappen operationen eingriffe",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c44300597f52d2e43a81af033ab5127802ec1de6f0d8f22f140a732469163ca5",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzkranzgefaesse-operationen-eingriffe",
+      "title": "herzkranzgefaesse operationen eingriffe",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:77b105e5f2d11f6cdd80307181e3bc9f2509c12e455bf9d1030e8b13c7677f40",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzmissbildungen",
+      "path": "/de/corporate/behandlungen/herzmissbildungen",
+      "title": "herzmissbildungen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b5934f2ae2d263668feb05f91f8b4dc5ea56d99945da54ba367e4185d1dfeec8",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzrhythmusstoerungen",
+      "path": "/de/corporate/behandlungen/herzrhythmusstoerungen",
+      "title": "herzrhythmusstoerungen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:03cce1af74be2665c4d3e2935ffb0373e09c1ed15e1d2fdb27ab96ae24756c02",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/hirnaneurysma-operationen-eingriffe",
+      "title": "hirnaneurysma operationen eingriffe",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:575317921f9d09db0417844ad31f31ecc4f8f0852484785c3ca8427925ba5b81",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-krampfaderoperationen",
+      "path": "/de/corporate/behandlungen/krampfaderoperationen",
+      "title": "krampfaderoperationen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:3b4106567d7255afb35e5ca4b2c4e27c7c04e940f217e8104b7316e6b269bc1b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenoperationen",
+      "path": "/de/corporate/behandlungen/scheidenoperationen",
+      "title": "scheidenoperationen",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:1cf514518b6e137a37425128eded02496be07fe2570e010f32c71e0f9a1da197",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenspiegelung",
+      "path": "/de/corporate/behandlungen/scheidenspiegelung",
+      "title": "scheidenspiegelung",
+      "templateId": "treatment-detail",
+      "representative": "treatment-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c9a8c08638bfad7a7b0f0477b566872d3b0249a1f5bb131e969d5d8441a70ad1",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-app",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/app",
+      "title": "app",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:8e925d304c2fd2e4e36c94a29bc32147a0ac5ad63cfdd74213f8ad14b2ceaa2b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/genetische-medizin",
+      "title": "genetische medizin",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:98ff0e29c8902c3571494ed6b5dcfa2ad8a099b2a6fd35705278faf0f313bcdd",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby",
+      "title": "hirslandenbaby",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:4f55f6fe410ffbd5c37129bbaa6a9dfc6fa0e1b133b882ab82524b78a8b4e4b2",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-krebs",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/krebs",
+      "title": "krebs",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:059081475c95cf74b11cbd0796160da1404e9fa1b66e2edf5d88bf9cec4f70ae",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin",
+      "title": "orthopaedie sportmedizin",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:db74259febace349ea2efc086d6774f397c1419393345725750bc5d8b95dfaec",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/radiologie-hirslanden",
+      "title": "radiologie hirslanden",
+      "templateId": "specialty-topic",
+      "representative": "specialty-topic",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:9a4aa821fe8f65a347c3ed2103afc0656299b42da6a99bdd9b93c87cc5a284ff",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch",
+      "title": "aufenthalt und besuch",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b940028c574a8e822dcc98aaf31a6dac847d44730a96908b2f4f273a8c6a54e8",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/ambulanter-aufenthalt",
+      "title": "ambulanter aufenthalt",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b63579c96170e8d2d2a030b890205b655355eea944b3413ce3e60b9e6ead1e5d",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/besucherinformationen",
+      "title": "besucherinformationen",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:9e4d45b51a84fe5b7ff7e82fea0ab91cd21ae49c041db0a80a6cdb3981319450",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/epd",
+      "title": "epd",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:638db79ffe2e0922f3e2144929aabd9a3ee054ee9d82b0aa63b8916a48071138",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/stationaerer-aufenthalt",
+      "title": "stationaerer aufenthalt",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d21cb4f2b2687fa5dc63d463c98751b18abc3f34b67c9e8f0307a275970094bb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
+      "path": "/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie",
+      "title": "hotellerie und gastronomie",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5401d013548c06fae6b3d43945085f667c06dc0fbd77e364d60290c1c4fb3e1e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
+      "path": "/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten",
+      "title": "informationen fuer internationale patienten",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:641d9cfc0f611d2caae6a8852524fe332c5c29a4b9f5121661eca9b6022176f6",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt",
+      "title": "rueckmeldung aufenthalt",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:4308632687a220dda8c0b4960a2f7bec2cca11568d19101b2c8bf43adb2d2c4a",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
+      "path": "/de/corporate/klinikaufenthalt/virtuelle-rundgaenge",
+      "title": "virtuelle rundgaenge",
+      "templateId": "patient-info",
+      "representative": "patient-info",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5c3c09980a126006b34d0a9055a41f45eee3933ed344212ff56df044559704ff",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-angina-pectoris",
+      "path": "/de/corporate/krankheitsbilder/angina-pectoris",
+      "title": "angina pectoris",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:211b2651020d25e281610d0e799cc78924ecdc5442393bc7bbb63ef02fc1af64",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-aortenaneurysma",
+      "path": "/de/corporate/krankheitsbilder/aortenaneurysma",
+      "title": "aortenaneurysma",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:3a41d151137d668a27613ee0fc26d100d425dc692aae5560ce0200be5e9cbe38",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-arterienverkalkung",
+      "path": "/de/corporate/krankheitsbilder/arterienverkalkung",
+      "title": "arterienverkalkung",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:dde2ba79a67fb70978c3c37a4d0699d0e660afe2c2888488fcdf654bfdcff33f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-endokarditis",
+      "path": "/de/corporate/krankheitsbilder/endokarditis",
+      "title": "endokarditis",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:296b6d09d46bfdc1115904a00731238a2d87ebea0126a259aa9b745bb23e4463",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzinfarkt",
+      "path": "/de/corporate/krankheitsbilder/herzinfarkt",
+      "title": "herzinfarkt",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:6419ed3980e6b4a8e201f076ae424a02703acfdd0e46c884c82dbce80127fc3d",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzklappenfehler",
+      "path": "/de/corporate/krankheitsbilder/herzklappenfehler",
+      "title": "herzklappenfehler",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:151d0faf3c81818968f5ed747aebc78929d454dc59e25796ad6b14962bd5aaec",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
+      "path": "/de/corporate/krankheitsbilder/herzmuskelnentzuendung",
+      "title": "herzmuskelnentzuendung",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:1f6c109753ce9cc397b2e3a6bf4e679caa9fe2371afc208e589dc8800b252bdd",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hoher-blutdruck",
+      "path": "/de/corporate/krankheitsbilder/hoher-blutdruck",
+      "title": "hoher blutdruck",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:8b08f5e85ca9a0a080d34fa2c61754cdae9e88b6cbb2be5fedb338be0b9bf363",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
+      "path": "/de/corporate/krankheitsbilder/hohes-cholesterin-hohe-blutfettwerte",
+      "title": "hohes cholesterin hohe blutfettwerte",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c0ed1e12a0c4c2be40961a5b50771a447cf1cb6cbbdea5b44e81bb62a396611f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-koronare-herzkrankheit",
+      "path": "/de/corporate/krankheitsbilder/koronare-herzkrankheit",
+      "title": "koronare herzkrankheit",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:62a9500ff7504947971c3ae8166882bbd79483daddc5a9b93b6d49be98026f2e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-krampfadern",
+      "path": "/de/corporate/krankheitsbilder/krampfadern",
+      "title": "krampfadern",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c3e69895a890d56b9eacf68a6c94b0462c5e3d3751dce4ccfd58c87af8128974",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-lungenoedem",
+      "path": "/de/corporate/krankheitsbilder/lungenoedem",
+      "title": "lungenoedem",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:0f74f0427596f40b39e41db13b0412473cac697ab75d45ba96d4386be7834855",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-metabolisches-syndrom",
+      "path": "/de/corporate/krankheitsbilder/metabolisches-syndrom",
+      "title": "metabolisches syndrom",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:a8618c6ff2bc106386095148af2780282cf5f45cdd2fd3074af68f5a8fea4e1b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-perikarditis",
+      "path": "/de/corporate/krankheitsbilder/perikarditis",
+      "title": "perikarditis",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:eb244a0b0ac61d47dc4894cc6aea1b26de58063326f524cb55d15468ab6160eb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
+      "path": "/de/corporate/krankheitsbilder/periphere-arterielle-verschlusskrankheit",
+      "title": "periphere arterielle verschlusskrankheit",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5338aba28264e70316c634d28f93cb4a07c1d7a23106ca1860885ed64d1dc645",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
+      "path": "/de/corporate/krankheitsbilder/schlaganfall-hirnschlag",
+      "title": "schlaganfall hirnschlag",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:cb074619fe8689753f6750e5521bf9b1e2f3585358815444b6623dc3c793e493",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-tiefer-blutdruck",
+      "path": "/de/corporate/krankheitsbilder/tiefer-blutdruck",
+      "title": "tiefer blutdruck",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:3915950279c86c36dac0eb9342fe4311d42413de35be7a2ed6af5b308d6d0eaf",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-venenentzuendung",
+      "path": "/de/corporate/krankheitsbilder/venenentzuendung",
+      "title": "venenentzuendung",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c0d51511b92305fb8277ae3531bb93a516f3046a540a2d501fae579420d00a99",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-vorhofflimmern",
+      "path": "/de/corporate/krankheitsbilder/vorhofflimmern",
+      "title": "vorhofflimmern",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:de80971b8bbe8c5393f30072a79cb85f36e9fa1477eb85c95b64d8e171a93216",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
+      "path": "/de/corporate/krankheitsbilder/zuckerkrankheit-diabetes",
+      "title": "zuckerkrankheit diabetes",
+      "templateId": "disease-detail",
+      "representative": "disease-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:a35d92843a5ba80af7ba69f4bb64e9b6c4043fa2d4a54ea0fa1cb2f720ee5257",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv",
+      "title": "archiv",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:5abfb28a8ca8e601e3946b93249626c883bfd46769383fe9f05badabf425c10c",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/athlethissima-partnerschaft",
+      "title": "athlethissima partnerschaft",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ea025381082b8defb24b1a04888ba581cb806e10cf5dbede00b58b1615c5e5e1",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/daniel-liedtke",
+      "title": "daniel liedtke",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:e37acf3b62c073dc9af29249bd4d61ea01dcfc14d2eda79553b6ad6ce5ea9e32",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+      "title": "erfolgreicher abschluss der studierenden aus nicosia",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:6926bc5af3b2baaffdf463f8c124def5410cdb8bb3d114eaae609dee19bfc069",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/geplanter-stellenabbau-administrative-funktionen",
+      "title": "geplanter stellenabbau administrative funktionen",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:104fbe409487fe5c4e17013e4aac875764888301db306df51a4d11de5b928125",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gesundheitscampus-st-gallen",
+      "title": "gesundheitscampus st gallen",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d4ecc1306ca1b268eb3338877f574114ae629642525f4cef143d6fdb984a0c57",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gilles-rufenacht-zum-ceo-ernannt",
+      "title": "gilles rufenacht zum ceo ernannt",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:0bdb2ec2dcecf85eb2ff523075aafc975b1f09dbbbdb2a213a57272348c7736a",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-einigt-sich-mit-der-css",
+      "title": "hirslanden einigt sich mit der css",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:4fc7ad8e77fd4317cdc05c2de1078336c34d6190760fa7419e5f3bd8eddf966e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-setzt-regionalisierung-weiter-um",
+      "title": "hirslanden setzt regionalisierung weiter um",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:cbf09b951497a5b64109e14c4221896bfa54953007231c1d47a0ecabc55b6552",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+      "title": "hirslanden weiterhin official medical partner von swiss ski",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:93ab355839133b0ef804d5f1ffe227d5591c19223c967098006590582c99324f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+      "title": "identifikation des imageable genome eroeffnet neue Ansaetze fuer die medizinische bildgebende diagnostik",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:6adb69c5d77d4f6cf1e9c66503185a0683cb05032133d102dfe709a71474a850",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/kl-rueckt-naeher-an-vsr",
+      "title": "kl rueckt naeher an vsr",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ae87388ff4b05ee12d07980088869e49880566b2c9e14fd9f796ef93c136bdbe",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/konsultationsverfahren-abgeschlossen",
+      "title": "konsultationsverfahren abgeschlossen",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:1fba1e6ea706ea9ee59a3428c7c3779b51ee984aa86ed6fbf51b37dc0aba220a",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+      "title": "mal ehrlich und hirslanden baby entlasten eltern",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:739803dbc11899ad7f8d39c1885a733d08fc14e98eb46f37bae2a7b2cb524b76",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neuausrichtung-andreasklinik",
+      "title": "neuausrichtung andreasklinik",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:3e14339c5d5b763fcce917c467176221b3f800f1ecbc00aa916fc9be2d49654e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+      "title": "neue leitung clinique la colline und clinique des grangettes",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:0cea99ec7fd7b5d4c12dd3f3355af1a99e6e79c24e7565db16a95d1383a75fcb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neuer-cfo",
+      "title": "neuer cfo",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:553071125a4c9a015c934e9c341fa6b889d15f9e56e6ace3f9ac18114226e4f1",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung",
+      "title": "personelle veraenderung konzernleitung",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:2c28d634b965f93f32284b84a4d958f26e18bc0f016e5d2374bb00c31ac61f36",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung-stephan-studer",
+      "title": "personelle veraenderung konzernleitung stephan studer",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:94257282aff3e64dcb9caa108a81c036419c0c61489241602ecc6f5893f488a5",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/pilotprojekt-patientenergebnisse",
+      "title": "pilotprojekt patientenergebnisse",
+      "templateId": "news-article",
+      "representative": "news-article",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b2395454e6b46a74aa7078b7d64076142c54d9163268b3e901cdd3e79a4011d8",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/allg-internisteninspezprivatkliniken",
+      "title": "allg internisteninspezprivatkliniken",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:919a7842084ed9dbf3cef291f0c697b6803253702698c50a26a6d5720ecb3528",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/bauchschlag-erweiterung",
+      "title": "bauchschlag erweiterung",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:709575031defd0df68065e168f659adc006134d8b830992ae2d6eb716982fd97",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/beckenbruch-im-alter",
+      "title": "beckenbruch im alter",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:087c1ee69902c8b2b253bd671a7a8654e30a6391fcb198fba704064aaf3f3762",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/behandlung-von-knorpelschaeden",
+      "title": "behandlung von knorpelschaeden",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:95a2d5ed9bf70c0fb9441ffff9656893d937c095ce16e69904b1a05cd32c009b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+      "title": "beschwerdefrei _ ist eine prostatavorsorgeuntersuchung trotzdem ",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:8667daab9c84bb87b71608d10e0c8cff3323c4abf484348c2bb7e6b097dbd6a0",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/der-knicksenkfuss",
+      "title": "der knicksenkfuss",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b581bf54eb057cab071feb022967f5fb8e50a8082b477b8ef8e9255f8678a47b",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/der-mensch-ist-so-jung-wie-seine-gefaesse",
+      "title": "der mensch ist so jung wie seine gefaesse",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:2513b1c41fbe0a1a4d6aad64686bb4239293451022b439a9b052ca9a1159c592",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/die-ausgerenkte-schulter",
+      "title": "die ausgerenkte schulter",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:a392b8d8a300e20cfb0b21dc96d454f1c28220452fac857a6f3dd525bd1c9780",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/diverse-dialysen",
+      "title": "diverse dialysen",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c72a4c295cadb8810de887ebcaf17e710a5a1a1d703c192c7591be64ee87e211",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+      "title": "gutartig oder boesartig  veraenderungen der weiblichen brust auf",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:7dc5d04c8975eac5b52e466c77f17b2ae53cdfe8c1ece9fb16cbc0f384a23af6",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+      "title": "innenbandriss des kniegelenkes  spezifische therapie fuer jeden ",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:f60abd99224bb4582a07d14b34b30156476d3cafb4ba7609af6b8ecb769089fa",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+      "title": "kopf hals tumore im alter frueh erkennen und richtig behandeln",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:db4bddcd663b35e089fb9de0329c0d45cc69e4879f923978c098caca818d6cf3",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+      "title": "lungenkrebs _ grosse heilungschancen dank fruehzeitiger entdecku",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:68cb9622926117d3baedb3f6361419cc3ac88e6d3a8c0f9ad0ef11182cab1fb0",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lymphgefaesserkrankungen",
+      "title": "lymphgefaesserkrankungen",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:76724857f4cc324de83f5986c67ef1ac4af72435cfeba7f985f19d27b7c76d33",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lymphstau-bei-brustkrebs",
+      "title": "lymphstau bei brustkrebs",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d0b148eb5c89d74a631786973487ac65ee34b78ddea210a8d6bcf4dcee1061eb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+      "title": "moderne methoden zur abklaerung von brustschmerzen mit nur minim",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:775b8391ecb298a76526728783465fee1fa63797d51da314f91e92b16ac325cc",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/neue-techniken-inderhueftchirurgie",
+      "title": "neue techniken inderhueftchirurgie",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:745965e0b6a3356ab29e3ab253e9eb1ebe440e99151c01b3bca7319ef23e7e6c",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/osteoporose-_-sind-meine-knochen-bruechig-",
+      "title": "osteoporose _ sind meine knochen bruechig ",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ad448083693af42a5456a64871bfd42d5e9c7a6414ca919d7c4ac0cfd0874a53",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/rueckenschmerzen-im-visier",
+      "title": "rueckenschmerzen im visier",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:965c652d2547c633673478d33d5922b7231fe5f079bfac4322b9f7ae65f292fa",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/was-ist-eigentlich-rheuma-",
+      "title": "was ist eigentlich rheuma ",
+      "templateId": "content-page",
+      "representative": "content-page",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:a82f4813b66dbd0439c8f44a619bde9ed5e0abe866ade7dfb1d75cf20ba27c9a",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-hirslanden-klinik-aarau-home",
+      "path": "/de/hirslanden-klinik-aarau/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:efb97c02b94f7087e84a354db045c7ef048543e1bc398c117c3f33e1d51c45d7",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-hirslandenblog-home",
+      "path": "/de/hirslandenblog/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:92cd05cb32be470fa44e5c862bdb811d849469e72e2cf0f2d113393e7bb33658",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-international-home",
+      "path": "/de/international/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:0973eb538dde6c54705477d20ad1d026d167ebd38ec88155fec923730d9a54c0",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-beau-site-home",
+      "path": "/de/klinik-beau-site/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:90fe45d6e60db9fb21940e8d0bdda1bcf8ba68b3ecee3f4d5a4ed083e7af4b41",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-birshof-home",
+      "path": "/de/klinik-birshof/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:7e429a3022b2647d2d6e4bff8977c049367856631d95e01c95b71cfc427910aa",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-hirslanden-home",
+      "path": "/de/klinik-hirslanden/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:68160b07e1b9ac7cd649e8bf1a75d364311ee57624941252508b57cedac97f2c",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-im-park-home",
+      "path": "/de/klinik-im-park/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:6bc8885ecfa485773300be2d124abb8db5e711df8ae973f3c1f00ce1d6486ed8",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/bauchschmerzen/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:52a33cf96aed6baaa2ad2c1305e9a90caf9422372c74e4780aa4e988b68889f2",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/blut-im-stuhl/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:999ed0590a4bb9b3a5dfd987fcbca3ca3b3da5051c055e9aa74d31b04ccc2d9e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/gesunde-nieren-was-kann-ich-dafuer-tun/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:4fd5489c13fb792f62fcba903a2915b34801c674c75a07f98e98c0363dfdf95e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hautveraenderungen-gesicht-was-jetzt/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:42e1c745436c11aa533ede254c9d18897052ad188859d4a98ac8f5952823a423",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hexenschuss/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:28f2508f1677b0673a3a82338f790e8de9dcbe0ce98e01e54505835d5fa2676d",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/meet-the-experts-24/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b5320ea101e5622ff641e59f6b4d9394afefbb134ade0b5ab59e45b0eaa821b1",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schmerzen-an-und-in-der-hand/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:aa44060ed9fec349112f7902ea2ebd59df16f0447aea9d3beb6c4fc88469a163",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schwindel/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:b8b87b5b748297b81016be487d6a2ae746195e0c2f40796462ef473c9d32cb6f",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/tag-der-offenen-tuer/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:887c791d7accaff9ba133d234bb3975bda4f5c37efbd30bd15444bf4e4db826c",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/uebergewicht/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ea89aff0c20ac678dbb38efaed1f6c8b0622ad5523d1d7b6529762c592aeeeaf",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien",
+      "title": "akupunkturtherapien",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:82630f864bd5a82cc3e8ef8ff0378ecac674b7036ffd87435c1f4d45e773af54",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:d7b04ec36d2478987841ed8d7971f14ef5320b98249d79fb1bd22b415099d637",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/geburtsvorbereitung-wochenendkurse-linde",
+      "title": "geburtsvorbereitung wochenendkurse linde",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:30ceb0f810d652bb54ab05ce98f9df51f3a3ede0b90920195044f45e55c0e8cb",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:cc7bbc69865f35d35184e1766ee7dfd5b60174c5a609cad9512ebafe51a6da80",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse",
+      "title": "rueckbildungskurse",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:29276c4d970fccff99f2e2e9ea40f34e8db51bc0ade4f0cc508b82594c8974e4",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:65b32255ce92088f50c45fa6b764a0636515c386e779cfcaae4afcbef81bd98c",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga",
+      "title": "schwangerschaftsyoga",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:ac2988f87f6dd680f3fc7645cf8c2240fd90369e9301fdb2a6f1b1eb66b92875",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga/anmeldeformular-event",
+      "title": "anmeldeformular event",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:9b74b06a036028483d2ce5be6fd12ef45236095757c4873727847689da0e612e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/still-cafe",
+      "title": "still cafe",
+      "templateId": "event-detail",
+      "representative": "event-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:62333772b218654796296fce5732c2dc72075f179e3f422221bc57f143366bd0",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-permanence-home",
+      "path": "/de/klinik-permanence/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:22b9ba7ef13ee3bb464ba58e365803c48ead445b5d40ba8e38654b62b62aefcd",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-st--anna-home",
+      "path": "/de/klinik-st--anna/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:4388de4ac8b681cfcca3e1a4d4dd9b97ffb3bd1945fd470b38d5588e29e6b838",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-klinik-stephanshorn-home",
+      "path": "/de/klinik-stephanshorn/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:932b8619af69872cd307eba6dc8b88e7d27235901268b289f2fbf0b486613dbd",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-medical-center-wankdorf-home",
+      "path": "/de/medical-center-wankdorf/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:197fb1fae37a8f1f537504cc63d599c43f05db4e69dde3e7e9893f316861f45e",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-salem-spital-home",
+      "path": "/de/salem-spital/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:f775dce0e87596a8f8011fd9f5c8381a955b176bc1646b6e3835ffc9b7fb70a7",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-st-anna-in-meggen-home",
+      "path": "/de/st-anna-in-meggen/home",
+      "title": "home",
+      "templateId": "clinic-detail",
+      "representative": "clinic-detail",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:0bc00ff1129f1f18d431f0f7d1e0ff82fc58cfbceba532ee03635988aa673f48",
+        "currentStatePath": null
+      },
+      "blocks": [
+        "header-nav",
+        "site-footer"
+      ],
+      "delivery": {
+        "status": "content-pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
       "slug": "disease-detail",
       "path": "/de/corporate/krankheitsbilder/brustkrebs",
       "title": "Brustkrebs - Symptome, Diagnose & Behandlung | Hirslanden",
-      "templateId": "detail",
+      "templateId": "disease-detail",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/krankheitsbilder/brustkrebs.html",
         "metaJson": "stardust/migrated/de/corporate/krankheitsbilder/brustkrebs._meta.json",
@@ -101,7 +3774,7 @@
       "slug": "doctor-profile",
       "path": "/de/corporate/aerzte/3/dr-med-christof-abaecherli",
       "title": "Dr. med. Christof Abächerli | Hirslanden-Gruppe",
-      "templateId": "detail",
+      "templateId": "doctor-profile",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli.html",
         "metaJson": "stardust/migrated/de/corporate/aerzte/3/dr-med-christof-abaecherli._meta.json",
@@ -123,7 +3796,7 @@
       "slug": "event-detail",
       "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
       "title": "Informationsabend Geburt",
-      "templateId": "detail",
+      "templateId": "event-detail",
       "source": {
         "migratedHtml": "stardust/migrated/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
         "metaJson": "stardust/migrated/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt._meta.json",
@@ -145,7 +3818,7 @@
       "slug": "event-listing",
       "path": "/de/corporate/kurse-und-veranstaltungen",
       "title": "Kurse und Veranstaltungen | Hirslanden",
-      "templateId": "listing",
+      "templateId": "event-listing",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/kurse-und-veranstaltungen.html",
         "metaJson": "stardust/migrated/de/corporate/kurse-und-veranstaltungen._meta.json",
@@ -167,7 +3840,7 @@
       "slug": "home",
       "path": "/",
       "title": "Hirslanden-Gruppe, Schweiz",
-      "templateId": "landing",
+      "templateId": "home",
       "source": {
         "migratedHtml": "stardust/migrated/index.html",
         "metaJson": "stardust/migrated/_meta.json",
@@ -189,7 +3862,7 @@
       "slug": "news-article",
       "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
       "title": "Erste Patientinnen und Patienten im Centre de Chirurgie Ambulatoire de Genève | Hirslanden",
-      "templateId": "detail",
+      "templateId": "news-article",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
         "metaJson": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve._meta.json",
@@ -211,7 +3884,7 @@
       "slug": "news-listing",
       "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
       "title": "News & Medienmitteilungen | Hirslanden",
-      "templateId": "listing",
+      "templateId": "news-listing",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news.html",
         "metaJson": "stardust/migrated/de/corporate/medien-und-news/medienmitteilungen-und-news._meta.json",
@@ -233,7 +3906,7 @@
       "slug": "patient-info",
       "path": "/de/corporate/klinikaufenthalt",
       "title": "Klinikaufenthalt | Hirslanden",
-      "templateId": "editorial",
+      "templateId": "patient-info",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/klinikaufenthalt.html",
         "metaJson": "stardust/migrated/de/corporate/klinikaufenthalt._meta.json",
@@ -255,7 +3928,7 @@
       "slug": "specialty-topic",
       "path": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
       "title": "Herzmedizin (Kardiologie) | Hirslanden",
-      "templateId": "editorial",
+      "templateId": "specialty-topic",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/fuer-alle-folgen-des-lebens/kardiologie.html",
         "metaJson": "stardust/migrated/de/corporate/fuer-alle-folgen-des-lebens/kardiologie._meta.json",
@@ -277,7 +3950,7 @@
       "slug": "treatment-detail",
       "path": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen",
       "title": "Hernienoperation – Behandlung & Ablauf | Hirslanden",
-      "templateId": "detail",
+      "templateId": "treatment-detail",
       "source": {
         "migratedHtml": "stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen.html",
         "metaJson": "stardust/migrated/de/corporate/behandlungen/bruchoperationen-hernienoperationen._meta.json",

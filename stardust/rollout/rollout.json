@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-06-24T21:51:44.752Z",
+    "writtenAt": "2026-06-25T11:44:52.968Z",
     "stardustVersion": "0.13.0"
   },
   "target": "aem-eds",
@@ -15,12 +15,13 @@
     "liveHost": "https://main--hirslanden-stardust-eds--paolomoz.aem.live"
   },
   "lastRun": {
-    "at": "2026-06-25T05:19:43.591Z",
+    "at": "2026-06-25T11:44:52.968Z",
     "pages": {
-      "total": 13,
+      "total": 166,
       "verified": 0,
       "deployed": 13,
       "pending": 0,
+      "contentPending": 153,
       "stale": 0,
       "failed": 0
     },

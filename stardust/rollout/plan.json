@@ -1,35 +1,188 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-06-24T20:50:10.597Z",
+    "writtenAt": "2026-06-25T11:45:19.624Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-24T20:50:10.597Z",
+  "generatedAt": "2026-06-25T11:45:19.624Z",
   "fragments": [],
   "deliveryOrder": [
-    "clinic-detail",
-    "disease-detail",
-    "doctor-profile",
-    "event-detail",
-    "news-article",
-    "treatment-detail",
     "content-page",
+    "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
+    "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
+    "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
+    "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
+    "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+    "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
+    "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
+    "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
+    "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
+    "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+    "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+    "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+    "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+    "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
+    "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
+    "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+    "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
+    "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
+    "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
+    "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
+    "disease-detail",
+    "de-corporate-krankheitsbilder-angina-pectoris",
+    "de-corporate-krankheitsbilder-aortenaneurysma",
+    "de-corporate-krankheitsbilder-arterienverkalkung",
+    "de-corporate-krankheitsbilder-endokarditis",
+    "de-corporate-krankheitsbilder-herzinfarkt",
+    "de-corporate-krankheitsbilder-herzklappenfehler",
+    "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
+    "de-corporate-krankheitsbilder-hoher-blutdruck",
+    "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
+    "de-corporate-krankheitsbilder-koronare-herzkrankheit",
+    "de-corporate-krankheitsbilder-krampfadern",
+    "de-corporate-krankheitsbilder-lungenoedem",
+    "de-corporate-krankheitsbilder-metabolisches-syndrom",
+    "de-corporate-krankheitsbilder-perikarditis",
+    "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
+    "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
+    "de-corporate-krankheitsbilder-tiefer-blutdruck",
+    "de-corporate-krankheitsbilder-venenentzuendung",
+    "de-corporate-krankheitsbilder-vorhofflimmern",
+    "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
+    "doctor-profile",
+    "de-corporate-aerzte-3-docteur-antoine-stockhammer",
+    "de-corporate-aerzte-3-docteur-luan-tran",
+    "de-corporate-aerzte-3-docteur-michel-grobety",
+    "de-corporate-aerzte-3-docteur-milos-savcic",
+    "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
+    "de-corporate-aerzte-3-docteur-thierry-d-pache",
+    "de-corporate-aerzte-3-dr-med-basil-a-baettig",
+    "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
+    "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
+    "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
+    "de-corporate-aerzte-3-dr-med-markus-gerber",
+    "de-corporate-aerzte-3-dr-med-markus-wiesli",
+    "de-corporate-aerzte-3-dr-med-michael-rabner",
+    "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
+    "de-corporate-aerzte-3-dr-med-sabine-steimann",
+    "de-corporate-aerzte-3-dr-med-stephan-buergin",
+    "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
+    "de-corporate-aerzte-3-dr-norman-david-schmidt",
+    "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
+    "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
+    "news-article",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
+    "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
+    "treatment-detail",
+    "de-corporate-behandlungen-aorta-operation",
+    "de-corporate-behandlungen-aortographie",
+    "de-corporate-behandlungen-ballondilatation",
+    "de-corporate-behandlungen-beckenbodenschwaeche-operation",
+    "de-corporate-behandlungen-dialyse",
+    "de-corporate-behandlungen-dialysefistel",
+    "de-corporate-behandlungen-douglas-raum-operation",
+    "de-corporate-behandlungen-echokardiographie",
+    "de-corporate-behandlungen-eierstockoperationen",
+    "de-corporate-behandlungen-endarterektomie",
+    "de-corporate-behandlungen-gebaermutter-operationen",
+    "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
+    "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
+    "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
+    "de-corporate-behandlungen-herzmissbildungen",
+    "de-corporate-behandlungen-herzrhythmusstoerungen",
+    "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
+    "de-corporate-behandlungen-krampfaderoperationen",
+    "de-corporate-behandlungen-scheidenoperationen",
+    "de-corporate-behandlungen-scheidenspiegelung",
+    "clinic-detail",
+    "de-ambulantes-operationszentrum-st-gallen-home",
+    "de-ambulantes-operieren-home",
+    "de-andreasklinik-cham-zug-home",
+    "de-clinique-bois-cerf-home",
+    "de-clinique-cecil-home",
+    "de-clinique-la-colline-home",
+    "de-hirslanden-klinik-aarau-home",
+    "de-hirslandenblog-home",
+    "de-international-home",
+    "de-klinik-beau-site-home",
+    "de-klinik-birshof-home",
+    "de-klinik-hirslanden-home",
+    "de-klinik-im-park-home",
+    "de-klinik-permanence-home",
+    "de-klinik-st--anna-home",
+    "de-klinik-stephanshorn-home",
+    "de-medical-center-wankdorf-home",
+    "de-salem-spital-home",
+    "de-st-anna-in-meggen-home",
+    "event-detail",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
+    "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
     "patient-info",
+    "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
+    "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
+    "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
+    "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
+    "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
+    "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
+    "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
+    "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
+    "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
     "specialty-topic",
+    "de-corporate-fuer-alle-folgen-des-lebens-app",
+    "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
+    "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
+    "de-corporate-fuer-alle-folgen-des-lebens-krebs",
+    "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
+    "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
     "clinic-listing",
     "event-listing",
-    "news-listing",
-    "home"
+    "home",
+    "news-listing"
   ],
   "steps": [
     {
-      "slug": "clinic-detail",
-      "path": "/de/klinik-linde/home",
-      "templateId": "detail",
-      "status": "pending",
+      "slug": "content-page",
+      "path": "/de/corporate/ueber-uns/hingabe",
+      "templateId": "content-page",
+      "status": "deployed",
       "isRepresentative": true,
       "convert": [
         {
@@ -44,242 +197,3302 @@
       "reuse": []
     },
     {
-      "slug": "disease-detail",
-      "path": "/de/corporate/krankheitsbilder/brustkrebs",
-      "templateId": "detail",
-      "status": "pending",
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/allg-internisteninspezprivatkliniken",
+      "templateId": "content-page",
+      "status": "content-pending",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/bauchschlag-erweiterung",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/beckenbruch-im-alter",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/behandlung-von-knorpelschaeden",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/der-knicksenkfuss",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/der-mensch-ist-so-jung-wie-seine-gefaesse",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/die-ausgerenkte-schulter",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/diverse-dialysen",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lymphgefaesserkrankungen",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/lymphstau-bei-brustkrebs",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/neue-techniken-inderhueftchirurgie",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/osteoporose-_-sind-meine-knochen-bruechig-",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/rueckenschmerzen-im-visier",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
+      "path": "/de/corporate/publications/patientenzeitschriftfocus/was-ist-eigentlich-rheuma-",
+      "templateId": "content-page",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "disease-detail",
+      "path": "/de/corporate/krankheitsbilder/brustkrebs",
+      "templateId": "disease-detail",
+      "status": "deployed",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-angina-pectoris",
+      "path": "/de/corporate/krankheitsbilder/angina-pectoris",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-aortenaneurysma",
+      "path": "/de/corporate/krankheitsbilder/aortenaneurysma",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-arterienverkalkung",
+      "path": "/de/corporate/krankheitsbilder/arterienverkalkung",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-endokarditis",
+      "path": "/de/corporate/krankheitsbilder/endokarditis",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzinfarkt",
+      "path": "/de/corporate/krankheitsbilder/herzinfarkt",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzklappenfehler",
+      "path": "/de/corporate/krankheitsbilder/herzklappenfehler",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
+      "path": "/de/corporate/krankheitsbilder/herzmuskelnentzuendung",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hoher-blutdruck",
+      "path": "/de/corporate/krankheitsbilder/hoher-blutdruck",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
+      "path": "/de/corporate/krankheitsbilder/hohes-cholesterin-hohe-blutfettwerte",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-koronare-herzkrankheit",
+      "path": "/de/corporate/krankheitsbilder/koronare-herzkrankheit",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-krampfadern",
+      "path": "/de/corporate/krankheitsbilder/krampfadern",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-lungenoedem",
+      "path": "/de/corporate/krankheitsbilder/lungenoedem",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-metabolisches-syndrom",
+      "path": "/de/corporate/krankheitsbilder/metabolisches-syndrom",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-perikarditis",
+      "path": "/de/corporate/krankheitsbilder/perikarditis",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
+      "path": "/de/corporate/krankheitsbilder/periphere-arterielle-verschlusskrankheit",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
+      "path": "/de/corporate/krankheitsbilder/schlaganfall-hirnschlag",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-tiefer-blutdruck",
+      "path": "/de/corporate/krankheitsbilder/tiefer-blutdruck",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-venenentzuendung",
+      "path": "/de/corporate/krankheitsbilder/venenentzuendung",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-vorhofflimmern",
+      "path": "/de/corporate/krankheitsbilder/vorhofflimmern",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
+      "path": "/de/corporate/krankheitsbilder/zuckerkrankheit-diabetes",
+      "templateId": "disease-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "doctor-profile",
       "path": "/de/corporate/aerzte/3/dr-med-christof-abaecherli",
-      "templateId": "detail",
-      "status": "pending",
+      "templateId": "doctor-profile",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         }
       ]
     },
     {
-      "slug": "event-detail",
-      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
-      "templateId": "detail",
-      "status": "pending",
+      "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
+      "path": "/de/corporate/aerzte/3/docteur-antoine-stockhammer",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-luan-tran",
+      "path": "/de/corporate/aerzte/3/docteur-luan-tran",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-michel-grobety",
+      "path": "/de/corporate/aerzte/3/docteur-michel-grobety",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-milos-savcic",
+      "path": "/de/corporate/aerzte/3/docteur-milos-savcic",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
+      "path": "/de/corporate/aerzte/3/docteur-philippe-mavrocordatos",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-thierry-d-pache",
+      "path": "/de/corporate/aerzte/3/docteur-thierry-d-pache",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-basil-a-baettig",
+      "path": "/de/corporate/aerzte/3/dr-med-basil-a-baettig",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
+      "path": "/de/corporate/aerzte/3/dr-med-bruno-wuethrich",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
+      "path": "/de/corporate/aerzte/3/dr-med-jean-pierre-elsig",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
+      "path": "/de/corporate/aerzte/3/dr-med-magdalena-neter-blaettler",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-gerber",
+      "path": "/de/corporate/aerzte/3/dr-med-markus-gerber",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-wiesli",
+      "path": "/de/corporate/aerzte/3/dr-med-markus-wiesli",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michael-rabner",
+      "path": "/de/corporate/aerzte/3/dr-med-michael-rabner",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
+      "path": "/de/corporate/aerzte/3/dr-med-michele-krayenbuehl-huber",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-sabine-steimann",
+      "path": "/de/corporate/aerzte/3/dr-med-sabine-steimann",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-stephan-buergin",
+      "path": "/de/corporate/aerzte/3/dr-med-stephan-buergin",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
+      "path": "/de/corporate/aerzte/3/dr-med-zeno-supersaxo",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-norman-david-schmidt",
+      "path": "/de/corporate/aerzte/3/dr-norman-david-schmidt",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
+      "path": "/de/corporate/aerzte/3/prof-dr-med-daniel-simmen",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
+      "path": "/de/corporate/aerzte/3/prof-dr-med-wolfgang-franz-amann",
+      "templateId": "doctor-profile",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "news-article",
       "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve",
-      "templateId": "detail",
-      "status": "pending",
+      "templateId": "news-article",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/athlethissima-partnerschaft",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/daniel-liedtke",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/geplanter-stellenabbau-administrative-funktionen",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gesundheitscampus-st-gallen",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/gilles-rufenacht-zum-ceo-ernannt",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-einigt-sich-mit-der-css",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-setzt-regionalisierung-weiter-um",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/kl-rueckt-naeher-an-vsr",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/konsultationsverfahren-abgeschlossen",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neuausrichtung-andreasklinik",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/neuer-cfo",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung-stephan-studer",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news/pilotprojekt-patientenergebnisse",
+      "templateId": "news-article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "treatment-detail",
       "path": "/de/corporate/behandlungen/bruchoperationen-hernienoperationen",
-      "templateId": "detail",
-      "status": "pending",
+      "templateId": "treatment-detail",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         }
       ]
     },
     {
-      "slug": "content-page",
-      "path": "/de/corporate/ueber-uns/hingabe",
-      "templateId": "editorial",
-      "status": "pending",
+      "slug": "de-corporate-behandlungen-aorta-operation",
+      "path": "/de/corporate/behandlungen/aorta-operation",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-aortographie",
+      "path": "/de/corporate/behandlungen/aortographie",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-ballondilatation",
+      "path": "/de/corporate/behandlungen/ballondilatation",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-beckenbodenschwaeche-operation",
+      "path": "/de/corporate/behandlungen/beckenbodenschwaeche-operation",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialyse",
+      "path": "/de/corporate/behandlungen/dialyse",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialysefistel",
+      "path": "/de/corporate/behandlungen/dialysefistel",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-douglas-raum-operation",
+      "path": "/de/corporate/behandlungen/douglas-raum-operation",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-echokardiographie",
+      "path": "/de/corporate/behandlungen/echokardiographie",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-eierstockoperationen",
+      "path": "/de/corporate/behandlungen/eierstockoperationen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-endarterektomie",
+      "path": "/de/corporate/behandlungen/endarterektomie",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-gebaermutter-operationen",
+      "path": "/de/corporate/behandlungen/gebaermutter-operationen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzbeutel-operationen-eingriffe",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzklappen-operationen-eingriffe",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/herzkranzgefaesse-operationen-eingriffe",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzmissbildungen",
+      "path": "/de/corporate/behandlungen/herzmissbildungen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzrhythmusstoerungen",
+      "path": "/de/corporate/behandlungen/herzrhythmusstoerungen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
+      "path": "/de/corporate/behandlungen/hirnaneurysma-operationen-eingriffe",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-krampfaderoperationen",
+      "path": "/de/corporate/behandlungen/krampfaderoperationen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenoperationen",
+      "path": "/de/corporate/behandlungen/scheidenoperationen",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenspiegelung",
+      "path": "/de/corporate/behandlungen/scheidenspiegelung",
+      "templateId": "treatment-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "clinic-detail",
+      "path": "/de/klinik-linde/home",
+      "templateId": "clinic-detail",
+      "status": "deployed",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-ambulantes-operationszentrum-st-gallen-home",
+      "path": "/de/ambulantes-operationszentrum-st-gallen/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-ambulantes-operieren-home",
+      "path": "/de/ambulantes-operieren/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-andreasklinik-cham-zug-home",
+      "path": "/de/andreasklinik-cham-zug/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-clinique-bois-cerf-home",
+      "path": "/de/clinique-bois-cerf/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-clinique-cecil-home",
+      "path": "/de/clinique-cecil/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-clinique-la-colline-home",
+      "path": "/de/clinique-la-colline/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-hirslanden-klinik-aarau-home",
+      "path": "/de/hirslanden-klinik-aarau/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-hirslandenblog-home",
+      "path": "/de/hirslandenblog/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-international-home",
+      "path": "/de/international/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-beau-site-home",
+      "path": "/de/klinik-beau-site/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-birshof-home",
+      "path": "/de/klinik-birshof/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-hirslanden-home",
+      "path": "/de/klinik-hirslanden/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-im-park-home",
+      "path": "/de/klinik-im-park/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-permanence-home",
+      "path": "/de/klinik-permanence/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-st--anna-home",
+      "path": "/de/klinik-st--anna/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-stephanshorn-home",
+      "path": "/de/klinik-stephanshorn/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-medical-center-wankdorf-home",
+      "path": "/de/medical-center-wankdorf/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-salem-spital-home",
+      "path": "/de/salem-spital/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-st-anna-in-meggen-home",
+      "path": "/de/st-anna-in-meggen/home",
+      "templateId": "clinic-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "event-detail",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt",
+      "templateId": "event-detail",
+      "status": "deployed",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/bauchschmerzen/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/blut-im-stuhl/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/gesunde-nieren-was-kann-ich-dafuer-tun/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hautveraenderungen-gesicht-was-jetzt/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hexenschuss/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/meet-the-experts-24/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schmerzen-an-und-in-der-hand/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schwindel/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/tag-der-offenen-tuer/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/uebergewicht/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/geburtsvorbereitung-wochenendkurse-linde",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga/anmeldeformular-event",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
+      "path": "/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/still-cafe",
+      "templateId": "event-detail",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "patient-info",
       "path": "/de/corporate/klinikaufenthalt",
-      "templateId": "editorial",
-      "status": "pending",
+      "templateId": "patient-info",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/ambulanter-aufenthalt",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/besucherinformationen",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/epd",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/stationaerer-aufenthalt",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
+      "path": "/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
+      "path": "/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
+      "path": "/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
+      "path": "/de/corporate/klinikaufenthalt/virtuelle-rundgaenge",
+      "templateId": "patient-info",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "specialty-topic",
       "path": "/de/corporate/fuer-alle-folgen-des-lebens/kardiologie",
-      "templateId": "editorial",
-      "status": "pending",
+      "templateId": "specialty-topic",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-app",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/app",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/genetische-medizin",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-krebs",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/krebs",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
+      "path": "/de/corporate/fuer-alle-folgen-des-lebens/radiologie-hirslanden",
+      "templateId": "specialty-topic",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "clinic-listing",
       "path": "/de/corporate/kliniken-und-zentren",
-      "templateId": "listing",
-      "status": "pending",
+      "templateId": "clinic-listing",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "event-listing",
       "path": "/de/corporate/kurse-und-veranstaltungen",
-      "templateId": "listing",
-      "status": "pending",
+      "templateId": "event-listing",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
-        }
-      ]
-    },
-    {
-      "slug": "news-listing",
-      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
-      "templateId": "listing",
-      "status": "pending",
-      "isRepresentative": false,
-      "convert": [],
-      "reuse": [
-        {
-          "id": "header-nav",
-          "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
-        },
-        {
-          "id": "site-footer",
-          "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         }
       ]
     },
     {
       "slug": "home",
       "path": "/",
-      "templateId": "landing",
-      "status": "pending",
+      "templateId": "home",
+      "status": "deployed",
       "isRepresentative": false,
       "convert": [],
       "reuse": [
         {
           "id": "header-nav",
           "edsBlockName": "header-nav",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
         },
         {
           "id": "site-footer",
           "edsBlockName": "site-footer",
-          "convertedBy": "clinic-detail"
+          "convertedBy": "content-page"
+        }
+      ]
+    },
+    {
+      "slug": "news-listing",
+      "path": "/de/corporate/medien-und-news/medienmitteilungen-und-news",
+      "templateId": "news-listing",
+      "status": "deployed",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "header-nav",
+          "edsBlockName": "header-nav",
+          "convertedBy": "content-page"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "content-page"
         }
       ]
     }

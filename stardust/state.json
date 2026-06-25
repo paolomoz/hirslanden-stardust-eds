@@ -507,6 +507,1536 @@
       "currentStatePath": "stardust/current/pages/content-page.json",
       "prototypePath": "stardust/prototypes/content-page-proposed.html",
       "migratedPath": "stardust/migrated/de/corporate/ueber-uns/hingabe.html"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-thierry-d-pache",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-thierry-d-pache.html",
+      "title": "docteur thierry d pache",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-antoine-stockhammer.html",
+      "title": "docteur antoine stockhammer",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-jean-pierre-elsig.html",
+      "title": "dr med jean pierre elsig",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-michele-krayenbuehl-huber.html",
+      "title": "dr med michele krayenbuehl huber",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-michael-rabner",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-michael-rabner.html",
+      "title": "dr med michael rabner",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-milos-savcic",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-milos-savcic.html",
+      "title": "docteur milos savcic",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-luan-tran",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-luan-tran.html",
+      "title": "docteur luan tran",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-magdalena-neter-blaettler.html",
+      "title": "dr med magdalena neter blaettler",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-gerber",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-markus-gerber.html",
+      "title": "dr med markus gerber",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-norman-david-schmidt",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-norman-david-schmidt.html",
+      "title": "dr norman david schmidt",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/prof-dr-med-daniel-simmen.html",
+      "title": "prof dr med daniel simmen",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/prof-dr-med-wolfgang-franz-amann.html",
+      "title": "prof dr med wolfgang franz amann",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-basil-a-baettig",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-basil-a-baettig.html",
+      "title": "dr med basil a baettig",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-bruno-wuethrich.html",
+      "title": "dr med bruno wuethrich",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-sabine-steimann",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-sabine-steimann.html",
+      "title": "dr med sabine steimann",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-stephan-buergin",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-stephan-buergin.html",
+      "title": "dr med stephan buergin",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-markus-wiesli",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-markus-wiesli.html",
+      "title": "dr med markus wiesli",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-michel-grobety",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-michel-grobety.html",
+      "title": "docteur michel grobety",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/dr-med-zeno-supersaxo.html",
+      "title": "dr med zeno supersaxo",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
+      "url": "https://www.hirslanden.ch/de/corporate/aerzte/3/docteur-philippe-mavrocordatos.html",
+      "title": "docteur philippe mavrocordatos",
+      "type": "detail",
+      "representative": "doctor-profile",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-aortographie",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/aortographie.html",
+      "title": "aortographie",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/herzbeutel-operationen-eingriffe.html",
+      "title": "herzbeutel operationen eingriffe",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/herzklappen-operationen-eingriffe.html",
+      "title": "herzklappen operationen eingriffe",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/herzkranzgefaesse-operationen-eingriffe.html",
+      "title": "herzkranzgefaesse operationen eingriffe",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzmissbildungen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/herzmissbildungen.html",
+      "title": "herzmissbildungen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-endarterektomie",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/endarterektomie.html",
+      "title": "endarterektomie",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialyse",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/dialyse.html",
+      "title": "dialyse",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-dialysefistel",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/dialysefistel.html",
+      "title": "dialysefistel",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-echokardiographie",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/echokardiographie.html",
+      "title": "echokardiographie",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/hirnaneurysma-operationen-eingriffe.html",
+      "title": "hirnaneurysma operationen eingriffe",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-aorta-operation",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/aorta-operation.html",
+      "title": "aorta operation",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-ballondilatation",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/ballondilatation.html",
+      "title": "ballondilatation",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-krampfaderoperationen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/krampfaderoperationen.html",
+      "title": "krampfaderoperationen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-herzrhythmusstoerungen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/herzrhythmusstoerungen.html",
+      "title": "herzrhythmusstoerungen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenspiegelung",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/scheidenspiegelung.html",
+      "title": "scheidenspiegelung",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-beckenbodenschwaeche-operation",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/beckenbodenschwaeche-operation.html",
+      "title": "beckenbodenschwaeche operation",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-douglas-raum-operation",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/douglas-raum-operation.html",
+      "title": "douglas raum operation",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-eierstockoperationen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/eierstockoperationen.html",
+      "title": "eierstockoperationen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-gebaermutter-operationen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/gebaermutter-operationen.html",
+      "title": "gebaermutter operationen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-behandlungen-scheidenoperationen",
+      "url": "https://www.hirslanden.ch/de/corporate/behandlungen/scheidenoperationen.html",
+      "title": "scheidenoperationen",
+      "type": "detail",
+      "representative": "treatment-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-angina-pectoris",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/angina-pectoris.html",
+      "title": "angina pectoris",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-aortenaneurysma",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/aortenaneurysma.html",
+      "title": "aortenaneurysma",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-arterienverkalkung",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/arterienverkalkung.html",
+      "title": "arterienverkalkung",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/hohes-cholesterin-hohe-blutfettwerte.html",
+      "title": "hohes cholesterin hohe blutfettwerte",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-endokarditis",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/endokarditis.html",
+      "title": "endokarditis",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-vorhofflimmern",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/vorhofflimmern.html",
+      "title": "vorhofflimmern",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzmuskelnentzuendung.html",
+      "title": "herzmuskelnentzuendung",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-perikarditis",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/perikarditis.html",
+      "title": "perikarditis",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-tiefer-blutdruck",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/tiefer-blutdruck.html",
+      "title": "tiefer blutdruck",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzinfarkt",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzinfarkt.html",
+      "title": "herzinfarkt",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-herzklappenfehler",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/herzklappenfehler.html",
+      "title": "herzklappenfehler",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-hoher-blutdruck",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/hoher-blutdruck.html",
+      "title": "hoher blutdruck",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-koronare-herzkrankheit",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/koronare-herzkrankheit.html",
+      "title": "koronare herzkrankheit",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-krampfadern",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/krampfadern.html",
+      "title": "krampfadern",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-lungenoedem",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/lungenoedem.html",
+      "title": "lungenoedem",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/schlaganfall-hirnschlag.html",
+      "title": "schlaganfall hirnschlag",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-metabolisches-syndrom",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/metabolisches-syndrom.html",
+      "title": "metabolisches syndrom",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/periphere-arterielle-verschlusskrankheit.html",
+      "title": "periphere arterielle verschlusskrankheit",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-venenentzuendung",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/venenentzuendung.html",
+      "title": "venenentzuendung",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
+      "url": "https://www.hirslanden.ch/de/corporate/krankheitsbilder/zuckerkrankheit-diabetes.html",
+      "title": "zuckerkrankheit diabetes",
+      "type": "detail",
+      "representative": "disease-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf.html",
+      "title": "gutartig oder boesartig  veraenderungen der weiblichen brust auf",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/was-ist-eigentlich-rheuma-.html",
+      "title": "was ist eigentlich rheuma ",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-.html",
+      "title": "innenbandriss des kniegelenkes  spezifische therapie fuer jeden ",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-.html",
+      "title": "beschwerdefrei _ ist eine prostatavorsorgeuntersuchung trotzdem ",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku.html",
+      "title": "lungenkrebs _ grosse heilungschancen dank fruehzeitiger entdecku",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/osteoporose-_-sind-meine-knochen-bruechig-.html",
+      "title": "osteoporose _ sind meine knochen bruechig ",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/bauchschlag-erweiterung.html",
+      "title": "bauchschlag erweiterung",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/die-ausgerenkte-schulter.html",
+      "title": "die ausgerenkte schulter",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/behandlung-von-knorpelschaeden.html",
+      "title": "behandlung von knorpelschaeden",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/diverse-dialysen.html",
+      "title": "diverse dialysen",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/allg-internisteninspezprivatkliniken.html",
+      "title": "allg internisteninspezprivatkliniken",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim.html",
+      "title": "moderne methoden zur abklaerung von brustschmerzen mit nur minim",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln.html",
+      "title": "kopf hals tumore im alter frueh erkennen und richtig behandeln",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/der-mensch-ist-so-jung-wie-seine-gefaesse.html",
+      "title": "der mensch ist so jung wie seine gefaesse",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/neue-techniken-inderhueftchirurgie.html",
+      "title": "neue techniken inderhueftchirurgie",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/der-knicksenkfuss.html",
+      "title": "der knicksenkfuss",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/rueckenschmerzen-im-visier.html",
+      "title": "rueckenschmerzen im visier",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/beckenbruch-im-alter.html",
+      "title": "beckenbruch im alter",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/lymphstau-bei-brustkrebs.html",
+      "title": "lymphstau bei brustkrebs",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
+      "url": "https://www.hirslanden.ch/de/corporate/publications/patientenzeitschriftfocus/lymphgefaesserkrankungen.html",
+      "title": "lymphgefaesserkrankungen",
+      "type": "editorial",
+      "representative": "content-page",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch.html",
+      "title": "aufenthalt und besuch",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/ambulanter-aufenthalt.html",
+      "title": "ambulanter aufenthalt",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/stationaerer-aufenthalt.html",
+      "title": "stationaerer aufenthalt",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/besucherinformationen.html",
+      "title": "besucherinformationen",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/epd.html",
+      "title": "epd",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie.html",
+      "title": "hotellerie und gastronomie",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten.html",
+      "title": "informationen fuer internationale patienten",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt.html",
+      "title": "rueckmeldung aufenthalt",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
+      "url": "https://www.hirslanden.ch/de/corporate/klinikaufenthalt/virtuelle-rundgaenge.html",
+      "title": "virtuelle rundgaenge",
+      "type": "editorial",
+      "representative": "patient-info",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv.html",
+      "title": "archiv",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik.html",
+      "title": "identifikation des imageable genome eroeffnet neue Ansaetze fuer die medizinische bildgebende diagnostik",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/geplanter-stellenabbau-administrative-funktionen.html",
+      "title": "geplanter stellenabbau administrative funktionen",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/konsultationsverfahren-abgeschlossen.html",
+      "title": "konsultationsverfahren abgeschlossen",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/neue-leitung-clinique-la-colline-und-clinique-des-grangettes.html",
+      "title": "neue leitung clinique la colline und clinique des grangettes",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-einigt-sich-mit-der-css.html",
+      "title": "hirslanden einigt sich mit der css",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/athlethissima-partnerschaft.html",
+      "title": "athlethissima partnerschaft",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-weiterhin-official-medical-partner-von-swiss-ski.html",
+      "title": "hirslanden weiterhin official medical partner von swiss ski",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/kl-rueckt-naeher-an-vsr.html",
+      "title": "kl rueckt naeher an vsr",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/erfolgreicher-abschluss-der-studierenden-aus-nicosia.html",
+      "title": "erfolgreicher abschluss der studierenden aus nicosia",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/mal-ehrlich-und-hirslanden-baby-entlasten-eltern.html",
+      "title": "mal ehrlich und hirslanden baby entlasten eltern",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-setzt-regionalisierung-weiter-um.html",
+      "title": "hirslanden setzt regionalisierung weiter um",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/daniel-liedtke.html",
+      "title": "daniel liedtke",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung.html",
+      "title": "personelle veraenderung konzernleitung",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/neuer-cfo.html",
+      "title": "neuer cfo",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/neuausrichtung-andreasklinik.html",
+      "title": "neuausrichtung andreasklinik",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/gesundheitscampus-st-gallen.html",
+      "title": "gesundheitscampus st gallen",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung-stephan-studer.html",
+      "title": "personelle veraenderung konzernleitung stephan studer",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/pilotprojekt-patientenergebnisse.html",
+      "title": "pilotprojekt patientenergebnisse",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
+      "url": "https://www.hirslanden.ch/de/corporate/medien-und-news/medienmitteilungen-und-news/gilles-rufenacht-zum-ceo-ernannt.html",
+      "title": "gilles rufenacht zum ceo ernannt",
+      "type": "detail",
+      "representative": "news-article",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby.html",
+      "title": "hirslandenbaby",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin.html",
+      "title": "orthopaedie sportmedizin",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-krebs",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/krebs.html",
+      "title": "krebs",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/genetische-medizin.html",
+      "title": "genetische medizin",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/radiologie-hirslanden.html",
+      "title": "radiologie hirslanden",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-corporate-fuer-alle-folgen-des-lebens-app",
+      "url": "https://www.hirslanden.ch/de/corporate/fuer-alle-folgen-des-lebens/app.html",
+      "title": "app",
+      "type": "editorial",
+      "representative": "specialty-topic",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-hirslanden-home",
+      "url": "https://www.hirslanden.ch/de/klinik-hirslanden/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-im-park-home",
+      "url": "https://www.hirslanden.ch/de/klinik-im-park/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-medical-center-wankdorf-home",
+      "url": "https://www.hirslanden.ch/de/medical-center-wankdorf/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-hirslandenblog-home",
+      "url": "https://www.hirslanden.ch/de/hirslandenblog/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-permanence-home",
+      "url": "https://www.hirslanden.ch/de/klinik-permanence/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-ambulantes-operieren-home",
+      "url": "https://www.hirslanden.ch/de/ambulantes-operieren/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-hirslanden-klinik-aarau-home",
+      "url": "https://www.hirslanden.ch/de/hirslanden-klinik-aarau/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-andreasklinik-cham-zug-home",
+      "url": "https://www.hirslanden.ch/de/andreasklinik-cham-zug/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-clinique-la-colline-home",
+      "url": "https://www.hirslanden.ch/de/clinique-la-colline/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-st-anna-in-meggen-home",
+      "url": "https://www.hirslanden.ch/de/st-anna-in-meggen/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-international-home",
+      "url": "https://www.hirslanden.com/de/international/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-stephanshorn-home",
+      "url": "https://www.hirslanden.ch/de/klinik-stephanshorn/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-birshof-home",
+      "url": "https://www.hirslanden.ch/de/klinik-birshof/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-beau-site-home",
+      "url": "https://www.hirslanden.ch/de/klinik-beau-site/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-ambulantes-operationszentrum-st-gallen-home",
+      "url": "https://www.hirslanden.ch/de/ambulantes-operationszentrum-st-gallen/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-st--anna-home",
+      "url": "https://www.hirslanden.ch/de/klinik-st--anna/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-salem-spital-home",
+      "url": "https://www.hirslanden.ch/de/salem-spital/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-clinique-bois-cerf-home",
+      "url": "https://www.hirslanden.ch/de/clinique-bois-cerf/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-clinique-cecil-home",
+      "url": "https://www.hirslanden.ch/de/clinique-cecil/home.html",
+      "title": "home",
+      "type": "detail",
+      "representative": "clinic-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/geburtsvorbereitung-wochenendkurse-linde.html",
+      "title": "geburtsvorbereitung wochenendkurse linde",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse.html",
+      "title": "rueckbildungskurse",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga.html",
+      "title": "schwangerschaftsyoga",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien.html",
+      "title": "akupunkturtherapien",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/still-cafe.html",
+      "title": "still cafe",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/uebergewicht/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/bauchschmerzen/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hexenschuss/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schmerzen-an-und-in-der-hand/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/gesunde-nieren-was-kann-ich-dafuer-tun/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/blut-im-stuhl/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schwindel/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hautveraenderungen-gesicht-was-jetzt/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/tag-der-offenen-tuer/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
+    },
+    {
+      "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
+      "url": "https://www.hirslanden.ch/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/meet-the-experts-24/anmeldeformular-event.html",
+      "title": "anmeldeformular event",
+      "type": "detail",
+      "representative": "event-detail",
+      "status": "rostered",
+      "rosteredAt": "2026-06-25T00:00:00Z",
+      "source": "sitemap"
     }
   ],
   "migrate": {
