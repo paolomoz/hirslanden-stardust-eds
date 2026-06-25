@@ -1,0 +1,128 @@
+version: 1
+
+indices:
+  # Doctors — all fields page-intrinsic (name/specialty/clinic/image), no content
+  # change needed. Powers the doctor-search block (Ärztesuche).
+  doctors:
+    include:
+      - '/de/corporate/aerzte/**'
+    target: /de/corporate/aerzte/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      specialty:
+        select: main .doctor-hero a[href*="/fachgebiete/"]
+        value: textContent(el)
+      specialtyPath:
+        select: main .doctor-hero a[href*="/fachgebiete/"]
+        value: attribute(el, 'href')
+      clinic:
+        select: main .doctor-hero a[href*="/home"]
+        value: textContent(el)
+      clinicPath:
+        select: main .doctor-hero a[href*="/home"]
+        value: attribute(el, 'href')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers('last-modified'), 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  # Clinics — name/image/path are DOM-derived; canton/city/address/phone populate
+  # once the clinic metadata contract is emitted (see stardust/dynamic-blocks-map.md).
+  clinics:
+    include:
+      - '/de/*/home'
+    exclude:
+      - '/de/corporate/**'
+    target: /de/clinics-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      canton:
+        select: head > meta[name="canton"]
+        value: attribute(el, 'content')
+      city:
+        select: head > meta[name="city"]
+        value: attribute(el, 'content')
+      address:
+        select: head > meta[name="address"]
+        value: attribute(el, 'content')
+      phone:
+        select: head > meta[name="phone"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers('last-modified'), 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  # News — title/image/description DOM-derived; publishDate/category need metadata.
+  # Until emitted, blocks sort by lastModified (≈ recency on a fresh import).
+  news:
+    include:
+      - '/de/corporate/medien-und-news/medienmitteilungen-und-news/**'
+    exclude:
+      - '/de/corporate/medien-und-news/medienmitteilungen-und-news'
+    target: /de/corporate/medien-und-news/medienmitteilungen-und-news/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, 'content')
+      publishDate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers('last-modified'), 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  # Events — title/image DOM-derived; eventDate/clinic/location/fachgebiet/thema
+  # need metadata. Without eventDate, "upcoming" filtering is not possible.
+  events:
+    include:
+      - '/de/**/kurse-veranstaltungen/**'
+    target: /de/events-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      eventDate:
+        select: head > meta[name="eventdate"]
+        value: attribute(el, 'content')
+      clinic:
+        select: head > meta[name="clinic"]
+        value: attribute(el, 'content')
+      location:
+        select: head > meta[name="location"]
+        value: attribute(el, 'content')
+      fachgebiet:
+        select: head > meta[name="fachgebiet"]
+        value: attribute(el, 'content')
+      thema:
+        select: head > meta[name="thema"]
+        value: attribute(el, 'content')
+      lastModified:
+        select: none
+        value: parseTimestamp(headers('last-modified'), 'ddd, DD MMM YYYY hh:mm:ss GMT')

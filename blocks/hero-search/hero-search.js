@@ -15,7 +15,9 @@
  * fixed UI scaffold recreated by the block; chips author the quick links.
  */
 
-const SEARCH_ACTION = 'https://www.hirslanden.ch/de/corporate/search.html';
+// On-site doctor directory (Ärztesuche). The GET form appends ?q=… which the
+// doctor-search block reads on load. (Was a dead link to the legacy site.)
+const SEARCH_ACTION = '/de/corporate/aerzte-und-pflege/aerztesuche';
 
 /**
  * Collect element children of every cell, wrapping bare-text cells in <p>.

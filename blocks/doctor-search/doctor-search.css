@@ -1,0 +1,185 @@
+/* doctor-search (Ärztesuche) — filterable doctor directory rendered from the
+   doctors query-index. Tokens, .container, .btn--* come from styles/styles.css.
+   Mirrors the clinic-grid card/filter look so the directory feels native. */
+
+.doctor-search {
+  background: var(--color-ground-warm);
+  padding-block: var(--spacing-md) var(--section-padding);
+}
+
+.doctor-search .filter-bar {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-lg);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+}
+
+.doctor-search .filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.doctor-search .filter-group label {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-text-soft);
+  letter-spacing: 0.04em;
+}
+
+.doctor-search .filter-group input,
+.doctor-search .filter-group select {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  width: 100%;
+  transition: border-color 140ms ease;
+  appearance: none;
+}
+
+.doctor-search .filter-group input::placeholder {
+  color: var(--color-text-soft);
+}
+
+.doctor-search .filter-group input:focus,
+.doctor-search .filter-group select:focus {
+  border-color: var(--color-accent-ink);
+  outline: none;
+}
+
+.doctor-search .filter-count {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  white-space: nowrap;
+  padding-bottom: 12px;
+  flex: none;
+}
+
+.doctor-search .filter-count strong {
+  color: var(--color-fg);
+  font-weight: 700;
+}
+
+.doctor-search .doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.doctor-search .doctor-card {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.doctor-search .doctor-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.doctor-search .doctor-card-media {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--color-ground-alt);
+}
+
+.doctor-search .doctor-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.doctor-search .doctor-card:hover .doctor-card-media img {
+  transform: scale(1.04);
+}
+
+.doctor-search .doctor-card-body {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+}
+
+.doctor-search .doctor-card-name {
+  font-size: var(--heading-md);
+  font-weight: 700;
+  line-height: var(--line-height-heading);
+  color: var(--color-fg);
+  transition: color 140ms ease;
+}
+
+.doctor-search .doctor-card:hover .doctor-card-name {
+  color: var(--color-accent-ink);
+}
+
+.doctor-search .doctor-card-specialty {
+  font-size: var(--body-sm);
+  color: var(--color-accent-ink);
+  font-weight: 500;
+}
+
+.doctor-search .doctor-card-clinic {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  line-height: 1.4;
+}
+
+.doctor-search .doctor-search-more {
+  text-align: center;
+  margin-top: var(--spacing-2xl);
+}
+
+.doctor-search .doctor-search-more[hidden] {
+  display: none;
+}
+
+.doctor-search .doctor-search-status {
+  text-align: center;
+  color: var(--color-text-soft);
+  margin-top: var(--spacing-xl);
+}
+
+@media (width <= 1199px) {
+  .doctor-search .doctor-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width <= 899px) {
+  .doctor-search .doctor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctor-search .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .doctor-search .filter-count {
+    padding-bottom: 0;
+  }
+}
+
+@media (width <= 599px) {
+  .doctor-search .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
