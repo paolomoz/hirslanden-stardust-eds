@@ -8,7 +8,7 @@
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-25T11:44:52.968Z",
+  "generatedAt": "2026-06-25T12:10:17.628Z",
   "pages": [
     {
       "slug": "clinic-detail",
@@ -237,9 +237,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-antoine-stockhammer",
+        "deployedAt": "2026-06-25T12:10:17.579Z",
         "verifiedAt": null,
         "error": null
       }
@@ -357,9 +357,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-thierry-d-pache",
+        "deployedAt": "2026-06-25T12:10:17.551Z",
         "verifiedAt": null,
         "error": null
       }
@@ -741,9 +741,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/aortographie",
+        "deployedAt": "2026-06-25T12:10:17.604Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1557,9 +1557,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/angina-pectoris",
+        "deployedAt": "2026-06-25T12:10:17.628Z",
         "verifiedAt": null,
         "error": null
       }

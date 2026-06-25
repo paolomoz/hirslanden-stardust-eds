@@ -514,9 +514,10 @@
       "title": "docteur thierry d pache",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
@@ -524,9 +525,10 @@
       "title": "docteur antoine stockhammer",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-jean-pierre-elsig",
@@ -714,9 +716,10 @@
       "title": "aortographie",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-herzbeutel-operationen-eingriffe",
@@ -914,9 +917,10 @@
       "title": "angina pectoris",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-aortenaneurysma",

@@ -8,7 +8,7 @@
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-25T11:44:52.968Z",
+  "generatedAt": "2026-06-25T12:10:17.628Z",
   "templates": [
     {
       "id": "clinic-detail",
@@ -136,8 +136,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 1,
-        "contentPending": 20,
+        "deployed": 2,
+        "contentPending": 19,
         "pending": 0
       }
     },
@@ -174,8 +174,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 1,
-        "contentPending": 20,
+        "deployed": 3,
+        "contentPending": 18,
         "pending": 0
       }
     },
@@ -392,8 +392,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 1,
-        "contentPending": 20,
+        "deployed": 2,
+        "contentPending": 19,
         "pending": 0
       }
     }

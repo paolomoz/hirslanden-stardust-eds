@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T11:51:28.946Z",
+  "generatedAt": "2026-06-25T12:10:27.154Z",
   "target": "aem-eds",
   "site": {
     "sourceUrl": "https://www.hirslanden.ch",
@@ -7,14 +7,14 @@
   },
   "stageCount": {
     "identified": 166,
-    "prototyped": 13,
-    "deployed": 13,
+    "prototyped": 17,
+    "deployed": 17,
     "optimised": 0
   },
   "stageExclusive": {
-    "identified": 153,
+    "identified": 149,
     "prototyped": 0,
-    "deployed": 13,
+    "deployed": 17,
     "optimised": 0
   },
   "pages": [
@@ -77,7 +77,7 @@
     {
       "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
       "path": "/de/corporate/aerzte/3/docteur-antoine-stockhammer",
-      "stage": "identified",
+      "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
       "openFindings": 0
@@ -117,7 +117,7 @@
     {
       "slug": "de-corporate-aerzte-3-docteur-thierry-d-pache",
       "path": "/de/corporate/aerzte/3/docteur-thierry-d-pache",
-      "stage": "identified",
+      "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
       "openFindings": 0
@@ -253,7 +253,7 @@
     {
       "slug": "de-corporate-behandlungen-aortographie",
       "path": "/de/corporate/behandlungen/aortographie",
-      "stage": "identified",
+      "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
       "openFindings": 0
@@ -557,7 +557,7 @@
     {
       "slug": "de-corporate-krankheitsbilder-angina-pectoris",
       "path": "/de/corporate/krankheitsbilder/angina-pectoris",
-      "stage": "identified",
+      "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
       "openFindings": 0
@@ -1386,9 +1386,9 @@
       "archetype": "disease-detail",
       "pageCount": 21,
       "stages": {
-        "identified": 20,
+        "identified": 19,
         "prototyped": 0,
-        "deployed": 1,
+        "deployed": 2,
         "optimised": 0
       }
     },
@@ -1397,9 +1397,9 @@
       "archetype": "doctor-profile",
       "pageCount": 21,
       "stages": {
-        "identified": 20,
+        "identified": 18,
         "prototyped": 0,
-        "deployed": 1,
+        "deployed": 3,
         "optimised": 0
       }
     },
@@ -1485,9 +1485,9 @@
       "archetype": "treatment-detail",
       "pageCount": 21,
       "stages": {
-        "identified": 20,
+        "identified": 19,
         "prototyped": 0,
-        "deployed": 1,
+        "deployed": 2,
         "optimised": 0
       }
     }
