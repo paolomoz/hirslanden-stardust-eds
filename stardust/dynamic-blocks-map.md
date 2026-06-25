@@ -83,3 +83,43 @@ emitted. `diseases`/`treatments`/`centers` deferred to Tier 3 modeling.
 4. `news`/`events` blocks: index-driven on `lastModified`/path now; full date-sort
    pending the metadata contract.
 5. Tier 3: documented, not forced — pending content modeling.
+
+## Validated (doctor flagship, end-to-end)
+
+`doctor-search` + the `doctors` index are live and proven: 21 rows indexed, 11
+specialty + 11 clinic facets, name/specialty/clinic filtering, pagination, and the
+hero-search `?q=` hand-off (homepage "Simmen" → `…/aerztesuche?q=Simmen` → 1 card).
+
+### Hard-won learnings (→ rollout skill)
+
+1. **The query-index builds against the PUBLISHED (live) tree, not preview.** Our
+   whole migration was preview-only (`POST /preview/…`), so every index was EMPTY
+   and `query-index.json` 404'd. Pages must be **published** (`POST /live/…`) before
+   their index rows exist. The `/index/…` API returns `"requested path returned a
+   301 or 404"` per index when the live page is missing — that error == "not
+   published," not "bad selector." Indexing is async; bulk-publish then poll the
+   index `total`.
+2. **A dynamic block can only use page-INTRINSIC data, unless the migration emits
+   METADATA.** Doctors work with zero content change because name=`h1`,
+   image=`og:image`, and specialty/clinic come from links the content already
+   carries (`a[href*="/fachgebiete/"]`, `a[href*="/home"]`). Everything else
+   (article date, event date, clinic canton/address/phone) is NOT in the DOM → it
+   must be authored into each page's **metadata block** so the index can extract it.
+   Define this **metadata contract per content type BEFORE importing 1000s of
+   pages**, and have the deploy/migrate step emit it — retrofitting metadata across
+   thousands of pages later is the expensive path.
+3. **Author meaningful internal links in content → free index facets.** The doctor
+   specialty/clinic facets exist only because the doctor pages link to the
+   fachgebiet/clinic pages. Authoring real cross-links is what makes
+   relationship-ish facets extractable without extra metadata.
+4. **Relationships (center↔disease, clinic↔specialty) need an explicit join field**
+   (`treats:`/`topics:` list) in metadata; a flat index can't express many-to-many.
+   Tier-3 blocks stay static until the content model adds it (and `centers` first
+   needs the centers to BE pages — today their cards link only to `tel:`).
+5. **Migrated cross-links point to the SOURCE site, not local paths.** The index
+   captured `specialtyPath = https://www.hirslanden.ch/…` because the content
+   authored absolute source URLs. For on-site navigation (and for index paths to be
+   usable as links) the migration must **localize internal links** to delivered
+   paths. Display-only fields are unaffected.
+6. **`helix-query.yaml` replaces the implicit default index.** Define scoped indexes
+   (include globs + `target`); the index regenerates per page on publish.
