@@ -14,13 +14,22 @@ function iconFor(label) {
 
 export default function decorate(block) {
   const rows = [...block.querySelectorAll(':scope > div')];
-
-  let headingRow = null;
   let dataRows = rows;
-  if (rows.length && rows[0].querySelectorAll(':scope > div').length === 1) {
+
+  // Prefer default-content reabsorption; fall back to first heading row (back-compat)
+  let sectionHead = null;
+  const prev = block.closest('.block-content')?.previousElementSibling;
+  if (prev && (prev.classList.contains('default-content') || prev.classList.contains('default-content-wrapper'))) {
+    sectionHead = document.createElement('div');
+    sectionHead.className = 'section-head';
+    sectionHead.append(...prev.childNodes);
+    prev.remove();
+  } else if (rows.length && rows[0].querySelectorAll(':scope > div').length === 1) {
     const first = rows[0].querySelector(':scope > div');
     if (first?.querySelector('h2')) {
-      [headingRow] = rows;
+      sectionHead = document.createElement('div');
+      sectionHead.className = 'section-head';
+      sectionHead.append(...first.childNodes);
       dataRows = rows.slice(1);
     }
   }
@@ -28,12 +37,7 @@ export default function decorate(block) {
   const wrap = document.createElement('div');
   wrap.className = 'container';
 
-  if (headingRow) {
-    const head = document.createElement('div');
-    head.className = 'section-head';
-    head.append(...headingRow.querySelector(':scope > div').childNodes);
-    wrap.append(head);
-  }
+  if (sectionHead) wrap.append(sectionHead);
 
   const grid = document.createElement('div');
   grid.className = 'location-grid';

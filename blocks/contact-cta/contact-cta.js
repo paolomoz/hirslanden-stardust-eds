@@ -42,10 +42,7 @@ export default function decorate(block) {
     if (actionsCell) {
       const actions = document.createElement('div');
       actions.className = 'contact-cta-actions';
-      actionsCell.querySelectorAll('a').forEach((a) => {
-        a.className = '';
-        actions.append(a);
-      });
+      [...actionsCell.childNodes].forEach((n) => actions.append(n.cloneNode(true)));
       if (actions.children.length) wrap.append(actions);
     }
   } else {
