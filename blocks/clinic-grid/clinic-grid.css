@@ -35,7 +35,8 @@
   letter-spacing: 0.04em;
 }
 
-.clinic-grid .filter-group input {
+.clinic-grid .filter-group input,
+.clinic-grid .filter-group select {
   font-family: var(--body-font-family);
   font-size: var(--body-sm);
   color: var(--color-fg);
@@ -52,9 +53,14 @@
   color: var(--color-text-soft);
 }
 
-.clinic-grid .filter-group input:focus {
+.clinic-grid .filter-group input:focus,
+.clinic-grid .filter-group select:focus {
   border-color: var(--color-accent-ink);
   outline: none;
+}
+
+.clinic-grid .filter-group[hidden] {
+  display: none;
 }
 
 .clinic-grid .filter-count {

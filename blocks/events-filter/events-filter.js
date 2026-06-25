@@ -5,6 +5,11 @@
  * matches each `.events-grid li` card by the data-category / data-location /
  * text content the events-grid block stamped on it, and toggles visibility.
  *
+ * DYNAMIC OPTIONS: the select OPTION LISTS are derived from the distinct values
+ * in the `events` query-index (/de/events-index.json) — Ort (location), Klinik
+ * (clinic), Fachgebiet and Thema — so the options always match the actual cards.
+ * If the index can't be read, the authored option lists are kept verbatim.
+ *
  * Authoring (flat content, classified by content not index):
  *   - a plain text line "Label: value, value, value" → one select named after
  *     the label, with one <option> per value. The first label is treated as the
@@ -13,8 +18,48 @@
  * If no fields are authored the bar renders nothing.
  */
 
+const INDEX_DEFAULT = '/de/events-index.json';
+const FETCH_LIMIT = 500;
+
 const SELECT_RE = /^([^:]{2,40}):\s*(.+)$/;
 const KEYWORD_RE = /(stichwort|suche|keyword|name)/i;
+
+// Maps an authored filter label to the index field whose distinct values
+// should populate that select.
+const LABEL_TO_FIELD = [
+  { re: /(ort|location|stadt|standort)/i, field: 'location' },
+  { re: /(klinik|clinic)/i, field: 'clinic' },
+  { re: /(fachgebiet|fachbereich)/i, field: 'fachgebiet' },
+  { re: /(thema|themen|topic)/i, field: 'thema' },
+];
+
+function fieldForLabel(label) {
+  const match = LABEL_TO_FIELD.find((m) => m.re.test(label));
+  return match ? match.field : null;
+}
+
+async function fetchIndex(path) {
+  const rows = [];
+  let offset = 0;
+  let total = Infinity;
+  while (offset < total) {
+    // eslint-disable-next-line no-await-in-loop
+    const resp = await fetch(`${path}?limit=${FETCH_LIMIT}&offset=${offset}`);
+    if (!resp.ok) break;
+    // eslint-disable-next-line no-await-in-loop
+    const json = await resp.json();
+    rows.push(...(json.data || []));
+    total = json.total ?? rows.length;
+    offset += FETCH_LIMIT;
+    if (!json.data || json.data.length === 0) break;
+  }
+  return rows;
+}
+
+function distinct(rows, key) {
+  return [...new Set(rows.map((r) => (r[key] || '').trim()).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, 'de'));
+}
 
 function collectLines(block) {
   const lines = [];
@@ -40,6 +85,21 @@ function normalise(s) {
 export default async function decorate(block) {
   const lines = collectLines(block);
 
+  // Pull distinct facet values from the events index up front; if it fails we
+  // fall back to the authored option lists.
+  let indexRows = [];
+  try {
+    indexRows = await fetchIndex(INDEX_DEFAULT);
+  } catch {
+    indexRows = [];
+  }
+  const facetCache = {};
+  const facetValues = (field) => {
+    if (!indexRows.length) return null;
+    if (!facetCache[field]) facetCache[field] = distinct(indexRows, field);
+    return facetCache[field].length ? facetCache[field] : null;
+  };
+
   const container = document.createElement('div');
   container.className = 'container';
 
@@ -56,7 +116,7 @@ export default async function decorate(block) {
     const m = line.text.match(SELECT_RE);
     if (m) {
       const label = m[1].trim();
-      const values = m[2].split(',').map((v) => v.trim()).filter(Boolean);
+      const authoredValues = m[2].split(',').map((v) => v.trim()).filter(Boolean);
       const field = document.createElement('div');
       field.className = 'filter-field';
       const id = `event-filter-${i}`;
@@ -69,7 +129,7 @@ export default async function decorate(block) {
         const input = document.createElement('input');
         input.type = 'text';
         input.id = id;
-        input.placeholder = values[0] || label;
+        input.placeholder = authoredValues[0] || label;
         input.autocomplete = 'off';
         field.append(input);
         keywordInput = input;
@@ -81,7 +141,9 @@ export default async function decorate(block) {
         opt0.value = '';
         opt0.textContent = label;
         sel.append(opt0);
-        values.forEach((v) => {
+        // index-derived values when available, else the authored list
+        const indexValues = facetValues(fieldForLabel(label));
+        (indexValues || authoredValues).forEach((v) => {
           const o = document.createElement('option');
           o.value = v;
           o.textContent = v;
