@@ -3,6 +3,8 @@
   overflow: hidden;
   background: var(--color-ground-alt);
   aspect-ratio: 16/5;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 @media (width <= 900px) {

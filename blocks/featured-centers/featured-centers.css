@@ -1,6 +1,9 @@
 .featured-centers {
   background: var(--color-ground-warm);
   padding-block: var(--section-padding);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
 }
 
 .featured-centers .section-head { margin-bottom: var(--spacing-2xl); }

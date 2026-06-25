@@ -3,6 +3,9 @@
   background: var(--color-ground-warm);
   border-bottom: 1px solid var(--color-hairline);
   padding-block: var(--spacing-2xl) var(--spacing-xl);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
 }
 
 .page-hero.white {

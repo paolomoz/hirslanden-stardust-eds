@@ -13,10 +13,9 @@
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 24px;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--spacing-lg), calc((100vw - var(--max-width)) / 2 + var(--spacing-lg)));
 }
 
 .callout-banner-text h2 {

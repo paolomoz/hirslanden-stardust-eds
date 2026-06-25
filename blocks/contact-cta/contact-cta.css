@@ -2,6 +2,8 @@
   background: var(--color-accent-ink);
   padding-block: var(--section-padding);
   color: #fff;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .contact-cta .container {

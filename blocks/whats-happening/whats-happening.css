@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.whats-happening {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+
 .whats-happening .container {
   width: 100%;
   max-width: 1200px;

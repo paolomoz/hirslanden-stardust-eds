@@ -4,6 +4,8 @@
   min-height: 480px;
   display: flex;
   align-items: flex-end;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .clinic-hero-bg {

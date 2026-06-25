@@ -2,6 +2,8 @@
 .cta-band {
   background: var(--color-accent-ink);
   padding-block: var(--spacing-2xl);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .cta-band.warm {

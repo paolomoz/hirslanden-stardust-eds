@@ -144,7 +144,12 @@ header {
 }
 
 /* ── EDS section scaffold ─────────────────────────────────────────────── */
-main .section { display: block; }
+main .section {
+  display: block;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-xl);
+}
 
 main .section > .default-content-wrapper,
 main .section > .block-content-wrapper { display: block; }

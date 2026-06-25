@@ -3,6 +3,8 @@
   position: relative;
   background: var(--color-ground-alt);
   overflow: hidden;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .event-hero .event-hero-media {

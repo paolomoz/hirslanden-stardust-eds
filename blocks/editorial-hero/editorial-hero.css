@@ -7,6 +7,8 @@
   position: relative;
   overflow: hidden;
   background: var(--color-ground-alt, #f0efed);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .editorial-hero-figure {

@@ -7,6 +7,9 @@
   top: 80px;
   z-index: 50;
   box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
 }
 
 .events-filter .events-filter-form {

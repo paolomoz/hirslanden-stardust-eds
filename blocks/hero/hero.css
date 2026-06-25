@@ -6,6 +6,8 @@
 .hero-inner {
   position: relative;
   background: var(--color-ground-alt, #f0efed);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .hero-media {

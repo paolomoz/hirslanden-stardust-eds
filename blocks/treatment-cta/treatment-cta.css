@@ -1,6 +1,8 @@
 .treatment-cta {
   background: var(--color-accent-ink);
   padding-block: var(--spacing-2xl);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .treatment-cta .container {
