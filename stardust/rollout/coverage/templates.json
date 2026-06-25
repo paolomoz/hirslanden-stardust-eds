@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-06-24T20:49:57.875Z",
+    "writtenAt": "2026-06-24T21:51:44.752Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-24T21:32:53.362Z",
+  "generatedAt": "2026-06-25T05:19:43.591Z",
   "templates": [
     {
       "id": "detail",
@@ -27,8 +27,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 1,
-        "pending": 5
+        "deployed": 6,
+        "pending": 0
       }
     },
     {
@@ -46,8 +46,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 0,
-        "pending": 3
+        "deployed": 3,
+        "pending": 0
       }
     },
     {
@@ -63,8 +63,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 0,
-        "pending": 1
+        "deployed": 1,
+        "pending": 0
       }
     },
     {
@@ -82,8 +82,8 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 0,
-        "pending": 3
+        "deployed": 3,
+        "pending": 0
       }
     }
   ]
