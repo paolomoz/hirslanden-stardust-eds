@@ -8,7 +8,7 @@
     ],
     "stardustVersion": "0.13.0"
   },
-  "generatedAt": "2026-06-25T12:10:17.628Z",
+  "generatedAt": "2026-06-25T16:25:28.500Z",
   "pages": [
     {
       "slug": "clinic-detail",
@@ -93,9 +93,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/ambulantes-operationszentrum-st-gallen/home",
+        "deployedAt": "2026-06-25T16:25:05.626Z",
         "verifiedAt": null,
         "error": null
       }
@@ -117,9 +117,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/ambulantes-operieren/home",
+        "deployedAt": "2026-06-25T16:25:05.414Z",
         "verifiedAt": null,
         "error": null
       }
@@ -141,9 +141,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/andreasklinik-cham-zug/home",
+        "deployedAt": "2026-06-25T16:25:05.462Z",
         "verifiedAt": null,
         "error": null
       }
@@ -165,9 +165,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/clinique-bois-cerf/home",
+        "deployedAt": "2026-06-25T16:25:05.698Z",
         "verifiedAt": null,
         "error": null
       }
@@ -189,9 +189,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/clinique-cecil/home",
+        "deployedAt": "2026-06-25T16:25:05.721Z",
         "verifiedAt": null,
         "error": null
       }
@@ -213,9 +213,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/clinique-la-colline/home",
+        "deployedAt": "2026-06-25T16:25:05.485Z",
         "verifiedAt": null,
         "error": null
       }
@@ -261,9 +261,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-luan-tran",
+        "deployedAt": "2026-06-25T15:42:43.032Z",
         "verifiedAt": null,
         "error": null
       }
@@ -285,9 +285,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-michel-grobety",
+        "deployedAt": "2026-06-25T15:42:43.344Z",
         "verifiedAt": null,
         "error": null
       }
@@ -309,9 +309,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-milos-savcic",
+        "deployedAt": "2026-06-25T15:42:42.993Z",
         "verifiedAt": null,
         "error": null
       }
@@ -333,9 +333,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/docteur-philippe-mavrocordatos",
+        "deployedAt": "2026-06-25T15:42:43.399Z",
         "verifiedAt": null,
         "error": null
       }
@@ -381,9 +381,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-basil-a-baettig",
+        "deployedAt": "2026-06-25T15:42:43.204Z",
         "verifiedAt": null,
         "error": null
       }
@@ -405,9 +405,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-bruno-wuethrich",
+        "deployedAt": "2026-06-25T15:42:43.231Z",
         "verifiedAt": null,
         "error": null
       }
@@ -429,9 +429,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-jean-pierre-elsig",
+        "deployedAt": "2026-06-25T15:42:42.888Z",
         "verifiedAt": null,
         "error": null
       }
@@ -453,9 +453,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-magdalena-neter-blaettler",
+        "deployedAt": "2026-06-25T15:42:43.061Z",
         "verifiedAt": null,
         "error": null
       }
@@ -477,9 +477,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-markus-gerber",
+        "deployedAt": "2026-06-25T15:42:43.092Z",
         "verifiedAt": null,
         "error": null
       }
@@ -501,9 +501,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-markus-wiesli",
+        "deployedAt": "2026-06-25T15:42:43.316Z",
         "verifiedAt": null,
         "error": null
       }
@@ -525,9 +525,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-michael-rabner",
+        "deployedAt": "2026-06-25T15:42:42.961Z",
         "verifiedAt": null,
         "error": null
       }
@@ -549,9 +549,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-michele-krayenbuehl-huber",
+        "deployedAt": "2026-06-25T15:42:42.927Z",
         "verifiedAt": null,
         "error": null
       }
@@ -573,9 +573,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-sabine-steimann",
+        "deployedAt": "2026-06-25T15:42:43.259Z",
         "verifiedAt": null,
         "error": null
       }
@@ -597,9 +597,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-stephan-buergin",
+        "deployedAt": "2026-06-25T15:42:43.287Z",
         "verifiedAt": null,
         "error": null
       }
@@ -621,9 +621,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-med-zeno-supersaxo",
+        "deployedAt": "2026-06-25T15:42:43.372Z",
         "verifiedAt": null,
         "error": null
       }
@@ -645,9 +645,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/dr-norman-david-schmidt",
+        "deployedAt": "2026-06-25T15:42:43.120Z",
         "verifiedAt": null,
         "error": null
       }
@@ -669,9 +669,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/prof-dr-med-daniel-simmen",
+        "deployedAt": "2026-06-25T15:42:43.149Z",
         "verifiedAt": null,
         "error": null
       }
@@ -693,9 +693,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/aerzte/3/prof-dr-med-wolfgang-franz-amann",
+        "deployedAt": "2026-06-25T15:42:43.176Z",
         "verifiedAt": null,
         "error": null
       }
@@ -717,9 +717,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/aorta-operation",
+        "deployedAt": "2026-06-25T16:25:02.887Z",
         "verifiedAt": null,
         "error": null
       }
@@ -765,9 +765,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/ballondilatation",
+        "deployedAt": "2026-06-25T16:25:02.910Z",
         "verifiedAt": null,
         "error": null
       }
@@ -789,9 +789,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/beckenbodenschwaeche-operation",
+        "deployedAt": "2026-06-25T16:25:03.004Z",
         "verifiedAt": null,
         "error": null
       }
@@ -813,9 +813,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/dialyse",
+        "deployedAt": "2026-06-25T16:25:02.792Z",
         "verifiedAt": null,
         "error": null
       }
@@ -837,9 +837,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/dialysefistel",
+        "deployedAt": "2026-06-25T16:25:02.816Z",
         "verifiedAt": null,
         "error": null
       }
@@ -861,9 +861,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/douglas-raum-operation",
+        "deployedAt": "2026-06-25T16:25:03.028Z",
         "verifiedAt": null,
         "error": null
       }
@@ -885,9 +885,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/echokardiographie",
+        "deployedAt": "2026-06-25T16:25:02.839Z",
         "verifiedAt": null,
         "error": null
       }
@@ -909,9 +909,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/eierstockoperationen",
+        "deployedAt": "2026-06-25T16:25:03.052Z",
         "verifiedAt": null,
         "error": null
       }
@@ -933,9 +933,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/endarterektomie",
+        "deployedAt": "2026-06-25T16:25:02.768Z",
         "verifiedAt": null,
         "error": null
       }
@@ -957,9 +957,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/gebaermutter-operationen",
+        "deployedAt": "2026-06-25T16:25:03.075Z",
         "verifiedAt": null,
         "error": null
       }
@@ -981,9 +981,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/herzbeutel-operationen-eingriffe",
+        "deployedAt": "2026-06-25T16:25:02.666Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1005,9 +1005,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/herzklappen-operationen-eingriffe",
+        "deployedAt": "2026-06-25T16:25:02.696Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1029,9 +1029,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/herzkranzgefaesse-operationen-eingriffe",
+        "deployedAt": "2026-06-25T16:25:02.722Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1053,9 +1053,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/herzmissbildungen",
+        "deployedAt": "2026-06-25T16:25:02.745Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1077,9 +1077,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/herzrhythmusstoerungen",
+        "deployedAt": "2026-06-25T16:25:02.957Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1101,9 +1101,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/hirnaneurysma-operationen-eingriffe",
+        "deployedAt": "2026-06-25T16:25:02.863Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1125,9 +1125,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/krampfaderoperationen",
+        "deployedAt": "2026-06-25T16:25:02.934Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1149,9 +1149,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/scheidenoperationen",
+        "deployedAt": "2026-06-25T16:25:03.099Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1173,9 +1173,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/behandlungen/scheidenspiegelung",
+        "deployedAt": "2026-06-25T16:25:02.980Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1197,9 +1197,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/app",
+        "deployedAt": "2026-06-25T16:25:04.596Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1221,9 +1221,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/genetische-medizin",
+        "deployedAt": "2026-06-25T16:25:04.549Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1245,9 +1245,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/hirslandenbaby",
+        "deployedAt": "2026-06-25T16:25:04.479Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1269,9 +1269,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/krebs",
+        "deployedAt": "2026-06-25T16:25:04.526Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1293,9 +1293,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/orthopaedie-sportmedizin",
+        "deployedAt": "2026-06-25T16:25:04.503Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1317,9 +1317,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/fuer-alle-folgen-des-lebens/radiologie-hirslanden",
+        "deployedAt": "2026-06-25T16:25:04.572Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1341,9 +1341,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/aufenthalt-und-besuch",
+        "deployedAt": "2026-06-25T16:25:04.621Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1365,9 +1365,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/ambulanter-aufenthalt",
+        "deployedAt": "2026-06-25T16:25:04.646Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1389,9 +1389,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/besucherinformationen",
+        "deployedAt": "2026-06-25T16:25:04.692Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1413,9 +1413,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/epd",
+        "deployedAt": "2026-06-25T16:25:04.716Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1437,9 +1437,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/aufenthalt-und-besuch/stationaerer-aufenthalt",
+        "deployedAt": "2026-06-25T16:25:04.668Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1461,9 +1461,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/hotellerie-und-gastronomie",
+        "deployedAt": "2026-06-25T16:25:04.740Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1485,9 +1485,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/informationen-fuer-internationale-patienten",
+        "deployedAt": "2026-06-25T16:25:04.763Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1509,9 +1509,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/rueckmeldung-aufenthalt",
+        "deployedAt": "2026-06-25T16:25:04.785Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1533,9 +1533,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/klinikaufenthalt/virtuelle-rundgaenge",
+        "deployedAt": "2026-06-25T16:25:04.809Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1581,9 +1581,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/aortenaneurysma",
+        "deployedAt": "2026-06-25T16:25:03.122Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1605,9 +1605,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/arterienverkalkung",
+        "deployedAt": "2026-06-25T16:25:03.145Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1629,9 +1629,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/endokarditis",
+        "deployedAt": "2026-06-25T16:25:03.191Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1653,9 +1653,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/herzinfarkt",
+        "deployedAt": "2026-06-25T16:25:03.310Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1677,9 +1677,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/herzklappenfehler",
+        "deployedAt": "2026-06-25T16:25:03.334Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1701,9 +1701,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/herzmuskelnentzuendung",
+        "deployedAt": "2026-06-25T16:25:03.238Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1725,9 +1725,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/hoher-blutdruck",
+        "deployedAt": "2026-06-25T16:25:03.357Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1749,9 +1749,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/hohes-cholesterin-hohe-blutfettwerte",
+        "deployedAt": "2026-06-25T16:25:03.168Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1773,9 +1773,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/koronare-herzkrankheit",
+        "deployedAt": "2026-06-25T16:25:03.380Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1797,9 +1797,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/krampfadern",
+        "deployedAt": "2026-06-25T16:25:03.402Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1821,9 +1821,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/lungenoedem",
+        "deployedAt": "2026-06-25T16:25:03.426Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1845,9 +1845,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/metabolisches-syndrom",
+        "deployedAt": "2026-06-25T16:25:03.474Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1869,9 +1869,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/perikarditis",
+        "deployedAt": "2026-06-25T16:25:03.262Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1893,9 +1893,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/periphere-arterielle-verschlusskrankheit",
+        "deployedAt": "2026-06-25T16:25:03.498Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1917,9 +1917,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/schlaganfall-hirnschlag",
+        "deployedAt": "2026-06-25T16:25:03.450Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1941,9 +1941,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/tiefer-blutdruck",
+        "deployedAt": "2026-06-25T16:25:03.287Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1965,9 +1965,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/venenentzuendung",
+        "deployedAt": "2026-06-25T16:25:03.521Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1989,9 +1989,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/vorhofflimmern",
+        "deployedAt": "2026-06-25T16:25:03.216Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2013,9 +2013,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/krankheitsbilder/zuckerkrankheit-diabetes",
+        "deployedAt": "2026-06-25T16:25:03.543Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2037,9 +2037,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/archiv",
+        "deployedAt": "2026-06-25T16:25:04.013Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2061,9 +2061,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/athlethissima-partnerschaft",
+        "deployedAt": "2026-06-25T16:25:04.153Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2085,9 +2085,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/daniel-liedtke",
+        "deployedAt": "2026-06-25T16:25:04.291Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2109,9 +2109,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/erfolgreicher-abschluss-der-studierenden-aus-nicosia",
+        "deployedAt": "2026-06-25T16:25:04.222Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2133,9 +2133,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/geplanter-stellenabbau-administrative-funktionen",
+        "deployedAt": "2026-06-25T16:25:04.057Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2157,9 +2157,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/gesundheitscampus-st-gallen",
+        "deployedAt": "2026-06-25T16:25:04.383Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2181,9 +2181,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/gilles-rufenacht-zum-ceo-ernannt",
+        "deployedAt": "2026-06-25T16:25:04.455Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2205,9 +2205,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-einigt-sich-mit-der-css",
+        "deployedAt": "2026-06-25T16:25:04.130Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2229,9 +2229,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-setzt-regionalisierung-weiter-um",
+        "deployedAt": "2026-06-25T16:25:04.268Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2253,9 +2253,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
+        "deployedAt": "2026-06-25T16:25:04.176Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2277,9 +2277,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/identifikation-des-imageable-genome-eroeffnet-neue-ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
+        "deployedAt": "2026-06-25T16:25:28.500Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2301,9 +2301,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/kl-rueckt-naeher-an-vsr",
+        "deployedAt": "2026-06-25T16:25:04.198Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2325,9 +2325,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/konsultationsverfahren-abgeschlossen",
+        "deployedAt": "2026-06-25T16:25:04.082Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2349,9 +2349,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
+        "deployedAt": "2026-06-25T16:25:04.245Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2373,9 +2373,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/neuausrichtung-andreasklinik",
+        "deployedAt": "2026-06-25T16:25:04.361Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2397,9 +2397,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
+        "deployedAt": "2026-06-25T16:25:04.106Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2421,9 +2421,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/neuer-cfo",
+        "deployedAt": "2026-06-25T16:25:04.337Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2445,9 +2445,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung",
+        "deployedAt": "2026-06-25T16:25:04.314Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2469,9 +2469,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/personelle-veraenderung-konzernleitung-stephan-studer",
+        "deployedAt": "2026-06-25T16:25:04.406Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2493,9 +2493,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/medien-und-news/medienmitteilungen-und-news/pilotprojekt-patientenergebnisse",
+        "deployedAt": "2026-06-25T16:25:04.431Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2517,9 +2517,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/allg-internisteninspezprivatkliniken",
+        "deployedAt": "2026-06-25T16:25:05.063Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2541,9 +2541,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/bauchschlag-erweiterung",
+        "deployedAt": "2026-06-25T16:25:04.972Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2565,9 +2565,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/beckenbruch-im-alter",
+        "deployedAt": "2026-06-25T16:25:05.225Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2589,9 +2589,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/behandlung-von-knorpelschaeden",
+        "deployedAt": "2026-06-25T16:25:05.016Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2613,9 +2613,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/beschwerdefrei-ist-eine-prostatavorsorgeuntersuchung-trotzdem",
+        "deployedAt": "2026-06-25T16:25:04.902Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2637,9 +2637,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/der-knicksenkfuss",
+        "deployedAt": "2026-06-25T16:25:05.179Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2661,9 +2661,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/der-mensch-ist-so-jung-wie-seine-gefaesse",
+        "deployedAt": "2026-06-25T16:25:05.131Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2685,9 +2685,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/die-ausgerenkte-schulter",
+        "deployedAt": "2026-06-25T16:25:04.994Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2709,9 +2709,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/diverse-dialysen",
+        "deployedAt": "2026-06-25T16:25:05.039Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2733,9 +2733,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/gutartig-oder-boesartig-veraenderungen-der-weiblichen-brust-auf",
+        "deployedAt": "2026-06-25T16:25:04.832Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2757,9 +2757,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/innenbandriss-des-kniegelenkes-spezifische-therapie-fuer-jeden",
+        "deployedAt": "2026-06-25T16:25:04.880Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2781,9 +2781,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
+        "deployedAt": "2026-06-25T16:25:05.108Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2805,9 +2805,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/lungenkrebs-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
+        "deployedAt": "2026-06-25T16:25:04.924Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2829,9 +2829,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/lymphgefaesserkrankungen",
+        "deployedAt": "2026-06-25T16:25:05.274Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2853,9 +2853,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/lymphstau-bei-brustkrebs",
+        "deployedAt": "2026-06-25T16:25:05.249Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2877,9 +2877,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
+        "deployedAt": "2026-06-25T16:25:05.085Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2901,9 +2901,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/neue-techniken-inderhueftchirurgie",
+        "deployedAt": "2026-06-25T16:25:05.155Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2925,9 +2925,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/osteoporose-sind-meine-knochen-bruechig",
+        "deployedAt": "2026-06-25T16:25:04.948Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2949,9 +2949,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/rueckenschmerzen-im-visier",
+        "deployedAt": "2026-06-25T16:25:05.202Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2973,9 +2973,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/corporate/publications/patientenzeitschriftfocus/was-ist-eigentlich-rheuma",
+        "deployedAt": "2026-06-25T16:25:04.855Z",
         "verifiedAt": null,
         "error": null
       }
@@ -2997,9 +2997,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/hirslanden-klinik-aarau/home",
+        "deployedAt": "2026-06-25T16:25:05.438Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3021,9 +3021,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/hirslandenblog/home",
+        "deployedAt": "2026-06-25T16:25:05.367Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3045,9 +3045,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/international/home",
+        "deployedAt": "2026-06-25T16:25:05.532Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3069,9 +3069,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-beau-site/home",
+        "deployedAt": "2026-06-25T16:25:05.603Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3093,9 +3093,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-birshof/home",
+        "deployedAt": "2026-06-25T16:25:05.579Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3117,9 +3117,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-hirslanden/home",
+        "deployedAt": "2026-06-25T16:25:05.298Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3141,9 +3141,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-im-park/home",
+        "deployedAt": "2026-06-25T16:25:05.320Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3165,9 +3165,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/bauchschmerzen/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.801Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3189,9 +3189,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/blut-im-stuhl/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.897Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3213,9 +3213,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/gesunde-nieren-was-kann-ich-dafuer-tun/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.873Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3237,9 +3237,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hautveraenderungen-gesicht-was-jetzt/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.943Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3261,9 +3261,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/hexenschuss/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.826Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3285,9 +3285,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/meet-the-experts-24/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.990Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3309,9 +3309,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schmerzen-an-und-in-der-hand/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.849Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3333,9 +3333,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/schwindel/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.920Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3357,9 +3357,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/tag-der-offenen-tuer/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.965Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3381,9 +3381,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/gesundheitsthemen/uebergewicht/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.779Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3405,9 +3405,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien",
+        "deployedAt": "2026-06-25T16:25:03.686Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3429,9 +3429,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/akupunkturtherapien/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.710Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3453,9 +3453,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/geburtsvorbereitung-wochenendkurse-linde",
+        "deployedAt": "2026-06-25T16:25:03.567Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3477,9 +3477,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.734Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3501,9 +3501,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse",
+        "deployedAt": "2026-06-25T16:25:03.590Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3525,9 +3525,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/rueckbildungskurse/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.614Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3549,9 +3549,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga",
+        "deployedAt": "2026-06-25T16:25:03.637Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3573,9 +3573,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/schwangerschaftsyoga/anmeldeformular-event",
+        "deployedAt": "2026-06-25T16:25:03.663Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3597,9 +3597,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/still-cafe",
+        "deployedAt": "2026-06-25T16:25:03.757Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3621,9 +3621,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-permanence/home",
+        "deployedAt": "2026-06-25T16:25:05.390Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3645,9 +3645,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-st-anna/home",
+        "deployedAt": "2026-06-25T16:25:05.650Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3669,9 +3669,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/klinik-stephanshorn/home",
+        "deployedAt": "2026-06-25T16:25:05.556Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3693,9 +3693,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/medical-center-wankdorf/home",
+        "deployedAt": "2026-06-25T16:25:05.343Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3717,9 +3717,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/salem-spital/home",
+        "deployedAt": "2026-06-25T16:25:05.675Z",
         "verifiedAt": null,
         "error": null
       }
@@ -3741,9 +3741,9 @@
         "site-footer"
       ],
       "delivery": {
-        "status": "content-pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.page/de/st-anna-in-meggen/home",
+        "deployedAt": "2026-06-25T16:25:05.510Z",
         "verifiedAt": null,
         "error": null
       }

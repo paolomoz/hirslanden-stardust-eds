@@ -536,9 +536,10 @@
       "title": "dr med jean pierre elsig",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-michele-krayenbuehl-huber",
@@ -546,9 +547,10 @@
       "title": "dr med michele krayenbuehl huber",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-michael-rabner",
@@ -556,9 +558,10 @@
       "title": "dr med michael rabner",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-milos-savcic",
@@ -566,9 +569,10 @@
       "title": "docteur milos savcic",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-luan-tran",
@@ -576,9 +580,10 @@
       "title": "docteur luan tran",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-magdalena-neter-blaettler",
@@ -586,9 +591,10 @@
       "title": "dr med magdalena neter blaettler",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-markus-gerber",
@@ -596,9 +602,10 @@
       "title": "dr med markus gerber",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-norman-david-schmidt",
@@ -606,9 +613,10 @@
       "title": "dr norman david schmidt",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-prof-dr-med-daniel-simmen",
@@ -616,9 +624,10 @@
       "title": "prof dr med daniel simmen",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
@@ -626,9 +635,10 @@
       "title": "prof dr med wolfgang franz amann",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-basil-a-baettig",
@@ -636,9 +646,10 @@
       "title": "dr med basil a baettig",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-bruno-wuethrich",
@@ -646,9 +657,10 @@
       "title": "dr med bruno wuethrich",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-sabine-steimann",
@@ -656,9 +668,10 @@
       "title": "dr med sabine steimann",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-stephan-buergin",
@@ -666,9 +679,10 @@
       "title": "dr med stephan buergin",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-markus-wiesli",
@@ -676,9 +690,10 @@
       "title": "dr med markus wiesli",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-michel-grobety",
@@ -686,9 +701,10 @@
       "title": "docteur michel grobety",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-zeno-supersaxo",
@@ -696,9 +712,10 @@
       "title": "dr med zeno supersaxo",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-philippe-mavrocordatos",
@@ -706,9 +723,10 @@
       "title": "docteur philippe mavrocordatos",
       "type": "detail",
       "representative": "doctor-profile",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-aortographie",
@@ -727,9 +745,10 @@
       "title": "herzbeutel operationen eingriffe",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-herzklappen-operationen-eingriffe",
@@ -737,9 +756,10 @@
       "title": "herzklappen operationen eingriffe",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-herzkranzgefaesse-operationen-eingriffe",
@@ -747,9 +767,10 @@
       "title": "herzkranzgefaesse operationen eingriffe",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-herzmissbildungen",
@@ -757,9 +778,10 @@
       "title": "herzmissbildungen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-endarterektomie",
@@ -767,9 +789,10 @@
       "title": "endarterektomie",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-dialyse",
@@ -777,9 +800,10 @@
       "title": "dialyse",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-dialysefistel",
@@ -787,9 +811,10 @@
       "title": "dialysefistel",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-echokardiographie",
@@ -797,9 +822,10 @@
       "title": "echokardiographie",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-hirnaneurysma-operationen-eingriffe",
@@ -807,9 +833,10 @@
       "title": "hirnaneurysma operationen eingriffe",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-aorta-operation",
@@ -817,9 +844,10 @@
       "title": "aorta operation",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-ballondilatation",
@@ -827,9 +855,10 @@
       "title": "ballondilatation",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-krampfaderoperationen",
@@ -837,9 +866,10 @@
       "title": "krampfaderoperationen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-herzrhythmusstoerungen",
@@ -847,9 +877,10 @@
       "title": "herzrhythmusstoerungen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-scheidenspiegelung",
@@ -857,9 +888,10 @@
       "title": "scheidenspiegelung",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-beckenbodenschwaeche-operation",
@@ -867,9 +899,10 @@
       "title": "beckenbodenschwaeche operation",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-douglas-raum-operation",
@@ -877,9 +910,10 @@
       "title": "douglas raum operation",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-eierstockoperationen",
@@ -887,9 +921,10 @@
       "title": "eierstockoperationen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-gebaermutter-operationen",
@@ -897,9 +932,10 @@
       "title": "gebaermutter operationen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-behandlungen-scheidenoperationen",
@@ -907,9 +943,10 @@
       "title": "scheidenoperationen",
       "type": "detail",
       "representative": "treatment-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-angina-pectoris",
@@ -928,9 +965,10 @@
       "title": "aortenaneurysma",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-arterienverkalkung",
@@ -938,9 +976,10 @@
       "title": "arterienverkalkung",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-hohes-cholesterin-hohe-blutfettwerte",
@@ -948,9 +987,10 @@
       "title": "hohes cholesterin hohe blutfettwerte",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-endokarditis",
@@ -958,9 +998,10 @@
       "title": "endokarditis",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-vorhofflimmern",
@@ -968,9 +1009,10 @@
       "title": "vorhofflimmern",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-herzmuskelnentzuendung",
@@ -978,9 +1020,10 @@
       "title": "herzmuskelnentzuendung",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-perikarditis",
@@ -988,9 +1031,10 @@
       "title": "perikarditis",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-tiefer-blutdruck",
@@ -998,9 +1042,10 @@
       "title": "tiefer blutdruck",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-herzinfarkt",
@@ -1008,9 +1053,10 @@
       "title": "herzinfarkt",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-herzklappenfehler",
@@ -1018,9 +1064,10 @@
       "title": "herzklappenfehler",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-hoher-blutdruck",
@@ -1028,9 +1075,10 @@
       "title": "hoher blutdruck",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-koronare-herzkrankheit",
@@ -1038,9 +1086,10 @@
       "title": "koronare herzkrankheit",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-krampfadern",
@@ -1048,9 +1097,10 @@
       "title": "krampfadern",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-lungenoedem",
@@ -1058,9 +1108,10 @@
       "title": "lungenoedem",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-schlaganfall-hirnschlag",
@@ -1068,9 +1119,10 @@
       "title": "schlaganfall hirnschlag",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-metabolisches-syndrom",
@@ -1078,9 +1130,10 @@
       "title": "metabolisches syndrom",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-periphere-arterielle-verschlusskrankheit",
@@ -1088,9 +1141,10 @@
       "title": "periphere arterielle verschlusskrankheit",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-venenentzuendung",
@@ -1098,9 +1152,10 @@
       "title": "venenentzuendung",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-krankheitsbilder-zuckerkrankheit-diabetes",
@@ -1108,9 +1163,10 @@
       "title": "zuckerkrankheit diabetes",
       "type": "detail",
       "representative": "disease-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-gutartig-oder-boesartig--veraenderungen-der-weiblichen-brust-auf",
@@ -1118,9 +1174,10 @@
       "title": "gutartig oder boesartig  veraenderungen der weiblichen brust auf",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
@@ -1128,9 +1185,10 @@
       "title": "was ist eigentlich rheuma ",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-innenbandriss-des-kniegelenkes--spezifische-therapie-fuer-jeden-",
@@ -1138,9 +1196,10 @@
       "title": "innenbandriss des kniegelenkes  spezifische therapie fuer jeden ",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
@@ -1148,9 +1207,10 @@
       "title": "beschwerdefrei _ ist eine prostatavorsorgeuntersuchung trotzdem ",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-lungenkrebs-_-grosse-heilungschancen-dank-fruehzeitiger-entdecku",
@@ -1158,9 +1218,10 @@
       "title": "lungenkrebs _ grosse heilungschancen dank fruehzeitiger entdecku",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
@@ -1168,9 +1229,10 @@
       "title": "osteoporose _ sind meine knochen bruechig ",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-bauchschlag-erweiterung",
@@ -1178,9 +1240,10 @@
       "title": "bauchschlag erweiterung",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-die-ausgerenkte-schulter",
@@ -1188,9 +1251,10 @@
       "title": "die ausgerenkte schulter",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
@@ -1198,9 +1262,10 @@
       "title": "behandlung von knorpelschaeden",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-diverse-dialysen",
@@ -1208,9 +1273,10 @@
       "title": "diverse dialysen",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-allg-internisteninspezprivatkliniken",
@@ -1218,9 +1284,10 @@
       "title": "allg internisteninspezprivatkliniken",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-moderne-methoden-zur-abklaerung-von-brustschmerzen-mit-nur-minim",
@@ -1228,9 +1295,10 @@
       "title": "moderne methoden zur abklaerung von brustschmerzen mit nur minim",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-kopf-hals-tumore-im-alter-frueh-erkennen-und-richtig-behandeln",
@@ -1238,9 +1306,10 @@
       "title": "kopf hals tumore im alter frueh erkennen und richtig behandeln",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
@@ -1248,9 +1317,10 @@
       "title": "der mensch ist so jung wie seine gefaesse",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
@@ -1258,9 +1328,10 @@
       "title": "neue techniken inderhueftchirurgie",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-der-knicksenkfuss",
@@ -1268,9 +1339,10 @@
       "title": "der knicksenkfuss",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
@@ -1278,9 +1350,10 @@
       "title": "rueckenschmerzen im visier",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-beckenbruch-im-alter",
@@ -1288,9 +1361,10 @@
       "title": "beckenbruch im alter",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphstau-bei-brustkrebs",
@@ -1298,9 +1372,10 @@
       "title": "lymphstau bei brustkrebs",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-lymphgefaesserkrankungen",
@@ -1308,9 +1383,10 @@
       "title": "lymphgefaesserkrankungen",
       "type": "editorial",
       "representative": "content-page",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch",
@@ -1318,9 +1394,10 @@
       "title": "aufenthalt und besuch",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-ambulanter-aufenthalt",
@@ -1328,9 +1405,10 @@
       "title": "ambulanter aufenthalt",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-stationaerer-aufenthalt",
@@ -1338,9 +1416,10 @@
       "title": "stationaerer aufenthalt",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-besucherinformationen",
@@ -1348,9 +1427,10 @@
       "title": "besucherinformationen",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-aufenthalt-und-besuch-epd",
@@ -1358,9 +1438,10 @@
       "title": "epd",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-hotellerie-und-gastronomie",
@@ -1368,9 +1449,10 @@
       "title": "hotellerie und gastronomie",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-informationen-fuer-internationale-patienten",
@@ -1378,9 +1460,10 @@
       "title": "informationen fuer internationale patienten",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-rueckmeldung-aufenthalt",
@@ -1388,9 +1471,10 @@
       "title": "rueckmeldung aufenthalt",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-klinikaufenthalt-virtuelle-rundgaenge",
@@ -1398,9 +1482,10 @@
       "title": "virtuelle rundgaenge",
       "type": "editorial",
       "representative": "patient-info",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-archiv",
@@ -1408,9 +1493,10 @@
       "title": "archiv",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
@@ -1418,9 +1504,10 @@
       "title": "identifikation des imageable genome eroeffnet neue Ansaetze fuer die medizinische bildgebende diagnostik",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-geplanter-stellenabbau-administrative-funktionen",
@@ -1428,9 +1515,10 @@
       "title": "geplanter stellenabbau administrative funktionen",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-konsultationsverfahren-abgeschlossen",
@@ -1438,9 +1526,10 @@
       "title": "konsultationsverfahren abgeschlossen",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neue-leitung-clinique-la-colline-und-clinique-des-grangettes",
@@ -1448,9 +1537,10 @@
       "title": "neue leitung clinique la colline und clinique des grangettes",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
@@ -1458,9 +1548,10 @@
       "title": "hirslanden einigt sich mit der css",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-athlethissima-partnerschaft",
@@ -1468,9 +1559,10 @@
       "title": "athlethissima partnerschaft",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-weiterhin-official-medical-partner-von-swiss-ski",
@@ -1478,9 +1570,10 @@
       "title": "hirslanden weiterhin official medical partner von swiss ski",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-kl-rueckt-naeher-an-vsr",
@@ -1488,9 +1581,10 @@
       "title": "kl rueckt naeher an vsr",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
@@ -1498,9 +1592,10 @@
       "title": "erfolgreicher abschluss der studierenden aus nicosia",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-mal-ehrlich-und-hirslanden-baby-entlasten-eltern",
@@ -1508,9 +1603,10 @@
       "title": "mal ehrlich und hirslanden baby entlasten eltern",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
@@ -1518,9 +1614,10 @@
       "title": "hirslanden setzt regionalisierung weiter um",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-daniel-liedtke",
@@ -1528,9 +1625,10 @@
       "title": "daniel liedtke",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung",
@@ -1538,9 +1636,10 @@
       "title": "personelle veraenderung konzernleitung",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
@@ -1548,9 +1647,10 @@
       "title": "neuer cfo",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuausrichtung-andreasklinik",
@@ -1558,9 +1658,10 @@
       "title": "neuausrichtung andreasklinik",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
@@ -1568,9 +1669,10 @@
       "title": "gesundheitscampus st gallen",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
@@ -1578,9 +1680,10 @@
       "title": "personelle veraenderung konzernleitung stephan studer",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
@@ -1588,9 +1691,10 @@
       "title": "pilotprojekt patientenergebnisse",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
@@ -1598,9 +1702,10 @@
       "title": "gilles rufenacht zum ceo ernannt",
       "type": "detail",
       "representative": "news-article",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-hirslandenbaby",
@@ -1608,9 +1713,10 @@
       "title": "hirslandenbaby",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-orthopaedie-sportmedizin",
@@ -1618,9 +1724,10 @@
       "title": "orthopaedie sportmedizin",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-krebs",
@@ -1628,9 +1735,10 @@
       "title": "krebs",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-genetische-medizin",
@@ -1638,9 +1746,10 @@
       "title": "genetische medizin",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-radiologie-hirslanden",
@@ -1648,9 +1757,10 @@
       "title": "radiologie hirslanden",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-corporate-fuer-alle-folgen-des-lebens-app",
@@ -1658,9 +1768,10 @@
       "title": "app",
       "type": "editorial",
       "representative": "specialty-topic",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-hirslanden-home",
@@ -1668,9 +1779,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-im-park-home",
@@ -1678,9 +1790,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-medical-center-wankdorf-home",
@@ -1688,9 +1801,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-hirslandenblog-home",
@@ -1698,9 +1812,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-permanence-home",
@@ -1708,9 +1823,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-ambulantes-operieren-home",
@@ -1718,9 +1834,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-hirslanden-klinik-aarau-home",
@@ -1728,9 +1845,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-andreasklinik-cham-zug-home",
@@ -1738,9 +1856,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-clinique-la-colline-home",
@@ -1748,9 +1867,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-st-anna-in-meggen-home",
@@ -1758,9 +1878,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-international-home",
@@ -1768,9 +1889,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-stephanshorn-home",
@@ -1778,9 +1900,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-birshof-home",
@@ -1788,9 +1911,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-beau-site-home",
@@ -1798,9 +1922,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-ambulantes-operationszentrum-st-gallen-home",
@@ -1808,9 +1933,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-st--anna-home",
@@ -1818,9 +1944,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-salem-spital-home",
@@ -1828,9 +1955,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-clinique-bois-cerf-home",
@@ -1838,9 +1966,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-clinique-cecil-home",
@@ -1848,9 +1977,10 @@
       "title": "home",
       "type": "detail",
       "representative": "clinic-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-geburtsvorbereitung-wochenendkurse-linde",
@@ -1858,9 +1988,10 @@
       "title": "geburtsvorbereitung wochenendkurse linde",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse",
@@ -1868,9 +1999,10 @@
       "title": "rueckbildungskurse",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-rueckbildungskurse-anmeldeformular-event",
@@ -1878,9 +2010,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga",
@@ -1888,9 +2021,10 @@
       "title": "schwangerschaftsyoga",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-schwangerschaftsyoga-anmeldeformular-event",
@@ -1898,9 +2032,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien",
@@ -1908,9 +2043,10 @@
       "title": "akupunkturtherapien",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-akupunkturtherapien-anmeldeformular-event",
@@ -1918,9 +2054,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-informationsabend-geburt-anmeldeformular-event",
@@ -1928,9 +2065,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-schwangerschaft-geburt-still-cafe",
@@ -1938,9 +2076,10 @@
       "title": "still cafe",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-uebergewicht-anmeldeformular-event",
@@ -1948,9 +2087,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-bauchschmerzen-anmeldeformular-event",
@@ -1958,9 +2098,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hexenschuss-anmeldeformular-event",
@@ -1968,9 +2109,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
@@ -1978,9 +2120,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-gesunde-nieren-was-kann-ich-dafuer-tun-anmeldeformular-event",
@@ -1988,9 +2131,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-blut-im-stuhl-anmeldeformular-event",
@@ -1998,9 +2142,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schwindel-anmeldeformular-event",
@@ -2008,9 +2153,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
@@ -2018,9 +2164,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
@@ -2028,9 +2175,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-meet-the-experts-24-anmeldeformular-event",
@@ -2038,9 +2186,10 @@
       "title": "anmeldeformular event",
       "type": "detail",
       "representative": "event-detail",
-      "status": "rostered",
+      "status": "deployed",
       "rosteredAt": "2026-06-25T00:00:00Z",
-      "source": "sitemap"
+      "source": "sitemap",
+      "deployedAt": "2026-06-25T00:00:00Z"
     }
   ],
   "migrate": {
