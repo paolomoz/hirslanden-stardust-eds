@@ -43,6 +43,7 @@
   min-width: 160px;
   transition: border-color 140ms ease;
   appearance: none;
+  border-radius: var(--radius);
 }
 
 .events-filter .events-filter-field select {

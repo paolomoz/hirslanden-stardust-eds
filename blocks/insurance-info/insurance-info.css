@@ -1,5 +1,6 @@
 .insurance-info {
   background: var(--color-ground-alt, #f0efed);
+  padding-block: var(--section-padding);
 }
 
 .insurance-info-inner {

@@ -4,10 +4,8 @@
 }
 
 .callout-banner {
-  background: var(--color-ground-alt, #f0efed);
+  background: var(--color-accent-ink);
   padding-block: 48px;
-  border-top: 1px solid var(--color-hairline, #e2dfdb);
-  border-bottom: 1px solid var(--color-hairline, #e2dfdb);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,34 +17,35 @@
 }
 
 .callout-banner-text h2 {
-  color: var(--color-fg, #534c46);
+  color: #fff;
   font-size: 1.563rem;
   margin-bottom: 8px;
 }
 
 .callout-banner-text p {
-  color: var(--color-text-soft, #72665b);
+  color: rgb(255 255 255 / 82%);
   font-size: 0.8rem;
   max-width: 54ch;
   margin: 0;
 }
 
-.callout-banner .btn--primary {
-  display: inline-flex;
-  align-items: center;
-  background: var(--color-accent-ink, #0070a0);
-  color: #fff;
+.callout-banner .btn--onblue {
+  background: #fff;
+  color: var(--color-accent-ink);
   padding: 12px 28px;
-  font-size: 0.8rem;
+  font-size: var(--body-sm);
   font-weight: 500;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
   white-space: nowrap;
   flex-shrink: 0;
   transition: background-color 160ms ease;
+  border: 0;
 }
 
-.callout-banner .btn--primary:hover {
-  background: var(--color-accent-hover, #006894);
+.callout-banner .btn--onblue:hover {
+  background: var(--color-ground-warm);
 }
 
 @media (width <= 600px) {

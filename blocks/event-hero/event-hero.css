@@ -34,7 +34,7 @@
 .event-hero .event-hero-inner {
   position: relative;
   z-index: 1;
-  padding-block: clamp(120px, 22vw, 280px) var(--spacing-2xl);
+  padding-block: clamp(160px, 28vw, 360px) var(--spacing-2xl);
   padding-inline: var(--spacing-lg);
   max-width: var(--max-width);
   margin-inline: auto;
@@ -71,12 +71,8 @@
   font-weight: 500;
 }
 
-@media (width >= 900px) {
+@media (width >= 600px) {
   .event-hero h1 {
     font-size: var(--heading-xxl);
-  }
-
-  .event-hero .event-hero-inner {
-    padding-block: clamp(160px, 28vw, 360px) var(--spacing-2xl);
   }
 }

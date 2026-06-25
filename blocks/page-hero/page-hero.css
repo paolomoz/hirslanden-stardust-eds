@@ -1,15 +1,19 @@
 /* ── page-hero block ─────────────────────────────────────────────── */
 .page-hero {
-  background: var(--color-ground-warm);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-hairline);
-  padding-block: var(--spacing-2xl) var(--spacing-xl);
+  padding-block: var(--section-padding);
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
 }
 
-.page-hero.white {
-  background: var(--color-bg);
+.page-hero.warm {
+  background: var(--color-ground-warm);
+}
+
+.page-hero.alt {
+  background: var(--color-ground-alt);
 }
 
 .page-hero-inner {
@@ -23,7 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,16 +38,16 @@
 .page-hero .page-hero-breadcrumb li {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
 }
 
 .page-hero .page-hero-breadcrumb li:not(:last-child)::after {
-  content: "/";
+  content: "\203A";
   color: var(--color-hairline);
 }
 
 .page-hero .page-hero-breadcrumb a {
-  color: var(--color-text-soft);
+  color: var(--color-accent-ink);
   text-decoration: none;
   transition: color 140ms ease;
 }
@@ -65,13 +69,12 @@
 }
 
 .page-hero .page-hero-back::before {
-  content: "\2039";
+  content: "\2190";
   font-size: 1.1em;
 }
 
 .page-hero .page-hero-back:hover {
   color: var(--color-accent-hover);
-  text-decoration: underline;
 }
 
 /* Eyebrow */
@@ -86,11 +89,13 @@
 
 /* Heading */
 .page-hero h1 {
-  font-size: var(--heading-xl);
+  font-size: var(--heading-xxl);
   font-weight: 700;
   color: var(--color-fg);
   max-width: 28ch;
-  margin: 0;
+  margin: var(--spacing-md) 0 0;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
 }
 
 /* Lead text */
@@ -107,7 +112,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -119,15 +124,15 @@
 
 .page-hero .page-hero-siblings a {
   display: inline-block;
-  padding: 6px 16px;
+  padding: var(--spacing-md) var(--spacing-lg);
   font-size: var(--body-sm);
   font-weight: 500;
   text-decoration: none;
   color: var(--color-fg);
   white-space: nowrap;
   background: transparent;
-  border: 1px solid rgb(0 0 0 / 15%);
-  border-radius: 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
   transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
 }
 
@@ -137,10 +142,10 @@
 }
 
 .page-hero .page-hero-siblings a[aria-current="page"] {
-  background: var(--color-accent-ink);
-  color: #fff;
-  border-color: var(--color-accent-ink);
-  font-weight: 500;
+  background: transparent;
+  color: var(--color-accent-ink);
+  border-bottom-color: var(--color-accent-ink);
+  font-weight: 700;
 }
 
 /* Category pills variant (events page) */
@@ -154,6 +159,10 @@
   border-color: var(--color-accent-ink);
   color: var(--color-accent-ink);
   background: var(--color-accent-tint);
+}
+
+.page-hero .page-hero-siblings.category-pills a[aria-current="page"] {
+  font-weight: 700;
 }
 
 /* ── Responsive ── */

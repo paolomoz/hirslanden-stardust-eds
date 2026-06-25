@@ -20,7 +20,12 @@
 .doctor-hero .doctor-portrait {
   position: relative;
   overflow: hidden;
-  max-width: 200px;
+}
+
+@media (width < 600px) {
+  .doctor-hero .doctor-portrait {
+    max-width: 200px;
+  }
 }
 
 .doctor-hero .doctor-portrait img {
@@ -61,6 +66,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
 }
 
 .doctor-hero .doctor-specialty-chip {
@@ -79,6 +85,26 @@
 
 .doctor-hero .doctor-specialty-chip:hover {
   background: rgb(0 148 212 / 18%);
+}
+
+.doctor-hero .clinic-affiliation-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background: var(--color-ground-warm);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-fg);
+  text-decoration: none;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.doctor-hero .clinic-affiliation-tag:hover {
+  border-color: var(--color-accent-ink);
+  color: var(--color-accent-ink);
 }
 
 .doctor-hero .doctor-meta-dl {
@@ -156,7 +182,7 @@
 
 @media (width >= 900px) {
   .doctor-hero-grid {
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 220px 1fr;
     gap: var(--spacing-lg);
   }
 

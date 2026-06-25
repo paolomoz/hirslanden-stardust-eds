@@ -57,7 +57,7 @@
 
 .specialty-hero-panel h1 {
   font-weight: 700;
-  font-size: clamp(1.953rem, 4vw, 2.441rem);
+  font-size: var(--heading-xxl);
   letter-spacing: -0.01em;
   color: var(--color-fg, #534c46);
   margin: 0 0 16px;

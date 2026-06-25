@@ -41,8 +41,10 @@
   color: var(--color-accent-ink);
   padding: 12px 28px;
   text-decoration: none;
+  font-family: var(--heading-font-family);
   font-weight: 500;
   font-size: var(--body-sm);
+  letter-spacing: 0.02em;
   transition: background-color 160ms ease;
 }
 

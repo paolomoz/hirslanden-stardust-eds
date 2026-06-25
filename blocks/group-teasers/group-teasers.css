@@ -1,5 +1,6 @@
 .group-teasers {
   background: var(--color-ground-warm, #f7f6f5);
+  padding-block: var(--section-padding);
 }
 
 .group-teasers-grid {

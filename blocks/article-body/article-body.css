@@ -22,9 +22,9 @@
 
 /* ── Lead paragraph ── */
 .article-body .article-lead {
-  font-size: var(--body);
+  font-size: var(--heading-md);
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.55;
   color: var(--color-fg);
   margin-bottom: var(--spacing-xl);
   border-top: 3px solid var(--color-accent);
@@ -233,7 +233,6 @@
   }
 
   .article-body .article-lead {
-    font-size: var(--heading-md);
     max-width: 68ch;
   }
 }

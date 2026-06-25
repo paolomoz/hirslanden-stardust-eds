@@ -47,12 +47,12 @@
   --body-font-family: "Metropolis", "Arial", arial, sans-serif;
 
   /* Modular type scale 1.25 ratio */
-  --heading-xxl: clamp(2.441rem, 4vw, 2.75rem);
+  --heading-xxl: clamp(2.25rem, 4vw, 2.75rem);
   --heading-xl: 1.953rem;
   --heading-lg: 1.563rem;
   --heading-md: 1.25rem;
   --body: 1rem;
-  --body-sm: 0.8rem;
+  --body-sm: 0.8125rem;
   --line-height-heading: 1.2;
   --line-height-body: 1.6;
 
@@ -95,7 +95,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, arial, sans-serif;
+  font-family: var(--body-font-family);
   font-size: var(--body);
   line-height: var(--line-height-body);
   color: var(--color-fg);
@@ -104,8 +104,6 @@ body {
   text-rendering: optimizelegibility;
 }
 
-/* Apply brand font after session activation */
-body.session { font-family: var(--body-font-family); }
 
 img {
   display: block;
@@ -148,7 +146,8 @@ main .section {
   display: block;
   max-width: var(--max-width);
   margin-inline: auto;
-  padding-inline: var(--spacing-xl);
+  padding-block: var(--section-padding);
+  padding-inline: var(--spacing-lg);
 }
 
 main .section > .default-content-wrapper,
@@ -178,7 +177,7 @@ main > div, .has-template, div[data-status] { display: none; }
 .section-head h2 { font-size: var(--heading-xl); }
 
 /* ── Global button system ─────────────────────────────────────────────── */
-a.btn {
+.btn {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -192,25 +191,26 @@ a.btn {
   transition: background-color 160ms ease, color 160ms ease;
 }
 
-a.btn-primary {
+.btn--primary {
   background: var(--color-accent-ink);
   color: #fff;
   border-radius: var(--radius);
   padding: 12px 28px;
 }
 
-a.btn-primary:hover { background: var(--color-accent-hover); }
+.btn--primary:hover { background: var(--color-accent-hover); }
 
-a.btn-onblue {
+.btn--onblue {
   background: #fff;
   color: var(--color-accent-ink);
   border-radius: var(--radius);
   padding: 12px 28px;
+  border: 1px solid var(--color-accent-ink);
 }
 
-a.btn-onblue:hover { background: var(--color-ground-warm); }
+.btn--onblue:hover { background: var(--color-ground-warm); }
 
-a.readmore {
+.readmore {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -220,13 +220,13 @@ a.readmore {
   text-decoration: none;
 }
 
-a.readmore::after {
+.readmore::after {
   content: "\203A";
   font-size: 1.1em;
   line-height: 1;
 }
 
-a.readmore:hover { text-decoration: underline; }
+.readmore:hover { text-decoration: underline; }
 
 .chip {
   display: inline-flex;

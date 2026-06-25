@@ -278,11 +278,13 @@
 
 .disease-body .filter-select {
   font-size: var(--body-sm);
+  font-family: var(--body-font-family);
   color: var(--color-fg);
   background: var(--color-bg);
   border: 1px solid var(--color-hairline);
   padding: 8px 12px;
   cursor: pointer;
+  transition: border-color 140ms ease;
 }
 
 .disease-body .filter-select:hover,
@@ -315,6 +317,9 @@
 .disease-body .center-card .center-location {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
 }
 
 .disease-body .center-card .center-phone {
@@ -403,6 +408,9 @@
   font-weight: 500;
   color: var(--color-accent-ink);
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .disease-body .dl-meta { font-size: var(--body-sm); color: var(--color-text-soft); }
 

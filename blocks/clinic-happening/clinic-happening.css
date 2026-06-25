@@ -64,7 +64,7 @@
 .date-chip .mon {
   display: block;
   font-size: var(--body-sm);
-  color: rgb(255 255 255 / 70%);
+  color: rgb(255 255 255 / 75%);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -81,7 +81,7 @@
 }
 
 .event-title {
-  font-size: var(--body);
+  font-size: var(--heading-md);
   font-weight: 500;
   color: #fff;
 }
@@ -110,8 +110,6 @@
 }
 
 .news-tag {
-  background: rgb(255 255 255 / 15%);
-  padding: 2px 8px;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -119,7 +117,7 @@
 }
 
 .news-title {
-  font-size: var(--body);
+  font-size: var(--heading-md);
   font-weight: 500;
   color: #fff;
 }
@@ -134,11 +132,11 @@
   color: #fff;
   font-size: var(--body-sm);
   font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  opacity: 0.9;
 }
 
-.col-more a:hover { opacity: 0.8; }
+.col-more a:hover { opacity: 1; text-decoration: none; }
 
 @media (width <= 900px) {
   .clinic-happening-grid {

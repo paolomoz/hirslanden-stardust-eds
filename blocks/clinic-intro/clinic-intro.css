@@ -1,5 +1,5 @@
 .clinic-intro {
-  background: var(--color-bg);
+  background: var(--color-ground-warm);
   padding-block: var(--section-padding);
 }
 
@@ -50,9 +50,9 @@
 }
 
 .contact-emergency a {
-  color: var(--color-emergency);
+  color: var(--color-accent-ink);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .contact-line a {
@@ -79,7 +79,7 @@
 .contact-emergency svg {
   flex: none;
   margin-top: 2px;
-  color: var(--color-emergency);
+  color: var(--color-accent-ink);
 }
 
 .contact-card .btn { margin-top: var(--spacing-lg); }

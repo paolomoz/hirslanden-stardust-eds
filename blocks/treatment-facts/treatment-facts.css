@@ -23,7 +23,7 @@
 }
 
 .treatment-facts .fc-label {
-  font-size: 0.7rem;
+  font-size: var(--body-sm);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 500;

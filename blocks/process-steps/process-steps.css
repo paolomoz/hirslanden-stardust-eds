@@ -1,5 +1,6 @@
 .process-steps {
   background: #fff;
+  padding-block: var(--section-padding);
 }
 
 .process-steps-grid {

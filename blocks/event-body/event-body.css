@@ -121,6 +121,9 @@
 }
 
 .event-body .transport-item h4 {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
   font-size: var(--body);
   font-weight: 700;
   margin-bottom: var(--spacing-sm);

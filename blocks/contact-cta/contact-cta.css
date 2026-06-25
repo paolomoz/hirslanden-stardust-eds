@@ -1,5 +1,5 @@
 .contact-cta {
-  background: var(--color-accent-ink);
+  background: var(--color-accent);
   padding-block: var(--section-padding);
   color: #fff;
   width: 100vw;
@@ -11,19 +11,20 @@
   align-items: center;
   gap: var(--spacing-2xl);
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact-cta-copy { flex: 1 1 320px; }
 
 .contact-cta-copy h2 {
-  font-size: var(--heading-xl);
+  font-size: var(--heading-lg);
   font-weight: 700;
   color: #fff;
   margin-bottom: var(--spacing-sm);
 }
 
 .contact-cta-copy p {
-  color: rgb(255 255 255 / 80%);
+  color: rgb(255 255 255 / 82%);
   max-width: 52ch;
 }
 

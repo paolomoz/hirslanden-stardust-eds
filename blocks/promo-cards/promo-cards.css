@@ -3,6 +3,7 @@
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
+  padding-block: var(--section-padding);
 }
 
 .promo-cards-grid {

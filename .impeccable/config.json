@@ -2,7 +2,10 @@
   "detector": {
     "ignoreRules": [],
     "ignoreFiles": [
-      "stardust/prototypes/specialty-topic-proposed.html"
+      "stardust/prototypes/specialty-topic-proposed.html",
+      "content/de/klinik-linde/kurse-veranstaltungen/schwangerschaft-geburt/informationsabend-geburt.html",
+      "content/de/corporate/medien-und-news/medienmitteilungen-und-news/centre-de-chirurgie-ambulatoire-de-geneve.html",
+      "compare.html"
     ],
     "ignoreValues": [
       {

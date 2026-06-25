@@ -137,7 +137,7 @@
   display: inline-flex;
   flex-direction: column;
   gap: 2px;
-  background: var(--color-bg);
+  background: var(--color-ground-warm);
   border: 1px solid var(--color-hairline);
   border-radius: var(--radius-pill);
   padding: var(--spacing-sm) var(--spacing-lg);
@@ -277,6 +277,8 @@
   font-size: var(--body-sm);
   color: var(--color-fg);
   text-decoration: none;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease;
 }
 
 .treatment-body .td-city-chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
@@ -304,6 +306,7 @@
   font-size: var(--heading-md);
   font-weight: 700;
   color: #fff;
+  text-wrap: balance;
 }
 
 .treatment-body .td-sidebar-cta p {

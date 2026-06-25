@@ -1,4 +1,7 @@
 /* ── clinic-list block ───────────────────────────────────────────── */
+.clinic-list {
+  padding-block: var(--spacing-md) var(--section-padding);
+}
 
 /* Filter bar */
 .clinic-list .clinic-list-filter {
@@ -38,6 +41,7 @@
   width: 100%;
   transition: border-color 140ms ease;
   appearance: none;
+  border-radius: var(--radius);
 }
 
 .clinic-list .clinic-list-filter-group input::placeholder {

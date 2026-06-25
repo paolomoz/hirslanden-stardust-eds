@@ -198,6 +198,7 @@
   color: var(--color-fg);
   margin: 0 0 var(--spacing-xs);
   line-height: 1.4;
+  text-wrap: balance;
 }
 
 .doctor-body .pub-content h4 a {
@@ -207,6 +208,13 @@
 
 .doctor-body .pub-content h4 a:hover {
   text-decoration: underline;
+}
+
+.doctor-body .pub-badge {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  letter-spacing: 0.04em;
 }
 
 .doctor-body .pub-meta {
@@ -236,6 +244,19 @@
 }
 
 .doctor-body .contact-clinic-link:hover {
+  text-decoration: underline;
+}
+
+.doctor-body .contact-clinic-name {
+  font-size: var(--body-sm);
+  color: var(--color-accent-ink);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.doctor-body .contact-clinic-name:hover {
   text-decoration: underline;
 }
 

@@ -6,6 +6,7 @@
 .whats-happening {
   width: 100vw;
   margin-inline: calc(50% - 50vw);
+  padding-block: var(--section-padding);
 }
 
 .whats-happening .container {
@@ -23,7 +24,7 @@
 
 .whats-happening-col h2 {
   font-size: 1.563rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 24px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--color-hairline, #e2dfdb);
@@ -61,7 +62,6 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 500;
-  color: var(--color-accent-ink, #0070a0);
 }
 
 .news-row h3 {
@@ -102,7 +102,7 @@
 .date-chip .day {
   display: block;
   font-weight: 700;
-  font-size: 1.563rem;
+  font-size: var(--heading-md);
   line-height: 1;
   color: var(--color-fg, #534c46);
   font-variant-numeric: tabular-nums;

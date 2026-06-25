@@ -1,11 +1,11 @@
 /* ── Related Cards block ── */
 .related-cards {
   padding-block: var(--section-padding);
-  background: var(--color-ground-warm);
+  background: var(--color-ground-alt);
 }
 
-.related-cards.related-cards--alt {
-  background: var(--color-ground-alt);
+.related-cards.related-cards--warm {
+  background: var(--color-ground-warm);
 }
 
 /* Section head (re-absorbed from default content) */
@@ -60,7 +60,7 @@
 }
 
 .related-cards .related-card--article .related-card-media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 2;
 }
 
 .related-cards .related-card--doctor .related-card-media {
@@ -222,6 +222,12 @@
   padding-top: var(--spacing-sm);
 }
 
+/* ── Link card title override (compact list style) ── */
+.related-cards .related-card--link h3,
+.related-cards .related-card--link .related-card-title {
+  font-size: var(--body);
+}
+
 /* ── Simple link card (disease/treatment pages) ── */
 .related-cards .related-card--link {
   flex-direction: row;
@@ -249,6 +255,33 @@
   font-size: 1.25rem;
   flex: none;
   margin-top: 0;
+}
+
+/* ── CTA strip (news-article prototype) ── */
+.related-cards .related-cards-cta {
+  background: var(--color-accent-ink);
+  padding-block: var(--spacing-2xl);
+  margin-top: var(--spacing-2xl);
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.related-cards .related-cards-cta h2 {
+  color: #fff;
+  font-size: var(--heading-lg);
+  font-weight: 700;
+}
+
+.related-cards .related-cards-cta p {
+  color: rgb(255 255 255 / 82%);
+  font-size: var(--body-sm);
+  max-width: 52ch;
 }
 
 @media (width >= 600px) {

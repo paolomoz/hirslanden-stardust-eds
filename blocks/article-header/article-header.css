@@ -31,7 +31,7 @@
 }
 
 .article-header .breadcrumb li + li::before {
-  content: "/";
+  content: "\203A";
   color: var(--color-hairline);
 }
 
