@@ -1,0 +1,264 @@
+/* ── Related Cards block ── */
+.related-cards {
+  padding-block: var(--section-padding);
+  background: var(--color-ground-warm);
+}
+
+.related-cards.related-cards--alt {
+  background: var(--color-ground-alt);
+}
+
+/* Section head (re-absorbed from default content) */
+.related-cards .section-head {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.related-cards .section-head h2 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+}
+
+.related-cards .section-head p {
+  color: var(--color-text-soft);
+  margin-top: var(--spacing-sm);
+  max-width: 60ch;
+}
+
+/* ── Cards grid ── */
+.related-cards .related-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+/* ── Footer link ── */
+.related-cards-footer {
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+}
+
+/* ── Shared card base ── */
+.related-cards .related-card {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: box-shadow 160ms ease;
+}
+
+.related-cards .related-card:hover {
+  box-shadow: 0 4px 20px rgb(0 0 0 / 13%);
+}
+
+/* ── Article / Doctor card media ── */
+.related-cards .related-card-media {
+  overflow: hidden;
+  background: var(--color-ground-alt);
+}
+
+.related-cards .related-card--article .related-card-media {
+  aspect-ratio: 16 / 10;
+}
+
+.related-cards .related-card--doctor .related-card-media {
+  aspect-ratio: 3 / 4;
+}
+
+.related-cards .related-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.related-cards .related-card:hover .related-card-media img {
+  transform: scale(1.04);
+}
+
+/* ── Card body ── */
+.related-cards .related-card-body {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+}
+
+/* ── Article card meta ── */
+.related-cards .related-card-meta {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.related-cards .related-card-tag {
+  color: var(--color-accent-ink);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Shared card title ── */
+.related-cards .related-card h3,
+.related-cards .related-card-title {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  line-height: 1.3;
+  transition: color 140ms ease;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+.related-cards .related-card:hover h3,
+.related-cards .related-card:hover .related-card-title {
+  color: var(--color-accent-ink);
+}
+
+/* ── Article card excerpt ── */
+.related-cards .related-card--article .related-card-body p {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.related-cards .related-card-more {
+  font-size: var(--body-sm);
+  color: var(--color-accent-ink);
+  font-weight: 500;
+  margin-top: var(--spacing-sm);
+}
+
+/* ── Doctor card specialty ── */
+.related-cards .related-card-specialty {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.related-cards .related-card-clinic {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  margin-top: var(--spacing-xs);
+}
+
+/* ── Event card head ── */
+.related-cards .related-card--event {
+  text-decoration: none;
+  color: inherit;
+}
+
+.related-cards .related-card-head {
+  background: var(--color-accent-tint);
+  padding: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.related-cards .related-date-chip {
+  flex: none;
+  width: 52px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius);
+  padding: var(--spacing-sm) 0;
+}
+
+.related-cards .related-date-chip .day {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--heading-lg);
+  line-height: 1;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.related-cards .related-date-chip .mon {
+  display: block;
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.related-cards .related-card-date-info {
+  min-width: 0;
+}
+
+.related-cards .related-card-cat {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.related-cards .related-card-time {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.related-cards .related-card-loc {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+}
+
+/* ── Simple link card (disease/treatment pages) ── */
+.related-cards .related-card--link {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-top: 3px solid transparent;
+  transition: background-color 160ms ease, border-top-color 160ms ease;
+}
+
+.related-cards .related-card--link:hover {
+  background: var(--color-ground-warm);
+  border-top-color: var(--color-accent);
+}
+
+.related-cards .related-card--link .related-card-body {
+  padding: 0;
+  gap: var(--spacing-xs);
+  min-width: 0;
+}
+
+.related-cards .related-card--link .related-card-more {
+  color: var(--color-accent-ink);
+  font-size: 1.25rem;
+  flex: none;
+  margin-top: 0;
+}
+
+@media (width >= 600px) {
+  .related-cards .related-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .related-cards .related-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

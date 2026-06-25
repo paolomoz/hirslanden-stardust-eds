@@ -1,0 +1,75 @@
+.insurance-info {
+  background: var(--color-ground-alt, #f0efed);
+}
+
+.insurance-info-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.insurance-info-copy h2 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.insurance-info-copy p {
+  color: var(--color-text-soft, #72665b);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.insurance-info-copy .readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent-ink, #0070a0);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.insurance-info-copy .readmore::after {
+  content: "\203A";
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.insurance-info-copy .readmore:hover {
+  text-decoration: underline;
+}
+
+.insurance-classes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.insurance-class-item {
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  padding: 24px;
+  border-top: 3px solid var(--color-accent, #0094d4);
+}
+
+.insurance-class-item h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--color-fg, #534c46);
+}
+
+.insurance-class-item p {
+  font-size: 0.8rem;
+  color: var(--color-text-soft, #72665b);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (width <= 900px) {
+  .insurance-classes {
+    grid-template-columns: 1fr;
+  }
+}

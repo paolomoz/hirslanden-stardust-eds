@@ -1,0 +1,58 @@
+.callout-banner-container .callout-banner-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.callout-banner {
+  background: var(--color-ground-alt, #f0efed);
+  padding-block: 48px;
+  border-top: 1px solid var(--color-hairline, #e2dfdb);
+  border-bottom: 1px solid var(--color-hairline, #e2dfdb);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.callout-banner-text h2 {
+  color: var(--color-fg, #534c46);
+  font-size: 1.563rem;
+  margin-bottom: 8px;
+}
+
+.callout-banner-text p {
+  color: var(--color-text-soft, #72665b);
+  font-size: 0.8rem;
+  max-width: 54ch;
+  margin: 0;
+}
+
+.callout-banner .btn--primary {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent-ink, #0070a0);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 160ms ease;
+}
+
+.callout-banner .btn--primary:hover {
+  background: var(--color-accent-hover, #006894);
+}
+
+@media (width <= 600px) {
+  .callout-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

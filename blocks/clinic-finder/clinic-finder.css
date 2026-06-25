@@ -1,0 +1,140 @@
+.clinic-finder {
+  background: var(--color-ground-alt, #f0efed);
+}
+
+.clinic-finder-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.clinic-finder-map {
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  overflow: hidden;
+}
+
+.clinic-finder-map img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clinic-finder-map-placeholder {
+  aspect-ratio: 16 / 7;
+  max-height: 320px;
+  background: var(--color-ground-alt, #f0efed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-soft, #72665b);
+  font-size: 0.8rem;
+  border: 1px solid rgb(0 0 0 / 6%);
+}
+
+.clinic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.clinic-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 32px;
+}
+
+.clinic-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--color-hairline, #e2dfdb);
+  text-decoration: none;
+  color: var(--color-fg, #534c46);
+  transition: color 140ms ease;
+}
+
+.clinic-list-item:first-child {
+  border-top: 1px solid var(--color-hairline, #e2dfdb);
+}
+
+.clinic-list-item:hover {
+  color: var(--color-accent-ink, #0070a0);
+}
+
+.clinic-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.clinic-chevron {
+  color: var(--color-text-soft, #72665b);
+  flex: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: color 140ms ease;
+}
+
+.clinic-list-item:hover .clinic-chevron {
+  color: var(--color-accent-ink, #0070a0);
+}
+
+.clinic-finder-more {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.clinic-finder-more .btn--primary {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent-ink, #0070a0);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.clinic-finder-more .btn--primary:hover {
+  background: var(--color-accent-hover, #006894);
+}
+
+.clinic-finder-more .readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent-ink, #0070a0);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.clinic-finder-more .readmore::after {
+  content: "\203A";
+  font-size: 1.1em;
+}
+
+.clinic-finder-more .readmore:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 900px) {
+  .clinic-finder-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 600px) {
+  .clinic-list-grid {
+    grid-template-columns: 1fr;
+  }
+}

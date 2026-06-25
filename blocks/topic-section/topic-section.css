@@ -1,0 +1,121 @@
+.topic-section-head {
+  margin-bottom: 32px;
+}
+
+.topic-section-head .eyebrow {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-soft, #72665b);
+  margin: 0 0 8px;
+}
+
+.topic-section-head h2 {
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+
+.topic-section-head p {
+  font-size: 1rem;
+  color: var(--color-text-soft, #72665b);
+  max-width: 68ch;
+  margin-top: 16px;
+}
+
+.accordion {
+  border-top: 1px solid var(--color-hairline, #e2dfdb);
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-hairline, #e2dfdb);
+}
+
+.accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  padding: 24px 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-fg, #534c46);
+  transition: color 140ms ease;
+}
+
+.accordion-trigger:hover {
+  color: var(--color-accent-ink, #0070a0);
+}
+
+.accordion-trigger[aria-expanded="true"] {
+  color: var(--color-accent-ink, #0070a0);
+}
+
+.accordion-icon {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-hairline, #e2dfdb);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-ink, #0070a0);
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: transform 200ms ease;
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-panel {
+  display: none;
+  padding-bottom: 32px;
+}
+
+.accordion-panel.is-open {
+  display: block;
+}
+
+.accordion-panel p {
+  font-size: 1rem;
+  color: var(--color-text-soft, #72665b);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 72ch;
+}
+
+.accordion-panel h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-fg, #534c46);
+  margin: 24px 0 8px;
+}
+
+.accordion-panel h3:first-child {
+  margin-top: 0;
+}
+
+.accordion-panel a.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent-ink, #0070a0);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: background-color 160ms ease;
+}
+
+.accordion-panel a.btn--primary:hover {
+  background: var(--color-accent-hover, #006894);
+}

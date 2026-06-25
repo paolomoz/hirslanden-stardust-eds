@@ -1,0 +1,71 @@
+.treatment-specialists {
+  background: var(--color-bg);
+  padding-block: var(--section-padding);
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.treatment-specialists .section-head h2 { font-size: var(--heading-xl); }
+
+.treatment-specialists .section-head p {
+  color: var(--color-text-soft);
+  margin-top: var(--spacing-sm);
+}
+
+.treatment-specialists .td-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.treatment-specialists .td-spec-card {
+  background: var(--color-ground-warm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-top: 3px solid var(--color-accent);
+  box-shadow: var(--shadow-card);
+}
+
+.treatment-specialists .td-spec-card-media { flex-shrink: 0; }
+
+.treatment-specialists .td-spec-card-body {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.treatment-specialists .td-spec-card-spec {
+  font-size: var(--body-sm);
+  color: var(--color-accent-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.treatment-specialists .td-spec-card h3 {
+  font-size: var(--heading-md);
+  font-weight: 500;
+}
+
+.treatment-specialists .td-spec-card-loc {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+}
+
+.treatment-specialists .readmore { margin-top: auto; padding-top: var(--spacing-sm); }
+
+.treatment-specialists .specialists-cta {
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+}
+
+@media (width <= 900px) {
+  .treatment-specialists .td-spec-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (width <= 640px) {
+  .treatment-specialists .td-spec-grid { grid-template-columns: 1fr; max-width: 420px; }
+}

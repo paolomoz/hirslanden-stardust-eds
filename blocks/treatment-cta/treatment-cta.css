@@ -1,0 +1,51 @@
+.treatment-cta {
+  background: var(--color-accent-ink);
+  padding-block: var(--spacing-2xl);
+}
+
+.treatment-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.treatment-cta .td-cta-copy h2 {
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: var(--spacing-sm);
+}
+
+.treatment-cta .td-cta-copy p {
+  color: rgb(255 255 255 / 82%);
+  font-size: var(--body);
+  max-width: 52ch;
+  margin: 0;
+}
+
+.treatment-cta .td-cta-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.treatment-cta .td-cta-actions a {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: var(--color-accent-ink);
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--body-sm);
+  transition: background-color 160ms ease;
+}
+
+.treatment-cta .td-cta-actions a:hover { background: var(--color-ground-warm); }
+
+@media (width <= 640px) {
+  .treatment-cta .container { flex-direction: column; }
+}

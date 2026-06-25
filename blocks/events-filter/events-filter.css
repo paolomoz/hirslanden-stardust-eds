@@ -1,0 +1,114 @@
+/* ── events-filter block ─────────────────────────────────────────── */
+.events-filter {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-block: var(--spacing-lg);
+  position: sticky;
+  top: 80px;
+  z-index: 50;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+}
+
+.events-filter .events-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  align-items: flex-end;
+}
+
+.events-filter .events-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.events-filter .events-filter-field label {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-text-soft);
+  letter-spacing: 0.02em;
+}
+
+.events-filter .events-filter-field input[type="text"],
+.events-filter .events-filter-field select {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-hairline);
+  padding: 10px 14px;
+  min-width: 160px;
+  transition: border-color 140ms ease;
+  appearance: none;
+}
+
+.events-filter .events-filter-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2372665b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+  cursor: pointer;
+}
+
+.events-filter .events-filter-field input[type="text"]:focus,
+.events-filter .events-filter-field select:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.events-filter .events-filter-field input[type="text"]::placeholder {
+  color: var(--color-text-soft);
+}
+
+.events-filter .events-filter-submit {
+  align-self: flex-end;
+}
+
+/* Active filter chips */
+.events-filter .events-filter-active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  min-height: 0;
+}
+
+.events-filter .events-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-accent-ink);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  background: var(--color-accent-tint);
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+.events-filter .events-filter-chip:hover {
+  background: rgb(0 148 212 / 18%);
+}
+
+.events-filter .events-filter-chip-remove {
+  font-size: 0.9em;
+  line-height: 1;
+  margin-left: 2px;
+  color: var(--color-accent-ink);
+}
+
+/* ── Responsive ── */
+@media (width <= 599px) {
+  .events-filter .events-filter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .events-filter .events-filter-field input[type="text"],
+  .events-filter .events-filter-field select {
+    min-width: 0;
+    width: 100%;
+  }
+}

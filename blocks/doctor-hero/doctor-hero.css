@@ -1,0 +1,168 @@
+/* ── Doctor Hero block ── */
+.doctor-hero {
+  background: var(--color-bg);
+  padding-block: var(--spacing-2xl);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.doctor-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+.doctor-hero .doctor-portrait {
+  position: relative;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.doctor-hero .doctor-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.doctor-hero .doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+}
+
+.doctor-hero .doctor-title-label {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 var(--spacing-xs);
+}
+
+.doctor-hero h1 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.doctor-hero .doctor-specialty-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.doctor-hero .doctor-specialty-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent-tint);
+  color: var(--color-accent-ink);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgb(0 148 212 / 20%);
+  transition: background-color 160ms ease;
+}
+
+.doctor-hero .doctor-specialty-chip:hover {
+  background: rgb(0 148 212 / 18%);
+}
+
+.doctor-hero .doctor-meta-dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.doctor-hero .doctor-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.doctor-hero .doctor-meta-dt {
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-text-soft);
+}
+
+.doctor-hero .doctor-meta-dd {
+  font-size: var(--body-sm);
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.doctor-hero .doctor-meta-dd a {
+  color: var(--color-accent-ink);
+  text-decoration: none;
+}
+
+.doctor-hero .doctor-meta-dd a:hover {
+  text-decoration: underline;
+}
+
+.doctor-hero .doctor-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-hairline);
+}
+
+.doctor-hero .doctor-cta-row .btn,
+.doctor-hero .doctor-cta-row .chip {
+  justify-content: center;
+}
+
+@media (width >= 600px) {
+  .doctor-hero .doctor-meta-row {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--spacing-md);
+  }
+
+  .doctor-hero .doctor-meta-dt {
+    min-width: 120px;
+    flex: none;
+  }
+
+  .doctor-hero .doctor-cta-row {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .doctor-hero .doctor-cta-row .btn,
+  .doctor-hero .doctor-cta-row .chip {
+    justify-content: flex-start;
+  }
+}
+
+@media (width >= 900px) {
+  .doctor-hero-grid {
+    grid-template-columns: 180px 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .doctor-hero .doctor-portrait {
+    max-width: none;
+  }
+}
+
+@media (width >= 1200px) {
+  .doctor-hero-grid {
+    grid-template-columns: 280px 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
