@@ -130,3 +130,52 @@ Title renders as `<h2>` by default.
 Notes: the back-link is optional. The authored heading level is normalised to `<h2>`
 (both `h1` and `h2` are styled identically by the block CSS). If no heading element is
 present, the first plain text line becomes the title.
+
+## v2 clean rebuild — deploy summary (deploy-v2 branch, /v2 content)
+
+Clean-room re-deploy of all 13 page templates from `stardust/prototypes/*-proposed.html`,
+independent of the main-branch attempt. Branch `deploy-v2`, content under `/v2/...`.
+
+### Foundation decisions
+- **Section model fixed**: `main .section` is a BARE full-width container (`display:block`
+  only). Each block owns its background, `padding-block`, and an inner `.container`
+  (--max-width). This mirrors the prototype (full-bleed section bg + centred container)
+  and was the key fix — the inherited foundation had `max-width`+`padding` on `.section`,
+  which clamped every coloured band/hero to 1200px and doubled vertical padding.
+- Restored `body.session` CLS font-gating (Arial metric-matched → Metropolis).
+- Buttons: lifted the prototype's `.btn`/`.btn--primary`/`.btn--onblue` system into the
+  global foundation (#25 multi-variant); blocks author plain `<a>` and apply the class.
+
+### Blocks (59 + fragment/section-metadata)
+- 5 shared: contact-cta, key-facts, quicklinks, lead-text, page-header.
+- One block per prototype section, CSS lifted verbatim & scoped. topic-section is one
+  block + variants for the 5 specialty content bands. procedure-steps was folded into
+  treatment-body (deleted) once the missing `<div data-section="treatment-body">`
+  two-column wrapper was discovered (the original audit only matched `<section>`).
+
+### Known fidelity gaps repaired this run
+- treatment-body 2-col (Indikation/steps/Genesung/Risiken + Behandlungszentren/Termin
+  sidebar) was dropped → rebuilt.
+- disease-body over-simplified (1-col bullets, no sidebar) → rebuilt to 2-col with icon
+  grids, numbered steps, treatment cards, and the Pflege/video/infographic/Publikationen
+  sidebar.
+- doctor "Publikationen & Videos" box re-added.
+
+### Images
+- Absolute scene7/hirslanden URLs authored directly (ingested by preview).
+- Local prototype assets (hero-onkologie, pflege-hingabe, nr-dsc07282) uploaded to DA
+  `/media/v2/` and referenced as `content.da.live` URLs. 403/invented URLs swapped.
+- Final: all 13 pages deliver `0 about:error`.
+
+### Deploy
+- `git push deploy-v2` → forced Code Sync (`POST admin.hlx.page/code/.../*`).
+- Per page: sanitise → `PUT admin.da.live/source/...` (201) → `POST .../preview/...` (200).
+- Verified each `.plain.html`: 0 broken images, exactly one `<h1>`, SEO title from the h1.
+- Home serves at `/v2/` (folder index). Branch preview:
+  https://deploy-v2--hirslanden-stardust-eds--paolomoz.aem.page/v2/
+
+### Remaining notes
+- A few card/teaser tiles with local-only prototype assets render neutral gray
+  placeholders (author drops images later).
+- clinic-grid canton/city selects dropped (cards carry no filterable canton/city data);
+  keyword filter retained. events-filter has working client-side filtering.
