@@ -1,27 +1,31 @@
+/* treatment-body — two-column treatment-detail body (main + sticky sidebar).
+   CSS lifted verbatim from the treatment-detail prototype (.td-body, .td-main,
+   .td-sidebar, .td-steps*, .td-step*, .td-indication*, .td-recovery*,
+   .td-risks*, .td-fact-chip*, .td-centres-panel*, .td-city-chip*,
+   .td-sidebar-cta*), scoped under .treatment-body. Tokens, .container, .chip,
+   .eyebrow, .readmore and the .btn system come from styles/styles.css. */
+
 .treatment-body {
   background: var(--color-ground-warm);
   padding-block: var(--section-padding);
 }
 
-.treatment-body .td-layout {
+.treatment-body .container {
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: var(--spacing-2xl);
   align-items: start;
 }
 
-.treatment-body .td-main { min-width: 0; }
-.treatment-body .td-sidebar { min-width: 0; }
-
-.treatment-body .td-sidebar-sticky {
-  position: sticky;
-  top: calc(70px + var(--spacing-lg));
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
+.treatment-body .td-main {
+  min-width: 0;
 }
 
-/* Indication panel */
+.treatment-body .td-sidebar {
+  min-width: 0;
+}
+
+/* ── Indication ── */
 .treatment-body .td-indication {
   background: var(--color-bg);
   border-top: 3px solid var(--color-accent);
@@ -30,7 +34,9 @@
   margin-bottom: var(--spacing-2xl);
 }
 
-.treatment-body .td-indication .eyebrow { color: var(--color-accent-ink); }
+.treatment-body .td-indication .eyebrow {
+  color: var(--color-accent-ink);
+}
 
 .treatment-body .td-indication h2 {
   font-size: var(--heading-lg);
@@ -44,6 +50,10 @@
   margin-bottom: var(--spacing-md);
 }
 
+.treatment-body .td-indication p:last-child {
+  margin-bottom: 0;
+}
+
 .treatment-body .td-indication-types {
   display: flex;
   flex-wrap: wrap;
@@ -51,12 +61,23 @@
   margin-top: var(--spacing-lg);
 }
 
-/* Steps */
-.treatment-body .td-steps { margin-bottom: var(--spacing-2xl); }
+.treatment-body .td-indication-types .chip {
+  background: var(--color-bg);
+  border-color: var(--color-hairline);
+}
 
-.treatment-body .td-steps-head { margin-bottom: var(--spacing-xl); }
+/* ── Steps ── */
+.treatment-body .td-steps {
+  margin-bottom: var(--spacing-2xl);
+}
 
-.treatment-body .td-steps-head .eyebrow { color: var(--color-accent-ink); }
+.treatment-body .td-steps-head {
+  margin-bottom: var(--spacing-xl);
+}
+
+.treatment-body .td-steps-head .eyebrow {
+  color: var(--color-accent-ink);
+}
 
 .treatment-body .td-steps-head h2 {
   font-size: var(--heading-lg);
@@ -94,22 +115,27 @@
   font-weight: 700;
   font-size: var(--heading-md);
   color: var(--color-accent-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.treatment-body .td-step-body {
+  min-width: 0;
 }
 
 .treatment-body .td-step-body h3 {
   font-size: var(--heading-md);
   font-weight: 500;
   margin-bottom: var(--spacing-xs);
+  color: var(--color-fg);
 }
 
 .treatment-body .td-step-body p {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
   line-height: var(--line-height-body);
-  margin: 0;
 }
 
-/* Recovery */
+/* ── Recovery ── */
 .treatment-body .td-recovery {
   background: var(--color-ground-alt);
   padding: var(--spacing-xl);
@@ -118,7 +144,9 @@
   box-shadow: var(--shadow-card);
 }
 
-.treatment-body .td-recovery .eyebrow { color: var(--color-accent-ink); }
+.treatment-body .td-recovery .eyebrow {
+  color: var(--color-accent-ink);
+}
 
 .treatment-body .td-recovery h2 {
   font-size: var(--heading-lg);
@@ -133,6 +161,16 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.treatment-body .td-recovery p {
+  color: var(--color-text-soft);
+  line-height: var(--line-height-body);
+  margin-bottom: var(--spacing-md);
+}
+
+.treatment-body .td-recovery p:last-child {
+  margin-bottom: 0;
+}
+
 .treatment-body .td-fact-chip {
   display: inline-flex;
   flex-direction: column;
@@ -144,7 +182,7 @@
   min-width: 140px;
 }
 
-.treatment-body .fc-label {
+.treatment-body .td-fact-chip .fc-label {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -152,19 +190,13 @@
   color: var(--color-text-soft);
 }
 
-.treatment-body .fc-value {
+.treatment-body .td-fact-chip .fc-value {
   font-size: var(--body-sm);
   font-weight: 500;
   color: var(--color-fg);
 }
 
-.treatment-body .td-recovery p {
-  color: var(--color-text-soft);
-  line-height: var(--line-height-body);
-  margin-bottom: var(--spacing-md);
-}
-
-/* Risks */
+/* ── Risks ── */
 .treatment-body .td-risks {
   background: var(--color-bg);
   box-shadow: var(--shadow-card);
@@ -192,59 +224,16 @@
   line-height: var(--line-height-body);
 }
 
-/* Sidebar: doctor card */
-.treatment-body .td-doctor-card {
-  background: var(--color-bg);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
-  border-top: 3px solid var(--color-accent);
-}
-
-.treatment-body .td-doctor-card-img { aspect-ratio: 1/1; overflow: hidden; }
-.treatment-body .td-doctor-card-img img { width: 100%; height: 100%; object-fit: cover; }
-
-.treatment-body .td-doctor-card-body {
-  padding: var(--spacing-lg);
+/* ── Sidebar ── */
+.treatment-body .td-sidebar-sticky {
+  position: sticky;
+  top: calc(70px + var(--spacing-lg));
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-lg);
 }
 
-.treatment-body .td-doctor-card-role {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 500;
-}
-
-.treatment-body .td-doctor-card-name {
-  font-size: var(--heading-md);
-  font-weight: 500;
-  color: var(--color-accent-ink);
-  text-decoration: none;
-  display: block;
-}
-
-.treatment-body .td-doctor-card-name:hover { text-decoration: underline; }
-
-.treatment-body .td-doctor-card-spec {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-}
-
-.treatment-body .td-reviewed-badge {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  background: var(--color-ground-alt);
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-  border-top: 1px solid var(--color-hairline);
-}
-
-/* Sidebar: centres panel */
+/* Centres filter panel */
 .treatment-body .td-centres-panel {
   background: var(--color-bg);
   box-shadow: var(--shadow-card);
@@ -276,22 +265,28 @@
   padding: 5px 12px;
   font-size: var(--body-sm);
   color: var(--color-fg);
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
   transition: border-color 160ms ease, color 160ms ease;
 }
 
-.treatment-body .td-city-chip:hover { border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+.treatment-body .td-city-chip:hover,
+.treatment-body .td-city-chip[aria-pressed="true"] {
+  border-color: var(--color-accent-ink);
+  color: var(--color-accent-ink);
+}
 
 .treatment-body .td-centres-count {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
-  margin: 0;
+  margin-bottom: var(--spacing-sm);
 }
 
-.treatment-body .td-centres-count strong { color: var(--color-accent-ink); }
+.treatment-body .td-centres-count strong {
+  color: var(--color-accent-ink);
+}
 
-/* Sidebar: appointment CTA */
+/* Sidebar CTA */
 .treatment-body .td-sidebar-cta {
   background: var(--color-accent-ink);
   padding: var(--spacing-xl);
@@ -313,15 +308,37 @@
   font-size: var(--body-sm);
   color: rgb(255 255 255 / 82%);
   max-width: 28ch;
-  margin: 0;
 }
 
-/* Responsive */
+.treatment-body .td-sidebar-cta .btn--onblue {
+  font-size: var(--body-sm);
+}
+
 @media (width <= 1024px) {
-  .treatment-body .td-layout { grid-template-columns: 1fr 300px; }
+  .treatment-body .container {
+    grid-template-columns: 1fr 300px;
+  }
 }
 
 @media (width <= 900px) {
-  .treatment-body .td-layout { grid-template-columns: 1fr; }
-  .treatment-body .td-sidebar-sticky { position: static; }
+  .treatment-body .container {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-body .td-sidebar-sticky {
+    position: static;
+  }
+}
+
+@media (width <= 640px) {
+  .treatment-body .td-fact-chip {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .treatment-body .td-city-chip {
+    transition-duration: 0.01ms;
+  }
 }

@@ -1,0 +1,92 @@
+/* archive-cta — archive quicklink + newsletter band closing the news listing.
+   Lifted from news-listing prototype, scoped under .archive-cta.
+   Tokens, .container and .btn--onblue come from styles/styles.css. */
+
+.archive-cta {
+  background: var(--color-ground-alt);
+  padding-block: var(--section-padding) 0;
+}
+
+.archive-cta .archive-cta-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.archive-cta .archive-quicklink {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  background: var(--color-accent-tint);
+  color: var(--color-fg);
+  text-decoration: none;
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background-color 160ms ease;
+  min-width: 280px;
+}
+
+.archive-cta .archive-quicklink:hover {
+  background: rgb(0 148 212 / 18%);
+}
+
+.archive-cta .archive-quicklink .archive-icon {
+  color: var(--color-accent-ink);
+  flex: none;
+  display: inline-flex;
+}
+
+.archive-cta .archive-quicklink .archive-label {
+  flex: 1;
+}
+
+.archive-cta .archive-quicklink .chevron {
+  color: var(--color-accent-ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  flex: none;
+}
+
+.archive-cta .newsletter-band {
+  background: var(--color-accent);
+  padding-block: var(--spacing-2xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.archive-cta .newsletter-band .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.archive-cta .newsletter-band-copy h2 {
+  color: #fff;
+  font-size: var(--heading-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.archive-cta .newsletter-band-copy p {
+  color: #fff;
+  font-size: var(--body-sm);
+  max-width: 56ch;
+}
+
+@media (width <= 640px) {
+  .archive-cta .archive-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .archive-cta .archive-quicklink {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .archive-cta .newsletter-band .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,58 +1,42 @@
-/* ── Doctor Body block ── */
+/* doctor-body — two-column profile body (section boxes + sidebar).
+   Lifted from doctor-profile prototype (.doctor-body*, .section-box,
+   .contact-card rules), scoped under .doctor-body. Tokens, .container and
+   .btn come from styles/styles.css. */
+
 .doctor-body {
   background: var(--color-ground-warm);
   padding-block: var(--section-padding);
 }
 
-.doctor-body-grid {
+.doctor-body .doctor-body-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 340px;
   gap: var(--spacing-2xl);
   align-items: start;
 }
 
-/* ── Main column ── */
 .doctor-body .doctor-main {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
-  min-width: 0;
 }
 
-/* ── Sidebar column ── */
 .doctor-body .doctor-sidebar {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
-  min-width: 0;
 }
 
-/* Sidebar cards inherit section-box styling via .doctor-sidebar-card */
-.doctor-body .doctor-sidebar-card {
+.doctor-body .section-box,
+.doctor-body .contact-card {
   background: var(--color-bg);
   box-shadow: var(--shadow-card);
   padding: var(--spacing-xl);
   border-top: 3px solid var(--color-accent);
 }
 
-.doctor-body .doctor-sidebar-card h2 {
-  font-size: var(--heading-md);
-  font-weight: 700;
-  color: var(--color-fg);
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-sm);
-  border-bottom: 1px solid var(--color-hairline);
-}
-
-/* ── Section boxes (main column cards) ── */
-.doctor-body .section-box {
-  background: var(--color-bg);
-  box-shadow: var(--shadow-card);
-  padding: var(--spacing-xl);
-  border-top: 3px solid var(--color-accent);
-}
-
-.doctor-body .section-box h2 {
+.doctor-body .section-box h2,
+.doctor-body .contact-card h2 {
   font-size: var(--heading-md);
   font-weight: 700;
   color: var(--color-fg);
@@ -74,93 +58,39 @@
   line-height: var(--line-height-body);
 }
 
-.doctor-body .section-box ul:not(.membership-tags, .pub-list) {
+.doctor-body .section-box p + p,
+.doctor-body .section-box ul {
+  margin-top: var(--spacing-md);
+}
+
+.doctor-body .section-box ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
 }
 
-.doctor-body .section-box ul:not(.membership-tags, .pub-list) li {
+.doctor-body .section-box ul li {
   font-size: var(--body-sm);
   color: var(--color-fg);
   padding-left: var(--spacing-md);
   position: relative;
 }
 
-.doctor-body .section-box ul:not(.membership-tags, .pub-list) li::before {
-  content: "\2013";
+.doctor-body .section-box ul li::before {
+  content: "–";
   position: absolute;
   left: 0;
   color: var(--color-text-soft);
 }
 
-/* ── CV list ── */
-.doctor-body .cv-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  margin: 0;
-  padding: 0;
-}
-
-.doctor-body .cv-row {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-  padding-bottom: var(--spacing-sm);
-  border-bottom: 1px solid var(--color-hairline);
-}
-
-.doctor-body .cv-row:last-child {
-  border-bottom: none;
-}
-
-.doctor-body .cv-year {
-  font-size: var(--body-sm);
-  font-weight: 500;
-  color: var(--color-text-soft);
-  font-variant-numeric: tabular-nums;
-}
-
-.doctor-body .cv-desc {
-  font-size: var(--body-sm);
-  color: var(--color-fg);
-  line-height: var(--line-height-body);
-}
-
-/* ── Membership tags ── */
-.doctor-body .membership-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.doctor-body .membership-tags li {
-  background: var(--color-ground-warm);
-  border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-pill);
-  padding: 4px 14px;
-  font-size: var(--body-sm);
-  color: var(--color-fg);
-}
-
-.doctor-body .membership-tags li::before {
-  display: none;
-}
-
-/* ── Publication list ── */
 .doctor-body .pub-list {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
   list-style: none;
-  margin: 0;
+  margin: var(--spacing-md) 0 0;
   padding: 0;
 }
 
@@ -174,6 +104,11 @@
 
 .doctor-body .pub-item:last-child {
   border-bottom: none;
+  padding-bottom: 0;
+}
+
+.doctor-body .pub-item::before {
+  content: none;
 }
 
 .doctor-body .pub-icon {
@@ -210,13 +145,6 @@
   text-decoration: underline;
 }
 
-.doctor-body .pub-badge {
-  font-size: var(--body-sm);
-  font-weight: 500;
-  color: var(--color-accent-ink);
-  letter-spacing: 0.04em;
-}
-
 .doctor-body .pub-meta {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
@@ -226,173 +154,44 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* ── Sidebar: contact card sub-elements ── */
-.doctor-body .contact-practice-name {
-  font-size: var(--body);
-  font-weight: 700;
-  color: var(--color-fg);
-  margin-bottom: var(--spacing-xs);
-}
-
-.doctor-body .contact-clinic-link {
+.doctor-body .pub-badge {
   font-size: var(--body-sm);
-  color: var(--color-accent-ink);
-  text-decoration: none;
   font-weight: 500;
-  display: block;
-  margin-bottom: var(--spacing-md);
-}
-
-.doctor-body .contact-clinic-link:hover {
-  text-decoration: underline;
-}
-
-.doctor-body .contact-clinic-name {
-  font-size: var(--body-sm);
   color: var(--color-accent-ink);
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.04em;
 }
 
-.doctor-body .contact-clinic-name:hover {
-  text-decoration: underline;
-}
-
-.doctor-body .contact-address {
+.doctor-body .contact-card p {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
   line-height: var(--line-height-body);
-  font-style: normal;
-  margin-bottom: var(--spacing-md);
 }
 
-.doctor-body .contact-address a {
+.doctor-body .contact-card p + p {
+  margin-top: var(--spacing-sm);
+}
+
+.doctor-body .contact-card a {
   color: var(--color-accent-ink);
   text-decoration: none;
 }
 
-.doctor-body .contact-address a:hover {
+.doctor-body .contact-card a:hover {
   text-decoration: underline;
 }
 
-.doctor-body .contact-dl {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  margin: 0 0 var(--spacing-md);
-  padding: var(--spacing-md) 0;
-  border-top: 1px solid var(--color-hairline);
-  border-bottom: 1px solid var(--color-hairline);
-}
-
-.doctor-body .contact-row {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-}
-
-.doctor-body .contact-dt {
-  font-size: var(--body-sm);
-  font-weight: 500;
-  color: var(--color-text-soft);
-}
-
-.doctor-body .contact-dd {
-  font-size: var(--body-sm);
-  color: var(--color-fg);
-  margin: 0;
-}
-
-.doctor-body .contact-dd a {
-  color: var(--color-accent-ink);
-  text-decoration: none;
-}
-
-.doctor-body .contact-dd a:hover {
-  text-decoration: underline;
-}
-
-.doctor-body .contact-hours {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-  line-height: var(--line-height-body);
-  margin-bottom: var(--spacing-md);
-}
-
-.doctor-body .contact-hours strong {
-  display: block;
-  font-weight: 500;
-  color: var(--color-fg);
-  margin-bottom: var(--spacing-xs);
-}
-
-/* ── Sidebar: clinic affiliation card sub-elements ── */
-.doctor-body .clinic-role-badge {
-  display: inline-flex;
-  align-items: center;
-  background: var(--color-accent-tint);
-  color: var(--color-accent-ink);
-  border-radius: var(--radius-pill);
-  padding: 4px 12px;
-  font-size: var(--body-sm);
-  font-weight: 500;
-  width: fit-content;
-  margin-bottom: var(--spacing-xs);
-}
-
-.doctor-body .clinic-name-link {
-  font-size: var(--body);
-  font-weight: 500;
-  color: var(--color-accent-ink);
-  text-decoration: none;
-  display: block;
-}
-
-.doctor-body .clinic-name-link:hover {
-  text-decoration: underline;
-}
-
-.doctor-body .clinic-description {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-  line-height: var(--line-height-body);
-  margin-top: var(--spacing-xs);
-}
-
-@media (width >= 600px) {
-  .doctor-body .cv-row {
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--spacing-lg);
-  }
-
-  .doctor-body .cv-year {
-    min-width: 96px;
-    flex: none;
-  }
-
-  .doctor-body .contact-row {
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--spacing-md);
-  }
-
-  .doctor-body .contact-dt {
-    min-width: 72px;
-    flex: none;
-  }
-}
-
-@media (width >= 900px) {
-  .doctor-body-grid {
+@media (width <= 1024px) {
+  .doctor-body .doctor-body-grid {
     grid-template-columns: 1fr 300px;
   }
 }
 
-@media (width >= 1200px) {
-  .doctor-body-grid {
-    grid-template-columns: 1fr 340px;
+@media (width <= 900px) {
+  .doctor-body .doctor-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-body .doctor-sidebar {
+    order: -1;
   }
 }

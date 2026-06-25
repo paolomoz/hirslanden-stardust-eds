@@ -1,6 +1,12 @@
+/* clinic-intro — two-col intro: lead prose + contact card.
+   Lifted verbatim from clinic-detail prototype (.clinic-intro, .clinic-intro-lead,
+   .contact-card, .contact-line rules + the section--warm background/padding),
+   scoped under .clinic-intro. Tokens, .container, .eyebrow, .readmore and
+   .btn--primary come from styles/styles.css. */
+
 .clinic-intro {
-  background: var(--color-ground-warm);
   padding-block: var(--section-padding);
+  background: var(--color-ground-warm);
 }
 
 .clinic-intro .container {
@@ -10,7 +16,7 @@
   align-items: start;
 }
 
-.clinic-intro-lead p {
+.clinic-intro .clinic-intro-lead p {
   font-size: var(--heading-md);
   font-weight: 400;
   line-height: 1.5;
@@ -18,22 +24,37 @@
   max-width: 52ch;
 }
 
-.clinic-intro-lead p + p { margin-top: var(--spacing-md); }
+.clinic-intro .clinic-intro-lead p.eyebrow {
+  font-size: var(--body-sm);
+  font-weight: 500;
+}
 
-.contact-card {
+.clinic-intro .clinic-intro-lead p + p {
+  margin-top: var(--spacing-lg);
+}
+
+.clinic-intro .clinic-intro-lead p.eyebrow + p {
+  margin-top: var(--spacing-md);
+}
+
+.clinic-intro .clinic-intro-lead .readmore {
+  margin-top: var(--spacing-lg);
+}
+
+.clinic-intro .contact-card {
   background: var(--color-bg);
   border-top: 3px solid var(--color-accent);
   box-shadow: var(--shadow-card);
   padding: var(--spacing-xl);
 }
 
-.contact-card h3 {
+.clinic-intro .contact-card h3 {
   font-size: var(--heading-md);
   font-weight: 700;
   margin-bottom: var(--spacing-md);
 }
 
-.contact-line {
+.clinic-intro .contact-line {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-sm);
@@ -43,47 +64,27 @@
   line-height: 1.4;
 }
 
-.contact-line svg {
+.clinic-intro .contact-line svg {
   flex: none;
   margin-top: 2px;
   color: var(--color-accent-ink);
 }
 
-.contact-emergency a {
-  color: var(--color-accent-ink);
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.contact-line a {
+.clinic-intro .contact-line a {
   color: var(--color-accent-ink);
   text-decoration: none;
 }
 
-.contact-line a:hover { text-decoration: underline; }
-
-.contact-emergency a:hover { text-decoration: underline; }
-
-.contact-emergency {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-sm);
-  font-size: var(--body-sm);
-  color: var(--color-fg);
-  margin-top: var(--spacing-md);
-  padding-top: var(--spacing-md);
-  border-top: 1px solid var(--color-hairline);
-  line-height: 1.4;
+.clinic-intro .contact-line a:hover {
+  text-decoration: underline;
 }
 
-.contact-emergency svg {
-  flex: none;
-  margin-top: 2px;
-  color: var(--color-accent-ink);
+.clinic-intro .contact-card .btn {
+  margin-top: var(--spacing-lg);
 }
 
-.contact-card .btn { margin-top: var(--spacing-lg); }
-
-@media (width <= 900px) {
-  .clinic-intro .container { grid-template-columns: 1fr; }
+@media (width <= 1024px) {
+  .clinic-intro .container {
+    grid-template-columns: 1fr;
+  }
 }

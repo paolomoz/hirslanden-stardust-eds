@@ -1,10 +1,11 @@
-/* ── Event Hero block ── */
+/* event-hero — full-bleed event banner with scrim + title.
+   Lifted from event-detail prototype, scoped under .event-hero.
+   Tokens and .container come from styles/styles.css. */
+
 .event-hero {
   position: relative;
   background: var(--color-ground-alt);
   overflow: hidden;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
 }
 
 .event-hero .event-hero-media {
@@ -17,7 +18,6 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 40%;
-  display: block;
 }
 
 .event-hero .event-hero-scrim {
@@ -31,13 +31,10 @@
   );
 }
 
-.event-hero .event-hero-inner {
+.event-hero .container {
   position: relative;
   z-index: 1;
   padding-block: clamp(160px, 28vw, 360px) var(--spacing-2xl);
-  padding-inline: var(--spacing-lg);
-  max-width: var(--max-width);
-  margin-inline: auto;
 }
 
 .event-hero .event-hero-category {
@@ -55,24 +52,23 @@
 }
 
 .event-hero h1 {
-  font-size: var(--heading-xl);
+  font-size: var(--heading-xxl);
   font-weight: 700;
   color: #fff;
   max-width: 18ch;
   letter-spacing: -0.01em;
   line-height: 1.15;
-  margin: 0 0 var(--spacing-md);
 }
 
 .event-hero .event-hero-clinic {
-  margin: 0;
+  margin-top: var(--spacing-md);
   font-size: var(--body);
   color: rgb(255 255 255 / 85%);
   font-weight: 500;
 }
 
-@media (width >= 600px) {
+@media (width <= 640px) {
   .event-hero h1 {
-    font-size: var(--heading-xxl);
+    font-size: var(--heading-xl);
   }
 }

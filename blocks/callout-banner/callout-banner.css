@@ -1,55 +1,37 @@
-.callout-banner-container .callout-banner-wrapper {
-  max-width: unset;
-  padding: 0;
-}
+/* callout-banner — full-bleed strip: heading + copy on the left, a primary
+   button on the right. Lifted verbatim from specialty-topic prototype
+   (.callout-banner* rules), scoped under .callout-banner. Tokens, .container
+   and .btn--primary come from styles/styles.css. */
 
 .callout-banner {
-  background: var(--color-accent-ink);
-  padding-block: 48px;
+  background: var(--color-ground-alt);
+  padding-block: var(--spacing-2xl);
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.callout-banner .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: var(--spacing-lg);
   flex-wrap: wrap;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
-  padding-inline: max(var(--spacing-lg), calc((100vw - var(--max-width)) / 2 + var(--spacing-lg)));
 }
 
-.callout-banner-text h2 {
-  color: #fff;
-  font-size: 1.563rem;
-  margin-bottom: 8px;
+.callout-banner .callout-banner-text h2 {
+  color: var(--color-fg);
+  font-size: var(--heading-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
-.callout-banner-text p {
-  color: rgb(255 255 255 / 82%);
-  font-size: 0.8rem;
-  max-width: 54ch;
-  margin: 0;
-}
-
-.callout-banner .btn--onblue {
-  background: #fff;
-  color: var(--color-accent-ink);
-  padding: 12px 28px;
+.callout-banner .callout-banner-text p {
+  color: var(--color-text-soft);
   font-size: var(--body-sm);
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  flex-shrink: 0;
-  transition: background-color 160ms ease;
-  border: 0;
+  max-width: 54ch;
 }
 
-.callout-banner .btn--onblue:hover {
-  background: var(--color-ground-warm);
-}
-
-@media (width <= 600px) {
-  .callout-banner {
+@media (width <= 640px) {
+  .callout-banner .container {
     flex-direction: column;
     align-items: flex-start;
   }

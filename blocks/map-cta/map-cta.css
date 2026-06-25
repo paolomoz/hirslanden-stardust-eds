@@ -1,0 +1,46 @@
+/* map-cta — dark-blue band with copy + CTA pointing to the locations map.
+   Lifted verbatim from clinic-listing prototype (.map-cta* rules), scoped under
+   .map-cta. Tokens, .container, .eyebrow and .btn--onblue come from
+   styles/styles.css. */
+
+.map-cta {
+  background: var(--color-accent-ink);
+  padding-block: var(--spacing-2xl);
+}
+
+.map-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2xl);
+  flex-wrap: wrap;
+}
+
+.map-cta .map-cta-copy .eyebrow {
+  color: rgb(255 255 255 / 70%);
+  margin-bottom: var(--spacing-sm);
+}
+
+.map-cta .map-cta-copy h2 {
+  color: #fff;
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.map-cta .map-cta-copy p {
+  color: rgb(255 255 255 / 85%);
+  font-size: var(--body);
+  max-width: 54ch;
+}
+
+.map-cta .btn--onblue {
+  flex: none;
+}
+
+@media (width <= 599px) {
+  .map-cta .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,49 @@
+/* locate — split media section: copy + CTA beside a photo.
+   Lifted verbatim from home-A prototype (.locate-* rules + the section--warm
+   background/padding), scoped under .locate. Tokens, .container, .eyebrow and
+   .btn--primary come from styles/styles.css. */
+
+.locate {
+  padding-block: var(--section-padding);
+  background: var(--color-ground-warm);
+}
+
+.locate .locate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.locate .locate-copy h2 {
+  font-size: var(--heading-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.locate .locate-copy p {
+  max-width: 52ch;
+  margin-bottom: var(--spacing-lg);
+}
+
+.locate .locate-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
+}
+
+.locate .locate-media .placeholder-media {
+  aspect-ratio: 4 / 3;
+  background: var(--color-ground-alt);
+  box-shadow: var(--shadow-card);
+}
+
+@media (width <= 900px) {
+  .locate .locate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locate .locate-media {
+    order: -1;
+  }
+}

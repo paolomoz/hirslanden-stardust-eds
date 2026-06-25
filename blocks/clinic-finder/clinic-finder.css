@@ -1,140 +1,116 @@
+/* clinic-finder — split static map + clinic list.
+   Lifted verbatim from content-page prototype (.clinic-finder*, .clinic-list*,
+   .placeholder-media--map rules), scoped under .clinic-finder. Tokens,
+   .container, .section-head and .btn come from styles/styles.css. */
+
 .clinic-finder {
-  background: var(--color-ground-alt, #f0efed);
+  background: var(--color-ground-alt);
+  padding-block: var(--section-padding);
 }
 
-.clinic-finder-layout {
+.clinic-finder .section-head {
+  margin-bottom: var(--spacing-xl);
+}
+
+.clinic-finder .section-head h2 {
+  font-size: var(--heading-xl);
+}
+
+.clinic-finder .section-head p {
+  color: var(--color-text-soft);
+  margin-top: var(--spacing-sm);
+}
+
+.clinic-finder .clinic-finder-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: var(--spacing-2xl);
   align-items: start;
 }
 
-.clinic-finder-map {
-  background: #fff;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+.clinic-finder .clinic-finder-map {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
-.clinic-finder-map img {
+.clinic-finder .clinic-finder-map img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
-.clinic-finder-map-placeholder {
+.clinic-finder .placeholder-media--map {
   aspect-ratio: 16 / 7;
   max-height: 320px;
-  background: var(--color-ground-alt, #f0efed);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-soft, #72665b);
-  font-size: 0.8rem;
-  border: 1px solid rgb(0 0 0 / 6%);
 }
 
-.clinic-list {
+.clinic-finder .clinic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
-.clinic-list-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 32px;
-}
-
-.clinic-list-item {
+.clinic-finder .clinic-list-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding-block: 16px;
-  border-bottom: 1px solid var(--color-hairline, #e2dfdb);
+  gap: var(--spacing-md);
+  padding-block: var(--spacing-md);
+  border-bottom: 1px solid var(--color-hairline);
   text-decoration: none;
-  color: var(--color-fg, #534c46);
+  color: var(--color-fg);
   transition: color 140ms ease;
 }
 
-.clinic-list-item:first-child {
-  border-top: 1px solid var(--color-hairline, #e2dfdb);
+.clinic-finder .clinic-list-item:first-child {
+  border-top: 1px solid var(--color-hairline);
 }
 
-.clinic-list-item:hover {
-  color: var(--color-accent-ink, #0070a0);
+.clinic-finder .clinic-list-item:hover {
+  color: var(--color-accent-ink);
 }
 
-.clinic-name {
-  font-size: 1rem;
+.clinic-finder .clinic-list-item:hover .clinic-chevron {
+  color: var(--color-accent-ink);
+}
+
+.clinic-finder .clinic-name {
+  font-size: var(--body);
   font-weight: 500;
 }
 
-.clinic-chevron {
-  color: var(--color-text-soft, #72665b);
+.clinic-finder .clinic-chevron {
+  color: var(--color-text-soft);
   flex: none;
   font-size: 1.1rem;
   line-height: 1;
   transition: color 140ms ease;
 }
 
-.clinic-list-item:hover .clinic-chevron {
-  color: var(--color-accent-ink, #0070a0);
+.clinic-finder .clinic-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--spacing-xl);
 }
 
-.clinic-finder-more {
-  margin-top: 24px;
+.clinic-finder .clinic-finder-more {
+  margin-top: var(--spacing-lg);
   display: flex;
   align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.clinic-finder-more .btn--primary {
-  display: inline-flex;
-  align-items: center;
-  background: var(--color-accent-ink, #0070a0);
-  color: #fff;
-  padding: 12px 28px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 160ms ease;
-}
-
-.clinic-finder-more .btn--primary:hover {
-  background: var(--color-accent-hover, #006894);
-}
-
-.clinic-finder-more .readmore {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--color-accent-ink, #0070a0);
-  font-weight: 500;
-  font-size: 0.8rem;
-  text-decoration: none;
-}
-
-.clinic-finder-more .readmore::after {
-  content: "\203A";
-  font-size: 1.1em;
-}
-
-.clinic-finder-more .readmore:hover {
-  text-decoration: underline;
+  gap: var(--spacing-md);
 }
 
 @media (width <= 900px) {
-  .clinic-finder-layout {
+  .clinic-finder .clinic-finder-layout {
     grid-template-columns: 1fr;
   }
 }
 
-@media (width <= 600px) {
-  .clinic-list-grid {
+@media (width <= 640px) {
+  .clinic-finder .clinic-list-grid {
     grid-template-columns: 1fr;
   }
 }

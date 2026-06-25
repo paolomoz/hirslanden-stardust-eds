@@ -1,9 +1,13 @@
-.service-teasers {
-  background: var(--color-ground-alt);
-  padding-block: var(--section-padding);
-}
+/* service-teasers — 3-up image service cards (whole card is a link).
+   Lifted verbatim from clinic-detail prototype (.service-grid, .service-card*
+   rules + the section--alt background/padding), scoped under .service-teasers.
+   Tokens, .container, .section-head, .eyebrow and .readmore come from
+   styles/styles.css. */
 
-.service-teasers .section-head { margin-bottom: var(--spacing-2xl); }
+.service-teasers {
+  padding-block: var(--section-padding);
+  background: var(--color-ground-alt);
+}
 
 .service-teasers .service-grid {
   display: grid;
@@ -21,9 +25,14 @@
   color: inherit;
 }
 
+.service-teasers .service-card:hover .service-card-title {
+  color: var(--color-accent-ink);
+}
+
 .service-teasers .service-card-media {
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  position: relative;
 }
 
 .service-teasers .service-card-media img {
@@ -33,7 +42,9 @@
   transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.service-teasers .service-card:hover .service-card-media img { transform: scale(1.04); }
+.service-teasers .service-card:hover .service-card-media img {
+  transform: scale(1.04);
+}
 
 .service-teasers .service-card-body {
   padding: var(--spacing-lg);
@@ -43,11 +54,6 @@
   flex: 1;
 }
 
-.service-teasers .service-card-category {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-}
-
 .service-teasers .service-card-title {
   font-size: var(--heading-md);
   font-weight: 500;
@@ -55,20 +61,24 @@
   text-wrap: balance;
 }
 
-.service-teasers .service-card:hover .service-card-title { color: var(--color-accent-ink); }
-
-.service-teasers .service-card-body p {
+.service-teasers .service-card p {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
   flex: 1;
 }
 
-.service-teasers .service-card .readmore { margin-top: auto; }
+.service-teasers .service-card .readmore {
+  margin-top: auto;
+}
 
-@media (width <= 900px) {
-  .service-teasers .service-grid { grid-template-columns: repeat(2, 1fr); }
+@media (width <= 1024px) {
+  .service-teasers .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width <= 640px) {
-  .service-teasers .service-grid { grid-template-columns: 1fr; }
+  .service-teasers .service-grid {
+    grid-template-columns: 1fr;
+  }
 }

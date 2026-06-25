@@ -1,35 +1,22 @@
+/* featured-centers — mixed 2-col layout: a tall primary card beside two
+   stacked horizontal teasers. Lifted from clinic-detail prototype (the inline
+   grid + .service-card variants + the section--warm background/padding),
+   scoped under .featured-centers. Tokens, .container, .section-head, .eyebrow
+   and .readmore come from styles/styles.css. Card base styles mirror
+   service-teasers (.service-card*). */
+
 .featured-centers {
-  background: var(--color-ground-warm);
   padding-block: var(--section-padding);
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
-  padding-inline: max(var(--spacing-xl), calc((100vw - var(--max-width)) / 2 + var(--spacing-xl)));
+  background: var(--color-ground-warm);
 }
 
-.featured-centers .section-head { margin-bottom: var(--spacing-2xl); }
-
-.featured-centers .fc-layout {
+.featured-centers .center-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-lg);
 }
 
-/* Shared card primitives — base rules first, then hover */
-.featured-centers .fc-card-title {
-  font-size: var(--heading-md);
-  font-weight: 500;
-  transition: color 140ms ease;
-  text-wrap: balance;
-}
-
-.featured-centers .fc-card-category {
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-}
-
-/* Featured (large) card — spans full left column */
-.featured-centers .fc-card-featured {
-  grid-row: 1 / span 2;
+.featured-centers .service-card {
   background: var(--color-bg);
   box-shadow: var(--shadow-card);
   overflow: hidden;
@@ -39,86 +26,112 @@
   color: inherit;
 }
 
-.featured-centers .fc-card-featured .fc-card-media {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
+.featured-centers .service-card:hover .service-card-title {
+  color: var(--color-accent-ink);
 }
 
-.featured-centers .fc-card-featured .fc-card-media img {
+.featured-centers .service-card-media {
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-centers .service-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.featured-centers .fc-card-featured .fc-card-body {
-  padding: var(--spacing-xl);
+.featured-centers .service-card:hover .service-card-media img {
+  transform: scale(1.04);
+}
+
+.featured-centers .service-card-body {
+  padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
   flex: 1;
 }
 
-/* Horizontal (compact) cards — right column */
-.featured-centers .fc-card-compact {
-  background: var(--color-bg);
-  box-shadow: var(--shadow-card);
-  display: flex;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  align-items: stretch;
+.featured-centers .service-card-title {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  transition: color 140ms ease;
+  text-wrap: balance;
 }
 
-.featured-centers .fc-card-compact .fc-card-media {
-  width: 120px;
-  flex: none;
-  overflow: hidden;
-}
-
-.featured-centers .fc-card-compact .fc-card-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.featured-centers .fc-card-compact .fc-card-body {
-  padding: var(--spacing-md);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-  flex: 1;
-}
-
-/* Hover states — after all base rules */
-.featured-centers .fc-card-featured:hover .fc-card-title { color: var(--color-accent-ink); }
-
-.featured-centers .fc-card-featured:hover .fc-card-media img { transform: scale(1.04); }
-
-.featured-centers .fc-card-compact:hover .fc-card-title { color: var(--color-accent-ink); }
-
-.featured-centers .fc-card-compact:hover .fc-card-media img { transform: scale(1.04); }
-
-.featured-centers .fc-card-body p {
+.featured-centers .service-card p {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
   flex: 1;
 }
 
-.featured-centers .readmore { margin-top: auto; }
+.featured-centers .center-kicker {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  margin-bottom: 4px;
+  flex: 0 0 auto;
+}
 
-@media (width <= 900px) {
-  .featured-centers .fc-layout { grid-template-columns: 1fr; }
+.featured-centers .service-card .readmore {
+  margin-top: auto;
+}
 
-  .featured-centers .fc-card-featured { grid-row: auto; }
+/* Primary tall card spans both rows in the right-hand stack. */
+.featured-centers .center-card--primary {
+  grid-row: span 2;
+}
+
+.featured-centers .center-card--primary .service-card-media {
+  aspect-ratio: 4 / 5;
+}
+
+.featured-centers .center-card--primary .center-kicker {
+  color: var(--color-accent-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.featured-centers .center-card--primary .service-card-title {
+  font-size: var(--heading-lg);
+}
+
+/* Horizontal teasers: small square media beside the body. */
+.featured-centers .center-card--horizontal {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.featured-centers .center-card--horizontal .service-card-media {
+  aspect-ratio: 1 / 1;
+  min-width: 120px;
+  max-width: 120px;
+  flex: none;
+}
+
+.featured-centers .center-card--horizontal .service-card-body {
+  padding: var(--spacing-md);
+}
+
+@media (width <= 1024px) {
+  .featured-centers .center-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-centers .center-card--primary {
+    grid-row: auto;
+  }
 }
 
 @media (width <= 640px) {
-  .featured-centers .fc-card-compact { flex-direction: column; }
+  .featured-centers .center-card--horizontal {
+    flex-direction: column;
+  }
 
-  .featured-centers .fc-card-compact .fc-card-media {
-    width: 100%;
-    height: 180px;
+  .featured-centers .center-card--horizontal .service-card-media {
+    max-width: none;
+    aspect-ratio: 16 / 9;
   }
 }

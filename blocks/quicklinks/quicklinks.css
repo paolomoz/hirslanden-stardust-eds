@@ -1,48 +1,57 @@
+/* quicklinks — grid of labelled link buttons with chevrons.
+   Lifted verbatim from home-A prototype, scoped under .quicklinks.
+   The prototype section used `section section--alt`; that background +
+   padding is folded into the block here. Tokens, .container and
+   .section-head come from styles/styles.css. */
+
 .quicklinks {
-  background: var(--color-ground-alt);
   padding-block: var(--section-padding);
+  background: var(--color-ground-alt);
 }
 
-.quicklinks .container {
+.quicklinks .quicklink-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-md);
 }
 
-.quicklinks .ql-tile {
-  background: var(--color-bg);
-  box-shadow: var(--shadow-card);
+.quicklinks .quicklink {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  text-decoration: none;
+  background: var(--color-accent-tint);
   color: var(--color-fg);
+  text-decoration: none;
+  padding: 20px 24px;
+  border-radius: var(--radius);
   font-weight: 500;
-  font-size: var(--body);
-  transition: box-shadow 160ms ease, color 160ms ease;
+  transition: background-color 160ms ease;
 }
 
-.quicklinks .ql-tile:hover {
-  color: var(--color-accent-ink);
-  box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+.quicklinks .quicklink span {
+  overflow-wrap: break-word;
 }
 
-.quicklinks .ql-tile::after {
-  content: "\203A";
-  margin-left: auto;
+.quicklinks .quicklink:hover {
+  background: rgb(0 148 212 / 18%);
+}
+
+.quicklinks .quicklink .chevron {
   color: var(--color-accent-ink);
-  font-size: 1.2em;
+  font-size: 1.25rem;
+  line-height: 1;
   flex: none;
 }
 
 @media (width <= 900px) {
-  .quicklinks .container { grid-template-columns: repeat(2, 1fr); }
+  .quicklinks .quicklink-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width <= 640px) {
-  .quicklinks .container {
+  .quicklinks .quicklink-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
   }
 }

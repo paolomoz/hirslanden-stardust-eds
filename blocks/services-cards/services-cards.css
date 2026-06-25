@@ -1,17 +1,23 @@
+/* services-cards — 2×2 grid of link cards with a section heading.
+   Lifted verbatim from the patient-info-proposed prototype (.services-grid,
+   .service-card* rules + the section background/padding), scoped under
+   .services-cards. Tokens, .container, .section-head and .readmore come from
+   styles/styles.css. */
+
 .services-cards {
-  background: var(--color-ground-warm, #f7f6f5);
   padding-block: var(--section-padding);
+  background: var(--color-ground-warm);
 }
 
-.services-cards-grid {
+.services-cards .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
 }
 
-.services-card {
-  background: #fff;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+.services-cards .service-card {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -20,75 +26,59 @@
   transition: box-shadow 160ms ease;
 }
 
-.services-card:hover {
+.services-cards .service-card:hover {
   box-shadow: 0 4px 20px rgb(0 0 0 / 13%);
 }
 
-.services-card:hover .services-card-title {
-  color: var(--color-accent-ink, #0070a0);
+.services-cards .service-card:hover .service-card-title {
+  color: var(--color-accent-ink);
 }
 
-.services-card-media {
+.services-cards .service-card-media {
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--color-ground-alt, #f0efed);
+  background: var(--color-ground-alt);
 }
 
-.services-card-media img {
+.services-cards .service-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.services-card:hover .services-card-media img {
+.services-cards .service-card:hover .service-card-media img {
   transform: scale(1.04);
 }
 
-.services-card-body {
-  padding: 24px;
+.services-cards .service-card-body {
+  padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-sm);
   flex: 1;
 }
 
-.services-card-title {
-  font-size: 1.25rem;
+.services-cards .service-card-title {
+  font-size: var(--heading-md);
   font-weight: 500;
   transition: color 140ms ease;
   text-wrap: balance;
-  margin: 0;
 }
 
-.services-card-text {
-  font-size: 0.8rem;
-  color: var(--color-text-soft, #72665b);
-  line-height: 1.6;
+.services-cards .service-card-text {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  line-height: var(--line-height-body);
   flex: 1;
-  margin: 0;
 }
 
-.services-card-body .readmore {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--color-accent-ink, #0070a0);
-  font-weight: 500;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-top: 8px;
+.services-cards .service-card-body .readmore {
+  margin-top: var(--spacing-sm);
 }
 
-.services-card-body .readmore::after {
-  content: "\203A";
-  font-size: 1.1em;
-  line-height: 1;
-}
-
-@media (width <= 600px) {
-  .services-cards-grid {
+@media (width <= 640px) {
+  .services-cards .services-grid {
     grid-template-columns: 1fr;
   }
 }

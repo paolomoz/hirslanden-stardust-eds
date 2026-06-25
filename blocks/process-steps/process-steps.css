@@ -1,26 +1,33 @@
+/* process-steps — numbered step grid with a section heading.
+   Lifted verbatim from the patient-info-proposed prototype (.steps-grid,
+   .step-item, .step-number rules + the section background/padding), scoped
+   under .process-steps. Tokens, .container and .section-head come from
+   styles/styles.css. */
+
 .process-steps {
-  background: #fff;
   padding-block: var(--section-padding);
+  background: var(--color-bg);
 }
 
-.process-steps-grid {
+.process-steps .steps-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: var(--spacing-lg);
   counter-reset: step-counter;
 }
 
-.process-step-item {
+.process-steps .step-item {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 32px;
-  background: var(--color-ground-warm, #f7f6f5);
-  border-top: 3px solid var(--color-accent, #0094d4);
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl);
+  background: var(--color-ground-warm);
+  border-top: 3px solid var(--color-accent);
+  position: relative;
 }
 
-.process-step-number {
-  background: var(--color-accent, #0094d4);
+.process-steps .step-number {
+  background: var(--color-accent);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -28,35 +35,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
   font-weight: 700;
-  font-size: 1.25rem;
   flex-shrink: 0;
   font-variant-numeric: tabular-nums;
 }
 
-.process-step-item h3 {
-  font-size: 1.25rem;
+.process-steps .step-item h3 {
+  font-size: var(--heading-md);
   font-weight: 500;
-  color: var(--color-fg, #534c46);
-  margin: 0;
+  color: var(--color-fg);
 }
 
-.process-step-item p {
-  font-size: 0.8rem;
-  color: var(--color-text-soft, #72665b);
-  line-height: 1.6;
+.process-steps .step-item p {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  line-height: var(--line-height-body);
   flex: 1;
-  margin: 0;
 }
 
 @media (width <= 1024px) {
-  .process-steps-grid {
+  .process-steps .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (width <= 600px) {
-  .process-steps-grid {
+@media (width <= 640px) {
+  .process-steps .steps-grid {
     grid-template-columns: 1fr;
   }
 }

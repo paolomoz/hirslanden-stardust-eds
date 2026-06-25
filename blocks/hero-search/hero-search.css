@@ -1,0 +1,136 @@
+/* hero-search — split hero: scrimmed editorial photo + headline left,
+   floating white search card right.
+   Lifted verbatim from home-A prototype (.hero / .hero-* / .search-* rules),
+   scoped under .hero-search. Tokens, .container, .btn--primary, .chip come
+   from styles/styles.css. */
+
+.hero-search {
+  position: relative;
+  background: var(--color-ground-alt);
+}
+
+.hero-search .hero-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-search .hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 40%;
+}
+
+/* Controlled left-to-right scrim for headline legibility. */
+.hero-search .hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(247 246 245 / 94%) 0%,
+    rgb(247 246 245 / 88%) 34%,
+    rgb(247 246 245 / 55%) 60%,
+    rgb(247 246 245 / 15%) 100%
+  );
+}
+
+.hero-search .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-search .hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+  padding-block: clamp(48px, 7vw, 96px);
+}
+
+.hero-search .hero-copy h1 {
+  font-size: var(--heading-xxl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+  color: var(--color-fg);
+  max-width: 12ch;
+}
+
+.hero-search .hero-copy p {
+  margin-top: var(--spacing-md);
+  max-width: 46ch;
+  color: var(--color-fg);
+}
+
+.hero-search .search-card {
+  background: #fff;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-xl);
+}
+
+.hero-search .search-card h2 {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-search .visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.hero-search .search-row {
+  display: flex;
+  gap: 0;
+}
+
+.hero-search .search-row input {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  color: var(--color-fg);
+  background: #fff;
+  border: 1px solid var(--color-hairline);
+  border-right: 0;
+  border-radius: 0;
+  padding: 14px 16px;
+}
+
+.hero-search .search-row input::placeholder {
+  color: var(--color-text-soft);
+}
+
+.hero-search .search-row .btn--primary {
+  padding-inline: 24px;
+}
+
+.hero-search .search-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+@media (width <= 1024px) {
+  .hero-search .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .hero-search .hero-copy h1 {
+    max-width: 18ch;
+  }
+}
+
+@media (width <= 640px) {
+  .hero-search .hero-copy h1 {
+    max-width: none;
+  }
+
+  .hero-search .search-card {
+    padding: var(--spacing-lg);
+  }
+}

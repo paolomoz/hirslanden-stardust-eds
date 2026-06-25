@@ -1,13 +1,51 @@
 /**
- * Teaser Callout block — split copy + image band
- * Authored row structure:
- *   Row 1: [eyebrow] | [image]
- *   Row 2: [heading]
- *   Row 3: [body text]
- *   Row 4: [CTA link]
+ * teaser-callout block
+ * A related-content band: a copy column (eyebrow + heading + paragraph +
+ * primary CTA) beside a media column.
+ *
+ * Authoring (flattened cell or one-row): an optional eyebrow line, a heading,
+ * a paragraph, a plain <a> CTA, and an image (absolute URL). The CTA gets the
+ * btn btn--primary class. If no image is authored, a neutral placeholder
+ * renders (author drops the image later).
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
+
+const isMedia = (el) => el.matches('picture, img') || el.querySelector('picture, img');
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
+        const p = document.createElement('p');
+        p.innerHTML = cell.innerHTML;
+        nodes.push(p);
+      }
+      return;
+    }
+    kids.forEach((el) => nodes.push(el));
+  });
+  return nodes;
+}
+
+function asAnchor(el) {
+  return el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a');
+}
+
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
+
+  const media = nodes.find((n) => isMedia(n));
+  const heading = nodes.find((n) => isHeading(n));
+  const ctaNode = nodes.find((n) => asAnchor(n) && !isMedia(n));
+  const headingIndex = nodes.indexOf(heading);
+  const paras = nodes.filter((n) => n !== media && n !== heading && n !== ctaNode
+    && !isMedia(n) && n.textContent.trim());
+
+  const container = document.createElement('div');
+  container.className = 'container';
 
   const inner = document.createElement('div');
   inner.className = 'teaser-callout-inner';
@@ -15,47 +53,49 @@ export default function decorate(block) {
   const copy = document.createElement('div');
   copy.className = 'teaser-callout-copy';
 
-  const media = document.createElement('div');
-  media.className = 'teaser-callout-media';
+  // eyebrow = a text line before the heading
+  const eyebrow = paras.find((p) => heading && nodes.indexOf(p) < headingIndex);
+  if (eyebrow) {
+    const eb = document.createElement('p');
+    eb.className = 'eyebrow';
+    eb.innerHTML = eyebrow.innerHTML;
+    copy.append(eb);
+  }
 
-  rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    if (!cells.length) return;
+  if (heading) {
+    const h = document.createElement('h2');
+    h.innerHTML = heading.innerHTML;
+    copy.append(h);
+  }
 
-    // Row with image in second cell
-    const img = cells[1]?.querySelector('img, picture') || cells[0]?.querySelector('img, picture');
-    if (img) {
-      media.append(img.cloneNode(true));
-      // eyebrow in first cell
-      const eyebrowText = cells[0]?.textContent?.trim();
-      if (eyebrowText && !cells[0].querySelector('img')) {
-        const p = document.createElement('p');
-        p.className = 'eyebrow';
-        p.textContent = eyebrowText;
-        copy.append(p);
-      }
-      return;
-    }
-
-    const h2 = cells[0].querySelector('h2');
-    if (h2) {
-      copy.append(h2.cloneNode(true));
-      return;
-    }
-
-    const link = cells[0].querySelector('a');
-    if (link && cells[0].children.length <= 2) {
-      link.className = 'btn btn--primary';
-      copy.append(link.cloneNode(true));
-      return;
-    }
-
-    const p = document.createElement('p');
-    p.innerHTML = cells[0].innerHTML;
-    copy.append(p);
+  paras.forEach((p) => {
+    if (p === eyebrow) return;
+    const para = document.createElement('p');
+    para.innerHTML = p.innerHTML;
+    copy.append(para);
   });
 
-  inner.append(copy, media);
-  block.innerHTML = '';
-  block.append(inner);
+  if (ctaNode) {
+    const a = asAnchor(ctaNode);
+    const btn = document.createElement('a');
+    btn.className = 'btn btn--primary';
+    btn.href = a.getAttribute('href') || '#';
+    btn.innerHTML = a.innerHTML;
+    copy.append(btn);
+  }
+
+  const mediaWrap = document.createElement('div');
+  mediaWrap.className = 'teaser-callout-media';
+  if (media) {
+    const pic = media.matches('picture, img') ? media : media.querySelector('picture, img');
+    mediaWrap.append(pic);
+  } else {
+    const ph = document.createElement('div');
+    ph.className = 'placeholder-media';
+    mediaWrap.append(ph);
+  }
+
+  inner.append(copy, mediaWrap);
+  container.append(inner);
+  block.replaceChildren(container);
 }

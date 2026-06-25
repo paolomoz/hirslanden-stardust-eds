@@ -1,9 +1,13 @@
-.specialties {
-  background: var(--color-ground-warm);
-  padding-block: var(--section-padding);
-}
+/* specialties — 3-col department/specialty card grid.
+   Lifted verbatim from clinic-detail prototype (.dept-grid, .dept-card,
+   .dept-icon rules + the section--warm background/padding), scoped under
+   .specialties. Tokens, .container, .section-head, .eyebrow and .readmore come
+   from styles/styles.css. */
 
-.specialties .section-head { margin-bottom: var(--spacing-2xl); }
+.specialties {
+  padding-block: var(--section-padding);
+  background: var(--color-ground-warm);
+}
 
 .specialties .dept-grid {
   display: grid;
@@ -19,12 +23,12 @@
   flex-direction: column;
   gap: var(--spacing-sm);
   border-top: 3px solid transparent;
-  text-decoration: none;
-  color: inherit;
   transition: border-color 160ms ease;
 }
 
-.specialties .dept-card:hover { border-color: var(--color-accent); }
+.specialties .dept-card:hover {
+  border-color: var(--color-accent);
+}
 
 .specialties .dept-icon {
   width: 40px;
@@ -50,10 +54,14 @@
   flex: 1;
 }
 
-@media (width <= 900px) {
-  .specialties .dept-grid { grid-template-columns: repeat(2, 1fr); }
+@media (width <= 1024px) {
+  .specialties .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width <= 640px) {
-  .specialties .dept-grid { grid-template-columns: 1fr; }
+  .specialties .dept-grid {
+    grid-template-columns: 1fr;
+  }
 }

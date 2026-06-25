@@ -1,31 +1,24 @@
-/* ── Doctor Hero block ── */
+/* doctor-hero — split portrait + identity / meta / actions.
+   Lifted from doctor-profile prototype (.doctor-hero*, .doctor-info,
+   .doctor-meta*, .doctor-specialty-* rules), scoped under .doctor-hero.
+   Tokens, .container, .btn and .chip come from styles/styles.css. */
+
 .doctor-hero {
   background: var(--color-bg);
-  padding-block: var(--spacing-2xl);
+  padding-block: var(--section-padding);
   border-bottom: 1px solid var(--color-hairline);
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
 }
 
-.doctor-hero-grid {
+.doctor-hero .doctor-hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-lg);
+  grid-template-columns: 280px 1fr;
+  gap: var(--spacing-2xl);
   align-items: start;
-  max-width: var(--max-width);
-  margin-inline: auto;
-  padding-inline: var(--spacing-xl);
 }
 
 .doctor-hero .doctor-portrait {
   position: relative;
   overflow: hidden;
-}
-
-@media (width < 600px) {
-  .doctor-hero .doctor-portrait {
-    max-width: 200px;
-  }
 }
 
 .doctor-hero .doctor-portrait img {
@@ -35,6 +28,10 @@
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: top center;
+}
+
+.doctor-hero .doctor-portrait .placeholder-media {
+  aspect-ratio: 3 / 4;
 }
 
 .doctor-hero .doctor-info {
@@ -50,7 +47,6 @@
   color: var(--color-accent-ink);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0 0 var(--spacing-xs);
 }
 
 .doctor-hero h1 {
@@ -60,6 +56,7 @@
   line-height: 1.15;
   color: var(--color-fg);
   margin: 0;
+  text-wrap: balance;
 }
 
 .doctor-hero .doctor-specialty-row {
@@ -87,26 +84,6 @@
   background: rgb(0 148 212 / 18%);
 }
 
-.doctor-hero .clinic-affiliation-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  background: var(--color-ground-warm);
-  border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-pill);
-  padding: 6px 14px;
-  font-size: var(--body-sm);
-  font-weight: 500;
-  color: var(--color-fg);
-  text-decoration: none;
-  transition: border-color 160ms ease, color 160ms ease;
-}
-
-.doctor-hero .clinic-affiliation-tag:hover {
-  border-color: var(--color-accent-ink);
-  color: var(--color-accent-ink);
-}
-
 .doctor-hero .doctor-meta-dl {
   display: flex;
   flex-direction: column;
@@ -118,14 +95,16 @@
 
 .doctor-hero .doctor-meta-row {
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-md);
+  align-items: baseline;
 }
 
 .doctor-hero .doctor-meta-dt {
   font-size: var(--body-sm);
   font-weight: 500;
   color: var(--color-text-soft);
+  min-width: 120px;
+  flex: none;
 }
 
 .doctor-hero .doctor-meta-dd {
@@ -145,55 +124,52 @@
 
 .doctor-hero .doctor-cta-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-sm);
   padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-hairline);
 }
 
-.doctor-hero .doctor-cta-row .btn,
-.doctor-hero .doctor-cta-row .chip {
-  justify-content: center;
-}
-
-@media (width >= 600px) {
-  .doctor-hero .doctor-meta-row {
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--spacing-md);
-  }
-
-  .doctor-hero .doctor-meta-dt {
-    min-width: 120px;
-    flex: none;
-  }
-
-  .doctor-hero .doctor-cta-row {
-    flex-flow: row wrap;
-    align-items: center;
-  }
-
-  .doctor-hero .doctor-cta-row .btn,
-  .doctor-hero .doctor-cta-row .chip {
-    justify-content: flex-start;
-  }
-}
-
-@media (width >= 900px) {
-  .doctor-hero-grid {
+@media (width <= 1024px) {
+  .doctor-hero .doctor-hero-grid {
     grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (width <= 900px) {
+  .doctor-hero .doctor-hero-grid {
+    grid-template-columns: 180px 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (width <= 640px) {
+  .doctor-hero .doctor-hero-grid {
+    grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
 
   .doctor-hero .doctor-portrait {
-    max-width: none;
+    max-width: 200px;
   }
-}
 
-@media (width >= 1200px) {
-  .doctor-hero-grid {
-    grid-template-columns: 280px 1fr;
-    gap: var(--spacing-2xl);
+  .doctor-hero .doctor-meta-row {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .doctor-hero .doctor-meta-dt {
+    min-width: unset;
+  }
+
+  .doctor-hero .doctor-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .doctor-hero .doctor-cta-row .btn,
+  .doctor-hero .doctor-cta-row .chip {
+    justify-content: center;
   }
 }

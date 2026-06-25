@@ -1,0 +1,30 @@
+/* body-text — constrained prose article body.
+   Lifted verbatim from content-page prototype (.body-text rules), scoped under
+   .body-text. Tokens and .container come from styles/styles.css. */
+
+.body-text {
+  background: var(--color-bg);
+  padding-block: var(--section-padding);
+}
+
+.body-text .container {
+  max-width: 860px;
+}
+
+.body-text .prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.body-text .prose p {
+  color: var(--color-fg);
+}
+
+.body-text .prose strong {
+  font-weight: 700;
+}
+
+.body-text .prose p + p {
+  margin-top: 0;
+}

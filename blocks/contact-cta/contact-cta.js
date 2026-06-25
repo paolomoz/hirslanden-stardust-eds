@@ -1,70 +1,114 @@
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  if (!rows.length) return;
+/**
+ * contact-cta block
+ * Blue band: heading + copy, phone number, and CTA buttons.
+ *
+ * Authoring shape (DA usually flattens to one row/one cell; both shapes supported):
+ *   row 1: heading + copy paragraph(s)
+ *   row 2: phone label text + a tel: link
+ *   row 3: one or more plain action links
+ *
+ * Classification is content-based, never index-based.
+ */
 
-  // Expected layout: one row, up to 3 cells: [copy (h2+p)] | [phone] | [action links]
-  // Or a single cell with all content.
-  const cells = [...rows[0].querySelectorAll(':scope > div')];
-
-  const wrap = document.createElement('div');
-  wrap.className = 'container';
-
-  if (cells.length >= 2) {
-    const [copyCell, phoneCell, actionsCell] = cells;
-
-    const copy = document.createElement('div');
-    copy.className = 'contact-cta-copy';
-    if (copyCell) copy.append(...copyCell.childNodes);
-    wrap.append(copy);
-
-    if (phoneCell) {
-      const phoneLink = phoneCell.querySelector('a[href^="tel"]');
-      const phone = document.createElement('div');
-      phone.className = 'contact-cta-phone';
-
-      const label = document.createElement('span');
-      label.className = 'phone-label';
-      label.textContent = 'Telefon';
-      phone.append(label);
-
-      if (phoneLink) {
-        phoneLink.className = 'phone-num';
-        phone.append(phoneLink);
-      } else {
-        const span = document.createElement('span');
-        span.className = 'phone-num';
-        span.textContent = phoneCell.textContent.trim();
-        phone.append(span);
+/**
+ * Collect element children of every cell in the block.
+ * Wraps bare text nodes in <p>. Returns a flat list of elements.
+ * @param {Element} block
+ * @returns {Element[]}
+ */
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const elementChildren = [...cell.children];
+    if (elementChildren.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
+        const p = document.createElement('p');
+        p.textContent = text;
+        nodes.push(p);
       }
-      wrap.append(phone);
+      return;
+    }
+    elementChildren.forEach((el) => nodes.push(el));
+  });
+  return nodes;
+}
+
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const copy = document.createElement('div');
+  copy.className = 'contact-cta-copy';
+
+  const phone = document.createElement('div');
+  phone.className = 'contact-cta-phone';
+
+  const actions = document.createElement('div');
+  actions.className = 'contact-cta-actions';
+
+  const telOf = (node) => {
+    const a = node.tagName.toLowerCase() === 'a' ? node : node.querySelector('a');
+    return a && (a.getAttribute('href') || '').startsWith('tel:') ? a : null;
+  };
+
+  nodes.forEach((node, i) => {
+    const tag = node.tagName.toLowerCase();
+    const anchor = tag === 'a' ? node : node.querySelector('a');
+    const tel = telOf(node);
+
+    // tel: link → phone number. A short text line immediately before it is its label.
+    if (tel) {
+      const prev = nodes[i - 1];
+      if (prev && !telOf(prev) && !prev.querySelector('a')
+        && !/^h[1-6]$/.test(prev.tagName.toLowerCase())
+        && prev.textContent.trim() && prev.textContent.trim().length <= 24) {
+        // The previous text line was already appended to copy; move it out.
+        const label = document.createElement('span');
+        label.className = 'phone-label';
+        label.textContent = prev.textContent.trim();
+        const stray = copy.querySelector('p:last-of-type');
+        if (stray && stray.textContent.trim() === prev.textContent.trim()) stray.remove();
+        phone.append(label);
+      }
+      const a = tel.cloneNode(true);
+      a.className = 'phone-num';
+      phone.append(a);
+      return;
     }
 
-    if (actionsCell) {
-      const actions = document.createElement('div');
-      actions.className = 'contact-cta-actions';
-      [...actionsCell.childNodes].forEach((n) => actions.append(n.cloneNode(true)));
-      if (actions.children.length) wrap.append(actions);
+    // other link(s) → action button(s). A wrapper (e.g. <p>) may hold several.
+    if (anchor) {
+      const wrappedAnchors = tag === 'a' ? [node] : [...node.querySelectorAll('a')];
+      wrappedAnchors.forEach((src) => {
+        const a = src.cloneNode(true);
+        a.className = 'btn btn--onblue';
+        actions.append(a);
+      });
+      return;
     }
-  } else {
-    // Single-cell fallback: promote all links as action buttons
-    const [cell] = cells;
-    const copy = document.createElement('div');
-    copy.className = 'contact-cta-copy';
-    const heading = cell?.querySelector('h2, h3');
-    const para = cell?.querySelector('p:not(:has(a))');
-    if (heading) copy.append(heading);
-    if (para) copy.append(para);
-    wrap.append(copy);
 
-    const links = cell?.querySelectorAll('a') || [];
-    if (links.length) {
-      const actions = document.createElement('div');
-      actions.className = 'contact-cta-actions';
-      links.forEach((a) => { a.className = ''; actions.append(a); });
-      wrap.append(actions);
+    // heading
+    if (/^h[1-6]$/.test(tag)) {
+      const h = document.createElement('h2');
+      h.innerHTML = node.innerHTML;
+      copy.append(h);
+      return;
     }
-  }
 
-  block.innerHTML = '';
-  block.append(wrap);
+    // plain text → copy paragraph
+    const text = node.textContent.trim();
+    if (!text) return;
+    const p = document.createElement('p');
+    p.innerHTML = node.innerHTML || text;
+    copy.append(p);
+  });
+
+  container.append(copy);
+  if (phone.children.length) container.append(phone);
+  if (actions.children.length) container.append(actions);
+
+  block.replaceChildren(container);
 }

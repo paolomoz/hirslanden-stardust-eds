@@ -1,18 +1,12 @@
+/* disease-hero — full-bleed cinematic banner image.
+   Lifted verbatim from disease-detail prototype (.disease-hero rules), scoped
+   under .disease-hero. Tokens come from styles/styles.css. */
+
 .disease-hero {
   position: relative;
   overflow: hidden;
   background: var(--color-ground-alt);
-  aspect-ratio: 16/5;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
-}
-
-@media (width <= 900px) {
-  .disease-hero { aspect-ratio: 16/7; }
-}
-
-@media (width <= 640px) {
-  .disease-hero { aspect-ratio: 16/9; }
+  aspect-ratio: 16 / 5;
 }
 
 .disease-hero img {
@@ -21,4 +15,23 @@
   object-fit: cover;
   object-position: 50% 35%;
   display: block;
+}
+
+.disease-hero .placeholder-media {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border: 0;
+}
+
+@media (width <= 900px) {
+  .disease-hero {
+    aspect-ratio: 16 / 7;
+  }
+}
+
+@media (width <= 640px) {
+  .disease-hero {
+    aspect-ratio: 16 / 9;
+  }
 }

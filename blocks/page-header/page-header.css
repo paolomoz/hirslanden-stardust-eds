@@ -1,0 +1,45 @@
+/* page-header — back-link + title orienting header.
+   Lifted verbatim from clinic-listing prototype, scoped under .page-header.
+   Title selector covers h2 (default render) and h1 (lead-section variant).
+   Tokens and .container come from styles/styles.css. */
+
+.page-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-block: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.page-header .backlink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-accent-ink);
+  text-decoration: none;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+  transition: color 140ms ease;
+}
+
+.page-header .backlink:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.page-header .backlink svg {
+  flex: none;
+}
+
+.page-header h1,
+.page-header h2 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  color: var(--color-fg);
+}
+
+@media (width <= 599px) {
+  .page-header h1,
+  .page-header h2 {
+    font-size: var(--heading-lg);
+  }
+}

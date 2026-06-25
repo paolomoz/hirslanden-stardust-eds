@@ -1,0 +1,74 @@
+/* events-hero — page header for the events listing.
+   Lifted from event-listing prototype, scoped under .events-hero.
+   Tokens, .container and .eyebrow come from styles/styles.css. */
+
+.events-hero {
+  background: var(--color-ground-warm);
+  padding-block: var(--spacing-2xl) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.events-hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.events-hero h1 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  color: var(--color-fg);
+  max-width: 28ch;
+}
+
+.events-hero .lead {
+  font-size: var(--body);
+  color: var(--color-text-soft);
+  max-width: 70ch;
+  line-height: var(--line-height-body);
+}
+
+.events-hero .category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.events-hero .cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-fg);
+  text-decoration: none;
+  background: var(--color-bg);
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+}
+
+.events-hero .cat-pill:hover,
+.events-hero .cat-pill[aria-current="true"] {
+  border-color: var(--color-accent-ink);
+  color: var(--color-accent-ink);
+  background: var(--color-accent-tint);
+}
+
+.events-hero .cat-pill[aria-current="true"] {
+  font-weight: 700;
+}
+
+@media (width >= 600px) and (width <= 899px) {
+  .events-hero h1 {
+    font-size: clamp(1.563rem, 4vw, 1.953rem);
+  }
+}
+
+@media (width <= 599px) {
+  .events-hero h1 {
+    font-size: var(--heading-lg);
+  }
+}

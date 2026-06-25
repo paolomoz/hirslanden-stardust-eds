@@ -1,158 +1,151 @@
 /**
- * Article List block — paginated news/press-release row list.
+ * article-list block
+ * A chronological list of news / press-release rows. Each row links to an
+ * article and shows a tag, a date, the title and a source line, closed by a
+ * chevron. An optional trailing "load more" group renders the count + button.
  *
- * Authoring rows — each row is one article:
- *   Col 1: tag label (e.g. "Medienmitteilung" | "News")
- *   Col 2: date string "DD.MM.YYYY" (rendered in <time>)
- *   Col 3: article title (linked)
- *   Col 4: source label (e.g. "Hirslanden-Gruppe") — optional
- *
- * Config row (optional, col 1 = "config"):
- *   "config" | page-size | load-more-label | total-count
- *
- * @param {Element} block
+ * Authoring — one ROW per article (cells classified by content, never index):
+ *   - a short tag line ("Medienmitteilung" / "News") → article-tag
+ *   - a date line (dd.mm.yyyy) → article-date
+ *   - a title link → the row title + href
+ *   - a remaining text line → the source
+ * A final row that is a single bare text line ("10 von 28 …") → load-more count.
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  block.innerHTML = '';
 
-  let pageSize = 10;
-  let loadMoreLabel = 'Mehr anzeigen';
-  let totalOverride = 0;
-  const dataRows = [];
+const DATE_RE = /^\d{1,2}\.\d{1,2}\.\d{2,4}$/;
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
+
+function flatten(row) {
+  const parts = [];
+  const cells = [...row.querySelectorAll(':scope > div')];
+  (cells.length ? cells : [row]).forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
+        const p = document.createElement('p');
+        p.textContent = text;
+        parts.push(p);
+      }
+      return;
+    }
+    kids.forEach((el) => parts.push(el));
+  });
+  return parts;
+}
+
+function buildRow(parts) {
+  const li = document.createElement('li');
+  li.className = 'article-row';
+  const a = document.createElement('a');
+
+  let tag = null;
+  let date = null;
+  let titleEl = null;
+  let href = '#';
+  let source = null;
+
+  parts.forEach((el) => {
+    const text = el.textContent.trim();
+    const link = anchorOf(el);
+    if (link && !titleEl) { titleEl = el; href = link.getAttribute('href') || '#'; return; }
+    if (isHeading(el) && !titleEl) { titleEl = el; return; }
+    if (!date && DATE_RE.test(text)) { date = text; return; }
+    if (!tag && text && text.length <= 28) { tag = text; return; }
+    if (text) source = text;
+  });
+
+  a.href = href;
+
+  const badge = document.createElement('span');
+  badge.className = 'article-badge';
+  if (tag) {
+    const t = document.createElement('span');
+    t.className = 'article-tag';
+    t.textContent = tag;
+    badge.append(t);
+  }
+  if (date) {
+    const d = document.createElement('time');
+    d.className = 'article-date';
+    d.textContent = date;
+    badge.append(d);
+  }
+  a.append(badge);
+
+  const content = document.createElement('span');
+  content.className = 'article-content';
+  const title = document.createElement('span');
+  title.className = 'article-title';
+  title.textContent = titleEl ? titleEl.textContent.trim() : '';
+  content.append(title);
+  if (source) {
+    const s = document.createElement('span');
+    s.className = 'article-source';
+    s.textContent = source;
+    content.append(s);
+  }
+  a.append(content);
+
+  const arrow = document.createElement('span');
+  arrow.className = 'article-arrow';
+  arrow.setAttribute('aria-hidden', 'true');
+  arrow.innerHTML = '&#8250;';
+  a.append(arrow);
+
+  li.append(a);
+  return li;
+}
+
+export default async function decorate(block) {
+  const rows = [...block.querySelectorAll(':scope > div')];
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const list = document.createElement('ul');
+  list.className = 'article-list';
+  list.setAttribute('aria-label', 'Medienmitteilungen und News');
+
+  let countLine = null;
+  let moreBtn = null;
 
   rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    if (cells[0]?.textContent.trim().toLowerCase() === 'config') {
-      pageSize = parseInt(cells[1]?.textContent.trim(), 10) || pageSize;
-      loadMoreLabel = cells[2]?.textContent.trim() || loadMoreLabel;
-      totalOverride = parseInt(cells[3]?.textContent.trim(), 10) || 0;
-    } else {
-      dataRows.push(row);
-    }
-  });
-
-  const total = totalOverride || dataRows.length;
-
-  // Build article list
-  const ul = document.createElement('ul');
-  ul.className = 'article-list-items';
-  ul.setAttribute('aria-label', 'Medienmitteilungen und News');
-
-  dataRows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    const [tagCell, dateCell, titleCell, sourceCell] = cells;
-
-    const tag = tagCell?.textContent?.trim() || '';
-    const dateRaw = dateCell?.textContent?.trim() || '';
-    const link = titleCell?.querySelector('a');
-    const title = titleCell?.textContent?.trim() || '';
-    const source = sourceCell?.textContent?.trim() || '';
-
-    // Convert DD.MM.YYYY to ISO datetime
-    const isoDate = dateRaw.replace(/(\d{2})\.(\d{2})\.(\d{4})/, '$3-$2-$1');
-
-    const li = document.createElement('li');
-    li.className = 'article-row';
-
-    const a = document.createElement('a');
-    a.href = link?.href || '#';
-
-    const badge = document.createElement('span');
-    badge.className = 'article-badge';
-
-    if (tag) {
-      const tagEl = document.createElement('span');
-      tagEl.className = 'article-tag';
-      tagEl.textContent = tag;
-      badge.append(tagEl);
-    }
-
-    if (dateRaw) {
-      const time = document.createElement('time');
-      time.className = 'article-date';
-      time.setAttribute('datetime', isoDate);
-      time.textContent = dateRaw;
-      badge.append(time);
-    }
-
-    a.append(badge);
-
-    const content = document.createElement('span');
-    content.className = 'article-content';
-
-    const titleEl = document.createElement('span');
-    titleEl.className = 'article-title';
-    titleEl.textContent = title;
-    content.append(titleEl);
-
-    if (source) {
-      const sourceEl = document.createElement('span');
-      sourceEl.className = 'article-source';
-      sourceEl.textContent = source;
-      content.append(sourceEl);
-    }
-
-    a.append(content);
-
-    const arrow = document.createElement('span');
-    arrow.className = 'article-arrow';
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '›';
-    a.append(arrow);
-
-    li.append(a);
-    ul.append(li);
-  });
-
-  block.append(ul);
-
-  // Load-more controls
-  if (total > dataRows.length || total > pageSize) {
-    const shown = Math.min(dataRows.length, pageSize);
-
-    const loadMore = document.createElement('div');
-    loadMore.className = 'article-list-load-more';
-
-    const countEl = document.createElement('p');
-    countEl.className = 'article-list-count';
-    countEl.textContent = `${shown} von ${total} Beiträgen angezeigt`;
-
-    const progress = document.createElement('div');
-    progress.className = 'article-list-progress';
-    progress.setAttribute('role', 'progressbar');
-    progress.setAttribute('aria-valuenow', String(shown));
-    progress.setAttribute('aria-valuemin', '0');
-    progress.setAttribute('aria-valuemax', String(total));
-    progress.setAttribute('aria-label', `Fortschritt: ${shown} von ${total}`);
-
-    const fill = document.createElement('div');
-    fill.className = 'article-list-progress-fill';
-    fill.style.transform = `scaleX(${shown / total})`;
-    progress.append(fill);
-
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'btn btn--primary';
-    btn.setAttribute('aria-label', 'Weitere Medienmitteilungen laden');
-    btn.textContent = loadMoreLabel;
-
-    let currentShown = shown;
-
-    btn.addEventListener('click', () => {
-      currentShown = Math.min(currentShown + pageSize, total);
-      countEl.textContent = `${currentShown} von ${total} Beiträgen angezeigt`;
-      fill.style.transform = `scaleX(${currentShown / total})`;
-      progress.setAttribute('aria-valuenow', String(currentShown));
-
-      if (currentShown >= total) {
-        btn.disabled = true;
-        btn.textContent = 'Alle Beiträge angezeigt';
-        btn.setAttribute('aria-disabled', 'true');
+    const parts = flatten(row);
+    const hasLink = parts.some(anchorOf);
+    const hasDate = parts.some((p) => DATE_RE.test(p.textContent.trim()));
+    // A trailing meta row: a count text and/or a "Mehr anzeigen" button.
+    if (!hasDate && parts.length <= 2 && !parts.some(isHeading)) {
+      const link = parts.find(anchorOf);
+      const textOnly = parts.find((p) => !anchorOf(p) && p.textContent.trim());
+      if (textOnly && /\bvon\b|\d+\s*\/\s*\d+|beitr/i.test(textOnly.textContent)) {
+        countLine = textOnly.textContent.trim();
       }
-    });
+      if (link) moreBtn = anchorOf(link);
+      if (countLine || moreBtn) return;
+    }
+    if (hasLink) list.append(buildRow(parts));
+  });
 
-    loadMore.append(countEl, progress, btn);
-    block.append(loadMore);
+  container.append(list);
+
+  if (countLine || moreBtn) {
+    const bar = document.createElement('div');
+    bar.className = 'load-more-bar';
+    if (countLine) {
+      const p = document.createElement('p');
+      p.className = 'load-more-count';
+      p.textContent = countLine;
+      bar.append(p);
+    }
+    if (moreBtn) {
+      const a = moreBtn.cloneNode(true);
+      a.className = 'btn btn--primary';
+      bar.append(a);
+    }
+    container.append(bar);
   }
+
+  block.replaceChildren(container);
 }

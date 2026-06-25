@@ -1,73 +1,61 @@
+/* teaser-callout — related-content split band.
+   Lifted verbatim from content-page prototype (.teaser-callout* rules), scoped
+   under .teaser-callout. Tokens, .container, .eyebrow and .btn come from
+   styles/styles.css. */
+
 .teaser-callout {
-  background: var(--color-ground-alt, #f0efed);
+  background: var(--color-ground-alt);
+  padding-block: var(--section-padding);
 }
 
-.teaser-callout-inner {
+.teaser-callout .teaser-callout-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: var(--spacing-2xl);
   align-items: center;
 }
 
-.teaser-callout-copy {
-  padding-block: 32px;
+.teaser-callout .teaser-callout-copy {
+  padding-block: var(--spacing-xl);
 }
 
-.teaser-callout-copy .eyebrow {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent-ink, #0070a0);
-  margin: 0 0 16px;
+.teaser-callout .teaser-callout-copy .eyebrow {
+  color: var(--color-accent-ink);
+  margin-bottom: var(--spacing-md);
 }
 
-.teaser-callout-copy h2 {
-  font-size: 1.953rem;
-  margin-bottom: 16px;
+.teaser-callout .teaser-callout-copy h2 {
+  font-size: var(--heading-xl);
+  margin-bottom: var(--spacing-md);
 }
 
-.teaser-callout-copy p {
-  color: var(--color-text-soft, #72665b);
-  margin-bottom: 24px;
-  line-height: 1.6;
+.teaser-callout .teaser-callout-copy p {
+  color: var(--color-text-soft);
+  margin-bottom: var(--spacing-lg);
 }
 
-.teaser-callout-copy .btn--primary {
-  display: inline-flex;
-  align-items: center;
-  background: var(--color-accent-ink, #0070a0);
-  color: #fff;
-  padding: 12px 28px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 160ms ease;
-}
-
-.teaser-callout-copy .btn--primary:hover {
-  background: var(--color-accent-hover, #006894);
-}
-
-.teaser-callout-media {
+.teaser-callout .teaser-callout-media {
   overflow: hidden;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  box-shadow: var(--shadow-card);
 }
 
-.teaser-callout-media img {
+.teaser-callout .teaser-callout-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 3;
-  display: block;
+}
+
+.teaser-callout .teaser-callout-media .placeholder-media {
+  aspect-ratio: 4 / 3;
 }
 
 @media (width <= 900px) {
-  .teaser-callout-inner {
+  .teaser-callout .teaser-callout-inner {
     grid-template-columns: 1fr;
   }
 
-  .teaser-callout-media {
+  .teaser-callout .teaser-callout-media {
     order: -1;
   }
 }

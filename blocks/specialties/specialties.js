@@ -1,76 +1,112 @@
-// SVG icons keyed by department name fragment (lowercase match)
-const ICONS = {
-  chirurgie: '<path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zM8 12h8M12 8v8"/>',
-  orthopädie: '<path d="M4 12h4m8 0h4M12 2v4m0 12v4M6.34 6.34l2.83 2.83m5.66 5.66 2.83 2.83M6.34 17.66l2.83-2.83m5.66-5.66 2.83-2.83"/>',
-  gynäkologie: '<circle cx="12" cy="8" r="4"/><path d="M12 12v8M9 17h6"/>',
-  geburt: '<path d="M9 12c0 1.66 1.34 3 3 3s3-1.34 3-3"/><path d="M5 7c0-3.31 3.13-6 7-6s7 2.69 7 6v10H5z"/>',
-  innere: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
-  radiologie: '<circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>',
-  default: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
-};
+/**
+ * specialties block
+ * A 3-column grid of department/specialty cards. Each card: a decorative icon,
+ * a title, body copy and a "Mehr erfahren" read-more link. A leading
+ * eyebrow + heading become the section head.
+ *
+ * Authoring (one ROW per card, classified by content):
+ *   - a heading (h3) → card title
+ *   - a paragraph    → card copy
+ *   - a plain link   → read-more
+ * A lone leading row of [eyebrow text, heading] (or a single heading) becomes
+ * the section head.
+ */
 
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  let dataRows = rows;
+const DEPT_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
 
-  // Prefer default-content reabsorption; fall back to first heading row (back-compat)
-  let sectionHead = null;
-  const prev = block.closest('.block-content')?.previousElementSibling;
-  if (prev && (prev.classList.contains('default-content') || prev.classList.contains('default-content-wrapper'))) {
-    sectionHead = document.createElement('div');
-    sectionHead.className = 'section-head';
-    sectionHead.append(...prev.childNodes);
-    prev.remove();
-  } else if (rows.length && rows[0].querySelectorAll(':scope > div').length === 1) {
-    const firstCell = rows[0].querySelector(':scope > div');
-    if (firstCell?.querySelector('h2, h3')) {
-      sectionHead = document.createElement('div');
-      sectionHead.className = 'section-head';
-      sectionHead.append(...firstCell.childNodes);
-      dataRows = rows.slice(1);
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
+
+function readRows(block) {
+  return [...block.querySelectorAll(':scope > div')].map((row) => {
+    const parts = [];
+    const cells = [...row.querySelectorAll(':scope > div')];
+    (cells.length ? cells : [row]).forEach((cell) => {
+      const kids = [...cell.children];
+      if (kids.length === 0) {
+        const text = cell.textContent.trim();
+        if (text) {
+          const p = document.createElement('p');
+          p.innerHTML = cell.innerHTML;
+          parts.push(p);
+        }
+        return;
+      }
+      kids.forEach((el) => parts.push(el));
+    });
+    return parts;
+  }).filter((p) => p.length);
+}
+
+export default async function decorate(block) {
+  const rows = readRows(block);
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  // First row that has a heading but no link/paragraph-with-readmore can be the
+  // section head when it's clearly a section opener (eyebrow + heading only).
+  let cards = rows;
+  const first = rows[0] || [];
+  const firstHasLink = first.some((p) => anchorOf(p));
+  const firstHeading = first.find(isHeading);
+  if (firstHeading && !firstHasLink && first.length <= 2) {
+    const head = document.createElement('div');
+    head.className = 'section-head';
+    const eyebrow = first.find((p) => p !== firstHeading && p.textContent.trim());
+    if (eyebrow) {
+      const e = document.createElement('p');
+      e.className = 'eyebrow';
+      e.innerHTML = eyebrow.innerHTML;
+      head.append(e);
     }
+    const h2 = document.createElement('h2');
+    h2.innerHTML = firstHeading.innerHTML;
+    head.append(h2);
+    container.append(head);
+    cards = rows.slice(1);
   }
-
-  const wrap = document.createElement('div');
-  wrap.className = 'container';
-
-  if (sectionHead) wrap.append(sectionHead);
 
   const grid = document.createElement('div');
   grid.className = 'dept-grid';
 
-  dataRows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    const [nameCell, descCell] = cells;
-    const name = nameCell?.querySelector('a, h3, p')?.textContent?.trim() || nameCell?.textContent?.trim() || '';
-    const link = nameCell?.querySelector('a') || descCell?.querySelector('a');
-
-    const card = document.createElement(link ? 'a' : 'div');
+  cards.forEach((parts) => {
+    const card = document.createElement('article');
     card.className = 'dept-card';
-    if (link) { card.href = link.href; }
 
     const icon = document.createElement('div');
     icon.className = 'dept-icon';
-    icon.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">${ICONS[Object.keys(ICONS).find((k) => name.toLowerCase().includes(k)) || 'default']}</svg>`;
+    icon.setAttribute('aria-hidden', 'true');
+    icon.innerHTML = DEPT_ICON;
     card.append(icon);
 
-    const title = document.createElement('h3');
-    title.textContent = link ? link.textContent.trim() : name;
-    card.append(title);
+    const title = parts.find(isHeading);
+    if (title) {
+      const h3 = document.createElement('h3');
+      h3.innerHTML = title.innerHTML;
+      card.append(h3);
+    }
 
-    if (descCell) {
+    const link = parts.find((p) => anchorOf(p));
+    const copy = parts.filter((p) => p !== title && p !== link && p.textContent.trim());
+    copy.forEach((c) => {
       const p = document.createElement('p');
-      // Strip the link we already used; keep descriptive text
-      const clone = descCell.cloneNode(true);
-      clone.querySelectorAll('a').forEach((a) => a.remove());
-      p.textContent = clone.textContent.trim();
-      if (p.textContent) card.append(p);
+      p.innerHTML = c.innerHTML;
+      card.append(p);
+    });
+
+    if (link) {
+      const a = anchorOf(link);
+      const more = document.createElement('a');
+      more.className = 'readmore';
+      more.href = a.getAttribute('href') || '#';
+      more.innerHTML = a.innerHTML;
+      card.append(more);
     }
 
     grid.append(card);
   });
 
-  wrap.append(grid);
-  block.innerHTML = '';
-  block.append(wrap);
+  container.append(grid);
+  block.replaceChildren(container);
 }

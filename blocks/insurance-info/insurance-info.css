@@ -1,76 +1,70 @@
+/* insurance-info — a copy column plus a 3-up grid of insurance-class cards.
+   Lifted verbatim from the patient-info-proposed prototype (.insurance-grid,
+   .insurance-copy*, .insurance-classes, .insurance-class-item rules + the
+   section background/padding), scoped under .insurance-info. Tokens,
+   .container, .eyebrow and .readmore come from styles/styles.css. */
+
 .insurance-info {
-  background: var(--color-ground-alt, #f0efed);
   padding-block: var(--section-padding);
+  background: var(--color-ground-alt);
 }
 
-.insurance-info-inner {
+.insurance-info .insurance-grid {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--spacing-2xl);
 }
 
-.insurance-info-copy h2 {
-  font-size: 1.953rem;
+.insurance-info .insurance-copy h2 {
+  font-size: var(--heading-xl);
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-lg);
 }
 
-.insurance-info-copy p {
-  color: var(--color-text-soft, #72665b);
-  margin-bottom: 16px;
-  line-height: 1.6;
+.insurance-info .insurance-copy p {
+  color: var(--color-text-soft);
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-body);
 }
 
-.insurance-info-copy .readmore {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--color-accent-ink, #0070a0);
-  font-weight: 500;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-top: 16px;
+.insurance-info .insurance-copy .readmore {
+  margin-top: var(--spacing-md);
 }
 
-.insurance-info-copy .readmore::after {
-  content: "\203A";
-  font-size: 1.1em;
-  line-height: 1;
-}
-
-.insurance-info-copy .readmore:hover {
-  text-decoration: underline;
-}
-
-.insurance-classes {
+.insurance-info .insurance-classes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--spacing-lg);
 }
 
-.insurance-class-item {
-  background: #fff;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
-  padding: 24px;
-  border-top: 3px solid var(--color-accent, #0094d4);
+.insurance-info .insurance-class-item {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-lg);
+  border-top: 3px solid var(--color-accent);
 }
 
-.insurance-class-item h3 {
-  font-size: 1.25rem;
+.insurance-info .insurance-class-item h3 {
+  font-size: var(--heading-md);
   font-weight: 500;
-  margin-bottom: 8px;
-  color: var(--color-fg, #534c46);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-fg);
 }
 
-.insurance-class-item p {
-  font-size: 0.8rem;
-  color: var(--color-text-soft, #72665b);
-  line-height: 1.6;
-  margin: 0;
+.insurance-info .insurance-class-item p {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  line-height: var(--line-height-body);
 }
 
 @media (width <= 900px) {
-  .insurance-classes {
+  .insurance-info .insurance-classes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 640px) {
+  .insurance-info .insurance-classes {
     grid-template-columns: 1fr;
   }
 }

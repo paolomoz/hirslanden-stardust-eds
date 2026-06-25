@@ -1,0 +1,49 @@
+/* disease-cta — split CTA band (copy + actions) on alt ground.
+   Lifted from disease-detail prototype (.cta-band rules), scoped under
+   .disease-cta. Tokens, .container and .btn come from styles/styles.css. */
+
+.disease-cta {
+  background: var(--color-ground-alt);
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.disease-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  padding-block: var(--spacing-2xl);
+}
+
+.disease-cta .disease-cta-copy h2 {
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.disease-cta .disease-cta-copy p {
+  font-size: var(--body-sm);
+  color: var(--color-text-soft);
+  max-width: 52ch;
+}
+
+.disease-cta .disease-cta-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  flex: none;
+}
+
+/* the secondary onblue action carries an accent outline in this band */
+.disease-cta .disease-cta-actions .btn--onblue {
+  border: 1px solid var(--color-accent-ink);
+}
+
+@media (width <= 640px) {
+  .disease-cta .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

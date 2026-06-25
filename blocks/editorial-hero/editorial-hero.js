@@ -1,63 +1,60 @@
 /**
- * Editorial Hero block — full-bleed image with white panel overlay (ds-feature pattern)
- * Authored row structure:
- *   Row 1: [image] | [eyebrow text]
- *   Row 2: [heading (h1 or h2)]
- *   Row 3: [body text]
- *   Row 4: [CTA link(s)]
+ * editorial-hero block
+ * Full-bleed photo with a white panel overlay carrying the page eyebrow, the
+ * page <h1>, intro copy and an optional read-more link.
+ *
+ * Authoring (flattened single cell or one-row): an optional eyebrow line, the
+ * heading, one or more paragraphs of copy, an optional plain <a> read-more.
+ * The first image (absolute URL) becomes the full-bleed background figure.
+ * If no image is authored, the figure renders as a neutral placeholder.
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
 
-  let image = null;
-  let eyebrow = '';
-  let heading = null;
-  let body = '';
-  let ctas = [];
+const isMedia = (el) => el.matches('picture, img') || el.querySelector('picture, img');
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
 
-  rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    if (!cells.length) return;
-
-    // Row with picture/img = image row; second cell = eyebrow
-    const img = cells[0].querySelector('img, picture');
-    if (img) {
-      [image] = cells;
-      eyebrow = cells[1]?.textContent?.trim() || '';
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
+        const p = document.createElement('p');
+        p.innerHTML = cell.innerHTML;
+        nodes.push(p);
+      }
       return;
     }
-
-    // h1 or h2 = heading row
-    const h = cells[0].querySelector('h1, h2');
-    if (h) {
-      heading = h;
-      return;
-    }
-
-    // Links = CTA row
-    const links = cells[0].querySelectorAll('a');
-    if (links.length) {
-      ctas = [...links];
-      return;
-    }
-
-    // Otherwise body text
-    body = cells[0].innerHTML;
+    kids.forEach((el) => nodes.push(el));
   });
+  return nodes;
+}
 
-  // Build structure
-  const section = document.createElement('div');
-  section.className = 'editorial-hero';
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
 
+  const media = nodes.find((n) => isMedia(n));
+  const heading = nodes.find((n) => isHeading(n));
+  const link = nodes.find((n) => {
+    const a = n.tagName.toLowerCase() === 'a' ? n : n.querySelector('a');
+    return a && !isMedia(n);
+  });
+  const paras = nodes.filter((n) => n !== media && n !== heading && n !== link
+    && !isMedia(n) && n.textContent.trim());
+
+  // figure (full-bleed background)
   const figure = document.createElement('figure');
   figure.className = 'editorial-hero-figure';
-  if (image) {
-    const imgEl = image.querySelector('img, picture');
-    if (imgEl) {
-      figure.append(imgEl.cloneNode(true));
-    }
+  if (media) {
+    const pic = media.matches('picture, img') ? media : media.querySelector('picture, img');
+    const img = pic.tagName.toLowerCase() === 'img' ? pic : pic.querySelector('img');
+    if (img && !img.getAttribute('alt')) img.setAttribute('alt', '');
+    figure.append(pic);
+  } else {
+    const ph = document.createElement('div');
+    ph.className = 'placeholder-media';
+    figure.append(ph);
   }
-  section.append(figure);
 
   const container = document.createElement('div');
   container.className = 'container';
@@ -65,32 +62,44 @@ export default function decorate(block) {
   const panel = document.createElement('div');
   panel.className = 'editorial-hero-panel';
 
-  if (eyebrow) {
-    const p = document.createElement('p');
-    p.className = 'eyebrow';
-    p.textContent = eyebrow;
-    panel.append(p);
-  }
+  // The first non-heading paragraph that precedes the heading acts as eyebrow.
+  let eyebrowDone = false;
+  const headingIndex = nodes.indexOf(heading);
 
-  if (heading) {
-    panel.append(heading);
-  }
-
-  if (body) {
-    const p = document.createElement('p');
-    p.innerHTML = body;
-    panel.append(p);
-  }
-
-  ctas.forEach((a) => {
-    const isSecondary = a.closest('em') !== null;
-    a.className = isSecondary ? 'readmore' : 'readmore';
-    panel.append(a);
+  paras.forEach((p) => {
+    const original = nodes.indexOf(p);
+    if (!eyebrowDone && heading && original < headingIndex) {
+      const eb = document.createElement('p');
+      eb.className = 'eyebrow';
+      eb.innerHTML = p.innerHTML;
+      panel.append(eb);
+      eyebrowDone = true;
+    }
   });
 
-  container.append(panel);
-  section.append(container);
+  if (heading) {
+    const h1 = document.createElement('h1');
+    h1.innerHTML = heading.innerHTML;
+    panel.append(h1);
+  }
 
-  block.innerHTML = '';
-  block.append(section);
+  paras.forEach((p) => {
+    const original = nodes.indexOf(p);
+    if (heading && original < headingIndex) return; // eyebrow handled
+    const para = document.createElement('p');
+    para.innerHTML = p.innerHTML;
+    panel.append(para);
+  });
+
+  if (link) {
+    const a = link.tagName.toLowerCase() === 'a' ? link : link.querySelector('a');
+    const rm = document.createElement('a');
+    rm.className = 'readmore';
+    rm.href = a.getAttribute('href') || '#';
+    rm.innerHTML = a.innerHTML;
+    panel.append(rm);
+  }
+
+  container.append(panel);
+  block.replaceChildren(figure, container);
 }

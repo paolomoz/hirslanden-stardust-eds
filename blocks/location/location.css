@@ -1,73 +1,78 @@
+/* location — 2-col map placeholder + labelled address block.
+   Lifted verbatim from clinic-detail prototype (.location-grid, .location-*,
+   .address-* rules + the placeholder-media--map + the section--alt background/
+   padding), scoped under .location. Tokens, .container, .section-head and
+   .eyebrow come from styles/styles.css. */
+
 .location {
-  background: var(--color-ground-alt);
   padding-block: var(--section-padding);
+  background: var(--color-ground-alt);
 }
 
-.location .section-head { margin-bottom: var(--spacing-2xl); }
-
-.location-grid {
+.location .location-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
   align-items: start;
 }
 
-.location-map .map-placeholder {
-  background: var(--color-ground-alt);
-  aspect-ratio: 16 / 7;
-  border: 1px solid var(--color-hairline);
+.location .placeholder-media {
+  background: var(--color-ground-warm);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-text-soft);
+  font-size: var(--body-sm);
+  width: 100%;
+  border: 1px solid rgb(0 0 0 / 6%);
+}
+
+.location .placeholder-media--map {
+  aspect-ratio: 16 / 7;
+  max-height: 320px;
+}
+
+.location .location-map-link {
+  margin-top: var(--spacing-sm);
   font-size: var(--body-sm);
   color: var(--color-text-soft);
 }
 
-.location-map .map-link {
-  margin-top: var(--spacing-sm);
-  font-size: var(--body-sm);
-}
-
-.address-item-value a {
+.location .location-map-link a {
   color: var(--color-accent-ink);
   text-decoration: none;
 }
 
-.address-item-value a:hover { text-decoration: underline; }
-
-.location-map .map-link a {
-  color: var(--color-accent-ink);
-  text-decoration: none;
+.location .location-map-link a:hover {
+  text-decoration: underline;
 }
 
-.location-map .map-link a:hover { text-decoration: underline; }
-
-.location-address h3 {
+.location .location-address h3 {
   font-size: var(--heading-lg);
   font-weight: 700;
   margin-bottom: var(--spacing-lg);
 }
 
-.address-block {
+.location .address-block {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
 }
 
-.address-item {
+.location .address-item {
   display: flex;
-  align-items: flex-start;
   gap: var(--spacing-md);
+  align-items: flex-start;
   padding-bottom: var(--spacing-md);
   border-bottom: 1px solid var(--color-hairline);
 }
 
-.address-item:last-child {
+.location .address-item:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-.address-item-icon {
+.location .address-item-icon {
   flex: none;
   width: 36px;
   height: 36px;
@@ -77,29 +82,39 @@
   align-items: center;
   justify-content: center;
   color: var(--color-accent-ink);
-  margin-top: 2px;
 }
 
-.address-item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+.location .address-item-content {
+  flex: 1;
+  min-width: 0;
 }
 
-.address-item-label {
+.location .address-item-label {
   font-size: var(--body-sm);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--color-text-soft);
+  margin-bottom: 4px;
 }
 
-.address-item-value {
+.location .address-item-value {
   font-size: var(--body);
   color: var(--color-fg);
   line-height: 1.5;
 }
 
-@media (width <= 900px) {
-  .location-grid { grid-template-columns: 1fr; }
+.location .address-item-value a {
+  color: var(--color-accent-ink);
+  text-decoration: none;
+}
+
+.location .address-item-value a:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 1024px) {
+  .location .location-grid {
+    grid-template-columns: 1fr;
+  }
 }

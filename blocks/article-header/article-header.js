@@ -1,115 +1,62 @@
 /**
- * Article Header block
- * Renders breadcrumb + optional back link + H1.
+ * article-header block
+ * Orienting header for a news article: an optional back-link (the block prepends
+ * a left-arrow) and the article H1 (the page's single H1).
  *
- * Authored as a single row, single cell containing:
- *   - Breadcrumb links (authored as a paragraph of pipe-separated links,
- *     or as a series of links separated by plain-text separators)
- *   - Back link: <em><a href="...">Back text</a></em>
- *   - H1 or H2 title
- *
- * Alternatively, two rows:
- *   Row 1: breadcrumb links (one link per paragraph, or comma-separated)
- *   Row 2: back link + h1
+ * Authoring (flat content, classified by content not index):
+ *   - the FIRST plain link (before the heading) → the back-link
+ *   - a heading → H1
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  if (!rows.length) return;
 
-  const wrapper = document.createElement('div');
-  wrapper.className = 'article-header-inner';
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
 
-  // Collect all child elements from all cells
-  const allCells = rows.flatMap((r) => [...r.querySelectorAll(':scope > div')]);
-  const allChildren = allCells.flatMap((c) => [...c.children]);
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
+        const p = document.createElement('p');
+        p.textContent = text;
+        nodes.push(p);
+      }
+      return;
+    }
+    kids.forEach((el) => nodes.push(el));
+  });
+  return nodes;
+}
 
-  const breadcrumbLinks = [];
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
   let backLink = null;
   let heading = null;
 
-  allChildren.forEach((el) => {
-    const tag = el.tagName.toLowerCase();
-
-    // Heading → article H1
-    if (tag === 'h1' || tag === 'h2') {
-      heading = document.createElement('h1');
-      heading.textContent = el.textContent.trim();
-      return;
-    }
-
-    // <em><a> → back link
-    const emLink = el.querySelector('em > a, em a');
-    if (emLink) {
-      backLink = document.createElement('a');
-      backLink.className = 'backlink';
-      backLink.href = emLink.href;
-      backLink.textContent = emLink.textContent.trim();
-      return;
-    }
-
-    // Paragraph with links → breadcrumb items
-    const links = [...el.querySelectorAll('a')];
-    if (links.length) {
-      links.forEach((a) => breadcrumbLinks.push({ text: a.textContent.trim(), href: a.href }));
-      // Also capture trailing plain text as current page
-      const text = el.textContent.trim();
-      const linkedText = links.map((a) => a.textContent.trim()).join('');
-      const remainder = text.replace(linkedText, '').replace(/[/›»|]/g, '').trim();
-      if (remainder) {
-        breadcrumbLinks.push({ text: remainder, href: null });
-      }
-      return;
-    }
-
-    // Plain paragraph as current breadcrumb item
-    const plain = el.textContent.trim();
-    if (plain && tag === 'p') {
-      breadcrumbLinks.push({ text: plain, href: null });
-    }
+  nodes.forEach((node) => {
+    const a = anchorOf(node);
+    if (isHeading(node)) { if (!heading) heading = node; return; }
+    if (a && !backLink && !heading) backLink = a;
   });
 
-  // ── Build breadcrumb nav ──────────────────────────────────────────
-  if (breadcrumbLinks.length) {
-    const nav = document.createElement('nav');
-    nav.setAttribute('aria-label', 'Breadcrumb');
-    const ol = document.createElement('ol');
-    ol.className = 'breadcrumb';
-
-    breadcrumbLinks.forEach(({ text, href }, i) => {
-      const li = document.createElement('li');
-      if (href && i < breadcrumbLinks.length - 1) {
-        const a = document.createElement('a');
-        a.href = href;
-        a.textContent = text;
-        li.append(a);
-      } else if (i === breadcrumbLinks.length - 1) {
-        const span = document.createElement('span');
-        span.setAttribute('aria-current', 'page');
-        span.textContent = text;
-        li.append(span);
-      } else {
-        const a = document.createElement('a');
-        a.href = href || '#';
-        a.textContent = text;
-        li.append(a);
-      }
-      ol.append(li);
-    });
-
-    nav.append(ol);
-    wrapper.append(nav);
-  }
-
-  // ── Back link ─────────────────────────────────────────────────────
   if (backLink) {
-    wrapper.append(backLink);
+    const a = document.createElement('a');
+    a.className = 'backlink';
+    a.href = backLink.getAttribute('href') || '#';
+    a.textContent = backLink.textContent.trim();
+    container.append(a);
   }
 
-  // ── H1 ────────────────────────────────────────────────────────────
   if (heading) {
-    wrapper.append(heading);
+    const h1 = document.createElement('h1');
+    h1.innerHTML = heading.innerHTML;
+    container.append(h1);
   }
 
-  block.innerHTML = '';
-  block.append(wrapper);
+  block.replaceChildren(container);
 }

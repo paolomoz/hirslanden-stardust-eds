@@ -1,146 +1,174 @@
 /**
- * Events Filter block — sticky filter bar for the events listing page.
+ * events-filter block
+ * A sticky filter bar above the events-grid. Renders a keyword field plus a set
+ * of select dropdowns, then wires client-side filtering: on submit / change it
+ * matches each `.events-grid li` card by the data-category / data-location /
+ * text content the events-grid block stamped on it, and toggles visibility.
  *
- * Authoring rows — each row defines one filter field:
- *   Col 1: field label
- *   Col 2: field type ("search" | "select")
- *   Col 3: field name (used as query param)
- *   Col 4+: option values (one per additional cell, or comma-separated in one cell)
- *
- * The last authored row may be a "submit" row (col 1 = "submit", col 2 = button label).
- *
- * Dispatches a CustomEvent "events-filter:change" on the block with
- * { detail: { filters: { [name]: value } } } so events-grid can react.
- *
- * @param {Element} block
+ * Authoring (flat content, classified by content not index):
+ *   - a plain text line "Label: value, value, value" → one select named after
+ *     the label, with one <option> per value. The first label is treated as the
+ *     keyword field if it reads like "Stichwort"/"Suche", otherwise it is a
+ *     select. A standalone link/Button label "Anwenden" is the submit button.
+ * If no fields are authored the bar renders nothing.
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  block.innerHTML = '';
+
+const SELECT_RE = /^([^:]{2,40}):\s*(.+)$/;
+const KEYWORD_RE = /(stichwort|suche|keyword|name)/i;
+
+function collectLines(block) {
+  const lines = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) lines.push({ text, el: cell });
+      return;
+    }
+    kids.forEach((el) => {
+      const text = el.textContent.trim();
+      if (text || el.querySelector('a')) lines.push({ text, el });
+    });
+  });
+  return lines;
+}
+
+function normalise(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+}
+
+export default async function decorate(block) {
+  const lines = collectLines(block);
+
+  const container = document.createElement('div');
+  container.className = 'container';
 
   const form = document.createElement('form');
-  form.className = 'events-filter-form';
+  form.className = 'filter-form events-filters';
   form.setAttribute('role', 'search');
   form.setAttribute('aria-label', 'Veranstaltungen suchen und filtern');
 
+  const selects = [];
+  let keywordInput = null;
   let submitLabel = 'Anwenden';
 
-  rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    if (!cells.length) return;
+  lines.forEach((line, i) => {
+    const m = line.text.match(SELECT_RE);
+    if (m) {
+      const label = m[1].trim();
+      const values = m[2].split(',').map((v) => v.trim()).filter(Boolean);
+      const field = document.createElement('div');
+      field.className = 'filter-field';
+      const id = `event-filter-${i}`;
+      const lab = document.createElement('label');
+      lab.setAttribute('for', id);
+      lab.textContent = label;
+      field.append(lab);
 
-    const label = cells[0]?.textContent.trim();
-    const type = cells[1]?.textContent.trim().toLowerCase();
-    const name = cells[2]?.textContent.trim();
-
-    // Submit row
-    if (label?.toLowerCase() === 'submit') {
-      submitLabel = type || submitLabel;
+      if (KEYWORD_RE.test(label)) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.id = id;
+        input.placeholder = values[0] || label;
+        input.autocomplete = 'off';
+        field.append(input);
+        keywordInput = input;
+      } else {
+        const sel = document.createElement('select');
+        sel.id = id;
+        sel.setAttribute('aria-label', `Nach ${label} filtern`);
+        const opt0 = document.createElement('option');
+        opt0.value = '';
+        opt0.textContent = label;
+        sel.append(opt0);
+        values.forEach((v) => {
+          const o = document.createElement('option');
+          o.value = v;
+          o.textContent = v;
+          sel.append(o);
+        });
+        field.append(sel);
+        selects.push(sel);
+      }
+      form.append(field);
       return;
     }
-
-    const field = document.createElement('div');
-    field.className = 'events-filter-field';
-
-    const labelEl = document.createElement('label');
-    const inputId = `ef-${name || label?.toLowerCase().replace(/\s+/g, '-')}`;
-    labelEl.htmlFor = inputId;
-    labelEl.textContent = label;
-    field.append(labelEl);
-
-    if (type === 'search') {
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.id = inputId;
-      input.name = name || 'q';
-      input.placeholder = label;
-      input.autocomplete = 'off';
-      field.append(input);
-    } else {
-      // select
-      const select = document.createElement('select');
-      select.id = inputId;
-      select.name = name || label;
-      select.setAttribute('aria-label', `Nach ${label} filtern`);
-
-      const defaultOpt = document.createElement('option');
-      defaultOpt.value = '';
-      defaultOpt.textContent = label;
-      select.append(defaultOpt);
-
-      // Options from cells[3..n] or comma-split from cells[3]
-      const optionCells = cells.slice(3);
-      const options = optionCells.length === 1
-        ? optionCells[0].textContent.split(',').map((s) => s.trim()).filter(Boolean)
-        : optionCells.map((c) => c.textContent.trim()).filter(Boolean);
-
-      options.forEach((val) => {
-        const opt = document.createElement('option');
-        opt.value = val;
-        opt.textContent = val;
-        select.append(opt);
-      });
-
-      field.append(select);
+    // a "submit"-like label
+    if (line.text && /anwenden|filter|suche/i.test(line.text) && !SELECT_RE.test(line.text)) {
+      submitLabel = line.text;
     }
-
-    form.append(field);
   });
 
-  // Submit button
   const submitWrap = document.createElement('div');
-  submitWrap.className = 'events-filter-submit';
-  const submitBtn = document.createElement('button');
-  submitBtn.type = 'submit';
-  submitBtn.className = 'btn btn--primary';
-  submitBtn.textContent = submitLabel;
-  submitWrap.append(submitBtn);
+  submitWrap.className = 'filter-submit';
+  const submit = document.createElement('button');
+  submit.className = 'btn btn--primary';
+  submit.type = 'submit';
+  submit.textContent = submitLabel;
+  submitWrap.append(submit);
   form.append(submitWrap);
 
-  // Active filters area
-  const activeFilters = document.createElement('div');
-  activeFilters.className = 'events-filter-active';
-  activeFilters.setAttribute('role', 'list');
-  activeFilters.setAttribute('aria-label', 'Aktive Filter');
+  container.append(form);
 
-  block.append(form);
-  block.append(activeFilters);
+  const active = document.createElement('div');
+  active.className = 'active-filters';
+  active.setAttribute('role', 'list');
+  active.setAttribute('aria-label', 'Aktive Filter');
+  container.append(active);
 
-  // Collect and dispatch filter state, then re-render active chips
-  const dispatchChange = () => {
-    const data = new FormData(form);
-    const filters = {};
-    data.forEach((val, key) => {
-      if (val) filters[key] = val;
+  block.replaceChildren(container);
+
+  // ── client-side filtering against the events-grid block ──
+  const applyFilters = () => {
+    const grid = document.querySelector('.events-grid');
+    if (!grid) return;
+    const cards = [...grid.querySelectorAll('li')];
+    const kw = normalise(keywordInput ? keywordInput.value : '');
+    const chosen = selects
+      .map((s) => s.value)
+      .filter(Boolean)
+      .map(normalise);
+
+    let visible = 0;
+    cards.forEach((card) => {
+      const haystack = normalise(
+        `${card.textContent} ${card.dataset.category || ''} ${card.dataset.location || ''}`,
+      );
+      const matchKw = !kw || haystack.includes(kw);
+      const matchSel = chosen.every((c) => haystack.includes(c));
+      const show = matchKw && matchSel;
+      card.hidden = !show;
+      if (show) visible += 1;
     });
-    block.dispatchEvent(new CustomEvent('events-filter:change', {
-      bubbles: true,
-      detail: { filters },
-    }));
 
-    // Render active filter chips
-    activeFilters.innerHTML = '';
-    Object.entries(filters).forEach(([key, val]) => {
+    // render active filter chips
+    active.replaceChildren();
+    const chips = [];
+    if (keywordInput && keywordInput.value.trim()) chips.push(keywordInput.value.trim());
+    selects.forEach((s) => { if (s.value) chips.push(s.value); });
+    chips.forEach((label, idx) => {
       const chip = document.createElement('button');
       chip.type = 'button';
-      chip.className = 'events-filter-chip';
-      chip.setAttribute('role', 'listitem');
-      chip.innerHTML = `${val} <span class="events-filter-chip-remove" aria-hidden="true">&times;</span>`;
+      chip.className = 'active-filter-chip';
+      chip.innerHTML = `${label}<span class="remove-icon" aria-hidden="true">×</span>`;
+      chip.setAttribute('aria-label', `Filter entfernen: ${label}`);
       chip.addEventListener('click', () => {
-        const el = form.elements[key];
-        if (el) el.value = '';
-        dispatchChange();
+        if (idx === 0 && keywordInput && keywordInput.value.trim()) {
+          keywordInput.value = '';
+        } else {
+          const sel = selects.find((s) => s.value === label);
+          if (sel) sel.value = '';
+        }
+        applyFilters();
       });
-      activeFilters.append(chip);
+      active.append(chip);
     });
+
+    const header = document.querySelector('.events-grid-header .filtered-results-number');
+    if (header) header.textContent = String(visible);
   };
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    dispatchChange();
-  });
-
-  // Live filtering on input change
-  form.addEventListener('change', dispatchChange);
-  form.addEventListener('input', dispatchChange);
+  form.addEventListener('submit', (e) => { e.preventDefault(); applyFilters(); });
+  selects.forEach((s) => s.addEventListener('change', applyFilters));
+  if (keywordInput) keywordInput.addEventListener('input', applyFilters);
 }

@@ -1,37 +1,58 @@
 /**
- * Image Grid block — 3-column editorial grid with alternating portrait/landscape images
- * Authored row structure (one row per image):
- *   Row: [image] | [orientation: portrait|landscape]
- * Images are distributed across 3 columns automatically.
+ * image-grid block
+ * A 3-column editorial image series. Images are distributed across three
+ * columns and given alternating portrait/landscape aspect ratios for an
+ * editorial rhythm. Aspect ratio is inferred from each image's intrinsic
+ * width/height (taller-than-wide → portrait, otherwise landscape).
+ *
+ * Authoring: a flat list of images (absolute URLs), in reading order. They are
+ * laid out column-major across three columns.
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
 
-  const cols = [
-    document.createElement('div'),
-    document.createElement('div'),
-    document.createElement('div'),
-  ];
-  cols.forEach((col) => { col.className = 'image-grid-col'; });
+const COLS = 3;
 
-  rows.forEach((row, i) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    const imgEl = cells[0]?.querySelector('img, picture');
-    const orientation = cells[1]?.textContent?.trim().toLowerCase() || 'portrait';
+function collectImages(block) {
+  const imgs = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    cell.querySelectorAll('picture, img').forEach((m) => {
+      // avoid double-counting an <img> inside a counted <picture>
+      if (m.tagName.toLowerCase() === 'img' && m.closest('picture')) return;
+      imgs.push(m);
+    });
+  });
+  return imgs;
+}
 
-    if (!imgEl) return;
+function orientation(media) {
+  const img = media.tagName.toLowerCase() === 'img' ? media : media.querySelector('img');
+  const w = Number(img?.getAttribute('width')) || 0;
+  const h = Number(img?.getAttribute('height')) || 0;
+  return h > w ? 'portrait' : 'landscape';
+}
 
-    const wrap = document.createElement('div');
-    wrap.className = `img-wrap img-wrap--${orientation === 'landscape' ? 'landscape' : 'portrait'}`;
-    wrap.append(imgEl.cloneNode(true));
+export default async function decorate(block) {
+  const images = collectImages(block);
 
-    cols[i % 3].append(wrap);
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const cols = document.createElement('div');
+  cols.className = 'image-grid-cols';
+
+  const columns = Array.from({ length: COLS }, () => {
+    const col = document.createElement('div');
+    col.className = 'image-grid-col';
+    return col;
   });
 
-  const grid = document.createElement('div');
-  grid.className = 'image-grid-cols';
-  cols.forEach((col) => grid.append(col));
+  images.forEach((media, i) => {
+    const wrap = document.createElement('div');
+    wrap.className = `img-wrap img-wrap--${orientation(media)}`;
+    wrap.append(media);
+    columns[i % COLS].append(wrap);
+  });
 
-  block.innerHTML = '';
-  block.append(grid);
+  columns.forEach((col) => cols.append(col));
+  container.append(cols);
+  block.replaceChildren(container);
 }

@@ -1,40 +1,79 @@
 /**
- * Callout Banner block — horizontal strip with text + CTA button
- * Authored row structure:
- *   Row 1: [heading] | [body text]
- *   Row 2: [CTA link]
+ * callout-banner block
+ * A full-bleed strip: a heading + paragraph on the left, a primary button
+ * on the right.
+ *
+ * Authoring shape (DA usually flattens to one row/one cell; both shapes supported):
+ *   - a heading, a paragraph, and a plain link.
+ *
+ * Classification is content-based, never index-based.
  */
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
 
-  const textDiv = document.createElement('div');
-  textDiv.className = 'callout-banner-text';
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
 
-  let ctaLink = null;
-
-  rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-    if (!cells.length) return;
-
-    const h2 = cells[0].querySelector('h2');
-    if (h2) {
-      textDiv.append(h2.cloneNode(true));
-      if (cells[1]) {
+/**
+ * Collect element children across every cell of the block.
+ * Bare text cells become <p>.
+ * @param {Element} block
+ * @returns {Element[]}
+ */
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
         const p = document.createElement('p');
-        p.innerHTML = cells[1].innerHTML;
-        textDiv.append(p);
+        p.innerHTML = cell.innerHTML;
+        nodes.push(p);
       }
       return;
     }
+    kids.forEach((el) => nodes.push(el));
+  });
+  return nodes;
+}
 
-    const link = cells[0].querySelector('a');
-    if (link) {
-      ctaLink = link.cloneNode(true);
-      ctaLink.className = 'btn btn--primary';
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
+
+  const container = document.createElement('div');
+  container.className = 'container';
+
+  const text = document.createElement('div');
+  text.className = 'callout-banner-text';
+
+  const links = [];
+
+  nodes.forEach((node) => {
+    if (anchorOf(node) && !isHeading(node)) {
+      links.push(node);
+      return;
     }
+    if (isHeading(node)) {
+      const h2 = document.createElement('h2');
+      h2.innerHTML = node.innerHTML;
+      text.append(h2);
+      return;
+    }
+    if (!node.textContent.trim()) return;
+    const p = document.createElement('p');
+    p.innerHTML = node.innerHTML;
+    text.append(p);
   });
 
-  block.innerHTML = '';
-  block.append(textDiv);
-  if (ctaLink) block.append(ctaLink);
+  container.append(text);
+
+  links.forEach((node) => {
+    const src = anchorOf(node);
+    const a = document.createElement('a');
+    a.className = 'btn btn--primary';
+    a.href = src.getAttribute('href') || '#';
+    a.innerHTML = src.innerHTML;
+    container.append(a);
+  });
+
+  block.replaceChildren(container);
 }

@@ -1,0 +1,44 @@
+/* proof-strip — horizontal "number + label" trust strip.
+   Lifted verbatim from home-A prototype (.proof / .proof-* rules), scoped
+   under .proof-strip. Tokens and .container come from styles/styles.css. */
+
+.proof-strip {
+  padding-block: var(--spacing-2xl);
+  border-bottom: 1px solid var(--color-hairline);
+  background: var(--color-bg);
+}
+
+.proof-strip .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2xl);
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.proof-strip .proof-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+}
+
+.proof-strip .proof-num {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--heading-xl);
+  color: var(--color-accent-ink);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.proof-strip .proof-label {
+  font-size: var(--heading-md);
+  color: var(--color-fg);
+}
+
+@media (width <= 640px) {
+  .proof-strip .container {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+}

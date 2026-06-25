@@ -1,218 +1,220 @@
 /**
- * Article Body block
- * Renders date stamp + lead paragraph + two-column prose / sidebar layout.
+ * article-body block
+ * The body of a news article: a date stamp and a lead paragraph above a
+ * two-column grid — a main prose column (paragraphs, sub-headings, pull quotes)
+ * and a sidebar (downloads, image figures, press contacts).
  *
- * Authored as rows:
- *   Row 1: [date text] | [lead paragraph]
- *   Row 2: [article prose (h3, p, blockquote, links)] | [sidebar content]
- *
- * Sidebar cells may contain:
- *   - PDF download: strong > a with .pdf in href or "PDF" label
- *   - Figures: image + optional caption paragraph
- *   - Press contacts: h3 + paragraphs (name, email link, phone link)
+ * Authoring (flat content, classified by content not index):
+ *   - the FIRST short line that reads like a date stamp
+ *     ("Medienmitteilung vom 28.05.2026") → the date stamp
+ *   - the NEXT paragraph → the lead (accent-topped intro)
+ *   - <h3> + <p>/<ul> → prose sub-sections in the main column
+ *   - a paragraph that is only a <cite>-style attribution after a quoted
+ *     paragraph (text wrapped in «…» or in <em>) → renders as a blockquote
+ *   - a picture/img (with the caption text that follows) → a sidebar figure
+ *   - an <h3> whose text matches "Anhang"/"Kontakt"/"Download" opens a SIDEBAR
+ *     card; its following paragraphs/links render inside that card. A link whose
+ *     label/href ends in .pdf becomes the download widget.
  */
 
-function buildProse(cell) {
-  const article = document.createElement('article');
-  article.className = 'article-prose';
-  if (cell) article.append(...cell.childNodes);
-  return article;
-}
+const isHeading = (el) => /^h[1-6]$/.test(el.tagName.toLowerCase());
+const isMedia = (el) => el.matches('picture, img') || el.querySelector('picture, img');
+const anchorOf = (el) => (el.tagName.toLowerCase() === 'a' ? el : el.querySelector('a'));
+const DATESTAMP_RE = /\b\d{1,2}\.\d{1,2}\.\d{2,4}\b/;
+const SIDEBAR_RE = /(anhang|kontakt|download|contact)/i;
+const QUOTE_RE = /^[«"„].+[»"“]$/s;
 
-function buildDownload(el, link) {
-  const widget = document.createElement('div');
-  widget.className = 'sidebar-download';
-
-  const h3 = document.createElement('h3');
-  h3.textContent = 'Anhang';
-  widget.append(h3);
-
-  const item = document.createElement('a');
-  item.className = 'download-item';
-  item.href = link.href;
-  item.target = '_blank';
-  item.rel = 'noopener';
-
-  const iconEl = document.createElement('span');
-  iconEl.className = 'download-icon';
-  iconEl.setAttribute('aria-hidden', 'true');
-  iconEl.textContent = 'PDF';
-
-  const meta = document.createElement('span');
-  meta.className = 'download-meta';
-
-  const title = document.createElement('h4');
-  title.textContent = link.textContent.trim() || el.textContent.trim();
-  meta.append(title);
-
-  const fullText = el.textContent.trim();
-  const linkText = link.textContent.trim();
-  const remainder = fullText.replace(linkText, '').trim();
-  if (remainder) {
-    const size = document.createElement('span');
-    size.className = 'filesize';
-    size.textContent = remainder;
-    meta.append(size);
-  }
-
-  item.append(iconEl, meta);
-  widget.append(item);
-  return widget;
-}
-
-function buildSidebar(cell) {
-  const aside = document.createElement('aside');
-  aside.className = 'article-sidebar';
-  aside.setAttribute('aria-label', 'Anh&auml;nge und Kontakte');
-
-  if (!cell) return aside;
-
-  const children = [...cell.children];
-  let i = 0;
-
-  while (i < children.length) {
-    const el = children[i];
-    const tag = el.tagName.toLowerCase();
-    const img = el.querySelector('img') || (tag === 'img' ? el : null);
-    const pdfLink = tag === 'p' ? el.querySelector('a[href*=".pdf"], strong > a') : null;
-
-    if (pdfLink) {
-      aside.append(buildDownload(el, pdfLink));
-      i += 1;
-    } else if (img) {
-      const fig = document.createElement('figure');
-      fig.className = 'sidebar-figure';
-
-      const nextEl = children[i + 1];
-      const isCaption = nextEl
-        && nextEl.tagName.toLowerCase() === 'p'
-        && !nextEl.querySelector('a[href*=".pdf"], img');
-
-      const parentLink = el.querySelector('a[href]');
-      if (parentLink && !parentLink.href.includes('.pdf')) {
-        const a = document.createElement('a');
-        a.href = parentLink.href;
-        a.target = '_blank';
-        a.rel = 'noopener';
-        a.setAttribute('aria-label', 'Bild in voller Aufl&ouml;sung &ouml;ffnen');
-        img.loading = img.loading || 'lazy';
-        a.append(img);
-        fig.append(a);
-      } else {
-        fig.append(img);
-      }
-
-      if (isCaption) {
-        const caption = document.createElement('figcaption');
-        caption.textContent = nextEl.textContent.trim();
-        fig.append(caption);
-        i += 1;
-      }
-
-      aside.append(fig);
-      i += 1;
-    } else if (tag === 'h3') {
-      const contact = document.createElement('div');
-      contact.className = 'sidebar-contact';
-      const h3 = document.createElement('h3');
-      h3.textContent = el.textContent.trim();
-      contact.append(h3);
-      i += 1;
-
-      while (i < children.length && children[i].tagName.toLowerCase() !== 'h3') {
+function collectNodes(block) {
+  const nodes = [];
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (kids.length === 0) {
+      const text = cell.textContent.trim();
+      if (text) {
         const p = document.createElement('p');
-        p.append(...children[i].childNodes);
-        if (!children[i].querySelector('a') && contact.querySelectorAll('p').length === 0) {
-          p.className = 'contact-person';
-        }
-        contact.append(p);
-        i += 1;
+        p.innerHTML = cell.innerHTML;
+        nodes.push(p);
       }
-      aside.append(contact);
-    } else {
-      aside.append(el.cloneNode(true));
-      i += 1;
+      return;
     }
-  }
-
-  return aside;
+    kids.forEach((el) => nodes.push(el));
+  });
+  return nodes;
 }
 
-export default function decorate(block) {
-  const rows = [...block.querySelectorAll(':scope > div')];
-  if (!rows.length) return;
+export default async function decorate(block) {
+  const nodes = collectNodes(block);
 
-  const wrapper = document.createElement('div');
-  wrapper.className = 'article-body-inner';
+  const container = document.createElement('div');
+  container.className = 'container';
 
+  // 1. date stamp + lead (consumed off the front)
   let datestamp = null;
   let lead = null;
-  let proseEl = null;
-  let sidebarEl = null;
-
-  rows.forEach((row) => {
-    const cells = [...row.querySelectorAll(':scope > div')];
-
-    if (cells.length === 2) {
-      const [left, right] = cells;
-      const leftChildren = [...left.children];
-      const isDateRow = leftChildren.length <= 2
-        && leftChildren.every((c) => c.tagName.toLowerCase() === 'p');
-
-      if (isDateRow && !datestamp) {
-        if (leftChildren[0]) {
-          datestamp = document.createElement('p');
-          datestamp.className = 'article-datestamp';
-          datestamp.append(...leftChildren[0].childNodes);
-        }
-        if (leftChildren[1]) {
-          lead = document.createElement('p');
-          lead.className = 'article-lead';
-          lead.append(...leftChildren[1].childNodes);
-        }
-        sidebarEl = buildSidebar(right);
-      } else {
-        proseEl = buildProse(left);
-        if (!sidebarEl) {
-          sidebarEl = buildSidebar(right);
-        } else {
-          const extra = buildSidebar(right);
-          [...extra.children].forEach((c) => sidebarEl.append(c));
-        }
-      }
-    } else if (cells.length === 1) {
-      const [cell] = cells;
-      const children = [...cell.children];
-      const firstTag = children[0]?.tagName.toLowerCase();
-
-      if (!datestamp && firstTag === 'p' && children.length <= 3) {
-        if (children[0]) {
-          datestamp = document.createElement('p');
-          datestamp.className = 'article-datestamp';
-          datestamp.append(...children[0].childNodes);
-        }
-        if (children[1]) {
-          lead = document.createElement('p');
-          lead.className = 'article-lead';
-          lead.append(...children[1].childNodes);
-        }
-      } else {
-        proseEl = buildProse(cell);
-      }
+  let i = 0;
+  while (i < nodes.length) {
+    const node = nodes[i];
+    const text = node.textContent.trim();
+    const isP = node.tagName.toLowerCase() === 'p';
+    if (!text && !isMedia(node)) {
+      i += 1;
+    } else if (!datestamp && isP && DATESTAMP_RE.test(text) && text.length <= 60) {
+      datestamp = node;
+      i += 1;
+    } else if (!lead && isP) {
+      lead = node;
+      i += 1;
+      break;
+    } else {
+      break;
     }
-  });
-
-  if (datestamp) wrapper.append(datestamp);
-  if (lead) wrapper.append(lead);
-
-  if (proseEl || sidebarEl) {
-    const grid = document.createElement('div');
-    grid.className = 'article-grid';
-    if (proseEl) grid.append(proseEl);
-    if (sidebarEl) grid.append(sidebarEl);
-    wrapper.append(grid);
   }
 
-  block.innerHTML = '';
-  block.append(wrapper);
+  if (datestamp) {
+    const p = document.createElement('p');
+    p.className = 'article-datestamp';
+    p.innerHTML = `<time>${datestamp.textContent.trim()}</time>`;
+    container.append(p);
+  }
+  if (lead) {
+    const p = document.createElement('p');
+    p.className = 'article-lead';
+    p.innerHTML = lead.innerHTML;
+    container.append(p);
+  }
+
+  const rest = nodes.slice(i);
+
+  // 2. split remaining into main-prose vs sidebar by heading routing.
+  const grid = document.createElement('div');
+  grid.className = 'article-grid';
+  const prose = document.createElement('article');
+  prose.className = 'article-prose';
+  const sidebar = document.createElement('aside');
+  sidebar.className = 'article-sidebar';
+  sidebar.setAttribute('aria-label', 'Anhänge und Kontakte');
+
+  let target = 'prose';
+  let sidebarCard = null;
+  let pendingFigureCaption = false;
+  let lastFigure = null;
+
+  const startSidebarCard = (heading) => {
+    sidebarCard = document.createElement('div');
+    sidebarCard.className = 'sidebar-contact';
+    const h3 = document.createElement('h3');
+    h3.innerHTML = heading.innerHTML;
+    sidebarCard.append(h3);
+    sidebar.append(sidebarCard);
+  };
+
+  rest.forEach((node) => {
+    const tag = node.tagName.toLowerCase();
+    const text = node.textContent.trim();
+    const link = anchorOf(node);
+
+    // images always go to the sidebar as figures
+    if (isMedia(node)) {
+      const fig = document.createElement('figure');
+      fig.className = 'sidebar-figure';
+      const pic = node.matches('picture, img') ? node : node.querySelector('picture, img');
+      fig.append(pic);
+      sidebar.append(fig);
+      lastFigure = fig;
+      pendingFigureCaption = true;
+      target = 'prose';
+      sidebarCard = null;
+      return;
+    }
+
+    if (isHeading(node)) {
+      pendingFigureCaption = false;
+      if (SIDEBAR_RE.test(text)) {
+        target = 'sidebar';
+        // a download card if it reads "Anhang"/"Download"
+        if (/anhang|download/i.test(text)) {
+          sidebarCard = document.createElement('div');
+          sidebarCard.className = 'sidebar-download';
+          const h3 = document.createElement('h3');
+          h3.innerHTML = node.innerHTML;
+          sidebarCard.append(h3);
+          sidebar.append(sidebarCard);
+        } else {
+          startSidebarCard(node);
+        }
+        return;
+      }
+      target = 'prose';
+      sidebarCard = null;
+      const h3 = document.createElement('h3');
+      h3.innerHTML = node.innerHTML;
+      prose.append(h3);
+      return;
+    }
+
+    // a caption paragraph right after a figure
+    if (pendingFigureCaption && lastFigure && tag === 'p' && !link) {
+      const cap = document.createElement('figcaption');
+      cap.textContent = text;
+      lastFigure.append(cap);
+      pendingFigureCaption = false;
+      return;
+    }
+    pendingFigureCaption = false;
+
+    if (target === 'sidebar' && sidebarCard) {
+      if (link && /\.pdf(\?|$)/i.test(link.getAttribute('href') || '')
+        && sidebarCard.classList.contains('sidebar-download')) {
+        const a = document.createElement('a');
+        a.className = 'download-item';
+        a.href = link.getAttribute('href');
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.innerHTML = '<span class="download-icon" aria-hidden="true">PDF</span>'
+          + `<span class="download-meta"><h4>${link.textContent.trim()}</h4></span>`;
+        sidebarCard.append(a);
+        return;
+      }
+      const p = document.createElement('p');
+      // mark a person/name line (no link) emphasised in authoring
+      if (!link && node.querySelector('strong, em')) p.className = 'contact-person';
+      p.innerHTML = node.innerHTML;
+      sidebarCard.append(p);
+      return;
+    }
+
+    // prose paragraph or quote
+    if (tag === 'p') {
+      const isQuote = QUOTE_RE.test(text) || node.querySelector('em, i');
+      if (isQuote) {
+        const bq = document.createElement('blockquote');
+        const qp = document.createElement('p');
+        qp.innerHTML = node.innerHTML;
+        bq.append(qp);
+        prose.append(bq);
+        return;
+      }
+      // a short attribution line right after a quote → fold into that quote
+      const prev = prose.lastElementChild;
+      if (prev && prev.tagName.toLowerCase() === 'blockquote'
+        && !prev.querySelector('cite') && text.length <= 120 && !link) {
+        const cite = document.createElement('cite');
+        cite.textContent = text;
+        prev.append(cite);
+        return;
+      }
+      const p = document.createElement('p');
+      p.innerHTML = node.innerHTML;
+      prose.append(p);
+      return;
+    }
+
+    // anything else (lists etc.) → prose
+    if (target === 'prose') prose.append(node);
+  });
+
+  grid.append(prose);
+  if (sidebar.children.length) grid.append(sidebar);
+  container.append(grid);
+  block.replaceChildren(container);
 }

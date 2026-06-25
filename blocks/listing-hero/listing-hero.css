@@ -1,0 +1,87 @@
+/* listing-hero — page header for the news listing.
+   Lifted from news-listing prototype, scoped under .listing-hero.
+   Tokens and .container come from styles/styles.css. */
+
+.listing-hero {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-block: var(--spacing-2xl) var(--spacing-xl);
+}
+
+.listing-hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.listing-hero .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-accent-ink);
+  font-size: var(--body-sm);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.listing-hero .back-link::before {
+  content: "\2039";
+  font-size: 1.1em;
+}
+
+.listing-hero .back-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.listing-hero h1 {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  margin-top: var(--spacing-md);
+}
+
+.listing-hero .section-siblings {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  flex-wrap: wrap;
+}
+
+.listing-hero .section-siblings::-webkit-scrollbar {
+  display: none;
+}
+
+.listing-hero .section-siblings a {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-fg);
+  white-space: nowrap;
+  background: transparent;
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: 20px;
+  transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.listing-hero .section-siblings a:hover {
+  color: var(--color-accent-ink);
+  border-color: var(--color-accent-ink);
+}
+
+.listing-hero .section-siblings a[aria-current="page"] {
+  background: var(--color-accent-ink);
+  color: #fff;
+  border-color: var(--color-accent-ink);
+  font-weight: 500;
+}
+
+@media (width <= 640px) {
+  .listing-hero h1 {
+    font-size: var(--heading-lg);
+  }
+}

@@ -1,9 +1,11 @@
+/* treatment-hero — treatment detail page hero (prototype .td-hero).
+   Lifted verbatim from treatment-detail prototype, scoped under .treatment-hero.
+   Tokens, .container and .eyebrow come from styles/styles.css. */
+
 .treatment-hero {
   background: var(--color-ground-alt);
   border-bottom: 3px solid var(--color-accent);
   padding-block: clamp(40px, 6vw, 80px);
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
 }
 
 .treatment-hero .container {
@@ -13,27 +15,49 @@
   align-items: start;
 }
 
-.treatment-hero .td-hero-copy { max-width: 640px; }
+.treatment-hero .td-hero-copy {
+  max-width: 640px;
+}
 
-.treatment-hero .eyebrow {
+.treatment-hero .td-hero-copy .eyebrow {
   color: var(--color-accent-ink);
   margin-bottom: var(--spacing-md);
 }
 
-.treatment-hero h1 {
+.treatment-hero .td-hero-copy h1 {
   font-size: var(--heading-xxl);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.15;
+  color: var(--color-fg);
   margin-bottom: var(--spacing-md);
 }
 
-.treatment-hero .lead {
+.treatment-hero .td-hero-copy .lead {
   font-size: var(--body);
   line-height: var(--line-height-body);
   color: var(--color-text-soft);
   max-width: 56ch;
-  margin: 0;
+}
+
+.treatment-hero .td-hero-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 140ms ease;
+}
+
+.treatment-hero .td-hero-back:hover {
+  color: var(--color-accent-hover);
+}
+
+.treatment-hero .td-hero-back svg {
+  flex-shrink: 0;
 }
 
 .treatment-hero .td-trust {
@@ -54,9 +78,17 @@
   border: 2px solid var(--color-hairline);
 }
 
-.treatment-hero .td-trust-img img { width: 100%; height: 100%; object-fit: cover; }
+.treatment-hero .td-trust-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.treatment-hero .td-trust-meta { display: flex; flex-direction: column; gap: 2px; }
+.treatment-hero .td-trust-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 
 .treatment-hero .td-trust-label {
   font-size: var(--body-sm);
@@ -73,29 +105,22 @@
   text-decoration: none;
 }
 
-.treatment-hero .td-trust-name:hover { text-decoration: underline; }
-
-.treatment-hero .td-hero-back {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  font-size: var(--body-sm);
-  font-weight: 500;
-  color: var(--color-accent-ink);
-  text-decoration: none;
-  white-space: nowrap;
-  transition: color 140ms ease;
+.treatment-hero .td-trust-name:hover {
+  text-decoration: underline;
 }
 
-.treatment-hero .td-hero-back:hover { color: var(--color-accent-hover); }
-
-.treatment-hero .td-hero-back svg { flex-shrink: 0; }
-
 @media (width <= 900px) {
-  .treatment-hero .container { grid-template-columns: 1fr; }
-  .treatment-hero .td-hero-back { order: -1; }
+  .treatment-hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-hero .td-hero-back {
+    order: -1;
+  }
 }
 
 @media (width <= 640px) {
-  .treatment-hero h1 { font-size: clamp(1.953rem, 6vw, 2.441rem); }
+  .treatment-hero .td-hero-copy h1 {
+    font-size: clamp(1.953rem, 6vw, 2.441rem);
+  }
 }

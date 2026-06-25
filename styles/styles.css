@@ -95,7 +95,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--body-font-family);
+  font-family: Arial, arial, sans-serif;
   font-size: var(--body);
   line-height: var(--line-height-body);
   color: var(--color-fg);
@@ -104,6 +104,8 @@ body {
   text-rendering: optimizelegibility;
 }
 
+/* Brand font applies only after session activation (zero-CLS swap, metric-matched Arial above) */
+body.session { font-family: var(--body-font-family); }
 
 img {
   display: block;
@@ -141,16 +143,18 @@ header {
   header { min-height: 120px; }
 }
 
-/* ── EDS section scaffold ─────────────────────────────────────────────── */
+/* ── EDS section scaffold ───────────────────────────────────────────────
+   Sections are bare full-width containers: each block owns its own background,
+   block-padding, and an inner `.container` that constrains content to --max-width.
+   This mirrors the prototype, where <section> bleeds full-width and `.container`
+   centres the content — so coloured bands and hero media reach the viewport edge. */
 main .section {
   display: block;
-  max-width: var(--max-width);
-  margin-inline: auto;
-  padding-block: var(--section-padding);
-  padding-inline: var(--spacing-lg);
 }
 
+main .section > .default-content,
 main .section > .default-content-wrapper,
+main .section > .block-content,
 main .section > .block-content-wrapper { display: block; }
 
 main > div, .has-template, div[data-status] { display: none; }

@@ -1,56 +1,13 @@
-/* ── Article Header block ── */
+/* article-header — back-link + H1 for a news article.
+   Lifted from news-article prototype, scoped under .article-header.
+   Tokens and .container come from styles/styles.css. */
+
 .article-header {
   background: var(--color-bg);
   padding-block: var(--spacing-2xl) var(--spacing-xl);
   border-bottom: 1px solid var(--color-hairline);
 }
 
-.article-header .article-header-inner {
-  max-width: var(--max-width);
-  margin-inline: auto;
-  padding-inline: var(--spacing-lg);
-}
-
-/* ── Breadcrumb ── */
-.article-header .breadcrumb {
-  list-style: none;
-  margin: 0 0 var(--spacing-lg);
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-xs);
-  align-items: center;
-  font-size: var(--body-sm);
-  color: var(--color-text-soft);
-}
-
-.article-header .breadcrumb li {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-}
-
-.article-header .breadcrumb li + li::before {
-  content: "\203A";
-  color: var(--color-hairline);
-}
-
-.article-header .breadcrumb a {
-  color: var(--color-text-soft);
-  text-decoration: none;
-  transition: color 140ms ease;
-}
-
-.article-header .breadcrumb a:hover {
-  color: var(--color-accent-ink);
-}
-
-.article-header .breadcrumb [aria-current="page"] {
-  color: var(--color-fg);
-  font-weight: 500;
-}
-
-/* ── Back link ── */
 .article-header .backlink {
   display: inline-flex;
   align-items: center;
@@ -63,33 +20,27 @@
   transition: color 140ms ease;
 }
 
-.article-header .backlink::before {
-  content: "\2190";
-  font-size: 1em;
-}
-
 .article-header .backlink:hover {
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
-/* ── H1 ── */
+.article-header .backlink::before {
+  content: "\2190";
+  font-size: 1em;
+}
+
 .article-header h1 {
-  font-size: var(--heading-lg);
+  font-size: var(--heading-xl);
   font-weight: 700;
   line-height: var(--line-height-heading);
   color: var(--color-fg);
+  max-width: 28ch;
 }
 
-@media (width >= 900px) {
+@media (width <= 900px) {
   .article-header h1 {
-    font-size: var(--heading-xl);
-    max-width: 28ch;
-  }
-}
-
-@media (width <= 600px) {
-  .article-header .breadcrumb {
-    display: none;
+    font-size: var(--heading-lg);
+    max-width: none;
   }
 }

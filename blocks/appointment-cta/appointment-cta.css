@@ -1,0 +1,44 @@
+/* appointment-cta — blue appointment band (prototype .td-cta-band).
+   Lifted verbatim from treatment-detail prototype, scoped under
+   .appointment-cta. Tokens, .container and .btn--onblue come from
+   styles/styles.css. */
+
+.appointment-cta {
+  background: var(--color-accent-ink);
+  padding-block: var(--spacing-2xl);
+}
+
+.appointment-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.appointment-cta .td-cta-copy h2 {
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  color: #fff;
+  text-wrap: balance;
+  margin-bottom: var(--spacing-sm);
+}
+
+.appointment-cta .td-cta-copy p {
+  color: rgb(255 255 255 / 82%);
+  font-size: var(--body);
+  max-width: 52ch;
+}
+
+.appointment-cta .td-cta-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+@media (width <= 640px) {
+  .appointment-cta .container {
+    flex-direction: column;
+  }
+}

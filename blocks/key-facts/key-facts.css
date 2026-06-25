@@ -1,27 +1,29 @@
+/* key-facts — trust strip of fact items.
+   Lifted verbatim from clinic-detail prototype, scoped under .key-facts.
+   Tokens and .container come from styles/styles.css. */
+
 .key-facts {
-  background: var(--color-bg);
+  padding-block: var(--spacing-2xl);
+  background: var(--color-ground-warm);
   border-bottom: 1px solid var(--color-hairline);
-  padding-block: var(--spacing-xl);
 }
 
 .key-facts .container {
   display: flex;
-  gap: 0;
   flex-wrap: wrap;
+  gap: var(--spacing-2xl);
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .key-facts .fact-item {
-  flex: 1 1 180px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
-  padding: var(--spacing-lg);
-  border-left: 1px solid var(--color-hairline);
+  flex: 1 1 180px;
 }
 
-.key-facts .fact-item:first-child { border-left: 0; }
-
-.key-facts .fact-icon {
+.key-facts .fact-item .fact-icon {
   color: var(--color-accent-ink);
   margin-bottom: var(--spacing-xs);
 }
@@ -50,28 +52,29 @@
   line-height: 1.4;
 }
 
+.key-facts .fact-value a {
+  color: var(--color-accent-ink);
+  text-decoration: none;
+}
+
+.key-facts .fact-value a:hover {
+  text-decoration: underline;
+}
+
 .key-facts .fact-sub {
   font-size: var(--body-sm);
   color: var(--color-text-soft);
 }
 
-.key-facts .fact-link {
-  font-size: var(--body-sm);
-  color: var(--color-accent-ink);
-  text-decoration: none;
-  font-weight: 500;
+@media (width <= 900px) {
+  .key-facts .container {
+    gap: var(--spacing-xl);
+  }
 }
 
-.key-facts .fact-link:hover { text-decoration: underline; }
-
 @media (width <= 640px) {
-  .key-facts .container { flex-direction: column; }
-
-  .key-facts .fact-item {
-    border-left: 0;
-    border-top: 1px solid var(--color-hairline);
-    padding: var(--spacing-md);
+  .key-facts .container {
+    flex-direction: column;
+    gap: var(--spacing-lg);
   }
-
-  .key-facts .fact-item:first-child { border-top: 0; }
 }

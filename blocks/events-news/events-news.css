@@ -1,0 +1,156 @@
+/* events-news — dark-blue two-column events + news band.
+   Lifted verbatim from clinic-detail prototype (.clinic-happening*, .event-*,
+   .news-*, .date-chip rules), scoped under .events-news. Tokens, .container
+   and .readmore come from styles/styles.css. */
+
+.events-news {
+  background: var(--color-accent-ink);
+  padding-block: var(--section-padding);
+}
+
+.events-news .clinic-happening-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.events-news .happening-col h2 {
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+.events-news .event-list,
+.events-news .news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.events-news .event-row {
+  display: flex;
+  gap: var(--spacing-md);
+  padding-block: var(--spacing-md);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+  align-items: flex-start;
+}
+
+.events-news .event-row a {
+  text-decoration: none;
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.events-news .date-chip {
+  flex: none;
+  width: 56px;
+  text-align: center;
+  background: rgb(255 255 255 / 12%);
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: var(--radius);
+  padding: var(--spacing-sm) 0;
+}
+
+.events-news .date-chip .day {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--heading-lg);
+  line-height: 1;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.events-news .date-chip .mon {
+  display: block;
+  font-size: var(--body-sm);
+  color: rgb(255 255 255 / 75%);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.events-news .event-text {
+  min-width: 0;
+}
+
+.events-news .event-text .loc {
+  display: block;
+  font-size: var(--body-sm);
+  color: rgb(255 255 255 / 65%);
+  margin-bottom: var(--spacing-xs);
+}
+
+.events-news .event-text h3 {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  color: #fff;
+  transition: color 140ms ease;
+}
+
+.events-news .event-row a:hover h3 {
+  color: rgb(255 255 255 / 80%);
+}
+
+.events-news .news-row {
+  padding-block: var(--spacing-md);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+}
+
+.events-news .news-row a {
+  text-decoration: none;
+  display: block;
+}
+
+.events-news .news-meta {
+  font-size: var(--body-sm);
+  color: rgb(255 255 255 / 65%);
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.events-news .news-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  color: rgb(255 255 255 / 90%);
+}
+
+.events-news .news-row h3 {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  color: #fff;
+  transition: color 140ms ease;
+}
+
+.events-news .news-row a:hover h3 {
+  color: rgb(255 255 255 / 80%);
+}
+
+.events-news .col-more {
+  margin-top: var(--spacing-lg);
+}
+
+.events-news .col-more .readmore {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.events-news .col-more .readmore:hover {
+  opacity: 1;
+}
+
+@media (width <= 900px) {
+  .events-news .clinic-happening-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
