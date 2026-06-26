@@ -206,3 +206,41 @@ indices:
       description:
         select: head > meta[name="description"]
         value: attribute(el, 'content')
+
+  # Site-wide search — one lightweight index per language (title + description;
+  # `path` is implicit). Powers the header search overlay (scripts/postlcp.js):
+  # fetched lazily on first search, filtered client-side. Category is derived from
+  # the path, so no per-type property is needed here.
+  search-de:
+    include:
+      - '/de/**'
+    target: /de/search-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+  search-fr:
+    include:
+      - '/fr/**'
+    target: /fr/search-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+  search-en:
+    include:
+      - '/en/**'
+    target: /en/search-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')

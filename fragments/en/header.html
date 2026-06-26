@@ -91,6 +91,69 @@
     justify-content: center;
   }
 
+  /* Search overlay — toggled by .icon-search via scripts/postlcp.js */
+  .header-search[hidden] { display: none; }
+
+  .header-search {
+    border-top: 1px solid var(--color-hairline);
+    background: var(--color-bg);
+  }
+
+  .header-search .container { padding-block: var(--spacing-md); }
+
+  .header-search-form {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-accent-ink);
+  }
+
+  .header-search-form input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    font-family: var(--heading-font-family);
+    font-size: 1.25rem;
+    color: var(--color-fg);
+    padding: var(--spacing-sm) 0;
+    outline: none;
+  }
+
+  .header-search-form button {
+    background: none;
+    border: 0;
+    padding: var(--spacing-sm);
+    cursor: pointer;
+    color: var(--color-accent-ink);
+    display: inline-flex;
+  }
+
+  .header-search-results { margin-top: var(--spacing-sm); }
+
+  .header-search-results a {
+    display: block;
+    padding: 10px var(--spacing-sm);
+    text-decoration: none;
+    color: var(--color-fg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  .header-search-results a:hover,
+  .header-search-results a.is-active { background: var(--color-accent-tint); }
+
+  .header-search-results .hsr-title { font-weight: 500; }
+
+  .header-search-results .hsr-cat {
+    font-size: var(--body-sm);
+    color: var(--color-text-soft);
+  }
+
+  .header-search-status {
+    padding: var(--spacing-md) 0;
+    color: var(--color-text-soft);
+    font-size: var(--body-sm);
+  }
+
   /* Mobile breakpoint */
   @media (width <= 640px) {
     .nav-burger { display: inline-flex; }
@@ -156,11 +219,23 @@
       <a href="/en/corporate/media-news">Media &amp; news</a>
       <a href="https://www.hirslanden.ch/en/corporate/the-hirslanden-group/contact.html">Contact</a>
     </nav>
-    <button class="icon-search" type="button" aria-label="Search">
+    <button class="icon-search" type="button" aria-label="Search" aria-expanded="false" aria-controls="header-search">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </button>
     <label for="mnav-toggle" class="nav-burger" aria-label="Open menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </label>
+  </div>
+</div>
+
+<div class="header-search" id="header-search" hidden>
+  <div class="container">
+    <form class="header-search-form" role="search">
+      <input type="search" name="q" placeholder="Search hirslanden.ch" aria-label="Enter a search term" autocomplete="off" maxlength="80">
+      <button type="submit" aria-label="Search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </form>
+    <div class="header-search-results" role="listbox" aria-label="Search results"></div>
   </div>
 </div>
