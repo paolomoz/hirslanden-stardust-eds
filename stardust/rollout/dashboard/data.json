@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T21:00:42.362Z",
+  "generatedAt": "2026-06-26T08:30:49.327Z",
   "target": "aem-eds",
   "site": {
     "sourceUrl": "https://main--hirslanden-stardust-eds--paolomoz.aem.live",
@@ -56,7 +56,7 @@
       "stage": "deployed",
       "templateId": "clinic-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-clinique-cecil-home",
@@ -64,7 +64,7 @@
       "stage": "deployed",
       "templateId": "clinic-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-clinique-des-grangettes-home",
@@ -80,7 +80,7 @@
       "stage": "deployed",
       "templateId": "clinic-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3--anja-chatterjee",
@@ -136,7 +136,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dipl-med-patrick-isenegger",
@@ -168,7 +168,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-alberic-bressoud",
@@ -208,7 +208,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-alexandros-stangos",
@@ -216,7 +216,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-alexis-bonvin",
@@ -232,7 +232,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-antoine-stockhammer",
@@ -248,7 +248,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-arachk-de-gorski",
@@ -272,7 +272,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-benoit-jenny",
@@ -296,7 +296,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-christof-bollmann",
@@ -344,7 +344,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-cyrus-hazeghi",
@@ -368,7 +368,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-david-fumeaux",
@@ -400,7 +400,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-frederic-schils",
@@ -416,7 +416,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-gino-gemayel",
@@ -448,7 +448,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-isabelle-kaelin-gambirasio",
@@ -456,7 +456,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-isabelle-morard",
@@ -504,7 +504,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-jerome-lavanchy",
@@ -536,7 +536,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-karel-skala",
@@ -552,7 +552,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-laurent-morel",
@@ -568,7 +568,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-lisca-drittenbass",
@@ -592,7 +592,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-marc-abecassis",
@@ -656,7 +656,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-nashwa-al-saffar",
@@ -664,7 +664,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-olivier-segall",
@@ -672,7 +672,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-pascale-bertossa-schweizer",
@@ -680,7 +680,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-patrizia-nardo",
@@ -744,7 +744,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-samira-daou-kemmar",
@@ -752,7 +752,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-samuel-ducrest",
@@ -760,7 +760,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-sao-nam-tran",
@@ -776,7 +776,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-sheila-ardigo",
@@ -816,7 +816,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-thierry-d-pache",
@@ -832,7 +832,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteur-veronika-vaclavik",
@@ -880,7 +880,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteure-danielle-zaugg-longchamp",
@@ -928,7 +928,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-docteure-patrizia-tschuor",
@@ -952,7 +952,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-adrian-meyer",
@@ -1080,7 +1080,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-charles-wolf",
@@ -1088,7 +1088,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-christian-regli",
@@ -1096,7 +1096,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-christine-stauffer",
@@ -1216,7 +1216,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-frank-beneditz",
@@ -1256,7 +1256,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-gianmarco-colombo",
@@ -1264,7 +1264,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-herbert-wallimann",
@@ -1408,7 +1408,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-max-ludwig-deubel",
@@ -1424,7 +1424,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-michael-kurz",
@@ -1536,7 +1536,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-petra-hoederath",
@@ -1592,7 +1592,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-reint-burger",
@@ -1664,7 +1664,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-sarah-juliane-rueckforth-beckh",
@@ -1696,7 +1696,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-stephan-buergin",
@@ -1728,7 +1728,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-sylvia-reineke",
@@ -1784,7 +1784,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-dr-med-ulf-petrausch",
@@ -1880,7 +1880,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-pd-docteur-sandrine-ostermann",
@@ -1888,7 +1888,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-pd-dr-med-bernhard-herzog",
@@ -1944,7 +1944,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-pd-dr-med-jochen-kick",
@@ -1968,7 +1968,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-prof-dr-med-bernhard-voller",
@@ -2080,7 +2080,7 @@
       "stage": "deployed",
       "templateId": "doctor-profile",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-aerzte-3-prof-dr-med-wolfgang-franz-amann",
@@ -2248,7 +2248,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-darmspiegelung",
@@ -2336,7 +2336,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-fruchtwasseruntersuchung-amniozentese",
@@ -2368,7 +2368,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-gelenkspiegelung-schulter",
@@ -2392,7 +2392,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-herz-kreislauf-rehabilitation",
@@ -2472,7 +2472,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-in-vitro",
@@ -2520,7 +2520,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-knochenmarkbiopsie",
@@ -2528,7 +2528,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-krampfaderoperationen",
@@ -2568,7 +2568,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-magenoperation",
@@ -2576,7 +2576,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-magenspiegelung",
@@ -2608,7 +2608,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-nebenschilddruesenoperation",
@@ -2640,7 +2640,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-onkologische-rehabilitation",
@@ -2656,7 +2656,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-personalisierte-prothetik",
@@ -2664,7 +2664,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-plastische-brustoperationen",
@@ -2696,7 +2696,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-rektumoperation",
@@ -2736,7 +2736,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-schleimbeutelentfernung",
@@ -2760,7 +2760,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-sehnentransplantation",
@@ -2768,7 +2768,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-septorhinoplastik",
@@ -2792,7 +2792,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-strahlentherapie",
@@ -2800,7 +2800,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-stuhlinkontinenz-operationen",
@@ -2824,7 +2824,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-vo2max-messung",
@@ -2832,7 +2832,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-vollnarkose",
@@ -2856,7 +2856,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-zehenamputation",
@@ -2864,7 +2864,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-behandlungen-zwoelffingerdarmoperation",
@@ -3176,7 +3176,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-blasenentzuendung",
@@ -3320,7 +3320,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-eileiterschwangerschaft",
@@ -3424,7 +3424,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-gebaermutterhalskrebs",
@@ -3448,7 +3448,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-gicht",
@@ -3536,7 +3536,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-herzinfarkt",
@@ -3960,7 +3960,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-prostatakrebs",
@@ -4080,7 +4080,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-schwangerschaftsdiabetes",
@@ -4136,7 +4136,7 @@
       "stage": "deployed",
       "templateId": "disease-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-krankheitsbilder-thymuskrebs",
@@ -4248,7 +4248,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "news-article",
@@ -4272,7 +4272,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-direktion-lausanne-mehdi-bensouda",
@@ -4280,7 +4280,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-erfolgreicher-abschluss-der-studierenden-aus-nicosia",
@@ -4296,7 +4296,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gesundheitscampus-st-gallen",
@@ -4304,7 +4304,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-gilles-rufenacht-zum-ceo-ernannt",
@@ -4312,7 +4312,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-einigt-sich-mit-der-css",
@@ -4320,7 +4320,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-hirslanden-setzt-regionalisierung-weiter-um",
@@ -4336,7 +4336,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-identifikation-des-imageable-genome-eroeffnet-neue-Ansaetze-fuer-die-medizinische-bildgebende-diagnostik",
@@ -4392,7 +4392,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-neuer-cfo",
@@ -4408,7 +4408,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 2
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-personelle-veraenderung-konzernleitung-stephan-studer",
@@ -4416,7 +4416,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 2
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-pilotprojekt-patientenergebnisse",
@@ -4424,7 +4424,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-swiss-lgbti-label",
@@ -4432,7 +4432,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-medien-und-news-medienmitteilungen-und-news-symposium-hirslanden-research-foundation",
@@ -4456,7 +4456,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-bandscheibenvorfall--von-intensiven-schmerzen-bis-zu-laehmungser",
@@ -4480,7 +4480,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-behandlung-von-knorpelschaeden",
@@ -4488,7 +4488,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-beschwerdefrei-_-ist-eine-prostatavorsorgeuntersuchung-trotzdem-",
@@ -4512,7 +4512,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-der-mensch-ist-so-jung-wie-seine-gefaesse",
@@ -4528,7 +4528,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-die-interdisziplinaere-behandlung-des-lungenkrebses--nur-gemeins",
@@ -4544,7 +4544,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-ein-sturz-mit-folgen",
@@ -4584,7 +4584,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-kuenstliche-gelenke--rasche-rueckkehr-in-den-alltag",
@@ -4632,7 +4632,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-modernster-robotertechnologie",
@@ -4648,7 +4648,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-neue-techniken-inderhueftchirurgie",
@@ -4656,7 +4656,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-osteoporose-_-sind-meine-knochen-bruechig-",
@@ -4680,7 +4680,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-rueckenschmerzen-im-visier",
@@ -4712,7 +4712,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftfocus-was-ist-eigentlich-rheuma-",
@@ -4752,7 +4752,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-arthrose-der-schulter",
@@ -4760,7 +4760,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-behandlung-von-kiefer-undgesichtsdefekteinderzahn-undkieferklini",
@@ -4768,7 +4768,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-behandlung-von-tumorenundablegerninderleber-neuehoffnungaufheilu",
@@ -4776,7 +4776,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-chirurgische-behandlungvonlungenmetastasenmithilfedesnd-yag-lase",
@@ -4784,7 +4784,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-computerassistiertenavigationinderneurochirurgie",
@@ -4808,7 +4808,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-die-endoclinic-zuerich-zentrumfuerendoprothetikundgelenkchirurgi",
@@ -4816,7 +4816,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-die-entwicklung-derlaparoskopischenchirurgie",
@@ -4832,7 +4832,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-die-zecken-kommen",
@@ -4856,7 +4856,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-fortschritte-in-derwirbelsaeulenchirurgie",
@@ -4896,7 +4896,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-koerpereigene-undkoerperfremdestammzelltransplantationen",
@@ -4912,7 +4912,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-lymphgefaesse---stiefkinderdermedizin",
@@ -4944,7 +4944,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-navigations--undrobotertechnikbeiderimplantationvonkuenstlichenk",
@@ -4992,7 +4992,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-pathogene-und-arteriosklerose",
@@ -5008,7 +5008,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-prostatakarzinommodernsteoperativetherapiemitderdavinci-technolo",
@@ -5016,7 +5016,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-rund-um-das-kuenstlichehueftgelenk",
@@ -5032,7 +5032,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-sinkende-brustkrebssterblichkeitindenwestlichennationen",
@@ -5040,7 +5040,7 @@
       "stage": "deployed",
       "templateId": "content-page",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-corporate-publications-patientenzeitschriftmittelpunkt-strategien-gegendenjo-jo-effektmittelpunkt22008",
@@ -5112,7 +5112,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-anus-operationen",
@@ -5128,7 +5128,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-aortographie",
@@ -5168,7 +5168,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-beckenbodenschwaeche-operation",
@@ -5184,7 +5184,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-blasenspiegelung",
@@ -5208,7 +5208,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-bruchoperationen-hernienoperationen",
@@ -5240,7 +5240,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-dialyse",
@@ -5256,7 +5256,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-dickdarmoperation",
@@ -5280,7 +5280,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-duenndarmoperation",
@@ -5328,7 +5328,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-gallenblasenoperation",
@@ -5352,7 +5352,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-gelenkspiegelung-schulter",
@@ -5376,7 +5376,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-herz-kreislauf-rehabilitation",
@@ -5408,7 +5408,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-herzmissbildungen",
@@ -5416,7 +5416,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-herzrhythmusstoerungen",
@@ -5432,7 +5432,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-hueftprothese",
@@ -5456,7 +5456,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-knieprothese",
@@ -5464,7 +5464,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-knochenmarkbiopsie",
@@ -5472,7 +5472,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-krampfaderoperationen",
@@ -5504,7 +5504,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-magenoperation",
@@ -5512,7 +5512,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-magenspiegelung",
@@ -5528,7 +5528,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-natuerliche-geburt",
@@ -5544,7 +5544,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-nebenschilddruesenoperation",
@@ -5584,7 +5584,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-osteosynthese",
@@ -5592,7 +5592,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-plastische-brustoperationen",
@@ -5600,7 +5600,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-prostataoperation",
@@ -5616,7 +5616,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-reflux-operation",
@@ -5624,7 +5624,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-rektumoperation",
@@ -5648,7 +5648,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-schilddruesenoperationen",
@@ -5656,7 +5656,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-schleimbeutelentfernung",
@@ -5664,7 +5664,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-schulterprothese",
@@ -5672,7 +5672,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-sehnentransplantation",
@@ -5680,7 +5680,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-speiseroehrenoperation",
@@ -5704,7 +5704,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-stuhlinkontinenz-operationen",
@@ -5736,7 +5736,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-wirbelkoerperfraktur-operation",
@@ -5744,7 +5744,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-zehenamputation",
@@ -5752,7 +5752,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-behandlungen-zwoelffingerdarmoperation",
@@ -5760,7 +5760,7 @@
       "stage": "deployed",
       "templateId": "treatment-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-international-home",
@@ -5824,7 +5824,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-dramatische-reduktion-von-komplikationen-und-sterblichkeit-nach-bauchspeicheldruesen-operation-dank-spueldrainagen",
@@ -5832,7 +5832,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-ein-blick-in-die-notfallstation-der-klinik-im-park",
@@ -5856,7 +5856,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-gold-zertifikat-aktion-saubere-haende",
@@ -5864,7 +5864,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-hallux-valgus-und-arthrose-des-oberen-sprunggelenks",
@@ -5872,7 +5872,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-herzmedizin-spital-lachen-klinik-im-park",
@@ -5880,7 +5880,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-innovative-prostatabehandlung",
@@ -5888,7 +5888,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-klinik-im-park-durch-helsana-wieder-abgedeckt",
@@ -5896,7 +5896,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-klinik-im-park-erneut-unter-den-besten-fachkliniken-der-schweiz",
@@ -5904,7 +5904,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-klinik-im-park-limousinenservice-fuer-privatversicherte-stationaere-patientinnen-und-patienten",
@@ -5912,7 +5912,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-kniearthrose-was-hilft-wenn-das-knie-schmerzt",
@@ -5928,7 +5928,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-komplementaermedizinisches-angebot-an-der-klinik-im-park",
@@ -5936,7 +5936,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-minimalinvasive-reparatur-der-trikuspidalklappe",
@@ -5944,7 +5944,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-mixed-reality-operation",
@@ -5952,7 +5952,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-moderne-onkoplastische-brustkrebschirurgie",
@@ -6000,7 +6000,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-physiotherapie-und-im-park-training-stellt-sich-zukunftssicher-auf",
@@ -6008,7 +6008,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-praxisuebernahme-dr--med--anja-faeh-gunz",
@@ -6024,7 +6024,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-sport-medical-approved-by-swiss-olympic",
@@ -6032,7 +6032,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-sportmedizin-wir-bringen-sie-wieder-in-bewegung",
@@ -6040,7 +6040,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-im-park-news-und-medien-medienmitteilungen-und-news-verstaerkung-der-klinikleitung",
@@ -6048,7 +6048,7 @@
       "stage": "deployed",
       "templateId": "news-article",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "clinic-detail",
@@ -6112,7 +6112,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-hautveraenderungen-gesicht-was-jetzt-anmeldeformular-event",
@@ -6120,7 +6120,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-herzinfarkt-anmeldeformular-event",
@@ -6144,7 +6144,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-schmerzen-an-und-in-der-hand-anmeldeformular-event",
@@ -6160,7 +6160,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-klinik-linde-kurse-veranstaltungen-gesundheitsthemen-tag-der-offenen-tuer-anmeldeformular-event",
@@ -6360,7 +6360,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-salem-spital-kurse-veranstaltungen-schwangerschaft-und-geburt-bewegte-rueckbildung",
@@ -6424,7 +6424,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-salem-spital-kurse-veranstaltungen-schwangerschaft-und-geburt-geburtsvorbereitungskurse-hypnose-resilienz-anmeldeformular-geburtsvorbereitung",
@@ -6432,7 +6432,7 @@
       "stage": "deployed",
       "templateId": "event-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     },
     {
       "slug": "de-salem-spital-kurse-veranstaltungen-schwangerschaft-und-geburt-grosselternkurs-anmeldeformular-grosselternkurs",
@@ -6536,7 +6536,7 @@
       "stage": "deployed",
       "templateId": "clinic-detail",
       "isTemplate": false,
-      "openFindings": 0
+      "openFindings": 1
     }
   ],
   "templates": [
@@ -6688,9 +6688,35 @@
     "total": 2,
     "converted": 0
   },
-  "quality": null,
+  "quality": {
+    "overall": 30,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 0,
+      "content-conversion": null,
+      "ai-search": 90,
+      "cross-page": 0
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 28,
+      "P3": 117
+    },
+    "history": [
+      90,
+      0,
+      30
+    ]
+  },
   "findings": {
-    "byFixability": {},
-    "byAutofix": {}
+    "byFixability": {
+      "design-pass": 43,
+      "platform-migration": 102
+    },
+    "byAutofix": {
+      "pending": 121
+    }
   }
 }
