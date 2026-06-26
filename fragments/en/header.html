@@ -1,0 +1,166 @@
+<style>
+  /* header.header is set by postlcp.js before injecting this fragment */
+  header.header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  /* Utility bar */
+  .header-utility {
+    border-bottom: 1px solid var(--color-hairline);
+    font-size: var(--body-sm);
+  }
+
+  .header-utility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding-block: 6px;
+  }
+
+  .header-utility a {
+    color: var(--color-text-soft);
+    text-decoration: none;
+    transition: color 140ms ease;
+  }
+
+  .header-utility a:hover { color: var(--color-accent-ink); }
+
+  .header-utility .lang { display: flex; gap: var(--spacing-sm); }
+
+  .header-utility .lang [aria-current="true"] {
+    color: var(--color-accent-ink);
+    font-weight: 500;
+  }
+
+  /* Main nav bar */
+  .header-main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-md);
+  }
+
+  .brand img { width: 170px; height: auto; }
+
+  .primary-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+  }
+
+  .primary-nav a {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-fg);
+    transition: color 140ms ease;
+  }
+
+  .primary-nav a:hover { color: var(--color-accent-ink); }
+
+  /* Icon buttons */
+  .icon-search {
+    background: none;
+    border: 0;
+    padding: var(--spacing-sm);
+    cursor: pointer;
+    color: var(--color-fg);
+    display: inline-flex;
+  }
+
+  .icon-search:hover { color: var(--color-accent-ink); }
+
+  /* Mobile menu — checkbox hack (no JS runs in fragments) */
+  .mnav-checkbox { display: none; }
+
+  .nav-burger {
+    display: none;
+    background: none;
+    border: 1px solid var(--color-hairline);
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    color: var(--color-fg);
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile breakpoint */
+  @media (width <= 640px) {
+    .nav-burger { display: inline-flex; }
+    .icon-search { order: 3; }
+
+    .primary-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-hairline);
+      box-shadow: var(--shadow-card);
+      z-index: var(--z-nav-panel);
+    }
+
+    /* CSS-only open state via checkbox */
+    .mnav-checkbox:checked ~ .header-main .primary-nav { display: flex; }
+
+    .primary-nav a {
+      padding: 14px var(--spacing-lg);
+      border-top: 1px solid var(--color-hairline);
+    }
+
+    .header-main .container { position: relative; flex-wrap: wrap; }
+
+    .header-utility .container {
+      justify-content: center;
+      gap: var(--spacing-md);
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
+<input type="checkbox" id="mnav-toggle" class="mnav-checkbox" aria-hidden="true">
+
+<a class="skip-link chip" href="#main" style="position:absolute;left:-9999px;top:auto;">Skip to content</a>
+
+<div class="header-utility">
+  <div class="container">
+    <a href="https://www.hirslanden.ch/en/corporate/the-hirslanden-group/contact.html">Contact</a>
+    <a href="/en/corporate/media-news">Media</a>
+    <span class="lang" aria-label="Choose language">
+      <a href="/" >DE</a>
+      <a href="/fr/corporate/home" >FR</a>
+      <a href="https://www.hirslanden.ch/en/corporate/home.html" aria-current="true">EN</a>
+    </span>
+  </div>
+</div>
+
+<div class="header-main">
+  <div class="container">
+    <a class="brand" href="https://www.hirslanden.ch/en/corporate/home.html" aria-label="Hirslanden">
+      <img src="https://main--hirslanden-stardust-eds--paolomoz.aem.page/assets/logo.png" alt="Hirslanden" width="170" height="49">
+    </a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Navigation">
+      <a href="/en/corporate/hospitals-and-centres/hirslanden-near-you">Hospitals &amp; centres</a>
+      <a href="/en/corporate/specialities">Specialities</a>
+      <a href="/en/corporate/media-news">Media &amp; news</a>
+      <a href="https://www.hirslanden.ch/en/corporate/the-hirslanden-group/contact.html">Contact</a>
+    </nav>
+    <button class="icon-search" type="button" aria-label="Search">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <label for="mnav-toggle" class="nav-burger" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </label>
+  </div>
+</div>

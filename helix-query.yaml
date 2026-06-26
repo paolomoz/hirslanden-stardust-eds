@@ -126,3 +126,83 @@ indices:
       lastModified:
         select: none
         value: parseTimestamp(headers('last-modified'), 'ddd, DD MMM YYYY hh:mm:ss GMT')
+
+  # FR/EN per-language indexes (mirror the DE selectors; scoped by language prefix).
+  doctors-fr:
+    include:
+      - '/fr/corporate/doctors/**'
+    target: /fr/corporate/doctors/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      specialty:
+        select: main .doctor-hero a[href*="/specialites-medicales/"]
+        value: textContent(el)
+      clinic:
+        select: main .doctor-hero a[href*="/home"]
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+  doctors-en:
+    include:
+      - '/en/corporate/doctors/**'
+    target: /en/corporate/doctors/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, 'content')
+      specialty:
+        select: main .doctor-hero a[href*="/specialities/"]
+        value: textContent(el)
+      clinic:
+        select: main .doctor-hero a[href*="/home"]
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+  news-fr:
+    include:
+      - '/fr/corporate/news-media/**'
+    exclude:
+      - '/fr/corporate/news-media'
+    target: /fr/corporate/news-media/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, 'content')
+      publishDate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
+  news-en:
+    include:
+      - '/en/corporate/media-news/**'
+    exclude:
+      - '/en/corporate/media-news'
+    target: /en/corporate/media-news/query-index.json
+    properties:
+      title:
+        select: main h1
+        value: textContent(el)
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, 'content')
+      publishDate:
+        select: head > meta[name="publishdate"]
+        value: attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, 'content')
